@@ -1,0 +1,108 @@
+{
+  "page_id": "page_22",
+  "group": "G6",
+  "shadow": "S2",
+  "semantic_density": "low",
+  "size_tier": "large",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": ["tracking-shell-x3y4z5"],
+    "volatile_classes": [
+      "data-v-a1b2c3",
+      "StatusChip_root__g7h8i9",
+      "RowBtn_view__j1k2l3",
+      "TrackPanel_toggle__m4n5o6"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the input where you type a tracking number to search for a shipment",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input in light DOM search bar with id='tracking-search' and aria-label='Enter tracking number'; Vue data-v-a1b2c3 scoped attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that refreshes the shipment tracking data",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button in light DOM action bar with aria-label='Refresh tracking data'; no data-testid; Vue data-v-a1b2c3 scoped attr is volatile"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the status chip on the first shipment row in the tracking table",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span in light DOM table row with class StatusChip_root__g7h8i9 only; text 'In Transit' repeats 100+ times across rows; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the dropdown that filters the shipment list by carrier",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "select inside tracking-shell shadow root (level-1) with aria-label='Filter by carrier'; no data-testid; TrackPanel_carrierSel__c6d7e8 class is volatile"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that exports the shipment report as a CSV file",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button inside tracking-shell shadow root (level-1) with aria-label='Export shipment report as CSV'; no data-testid; TrackPanel_exportBtn__f9g0h1 class is volatile"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the expand or collapse toggle button on the shipment detail panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — button inside tracking-shell shadow root (level-1) with class TrackPanel_toggle__m4n5o6 only; CSS ::after chevron (no DOM text content); no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the reference ID input in the shipment update form",
+      "signal_attrs": ["id", "name"],
+      "expected_stable_signal": "input inside shipment-editor shadow root (level-2) with id='shipment-ref' and name='reference_id'; type=text"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the textarea for entering delivery instructions",
+      "signal_attrs": ["aria-label", "id"],
+      "expected_stable_signal": "textarea inside shipment-editor shadow root (level-2) with aria-label='Delivery instructions'; no data-testid"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown that sets the shipping priority level",
+      "signal_attrs": ["name", "id"],
+      "expected_stable_signal": "select inside shipment-editor shadow root (level-2) with name='shipment_priority'; no aria-label (low semantic density page); label text 'Priority level' is stable but semantic-textual; name is the primary stable discriminator"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the button that saves the shipment update",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside shipment-editor shadow root (level-2) with aria-label='Save shipment update' and data-testid='save-shipment-btn'"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "page_id": "page_14",
+  "group": "G4",
+  "shadow": "S1",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": ["cart-widget-f7g8h9", "item-pepperoni-d4e5f6"],
+    "volatile_classes": [
+      "MenuItem--b2c3d4",
+      "FilterBar--e5f6g7",
+      "CartWidget--h8i9j0",
+      "CartItem--k1l2m3",
+      "CheckoutBtn--n4o5p6"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the search field where you type to filter the menu items by name",
+      "signal_attrs": ["id", "aria-label", "data-testid"],
+      "expected_stable_signal": "input with id='menu-search', aria-label='Search menu items', and data-testid='menu-search'; React hashed classes are volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that adds a Margherita pizza to your cart",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Add Margherita pizza to cart'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the menu card for the Pepperoni pizza",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — volatile id item-pepperoni-d4e5f6 and class MenuItem--b2c3d4 only; no aria-label, no data-testid, no stable id on this element; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that changes the order in which menu items are displayed",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "select with data-testid='sort-dropdown'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the container bar that holds the dietary filter toggles (Vegetarian, Vegan, etc.)",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class FilterBar--e5f6g7 only; no aria-label, no data-testid, no id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the cart header element that shows how many items are currently in the basket",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "span inside cart-widget shadow root with aria-label='Cart contains 2 items'"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the element that displays the order total including the delivery fee",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "div inside cart-widget shadow root with data-testid='cart-total-display' and aria-label='Order total including delivery fee'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that takes you to the checkout page to complete your order",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside cart-widget shadow root with data-testid='checkout-btn' and aria-label='Proceed to checkout'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that removes the Margherita pizza from the cart",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button inside cart-widget shadow root with aria-label='Remove Margherita pizza from cart'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the text input where you enter the delivery address for your order",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "input with id='delivery-address', name='delivery_address', and aria-label='Delivery address'"
+    }
+  ]
+}

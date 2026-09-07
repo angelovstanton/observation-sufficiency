@@ -1,0 +1,510 @@
+[
+  {
+    "label": "01-baseline-pass-css-id",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[id=\"qty-input\"]",
+    "dimension": "baseline",
+    "direction": "pass",
+    "expected": {
+      "success": true,
+      "failure_mode": null,
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Stable id selector uniquely matches oracle; all predicates pass"
+  },
+  {
+    "label": "02-baseline-pass-xpath-id",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "xpath",
+    "locator_value": "//input[@id='qty-input']",
+    "dimension": "baseline",
+    "direction": "pass",
+    "expected": {
+      "success": true,
+      "failure_mode": null,
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Stable XPath with id; non-positional; non-volatile; stable present"
+  },
+  {
+    "label": "03-baseline-pass-css-aria-label",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[aria-label=\"Quantity\"]",
+    "dimension": "baseline",
+    "direction": "pass",
+    "expected": {
+      "success": true,
+      "failure_mode": null,
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Stable aria-label selector; aria-label is in signal_attrs; passes all predicates"
+  },
+  {
+    "label": "04-dim-a-fail-exact-volatile-page-class",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".pkg-select--a9b8c7",
+    "dimension": "a",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "pkg-select--a9b8c7 is a page-level volatile_class; t_01 has stable signals (id/data-testid/aria-label/name) so stableSignalPresent=true -> grabbed_brittle, not lacked"
+  },
+  {
+    "label": "05-dim-a-fail-bem-modifier-base-of-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".gallery__nav-btn--next",
+    "dimension": "a",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "gallery__nav-btn--next is BEM-modifier-base of volatile gallery__nav-btn--next--b3c4d5 (IsBemBaseOfVolatile via '--' prefix); t_01 stable -> grabbed_brittle"
+  },
+  {
+    "label": "06-dim-a-fail-bem-block-base-of-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".gallery__nav-btn",
+    "dimension": "a",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "gallery__nav-btn is BEM-block-base of volatile gallery__nav-btn--next--b3c4d5 (StartsWith 'gallery__nav-btn--'); t_01 stable -> grabbed_brittle"
+  },
+  {
+    "label": "07-dim-a-pass-stable-not-bem-base",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[data-testid=\"qty-input\"]",
+    "dimension": "a",
+    "direction": "pass",
+    "expected": {
+      "success": true,
+      "failure_mode": null,
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "data-testid is stable, not in volatile_ids/volatile_classes, not a BEM base of any volatile class; confirms no false-rejection of stable locators"
+  },
+  {
+    "label": "08-dim-b-fail-css-nth-child",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "input:nth-child(1)",
+    "dimension": "b",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": false,
+      "stable_signal_present": true
+    },
+    "rationale": ":nth-child is positional (CssPositionalRe match); t_01 has stable signals -> grabbed_brittle"
+  },
+  {
+    "label": "09-dim-b-fail-xpath-numeric-subscript",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "xpath",
+    "locator_value": "(//input[@aria-label='Quantity'])[1]",
+    "dimension": "b",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": false,
+      "stable_signal_present": true
+    },
+    "rationale": "[1] numeric subscript is positional (XpathPositionalRe match \\[\\s*\\d+\\s*\\]); t_01 stable -> grabbed_brittle"
+  },
+  {
+    "label": "10-dim-b-fail-xpath-position-function",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "xpath",
+    "locator_value": "//input[position()=1 and @aria-label='Quantity']",
+    "dimension": "b",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": false,
+      "stable_signal_present": true
+    },
+    "rationale": "position() function is positional (XpathPositionalRe match position\\s*\\(\\s*\\)); t_01 stable -> grabbed_brittle"
+  },
+  {
+    "label": "11-dim-c-none-target-volatile-locator-lacked-not-grabbed",
+    "page_id": "page_01",
+    "oracle_id": "t_07",
+    "locator_type": "css",
+    "locator_value": ".pkg-select--a9b8c7",
+    "dimension": "c",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "observation_lacked_stable_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": false
+    },
+    "rationale": "t_07 is NONE (signal_attrs=[]); stableSignalPresent=false -> mode=observation_lacked_stable_signal even though locator IS volatile; lacked takes precedence over grabbed in classifier"
+  },
+  {
+    "label": "12-dim-c-stable-target-volatile-id-grabbed",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "#price-badge-a1b2c3",
+    "dimension": "c",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "t_01 has stable signals available (id/data-testid/aria-label/name); locator uses volatile id price-badge-a1b2c3 -> mode=grabbed_brittle; confirms available-but-unused classification"
+  },
+  {
+    "label": "13-dim-c-none-target-positional-locator-lacked-not-grabbed",
+    "page_id": "page_01",
+    "oracle_id": "t_10",
+    "locator_type": "css",
+    "locator_value": "button:first-child",
+    "dimension": "c",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "observation_lacked_stable_signal",
+      "non_volatile": true,
+      "non_positional": false,
+      "stable_signal_present": false
+    },
+    "rationale": "t_10 is NONE (signal_attrs=[]); stableSignalPresent=false -> mode=observation_lacked_stable_signal even though locator IS positional; lacked takes precedence over grabbed in classifier"
+  },
+
+  {
+    "_comment": "=== DEFECT 1 (fixed 2026-06-17, guarded): CSS [id=X] exact-match attribute selector not caught ===",
+    "label": "14-dim-d-fail-css-attr-id-exact-quoted",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[id=\"price-badge-a1b2c3\"]",
+    "dimension": "d",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 1 (fixed 2026-06-17): CSS [id=\"X\"] exact-match attr selector with volatile id price-badge-a1b2c3. Before the fix, LocatorUsesVolatileSignal only checked #id and [id*=]/[id^=] (both require *=|^=), so the plain = form was not matched by the \\[id[\\*\\^]=[\"']...] regex and non_volatile was incorrectly true. The current code adds a dedicated exact-match [id=X] block (\\[id\\s*=\\s*(?:[\"'][^\"']+[\"']|[a-zA-Z0-9_-]+)\\]) that catches the plain = form, so non_volatile=false; t_01 has stable signals so mode=grabbed_brittle."
+  },
+  {
+    "label": "15-dim-d-fail-css-attr-id-exact-unquoted",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[id=price-badge-a1b2c3]",
+    "dimension": "d",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 1 (fixed 2026-06-17): CSS [id=X] unquoted exact-match attr selector with volatile id price-badge-a1b2c3. Before the fix, the \\[id[\\*\\^]=[\"']...] regex required both the *=|^= operator AND surrounding quotes, so the unquoted plain = form was doubly missed and non_volatile was incorrectly true. The current exact-match [id=X] block's alternation accepts both quoted and unquoted values, so non_volatile=false; t_01 has stable signals so mode=grabbed_brittle."
+  },
+
+  {
+    "_comment": "=== DEFECT 2 (fixed 2026-06-17, guarded): CSS [class=\"X\"] exact and unquoted [class*=] not caught ===",
+    "label": "16-dim-d-fail-css-attr-class-exact-quoted",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[class=\"pkg-select--a9b8c7\"]",
+    "dimension": "d",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 2 (fixed 2026-06-17): CSS [class=\"X\"] exact-string match with volatile class pkg-select--a9b8c7. Before the fix, LocatorUsesVolatileSignal covered .class, [class*=]/[class^=] (quoted), and [class~=] (quoted) but NOT [class=\"X\"] (exact full-string form), so non_volatile was incorrectly true. The current code adds a dedicated quoted exact-match [class=\"X\"] block, so non_volatile=false; t_01 has stable signals so mode=grabbed_brittle."
+  },
+  {
+    "label": "17-dim-d-fail-css-attr-class-substring-unquoted",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[class*=pkg-select]",
+    "dimension": "d",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 2 (fixed 2026-06-17): CSS [class*=X] unquoted substring with prefix pkg-select, which is a BEM base of the volatile class pkg-select--a9b8c7. Before the fix, the quoted-only \\[class[\\*\\^]=[\"']...] regex required surrounding quotes, so the unquoted value was never extracted and the volatility check was skipped entirely — non_volatile was incorrectly true; [class^=X] unquoted had the same gap. The current code adds an unquoted-operator block (\\[class[\\*\\^~$|]?=value\\]) that extracts the value without quotes and checks it via VolatileClassRe plus a StartsWith(extraVolatileClasses) prefix check — pkg-select matches the latter as a prefix of pkg-select--a9b8c7 — so non_volatile=false; t_01 has stable signals so mode=grabbed_brittle."
+  },
+
+  {
+    "_comment": "=== DEFECT 3 (fixed 2026-06-17, guarded): B_playwrightMCP + data-testid-only target (runner limitation) ===",
+    "label": "18-dim-e-fail-playwrightmcp-datatestid-only-lacked",
+    "page_id": "page_01",
+    "oracle_id": "t_02",
+    "locator_type": "css",
+    "locator_value": "[data-testid=\"add-to-cart-btn\"]",
+    "dimension": "e",
+    "bundle": "B_playwrightMCP",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "observation_lacked_stable_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": false
+    },
+    "rationale": "Regression guard for DEFECT 3 (fixed 2026-06-17): t_02 has signal_attrs=[\"data-testid\"] (sole signal). In B_playwrightMCP+F4 context, data-testid is invisible in the ARIA snapshot so bundleContains(\"data-testid\")=false -> stableSignalPresent=false -> lacked. Before the fix, RunPredicateControlsAsync used bundleContains=_=>true (B_full semantics) for every control regardless of its bundle, so stableSignalPresent was incorrectly true and the locator resolved correctly -> success was incorrectly true; the runner was not bundle-aware. The current runner reads the control's 'bundle' field and switches to a B_playwrightMCP-scoped bundleContains (role + aria-* only) when set, so stableSignalPresent=false -> failure_mode=observation_lacked_stable_signal, matching this control's expected block."
+  },
+
+  {
+    "_comment": "=== DEFECT 4 (fixed 2026-06-17, guarded): NONE target in shadow DOM with XPath -> lacked, not output_format_unreachable ===",
+    "label": "19-dim-f-fail-none-shadow-xpath-lacked-not-unreachable",
+    "page_id": "page_24",
+    "oracle_id": "t_06",
+    "locator_type": "xpath",
+    "locator_value": "//span[contains(@class,'divider')]",
+    "dimension": "f",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "observation_lacked_stable_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": false
+    },
+    "rationale": "Regression guard for DEFECT 4 (fixed 2026-06-17): t_06 is NONE (signal_attrs=[]) and lives inside settings-shell S1 shadow root (page_24). XPath cannot pierce shadow DOM so uniqueMatch=false. oracleIsInShadow=true (verified by getRootNode() instanceof ShadowRoot). Before the fix, the classifier checked oracleIsInShadow BEFORE the stableSignalPresent check, so it returned output_format_unreachable. The current classifier checks !stableSignalPresentInBundle first — lacked wins over output_format_unreachable for NONE targets, same as lacked wins over grabbed, because the root cause is absence of stable signal, not the locator type — so failure_mode=observation_lacked_stable_signal. Locator 'divider' is not volatile (not framework hash, not prefix of any volatile class in page_24) so non_volatile=true."
+  },
+
+  {
+    "_comment": "=== DEFECT 5 (fixed 2026-06-17, guarded): VolatileClassRe over-rejects stable Bootstrap/semantic class names ===",
+    "label": "20-dim-g-pass-stable-class-btn-primary-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".btn-primary",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 5 (fixed 2026-06-17): btn-primary is a legitimate Bootstrap class, NOT a framework hash. Before the fix, VolatileClassRe pattern 1 [a-z]{1,3}-[a-zA-Z0-9]{6,} (no lookahead) falsely matched: 'btn'(3 lowercase) + '-' + 'primary'(7 lowercase) = 7 >= 6, so non_volatile was incorrectly false (over-rejection). The current pattern adds a lookahead requiring >= 1 digit/uppercase in the suffix — 'primary' is all lowercase so the lookahead fails and pattern 1 no longer matches — non_volatile=true, matching this control's expected value. success=false because .btn-primary doesn't resolve on page_01 (no Bootstrap classes present); t_01 has stable signals so mode=grabbed_brittle. Dimension 'g' direction='pass' signals the expected non_volatile=true (the predicate should PASS the volatility check)."
+  },
+  {
+    "label": "21-dim-g-pass-stable-class-app-header-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".app-header",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 5 (fixed 2026-06-17): app-header is a legitimate semantic class name, NOT a framework hash. Before the fix, VolatileClassRe pattern 1 [a-z]{1,3}-[a-zA-Z0-9]{6,} (no lookahead) falsely matched: 'app'(3 lowercase) + '-' + 'header'(6 lowercase) = exactly 6, matching {6,}, so non_volatile was incorrectly false (over-rejection). The current pattern's lookahead requires >= 1 digit/uppercase in the suffix — 'header' is all lowercase so the lookahead fails and pattern 1 no longer matches — non_volatile=true, matching this control's expected value. success=false because .app-header doesn't resolve on page_01; t_01 stable -> grabbed_brittle."
+  },
+
+  {
+    "_comment": "=== VOLATILE-CLASS LOCKS: trickiest real volatile classes from testbed corpus ===",
+    "label": "22-dim-a2-fail-xpath-class-exact-pat2-settings-divider",
+    "page_id": "page_24",
+    "oracle_id": "t_01",
+    "locator_type": "xpath",
+    "locator_value": "//span[@class='SettingsPanel_divider__b3c4d5']",
+    "dimension": "a2",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "SettingsPanel_divider__b3c4d5 is in volatile_classes for page_24 and caught by VolatileClassRe pattern 2 ([A-Za-z]+_[A-Za-z0-9]{5,}__): 'SettingsPanel'([A-Za-z]+) + '_' + 'divider'(7 chars, {5,}) + '__'. XPath @class='X' form is matched by the @class exact-match regex in LocatorUsesVolatileSignal. Element is in L1 shadow so XPath finds nothing (uniqueMatch=false). Oracle t_01 is light DOM so oracleIsInShadow=false; t_01 has stable signals (id/name) -> stableSignalPresent=true -> mode=grabbed_brittle. Locks the pat2 detection path after the regex fix (proposed fix does not change pat2)."
+  },
+  {
+    "label": "23-dim-a2-fail-css-classword-pat3-ngcontent",
+    "page_id": "page_24",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": "[class~='_ngcontent-set-c24']",
+    "dimension": "a2",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "_ngcontent-set-c24 is in volatile_classes for page_24 and caught by VolatileClassRe pattern 3 (_ngcontent-[a-z]+-[a-z0-9]+): 'set'([a-z]+) + '-' + 'c24'([a-z0-9]+). CSS [class~='X'] word-match form is covered by the \\[class~=[\"']...] block in LocatorUsesVolatileSignal. Locator finds nothing (no elements in light DOM carry Angular scoped attrs on page_24). Oracle t_01 light DOM; stableSignalPresent=true -> grabbed_brittle. Locks pat3 detection path; proposed regex fix does not change pat3."
+  },
+  {
+    "label": "24-dim-a2-fail-css-class-pat2-payshell-secicon",
+    "page_id": "page_23",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".PayShell_secIcon__x4y5z6",
+    "dimension": "a2",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "PayShell_secIcon__x4y5z6 is in volatile_classes for page_23 and caught by VolatileClassRe pattern 2: 'PayShell'([A-Za-z]+) + '_' + 'secIcon'(7 chars, [A-Za-z0-9]{5,}) + '__'. CSS .class form covered by the \\.[class-token] regex block. secIcon has 7 chars (> 5 threshold) making pat2 match unambiguous. Locator resolves nothing on page_23 (PayShell elements are in shadow, .class can't pierce). Oracle t_01 is light DOM email input (id/name/aria-label -> stableSignalPresent=true) -> grabbed_brittle. Locks pat2 with a mixed-case part name (secIcon contains uppercase I) — the trickiest pat2 case not involving a hash suffix."
+  },
+  {
+    "label": "25-dim-a2-fail-xpath-contains-class-data-v-vue",
+    "page_id": "page_22",
+    "oracle_id": "t_01",
+    "locator_type": "xpath",
+    "locator_value": "//tr[contains(@class,'data-v-a1b2c3')]",
+    "dimension": "a2",
+    "direction": "fail",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": false,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "data-v-a1b2c3 is in volatile_classes for page_22 (Vue scoped attr) and caught by VolatileClassRe pattern 4 (data-v-[a-f0-9]+): 'a1b2c3' is all valid hex. XPath contains(@class,'X') form is checked by the contains|starts-with/@class block; IsVolatileClass('data-v-a1b2c3') returns true via pat4. XPath finds zero rows because page_22 table rows carry data-v-a1b2c3 as a SCOPED ATTRIBUTE, not as a class value. Oracle t_01 is light DOM tracking-search input (id/aria-label -> stableSignalPresent=true) -> grabbed_brittle. Locks pat4 detection path."
+  },
+
+  {
+    "_comment": "=== STABLE-CLASS LOCKS: classes the regex SHOULD NOT flag volatile ===",
+    "label": "26-dim-g-pass-stable-class-form-control-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".form-control",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 5 (fixed 2026-06-17): form-control is a legitimate Bootstrap/semantic class name. Before the fix, VolatileClassRe pattern 1 [a-z]{1,3}-[a-zA-Z0-9]{6,} (no lookahead) falsely matched via the substring 'orm-control': 'orm'(3 lowercase) + '-' + 'control'(7 lowercase) = 7 >= 6, so non_volatile was incorrectly false (over-rejection). The current pattern's lookahead requiring >= 1 digit/uppercase in the suffix fails on 'control' (all lowercase), so pattern 1 no longer matches — non_volatile=true, matching this control's expected value. success=false because .form-control doesn't resolve on page_01; t_01 stable -> grabbed_brittle."
+  },
+  {
+    "label": "27-dim-g-pass-stable-class-tab-content-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".tab-content",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "Regression guard for DEFECT 5 (fixed 2026-06-17): tab-content is a legitimate Bootstrap class name. Before the fix, VolatileClassRe pattern 1 (no lookahead) falsely matched: 'tab'(3 lowercase) + '-' + 'content'(7 lowercase) >= 6, so non_volatile was incorrectly false (over-rejection). The current pattern's lookahead fails on 'content' (all lowercase), so pattern 1 no longer matches — non_volatile=true, matching this control's expected value. success=false because .tab-content doesn't resolve on page_01; t_01 stable -> grabbed_brittle."
+  },
+  {
+    "label": "28-dim-g-pass-stable-class-nav-bar-correctly-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".nav-bar",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "nav-bar is a legitimate semantic class name and is NOT a false positive under either the current or proposed regex. VolatileClassRe pattern 1: 'nav'(3)+'-'+'bar'(3) -> 3 < 6 -> no match. No substring match either (av+bar=3, na+bar=3). Both current and proposed code return non_volatile=true. Locks the 'short stable class' direction: very short suffix (3 chars) is never misidentified. PASSES both before and after fix."
+  },
+  {
+    "label": "29-dim-g-pass-stable-class-list-item-correctly-not-volatile",
+    "page_id": "page_01",
+    "oracle_id": "t_01",
+    "locator_type": "css",
+    "locator_value": ".list-item",
+    "dimension": "g",
+    "direction": "pass",
+    "expected": {
+      "success": false,
+      "failure_mode": "model_grabbed_brittle_signal",
+      "non_volatile": true,
+      "non_positional": true,
+      "stable_signal_present": true
+    },
+    "rationale": "list-item is a legitimate semantic class name and is NOT a false positive. VolatileClassRe pattern 1: 'list' is 4 chars (> 3 limit for [a-z]{1,3}) so the full token fails. No 1-3 char lowercase substring left of a hyphen has a 6+ char suffix ('ist-item'=4, 'st-item'=4). Both current and proposed regex return non_volatile=true. Locks the 'non-ambiguous stable class' direction. PASSES both before and after fix."
+  }
+]

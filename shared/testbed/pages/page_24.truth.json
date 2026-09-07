@@ -1,0 +1,108 @@
+{
+  "page_id": "page_24",
+  "group": "G6",
+  "shadow": "S2",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["settings-shell-r7s8t9"],
+    "volatile_classes": [
+      "_ngcontent-set-c24",
+      "_nghost-set-c24",
+      "SettingRow_icon__a1b2c3",
+      "SettingsPanel_divider__b3c4d5"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the input where the user sets their display name",
+      "signal_attrs": ["id", "name"],
+      "expected_stable_signal": "input in light DOM profile section with id='display-name' and name='display_name'; no aria-label (low semantic density page); _ngcontent-set-c24 attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that lets the user change their account password",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button in light DOM profile section with aria-label='Change account password'; no data-testid; _ngcontent-set-c24 attr is volatile"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the notification bell icon in the notification preferences section header",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span in light DOM notification section header with class SettingRow_icon__a1b2c3 only; CSS ::before bell icon (no DOM text content); no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the toggle that controls data sharing with the service",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=checkbox] inside settings-shell shadow root (level-1) with aria-label='Toggle data sharing'; no data-testid; SettingsPanel_check__ class is volatile"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the toggle that controls marketing email subscriptions",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=checkbox] inside settings-shell shadow root (level-1) with aria-label='Toggle marketing emails'; no data-testid; SettingsPanel_check__ class is volatile"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the section divider between the privacy toggles and the preferences panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span inside settings-shell shadow root (level-1) with class SettingsPanel_divider__b3c4d5 only; no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown that sets the display language",
+      "signal_attrs": ["id", "name"],
+      "expected_stable_signal": "select inside preferences-panel shadow root (level-2) with id='pref-language' and name='display_language'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown that sets the user's time zone preference",
+      "signal_attrs": ["aria-label", "name", "id"],
+      "expected_stable_signal": "select inside preferences-panel shadow root (level-2) with aria-label='Time zone preference' and name='timezone'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the checkbox that opts the user into the product newsletter",
+      "signal_attrs": ["name", "id"],
+      "expected_stable_signal": "input[type=checkbox] inside preferences-panel shadow root (level-2) with name='newsletter_opt_in'; no aria-label (low semantic density page); name is the primary stable discriminator"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the button that saves all account and display preferences",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside preferences-panel shadow root (level-2) with aria-label='Save all preferences' and data-testid='save-prefs-btn'"
+    }
+  ]
+}

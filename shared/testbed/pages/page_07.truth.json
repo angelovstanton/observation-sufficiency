@@ -1,0 +1,106 @@
+{
+  "page_id": "page_07",
+  "group": "G2",
+  "shadow": "S0",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": [],
+    "volatile_classes": [
+      "HeroBtn--c3d4e5",
+      "PricingCard--f6g7h8",
+      "TestimonyBlock--i9j0k1",
+      "LeadForm--l2m3n4",
+      "FeatureChip--o5p6q7",
+      "NavLink--r8s9t0",
+      "ContactForm--u1v2w3",
+      "FaqItem--v4w5x6",
+      "data-v-7e8f9a"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the email input in the hero lead-capture form",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input[type=email] in the hero section with placeholder='Enter your work email'; no name, no id, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the 'Start free trial' button in the hero section",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='start-free-trial-hero'; no aria-label; data-testid is the sole stable signal"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the first feature chip/tag element below the hero section",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span with class FeatureChip--o5p6q7 only (first chip, text 'API Access'); no aria-label, no data-testid, no id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the navigation link to the Pricing section",
+      "signal_attrs": ["href"],
+      "expected_stable_signal": "anchor in the main nav with href='/pricing'; unique on the page; no aria-label, no data-testid; href is the sole stable signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the button to choose the Professional pricing plan",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Choose Professional plan' inside the Professional pricing card; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the text input for the company name in the trial signup form",
+      "signal_attrs": ["name"],
+      "expected_stable_signal": "input with name='company_name'; no aria-label, no id; name is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find a testimonial block element in the testimonials section",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class TestimonyBlock--i9j0k1 only (first testimonial, Priya Sharma); no aria-label, no data-testid, no id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the submit button in the bottom contact/sales form",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Submit contact form' in the contact section; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the terms-of-service checkbox in the trial signup form",
+      "signal_attrs": ["name", "id"],
+      "expected_stable_signal": "input[type=checkbox] with name='terms_agree'; no aria-label, no id on the input itself (id is on the label); name is the sole stable signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the Enterprise pricing card container",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class PricingCard--f6g7h8 (Enterprise tier, third pricing card); no aria-label, no data-testid, no id on the container; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

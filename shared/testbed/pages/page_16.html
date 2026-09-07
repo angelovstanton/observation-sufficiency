@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Centre – NovaCare Support</title>
+  <style>
+    :root{--brand:#0f62fe;--brand-dark:#002d9c;--text:#161616;--muted:#6f6f6f;--border:#e0e0e0;--bg:#f4f4f4;--card:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+    header{background:var(--brand-dark);color:#fff;padding:0 24px}
+    .header-top{height:48px;display:flex;align-items:center;gap:16px}
+    .header-top .logo{color:#fff;font-size:16px;font-weight:700;text-decoration:none;letter-spacing:-.3px}
+    .header-nav{display:flex;gap:0;margin-left:32px}
+    .header-nav a{color:rgba(255,255,255,.7);text-decoration:none;font-size:13px;padding:0 12px;height:48px;display:flex;align-items:center;border-bottom:2px solid transparent}
+    .header-nav a:hover,.header-nav a.active{color:#fff;border-bottom-color:#fff}
+    .header-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+    .header-right a{color:rgba(255,255,255,.75);font-size:13px;text-decoration:none}
+    .hero{background:var(--brand);padding:40px 24px;text-align:center}
+    .hero h1{color:#fff;font-size:28px;font-weight:700;margin-bottom:8px}
+    .hero p{color:rgba(255,255,255,.8);font-size:15px;margin-bottom:20px}
+    .search-box{max-width:600px;margin:0 auto;display:flex;gap:0;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+    .HelpSearch--b2c3d4{flex:1;height:48px;border:none;padding:0 16px;font-size:15px;border-radius:4px 0 0 4px}
+    .btn-search{background:#fff;color:var(--brand);border:none;height:48px;padding:0 20px;font-size:15px;font-weight:700;cursor:pointer;border-radius:0 4px 4px 0}
+    .content{max-width:1040px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:1fr 260px;gap:24px}
+    .main-col{display:flex;flex-direction:column;gap:24px}
+    .side-col{display:flex;flex-direction:column;gap:16px}
+    .cat-nav{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+    .cat-nav-title{padding:12px 16px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);border-bottom:1px solid var(--border);background:#f9f9f9}
+    .cat-nav a{display:flex;align-items:center;gap:10px;padding:11px 16px;text-decoration:none;color:var(--text);font-size:13px;border-bottom:1px solid var(--border)}
+    .cat-nav a:last-child{border-bottom:none}
+    .cat-nav a:hover{background:#f5f5f5}
+    .cat-nav a.active{background:#edf4ff;color:var(--brand);font-weight:600}
+    .cat-icon{font-size:16px;flex-shrink:0}
+    .section-title{font-size:18px;font-weight:700;color:var(--brand-dark);margin-bottom:16px}
+    .articles-list{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+    .ArticleCard--e5f6g7{display:flex;align-items:flex-start;gap:12px;padding:16px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text)}
+    .ArticleCard--e5f6g7:last-child{border-bottom:none}
+    .ArticleCard--e5f6g7:hover{background:#f5f5f5}
+    .art-icon{font-size:18px;flex-shrink:0;margin-top:2px}
+    .art-body{flex:1}
+    .art-title{font-size:14px;font-weight:600;color:var(--brand);margin-bottom:3px}
+    .art-excerpt{font-size:12px;color:var(--muted);line-height:1.5}
+    .art-meta{font-size:11px;color:#aaa;margin-top:4px}
+    .HelpRating--f3g4h5{padding:12px 16px;background:#f9f9f9;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+    .rating-btn{background:none;border:1px solid var(--border);padding:4px 12px;border-radius:4px;font-size:12px;cursor:pointer}
+    .callback-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:20px}
+    .callback-card h3{font-size:15px;font-weight:700;margin-bottom:4px}
+    .callback-card p{font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.5}
+    .CallbackForm--j0k1l2{width:100%;height:36px;border:1px solid var(--border);border-radius:4px;padding:0 10px;font-size:13px;margin-bottom:8px}
+    .btn-callback{width:100%;padding:9px;background:var(--brand);color:#fff;border:none;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer}
+    .popular-card{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+    .popular-card-title{padding:12px 16px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);border-bottom:1px solid var(--border);background:#f9f9f9}
+    .popular-list a{display:block;padding:10px 16px;font-size:13px;color:var(--brand);text-decoration:none;border-bottom:1px solid var(--border)}
+    .popular-list a:last-child{border-bottom:none}
+    .popular-list a:hover{background:#f5f5f5}
+    .contact-banner{background:#fff;border:1px solid var(--border);border-radius:6px;padding:16px;text-align:center}
+    .contact-banner p{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .HelpCta--c8d9e0{display:inline-block;text-decoration:none;background:var(--brand);color:#fff;padding:8px 18px;border-radius:4px;font-size:13px;font-weight:600}
+    .chat-launcher{position:fixed;bottom:24px;right:24px;z-index:200}
+    chat-widget{display:block}
+    footer{background:#262626;color:#c6c6c6;padding:28px 24px;margin-top:40px}
+    .footer-inner{max-width:1040px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;font-size:12px}
+    .footer-col h4{color:#fff;font-size:12px;font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+    .footer-col a{display:block;color:#c6c6c6;text-decoration:none;margin-bottom:6px}
+    .footer-bottom{max-width:1040px;margin:20px auto 0;padding-top:16px;border-top:1px solid #393939;font-size:11px;color:#6f6f6f}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_16.truth.json -->
+
+<header>
+  <div class="header-top">
+    <a class="logo" href="/">NovaCare</a>
+    <nav class="header-nav">
+      <a href="/help" class="active">Help Centre</a>
+      <a href="/community">Community</a>
+      <a href="/status">System Status</a>
+      <a href="/training">Training</a>
+    </nav>
+    <div class="header-right">
+      <a href="/account">My Account</a>
+      <a href="/signin">Sign in</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>How can we help?</h1>
+  <p>Search our knowledge base or browse articles by category below.</p>
+  <div class="search-box">
+    <input
+      id="help-search"
+      data-oracle-id="t_01"
+      class="HelpSearch--b2c3d4"
+      type="search"
+      aria-label="Search for help articles"
+      placeholder="Search articles, guides, FAQs…">
+    <button
+      type="button"
+      class="btn-search"
+      data-oracle-id="t_06"
+      aria-label="Submit help search">Search</button>
+  </div>
+</div>
+
+<div class="content">
+  <div class="main-col">
+
+    <div>
+      <div class="section-title">Getting Started</div>
+      <div class="articles-list">
+
+        <!-- t_02: first article link -->
+        <a
+          href="/help/articles/getting-started-overview"
+          data-testid="article-card-001"
+          data-oracle-id="t_02"
+          class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128218;</span>
+          <div class="art-body">
+            <div class="art-title">Getting started with NovaCare — a complete overview</div>
+            <div class="art-excerpt">Learn how to set up your account, configure your team, and get productive in your first week.</div>
+            <div class="art-meta">Updated 3 days ago &bull; 8 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/invite-team-members" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128101;</span>
+          <div class="art-body">
+            <div class="art-title">How to invite and manage team members</div>
+            <div class="art-excerpt">Add colleagues, assign roles, and control access permissions across your organisation.</div>
+            <div class="art-meta">Updated 1 week ago &bull; 5 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/configure-notifications" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128276;</span>
+          <div class="art-body">
+            <div class="art-title">Configuring notifications and alerts</div>
+            <div class="art-excerpt">Choose which events trigger notifications and how they are delivered across channels.</div>
+            <div class="art-meta">Updated 2 weeks ago &bull; 4 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/data-import-guide" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128190;</span>
+          <div class="art-body">
+            <div class="art-title">Importing existing data into NovaCare</div>
+            <div class="art-excerpt">Step-by-step guide for CSV imports, API migrations, and third-party integrations.</div>
+            <div class="art-meta">Updated 3 weeks ago &bull; 12 min read</div>
+          </div>
+        </a>
+
+        <!-- t_04: NONE — helpfulness rating widget (volatile class only) -->
+        <div class="HelpRating--f3g4h5" data-oracle-id="t_04">
+          Was this section helpful?
+          <button class="rating-btn" type="button">&#128077; Yes</button>
+          <button class="rating-btn" type="button">&#128078; No</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Account &amp; Billing</div>
+      <div class="articles-list">
+
+        <a href="/help/articles/manage-subscription" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128179;</span>
+          <div class="art-body">
+            <div class="art-title">Managing your subscription and plan</div>
+            <div class="art-excerpt">Upgrade, downgrade, or cancel your NovaCare plan at any time from your billing settings.</div>
+            <div class="art-meta">Updated 1 day ago &bull; 6 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/invoices-receipts" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128203;</span>
+          <div class="art-body">
+            <div class="art-title">Downloading invoices and receipts</div>
+            <div class="art-excerpt">Access all your past invoices and receipts from the Billing section of account settings.</div>
+            <div class="art-meta">Updated 5 days ago &bull; 3 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/payment-methods" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128181;</span>
+          <div class="art-body">
+            <div class="art-title">Adding and updating payment methods</div>
+            <div class="art-excerpt">Keep your payment details current to avoid service interruptions.</div>
+            <div class="art-meta">Updated 2 weeks ago &bull; 4 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/tax-settings" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128196;</span>
+          <div class="art-body">
+            <div class="art-title">VAT and tax settings for EU customers</div>
+            <div class="art-excerpt">Enter your VAT number and configure tax settings for compliant billing across the EU.</div>
+            <div class="art-meta">Updated 1 month ago &bull; 5 min read</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Troubleshooting</div>
+      <div class="articles-list">
+
+        <a href="/help/articles/login-issues" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#128274;</span>
+          <div class="art-body">
+            <div class="art-title">I can't log in — what should I do?</div>
+            <div class="art-excerpt">Common causes for login failures and how to resolve them quickly.</div>
+            <div class="art-meta">Updated 2 days ago &bull; 4 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/slow-performance" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#9203;</span>
+          <div class="art-body">
+            <div class="art-title">The app feels slow — performance troubleshooting</div>
+            <div class="art-excerpt">Steps to diagnose and fix slowness, including cache clearing and browser compatibility.</div>
+            <div class="art-meta">Updated 1 week ago &bull; 7 min read</div>
+          </div>
+        </a>
+
+        <a href="/help/articles/missing-data" class="ArticleCard--e5f6g7">
+          <span class="art-icon">&#10067;</span>
+          <div class="art-body">
+            <div class="art-title">Data appears to be missing or out of date</div>
+            <div class="art-excerpt">How to check sync status, force a refresh, and escalate to support if needed.</div>
+            <div class="art-meta">Updated 3 days ago &bull; 5 min read</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="side-col">
+
+    <!-- Category navigation -->
+    <div class="cat-nav">
+      <div class="cat-nav-title">Browse by category</div>
+      <!-- t_03: Account & Billing nav link -->
+      <a
+        href="/help/category/account-billing"
+        data-oracle-id="t_03"
+        aria-label="View Account and Billing articles"
+        class="active">
+        <span class="cat-icon">&#128179;</span>Account &amp; Billing
+      </a>
+      <a href="/help/category/getting-started">
+        <span class="cat-icon">&#128640;</span>Getting Started
+      </a>
+      <a href="/help/category/integrations">
+        <span class="cat-icon">&#128268;</span>Integrations
+      </a>
+      <a href="/help/category/api">
+        <span class="cat-icon">&#128296;</span>API &amp; Webhooks
+      </a>
+      <a href="/help/category/security">
+        <span class="cat-icon">&#128272;</span>Security &amp; Compliance
+      </a>
+      <a href="/help/category/data">
+        <span class="cat-icon">&#128202;</span>Data &amp; Analytics
+      </a>
+      <a href="/help/category/troubleshooting">
+        <span class="cat-icon">&#9881;</span>Troubleshooting
+      </a>
+    </div>
+
+    <!-- Popular articles -->
+    <div class="popular-card">
+      <div class="popular-card-title">Most viewed this week</div>
+      <div class="popular-list">
+        <a href="/help/articles/reset-password">Reset your password</a>
+        <a href="/help/articles/two-factor-auth">Set up two-factor authentication</a>
+        <a href="/help/articles/export-data">Export your data</a>
+        <a href="/help/articles/api-keys">Generate an API key</a>
+        <a href="/help/articles/usage-limits">Understanding usage limits</a>
+      </div>
+    </div>
+
+    <!-- Callback form -->
+    <div class="callback-card">
+      <h3>Request a callback</h3>
+      <p>Leave your email and our team will get in touch within 2 business hours.</p>
+      <input
+        class="CallbackForm--j0k1l2"
+        type="email"
+        data-oracle-id="t_07"
+        placeholder="Your email address">
+      <button class="btn-callback" type="button">Request callback</button>
+    </div>
+
+    <!-- Contact us -->
+    <div class="contact-banner">
+      <p>Still need help? Our support team is available 24/7.</p>
+      <!-- t_05: contact us link (href sole stable signal) -->
+      <a
+        href="/contact"
+        data-oracle-id="t_05"
+        class="HelpCta--c8d9e0">Contact us</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Fixed chat widget launcher -->
+<div class="chat-launcher">
+  <chat-widget id="chat-widget-n4o5p6"></chat-widget>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="/features">Features</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/changelog">Changelog</a>
+      <a href="/roadmap">Roadmap</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="/help">Help Centre</a>
+      <a href="/community">Community</a>
+      <a href="/status">Status</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/careers">Careers</a>
+      <a href="/press">Press</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="/cookies">Cookie Policy</a>
+      <a href="/security">Security</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 NovaCare, Inc. All rights reserved.</div>
+</footer>
+
+<script>
+customElements.define('chat-widget', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}' +
+      '.launcher{width:56px;height:56px;border-radius:50%;background:#0f62fe;color:#fff;border:none;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(15,98,254,.4)}' +
+      '.panel{position:absolute;bottom:68px;right:0;width:320px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.15);overflow:hidden}' +
+      '.panel-header{background:#0f62fe;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}' +
+      '.panel-title{color:#fff;font-size:14px;font-weight:700}' +
+      '.panel-sub{color:rgba(255,255,255,.8);font-size:12px;margin-top:2px}' +
+      '.ChatClose--m4n5o6{background:none;border:none;color:rgba(255,255,255,.8);cursor:pointer;font-size:18px;line-height:1;padding:0}' +
+      '.panel-body{padding:16px}' +
+      '.agent-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}' +
+      '.agent-avatar{width:36px;height:36px;border-radius:50%;background:#e0f4ff;display:flex;align-items:center;justify-content:center;font-size:18px}' +
+      '.agent-info{font-size:12px;color:#6f6f6f}' +
+      '.bubble{background:#f4f4f4;border-radius:0 8px 8px 8px;padding:10px 12px;font-size:13px;color:#161616;line-height:1.5;margin-bottom:12px}' +
+      '.input-row{display:flex;gap:8px;align-items:center;border-top:1px solid #e0e0e0;padding-top:12px}' +
+      '.ChatInput{flex:1;height:36px;border:1px solid #e0e0e0;border-radius:4px;padding:0 10px;font-size:13px}' +
+      '.send-btn{background:#0f62fe;color:#fff;border:none;padding:0 14px;height:36px;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer}' +
+      '.ChatBtn--h8i9j0{display:block;width:100%;padding:12px;background:#0f62fe;color:#fff;border:none;border-radius:4px;font-size:14px;font-weight:700;cursor:pointer;margin-top:8px}' +
+      '</style>' +
+      '<button class="launcher" aria-label="Open chat support">&#128172;</button>' +
+      '<div class="panel">' +
+        '<div class="panel-header">' +
+          '<div>' +
+            '<div class="panel-title">NovaCare Support</div>' +
+            '<div class="panel-sub">Typically replies in &lt;2 min</div>' +
+          '</div>' +
+          '<button' +
+            ' class="ChatClose--m4n5o6"' +
+            ' data-oracle-id="t_10"' +
+            ' type="button"' +
+            ' aria-hidden="true"' +
+          '>&#10005;</button>' +
+        '</div>' +
+        '<div class="panel-body">' +
+          '<div class="agent-row">' +
+            '<div class="agent-avatar">&#129302;</div>' +
+            '<div class="agent-info"><strong>Nova</strong><br>Support Agent &bull; Online</div>' +
+          '</div>' +
+          '<div class="bubble">Hi there! How can I help you today? You can chat with me directly or I can connect you to a human agent.</div>' +
+          '<button' +
+            ' class="ChatBtn--h8i9j0"' +
+            ' data-oracle-id="t_08"' +
+            ' type="button"' +
+            ' aria-label="Start a live chat session"' +
+          '>Chat with a human agent</button>' +
+          '<div class="input-row" style="margin-top:12px">' +
+            '<input' +
+              ' class="ChatInput"' +
+              ' data-testid="chat-input"' +
+              ' data-oracle-id="t_09"' +
+              ' type="text"' +
+              ' aria-label="Type your support message"' +
+              ' placeholder="Type a message…">' +
+            '<button class="send-btn" type="button">Send</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!-- targets: see pages/page_08.truth.json -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Laptop Search Results — TechShop</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,sans-serif;color:#222;background:#f4f5f7}
+.promo-bar{background:#e94560;color:#fff;padding:4px 16px;font-size:12px;display:flex;gap:24px;justify-content:center}
+.sticky-cart{position:fixed;right:0;top:50%;transform:translateY(-50%);background:#0073e6;color:#fff;padding:10px 5px;border-radius:4px 0 0 4px;font-size:11px;writing-mode:vertical-rl;cursor:pointer;z-index:100}
+.sticky-cart span{display:block;text-align:center}
+.site-header{background:#1a1a2e;color:#fff}
+.main-nav{display:flex;align-items:center;padding:8px 16px;gap:12px;flex-wrap:wrap}
+.nav-logo{font-size:22px;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap}
+.SearchBar--a3f2c1{flex:1;min-width:200px;display:flex;border-radius:4px;overflow:hidden}
+.SearchBar--a3f2c1 input{flex:1;padding:9px 12px;border:none;font-size:14px;outline:none}
+.SearchBar--a3f2c1 .search-btn{padding:9px 18px;background:#e94560;color:#fff;border:none;cursor:pointer;font-size:14px;font-weight:600}
+.nav-actions{display:flex;gap:6px;flex-shrink:0}
+.nav-link{color:#fff;text-decoration:none;padding:5px 10px;border:1px solid rgba(255,255,255,.3);border-radius:3px;font-size:12px}
+.cart-badge{background:#e94560;color:#fff;border-radius:10px;padding:1px 5px;font-size:10px;margin-left:3px}
+.cat-nav{background:#16213e;padding:0 16px;display:flex;gap:0;overflow-x:auto}
+.cat-nav a{color:#bbb;text-decoration:none;padding:9px 13px;font-size:13px;white-space:nowrap;display:inline-block}
+.cat-nav a.active,.cat-nav a:hover{color:#fff;background:#e94560}
+.breadcrumb{padding:8px 16px;font-size:12px;color:#666;background:#fff;border-bottom:1px solid #eee}
+.breadcrumb a{color:#0073e6;text-decoration:none}
+.page-wrap{display:flex;gap:0;max-width:1440px;margin:0 auto;padding:12px}
+.sidebar{width:230px;flex-shrink:0;margin-right:12px}
+.filter-panel{background:#fff;border:1px solid #ddd;border-radius:4px;padding:11px;margin-bottom:10px}
+.filter-panel h3{font-size:13px;font-weight:600;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #eee}
+.filter-panel ul{list-style:none}
+.filter-panel li{padding:3px 0;display:flex;align-items:center;gap:6px;font-size:12px}
+.price-inputs{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.price-inputs label{font-size:12px;color:#555}
+.price-inputs input{width:78px;padding:4px 6px;border:1px solid #ccc;border-radius:3px;font-size:12px}
+.apply-btn{padding:4px 10px;background:#0073e6;color:#fff;border:none;border-radius:3px;cursor:pointer;font-size:12px}
+.price-presets{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.FilterChip--4d3e2f{background:#e8f0ff;border:1px solid #99b3ff;border-radius:12px;padding:2px 9px;font-size:11px;cursor:pointer;white-space:nowrap}
+.FilterChip--4d3e2f.active{background:#0073e6;color:#fff;border-color:#0073e6}
+.SidebarFilter--2b3c4d{background:#fff;border:1px solid #ddd;border-radius:4px;padding:10px;text-align:center}
+.clear-filters-btn{padding:7px 14px;background:#f5f5f5;border:1px solid #ccc;border-radius:3px;cursor:pointer;font-size:13px;width:100%}
+.main-content{flex:1;min-width:0}
+.results-bar{background:#fff;border:1px solid #ddd;border-radius:4px;padding:9px 13px;margin-bottom:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ResultCount--6e5f4d{font-size:13px;color:#444}
+.active-chips{display:flex;gap:4px;flex-wrap:wrap}
+.sort-wrap{display:flex;align-items:center;gap:6px;margin-left:auto;font-size:13px}
+.SortSelect--7c6b5a{padding:5px 8px;border:1px solid #ccc;border-radius:3px;font-size:13px}
+.view-toggle{display:flex;gap:3px}
+.view-toggle button{padding:5px 9px;border:1px solid #ccc;cursor:pointer;font-size:13px;background:#fff}
+.view-toggle .active{background:#0073e6;color:#fff;border-color:#0073e6}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-bottom:16px}
+.ProductCard--b4e7d9{background:#fff;border:1px solid #ddd;border-radius:4px;overflow:hidden}
+.ProductCard--b4e7d9:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.ci{position:relative}
+.ci img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#ececec}
+.badge-area{position:absolute;top:6px;left:6px;display:flex;flex-direction:column;gap:3px}
+.badge{font-size:10px;padding:2px 5px;border-radius:2px;font-weight:700;color:#fff}
+.badge-new{background:#28a745}
+.badge-sale{background:#dc3545}
+.qv{position:absolute;bottom:6px;right:6px;font-size:11px;padding:3px 7px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:2px;cursor:pointer}
+.cb{padding:9px}
+.brand-row{display:flex;justify-content:space-between;font-size:11px;color:#888;margin-bottom:3px}
+.title{font-size:13px;line-height:1.35;margin-bottom:3px}
+.title-link{color:#0073e6;text-decoration:none}
+.sku{font-size:11px;color:#aaa;margin-bottom:5px}
+.rating{display:flex;align-items:center;gap:4px;margin-bottom:5px;font-size:12px}
+.stars-wrap{color:#f5a623;letter-spacing:1px}
+.rc{color:#777;font-size:11px}
+.rl{font-size:11px;color:#0073e6;text-decoration:none}
+.tags{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:5px}
+.tag{font-size:10px;background:#f0f0f0;border-radius:2px;padding:1px 5px;color:#666}
+.sp{list-style:none;font-size:11px;color:#555;margin-bottom:7px}
+.sp li{display:flex;padding:1px 0;gap:5px}
+.sk{color:#999;min-width:55px;flex-shrink:0}
+.sv{font-weight:500}
+.ps{margin-bottom:6px}
+.price-now{font-size:17px;font-weight:700;color:#e94560}
+.price-was{font-size:12px;color:#aaa;text-decoration:line-through;margin-left:5px}
+.price-save{font-size:11px;color:#28a745;margin-left:4px}
+.delivery{font-size:11px;color:#28a745;margin-top:2px}
+.avail{font-size:11px;margin-bottom:6px}
+.av-icon{color:#28a745;margin-right:3px}
+.av-text{color:#444}
+.highlights{list-style:none;font-size:11px;color:#555;margin-bottom:7px;border-top:1px solid #f0f0f0;padding-top:6px}
+.highlights li{display:flex;align-items:center;gap:5px;padding:1px 0}
+.hi-i{font-size:12px;width:16px;text-align:center}
+.hi-t{}
+.ca{padding:0 9px 8px}
+.d-md-none{}
+.d-none.d-md-block{}
+.BtnCart--e8f9a0{width:100%;padding:7px;background:#0073e6;color:#fff;border:none;border-radius:3px;cursor:pointer;font-size:13px;font-weight:600;margin-bottom:5px}
+.BtnCart--e8f9a0:hover{background:#005bb5}
+.sa{display:flex;gap:5px}
+.WishlistBtn--c8a1f0{flex:1;padding:5px;background:#fff;border:1px solid #ddd;border-radius:3px;cursor:pointer;font-size:17px;line-height:1}
+.share-btn{flex:1;padding:5px;background:#fff;border:1px solid #ddd;border-radius:3px;cursor:pointer;font-size:13px}
+.cf{padding:6px 9px;border-top:1px solid #f0f0f0}
+.compare-wrap{display:flex;align-items:center;gap:4px;font-size:11px;margin-bottom:5px;cursor:pointer}
+.compare-cb{cursor:pointer}
+.swatches{display:flex;gap:3px;margin-bottom:5px}
+.sw{width:13px;height:13px;border-radius:50%;border:1px solid #bbb;display:inline-block;cursor:pointer}
+.sw-silver{background:#c0c0c0}.sw-black{background:#222}.sw-blue{background:#2855c8}.sw-red{background:#c82828}
+.stock-bar{height:3px;background:#eee;border-radius:2px}
+.stock-fill{height:100%;background:#28a745;border-radius:2px}
+.pagination{display:flex;justify-content:center;gap:4px;padding:16px 0 8px}
+.Pagination--1a9b8c{padding:6px 13px;background:#fff;border:1px solid #ddd;border-radius:3px;cursor:pointer;font-size:13px}
+.Pagination--1a9b8c.active{background:#0073e6;color:#fff;border-color:#0073e6}
+.Pagination--1a9b8c:disabled{color:#bbb;cursor:default}
+.pag-ellipsis{padding:6px 4px;font-size:13px;color:#888;line-height:1.8}
+.site-footer{background:#1a1a2e;color:#ccc;padding:28px 16px 16px;margin-top:24px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1440px;margin:0 auto 16px}
+.footer-col h4{color:#fff;font-size:13px;font-weight:600;margin-bottom:10px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:5px}
+.footer-col a{color:#aaa;text-decoration:none;font-size:12px}
+.footer-col a:hover{color:#fff}
+.footer-bottom{border-top:1px solid #333;padding-top:12px;text-align:center;font-size:11px;color:#777;max-width:1440px;margin:0 auto}
+</style>
+</head>
+<body>
+
+<div id="promo-banner--f1e2d3" class="promo-bar">
+  <span>FREE next-day delivery on orders over £50</span>
+  <span>Use code TECH10 for 10% off your first order</span>
+  <span>Price match guarantee — we beat any like-for-like quote</span>
+</div>
+
+<aside id="sticky-cart--b2c3d4" class="sticky-cart" aria-label="Cart">
+  <span class="sc-icon">🛒</span>
+  <span class="sc-count">0</span>
+  <span class="sc-total">£0</span>
+</aside>
+
+<header class="site-header">
+  <nav class="main-nav" aria-label="Primary navigation">
+    <a class="nav-logo" href="/">TechShop</a>
+    <div class="SearchBar--a3f2c1">
+      <!-- t_01: input[aria-label="Search products"] - signals: name, aria-label -->
+      <input type="search" name="q" aria-label="Search products"
+             placeholder="Search laptops, phones, tablets…" data-oracle-id="t_01">
+      <button class="search-btn" type="submit">Search</button>
+    </div>
+    <div class="nav-actions">
+      <a href="/account" class="nav-link">Account</a>
+      <a href="/wishlist" class="nav-link">Wishlist</a>
+      <a href="/cart" class="nav-link nav-cart">Cart<span class="cart-badge">0</span></a>
+      <a href="/compare" class="nav-link">Compare</a>
+    </div>
+  </nav>
+  <nav class="cat-nav" aria-label="Category navigation">
+    <a href="/laptops" class="active">Laptops</a>
+    <a href="/desktops">Desktops</a>
+    <a href="/phones">Phones</a>
+    <a href="/tablets">Tablets</a>
+    <a href="/monitors">Monitors</a>
+    <a href="/accessories">Accessories</a>
+    <a href="/gaming">Gaming</a>
+    <a href="/networking">Networking</a>
+    <a href="/storage">Storage</a>
+    <a href="/audio">Audio</a>
+    <a href="/cameras">Cameras</a>
+    <a href="/deals">Deals</a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> &rsaquo;
+  <a href="/laptops">Laptops</a> &rsaquo;
+  <span>Search results for &ldquo;laptops&rdquo;</span>
+</div>
+
+<div class="page-wrap">
+  <aside class="sidebar">
+
+    <div class="filter-panel">
+      <h3>Category</h3>
+      <ul>
+        <!-- t_02: li[name="category-laptops"] - signals: name -->
+        <li><label><input type="checkbox" name="category-laptops" data-oracle-id="t_02">Laptops (2,340)</label></li>
+        <li><input type="checkbox" id="cat-chromebooks" name="category-chromebooks"><label for="cat-chromebooks">Chromebooks (432)</label></li>
+        <li><input type="checkbox" id="cat-2in1" name="category-2in1"><label for="cat-2in1">2-in-1s (318)</label></li>
+        <li><input type="checkbox" id="cat-gaming" name="category-gaming"><label for="cat-gaming">Gaming Laptops (876)</label></li>
+        <li><input type="checkbox" id="cat-ultrabook" name="category-ultrabook"><label for="cat-ultrabook">Ultrabooks (524)</label></li>
+        <li><input type="checkbox" id="cat-business" name="category-business"><label for="cat-business">Business (689)</label></li>
+        <li><input type="checkbox" id="cat-workstation" name="category-workstation"><label for="cat-workstation">Workstations (145)</label></li>
+        <li><input type="checkbox" id="cat-budget" name="category-budget"><label for="cat-budget">Budget under £500 (412)</label></li>
+        <li><input type="checkbox" id="cat-premium" name="category-premium"><label for="cat-premium">Premium (234)</label></li>
+        <li><input type="checkbox" id="cat-refurb" name="category-refurbished"><label for="cat-refurb">Refurbished (167)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Price</h3>
+      <div class="price-inputs">
+        <label>Min
+        <!-- t_03: input[aria-label="Minimum price"] - signals: name, aria-label -->
+        <input type="number" name="price_min" aria-label="Minimum price"
+               placeholder="£0" min="0" max="10000" data-oracle-id="t_03"></label>
+        <label>Max
+        <input type="number" name="price_max" aria-label="Maximum price"
+               placeholder="£5000" min="0" max="10000"></label>
+        <button type="button" class="apply-btn">Apply</button>
+      </div>
+      <div class="price-presets">
+        <button type="button" class="FilterChip--4d3e2f">Under £500</button>
+        <button type="button" class="FilterChip--4d3e2f">£500–£1000</button>
+        <button type="button" class="FilterChip--4d3e2f">£1000–£2000</button>
+        <button type="button" class="FilterChip--4d3e2f">Over £2000</button>
+      </div>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Brand</h3>
+      <ul>
+        <li><input type="checkbox" id="br-acer" name="brand-acer"><label for="br-acer">Acer (312)</label></li>
+        <li><input type="checkbox" id="br-asus" name="brand-asus"><label for="br-asus">ASUS (289)</label></li>
+        <li><input type="checkbox" id="br-dell" name="brand-dell"><label for="br-dell">Dell (445)</label></li>
+        <li><input type="checkbox" id="br-hp" name="brand-hp"><label for="br-hp">HP (378)</label></li>
+        <li><input type="checkbox" id="br-lenovo" name="brand-lenovo"><label for="br-lenovo">Lenovo (521)</label></li>
+        <li><input type="checkbox" id="br-msi" name="brand-msi"><label for="br-msi">MSI (198)</label></li>
+        <li><input type="checkbox" id="br-razer" name="brand-razer"><label for="br-razer">Razer (87)</label></li>
+        <li><input type="checkbox" id="br-samsung" name="brand-samsung"><label for="br-samsung">Samsung (156)</label></li>
+        <li><input type="checkbox" id="br-lg" name="brand-lg"><label for="br-lg">LG (134)</label></li>
+        <li><input type="checkbox" id="br-huawei" name="brand-huawei"><label for="br-huawei">Huawei (92)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>RAM</h3>
+      <ul>
+        <li><input type="checkbox" id="ram-8" name="ram-8gb"><label for="ram-8">8 GB (412)</label></li>
+        <li><input type="checkbox" id="ram-16" name="ram-16gb"><label for="ram-16">16 GB (789)</label></li>
+        <li><input type="checkbox" id="ram-32" name="ram-32gb"><label for="ram-32">32 GB (456)</label></li>
+        <li><input type="checkbox" id="ram-64" name="ram-64gb"><label for="ram-64">64 GB (123)</label></li>
+        <li><input type="checkbox" id="ram-128" name="ram-128gb"><label for="ram-128">128 GB (34)</label></li>
+        <li><input type="checkbox" id="ram-other" name="ram-other"><label for="ram-other">Other (56)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Screen Size</h3>
+      <ul>
+        <li><input type="checkbox" id="scr-13" name="screen-13in"><label for="scr-13">13&quot; (234)</label></li>
+        <li><input type="checkbox" id="scr-14" name="screen-14in"><label for="scr-14">14&quot; (345)</label></li>
+        <li><input type="checkbox" id="scr-156" name="screen-156in"><label for="scr-156">15.6&quot; (678)</label></li>
+        <li><input type="checkbox" id="scr-16" name="screen-16in"><label for="scr-16">16&quot; (289)</label></li>
+        <li><input type="checkbox" id="scr-17" name="screen-17in"><label for="scr-17">17&quot; (156)</label></li>
+        <li><input type="checkbox" id="scr-other" name="screen-other"><label for="scr-other">Other (78)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Storage</h3>
+      <ul>
+        <li><input type="checkbox" id="ssd-256" name="storage-256gb"><label for="ssd-256">256 GB SSD (312)</label></li>
+        <li><input type="checkbox" id="ssd-512" name="storage-512gb"><label for="ssd-512">512 GB SSD (567)</label></li>
+        <li><input type="checkbox" id="ssd-1tb" name="storage-1tb"><label for="ssd-1tb">1 TB SSD (445)</label></li>
+        <li><input type="checkbox" id="ssd-2tb" name="storage-2tb"><label for="ssd-2tb">2 TB SSD (189)</label></li>
+        <li><input type="checkbox" id="hdd-1tb" name="storage-hdd-1tb"><label for="hdd-1tb">1 TB HDD (78)</label></li>
+        <li><input type="checkbox" id="hdd-2tb" name="storage-hdd-2tb"><label for="hdd-2tb">2 TB HDD (45)</label></li>
+        <li><input type="checkbox" id="sto-other" name="storage-other"><label for="sto-other">Other (67)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Operating System</h3>
+      <ul>
+        <li><input type="checkbox" id="os-w11h" name="os-windows11-home"><label for="os-w11h">Windows 11 Home (987)</label></li>
+        <li><input type="checkbox" id="os-w11p" name="os-windows11-pro"><label for="os-w11p">Windows 11 Pro (456)</label></li>
+        <li><input type="checkbox" id="os-w10" name="os-windows10"><label for="os-w10">Windows 10 (234)</label></li>
+        <li><input type="checkbox" id="os-mac" name="os-macos"><label for="os-mac">macOS (234)</label></li>
+        <li><input type="checkbox" id="os-chrome" name="os-chromeos"><label for="os-chrome">Chrome OS (89)</label></li>
+        <li><input type="checkbox" id="os-linux" name="os-linux"><label for="os-linux">Linux / FreeDOS (67)</label></li>
+      </ul>
+    </div>
+
+    <div class="filter-panel">
+      <h3>Customer Rating</h3>
+      <ul>
+        <li><input type="radio" id="rat-5" name="min-rating" value="5"><label for="rat-5">&#9733;&#9733;&#9733;&#9733;&#9733; only (567)</label></li>
+        <li><input type="radio" id="rat-4" name="min-rating" value="4"><label for="rat-4">&#9733;&#9733;&#9733;&#9733;&#9734; &amp; up (1,234)</label></li>
+        <li><input type="radio" id="rat-3" name="min-rating" value="3"><label for="rat-3">&#9733;&#9733;&#9733;&#9734;&#9734; &amp; up (1,789)</label></li>
+        <li><input type="radio" id="rat-2" name="min-rating" value="2"><label for="rat-2">&#9733;&#9733;&#9734;&#9734;&#9734; &amp; up (2,012)</label></li>
+        <li><input type="radio" id="rat-1" name="min-rating" value="1"><label for="rat-1">&#9733;&#9734;&#9734;&#9734;&#9734; &amp; up (2,340)</label></li>
+      </ul>
+    </div>
+
+    <div class="SidebarFilter--2b3c4d">
+      <button type="button" class="clear-filters-btn">Clear all filters</button>
+    </div>
+
+  </aside>
+
+  <main class="main-content">
+
+    <div class="results-bar">
+      <!-- t_10: span - NONE, no stable signal -->
+      <span class="ResultCount--6e5f4d" data-oracle-id="t_10">2,340 results for &ldquo;laptops&rdquo;</span>
+      <div class="active-chips">
+        <button type="button" class="FilterChip--4d3e2f active">Laptops &#10005;</button>
+        <button type="button" class="FilterChip--4d3e2f active">In stock &#10005;</button>
+      </div>
+      <div class="sort-wrap">
+        <label>Sort:
+        <!-- t_04: select[aria-label="Sort by"] - signals: name, aria-label -->
+        <select name="sort_by" aria-label="Sort by"
+                class="SortSelect--7c6b5a" data-oracle-id="t_04">
+          <option value="relevance">Relevance</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="newest">Newest First</option>
+        </select></label>
+      </div>
+      <div class="view-toggle">
+        <button type="button" class="active" aria-label="Grid view">&#9783;</button>
+        <button type="button" aria-label="List view">&#8801;</button>
+      </div>
+    </div>
+
+    <div id="products-grid" class="products-grid"></div>
+
+    <nav class="pagination" aria-label="Results pagination">
+      <button type="button" class="Pagination--1a9b8c" aria-label="Previous page" disabled>&#8249; Prev</button>
+      <button type="button" class="Pagination--1a9b8c active" aria-label="Page 1">1</button>
+      <button type="button" class="Pagination--1a9b8c" aria-label="Page 2">2</button>
+      <button type="button" class="Pagination--1a9b8c" aria-label="Page 3">3</button>
+      <span class="pag-ellipsis">&#8230;</span>
+      <button type="button" class="Pagination--1a9b8c" aria-label="Page 47">47</button>
+      <!-- t_09: button[aria-label="Next page"] - signals: aria-label -->
+      <button type="button" class="Pagination--1a9b8c" aria-label="Next page" data-oracle-id="t_09">Next &#8250;</button>
+    </nav>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="/laptops">Laptops</a></li>
+        <li><a href="/desktops">Desktops</a></li>
+        <li><a href="/phones">Phones</a></li>
+        <li><a href="/tablets">Tablets</a></li>
+        <li><a href="/monitors">Monitors</a></li>
+        <li><a href="/accessories">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="/help">Help Centre</a></li>
+        <li><a href="/returns">Returns</a></li>
+        <li><a href="/delivery">Delivery Info</a></li>
+        <li><a href="/warranty">Warranty</a></li>
+        <li><a href="/track">Track Order</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About TechShop</h4>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/press">Press</a></li>
+        <li><a href="/sustainability">Sustainability</a></li>
+        <li><a href="/partners">Partners</a></li>
+        <li><a href="/investors">Investors</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+        <li><a href="/cookies">Cookie Policy</a></li>
+        <li><a href="/accessibility">Accessibility</a></li>
+        <li><a href="/modern-slavery">Modern Slavery</a></li>
+        <li><a href="/sitemap">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 TechShop Ltd. Registered in England &amp; Wales. VAT No. GB 123 4567 89.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var PRODS = [
+    ['ALPHA-500',    'Acer',    799, 999,  1243],
+    ['DELTA-300',    'ASUS',    649, 799,   876],
+    ['ECHO-700',     'Dell',   1099,1299,   654],
+    ['FOXTROT-100',  'HP',      549, 699,   432],
+    ['GULF-400',     'Lenovo',  729, 899,   987],
+    ['HOTEL-600',    'MSI',     999,1199,   345],
+    ['GAMMA-900',    'Razer',  1199,1399,   789],
+    ['INDIA-200',    'Samsung', 699, 849,   567],
+    ['JULIET-800',   'LG',     1049,1249,   234],
+    ['KILO-150',     'Huawei',  499, 599,   678],
+    ['LIMA-450',     'Acer',    749, 899,   456],
+    ['MIKE-750',     'ASUS',   1049,1249,   321],
+    ['NOVEMBER-350', 'Dell',    649, 799,   543],
+    ['OSCAR-650',    'HP',      949,1099,   234],
+    ['BETA-200',     'Lenovo',  769, 899,   891],
+    ['PAPA-550',     'MSI',     879,1079,   432],
+    ['QUEBEC-250',   'Razer',   629, 799,   567],
+    ['ROMEO-850',    'Samsung',1149,1349,   234],
+    ['SIERRA-125',   'LG',      479, 599,   789],
+    ['TANGO-425',    'Huawei',  739, 899,   345],
+    ['UNIFORM-625',  'Acer',    929,1129,   456],
+    ['VICTOR-225',   'ASUS',    619, 749,   678],
+    ['WHISKEY-775',  'Dell',   1079,1279,   234],
+    ['XRAY-375',     'HP',      699, 849,   567],
+    ['YANKEE-575',   'Lenovo',  869,1049,   345],
+    ['ZULU-275',     'MSI',     639, 799,   456],
+    ['ALPHA-600',    'Razer',   949,1149,   234],
+    ['BRAVO-400',    'Samsung', 729, 899,   678],
+    ['CHARLIE-700',  'LG',     1049,1249,   345],
+    ['DELTA-500',    'Huawei',  859,1059,   234],
+    ['ECHO-300',     'Acer',    649, 799,   567],
+    ['FOXTROT-800',  'ASUS',   1099,1299,   234],
+    ['GULF-200',     'Dell',    619, 749,   456],
+    ['HOTEL-900',    'HP',     1249,1449,   123],
+    ['INDIA-100',    'Lenovo',  499, 599,   678],
+    ['JULIET-600',   'MSI',     939,1139,   234],
+    ['KILO-350',     'Razer',   699, 849,   456],
+    ['LIMA-650',     'Samsung', 979,1179,   234],
+    ['MIKE-250',     'LG',      629, 769,   567],
+    ['NOVEMBER-750', 'Huawei', 1049,1249,   123],
+    ['OSCAR-450',    'Acer',    759, 929,   345],
+    ['PAPA-150',     'ASUS',    519, 649,   678],
+    ['QUEBEC-850',   'Dell',   1149,1349,   234],
+    ['ROMEO-325',    'HP',      679, 829,   456],
+    ['SIERRA-725',   'Lenovo', 1009,1209,   234],
+    ['TANGO-225',    'MSI',     619, 779,   567],
+    ['UNIFORM-525',  'Razer',   869,1069,   234],
+    ['VICTOR-825',   'Samsung',1099,1299,   123],
+    ['WHISKEY-125',  'LG',      469, 589,   456],
+    ['XRAY-475',     'Huawei',  779, 949,   234]
+  ];
+
+  var CPUS  = ['Intel Core i5-12450H','Intel Core i7-12700H','Intel Core i9-12900H','AMD Ryzen 5 6600H','AMD Ryzen 7 6800H','AMD Ryzen 9 6900HX','Intel Core i7-1360P','AMD Ryzen 7 7745HX'];
+  var GPUS  = ['Intel Iris Xe','NVIDIA GeForce RTX 3050 Ti','NVIDIA GeForce RTX 3060','NVIDIA GeForce RTX 4060','NVIDIA GeForce RTX 4070','AMD Radeon RX 6600M','AMD Radeon RX 7700S'];
+  var RAMS  = ['8 GB DDR4','16 GB DDR5','32 GB DDR5','16 GB DDR4','32 GB DDR4','64 GB DDR5'];
+  var SSDS  = ['256 GB NVMe SSD','512 GB NVMe SSD','1 TB NVMe SSD','2 TB NVMe SSD','512 GB SSD','1 TB SSD'];
+  var DISPS = ['14" FHD IPS','15.6" FHD 144 Hz','16" QHD 165 Hz','17.3" FHD 240 Hz','13.3" 2K OLED','15.6" 4K OLED'];
+  var BATS  = ['54 Wh','72 Wh','86 Wh','99.9 Wh','65 Wh','80 Wh'];
+  var WGTS  = ['1.3 kg','1.7 kg','2.0 kg','2.4 kg','1.5 kg','1.9 kg'];
+  var OSS   = ['Windows 11 Home','Windows 11 Pro','Windows 11 Home','FreeDOS'];
+  var WIFIS = ['Wi-Fi 6E, BT 5.3','Wi-Fi 6, BT 5.2','Wi-Fi 7, BT 5.4'];
+  var TAGS1 = ['Gaming','Business','Student','Creator','Ultrabook'];
+  var TAGS2 = ['15.6"','14"','16"','13"','17"'];
+  var TAGS3 = ['i7','RTX 4060','Ryzen 7','4K OLED','144 Hz','DDR5','i9'];
+  var HI    = [['&#9889;','Fast-charge (0&ndash;50% in 30 min)'],['&#128274;','Fingerprint reader + IR camera'],['&#9000;','Backlit RGB keyboard']];
+
+  var ORACLES = { 0: {ctaOracle:'t_05', wishOracle:'t_07'}, 6: {linkOracle:'t_08'}, 14: {ctaOracle:'t_06'} };
+
+  function p(arr, n) { return arr[n % arr.length]; }
+  function fmt(n) { return n >= 1000 ? Math.floor(n / 1000) + ',' + ('000' + (n % 1000)).slice(-3) : '' + n; }
+
+  function card(prod, idx) {
+    var slug  = prod[0], brand = prod[1], price = prod[2], was = prod[3], rev = prod[4];
+    var save  = was - price;
+    var savePct = Math.round(save * 100 / was);
+    var n     = idx + 1;
+    var stock = 70 + (n * 13) % 30;
+    var o     = ORACLES[idx] || {};
+    var laO   = o.linkOracle ? ' data-oracle-id="' + o.linkOracle + '"' : '';
+    var caO   = o.ctaOracle  ? ' data-oracle-id="' + o.ctaOracle  + '"' : '';
+    var wiO   = o.wishOracle ? ' data-oracle-id="' + o.wishOracle + '"' : '';
+
+    return '<article class="ProductCard--b4e7d9" data-testid="product-card-' + n + '">'
+      + '<div class="cw">'
+        + '<div class="ci">'
+          + '<img src="/img/p/' + n + '.jpg" alt="' + slug + ' Laptop" loading="lazy">'
+          + '<div class="badge-area">'
+            + '<span class="badge badge-new">New</span>'
+            + '<span class="badge badge-sale">-' + savePct + '%</span>'
+          + '</div>'
+          + '<button class="qv" type="button">Quick view</button>'
+        + '</div>'
+        + '<div class="cb">'
+          + '<div class="brand-row"><span class="brand">' + brand + '</span><span class="model-num">MDL-' + ('00' + n).slice(-3) + '</span></div>'
+          + '<h3 class="title"><a class="title-link" data-testid="product-link-' + slug + '" href="/laptops/' + slug + '"' + laO + '>' + slug + ' Laptop</a></h3>'
+          + '<p class="sku">SKU: LAP-' + ('00' + n).slice(-3) + '</p>'
+          + '<div class="rating"><div class="stars-wrap">&#9733;&#9733;&#9733;&#9733;&#9734;</div>'
+            + '<span class="rc">(' + rev + ')</span>'
+            + '<a class="rl" href="/laptops/' + slug + '/reviews">Reviews</a>'
+          + '</div>'
+          + '<div class="tags">'
+            + '<span class="tag">' + p(TAGS1, n) + '</span>'
+            + '<span class="tag">' + p(TAGS2, n) + '</span>'
+            + '<span class="tag">' + p(TAGS3, n) + '</span>'
+          + '</div>'
+          + '<ul class="sp">'
+            + '<li><span class="sk">CPU</span><span class="sv">'     + p(CPUS, n)  + '</span></li>'
+            + '<li><span class="sk">GPU</span><span class="sv">'     + p(GPUS, n)  + '</span></li>'
+            + '<li><span class="sk">RAM</span><span class="sv">'     + p(RAMS, n)  + '</span></li>'
+            + '<li><span class="sk">Storage</span><span class="sv">' + p(SSDS, n)  + '</span></li>'
+            + '<li><span class="sk">Display</span><span class="sv">' + p(DISPS, n) + '</span></li>'
+            + '<li><span class="sk">Battery</span><span class="sv">' + p(BATS, n)  + '</span></li>'
+            + '<li><span class="sk">Weight</span><span class="sv">'  + p(WGTS, n)  + '</span></li>'
+            + '<li><span class="sk">OS</span><span class="sv">'      + p(OSS, n)   + '</span></li>'
+            + '<li><span class="sk">Wireless</span><span class="sv">'+ p(WIFIS, n) + '</span></li>'
+            + '<li><span class="sk">Warranty</span><span class="sv">'+ (n % 3 === 0 ? '3 years' : n % 2 === 0 ? '2 years' : '1 year') + '</span></li>'
+          + '</ul>'
+          + '<div class="ps">'
+            + '<span class="price-now">&pound;' + fmt(price) + '</span>'
+            + '<del class="price-was">&pound;' + fmt(was) + '</del>'
+            + '<span class="price-save">Save &pound;' + fmt(save) + '</span>'
+            + '<p class="delivery">Free next-day delivery</p>'
+          + '</div>'
+          + '<div class="avail"><span class="av-icon">&#10003;</span><span class="av-text">In stock &mdash; ships today</span></div>'
+          + '<ul class="highlights">'
+            + '<li><span class="hi-i">' + HI[0][0] + '</span><span class="hi-t">' + HI[0][1] + '</span></li>'
+            + '<li><span class="hi-i">' + HI[1][0] + '</span><span class="hi-t">' + HI[1][1] + '</span></li>'
+            + '<li><span class="hi-i">' + HI[2][0] + '</span><span class="hi-t">' + HI[2][1] + '</span></li>'
+          + '</ul>'
+        + '</div>'
+        + '<div class="ca">'
+          + '<div class="cm d-md-none"><button class="BtnCart--e8f9a0 cart-btn" type="button">Add to cart</button></div>'
+          + '<div class="cd d-none d-md-block"><button class="BtnCart--e8f9a0 cart-btn-d" type="button" data-testid="add-to-cart-' + slug + '"' + caO + '>Add to cart</button></div>'
+          + '<div class="sa">'
+            + '<button class="WishlistBtn--c8a1f0" type="button"' + wiO + '>&#9825;</button>'
+            + '<button class="share-btn" type="button">&#8943;</button>'
+          + '</div>'
+        + '</div>'
+        + '<div class="cf">'
+          + '<div class="compare-wrap"><input type="checkbox" class="compare-cb" id="cmp-' + n + '"><label for="cmp-' + n + '">Compare</label></div>'
+          + '<div class="swatches">'
+            + '<span class="sw sw-silver" title="Silver"></span>'
+            + '<span class="sw sw-black" title="Space Black"></span>'
+            + '<span class="sw sw-blue" title="Electric Blue"></span>'
+            + '<span class="sw sw-red" title="Flame Red"></span>'
+          + '</div>'
+          + '<div class="stock-bar"><div class="stock-fill" style="width:' + stock + '%"></div></div>'
+        + '</div>'
+      + '</div>'
+    + '</article>';
+  }
+
+  var html = '';
+  for (var i = 0; i < PRODS.length; i++) html += card(PRODS[i], i);
+  document.getElementById('products-grid').innerHTML = html;
+})();
+</script>
+</body>
+</html>

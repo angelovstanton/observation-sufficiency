@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Insurance Quote – ShieldSure</title>
+  <style>
+    :root{--brand:#005f73;--brand-dark:#003f4e;--accent:#ee9b00;--text:#1c1c1e;--border:#d0d5dd;--bg:#f8f9fc}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--text);background:var(--bg)}
+    header{background:var(--brand);height:60px;display:flex;align-items:center;padding:0 24px;justify-content:space-between}
+    header .logo{color:#fff;font-size:20px;font-weight:800;text-decoration:none}
+    header nav a{color:rgba(255,255,255,.8);text-decoration:none;font-size:14px;margin-left:16px}
+    .hero{background:#fff;border-bottom:1px solid var(--border);padding:32px 24px;text-align:center}
+    .hero h1{font-size:30px;font-weight:800;color:var(--brand-dark);margin-bottom:6px}
+    .hero p{font-size:15px;color:#555;max-width:520px;margin:0 auto 16px}
+    .hero-actions{display:flex;justify-content:center;gap:12px}
+    .btn-start{background:var(--brand);color:#fff;border:none;padding:13px 28px;border-radius:6px;font-size:15px;font-weight:700;cursor:pointer}
+    .btn-save{background:#fff;color:var(--brand);border:2px solid var(--brand);padding:11px 24px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+    .content{max-width:740px;margin:32px auto;padding:0 24px}
+    .trust-bar{background:#fff;border:1px solid var(--border);border-radius:8px;padding:16px 20px;display:flex;gap:20px;align-items:center;margin-bottom:28px;flex-wrap:wrap}
+    .trust-item{font-size:13px;color:#555;display:flex;align-items:center;gap:6px}
+    .trust-icon{color:var(--accent);font-size:18px}
+    quote-wizard{display:block;margin-bottom:32px}
+    .reassurance{background:#fff;border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin-bottom:24px}
+    .reassurance h2{font-size:18px;font-weight:700;color:var(--brand-dark);margin-bottom:12px}
+    .reassurance ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .reassurance li{font-size:14px;color:#555;padding-left:20px;position:relative}
+    .reassurance li:before{content:"✓";color:var(--brand);font-weight:700;position:absolute;left:0}
+    footer{background:var(--brand-dark);color:rgba(255,255,255,.65);padding:24px}
+    .footer-inner{max-width:740px;margin:0 auto;display:flex;gap:24px;flex-wrap:wrap;font-size:13px}
+    .footer-inner a{color:rgba(255,255,255,.65);text-decoration:none}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_19.truth.json -->
+
+<header data-v-2b3c4d="">
+  <a data-v-2b3c4d="" href="/" class="logo">ShieldSure</a>
+  <nav data-v-2b3c4d="" aria-label="Main navigation">
+    <a data-v-2b3c4d="" href="/home-insurance">Home Insurance</a>
+    <a data-v-2b3c4d="" href="/car-insurance">Car Insurance</a>
+    <a data-v-2b3c4d="" href="/life-insurance">Life Insurance</a>
+    <a data-v-2b3c4d="" href="/claims">Claims</a>
+    <a data-v-2b3c4d="" href="/account">My account</a>
+  </nav>
+</header>
+
+<div data-v-2b3c4d="" class="hero">
+  <h1 data-v-2b3c4d="">Get Your Home Insurance Quote</h1>
+  <p data-v-2b3c4d="">Answer a few short questions and we'll find the right cover for your home in minutes.</p>
+  <div data-v-2b3c4d="" class="hero-actions">
+    <!-- t_01: button[start-quote-btn] - signals: data-testid, aria-label -->
+    <button
+      data-v-2b3c4d=""
+      type="button"
+      class="btn-start"
+      data-testid="start-quote-btn"
+      data-oracle-id="t_01"
+      aria-label="Start your insurance quote">Start your quote</button>
+    <!-- t_02: a[aria-label="Save your quote progress an..."] - signals: aria-label, href -->
+    <a
+      data-v-2b3c4d=""
+      href="/quote/save"
+      class="btn-save"
+      data-oracle-id="t_02"
+      aria-label="Save your quote progress and continue later">&#128190; Save &amp; continue later</a>
+  </div>
+</div>
+
+<div data-v-2b3c4d="" class="content">
+
+  <div data-v-2b3c4d="" class="trust-bar">
+    <div data-v-2b3c4d="" class="trust-item"><span class="trust-icon">&#9733;</span> Rated 4.8/5 by 12,000+ customers</div>
+    <div data-v-2b3c4d="" class="trust-item"><span class="trust-icon">&#128274;</span> FCA authorised</div>
+    <div data-v-2b3c4d="" class="trust-item"><span class="trust-icon">&#9990;</span> 24/7 claims support</div>
+    <div data-v-2b3c4d="" class="trust-item"><span class="trust-icon">&#128203;</span> Instant cover available</div>
+  </div>
+
+  <!-- S2: quote-wizard (level-1 shadow) contains form-section elements (level-2 shadow) -->
+  <quote-wizard id="quote-wizard-e5f6g7" data-v-2b3c4d=""></quote-wizard>
+
+  <div data-v-2b3c4d="" class="reassurance">
+    <h2 data-v-2b3c4d="">Why choose ShieldSure?</h2>
+    <ul data-v-2b3c4d="">
+      <li data-v-2b3c4d="">Buildings and contents cover in one policy</li>
+      <li data-v-2b3c4d="">No hidden fees — the price you see is the price you pay</li>
+      <li data-v-2b3c4d="">Cancel within 14 days for a full refund</li>
+      <li data-v-2b3c4d="">Accidental damage cover included as standard</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer data-v-2b3c4d="">
+  <div data-v-2b3c4d="" class="footer-inner">
+    <span data-v-2b3c4d="">&copy; 2026 ShieldSure Ltd. Authorised by the FCA.</span>
+    <a data-v-2b3c4d="" href="/terms">Terms</a>
+    <a data-v-2b3c4d="" href="/privacy">Privacy</a>
+    <a data-v-2b3c4d="" href="/cookies">Cookies</a>
+    <a data-v-2b3c4d="" href="/accessibility">Accessibility</a>
+  </div>
+</footer>
+
+<script>
+// Inner custom element defined FIRST (per §13: inner before outer)
+customElements.define('form-section', class extends HTMLElement {
+  connectedCallback() {
+    const step = this.getAttribute('step');
+    const root = this.attachShadow({ mode: 'open' });
+    const style =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.section-body{padding:0}' +
+      '.field-group{margin-bottom:18px}' +
+      'label.lbl{display:block;font-size:13px;font-weight:700;color:#444;margin-bottom:4px}' +
+      'input.inp,select.sel{width:100%;height:44px;border:2px solid #d0d5dd;border-radius:6px;padding:0 12px;font-size:15px;color:#1c1c1e;background:#fff}' +
+      'input.inp:focus,select.sel:focus{border-color:#005f73;outline:none}' +
+      '.hint{font-size:12px;color:#888;margin-top:3px}' +
+      '.coverage-input-wrap{display:flex;align-items:center;gap:8px}' +
+      '.currency-prefix{font-size:18px;color:#555;font-weight:700}' +
+      '.submit-btn{background:#005f73;color:#fff;border:none;padding:14px 32px;border-radius:6px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:8px}' +
+      '</style>';
+
+    if (step === '1') {
+      root.innerHTML = style +
+        '<div class="section-body">' +
+          '<div class="field-group">' +
+            '<label class="lbl" for="quote-first-name">First name</label>' +
+            '<input' +
+              ' id="quote-first-name"' +
+              ' data-oracle-id="t_05"' +
+              ' name="first_name"' +
+              ' type="text"' +
+              ' class="inp"' +
+              ' aria-label="First name"' +
+              ' placeholder="e.g. Sarah">' +
+            '<p class="hint">As it appears on official documents</p>' +
+          '</div>' +
+          '<div class="field-group">' +
+            '<label class="lbl" for="quote-dob">Date of birth</label>' +
+            '<input' +
+              ' id="quote-dob"' +
+              ' data-oracle-id="t_06"' +
+              ' type="date"' +
+              ' class="inp"' +
+              ' aria-label="Your date of birth">' +
+          '</div>' +
+        '</div>';
+    } else if (step === '2') {
+      root.innerHTML = style +
+        '<div class="section-body">' +
+          '<div class="field-group">' +
+            '<label class="lbl" for="property-type">Property type</label>' +
+            '<select' +
+              ' id="property-type"' +
+              ' data-oracle-id="t_07"' +
+              ' name="property_type"' +
+              ' class="sel"' +
+              ' aria-label="Property type">' +
+              '<option value="">Select a type</option>' +
+              '<option value="detached">Detached house</option>' +
+              '<option value="semi">Semi-detached house</option>' +
+              '<option value="terraced">Terraced house</option>' +
+              '<option value="flat">Flat / apartment</option>' +
+              '<option value="bungalow">Bungalow</option>' +
+            '</select>' +
+          '</div>' +
+          '<div class="field-group">' +
+            '<label class="lbl" for="year-built">Year built (approx.)</label>' +
+            '<input' +
+              ' id="year-built"' +
+              ' type="number"' +
+              ' class="inp"' +
+              ' min="1800" max="2026"' +
+              ' placeholder="e.g. 1985"' +
+              ' aria-label="Approximate year the property was built">' +
+          '</div>' +
+        '</div>';
+    } else if (step === '3') {
+      root.innerHTML = style +
+        '<div class="section-body">' +
+          '<div class="field-group">' +
+            '<label class="lbl" for="coverage-amount">Desired coverage amount (£)</label>' +
+            '<div class="coverage-input-wrap">' +
+              '<span class="currency-prefix">£</span>' +
+              '<input' +
+                ' id="coverage-amount"' +
+                ' data-oracle-id="t_08"' +
+                ' type="number"' +
+                ' class="inp"' +
+                ' min="50000" max="2000000" step="10000"' +
+                ' placeholder="e.g. 300000"' +
+                ' aria-label="Desired coverage amount in GBP">' +
+            '</div>' +
+            '<p class="hint">This should cover the full rebuild cost of your home</p>' +
+          '</div>' +
+          '<div class="field-group">' +
+            '<button' +
+              ' type="button"' +
+              ' class="submit-btn"' +
+              ' data-testid="submit-quote-btn"' +
+              ' data-oracle-id="t_10"' +
+              ' aria-label="Submit your quote request"' +
+            '>Get my quote &rarr;</button>' +
+          '</div>' +
+        '</div>';
+    }
+  }
+});
+
+// Outer custom element defined SECOND (after inner form-section)
+customElements.define('quote-wizard', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.wizard-box{background:#fff;border:1px solid #d0d5dd;border-radius:10px;overflow:hidden}' +
+      '.wizard-header{background:#005f73;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}' +
+      '.wizard-title{color:#fff;font-size:16px;font-weight:700}' +
+      '.step-indicators{display:flex;gap:8px}' +
+      '.step-dot{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.25);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer}' +
+      '.step-dot.active{background:#ee9b00}' +
+      '.step-dot.done{background:rgba(255,255,255,.6);color:#005f73}' +
+      '.progress-track{height:4px;background:#e0e5eb}' +
+      '.progress-fill{height:100%;background:#ee9b00;width:33%}' +
+      '.wizard-body{padding:24px}' +
+      '.step-heading{font-size:17px;font-weight:700;color:#003f4e;margin-bottom:16px}' +
+      '.nav-footer{display:flex;justify-content:flex-end;margin-top:16px;padding-top:16px;border-top:1px solid #f0f0f0}' +
+      '.btn-next{background:#005f73;color:#fff;border:none;padding:11px 24px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer}' +
+      '.progress-bar-elem{height:4px;background:rgba(255,255,255,.3);border-radius:2px;flex:1}' +
+      '</style>' +
+      '<div class="wizard-box">' +
+        '<div class="wizard-header">' +
+          '<span class="wizard-title">Your Quote — Step 1 of 3</span>' +
+          '<div class="step-indicators">' +
+            '<div' +
+              ' class="step-dot active"' +
+              ' data-testid="step-1-indicator"' +
+              ' data-oracle-id="t_03"' +
+              ' aria-label="Step 1: Personal Information"' +
+            '>1</div>' +
+            '<div class="step-dot" aria-label="Step 2: Property Details">2</div>' +
+            '<div class="step-dot" aria-label="Step 3: Coverage &amp; Submit">3</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="progress-track">' +
+          '<div' +
+            ' class="progress-fill"' +
+            ' data-oracle-id="t_09"' +
+            ' role="progressbar"' +
+            ' aria-valuenow="33"' +
+            ' aria-valuemin="0"' +
+            ' aria-valuemax="100"' +
+          '></div>' +
+        '</div>' +
+        '<div class="wizard-body">' +
+          '<div class="step-heading">Step 1: Personal Information</div>' +
+          '<form-section step="1"></form-section>' +
+          '<div class="nav-footer">' +
+            '<button' +
+              ' type="button"' +
+              ' class="btn-next"' +
+              ' data-testid="next-step-btn"' +
+              ' data-oracle-id="t_04"' +
+              ' aria-label="Continue to step 2: Property Details"' +
+            '>Next: Property Details &rarr;</button>' +
+          '</div>' +
+        '</div>' +
+        '<hr style="border:none;border-top:1px solid #f0f0f0;margin:0">' +
+        '<div class="wizard-body" style="opacity:.55">' +
+          '<div class="step-heading" style="color:#888">Step 2: Property Details</div>' +
+          '<form-section step="2"></form-section>' +
+        '</div>' +
+        '<hr style="border:none;border-top:1px solid #f0f0f0;margin:0">' +
+        '<div class="wizard-body" style="opacity:.55">' +
+          '<div class="step-heading" style="color:#888">Step 3: Coverage &amp; Submit</div>' +
+          '<form-section step="3"></form-section>' +
+        '</div>' +
+      '</div>';
+  }
+});
+</script>
+
+</body>
+</html>

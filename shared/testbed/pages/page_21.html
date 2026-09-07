@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build a Production CI/CD Pipeline from Scratch — VideoNest</title>
+<!-- targets: see pages/page_21.truth.json -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#0f0f0f;background:#f9f9f9}
+a{color:#065fd4;text-decoration:none}a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:inherit}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.PageLayout_header__z1a2b3{background:#fff;border-bottom:1px solid #e0e0e0;position:sticky;top:0;z-index:200;height:56px}
+.Header_inner__c4d5e6{max-width:1284px;margin:0 auto;display:flex;align-items:center;gap:16px;height:100%;padding:0 16px}
+.Header_logo__f7g8h9{font-size:20px;font-weight:800;color:#ff0000;letter-spacing:-0.5px;white-space:nowrap}
+.Header_logo__f7g8h9 span{color:#0f0f0f}
+.Header_search__i0j1k2{flex:1;max-width:600px;display:flex;gap:0;margin:0 auto}
+.SearchBar_input__l3m4n5{flex:1;padding:8px 12px;border:1px solid #ccc;border-right:none;border-radius:20px 0 0 20px;font-size:16px;outline:none;color:#0f0f0f}
+.SearchBar_input__l3m4n5:focus{border-color:#1c62b9}
+.SearchBar_btn__o6p7q8{padding:8px 20px;background:#f8f8f8;border:1px solid #ccc;border-left:none;border-radius:0 20px 20px 0;font-size:16px;color:#606060;cursor:pointer}
+.SearchBar_btn__o6p7q8:hover{background:#e8e8e8}
+.Header_actions__r9s0t1{display:flex;gap:8px;align-items:center;margin-left:auto;white-space:nowrap}
+.Header_uploadBtn__u2v3w4{padding:8px 16px;background:none;border:1px solid #ccc;border-radius:20px;font-size:14px;color:#0f0f0f}
+.Header_uploadBtn__u2v3w4:hover{background:#f2f2f2}
+.Header_signInBtn__x5y6z7{padding:8px 16px;background:none;border:2px solid #065fd4;border-radius:20px;font-size:14px;color:#065fd4;font-weight:600}
+.Header_signInBtn__x5y6z7:hover{background:#def}
+
+/* ── Page layout ─────────────────────────────────────────────────────────── */
+.PageLayout_main__a8b9c0{max-width:1284px;margin:24px auto 0;padding:0 24px;display:grid;grid-template-columns:1fr 402px;gap:24px}
+
+/* ── Player host ─────────────────────────────────────────────────────────── */
+.PlayerHost_shell__g4h5i6{display:block;width:100%;margin-bottom:12px;border-radius:12px;overflow:hidden}
+video-player-shell{display:block;width:100%}
+player-control-bar{display:block}
+
+/* ── Video meta ─────────────────────────────────────────────────────────── */
+.VideoMeta_container__c1d2e3{margin-bottom:12px}
+.VideoMeta_title__j7k8l9{font-size:20px;font-weight:700;line-height:1.4;margin-bottom:8px}
+.VideoMeta_stats__m0n1o2{display:flex;gap:12px;font-size:14px;color:#606060;margin-bottom:12px;flex-wrap:wrap}
+.VideoMeta_views__p3q4r5::after{content:" •"}
+.VideoMeta_actions__v9w0x1{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.VideoMeta_actions__v9w0x1 button{display:flex;align-items:center;gap:6px;padding:8px 16px;background:#f2f2f2;border:none;border-radius:20px;font-size:14px;font-weight:500;color:#0f0f0f}
+.VideoMeta_actions__v9w0x1 button:hover{background:#e5e5e5}
+.VideoMeta_likeBtn__i7j8k9{border-radius:20px 0 0 20px!important;border-right:1px solid #ccc!important}
+.VideoMeta_dislikeBtn__y2z3a4{border-radius:0 20px 20px 0!important}
+.VideoMeta_channelRow__h1i2j3{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;margin-bottom:12px}
+.ChannelInfo_avatar__k4l5m6{width:40px;height:40px;border-radius:50%;background:#ff0000;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;flex-shrink:0}
+.ChannelInfo_details__n7o8p9{display:flex;flex-direction:column;gap:2px}
+.ChannelInfo_name__q0r1s2{font-size:15px;font-weight:600;color:#0f0f0f}
+.ChannelInfo_subs__t3u4v5{font-size:13px;color:#606060}
+.VideoMeta_subscribeBtn__f4g5h6{margin-left:auto;padding:10px 20px;background:#0f0f0f;color:#fff;border:none;border-radius:20px;font-size:14px;font-weight:600}
+.VideoMeta_subscribeBtn__f4g5h6:hover{background:#333}
+
+/* ── Description ─────────────────────────────────────────────────────────── */
+.Description_box__w6x7y8{background:#f2f2f2;border-radius:12px;padding:12px 16px;margin-bottom:16px}
+.Description_stats__a1b2c3{font-size:14px;font-weight:600;margin-bottom:6px;display:flex;gap:12px}
+.Description_text__z9a0b1{font-size:14px;color:#0f0f0f;line-height:1.5;margin-bottom:8px}
+.Description_moreBtn__c2d3e4{background:none;border:none;font-size:14px;font-weight:600;padding:0;color:#0f0f0f}
+.Description_moreBtn__c2d3e4:hover{color:#065fd4}
+.Description_tags__d5e6f7{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.Description_tag__g8h9i0{font-size:14px;color:#065fd4}
+
+/* ── Comments ─────────────────────────────────────────────────────────────── */
+.Comments_section__f5g6h7{margin-top:8px}
+.Comments_heading__i8j9k0{font-size:16px;font-weight:700;margin-bottom:16px}
+.Comments_sortRow__l1m2n3{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.Comments_sortIcon__j1k2l3{font-size:20px;color:#606060}
+.Comments_sortBtn__o4p5q6{background:none;border:none;font-size:14px;font-weight:600;color:#0f0f0f;padding:0}
+.CommentCard_root__r7s8t9{display:flex;gap:12px;margin-bottom:24px}
+.CommentCard_avatar__u0v1w2{width:36px;height:36px;border-radius:50%;background:#ccc;color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0}
+.CommentCard_body__x3y4z5{flex:1}
+.CommentCard_author__a6b7c8{font-size:13px;font-weight:600;color:#0f0f0f;margin-bottom:4px;display:inline-block}
+.CommentCard_date__b9c0d1{font-size:12px;color:#606060;margin-left:8px}
+.CommentCard_text__d9e0f1{font-size:14px;color:#0f0f0f;line-height:1.5;margin-bottom:8px}
+.CommentCard_actions__g2h3i4{display:flex;gap:8px}
+.CommentCard_actions__g2h3i4 button{background:none;border:none;font-size:13px;color:#606060;padding:4px 8px;border-radius:20px}
+.CommentCard_actions__g2h3i4 button:hover{background:#f2f2f2}
+.CommentCard_likeBtn__j5k6l7{}
+.CommentCard_replyBtn__m8n9o0{font-weight:600}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+.PageLayout_sidebar__p1q2r3{}
+.Sidebar_section__s4t5u6{}
+.Sidebar_heading__v7w8x9{font-size:15px;font-weight:600;margin-bottom:12px;color:#0f0f0f}
+.SidePanel_nextCard__l0m1n2,
+.SidePanel_card__n5o6p7{display:flex;gap:8px;margin-bottom:12px;cursor:pointer;border-radius:8px;padding:4px}
+.SidePanel_nextCard__l0m1n2:hover,
+.SidePanel_card__n5o6p7:hover{background:#f2f2f2}
+.SidePanel_thumb__y0z1a2{width:168px;min-width:168px;height:94px;background:#c8c8c8;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:28px;color:#666;overflow:hidden;flex-shrink:0}
+.SidePanel_info__b3c4d5{flex:1;padding-top:2px}
+.SidePanel_title__e6f7g8{font-size:14px;font-weight:500;line-height:1.4;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.SidePanel_channel__h9i0j1{font-size:13px;color:#606060;display:block;margin-bottom:2px}
+.SidePanel_meta__k2l3m4{font-size:12px;color:#606060}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+.PageLayout_footer__q4r5s6{background:#f9f9f9;padding:24px 24px 16px;margin-top:40px;border-top:1px solid #e0e0e0}
+.Footer_inner__t7u8v9{max-width:1284px;margin:0 auto}
+.Footer_links__w0x1y2{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.Footer_links__w0x1y2 a{font-size:13px;color:#606060;padding:4px 6px}
+.Footer_links__w0x1y2 a:hover{color:#0f0f0f}
+.Footer_copy__z3a4b5{font-size:12px;color:#909090}
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
+<header class="PageLayout_header__z1a2b3">
+  <div class="Header_inner__c4d5e6">
+    <a href="/" class="Header_logo__f7g8h9">Video<span>Nest</span></a>
+    <div class="Header_search__i0j1k2">
+      <input type="text" placeholder="Search" class="SearchBar_input__l3m4n5" aria-label="Search videos">
+      <button class="SearchBar_btn__o6p7q8" aria-label="Submit search">&#128269;</button>
+    </div>
+    <div class="Header_actions__r9s0t1">
+      <button class="Header_uploadBtn__u2v3w4">&#43; Create</button>
+      <button class="Header_signInBtn__x5y6z7">Sign in</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Main ───────────────────────────────────────────────────────────────── -->
+<div class="PageLayout_main__a8b9c0">
+
+  <!-- ── Video column ─────────────────────────────────────────────────────── -->
+  <div class="PageLayout_videoCol__d1e2f3">
+
+    <!-- ★ S2 — video player shell (first shadow boundary) -->
+    <video-player-shell id="player-session-a3f4b5" class="PlayerHost_shell__g4h5i6"></video-player-shell>
+
+    <!-- ── Video metadata ───────────────────────────────────────────────── -->
+    <div class="VideoMeta_container__c1d2e3">
+      <h1 class="VideoMeta_title__j7k8l9">
+        Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes
+      </h1>
+      <div class="VideoMeta_stats__m0n1o2">
+        <span class="VideoMeta_views__p3q4r5">1,421,094 views</span>
+        <span class="VideoMeta_date__s6t7u8">3 months ago</span>
+        <span>#DevOps</span>
+        <span>#CICD</span>
+      </div>
+      <div class="VideoMeta_actions__v9w0x1">
+        <!-- ★ t_02 — click — like button -->
+        <button class="VideoMeta_likeBtn__i7j8k9"
+                data-testid="like-btn"
+                data-oracle-id="t_02"
+                type="button">&#128077; 12K</button>
+        <button class="VideoMeta_dislikeBtn__y2z3a4" type="button">&#128078;</button>
+        <button class="VideoMeta_shareBtn__b5c6d7" type="button">&#8594; Share</button>
+        <button class="VideoMeta_saveBtn__e8f9g0" type="button">&#43; Save</button>
+        <button class="VideoMeta_moreBtn__h1i2j3" type="button">&#8943;</button>
+      </div>
+      <div class="VideoMeta_channelRow__h1i2j3">
+        <div class="ChannelInfo_avatar__k4l5m6">D</div>
+        <div class="ChannelInfo_details__n7o8p9">
+          <a href="#channel" class="ChannelInfo_name__q0r1s2">DevOps Academy</a>
+          <span class="ChannelInfo_subs__t3u4v5">248K subscribers</span>
+        </div>
+        <!-- ★ t_01 — click — subscribe button -->
+        <button class="VideoMeta_subscribeBtn__f4g5h6"
+                data-testid="subscribe-btn"
+                aria-label="Subscribe to VideoNest"
+                data-oracle-id="t_01"
+                type="button">Subscribe</button>
+      </div>
+    </div>
+
+    <!-- ── Description ───────────────────────────────────────────────────── -->
+    <div class="Description_box__w6x7y8">
+      <div class="Description_stats__a1b2c3">
+        <span>1,421,094 views</span>
+        <span>Jun 8, 2024</span>
+      </div>
+      <p class="Description_text__z9a0b1">
+        In this tutorial we build a complete production-grade CI/CD pipeline from scratch using
+        GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments,
+        canary rollouts, zero-downtime updates, rollback strategies, secrets management with
+        Vault, and observability with Prometheus and Grafana.
+      </p>
+      <div class="Description_tags__d5e6f7">
+        <a href="#" class="Description_tag__g8h9i0">#DevOps</a>
+        <a href="#" class="Description_tag__g8h9i0">#CICD</a>
+        <a href="#" class="Description_tag__g8h9i0">#Kubernetes</a>
+        <a href="#" class="Description_tag__g8h9i0">#GitHubActions</a>
+        <a href="#" class="Description_tag__g8h9i0">#Docker</a>
+      </div>
+      <button class="Description_moreBtn__c2d3e4" type="button">Show more</button>
+    </div>
+
+    <!-- ── Comments ─────────────────────────────────────────────────────── -->
+    <div class="Comments_section__f5g6h7">
+      <h3 class="Comments_heading__i8j9k0">847 Comments</h3>
+      <div class="Comments_sortRow__l1m2n3">
+        <span class="Comments_sortIcon__j1k2l3">&#9776;</span>
+        <button class="Comments_sortBtn__o4p5q6" type="button">Sort by</button>
+      </div>
+
+      <div class="CommentCard_root__r7s8t9">
+        <div class="CommentCard_avatar__u0v1w2">A</div>
+        <div class="CommentCard_body__x3y4z5">
+          <span class="CommentCard_author__a6b7c8">alicedev</span>
+          <span class="CommentCard_date__b9c0d1">2 months ago</span>
+          <p class="CommentCard_text__d9e0f1">This is exactly what I needed — the Kubernetes rollback
+            section alone saved me 4 hours of debugging.</p>
+          <div class="CommentCard_actions__g2h3i4">
+            <button class="CommentCard_likeBtn__j5k6l7" type="button">&#128077; 234</button>
+            <button class="CommentCard_replyBtn__m8n9o0" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="CommentCard_root__r7s8t9">
+        <div class="CommentCard_avatar__u0v1w2">B</div>
+        <div class="CommentCard_body__x3y4z5">
+          <span class="CommentCard_author__a6b7c8">backend_bob</span>
+          <span class="CommentCard_date__b9c0d1">2 months ago</span>
+          <p class="CommentCard_text__d9e0f1">Any chance you could do a part 2 covering ArgoCD and
+            GitOps workflows?</p>
+          <div class="CommentCard_actions__g2h3i4">
+            <button class="CommentCard_likeBtn__j5k6l7" type="button">&#128077; 89</button>
+            <button class="CommentCard_replyBtn__m8n9o0" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="CommentCard_root__r7s8t9">
+        <div class="CommentCard_avatar__u0v1w2">C</div>
+        <div class="CommentCard_body__x3y4z5">
+          <span class="CommentCard_author__a6b7c8">cloudCarla</span>
+          <span class="CommentCard_date__b9c0d1">1 month ago</span>
+          <p class="CommentCard_text__d9e0f1">The secrets management walkthrough was incredibly clear.
+            Subscribed immediately!</p>
+          <div class="CommentCard_actions__g2h3i4">
+            <button class="CommentCard_likeBtn__j5k6l7" type="button">&#128077; 45</button>
+            <button class="CommentCard_replyBtn__m8n9o0" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="CommentCard_root__r7s8t9">
+        <div class="CommentCard_avatar__u0v1w2">D</div>
+        <div class="CommentCard_body__x3y4z5">
+          <span class="CommentCard_author__a6b7c8">devdan42</span>
+          <span class="CommentCard_date__b9c0d1">3 weeks ago</span>
+          <p class="CommentCard_text__d9e0f1">Timestamp 32:14 for the Vault integration — that part
+            is fire. Best tutorial on this topic by far.</p>
+          <div class="CommentCard_actions__g2h3i4">
+            <button class="CommentCard_likeBtn__j5k6l7" type="button">&#128077; 31</button>
+            <button class="CommentCard_replyBtn__m8n9o0" type="button">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end video column -->
+
+  <!-- ── Sidebar ───────────────────────────────────────────────────────────── -->
+  <aside class="PageLayout_sidebar__p1q2r3">
+    <div class="Sidebar_section__s4t5u6">
+      <h4 class="Sidebar_heading__v7w8x9">Up next</h4>
+
+      <!-- ★ t_03 — navigate — NONE target: next video card, volatile class only -->
+      <div class="SidePanel_nextCard__l0m1n2" data-oracle-id="t_03">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Advanced Kubernetes Networking — Services, Ingress &amp; CNI</span>
+          <span class="SidePanel_channel__h9i0j1">DevOps Academy</span>
+          <span class="SidePanel_meta__k2l3m4">890K views &#183; 1 week ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Docker Compose for Local Development</span>
+          <span class="SidePanel_channel__h9i0j1">Container Crew</span>
+          <span class="SidePanel_meta__k2l3m4">342K views &#183; 4 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">GitHub Actions Secrets &amp; OIDC Deep Dive</span>
+          <span class="SidePanel_channel__h9i0j1">DevOps Academy</span>
+          <span class="SidePanel_meta__k2l3m4">156K views &#183; 5 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Zero-Downtime Deployments Explained</span>
+          <span class="SidePanel_channel__h9i0j1">Cloud Native Labs</span>
+          <span class="SidePanel_meta__k2l3m4">78K views &#183; 6 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Terraform for Beginners — IaC Fundamentals</span>
+          <span class="SidePanel_channel__h9i0j1">Infra Ninja</span>
+          <span class="SidePanel_meta__k2l3m4">512K views &#183; 2 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Monitoring with Prometheus and Grafana</span>
+          <span class="SidePanel_channel__h9i0j1">SRE Mastery</span>
+          <span class="SidePanel_meta__k2l3m4">234K views &#183; 3 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Service Mesh with Istio — Complete Guide</span>
+          <span class="SidePanel_channel__h9i0j1">Cloud Native Labs</span>
+          <span class="SidePanel_meta__k2l3m4">189K views &#183; 2 months ago</span>
+        </div>
+      </div>
+
+      <div class="SidePanel_card__n5o6p7">
+        <div class="SidePanel_thumb__y0z1a2">&#9654;</div>
+        <div class="SidePanel_info__b3c4d5">
+          <span class="SidePanel_title__e6f7g8">Helm Charts — Package Your Kubernetes Apps</span>
+          <span class="SidePanel_channel__h9i0j1">DevOps Academy</span>
+          <span class="SidePanel_meta__k2l3m4">445K views &#183; 7 months ago</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+</div><!-- end main -->
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="PageLayout_footer__q4r5s6">
+  <div class="Footer_inner__t7u8v9">
+    <div class="Footer_links__w0x1y2">
+      <a href="#">About</a>
+      <a href="#">Press</a>
+      <a href="#">Copyright</a>
+      <a href="#">Contact us</a>
+      <a href="#">Creators</a>
+      <a href="#">Advertise</a>
+      <a href="#">Developers</a>
+      <a href="#">Privacy</a>
+      <a href="#">Policy &amp; Safety</a>
+      <a href="#">How VideoNest works</a>
+      <a href="#">Test new features</a>
+    </div>
+    <p class="Footer_copy__z3a4b5">&#169; 2024 VideoNest LLC</p>
+  </div>
+</footer>
+
+<!-- ── Custom element definitions ────────────────────────────────────────── -->
+<script>
+// Inner element defined FIRST so its connectedCallback fires when the outer
+// shadow root injects <player-control-bar> via innerHTML (S2 — level 2).
+customElements.define('player-control-bar', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML =
+      '<style>' +
+      '.ControlBar_container__h8i9j0{' +
+        'display:flex;align-items:center;gap:6px;' +
+        'background:#1a1a1a;padding:8px 12px;' +
+      '}' +
+      '.ControlBar_playBtn__k1l2m3,' +
+      '.ControlBar_muteBtn__q7r8s9,' +
+      '.ControlBar_qualityBtn__t0u1v2,' +
+      '.ControlBar_captionBtn__w3x4y5{' +
+        'background:none;border:none;color:#fff;' +
+        'font-size:18px;cursor:pointer;padding:4px 8px;' +
+        'border-radius:3px;line-height:1;' +
+      '}' +
+      '.ControlBar_qualityBtn__t0u1v2,' +
+      '.ControlBar_captionBtn__w3x4y5{' +
+        'font-size:11px;font-weight:700;letter-spacing:.5px;' +
+      '}' +
+      '.ControlBar_progress__n4o5p6{' +
+        'flex:1;height:4px;accent-color:#f00;cursor:pointer;' +
+      '}' +
+      '</style>' +
+      '<div class="ControlBar_container__h8i9j0" role="toolbar" aria-label="Video controls">' +
+        // ★ t_06 — click — play/pause
+        '<button class="ControlBar_playBtn__k1l2m3"' +
+                ' aria-label="Play video"' +
+                ' data-oracle-id="t_06">&#9654;</button>' +
+        // ★ t_07 — input — seek slider
+        '<input type="range"' +
+               ' class="ControlBar_progress__n4o5p6"' +
+               ' aria-label="Seek video"' +
+               ' data-testid="seek-bar"' +
+               ' data-oracle-id="t_07"' +
+               ' min="0" max="100" value="22">' +
+        // ★ t_08 — click — mute
+        '<button class="ControlBar_muteBtn__q7r8s9"' +
+                ' aria-label="Mute audio"' +
+                ' data-oracle-id="t_08">&#128264;</button>' +
+        // ★ t_09 — click — quality — NONE target (volatile class only)
+        '<button class="ControlBar_qualityBtn__t0u1v2"' +
+                ' data-oracle-id="t_09">HD</button>' +
+        // ★ t_10 — click — captions toggle
+        '<button class="ControlBar_captionBtn__w3x4y5"' +
+                ' aria-label="Toggle captions"' +
+                ' data-testid="caption-toggle"' +
+                ' data-oracle-id="t_10">CC</button>' +
+      '</div>';
+  }
+});
+
+// Outer element defined AFTER inner (level 1 shadow root).
+customElements.define('video-player-shell', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML =
+      '<style>' +
+      '.VideoPlayer_wrapper__f3g4h5{' +
+        'background:#000;width:100%;overflow:hidden;' +
+      '}' +
+      '.VideoPlayer_viewport__b1c2d3{' +
+        'position:relative;aspect-ratio:16/9;background:#111;' +
+        'display:flex;align-items:center;justify-content:center;overflow:hidden;' +
+      '}' +
+      '.VideoPlayer_paused__c8d9e0{' +
+        'color:rgba(255,255,255,.25);font-size:72px;user-select:none;' +
+      '}' +
+      '.VideoPlayer_overlay__a2b3c4{' +
+        'position:absolute;bottom:10px;right:10px;' +
+        'background:rgba(0,0,0,.75);color:#fff;' +
+        'font-size:13px;padding:3px 8px;border-radius:3px;' +
+        'font-family:monospace;cursor:default;' +
+      '}' +
+      '.VideoPlayer_chapterBar__e5f6g7{' +
+        'position:absolute;bottom:10px;left:10px;' +
+        'background:rgba(0,0,0,.65);color:#ddd;' +
+        'font-size:12px;padding:3px 8px;border-radius:3px;' +
+      '}' +
+      '</style>' +
+      '<div class="VideoPlayer_wrapper__f3g4h5">' +
+        '<div class="VideoPlayer_viewport__b1c2d3">' +
+          '<span class="VideoPlayer_paused__c8d9e0">&#9654;</span>' +
+          // ★ t_04 — find — duration overlay (level-1 shadow)
+          '<div class="VideoPlayer_overlay__a2b3c4"' +
+               ' aria-label="Video duration: 14:32"' +
+               ' data-oracle-id="t_04">14:32</div>' +
+          // ★ t_05 — find — chapter bar — NONE target (volatile class only, level-1 shadow)
+          '<div class="VideoPlayer_chapterBar__e5f6g7"' +
+               ' data-oracle-id="t_05">Chapter 3 &#8212; Deployment</div>' +
+        '</div>' +
+        // Nested host → triggers player-control-bar connectedCallback (level-2 shadow)
+        '<player-control-bar></player-control-bar>' +
+      '</div>';
+  }
+});
+</script>
+</body>
+</html>

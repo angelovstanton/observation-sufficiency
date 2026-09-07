@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "TBD — observation sufficiency for LLM-driven UI element grounding"
+authors:
+  - family-names: Angelov
+    given-names: Anton
+year: 2026
+license: MIT
+# repository-code: TODO — fill in once the public repository URL exists.
+# doi: TODO — fill in once a DOI is minted (e.g. via Zenodo) at publication/acceptance.

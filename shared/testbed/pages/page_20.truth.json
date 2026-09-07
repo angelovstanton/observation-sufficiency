@@ -1,0 +1,110 @@
+{
+  "page_id": "page_20",
+  "group": "G5",
+  "shadow": "S2",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["hr-portal-a1b2c3"],
+    "volatile_classes": [
+      "PayslipCard--r3s4t5",
+      "BenefitToggle--u6v7w8",
+      "DirectDeposit--p1q2r3",
+      "NavLink--s5t6u7",
+      "ShadowSection--y1z2a3",
+      "PayRow--v7w8x9",
+      "PeriodPicker--f8g9h0",
+      "_ngcontent-hr-c20",
+      "_nghost-hr-c20"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the navigation link that takes you to your personal account profile",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with aria-label='My Account'; no unique href, no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that launches the open-enrolment wizard for selecting employee benefits",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='enroll-benefits-btn' and aria-label='Start benefits enrolment'; Angular _ngcontent-hr-c20 is volatile"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the decorative card that displays the total hours worked this month",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class PayslipCard--r3s4t5 only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the toggle switch that enables or disables direct deposit for your salary payments",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input[type=checkbox] with id='direct-deposit-toggle' and aria-label='Enable direct deposit'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the date input where you enter the payslip period you want to look up",
+      "signal_attrs": ["type"],
+      "expected_stable_signal": "input[type='date'] — the only date input on the page; no id, no name, no aria-label, no placeholder; structural type is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the navigation link that takes you to the Benefits section of the portal",
+      "signal_attrs": ["href"],
+      "expected_stable_signal": "anchor with href='/benefits'; class NavLink--s5t6u7 is volatile; href is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the HR portal panel that shows your list of past payslips",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside hr-portal shadow root (level-1) with data-testid='payslips-tab' and aria-label='View my payslips'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the section divider element between panels inside the HR portal",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside hr-portal shadow root (level-1) with class ShadowSection--y1z2a3 only; no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the button inside the payslip viewer that downloads the currently displayed payslip",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button inside payslip-viewer shadow root (level-2) with aria-label='Download current payslip as PDF'; sole stable signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the earnings line row element inside the payslip breakdown table",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside payslip-viewer shadow root (level-2) with class PayRow--v7w8x9 only; no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

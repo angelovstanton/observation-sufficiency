@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopNow — Checkout</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #1a1a2e; color: #fff; padding: 12px 24px; display: flex; align-items: center; gap: 16px; }
+    .Header_logo__q1w2e3 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; }
+    .Header_tagline__r4t5y6 { font-size: 0.8rem; opacity: 0.7; }
+    nav.Breadcrumb_root__u7i8o9 { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 10px 24px; font-size: 0.85rem; }
+    .Breadcrumb_item__p0a1s2 { color: #666; }
+    .Breadcrumb_item__p0a1s2.active { color: #1a1a2e; font-weight: 600; }
+    .Breadcrumb_sep__d3f4g5 { margin: 0 6px; color: #aaa; }
+    .Checkout_layout__h6j7k8 { display: flex; gap: 24px; max-width: 1100px; margin: 24px auto; padding: 0 16px; flex-wrap: wrap; }
+    .Checkout_left__l9z0x1 { flex: 1; min-width: 280px; }
+    .Checkout_right__c2v3b4 { flex: 0 0 380px; min-width: 280px; }
+    .OrderSummary_mobile__r9s0t1, .OrderSummary_desktop__u2v3w4 { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; padding: 16px; margin-bottom: 16px; }
+    .OrderSummary_header__n5m6l7 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; color: #1a1a2e; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+    .OrderSummary_total__k8j9h0 { display: flex; justify-content: space-between; padding: 10px 0; border-top: 2px solid #1a1a2e; margin-top: 8px; font-weight: 700; }
+    .OrderItem_row__a1b2c3 { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f5f5f5; }
+    .OrderItem_img__d4e5f6 { width: 48px; height: 48px; background: #e8e8f0; border-radius: 6px; flex-shrink: 0; }
+    .OrderItem_info__g7h8i9 { flex: 1; min-width: 0; }
+    .OrderItem_name__j0k1l2 { display: block; font-size: 0.85rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .OrderItem_price__m3n4o5 { display: block; font-size: 0.8rem; color: #666; margin-top: 2px; }
+    .OrderItem_save__p6q7r8 { font-size: 0.75rem; color: #1a1a2e; background: none; border: 1px solid #1a1a2e; border-radius: 4px; padding: 3px 8px; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
+    .OrderItem_save__p6q7r8:hover { background: #1a1a2e; color: #fff; }
+    .d-block { display: block; }
+    .d-none { display: none; }
+    @media (min-width: 768px) {
+      .d-md-none { display: none !important; }
+      .d-none.d-md-block { display: block !important; }
+    }
+    .ShippingForm_root__e5r6t7 { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 16px; }
+    .ShippingForm_title__y8u9i0 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; color: #1a1a2e; }
+    .ShippingForm_field__o1p2a3 { margin-bottom: 14px; }
+    .ShippingForm_field__o1p2a3 label { display: block; font-size: 0.82rem; font-weight: 500; color: #555; margin-bottom: 4px; }
+    .ShippingForm_field__o1p2a3 input, .ShippingForm_field__o1p2a3 select { width: 100%; padding: 8px 10px; border: 1px solid #d0d0d0; border-radius: 6px; font-size: 0.9rem; outline: none; }
+    .ShippingForm_field__o1p2a3 input:focus { border-color: #1a1a2e; }
+    .ShippingForm_row__s4d5f6 { display: flex; gap: 10px; }
+    .ShippingForm_row__s4d5f6 .ShippingForm_field__o1p2a3 { flex: 1; }
+    .PromoRow_root__g7h8j9 { display: flex; gap: 8px; margin-top: 4px; }
+    .PromoRow_input__k0l1m2 { flex: 1; padding: 8px 10px; border: 1px solid #d0d0d0; border-radius: 6px; font-size: 0.9rem; }
+    .PromoRow_btn__n3o4p5 { background: #1a1a2e; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 0.85rem; cursor: pointer; white-space: nowrap; }
+    .PromoRow_btn__n3o4p5:hover { opacity: 0.9; }
+    payment-shell { display: block; }
+    footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #999; border-top: 1px solid #e0e0e0; margin-top: 24px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="Header_logo__q1w2e3">ShopNow</div>
+  <div class="Header_tagline__r4t5y6">Secure Checkout</div>
+</header>
+
+<nav class="Breadcrumb_root__u7i8o9" aria-label="Checkout steps">
+  <span class="Breadcrumb_item__p0a1s2">Cart</span>
+  <span class="Breadcrumb_sep__d3f4g5">›</span>
+  <span class="Breadcrumb_item__p0a1s2">Shipping</span>
+  <span class="Breadcrumb_sep__d3f4g5">›</span>
+  <span class="Breadcrumb_item__p0a1s2 active">Payment</span>
+</nav>
+
+<div class="Checkout_layout__h6j7k8">
+  <!-- Left column: order summary (responsive-duplicated) -->
+  <div class="Checkout_left__l9z0x1">
+    <!-- Mobile copy (visible on small screens) -->
+    <div class="OrderSummary_mobile__r9s0t1 d-block d-md-none">
+      <div class="OrderSummary_header__n5m6l7">Order Summary</div>
+      <div id="order-items-mobile"></div>
+      <div class="OrderSummary_total__k8j9h0">
+        <span>Total</span>
+        <span id="total-mobile">—</span>
+      </div>
+    </div>
+    <!-- Desktop copy (visible on larger screens) -->
+    <div class="OrderSummary_desktop__u2v3w4 d-none d-md-block">
+      <div class="OrderSummary_header__n5m6l7">Your Order (45 items)</div>
+      <div id="order-items-desktop"></div>
+      <div class="OrderSummary_total__k8j9h0">
+        <span>Order Total</span>
+        <span id="total-desktop">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right column: contact form + payment shell -->
+  <div class="Checkout_right__c2v3b4">
+    <div class="ShippingForm_root__e5r6t7">
+      <div class="ShippingForm_title__y8u9i0">Contact &amp; Shipping</div>
+
+      <div class="ShippingForm_field__o1p2a3">
+        <label for="order-email">Email for order confirmation</label>
+        <!-- t_01: input#order-email - signals: id, name, aria-label -->
+        <input id="order-email" name="email" type="email"
+               aria-label="Email address for order confirmation"
+               placeholder="you@example.com"
+               data-oracle-id="t_01" />
+      </div>
+
+      <div class="ShippingForm_row__s4d5f6">
+        <div class="ShippingForm_field__o1p2a3">
+          <label for="ship-first">First name</label>
+          <input id="ship-first" name="first_name" type="text" />
+        </div>
+        <div class="ShippingForm_field__o1p2a3">
+          <label for="ship-last">Last name</label>
+          <input id="ship-last" name="last_name" type="text" />
+        </div>
+      </div>
+
+      <div class="ShippingForm_field__o1p2a3">
+        <label for="ship-address">Street address</label>
+        <input id="ship-address" name="address" type="text" />
+      </div>
+
+      <div class="ShippingForm_row__s4d5f6">
+        <div class="ShippingForm_field__o1p2a3">
+          <label for="ship-city">City</label>
+          <input id="ship-city" name="city" type="text" />
+        </div>
+        <div class="ShippingForm_field__o1p2a3">
+          <label for="ship-zip">ZIP code</label>
+          <input id="ship-zip" name="zip" type="text" />
+        </div>
+      </div>
+
+      <div class="ShippingForm_field__o1p2a3">
+        <label for="ship-country">Country</label>
+        <select id="ship-country" name="country">
+          <option>United States</option>
+          <option>Canada</option>
+          <option>United Kingdom</option>
+          <option>Australia</option>
+        </select>
+      </div>
+
+      <div class="ShippingForm_field__o1p2a3">
+        <label for="promo-code">Promo code</label>
+        <div class="PromoRow_root__g7h8j9">
+          <input id="promo-code" class="PromoRow_input__k0l1m2" type="text" placeholder="Enter code" />
+          <!-- t_02: button[aria-label="Apply discount code"] - signals: aria-label -->
+          <button class="PromoRow_btn__n3o4p5"
+                  aria-label="Apply discount code"
+                  data-oracle-id="t_02">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment shell (S2 host — L1) -->
+    <payment-shell id="payment-shell-b1c2d3"></payment-shell>
+  </div>
+</div>
+
+<footer>
+  <p>Secured by ShopNow &copy; 2025 · 256-bit SSL encryption</p>
+</footer>
+
+<script>
+  /* §13: L2 (payment-widget) defined BEFORE L1 (payment-shell) */
+
+  customElements.define('payment-widget', class extends HTMLElement {
+    connectedCallback() {
+      const root = this.attachShadow({ mode: 'open' });
+      root.innerHTML = `
+        <style>
+          :host { display: block; padding: 16px 0 0; }
+          .PayWidget_form__c4d5e6 { display: flex; flex-direction: column; gap: 14px; }
+          .PayWidget_field__e6f7g8 { display: flex; flex-direction: column; gap: 4px; }
+          .PayWidget_field__e6f7g8 label { font-size: 0.82rem; font-weight: 500; color: #555; }
+          .PayWidget_field__e6f7g8 input,
+          .PayWidget_field__e6f7g8 select { padding: 9px 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; outline: none; width: 100%; }
+          .PayWidget_field__e6f7g8 input:focus,
+          .PayWidget_field__e6f7g8 select:focus { border-color: #1a1a2e; }
+          .PayWidget_checkRow__h9i0j1 { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #444; }
+          .PayWidget_submitBtn__k2l3m4 { background: #1a1a2e; color: #fff; border: none; border-radius: 8px; padding: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; width: 100%; margin-top: 4px; }
+          .PayWidget_submitBtn__k2l3m4:hover { opacity: 0.9; }
+          .PayWidget_row__n5o6p7 { display: flex; gap: 12px; }
+          .PayWidget_row__n5o6p7 .PayWidget_field__e6f7g8 { flex: 1; }
+        </style>
+        <form class="PayWidget_form__c4d5e6" autocomplete="on">
+          <div class="PayWidget_field__e6f7g8">
+            <label for="pw-card-number">Card number</label>
+            <!-- t_07: input#pw-card-number - signals: aria-label, name; in shadow -->
+            <input id="pw-card-number"
+                   aria-label="Card number"
+                   name="card_number"
+                   type="text"
+                   autocomplete="cc-number"
+                   placeholder="1234 5678 9012 3456"
+                   data-oracle-id="t_07" />
+          </div>
+          <div class="PayWidget_row__n5o6p7">
+            <div class="PayWidget_field__e6f7g8">
+              <label for="pw-expiry">Expiry (MM/YY)</label>
+              <input id="pw-expiry" name="expiry" type="text" autocomplete="cc-exp" placeholder="MM/YY" />
+            </div>
+            <div class="PayWidget_field__e6f7g8">
+              <label for="pw-cvc">CVC</label>
+              <input id="pw-cvc" name="cvc" type="text" autocomplete="cc-csc" placeholder="123" />
+            </div>
+          </div>
+          <div class="PayWidget_field__e6f7g8">
+            <label for="pw-installments">Number of installments</label>
+            <!-- t_08: select#pw-installments - signals: aria-label, name; in shadow -->
+            <select id="pw-installments"
+                    aria-label="Number of installments"
+                    name="installments"
+                    data-oracle-id="t_08">
+              <option value="1">1 payment (full amount)</option>
+              <option value="3">3 monthly payments</option>
+              <option value="6">6 monthly payments</option>
+              <option value="12">12 monthly payments</option>
+            </select>
+          </div>
+          <div class="PayWidget_checkRow__h9i0j1">
+            <!-- t_09: input#pw-save-card - signals: name; in shadow -->
+            <input type="checkbox"
+                   name="save_card"
+                   id="pw-save-card"
+                   data-oracle-id="t_09" />
+            <label for="pw-save-card">Save card for future purchases</label>
+          </div>
+          <!-- t_10: button[submit-payment-btn] - signals: aria-label, data-testid; in shadow -->
+          <button type="submit"
+                  class="PayWidget_submitBtn__k2l3m4"
+                  aria-label="Pay and place order"
+                  data-testid="submit-payment-btn"
+                  data-oracle-id="t_10">
+            Pay Now
+          </button>
+        </form>
+      `;
+    }
+  });
+
+  customElements.define('payment-shell', class extends HTMLElement {
+    connectedCallback() {
+      const root = this.attachShadow({ mode: 'open' });
+      root.innerHTML = `
+        <style>
+          :host { display: block; }
+          .PayShell_root__g0h1i2 { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; padding: 20px; }
+          .PayShell_title__h2i3j4 { font-size: 1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 14px; }
+          .PayShell_tabs__k5l6m7 { display: flex; gap: 8px; margin-bottom: 16px; }
+          .PayShell_tab__n8o9p0 { flex: 1; padding: 10px 8px; border: 2px solid #d0d0d0; border-radius: 8px; background: #fff; font-size: 0.85rem; font-weight: 500; cursor: pointer; color: #444; text-align: center; transition: all 0.15s; }
+          .PayShell_tab__n8o9p0:hover { border-color: #1a1a2e; color: #1a1a2e; }
+          .PayShell_tab__n8o9p0.active { border-color: #1a1a2e; background: #1a1a2e; color: #fff; }
+          .PayShell_secRow__q1r2s3 { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; font-size: 0.8rem; color: #888; }
+          .PayShell_secIcon__x4y5z6::before { content: "🔒"; font-size: 0.9rem; }
+          .PayShell_secText__t4u5v6 { font-size: 0.78rem; color: #888; }
+        </style>
+        <div class="PayShell_root__g0h1i2">
+          <div class="PayShell_title__h2i3j4">Payment Method</div>
+          <div class="PayShell_tabs__k5l6m7" role="tablist">
+            <!-- t_04: button[aria-label="Pay by credit or debit card"] - signals: aria-label; in shadow -->
+            <button role="tab" class="PayShell_tab__n8o9p0 active"
+                    aria-label="Pay by credit or debit card"
+                    data-oracle-id="t_04">
+              Credit / Debit Card
+            </button>
+            <!-- t_05: button[aria-label="Continue with PayPal"] - signals: aria-label; in shadow -->
+            <button role="tab" class="PayShell_tab__n8o9p0"
+                    aria-label="Continue with PayPal"
+                    data-oracle-id="t_05">
+              PayPal
+            </button>
+          </div>
+          <div class="PayShell_secRow__q1r2s3">
+            <!-- t_06: span - NONE, no stable signal; in shadow -->
+            <span class="PayShell_secIcon__x4y5z6" data-oracle-id="t_06"></span>
+            <span class="PayShell_secText__t4u5v6">256-bit SSL secured payment</span>
+          </div>
+          <payment-widget></payment-widget>
+        </div>
+      `;
+    }
+  });
+
+  /* IIFE: generate 45 order-line items per copy (mobile + desktop) */
+  (function () {
+    var NAMES = [
+      'Wireless Earbuds Pro', 'Running Shoes X5', 'Coffee Maker Deluxe',
+      'Yoga Mat Premium', 'Desk Lamp LED', 'Backpack Urban 30L',
+      'Protein Powder 2kg', 'Resistance Bands Set', 'Water Bottle Insulated',
+      'Notebook A5 Pack', 'USB-C Hub 7-Port', 'Mechanical Keyboard TKL',
+      'Mouse Pad XL', 'Webcam 4K', 'Standing Desk Mat',
+      'Knee Sleeve Pair', 'Jump Rope Speed', 'Pull-Up Bar Doorway',
+      'Foam Roller 18"', 'Massage Gun Mini'
+    ];
+    var PRICES = [
+      '$49.99', '$89.99', '$129.00', '$39.99', '$29.50',
+      '$79.99', '$64.99', '$24.99', '$34.00', '$12.99',
+      '$59.99', '$109.00', '$18.99', '$149.99', '$44.99',
+      '$35.00', '$22.50', '$55.00', '$28.99', '$89.00'
+    ];
+
+    function buildItems(container, withOracle) {
+      var frag = document.createDocumentFragment();
+      for (var i = 0; i < 45; i++) {
+        var row = document.createElement('div');
+        row.className = 'OrderItem_row__a1b2c3';
+
+        var imgDiv = document.createElement('div');
+        imgDiv.className = 'OrderItem_img__d4e5f6';
+        imgDiv.setAttribute('aria-hidden', 'true');
+
+        var infoDiv = document.createElement('div');
+        infoDiv.className = 'OrderItem_info__g7h8i9';
+
+        var nameSpan = document.createElement('span');
+        nameSpan.className = 'OrderItem_name__j0k1l2';
+        nameSpan.textContent = NAMES[i % NAMES.length];
+
+        var priceSpan = document.createElement('span');
+        priceSpan.className = 'OrderItem_price__m3n4o5';
+        priceSpan.textContent = PRICES[i % PRICES.length];
+
+        infoDiv.appendChild(nameSpan);
+        infoDiv.appendChild(priceSpan);
+
+        var saveBtn = document.createElement('button');
+        saveBtn.className = 'OrderItem_save__p6q7r8';
+        saveBtn.textContent = 'Save for later';
+        if (withOracle && i === 0) {
+          saveBtn.setAttribute('data-oracle-id', 't_03');
+        }
+
+        row.appendChild(imgDiv);
+        row.appendChild(infoDiv);
+        row.appendChild(saveBtn);
+        frag.appendChild(row);
+      }
+      container.appendChild(frag);
+    }
+
+    buildItems(document.getElementById('order-items-mobile'), true);
+    buildItems(document.getElementById('order-items-desktop'), false);
+
+    var total = 0;
+    for (var k = 0; k < 45; k++) {
+      total += parseFloat(PRICES[k % PRICES.length].replace('$', ''));
+    }
+    var fmt = '$' + total.toFixed(2);
+    document.getElementById('total-mobile').textContent = fmt;
+    document.getElementById('total-desktop').textContent = fmt;
+  }());
+</script>
+</body>
+</html>

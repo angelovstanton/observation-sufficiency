@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" _nghost-set-c24>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyAccount — Settings</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f6f9; color: #333; }
+    [_nghost-set-c24], [_ngcontent-set-c24] { /* Angular host/content marker — styling hook */ }
+    header[_ngcontent-set-c24] { background: #0d1b2a; color: #fff; padding: 12px 24px; display: flex; align-items: center; gap: 16px; }
+    .Header_logo__a1b2c3[_ngcontent-set-c24] { font-size: 1.3rem; font-weight: 700; }
+    .Header_user__d4e5f6[_ngcontent-set-c24] { margin-left: auto; font-size: 0.85rem; opacity: 0.85; }
+    .AppLayout_root__g7h8i9[_ngcontent-set-c24] { display: flex; min-height: calc(100vh - 50px); }
+    aside[_ngcontent-set-c24] { width: 220px; background: #fff; border-right: 1px solid #e0e0e0; padding: 20px 0; flex-shrink: 0; }
+    .SideNav_title__j0k1l2[_ngcontent-set-c24] { font-size: 0.75rem; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em; padding: 0 16px 8px; }
+    .SideNav_item__m3n4o5[_ngcontent-set-c24] { display: flex; align-items: center; gap: 8px; padding: 10px 16px; font-size: 0.88rem; color: #555; cursor: pointer; transition: background 0.1s; }
+    .SideNav_item__m3n4o5[_ngcontent-set-c24]:hover { background: #f4f6f9; color: #0d1b2a; }
+    .SideNav_item__m3n4o5.active[_ngcontent-set-c24] { background: #e8edf5; color: #0d1b2a; font-weight: 600; border-left: 3px solid #0d1b2a; }
+    .SideNav_icon__p6q7r8[_ngcontent-set-c24] { font-size: 1rem; width: 20px; text-align: center; }
+    main[_ngcontent-set-c24] { flex: 1; padding: 28px 32px; max-width: 760px; }
+    .PageTitle__s9t0u1[_ngcontent-set-c24] { font-size: 1.5rem; font-weight: 700; color: #0d1b2a; margin-bottom: 24px; }
+    .Section_root__v2w3x4[_ngcontent-set-c24] { background: #fff; border-radius: 10px; border: 1px solid #e0e0e0; padding: 22px; margin-bottom: 20px; }
+    .Section_title__y5z6a7[_ngcontent-set-c24] { font-size: 1rem; font-weight: 600; color: #0d1b2a; margin-bottom: 16px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+    .AccountSection_field__b8c9d0[_ngcontent-set-c24] { margin-bottom: 14px; }
+    .AccountSection_field__b8c9d0[_ngcontent-set-c24] label { display: block; font-size: 0.82rem; font-weight: 500; color: #666; margin-bottom: 4px; }
+    .AccountSection_field__b8c9d0[_ngcontent-set-c24] input { width: 100%; padding: 9px 12px; border: 1px solid #d0d0d0; border-radius: 6px; font-size: 0.9rem; outline: none; }
+    .AccountSection_field__b8c9d0[_ngcontent-set-c24] input:focus { border-color: #0d1b2a; }
+    .AccountSection_actions__e1f2g3[_ngcontent-set-c24] { display: flex; gap: 10px; margin-top: 6px; }
+    .AccountSection_btn__h4i5j6[_ngcontent-set-c24] { background: #0d1b2a; color: #fff; border: none; border-radius: 6px; padding: 9px 18px; font-size: 0.88rem; font-weight: 500; cursor: pointer; }
+    .AccountSection_btn__h4i5j6[_ngcontent-set-c24]:hover { opacity: 0.9; }
+    .AccountSection_btnOutline__k7l8m9[_ngcontent-set-c24] { background: none; color: #0d1b2a; border: 1px solid #0d1b2a; border-radius: 6px; padding: 9px 18px; font-size: 0.88rem; font-weight: 500; cursor: pointer; }
+    .NotifSection_header__n0o1p2[_ngcontent-set-c24] { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+    .NotifSection_title__q3r4s5[_ngcontent-set-c24] { font-size: 1rem; font-weight: 600; color: #0d1b2a; }
+    .SettingRow_icon__a1b2c3[_ngcontent-set-c24]::before { content: "🔔"; font-size: 1.1rem; }
+    .SettingRow_root__c1d2e3[_ngcontent-set-c24] { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid #f8f8f8; gap: 12px; }
+    .SettingRow_label__f4g5h6[_ngcontent-set-c24] { flex: 1; min-width: 0; }
+    .SettingRow_name__i7j8k9[_ngcontent-set-c24] { display: block; font-size: 0.88rem; font-weight: 500; color: #333; }
+    .SettingRow_desc__l0m1n2[_ngcontent-set-c24] { display: block; font-size: 0.78rem; color: #888; margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .SettingRow_toggle__o3p4q5[_ngcontent-set-c24] { position: relative; width: 40px; height: 22px; cursor: pointer; flex-shrink: 0; }
+    .SettingRow_toggle__o3p4q5[_ngcontent-set-c24] input { opacity: 0; width: 0; height: 0; position: absolute; }
+    .SettingRow_slider__r6s7t8[_ngcontent-set-c24] { position: absolute; inset: 0; background: #ccc; border-radius: 22px; transition: 0.2s; }
+    .SettingRow_toggle__o3p4q5[_ngcontent-set-c24] input:checked + .SettingRow_slider__r6s7t8 { background: #0d1b2a; }
+    .SettingRow_status__u9v0w1[_ngcontent-set-c24] { font-size: 0.78rem; width: 26px; text-align: right; color: #888; flex-shrink: 0; }
+    settings-shell { display: block; }
+    footer[_ngcontent-set-c24] { text-align: center; padding: 20px; font-size: 0.8rem; color: #aaa; border-top: 1px solid #e8e8e8; margin-top: 24px; }
+  </style>
+</head>
+<body _ngcontent-set-c24>
+
+<header _ngcontent-set-c24>
+  <div class="Header_logo__a1b2c3" _ngcontent-set-c24>MyAccount</div>
+  <div class="Header_user__d4e5f6" _ngcontent-set-c24>alex.johnson@example.com</div>
+</header>
+
+<div class="AppLayout_root__g7h8i9" _ngcontent-set-c24>
+  <aside _ngcontent-set-c24>
+    <div class="SideNav_title__j0k1l2" _ngcontent-set-c24>Account</div>
+    <div class="SideNav_item__m3n4o5 active" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>⚙</span>
+      <span _ngcontent-set-c24>Settings</span>
+    </div>
+    <div class="SideNav_item__m3n4o5" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>🔔</span>
+      <span _ngcontent-set-c24>Notifications</span>
+    </div>
+    <div class="SideNav_item__m3n4o5" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>🔒</span>
+      <span _ngcontent-set-c24>Security</span>
+    </div>
+    <div class="SideNav_item__m3n4o5" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>💳</span>
+      <span _ngcontent-set-c24>Billing</span>
+    </div>
+    <div class="SideNav_item__m3n4o5" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>📋</span>
+      <span _ngcontent-set-c24>Activity</span>
+    </div>
+    <div class="SideNav_item__m3n4o5" _ngcontent-set-c24>
+      <span class="SideNav_icon__p6q7r8" _ngcontent-set-c24>🤝</span>
+      <span _ngcontent-set-c24>Integrations</span>
+    </div>
+  </aside>
+
+  <main _ngcontent-set-c24>
+    <h1 class="PageTitle__s9t0u1" _ngcontent-set-c24>Account Settings</h1>
+
+    <!-- Account information section -->
+    <div class="Section_root__v2w3x4" _ngcontent-set-c24>
+      <div class="Section_title__y5z6a7" _ngcontent-set-c24>Profile Information</div>
+
+      <div class="AccountSection_field__b8c9d0" _ngcontent-set-c24>
+        <label for="display-name" _ngcontent-set-c24>Display name</label>
+        <!-- t_01: input#display-name - signals: id, name -->
+        <input id="display-name"
+               name="display_name"
+               type="text"
+               _ngcontent-set-c24
+               placeholder="Your display name"
+               data-oracle-id="t_01" />
+      </div>
+
+      <div class="AccountSection_field__b8c9d0" _ngcontent-set-c24>
+        <label for="profile-email" _ngcontent-set-c24>Email address</label>
+        <input id="profile-email" name="email" type="email" _ngcontent-set-c24
+               value="alex.johnson@example.com" readonly />
+      </div>
+
+      <div class="AccountSection_field__b8c9d0" _ngcontent-set-c24>
+        <label for="profile-phone" _ngcontent-set-c24>Phone number</label>
+        <input id="profile-phone" name="phone" type="tel" _ngcontent-set-c24
+               placeholder="+1 (555) 000-0000" />
+      </div>
+
+      <div class="AccountSection_actions__e1f2g3" _ngcontent-set-c24>
+        <button class="AccountSection_btn__h4i5j6" _ngcontent-set-c24>Save profile</button>
+        <!-- t_02: button[aria-label="Change account password"] - signals: aria-label -->
+        <button class="AccountSection_btnOutline__k7l8m9"
+                _ngcontent-set-c24
+                aria-label="Change account password"
+                data-oracle-id="t_02">
+          Change Password
+        </button>
+      </div>
+    </div>
+
+    <!-- Notification toggles section -->
+    <div class="Section_root__v2w3x4" _ngcontent-set-c24>
+      <div class="NotifSection_header__n0o1p2" _ngcontent-set-c24>
+        <span class="NotifSection_title__q3r4s5" _ngcontent-set-c24>Notification Preferences</span>
+        <!-- t_03: span - NONE, no stable signal -->
+        <span class="SettingRow_icon__a1b2c3" _ngcontent-set-c24 data-oracle-id="t_03"></span>
+      </div>
+      <div id="notification-rows-container" _ngcontent-set-c24></div>
+    </div>
+
+    <!-- Settings shell (S2 host — L1) -->
+    <settings-shell id="settings-shell-r7s8t9"></settings-shell>
+  </main>
+</div>
+
+<footer _ngcontent-set-c24>
+  <p _ngcontent-set-c24>MyAccount &copy; 2025 · All rights reserved</p>
+</footer>
+
+<script>
+  /* §13: L2 (preferences-panel) defined BEFORE L1 (settings-shell) */
+
+  customElements.define('preferences-panel', class extends HTMLElement {
+    connectedCallback() {
+      const root = this.attachShadow({ mode: 'open' });
+      root.innerHTML = `
+        <style>
+          :host { display: block; }
+          .PrefPanel_root__n0o1p2 { padding: 16px 0 0; }
+          .PrefPanel_title__q3r4s5 { font-size: 0.88rem; font-weight: 600; color: #0d1b2a; margin-bottom: 12px; }
+          .PrefPanel_row__s6t7u8 { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+          .PrefPanel_row__s6t7u8 label { font-size: 0.82rem; font-weight: 500; color: #666; }
+          .PrefPanel_row__s6t7u8 select { padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.9rem; width: 100%; outline: none; }
+          .PrefPanel_row__s6t7u8 select:focus { border-color: #0d1b2a; }
+          .PrefPanel_checkRow__v9w0x1 { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #444; margin-bottom: 16px; }
+          .PrefPanel_saveBtn__y2z3a4 { background: #0d1b2a; color: #fff; border: none; border-radius: 6px; padding: 10px 20px; font-size: 0.9rem; font-weight: 600; cursor: pointer; width: 100%; }
+          .PrefPanel_saveBtn__y2z3a4:hover { opacity: 0.9; }
+        </style>
+        <div class="PrefPanel_root__n0o1p2">
+          <div class="PrefPanel_title__q3r4s5">Display Preferences</div>
+          <div class="PrefPanel_row__s6t7u8">
+            <label for="pref-language">Display language</label>
+            <!-- t_07: select#pref-language - signals: id, name; in shadow -->
+            <select id="pref-language" name="display_language" data-oracle-id="t_07">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="ja">日本語</option>
+              <option value="pt">Português</option>
+            </select>
+          </div>
+          <div class="PrefPanel_row__s6t7u8">
+            <label for="pref-timezone">Time zone</label>
+            <!-- t_08: select#pref-timezone - signals: aria-label, name; in shadow -->
+            <select id="pref-timezone"
+                    aria-label="Time zone preference"
+                    name="timezone"
+                    data-oracle-id="t_08">
+              <option value="UTC">UTC (Coordinated Universal Time)</option>
+              <option value="EST">EST (Eastern Standard Time)</option>
+              <option value="CST">CST (Central Standard Time)</option>
+              <option value="PST">PST (Pacific Standard Time)</option>
+              <option value="CET">CET (Central European Time)</option>
+              <option value="JST">JST (Japan Standard Time)</option>
+            </select>
+          </div>
+          <div class="PrefPanel_checkRow__v9w0x1">
+            <!-- t_09: input#pref-newsletter - signals: name; in shadow -->
+            <input type="checkbox"
+                   name="newsletter_opt_in"
+                   id="pref-newsletter"
+                   data-oracle-id="t_09" />
+            <label for="pref-newsletter">Subscribe to product newsletter</label>
+          </div>
+          <!-- t_10: button[save-prefs-btn] - signals: aria-label, data-testid; in shadow -->
+          <button class="PrefPanel_saveBtn__y2z3a4"
+                  aria-label="Save all preferences"
+                  data-testid="save-prefs-btn"
+                  data-oracle-id="t_10">
+            Save All Preferences
+          </button>
+        </div>
+      `;
+    }
+  });
+
+  customElements.define('settings-shell', class extends HTMLElement {
+    connectedCallback() {
+      const root = this.attachShadow({ mode: 'open' });
+      root.innerHTML = `
+        <style>
+          :host { display: block; margin-top: 20px; }
+          .SettingsPanel_root__b1c2d3 { background: #fff; border-radius: 10px; border: 1px solid #e0e0e0; padding: 22px; }
+          .SettingsPanel_title__e4f5g6 { font-size: 1rem; font-weight: 600; color: #0d1b2a; margin-bottom: 16px; border-bottom: 1px solid #f0f0f0; padding-bottom: 10px; }
+          .SettingsPanel_toggleRow__h7i8j9 { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f8f8f8; }
+          .SettingsPanel_toggleLabel__k0l1m2 { font-size: 0.88rem; font-weight: 500; color: #333; }
+          .SettingsPanel_toggleDesc__n3o4p5 { font-size: 0.78rem; color: #888; margin-top: 2px; }
+          .SettingsPanel_check__f8g9h0 { width: 18px; height: 18px; cursor: pointer; }
+          .SettingsPanel_divider__b3c4d5 { display: block; border-top: 1px solid #e8e8e8; margin: 14px 0; }
+        </style>
+        <div class="SettingsPanel_root__b1c2d3">
+          <div class="SettingsPanel_title__e4f5g6">Privacy &amp; Communications</div>
+          <div class="SettingsPanel_toggleRow__h7i8j9">
+            <div>
+              <div class="SettingsPanel_toggleLabel__k0l1m2">Data sharing</div>
+              <div class="SettingsPanel_toggleDesc__n3o4p5">Allow anonymised usage data to improve our services</div>
+            </div>
+            <!-- t_04: input[aria-label="Toggle data sharing"] - signals: aria-label; in shadow -->
+            <input type="checkbox"
+                   class="SettingsPanel_check__f8g9h0"
+                   aria-label="Toggle data sharing"
+                   data-oracle-id="t_04" />
+          </div>
+          <div class="SettingsPanel_toggleRow__h7i8j9">
+            <div>
+              <div class="SettingsPanel_toggleLabel__k0l1m2">Marketing emails</div>
+              <div class="SettingsPanel_toggleDesc__n3o4p5">Receive promotional offers and feature announcements</div>
+            </div>
+            <!-- t_05: input[aria-label="Toggle marketing emails"] - signals: aria-label; in shadow -->
+            <input type="checkbox"
+                   class="SettingsPanel_check__f8g9h0"
+                   aria-label="Toggle marketing emails"
+                   data-oracle-id="t_05" />
+          </div>
+          <!-- t_06: span - NONE, no stable signal; in shadow -->
+          <span class="SettingsPanel_divider__b3c4d5" data-oracle-id="t_06"></span>
+          <preferences-panel></preferences-panel>
+        </div>
+      `;
+    }
+  });
+
+  /* IIFE: generate 70 notification toggle rows */
+  (function () {
+    var SETTING_NAMES = [
+      'Email notifications', 'Push notifications', 'SMS alerts',
+      'Browser notifications', 'Weekly digest', 'Monthly report',
+      'Security alerts', 'Login alerts', 'Order updates',
+      'Shipping notifications', 'Review reminders', 'Price drop alerts',
+      'Back-in-stock alerts', 'Wishlist updates', 'Friend activity',
+      'Comment replies', 'Mention alerts', 'Like notifications',
+      'New follower alerts', 'System announcements'
+    ];
+    var SETTING_DESCS = [
+      'Receive emails for account activity',
+      'Mobile push alerts for real-time updates',
+      'Text messages for urgent notifications',
+      'Browser-level desktop notifications',
+      'A curated weekly summary of your activity',
+      'Monthly analytics and account summary',
+      'Immediate alerts for suspicious activity',
+      'Notify on new logins from unknown devices',
+      'Updates when your order status changes',
+      'Track your shipments in real time',
+      'Reminders to review recent purchases',
+      'Be notified when item prices drop',
+      'Get notified when out-of-stock items return',
+      'Updates from your saved wishlist',
+      'Activity from contacts in your network',
+      'Replies to your comments and posts',
+      'Alerts when someone mentions you',
+      'Notifications when your content is liked',
+      'Alert when someone starts following you',
+      'Important platform-wide announcements'
+    ];
+
+    var container = document.getElementById('notification-rows-container');
+    var frag = document.createDocumentFragment();
+
+    for (var i = 0; i < 70; i++) {
+      var row = document.createElement('div');
+      row.setAttribute('_ngcontent-set-c24', '');
+      row.className = 'SettingRow_root__c1d2e3';
+
+      var labelDiv = document.createElement('div');
+      labelDiv.setAttribute('_ngcontent-set-c24', '');
+      labelDiv.className = 'SettingRow_label__f4g5h6';
+
+      var nameSpan = document.createElement('span');
+      nameSpan.setAttribute('_ngcontent-set-c24', '');
+      nameSpan.className = 'SettingRow_name__i7j8k9';
+      nameSpan.textContent = SETTING_NAMES[i % SETTING_NAMES.length];
+
+      var descSpan = document.createElement('span');
+      descSpan.setAttribute('_ngcontent-set-c24', '');
+      descSpan.className = 'SettingRow_desc__l0m1n2';
+      descSpan.textContent = SETTING_DESCS[i % SETTING_DESCS.length];
+
+      labelDiv.appendChild(nameSpan);
+      labelDiv.appendChild(descSpan);
+
+      var toggleLabel = document.createElement('label');
+      toggleLabel.setAttribute('_ngcontent-set-c24', '');
+      toggleLabel.className = 'SettingRow_toggle__o3p4q5';
+
+      var toggleInput = document.createElement('input');
+      toggleInput.setAttribute('_ngcontent-set-c24', '');
+      toggleInput.type = 'checkbox';
+      if (i % 3 !== 2) toggleInput.checked = true;
+
+      var sliderSpan = document.createElement('span');
+      sliderSpan.setAttribute('_ngcontent-set-c24', '');
+      sliderSpan.className = 'SettingRow_slider__r6s7t8';
+
+      toggleLabel.appendChild(toggleInput);
+      toggleLabel.appendChild(sliderSpan);
+
+      var statusSpan = document.createElement('span');
+      statusSpan.setAttribute('_ngcontent-set-c24', '');
+      statusSpan.className = 'SettingRow_status__u9v0w1';
+      statusSpan.textContent = (i % 3 !== 2) ? 'On' : 'Off';
+
+      row.appendChild(labelDiv);
+      row.appendChild(toggleLabel);
+      row.appendChild(statusSpan);
+      frag.appendChild(row);
+    }
+
+    container.appendChild(frag);
+  }());
+</script>
+</body>
+</html>

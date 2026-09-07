@@ -1,0 +1,108 @@
+{
+  "page_id": "page_23",
+  "group": "G6",
+  "shadow": "S2",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": ["payment-shell-b1c2d3"],
+    "volatile_classes": [
+      "OrderItem_save__p6q7r8",
+      "PayShell_secIcon__x4y5z6",
+      "OrderSummary_mobile__r9s0t1",
+      "OrderSummary_desktop__u2v3w4"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the email input for the order confirmation",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "input in light DOM shipping form with id='order-email', name='email', and aria-label='Email address for order confirmation'"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that applies a discount or promo code",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button in light DOM promo row with aria-label='Apply discount code'; no data-testid"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the Save for later button on the first item in the order summary",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — button in light DOM order summary with class OrderItem_save__p6q7r8 only; text 'Save for later' appears on all 90 instances (45 mobile + 45 desktop responsive duplicate); no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the credit or debit card payment method tab",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button[role=tab] inside payment-shell shadow root (level-1) with aria-label='Pay by credit or debit card'; no data-testid; PayShell_tab__ class is volatile"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the PayPal payment method tab",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button[role=tab] inside payment-shell shadow root (level-1) with aria-label='Continue with PayPal'; no data-testid; PayShell_tab__ class is volatile"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the security badge icon in the payment panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span inside payment-shell shadow root (level-1) with class PayShell_secIcon__x4y5z6 only; CSS ::before lock icon (no DOM text content); no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the card number input in the payment form",
+      "signal_attrs": ["aria-label", "name", "id"],
+      "expected_stable_signal": "input inside payment-widget shadow root (level-2) with aria-label='Card number' and name='card_number'; autocomplete='cc-number'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown that selects the number of payment installments",
+      "signal_attrs": ["aria-label", "name", "id"],
+      "expected_stable_signal": "select inside payment-widget shadow root (level-2) with aria-label='Number of installments' and name='installments'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the checkbox that saves the card for future purchases",
+      "signal_attrs": ["name", "id"],
+      "expected_stable_signal": "input[type=checkbox] inside payment-widget shadow root (level-2) with name='save_card'; no aria-label (low semantic density page); name is the primary stable discriminator"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the button that submits the payment and places the order",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside payment-widget shadow root (level-2) with aria-label='Pay and place order' and data-testid='submit-payment-btn'"
+    }
+  ]
+}

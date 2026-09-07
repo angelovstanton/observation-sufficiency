@@ -1,0 +1,502 @@
+{
+  "description": "Axis C cross-model robustness -- key metrics",
+  "source": "cross_model.py",
+  "fair_subset_excludes": [
+    "page_08",
+    "page_17"
+  ],
+  "F3_encoding_note": "F3 = linearized DSL (EncodeF3Linearized). Not YAML.",
+  "comparison_warning": "overall_success is NOT a valid cross-model comparison: o4-mini ran COP only (best single cell, 75.4%); Claude ran all 4 cells (69.1%). Valid comparison: COP cell only -- o4-mini 75.4% vs Claude 75.2% -- statistically equal. Primary finding is reasoning TIER vs instruction TIER (~75% vs ~66%), not o4-mini vs Claude.",
+  "overall": {
+    "gpt-4.1": {
+      "n": 960,
+      "ok": 597,
+      "pct": 62.2
+    },
+    "gpt-4.1-nano": {
+      "n": 960,
+      "ok": 539,
+      "pct": 56.1
+    },
+    "o4-mini": {
+      "n": 240,
+      "ok": 181,
+      "pct": 75.4
+    },
+    "claude-sonnet-4-6": {
+      "n": 880,
+      "ok": 608,
+      "pct": 69.1
+    }
+  },
+  "fair_22p": {
+    "gpt-4.1": {
+      "n": 870,
+      "ok": 563,
+      "pct": 64.7
+    },
+    "gpt-4.1-nano": {
+      "n": 870,
+      "ok": 493,
+      "pct": 56.7
+    },
+    "claude-sonnet-4-6": {
+      "n": 870,
+      "ok": 600,
+      "pct": 69.0
+    },
+    "o4-mini": {
+      "n": 220,
+      "ok": 167,
+      "pct": 75.9
+    }
+  },
+  "cop_cell": {
+    "gpt-4.1": {
+      "n": 240,
+      "ok": 163,
+      "pct": 67.9,
+      "lacked": 48,
+      "grabbed": 29
+    },
+    "gpt-4.1-nano": {
+      "n": 240,
+      "ok": 159,
+      "pct": 66.2,
+      "lacked": 48,
+      "grabbed": 33
+    },
+    "o4-mini": {
+      "n": 240,
+      "ok": 181,
+      "pct": 75.4,
+      "lacked": 48,
+      "grabbed": 11
+    },
+    "claude-sonnet-4-6": {
+      "n": 230,
+      "ok": 173,
+      "pct": 75.2,
+      "lacked": 46,
+      "grabbed": 11
+    }
+  },
+  "reasoning_vs_instruction": {
+    "reasoning_cop_pct": 75.3,
+    "instruction_cop_pct": 67.1,
+    "cop_gap_pp": 8.2,
+    "reasoning_cop_grabbed": 11.0,
+    "instruction_cop_grabbed": 31.0,
+    "grabbed_reduction_pp": 20.0
+  },
+  "form_invariance": [
+    {
+      "model": "gpt-4.1",
+      "n": 240,
+      "bf_ok": 139,
+      "bf_pct": 57.9,
+      "nv_ok": 162,
+      "nv_pct": 67.5,
+      "gain_pp": 9.6,
+      "bf_n": 240,
+      "nv_n": 240
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "n": 240,
+      "bf_ok": 147,
+      "bf_pct": 61.3,
+      "nv_ok": 163,
+      "nv_pct": 67.9,
+      "gain_pp": 6.6,
+      "bf_n": 240,
+      "nv_n": 240
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "n": 210,
+      "bf_ok": 150,
+      "bf_pct": 71.4,
+      "nv_ok": 163,
+      "nv_pct": 77.6,
+      "gain_pp": 6.2,
+      "bf_n": 210,
+      "nv_n": 210
+    }
+  ],
+  "nano_f2_anomaly": {
+    "F1": {
+      "n": 240,
+      "ok": 163,
+      "pct": 67.9,
+      "lacked": 48,
+      "grabbed": 29,
+      "unreachable": 0
+    },
+    "F2": {
+      "n": 240,
+      "ok": 70,
+      "pct": 29.2,
+      "lacked": 48,
+      "grabbed": 122,
+      "unreachable": 0
+    },
+    "grabbed_blowup": 93,
+    "grabbed_blowup_ratio": 4.2
+  },
+  "reconciliation": [
+    {
+      "check": "gpt-4.1 total n",
+      "computed": "960",
+      "expected": "960",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 total ok",
+      "computed": "597",
+      "expected": "597",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 total %",
+      "computed": "62.2",
+      "expected": "62.2",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano total n",
+      "computed": "960",
+      "expected": "960",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano total ok",
+      "computed": "539",
+      "expected": "539",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano total %",
+      "computed": "56.1",
+      "expected": "56.1",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini total n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini total ok",
+      "computed": "181",
+      "expected": "181",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini total %",
+      "computed": "75.4",
+      "expected": "75.4",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 total n",
+      "computed": "880",
+      "expected": "880",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 total ok",
+      "computed": "608",
+      "expected": "608",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 total %",
+      "computed": "69.1",
+      "expected": "69.1",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 COP n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 COP ok",
+      "computed": "163",
+      "expected": "163",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 COP %",
+      "computed": "67.9",
+      "expected": "67.9",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 COP lacked",
+      "computed": "48",
+      "expected": "48",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 COP grabbed",
+      "computed": "29",
+      "expected": "29",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano COP n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano COP ok",
+      "computed": "159",
+      "expected": "159",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano COP %",
+      "computed": "66.2",
+      "expected": "66.2",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano COP lacked",
+      "computed": "48",
+      "expected": "48",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano COP grabbed",
+      "computed": "33",
+      "expected": "33",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini COP n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini COP ok",
+      "computed": "181",
+      "expected": "181",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini COP %",
+      "computed": "75.4",
+      "expected": "75.4",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini COP lacked",
+      "computed": "48",
+      "expected": "48",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini COP grabbed",
+      "computed": "11",
+      "expected": "11",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 COP n",
+      "computed": "230",
+      "expected": "230",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 COP ok",
+      "computed": "173",
+      "expected": "173",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 COP %",
+      "computed": "75.2",
+      "expected": "75.2",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 COP lacked",
+      "computed": "46",
+      "expected": "46",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 COP grabbed",
+      "computed": "11",
+      "expected": "11",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 total fail",
+      "computed": "363",
+      "expected": "363",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano total fail",
+      "computed": "421",
+      "expected": "421",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini total fail",
+      "computed": "59",
+      "expected": "59",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 total fail",
+      "computed": "272",
+      "expected": "272",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 fair n",
+      "computed": "870",
+      "expected": "870",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 fair ok",
+      "computed": "563",
+      "expected": "563",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1 fair %",
+      "computed": "64.7",
+      "expected": "64.7",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano fair n",
+      "computed": "870",
+      "expected": "870",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano fair ok",
+      "computed": "493",
+      "expected": "493",
+      "status": "PASS"
+    },
+    {
+      "check": "gpt-4.1-nano fair %",
+      "computed": "56.7",
+      "expected": "56.7",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini fair n",
+      "computed": "220",
+      "expected": "220",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini fair ok",
+      "computed": "167",
+      "expected": "167",
+      "status": "PASS"
+    },
+    {
+      "check": "o4-mini fair %",
+      "computed": "75.9",
+      "expected": "75.9",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 fair n",
+      "computed": "870",
+      "expected": "870",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 fair ok",
+      "computed": "600",
+      "expected": "600",
+      "status": "PASS"
+    },
+    {
+      "check": "claude-sonnet-4-6 fair %",
+      "computed": "69.0",
+      "expected": "69.0",
+      "status": "PASS"
+    },
+    {
+      "check": "reasoning COP grabbed avg",
+      "computed": "11.0",
+      "expected": "11.0",
+      "status": "PASS"
+    },
+    {
+      "check": "instruction COP grabbed avg",
+      "computed": "31.0",
+      "expected": "31.0",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF1 n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF1 ok",
+      "computed": "163",
+      "expected": "163",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF1 lacked",
+      "computed": "48",
+      "expected": "48",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF1 grabbed",
+      "computed": "29",
+      "expected": "29",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF2 n",
+      "computed": "240",
+      "expected": "240",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF2 ok",
+      "computed": "70",
+      "expected": "70",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF2 lacked",
+      "computed": "48",
+      "expected": "48",
+      "status": "PASS"
+    },
+    {
+      "check": "nano nvF2 grabbed",
+      "computed": "122",
+      "expected": "122",
+      "status": "PASS"
+    }
+  ],
+  "reconciliation_summary": {
+    "pass": 58,
+    "mismatch": 0,
+    "total": 58
+  }
+}

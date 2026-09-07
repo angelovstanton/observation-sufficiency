@@ -1,0 +1,109 @@
+{
+  "page_id": "page_21",
+  "group": "G6",
+  "shadow": "S2",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": [
+      "player-session-a3f4b5"
+    ],
+    "volatile_classes": [
+      "VideoPlayer_overlay__a2b3c4",
+      "VideoPlayer_chapterBar__e5f6g7",
+      "ControlBar_playBtn__k1l2m3",
+      "ControlBar_progress__n4o5p6",
+      "ControlBar_muteBtn__q7r8s9",
+      "ControlBar_qualityBtn__t0u1v2",
+      "ControlBar_captionBtn__w3x4y5",
+      "VideoMeta_subscribeBtn__f4g5h6",
+      "VideoMeta_likeBtn__i7j8k9",
+      "SidePanel_nextCard__l0m1n2"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the button that subscribes to the DevOps Academy channel",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='subscribe-btn' and aria-label='Subscribe to VideoNest' in light DOM; React CSS module class VideoMeta_subscribeBtn__f4g5h6 is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that likes the currently playing video",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='like-btn' in light DOM; React CSS module class VideoMeta_likeBtn__i7j8k9 is volatile"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the card in the sidebar that links to the next recommended video",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — only volatile React CSS module class SidePanel_nextCard__l0m1n2 in light DOM; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the element inside the video player that shows the total running duration of the video",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "div with aria-label='Video duration: 14:32' in level-1 shadow root of video-player-shell; React CSS module class VideoPlayer_overlay__a2b3c4 is volatile"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the element inside the video player that shows the name of the current chapter",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — only volatile React CSS module class VideoPlayer_chapterBar__e5f6g7 in level-1 shadow root; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the play/pause button in the video player controls",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Play video' in level-2 shadow root of player-control-bar; React CSS module class ControlBar_playBtn__k1l2m3 is volatile"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the seek bar that lets you scrub to a different position in the video",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "input[type=range] with aria-label='Seek video' and data-testid='seek-bar' in level-2 shadow root; React CSS module class ControlBar_progress__n4o5p6 is volatile"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the button that mutes or unmutes the video audio",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Mute audio' in level-2 shadow root; React CSS module class ControlBar_muteBtn__q7r8s9 is volatile"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the button in the video controls that lets you select the video playback quality",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — only volatile React CSS module class ControlBar_qualityBtn__t0u1v2 in level-2 shadow root; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the button in the video controls that toggles closed captions on or off",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button with aria-label='Toggle captions' and data-testid='caption-toggle' in level-2 shadow root; React CSS module class ControlBar_captionBtn__w3x4y5 is volatile"
+    }
+  ]
+}

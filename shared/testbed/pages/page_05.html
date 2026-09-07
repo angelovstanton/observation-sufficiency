@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Search Results — HomeFind</title>
+<!-- targets: see pages/page_05.truth.json -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#222;background:#f0f2f5}
+a{color:#0055d4;text-decoration:none}a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:inherit}
+/* header */
+.site-header{background:#1a3a5c;color:#fff;position:sticky;top:0;z-index:100}
+.header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:10px 20px}
+.logo{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+.logo span{color:#f0a500}
+.nav-search{flex:1;display:flex;border:2px solid rgba(255,255,255,.3);border-radius:4px;overflow:hidden;max-width:440px}
+.nav-search__input{flex:1;padding:7px 12px;background:rgba(255,255,255,.1);border:none;outline:none;color:#fff;font-size:13px}
+.nav-search__input::placeholder{color:rgba(255,255,255,.6)}
+.nav-search__btn{background:#f0a500;border:none;padding:7px 14px;color:#fff;font-size:13px;font-weight:600}
+.header-nav{display:flex;gap:8px;margin-left:auto}
+.header-nav a{color:rgba(255,255,255,.85);font-size:13px;padding:4px 8px;border-radius:3px}
+.header-nav a:hover{background:rgba(255,255,255,.15);color:#fff;text-decoration:none}
+.header-nav .btn-alert{background:rgba(240,165,0,.2);border:1px solid rgba(240,165,0,.4);color:#f0a500;padding:4px 10px;border-radius:3px}
+/* search hero */
+.search-hero{background:#fff;border-bottom:1px solid #dde;padding:18px 20px}
+.search-hero__inner{max-width:1280px;margin:0 auto}
+.search-form{display:flex;gap:0;border:2px solid #1a3a5c;border-radius:6px;overflow:hidden;max-width:960px}
+.search-form__location{flex:2;display:flex}
+.search-form__location input{flex:1;padding:12px 16px;border:none;outline:none;font-size:15px}
+.search-form__divider{width:1px;background:#dde;margin:6px 0}
+.search-form__filters{display:flex}
+.search-form__filter-input{padding:12px 10px;border:none;border-left:1px solid #dde;outline:none;font-size:14px;color:#555;width:110px}
+.search-form__filter-input.PriceRange--9e3b2a{color:#333}
+.search-form__select{padding:10px 8px;border:none;border-left:1px solid #dde;outline:none;background:#fff;font-size:14px;color:#555}
+.search-form__btn{background:#1a3a5c;color:#fff;border:none;padding:12px 24px;font-size:15px;font-weight:700;white-space:nowrap}
+/* filter chips */
+.filter-chips{background:#fff;border-bottom:1px solid #e0e4ea;padding:10px 20px}
+.filter-chips__inner{max-width:1280px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filter-chips__label{font-size:13px;color:#666;font-weight:500;margin-right:4px}
+.filter-chip{background:#f0f4ff;border:1.5px solid #b0bcd8;color:#1a3a5c;padding:5px 14px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer}
+.filter-chip:hover{background:#dce5f5}
+.filter-chip.active{background:#1a3a5c;color:#fff;border-color:#1a3a5c}
+.FilterChip--4d3e2f{display:inline-block}
+/* results bar */
+.results-bar{max-width:1280px;margin:16px auto 0;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
+.results-count{font-size:14px;color:#444}
+.sort-wrap{display:flex;align-items:center;gap:8px}
+.sort-wrap label{font-size:13px;color:#555}
+.sort-wrap select{padding:7px 10px;border:1.5px solid #ccd;border-radius:4px;font-size:13px;background:#fff}
+/* property grid */
+.property-grid{max-width:1280px;margin:16px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+/* property card */
+.property-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);transition:box-shadow .2s}
+.property-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.property-card__img{width:100%;height:180px;object-fit:cover;display:block;background:#e8ecf0}
+.property-card__img-placeholder{width:100%;height:180px;background:linear-gradient(135deg,#dde5f0,#c8d4e8);display:flex;align-items:center;justify-content:center;font-size:28px;color:#8899bb}
+.property-card__body{padding:12px 14px}
+.property-card__price{font-size:20px;font-weight:700;color:#1a3a5c;margin-bottom:4px}
+.property-card__address{font-size:14px;color:#333;font-weight:500;margin-bottom:6px;line-height:1.3}
+.property-card__meta{font-size:12px;color:#666;display:flex;gap:10px;margin-bottom:8px}
+.property-card__actions{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f0f2f5;padding-top:8px;margin-top:4px}
+.property-card__link{font-size:13px;color:#0055d4;font-weight:500}
+.fav-btn{background:none;border:1px solid #ccd;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:16px}
+.fav-btn:hover{border-color:#e0a0a0;color:#cc4444}
+/* pagination */
+.pagination{max-width:1280px;margin:24px auto;padding:0 20px 24px;display:flex;justify-content:center;gap:4px}
+.pagination__btn{background:#fff;border:1.5px solid #ccd;border-radius:4px;padding:8px 14px;font-size:14px;color:#333;min-width:40px;text-align:center}
+.pagination__btn:hover{background:#f0f4ff;border-color:#1a3a5c}
+.pagination__btn--active{background:#1a3a5c;color:#fff;border-color:#1a3a5c}
+.Pagination--1a9b8c{display:inline-block}
+/* footer */
+.site-footer{background:#1a3a5c;color:rgba(255,255,255,.75);font-size:13px;padding:32px 20px 20px}
+.footer-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.footer-section h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:10px}
+.footer-section a{display:block;color:rgba(255,255,255,.65);margin-bottom:6px;font-size:13px}
+.footer-bottom{max-width:1280px;margin:20px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);text-align:center;font-size:12px;color:rgba(255,255,255,.45)}
+/* map toggle */
+.map-toggle{position:fixed;bottom:24px;right:24px;background:#1a3a5c;color:#fff;border:none;border-radius:24px;padding:10px 20px;font-size:14px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">Home<span>Find</span></a>
+    <!-- Nav search: NO name attribute — does not match t_01 -->
+    <div class="nav-search">
+      <input type="text" class="nav-search__input" placeholder="Quick search…" autocomplete="off">
+      <button class="nav-search__btn" type="button">Search</button>
+    </div>
+    <nav class="header-nav">
+      <a href="/buy">Buy</a>
+      <a href="/rent">Rent</a>
+      <a href="/sell">Sell</a>
+      <a href="/new-homes">New homes</a>
+      <a href="/commercial">Commercial</a>
+      <a href="/agents">Find an agent</a>
+      <a href="/alerts" class="btn-alert">Set alert</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── Main search form ─────────────────────────────────────────────── -->
+<section class="search-hero">
+  <div class="search-hero__inner">
+    <form class="search-form" action="/search" method="get">
+      <div class="search-form__location">
+        <input
+          type="text"
+          name="location"
+          placeholder="Enter city, town or postcode"
+          class="SearchBar--a3f2c1"
+          autocomplete="off"
+          data-oracle-id="t_01" />
+      </div>
+      <div class="search-form__divider"></div>
+      <div class="search-form__filters">
+        <input
+          type="number"
+          name="price_min"
+          placeholder="Min price"
+          class="search-form__filter-input PriceRange--9e3b2a"
+          min="0"
+          step="10000"
+          data-oracle-id="t_02" />
+        <input
+          type="number"
+          name="price_max"
+          placeholder="Max price"
+          class="search-form__filter-input PriceRange--9e3b2a"
+          min="0"
+          step="10000"
+          data-oracle-id="t_03" />
+        <select
+          name="bedrooms"
+          class="search-form__select"
+          data-oracle-id="t_04">
+          <option value="">Any beds</option>
+          <option value="1">1+ bed</option>
+          <option value="2">2+ beds</option>
+          <option value="3">3+ beds</option>
+          <option value="4">4+ beds</option>
+          <option value="5">5+ beds</option>
+        </select>
+      </div>
+      <button type="submit" class="search-form__btn">Search</button>
+    </form>
+  </div>
+</section>
+
+<!-- ── Property type filter chips ─────────────────────────────────────── -->
+<div class="filter-chips">
+  <div class="filter-chips__inner">
+    <span class="filter-chips__label">Property type:</span>
+    <!-- t_10: "Houses" chip — NONE signal, only volatile class -->
+    <button class="filter-chip active FilterChip--4d3e2f" type="button" data-oracle-id="t_10">Houses</button>
+    <button class="filter-chip FilterChip--4d3e2f" type="button">Flats</button>
+    <button class="filter-chip FilterChip--4d3e2f" type="button">New homes</button>
+    <button class="filter-chip FilterChip--4d3e2f" type="button">Retirement homes</button>
+    <button class="filter-chip FilterChip--4d3e2f" type="button">Land</button>
+    <button class="filter-chip FilterChip--4d3e2f" type="button">Commercial</button>
+  </div>
+</div>
+
+<!-- ── Results bar ─────────────────────────────────────────────────────── -->
+<div class="results-bar">
+  <div class="results-count">
+    <span class="ResultCount--6e5f4d" data-oracle-id="t_09">1,247 properties found</span>
+    <span class="results-area"> in Manchester and surrounding area</span>
+  </div>
+  <div class="sort-wrap">
+    <label>Sort by:
+    <select
+      aria-label="Sort results by"
+      class="SortDropdown--7c6b5a"
+      data-oracle-id="t_07">
+      <option value="most-recent">Most recent</option>
+      <option value="price-asc">Price (low to high)</option>
+      <option value="price-desc">Price (high to low)</option>
+      <option value="nearest">Nearest first</option>
+      <option value="largest">Largest first</option>
+    </select></label>
+  </div>
+</div>
+
+<!-- ── Property grid ───────────────────────────────────────────────────── -->
+<div class="property-grid">
+
+  <!-- Card 1 — 14 Elmwood Close (t_05: card link; t_06 is on card 2's fav btn) -->
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£385,000</p>
+      <a href="/property/14-elmwood-close-manchester"
+         data-testid="property-card-1"
+         class="property-card__address PropertyCard--b4e7d9"
+         data-oracle-id="t_05">14 Elmwood Close, Manchester, M14 5QR</a>
+      <div class="property-card__meta">
+        <span>🛏 4 beds</span>
+        <span>🛁 2 baths</span>
+        <span>📐 1,340 sq ft</span>
+      </div>
+      <div class="property-card__actions">
+        <span class="property-card__type">Semi-detached</span>
+        <button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 14 Elmwood Close">♡</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 2 — 7 Birchwood Avenue (t_06: fav button on THIS card, NONE signal) -->
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£259,950</p>
+      <a href="/property/7-birchwood-avenue-salford"
+         data-testid="property-card-2"
+         class="property-card__address PropertyCard--b4e7d9">7 Birchwood Avenue, Salford, M6 8DT</a>
+      <div class="property-card__meta">
+        <span>🛏 3 beds</span>
+        <span>🛁 1 bath</span>
+        <span>📐 980 sq ft</span>
+      </div>
+      <div class="property-card__actions">
+        <span class="property-card__type">Terraced</span>
+        <button class="fav-btn FavBtn--c8a1f0" type="button" data-oracle-id="t_06">♡</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- Cards 3–20 — no annotated targets -->
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£449,000</p>
+      <a href="/property/22-oak-road-didsbury" data-testid="property-card-3" class="property-card__address PropertyCard--b4e7d9">22 Oak Road, Didsbury, M20 2JX</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 2 baths</span><span>📐 1,560 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 22 Oak Road">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£195,000</p>
+      <a href="/property/45-maple-street-stretford" data-testid="property-card-4" class="property-card__address PropertyCard--b4e7d9">45 Maple Street, Stretford, M32 0LF</a>
+      <div class="property-card__meta"><span>🛏 2 beds</span><span>🛁 1 bath</span><span>📐 720 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Terraced</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 45 Maple Street">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£525,000</p>
+      <a href="/property/3-victoria-road-chorlton" data-testid="property-card-5" class="property-card__address PropertyCard--b4e7d9">3 Victoria Road, Chorlton, M21 0JH</a>
+      <div class="property-card__meta"><span>🛏 5 beds</span><span>🛁 3 baths</span><span>📐 1,980 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 3 Victoria Road">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£310,000</p>
+      <a href="/property/18-cedar-grove-withington" data-testid="property-card-6" class="property-card__address PropertyCard--b4e7d9">18 Cedar Grove, Withington, M20 3ED</a>
+      <div class="property-card__meta"><span>🛏 3 beds</span><span>🛁 1 bath</span><span>📐 1,120 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Semi-detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 18 Cedar Grove">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£285,000</p>
+      <a href="/property/62-hawthorn-lane-sale" data-testid="property-card-7" class="property-card__address PropertyCard--b4e7d9">62 Hawthorn Lane, Sale, M33 7BN</a>
+      <div class="property-card__meta"><span>🛏 3 beds</span><span>🛁 2 baths</span><span>📐 1,050 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Semi-detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 62 Hawthorn Lane">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£650,000</p>
+      <a href="/property/9-riverside-drive-altrincham" data-testid="property-card-8" class="property-card__address PropertyCard--b4e7d9">9 Riverside Drive, Altrincham, WA14 2PQ</a>
+      <div class="property-card__meta"><span>🛏 5 beds</span><span>🛁 3 baths</span><span>📐 2,200 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 9 Riverside Drive">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£175,000</p>
+      <a href="/property/34-sunfield-road-eccles" data-testid="property-card-9" class="property-card__address PropertyCard--b4e7d9">34 Sunfield Road, Eccles, M30 0LQ</a>
+      <div class="property-card__meta"><span>🛏 2 beds</span><span>🛁 1 bath</span><span>📐 680 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Terraced</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 34 Sunfield Road">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£395,000</p>
+      <a href="/property/11-ash-tree-close-urmston" data-testid="property-card-10" class="property-card__address PropertyCard--b4e7d9">11 Ash Tree Close, Urmston, M41 5GH</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 2 baths</span><span>📐 1,380 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 11 Ash Tree Close">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£229,500</p>
+      <a href="/property/5-poplar-street-stockport" data-testid="property-card-11" class="property-card__address PropertyCard--b4e7d9">5 Poplar Street, Stockport, SK1 4RN</a>
+      <div class="property-card__meta"><span>🛏 3 beds</span><span>🛁 1 bath</span><span>📐 890 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Terraced</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 5 Poplar Street">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£479,000</p>
+      <a href="/property/27-beech-avenue-hale" data-testid="property-card-12" class="property-card__address PropertyCard--b4e7d9">27 Beech Avenue, Hale, WA15 8JL</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 3 baths</span><span>📐 1,720 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 27 Beech Avenue">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£340,000</p>
+      <a href="/property/88-willow-park-timperley" data-testid="property-card-13" class="property-card__address PropertyCard--b4e7d9">88 Willow Park, Timperley, WA15 6SH</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 2 baths</span><span>📐 1,290 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Semi-detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 88 Willow Park">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£215,000</p>
+      <a href="/property/14-sycamore-close-irlam" data-testid="property-card-14" class="property-card__address PropertyCard--b4e7d9">14 Sycamore Close, Irlam, M44 6BD</a>
+      <div class="property-card__meta"><span>🛏 3 beds</span><span>🛁 1 bath</span><span>📐 860 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Terraced</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 14 Sycamore Close">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£570,000</p>
+      <a href="/property/6-manor-gardens-bowdon" data-testid="property-card-15" class="property-card__address PropertyCard--b4e7d9">6 Manor Gardens, Bowdon, WA14 3DT</a>
+      <div class="property-card__meta"><span>🛏 5 beds</span><span>🛁 3 baths</span><span>📐 2,050 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 6 Manor Gardens">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£298,000</p>
+      <a href="/property/31-lime-tree-walk-partington" data-testid="property-card-16" class="property-card__address PropertyCard--b4e7d9">31 Lime Tree Walk, Partington, M31 4JN</a>
+      <div class="property-card__meta"><span>🛏 3 beds</span><span>🛁 2 baths</span><span>📐 1,040 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Semi-detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 31 Lime Tree Walk">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£365,000</p>
+      <a href="/property/20-cherry-orchard-northenden" data-testid="property-card-17" class="property-card__address PropertyCard--b4e7d9">20 Cherry Orchard, Northenden, M22 4DW</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 2 baths</span><span>📐 1,400 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Semi-detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 20 Cherry Orchard">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏠</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£155,000</p>
+      <a href="/property/9-station-road-reddish" data-testid="property-card-18" class="property-card__address PropertyCard--b4e7d9">9 Station Road, Reddish, SK5 7AB</a>
+      <div class="property-card__meta"><span>🛏 2 beds</span><span>🛁 1 bath</span><span>📐 640 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Terraced</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 9 Station Road">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏡</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£425,000</p>
+      <a href="/property/14-brookfield-close-cheadle" data-testid="property-card-19" class="property-card__address PropertyCard--b4e7d9">14 Brookfield Close, Cheadle, SK8 1NG</a>
+      <div class="property-card__meta"><span>🛏 4 beds</span><span>🛁 2 baths</span><span>📐 1,520 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 14 Brookfield Close">♡</button></div>
+    </div>
+  </article>
+
+  <article class="property-card PropertyCard--b4e7d9">
+    <div class="property-card__img-placeholder">🏘</div>
+    <div class="property-card__body">
+      <p class="property-card__price">£489,000</p>
+      <a href="/property/3-highfield-road-bramhall" data-testid="property-card-20" class="property-card__address PropertyCard--b4e7d9">3 Highfield Road, Bramhall, SK7 2EQ</a>
+      <div class="property-card__meta"><span>🛏 5 beds</span><span>🛁 3 baths</span><span>📐 1,840 sq ft</span></div>
+      <div class="property-card__actions"><span class="property-card__type">Detached</span><button class="fav-btn FavBtn--c8a1f0" type="button" aria-label="Save 3 Highfield Road">♡</button></div>
+    </div>
+  </article>
+
+</div><!-- .property-grid -->
+
+<!-- ── Pagination ──────────────────────────────────────────────────────── -->
+<div class="pagination">
+  <button class="pagination__btn Pagination--1a9b8c" type="button" aria-label="Previous page">‹</button>
+  <button class="pagination__btn Pagination--1a9b8c pagination__btn--active" type="button" aria-label="Page 1">1</button>
+  <button class="pagination__btn Pagination--1a9b8c" type="button" aria-label="Page 2">2</button>
+  <button class="pagination__btn Pagination--1a9b8c" type="button" aria-label="Page 3">3</button>
+  <span class="pagination__btn" aria-hidden="true">…</span>
+  <button class="pagination__btn Pagination--1a9b8c" type="button" aria-label="Page 63">63</button>
+  <button
+    class="pagination__btn Pagination--1a9b8c"
+    type="button"
+    aria-label="Next page"
+    data-oracle-id="t_08">›</button>
+</div>
+
+<!-- ── Map toggle (volatile ID, non-target) ─────────────────────────── -->
+<button id="map-toggle--e9d8c7" class="map-toggle" type="button">🗺 Map view</button>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h4>Find a property</h4>
+      <a href="/buy">Buy a home</a>
+      <a href="/rent">Rent a home</a>
+      <a href="/new-homes">New homes</a>
+      <a href="/commercial">Commercial</a>
+      <a href="/auction">Auction</a>
+    </div>
+    <div class="footer-section">
+      <h4>Sell your home</h4>
+      <a href="/sell">Sell with HomeFind</a>
+      <a href="/valuations">Get a valuation</a>
+      <a href="/agents">Find an agent</a>
+      <a href="/conveyancing">Conveyancing</a>
+    </div>
+    <div class="footer-section">
+      <h4>Mortgage</h4>
+      <a href="/mortgage">Mortgage finder</a>
+      <a href="/mortgage/calculator">Mortgage calculator</a>
+      <a href="/mortgage/first-time">First-time buyers</a>
+      <a href="/mortgage/remortgage">Remortgage</a>
+    </div>
+    <div class="footer-section">
+      <h4>About</h4>
+      <a href="/about">About HomeFind</a>
+      <a href="/press">Press</a>
+      <a href="/careers">Careers</a>
+      <a href="/contact">Contact us</a>
+      <a href="/privacy">Privacy policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2024 HomeFind. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

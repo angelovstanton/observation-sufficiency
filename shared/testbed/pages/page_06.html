@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today's News — PressFlow</title>
+  <!-- targets: see pages/page_06.truth.json -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; margin: 0; background: #f7f7f5; color: #222; }
+    .site-header { background: #1c1c1c; color: #fff; padding: 0; }
+    .top-bar { display: flex; align-items: center; gap: 16px; padding: 10px 20px; border-bottom: 1px solid #333; }
+    .top-bar .logo { font-size: 22px; font-weight: 700; color: #fff; text-decoration: none; font-family: Georgia, serif; }
+    .top-bar form { display: flex; gap: 4px; margin-left: auto; }
+    .top-bar input[type=search] { padding: 6px 10px; border: 1px solid #555; background: #2a2a2a; color: #fff; border-radius: 3px; font-size: 13px; width: 180px; }
+    .top-bar button[type=submit] { padding: 6px 12px; background: #c0392b; color: #fff; border: none; border-radius: 3px; cursor: pointer; font-size: 13px; }
+    .top-bar .share-btn { padding: 6px 12px; background: transparent; border: 1px solid #555; color: #ccc; border-radius: 3px; cursor: pointer; font-size: 13px; }
+    .main-nav { display: flex; gap: 0; padding: 0 20px; overflow-x: auto; }
+    .main-nav a { color: #ddd; text-decoration: none; padding: 10px 14px; font-size: 14px; font-family: Arial, sans-serif; white-space: nowrap; border-bottom: 3px solid transparent; }
+    .main-nav a:hover { color: #fff; border-bottom-color: #c0392b; }
+    .d-md-none { display: block; }
+    .d-none-md { display: none; }
+    @media (min-width: 768px) { .d-md-none { display: none; } .d-none-md { display: block; } }
+    .ad-slot { background: #e0e0e0; text-align: center; padding: 12px; font-size: 11px; color: #888; font-family: Arial, sans-serif; }
+    .AdSlot--mobile--a1b2c3 { min-height: 60px; }
+    .AdSlot--desktop--b3c4d5 { min-height: 90px; }
+    .controls-bar { display: flex; align-items: center; gap: 12px; padding: 10px 20px; background: #fff; border-bottom: 1px solid #e0e0e0; font-family: Arial, sans-serif; }
+    .controls-bar select { padding: 6px 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 13px; }
+    .layout { display: flex; gap: 24px; padding: 20px; max-width: 1280px; margin: 0 auto; }
+    .main-col { flex: 1; min-width: 0; }
+    .sidebar { width: 280px; flex-shrink: 0; }
+    .breaking { background: #fff; border-left: 4px solid #c0392b; padding: 14px 16px; margin-bottom: 20px; }
+    .breaking h2 { font-size: 15px; color: #c0392b; margin: 0 0 10px; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+    .breaking a { color: #111; text-decoration: none; font-size: 16px; font-weight: 700; line-height: 1.4; }
+    .breaking a:hover { color: #c0392b; }
+    .hero-block { background: #fff; margin-bottom: 20px; overflow: hidden; }
+    .HeroBlock--j0k1l2 { border: 1px solid #e0e0e0; }
+    .hero-img { width: 100%; height: 260px; background: #2a3a5c; display: flex; align-items: center; justify-content: center; color: #aaa; font-family: Arial, sans-serif; font-size: 13px; }
+    .hero-body { padding: 16px; }
+    .hero-body .hero-cat { font-size: 11px; color: #c0392b; text-transform: uppercase; letter-spacing: 1px; font-family: Arial, sans-serif; }
+    .hero-body h1 { font-size: 22px; margin: 6px 0 10px; line-height: 1.3; }
+    .hero-body p { font-size: 15px; color: #555; line-height: 1.6; margin: 0 0 12px; }
+    .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .ArticleCard--d4e5f6 { background: #fff; border: 1px solid #e8e8e8; overflow: hidden; }
+    .ArticleCard--d4e5f6 a { color: #111; text-decoration: none; font-size: 15px; font-weight: 600; line-height: 1.4; display: block; padding: 12px 12px 4px; }
+    .ArticleCard--d4e5f6 a:hover { color: #c0392b; }
+    .TagBadge--q7r8s9 { display: inline-block; padding: 2px 6px; background: #f0f0f0; color: #555; font-size: 11px; font-family: Arial, sans-serif; margin: 4px 12px; }
+    .AuthorLine--t0u1v2 { font-size: 12px; color: #888; font-family: Arial, sans-serif; padding: 0 12px 4px; }
+    .ViewCount--w3x4y5 { font-size: 11px; color: #aaa; font-family: Arial, sans-serif; padding: 0 12px 10px; }
+    .save-btn { display: block; padding: 4px 12px 8px; font-size: 12px; background: transparent; border: none; color: #888; cursor: pointer; text-align: left; font-family: Arial, sans-serif; }
+    .TrendingRow--p6q7r8 { border-bottom: 1px solid #e8e8e8; padding: 10px 0; }
+    .TrendingRow--p6q7r8 a { color: #222; text-decoration: none; font-size: 14px; line-height: 1.4; }
+    .TrendingRow--p6q7r8 a:hover { color: #c0392b; }
+    .trending-num { font-size: 20px; font-weight: 700; color: #e0e0e0; font-family: Arial, sans-serif; margin-right: 8px; float: left; line-height: 1; }
+    .newsletter-box { background: #1c1c1c; color: #fff; padding: 16px; margin-top: 20px; font-family: Arial, sans-serif; }
+    .newsletter-box h3 { font-size: 15px; margin: 0 0 8px; }
+    .newsletter-box p { font-size: 12px; color: #aaa; margin: 0 0 10px; }
+    .NewsletterInput--g4h5i6 { width: 100%; padding: 8px 10px; border: 1px solid #555; background: #2a2a2a; color: #fff; border-radius: 3px; font-size: 13px; margin-bottom: 8px; }
+    .newsletter-box button { width: 100%; padding: 8px; background: #c0392b; color: #fff; border: none; border-radius: 3px; cursor: pointer; font-size: 13px; }
+    .ShareBtn--z6a7b8 { cursor: pointer; }
+    .sidebar-section { background: #fff; padding: 14px; margin-bottom: 16px; border: 1px solid #e8e8e8; font-family: Arial, sans-serif; }
+    .sidebar-section h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #444; border-bottom: 2px solid #c0392b; padding-bottom: 6px; margin: 0 0 12px; }
+    footer { background: #1c1c1c; color: #888; padding: 20px; font-family: Arial, sans-serif; font-size: 12px; text-align: center; margin-top: 24px; }
+    footer a { color: #aaa; margin: 0 8px; }
+  </style>
+</head>
+<body _nghost-news-c6>
+
+  <header class="site-header" _nghost-news-c6>
+    <div class="top-bar" _ngcontent-news-c6>
+      <a href="/" class="logo" _ngcontent-news-c6>PressFlow</a>
+      <span _ngcontent-news-c6 style="font-size:12px;color:#888;">Tuesday, 17 June 2026</span>
+      <!-- t_10: button[aria-label="Share on social media"] - signals: aria-label -->
+      <button class="ShareBtn--z6a7b8 share-btn" aria-label="Share on social media"
+              type="button" _ngcontent-news-c6 data-oracle-id="t_10">Share</button>
+      <form _ngcontent-news-c6>
+        <!-- t_01: input[name="search"] - signals: name -->
+        <input type="search" name="search" _ngcontent-news-c6 data-oracle-id="t_01"
+               placeholder="Search articles..." />
+        <button type="submit" _ngcontent-news-c6>Search</button>
+      </form>
+    </div>
+    <nav class="main-nav" _ngcontent-news-c6>
+      <!-- t_02: a[href="/politics"] - signals: href -->
+      <a href="/politics" _ngcontent-news-c6 data-oracle-id="t_02">Politics</a>
+      <a href="/business" _ngcontent-news-c6>Business</a>
+      <a href="/technology" _ngcontent-news-c6>Technology</a>
+      <a href="/sport" _ngcontent-news-c6>Sport</a>
+      <a href="/culture" _ngcontent-news-c6>Culture</a>
+      <a href="/science" _ngcontent-news-c6>Science</a>
+      <a href="/health" _ngcontent-news-c6>Health</a>
+      <a href="/world" _ngcontent-news-c6>World</a>
+      <a href="/opinion" _ngcontent-news-c6>Opinion</a>
+      <a href="/podcasts" _ngcontent-news-c6>Podcasts</a>
+    </nav>
+  </header>
+
+  <!-- Responsive ad slots (dup) -->
+  <!-- t_03: div.ad-slot - NONE, no stable signal -->
+  <div id="ad-slot-mobile-a1b2c3" class="AdSlot--mobile--a1b2c3 ad-slot d-md-none"
+       _ngcontent-news-c6 data-oracle-id="t_03">
+    Advertisement — Mobile Banner 320×50
+  </div>
+  <div id="ad-slot-desktop-b3c4d5" class="AdSlot--desktop--b3c4d5 ad-slot d-none-md"
+       _ngcontent-news-c6>
+    Advertisement — Leaderboard 728×90
+  </div>
+
+  <!-- Controls bar -->
+  <div class="controls-bar" _ngcontent-news-c6>
+    <span _ngcontent-news-c6 style="font-size:13px;color:#555;">Filter:</span>
+    <!-- t_08: select[aria-label="Filter articles by category"] - signals: aria-label -->
+    <select aria-label="Filter articles by category" _ngcontent-news-c6 data-oracle-id="t_08">
+      <option _ngcontent-news-c6>All categories</option>
+      <option _ngcontent-news-c6>Politics</option>
+      <option _ngcontent-news-c6>Business</option>
+      <option _ngcontent-news-c6>Technology</option>
+      <option _ngcontent-news-c6>Sport</option>
+      <option _ngcontent-news-c6>Culture</option>
+      <option _ngcontent-news-c6>Science</option>
+      <option _ngcontent-news-c6>Health</option>
+    </select>
+    <select _ngcontent-news-c6 style="padding:6px 10px;border:1px solid #ccc;border-radius:3px;font-size:13px;">
+      <option _ngcontent-news-c6>Latest first</option>
+      <option _ngcontent-news-c6>Most read</option>
+      <option _ngcontent-news-c6>Most shared</option>
+    </select>
+    <span _ngcontent-news-c6 style="margin-left:auto;font-size:13px;color:#888;">Showing 300 stories</span>
+  </div>
+
+  <div class="layout" _ngcontent-news-c6>
+    <div class="main-col" _ngcontent-news-c6>
+
+      <!-- Breaking news -->
+      <div class="breaking" _ngcontent-news-c6>
+        <h2 _ngcontent-news-c6>Breaking</h2>
+        <!-- t_06: a[breaking-news-lead] - signals: data-testid -->
+        <a data-testid="breaking-news-lead"
+           href="/article/breaking-parliament-vote-2026"
+           _ngcontent-news-c6 data-oracle-id="t_06">
+          Parliament passes landmark digital infrastructure bill amid cross-party support
+        </a>
+        <div _ngcontent-news-c6 style="font-size:12px;color:#888;font-family:Arial,sans-serif;margin-top:6px;">
+          2 minutes ago &nbsp;|&nbsp; Politics
+        </div>
+      </div>
+
+      <!-- Hero article -->
+      <div class="HeroBlock--j0k1l2 hero-block" _ngcontent-news-c6>
+        <div class="hero-img" _ngcontent-news-c6>[Hero image placeholder]</div>
+        <div class="hero-body" _ngcontent-news-c6>
+          <span class="hero-cat" _ngcontent-news-c6>World</span>
+          <h1 _ngcontent-news-c6>Climate summit reaches historic agreement on carbon emissions targets for 2035</h1>
+          <p _ngcontent-news-c6>
+            World leaders gathered in Geneva have signed a binding accord that commits
+            signatory nations to a 60% reduction in carbon output by 2035, the most
+            ambitious climate target agreed to date.
+          </p>
+          <a href="/article/climate-summit-geneva-2026" _ngcontent-news-c6
+             style="font-size:14px;color:#c0392b;text-decoration:none;font-family:Arial,sans-serif;">
+            Read full story →
+          </a>
+        </div>
+      </div>
+
+      <!-- Article grid — JS generated -->
+      <div class="article-grid" id="article-grid" _ngcontent-news-c6>
+      </div>
+
+    </div><!-- /.main-col -->
+
+    <aside class="sidebar" _ngcontent-news-c6>
+
+      <div class="sidebar-section" _ngcontent-news-c6>
+        <h3 _ngcontent-news-c6>Trending</h3>
+        <!-- t_09: NONE trending row (volatile class only) -->
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6 data-oracle-id="t_09">
+          <span class="trending-num" _ngcontent-news-c6>1</span>
+          <a href="/article/trending-ai-regulation" _ngcontent-news-c6>
+            AI regulation bill divides tech giants
+          </a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>2</span>
+          <a href="/article/trending-housing-crisis" _ngcontent-news-c6>Housing affordability hits new low in major cities</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>3</span>
+          <a href="/article/trending-nhs-funding" _ngcontent-news-c6>NHS funding gap widens despite budget pledge</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>4</span>
+          <a href="/article/trending-ev-sales" _ngcontent-news-c6>Electric vehicle sales surpass petrol for first time</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>5</span>
+          <a href="/article/trending-inflation" _ngcontent-news-c6>Inflation holds steady as Bank of England watches</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>6</span>
+          <a href="/article/trending-space" _ngcontent-news-c6>UK space agency announces Moon mission partnership</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>7</span>
+          <a href="/article/trending-food-prices" _ngcontent-news-c6>Supermarket price wars resume as summer begins</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>8</span>
+          <a href="/article/trending-social-media" _ngcontent-news-c6>Social media age verification law takes effect</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>9</span>
+          <a href="/article/trending-rail" _ngcontent-news-c6>Rail strikes called off following pay deal breakthrough</a>
+        </div>
+        <div class="TrendingRow--p6q7r8" _ngcontent-news-c6>
+          <span class="trending-num" _ngcontent-news-c6>10</span>
+          <a href="/article/trending-pension" _ngcontent-news-c6>Pension age rise confirmed for 2028 cohort</a>
+        </div>
+      </div>
+
+      <div class="newsletter-box" _ngcontent-news-c6>
+        <h3 _ngcontent-news-c6>Morning Briefing</h3>
+        <p _ngcontent-news-c6>Top stories delivered to your inbox every weekday at 7am.</p>
+        <!-- t_04: input[type="email"] - signals: placeholder -->
+        <input type="email" placeholder="Enter your email"
+               class="NewsletterInput--g4h5i6" _ngcontent-news-c6 data-oracle-id="t_04" />
+        <!-- t_05: button[aria-label="Subscribe to newsletter"] - signals: aria-label -->
+        <button type="button" aria-label="Subscribe to newsletter"
+                _ngcontent-news-c6 data-oracle-id="t_05">Subscribe</button>
+      </div>
+
+      <div class="sidebar-section" _ngcontent-news-c6>
+        <h3 _ngcontent-news-c6>Most Read Today</h3>
+        <div _ngcontent-news-c6 style="font-size:14px;">
+          <p _ngcontent-news-c6><a href="/article/most-read-1" _ngcontent-news-c6 style="color:#222;text-decoration:none;">Scientists discover new protein linked to memory formation</a></p>
+          <p _ngcontent-news-c6><a href="/article/most-read-2" _ngcontent-news-c6 style="color:#222;text-decoration:none;">Government announces emergency housing package</a></p>
+          <p _ngcontent-news-c6><a href="/article/most-read-3" _ngcontent-news-c6 style="color:#222;text-decoration:none;">Tech giant fined £800m over data breach</a></p>
+          <p _ngcontent-news-c6><a href="/article/most-read-4" _ngcontent-news-c6 style="color:#222;text-decoration:none;">Premier League transfers: summer window opens</a></p>
+          <p _ngcontent-news-c6><a href="/article/most-read-5" _ngcontent-news-c6 style="color:#222;text-decoration:none;">Renewable energy output hits record high</a></p>
+        </div>
+      </div>
+
+      <div class="ad-slot" style="min-height:250px;" _ngcontent-news-c6>
+        Advertisement — MPU 300×250
+      </div>
+
+    </aside>
+  </div><!-- /.layout -->
+
+  <footer _ngcontent-news-c6>
+    <span _ngcontent-news-c6>© 2026 PressFlow Media Ltd. All rights reserved.</span>
+    <br _ngcontent-news-c6>
+    <a href="/about" _ngcontent-news-c6>About</a>
+    <a href="/contact" _ngcontent-news-c6>Contact</a>
+    <a href="/advertise" _ngcontent-news-c6>Advertise</a>
+    <a href="/privacy" _ngcontent-news-c6>Privacy</a>
+    <a href="/cookies" _ngcontent-news-c6>Cookies</a>
+    <a href="/terms" _ngcontent-news-c6>Terms</a>
+    <a href="/rss" _ngcontent-news-c6>RSS</a>
+  </footer>
+
+  <script>
+    var A = '_ngcontent-news-c6';
+    var cats = ['Politics','Business','Technology','Sport','Culture','Science','Health','World','Opinion'];
+    var authors = ['Emma Clarke','James Patel','Sophie Wright','Michael Brown','Aisha Nkosi',
+                   'Tom Harrington','Laura Müller','Daniel Osei','Rachel Kim','Ben Foster'];
+    var titles = [
+      'New policy shakes up industry standards across the board',
+      'Experts warn of growing risks in emerging markets',
+      'Record turnout expected ahead of key regional elections',
+      'Investigation reveals gaps in regulatory oversight',
+      'Technology firms race to comply with new data rules',
+      'Community leaders push back on redevelopment plans',
+      'Study links urban green spaces to mental health outcomes',
+      'Trade talks stall as both sides dig in on key points',
+      'Scientists develop breakthrough in early disease detection',
+      'Voters divided as local councils face budget squeeze',
+      'Global supply chain disruptions ease but risks remain',
+      'Report calls for urgent investment in digital infrastructure',
+      'Charity sector warns of funding crisis heading into winter',
+      'New transport links promise to reshape commuter patterns',
+      'Cultural institutions adapt to changing audience habits'
+    ];
+    var grid = document.getElementById('article-grid');
+    for (var i = 1; i <= 300; i++) {
+      var art = document.createElement('article');
+      art.className = 'ArticleCard--d4e5f6';
+      art.setAttribute(A, '');
+      if (i === 7) { art.setAttribute('data-oracle-id', 't_07'); }
+
+      var link = document.createElement('a');
+      link.href = '/article/story-' + String(i).padStart(4, '0');
+      link.setAttribute(A, '');
+      link.textContent = titles[(i - 1) % titles.length] + ' — story ' + i;
+      art.appendChild(link);
+
+      var tag = document.createElement('span');
+      tag.className = 'TagBadge--q7r8s9';
+      tag.setAttribute(A, '');
+      tag.textContent = cats[(i - 1) % cats.length];
+      art.appendChild(tag);
+
+      var t = document.createElement('time');
+      t.setAttribute(A, '');
+      t.setAttribute('datetime', '2026-06-' + String((i % 17) + 1).padStart(2, '0'));
+      t.textContent = (i % 17 + 1) + ' Jun 2026';
+      art.appendChild(t);
+
+      var p = document.createElement('p');
+      p.setAttribute(A, '');
+      p.style.cssText = 'font-size:13px;color:#555;padding:0 12px;line-height:1.5;margin:4px 0;';
+      p.textContent = 'Breaking developments in this unfolding story — reporters on the ground confirm latest details emerging from sources familiar with the situation.';
+      art.appendChild(p);
+
+      var author = document.createElement('span');
+      author.className = 'AuthorLine--t0u1v2';
+      author.setAttribute(A, '');
+      author.textContent = 'By ' + authors[(i - 1) % authors.length];
+      art.appendChild(author);
+
+      var views = document.createElement('span');
+      views.className = 'ViewCount--w3x4y5';
+      views.setAttribute(A, '');
+      views.textContent = (i * 137 % 9800 + 200) + ' views';
+      art.appendChild(views);
+
+      var save = document.createElement('button');
+      save.className = 'save-btn';
+      save.setAttribute(A, '');
+      save.type = 'button';
+      save.textContent = '♡ Save';
+      art.appendChild(save);
+
+      grid.appendChild(art);
+    }
+  </script>
+
+</body>
+</html>

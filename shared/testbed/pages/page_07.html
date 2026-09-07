@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Axiom — The All-in-One Business Platform</title>
+  <!-- targets: see pages/page_07.truth.json -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; color: #222; background: #fff; }
+    /* Navigation */
+    .site-nav { display: flex; align-items: center; gap: 24px; padding: 0 40px; height: 64px; border-bottom: 1px solid #e8e8e8; position: sticky; top: 0; background: #fff; z-index: 100; }
+    .nav-logo { font-size: 22px; font-weight: 800; color: #5b21b6; text-decoration: none; }
+    .NavLink--r8s9t0 { text-decoration: none; color: #444; font-size: 15px; }
+    .NavLink--r8s9t0:hover { color: #5b21b6; }
+    .nav-cta { margin-left: auto; display: flex; gap: 10px; }
+    .nav-login { padding: 8px 16px; border: 1px solid #5b21b6; color: #5b21b6; border-radius: 6px; text-decoration: none; font-size: 14px; }
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%); color: #fff; text-align: center; padding: 80px 40px 60px; }
+    .hero h1 { font-size: 44px; font-weight: 800; margin: 0 0 16px; line-height: 1.15; }
+    .hero p { font-size: 20px; color: rgba(255,255,255,0.85); margin: 0 0 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .hero-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
+    .hero-form input[type=email] { padding: 12px 18px; border: none; border-radius: 6px; font-size: 15px; width: 300px; }
+    .HeroBtn--c3d4e5 { padding: 12px 24px; background: #fff; color: #5b21b6; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+    .HeroBtn--c3d4e5:hover { background: #f0ebff; }
+    .hero-note { font-size: 13px; color: rgba(255,255,255,0.65); }
+    /* Features */
+    .section { padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-size: 32px; font-weight: 700; text-align: center; margin-bottom: 8px; }
+    .section-sub { font-size: 18px; color: #666; text-align: center; margin-bottom: 40px; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .feature-item { padding: 20px; background: #f9f7ff; border-radius: 8px; }
+    .feature-item h3 { font-size: 16px; font-weight: 700; margin: 8px 0 6px; }
+    .feature-item p { font-size: 14px; color: #555; margin: 0; line-height: 1.5; }
+    .FeatureChip--o5p6q7 { display: inline-block; padding: 3px 10px; background: #ede9fe; color: #5b21b6; border-radius: 20px; font-size: 12px; font-weight: 600; margin: 2px; }
+    /* Pricing */
+    .pricing-bg { background: #f9f7ff; padding: 60px 40px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+    .PricingCard--f6g7h8 { background: #fff; border: 1px solid #e0d9f7; border-radius: 12px; padding: 28px 24px; text-align: center; }
+    .PricingCard--f6g7h8.featured { border-color: #5b21b6; box-shadow: 0 4px 20px rgba(91,33,182,.12); }
+    .plan-name { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 8px; }
+    .plan-price { font-size: 36px; font-weight: 800; color: #111; margin: 0 0 4px; }
+    .plan-price span { font-size: 16px; font-weight: 400; color: #888; }
+    .plan-desc { font-size: 13px; color: #666; margin: 0 0 20px; }
+    .plan-features { list-style: none; padding: 0; margin: 0 0 24px; text-align: left; font-size: 14px; }
+    .plan-features li { padding: 6px 0; border-bottom: 1px solid #f0eaf9; }
+    .plan-btn { width: 100%; padding: 10px; border: 2px solid #5b21b6; background: transparent; color: #5b21b6; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; }
+    .plan-btn.primary { background: #5b21b6; color: #fff; }
+    /* FAQ */
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .FaqItem--v4w5x6 { border-bottom: 1px solid #e8e8e8; padding: 16px 0; }
+    .FaqItem--v4w5x6 summary { font-size: 16px; font-weight: 600; cursor: pointer; list-style: none; }
+    .FaqItem--v4w5x6 p { font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6; }
+    /* Testimonials */
+    .testimonials-bg { background: #f9f7ff; padding: 60px 40px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+    .TestimonyBlock--i9j0k1 { background: #fff; border: 1px solid #e0d9f7; border-radius: 10px; padding: 20px; }
+    .testimonial-quote { font-size: 14px; color: #444; line-height: 1.6; margin: 0 0 14px; }
+    .testimonial-author { font-size: 13px; font-weight: 700; color: #111; }
+    .testimonial-role { font-size: 12px; color: #888; }
+    /* Partners */
+    .partners-section { padding: 40px; text-align: center; }
+    .partners-logos { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 20px; }
+    .partner-logo { width: 80px; height: 32px; background: #e8e8e8; border-radius: 4px; }
+    /* Signup form */
+    .signup-bg { background: #fff; padding: 60px 40px; }
+    .signup-form-wrap { max-width: 480px; margin: 0 auto; }
+    .LeadForm--l2m3n4 { width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; margin-bottom: 12px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-label { display: block; font-size: 13px; color: #555; margin-bottom: 4px; font-weight: 500; }
+    .terms-row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 16px; font-size: 13px; color: #555; }
+    .terms-row input[type=checkbox] { margin-top: 2px; }
+    .signup-submit { width: 100%; padding: 12px; background: #5b21b6; color: #fff; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+    /* Contact form */
+    .contact-bg { background: #1a1a2e; padding: 60px 40px; }
+    .contact-wrap { max-width: 560px; margin: 0 auto; color: #fff; text-align: center; }
+    .contact-wrap h2 { font-size: 28px; margin-bottom: 10px; }
+    .contact-wrap p { color: #aaa; font-size: 15px; margin-bottom: 28px; }
+    .ContactForm--u1v2w3 { width: 100%; padding: 10px 14px; border: 1px solid #444; background: #2a2a3e; color: #fff; border-radius: 6px; font-size: 15px; margin-bottom: 12px; }
+    .contact-submit-btn { width: 100%; padding: 12px; background: #7c3aed; color: #fff; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+    /* Footer */
+    footer { background: #0d0d1a; color: #666; padding: 30px 40px; font-size: 13px; text-align: center; }
+    footer a { color: #888; margin: 0 10px; text-decoration: none; }
+    footer a:hover { color: #ccc; }
+  </style>
+</head>
+<body _nghost-axiom>
+
+  <!-- Navigation -->
+  <nav class="site-nav" data-v-7e8f9a>
+    <a href="/" class="nav-logo" data-v-7e8f9a>Axiom</a>
+    <a href="/features" class="NavLink--r8s9t0" data-v-7e8f9a>Features</a>
+    <!-- t_04: a[href="/pricing"] - signals: href -->
+    <a href="/pricing" class="NavLink--r8s9t0" data-oracle-id="t_04" data-v-7e8f9a>Pricing</a>
+    <a href="/customers" class="NavLink--r8s9t0" data-v-7e8f9a>Customers</a>
+    <a href="/blog" class="NavLink--r8s9t0" data-v-7e8f9a>Blog</a>
+    <a href="/docs" class="NavLink--r8s9t0" data-v-7e8f9a>Docs</a>
+    <div class="nav-cta" data-v-7e8f9a>
+      <a href="/login" class="nav-login" data-v-7e8f9a>Log in</a>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero" data-v-7e8f9a>
+    <h1 data-v-7e8f9a>Run your whole business<br>in one place</h1>
+    <p data-v-7e8f9a>
+      Sales, marketing, operations, and support — unified in a single
+      AI-powered platform trusted by 40,000+ companies.
+    </p>
+    <div class="hero-form" data-v-7e8f9a>
+      <!-- t_01: input[type="email"] - signals: placeholder -->
+      <input type="email" placeholder="Enter your work email"
+             class="LeadForm--l2m3n4" data-v-7e8f9a data-oracle-id="t_01"
+             style="width:300px;padding:12px 18px;border:none;border-radius:6px;font-size:15px;" />
+      <!-- t_02: button[start-free-trial-hero] - signals: data-testid -->
+      <button type="button" data-testid="start-free-trial-hero"
+              class="HeroBtn--c3d4e5" data-v-7e8f9a data-oracle-id="t_02">
+        Start free trial
+      </button>
+    </div>
+    <div class="hero-note" data-v-7e8f9a>No credit card required · 14-day trial · Cancel any time</div>
+  </section>
+
+  <!-- Feature chips bar -->
+  <div style="background:#faf8ff;border-bottom:1px solid #e8e0f7;padding:14px 40px;display:flex;gap:8px;flex-wrap:wrap;" data-v-7e8f9a>
+    <!-- t_03: span - NONE, no stable signal -->
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a data-oracle-id="t_03">API Access</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Automation</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Analytics</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Integrations</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>SSO</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Custom Reports</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Mobile App</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>24/7 Support</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>GDPR Ready</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>SOC2</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Webhooks</span>
+    <span class="FeatureChip--o5p6q7" data-v-7e8f9a>Multi-tenant</span>
+  </div>
+
+  <!-- Features section -->
+  <div class="section" data-v-7e8f9a>
+    <h2 class="section-title" data-v-7e8f9a>Everything you need, nothing you don't</h2>
+    <p class="section-sub" data-v-7e8f9a>Built for modern teams that move fast and need tools that keep up.</p>
+    <div class="features-grid" data-v-7e8f9a>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">📊</div>
+        <h3 data-v-7e8f9a>Real-time Analytics</h3>
+        <p data-v-7e8f9a>Track every metric that matters with customisable dashboards and live data streams.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">🔗</div>
+        <h3 data-v-7e8f9a>500+ Integrations</h3>
+        <p data-v-7e8f9a>Connect your existing tools — Slack, Salesforce, HubSpot, Zapier, and hundreds more.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">🤖</div>
+        <h3 data-v-7e8f9a>AI Automation</h3>
+        <p data-v-7e8f9a>Let intelligent agents handle repetitive tasks so your team can focus on outcomes.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">🛡️</div>
+        <h3 data-v-7e8f9a>Enterprise Security</h3>
+        <p data-v-7e8f9a>SOC 2 Type II certified, GDPR compliant, with SSO, RBAC, and audit logs included.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">📱</div>
+        <h3 data-v-7e8f9a>Mobile-first Design</h3>
+        <p data-v-7e8f9a>Native iOS and Android apps with offline support so your team is always productive.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">🌍</div>
+        <h3 data-v-7e8f9a>Global Infrastructure</h3>
+        <p data-v-7e8f9a>99.99% uptime SLA with data centres in the EU, US, and APAC for low-latency access.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">📧</div>
+        <h3 data-v-7e8f9a>Unified Inbox</h3>
+        <p data-v-7e8f9a>Email, chat, and SMS in one place — never lose track of a customer conversation again.</p>
+      </div>
+      <div class="feature-item" data-v-7e8f9a>
+        <div data-v-7e8f9a style="font-size:28px;">📝</div>
+        <h3 data-v-7e8f9a>Document Workflow</h3>
+        <p data-v-7e8f9a>Create, sign, and store contracts with e-signature support and automated reminders.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing section -->
+  <div class="pricing-bg" id="pricing" data-v-7e8f9a>
+    <div class="section" data-v-7e8f9a>
+      <h2 class="section-title" data-v-7e8f9a>Simple, transparent pricing</h2>
+      <p class="section-sub" data-v-7e8f9a>Start free. Scale as you grow. No surprises.</p>
+      <div class="pricing-grid" data-v-7e8f9a>
+        <!-- Starter -->
+        <div class="PricingCard--f6g7h8" data-v-7e8f9a>
+          <div class="plan-name" data-v-7e8f9a>Starter</div>
+          <div class="plan-price" data-v-7e8f9a>Free<span data-v-7e8f9a>/mo</span></div>
+          <div class="plan-desc" data-v-7e8f9a>Perfect for solo operators and small projects.</div>
+          <ul class="plan-features" data-v-7e8f9a>
+            <li data-v-7e8f9a>Up to 2 users</li>
+            <li data-v-7e8f9a>5 projects</li>
+            <li data-v-7e8f9a>1 GB storage</li>
+            <li data-v-7e8f9a>Community support</li>
+          </ul>
+          <button class="plan-btn" type="button" data-v-7e8f9a>Get started free</button>
+        </div>
+        <!-- Professional -->
+        <div class="PricingCard--f6g7h8 featured" data-v-7e8f9a>
+          <div class="plan-name" data-v-7e8f9a>Professional</div>
+          <div class="plan-price" data-v-7e8f9a>£49<span data-v-7e8f9a>/mo per seat</span></div>
+          <div class="plan-desc" data-v-7e8f9a>For growing teams that need more power.</div>
+          <ul class="plan-features" data-v-7e8f9a>
+            <li data-v-7e8f9a>Unlimited users</li>
+            <li data-v-7e8f9a>Unlimited projects</li>
+            <li data-v-7e8f9a>100 GB storage</li>
+            <li data-v-7e8f9a>Priority support</li>
+            <li data-v-7e8f9a>API access</li>
+            <li data-v-7e8f9a>Custom reports</li>
+          </ul>
+          <!-- t_05: button[aria-label="Choose Professional plan"] - signals: aria-label -->
+          <button class="plan-btn primary" type="button"
+                  aria-label="Choose Professional plan"
+                  data-v-7e8f9a data-oracle-id="t_05">Choose plan</button>
+        </div>
+        <!-- Enterprise -->
+        <!-- t_10: div - NONE, no stable signal -->
+        <div class="PricingCard--f6g7h8" data-v-7e8f9a data-oracle-id="t_10">
+          <div class="plan-name" data-v-7e8f9a>Enterprise</div>
+          <div class="plan-price" data-v-7e8f9a>Custom<span data-v-7e8f9a></span></div>
+          <div class="plan-desc" data-v-7e8f9a>Tailored for large organisations with complex needs.</div>
+          <ul class="plan-features" data-v-7e8f9a>
+            <li data-v-7e8f9a>Everything in Professional</li>
+            <li data-v-7e8f9a>SSO &amp; SAML</li>
+            <li data-v-7e8f9a>Dedicated infrastructure</li>
+            <li data-v-7e8f9a>SLA guarantee</li>
+            <li data-v-7e8f9a>Custom onboarding</li>
+            <li data-v-7e8f9a>Named account manager</li>
+          </ul>
+          <button class="plan-btn" type="button" data-v-7e8f9a>Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div style="background:#f9f7ff;padding:60px 40px;" data-v-7e8f9a>
+    <h2 class="section-title" data-v-7e8f9a>How it works</h2>
+    <p class="section-sub" data-v-7e8f9a>Up and running in under an hour, no engineers required.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto;" data-v-7e8f9a>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#5b21b6;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">1</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Create your account</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Sign up in 60 seconds. No credit card, no commitment required.</p>
+      </div>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#5b21b6;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">2</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Connect your tools</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Import data and link to 500+ integrations in minutes.</p>
+      </div>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#5b21b6;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">3</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Automate and grow</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Build workflows and let Axiom handle the repetitive work.</p>
+      </div>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#7c3aed;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">4</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Invite your team</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Add teammates and assign roles — progress is already saved.</p>
+      </div>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#7c3aed;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">5</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Track performance</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Live dashboards fill up as your business data starts flowing in.</p>
+      </div>
+      <div data-v-7e8f9a style="text-align:center;padding:24px 16px;">
+        <div data-v-7e8f9a style="width:48px;height:48px;background:#7c3aed;border-radius:50%;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">6</div>
+        <h3 data-v-7e8f9a style="font-size:16px;margin:0 0 8px;">Scale with confidence</h3>
+        <p data-v-7e8f9a style="font-size:14px;color:#555;margin:0;line-height:1.6;">Upgrade plans as you grow — all your data and workflows carry over.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature comparison table -->
+  <div class="section" data-v-7e8f9a>
+    <h2 class="section-title" data-v-7e8f9a>Compare plans in detail</h2>
+    <p class="section-sub" data-v-7e8f9a>Every feature, every tier — pick with confidence.</p>
+    <div style="overflow-x:auto;" data-v-7e8f9a>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;" data-v-7e8f9a>
+        <thead data-v-7e8f9a>
+          <tr data-v-7e8f9a>
+            <th data-v-7e8f9a style="padding:10px 16px;text-align:left;background:#f9f7ff;border-bottom:2px solid #e0d9f7;">Feature</th>
+            <th data-v-7e8f9a style="padding:10px 16px;text-align:center;background:#f9f7ff;border-bottom:2px solid #e0d9f7;">Starter</th>
+            <th data-v-7e8f9a style="padding:10px 16px;text-align:center;background:#ede9fe;border-bottom:2px solid #5b21b6;color:#5b21b6;">Professional</th>
+            <th data-v-7e8f9a style="padding:10px 16px;text-align:center;background:#f9f7ff;border-bottom:2px solid #e0d9f7;">Enterprise</th>
+          </tr>
+        </thead>
+        <tbody data-v-7e8f9a>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Users</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Up to 2</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Unlimited</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Unlimited</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Projects</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">5</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Unlimited</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Unlimited</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Storage</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">1 GB</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">100 GB/seat</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Unlimited</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">API access</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Custom reports</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Automation workflows</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">3</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Unlimited</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Unlimited</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Integrations</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">10</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">500+</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">500+</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Mobile app</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">E-signature</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Audit logs</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">30 days</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">2 years</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">SSO / SAML</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Dedicated infrastructure</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">SLA guarantee</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">99.9%</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">99.99%</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Support tier</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Community</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Priority email</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Dedicated manager</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Custom onboarding</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Data warehouse export</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Webhooks</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Sandbox environment</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">GDPR tools</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Basic</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Full</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Full + DPA</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">White-label option</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Guest users</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">On-premises option</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">RBAC</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Basic</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Full</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Full + custom</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Multiregion hosting</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">AI features</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Basic</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Full</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Full + custom</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Two-factor auth</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Optional</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">Optional</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">Enforced</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Priority processing</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Custom domain</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Advanced analytics</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;border-bottom:1px solid #f0eaf9;">Slack integration</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">—</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;background:#fdfcff;">✓</td><td data-v-7e8f9a style="text-align:center;border-bottom:1px solid #f0eaf9;">✓</td></tr>
+          <tr data-v-7e8f9a><td data-v-7e8f9a style="padding:9px 16px;">99.99% uptime SLA</td><td data-v-7e8f9a style="text-align:center;">—</td><td data-v-7e8f9a style="text-align:center;background:#fdfcff;">—</td><td data-v-7e8f9a style="text-align:center;">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FAQ section -->
+  <div class="section" data-v-7e8f9a>
+    <h2 class="section-title" data-v-7e8f9a>Frequently asked questions</h2>
+    <div class="faq-list" data-v-7e8f9a>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I change my plan at any time?</summary>
+        <p data-v-7e8f9a>Yes — you can upgrade, downgrade, or cancel your plan at any time from your account settings. Changes take effect at the next billing cycle.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is my data safe with Axiom?</summary>
+        <p data-v-7e8f9a>Absolutely. We are SOC 2 Type II certified, GDPR compliant, and use AES-256 encryption at rest and in transit. Your data is never sold or shared.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Do you offer a free trial?</summary>
+        <p data-v-7e8f9a>Yes — all plans come with a 14-day free trial. No credit card required. You get full access to all features during the trial period.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What integrations do you support?</summary>
+        <p data-v-7e8f9a>We support 500+ integrations including Salesforce, HubSpot, Slack, Stripe, Zapier, GitHub, Jira, Google Workspace, Microsoft 365, and many more.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is there a minimum contract length?</summary>
+        <p data-v-7e8f9a>No — we offer month-to-month billing. Annual plans are available with a 20% discount if you prefer to pay upfront.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I import data from my existing tools?</summary>
+        <p data-v-7e8f9a>Yes — we provide free data migration support for all new customers. Our team will help you import contacts, projects, and historical data.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What kind of support do you provide?</summary>
+        <p data-v-7e8f9a>Starter plans have community support. Professional and above get email support with a 4-hour response SLA. Enterprise customers get a dedicated account manager.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I use Axiom on mobile?</summary>
+        <p data-v-7e8f9a>Yes — we have native iOS and Android apps with full feature parity, offline support, and push notifications for task updates.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Do you have an API?</summary>
+        <p data-v-7e8f9a>Yes — our REST API and GraphQL endpoint are available on Professional plans and above. Full documentation is available at docs.axiom.io/api.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What currencies do you accept?</summary>
+        <p data-v-7e8f9a>We accept GBP, USD, EUR, AUD, CAD, and JPY. Currency is set at account creation and can be changed by contacting our billing team.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is there a limit on storage?</summary>
+        <p data-v-7e8f9a>Starter plans include 1 GB. Professional plans include 100 GB per seat. Enterprise plans have unlimited storage with custom quotas available.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>How does user management work?</summary>
+        <p data-v-7e8f9a>Administrators can invite users, set roles (Admin, Manager, Member, Viewer), and manage permissions from the Team Settings panel.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I customise workflows?</summary>
+        <p data-v-7e8f9a>Yes — the workflow builder supports drag-and-drop automation with triggers, conditions, and actions. Templates are available for common use cases.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What happens when my trial ends?</summary>
+        <p data-v-7e8f9a>At the end of your 14-day trial you can choose a paid plan or stay on the free Starter tier. Your data is preserved either way for 90 days.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Do you offer educational discounts?</summary>
+        <p data-v-7e8f9a>Yes — verified educational institutions and non-profits receive a 50% discount. Contact our team with your organisation credentials to apply.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>How often do you release updates?</summary>
+        <p data-v-7e8f9a>We ship weekly product updates and release notes are published at axiom.io/changelog. Major releases are announced 30 days in advance.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is there a sandbox environment?</summary>
+        <p data-v-7e8f9a>Professional and Enterprise plans include a sandbox workspace for testing integrations and automations without affecting live data.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I white-label Axiom for my clients?</summary>
+        <p data-v-7e8f9a>Yes — our white-label partner programme allows agencies and resellers to offer Axiom under their own brand. Contact partnerships@axiom.io to apply.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What reporting features are available?</summary>
+        <p data-v-7e8f9a>All plans include standard reports. Professional plans unlock custom report builders, scheduled email exports, and data warehouse integrations.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is single sign-on supported?</summary>
+        <p data-v-7e8f9a>SSO via SAML 2.0 is available on Enterprise plans. We support Okta, Azure AD, Google Workspace, and any other SAML-compatible identity provider.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>How do I contact billing support?</summary>
+        <p data-v-7e8f9a>Email billing@axiom.io or use the in-app chat. We aim to respond within 2 business hours on weekdays and 24 hours on weekends.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Do you offer volume discounts?</summary>
+        <p data-v-7e8f9a>Yes — volume pricing is available for teams of 50+ users. Contact our sales team for a custom quote tailored to your organisation size and needs.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What happens to my data if I cancel?</summary>
+        <p data-v-7e8f9a>Your data is retained for 90 days after cancellation. You can export everything in JSON, CSV, or PDF format at any time during this window.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I invite external collaborators?</summary>
+        <p data-v-7e8f9a>Yes — you can invite guest users to specific projects. Guests have limited permissions and do not count toward your seat limit on paid plans.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Is there a public status page?</summary>
+        <p data-v-7e8f9a>Yes — real-time status and incident history are available at status.axiom.io. You can subscribe to email or SMS alerts for incidents.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Do you support multi-language interfaces?</summary>
+        <p data-v-7e8f9a>Yes — Axiom is available in English, French, German, Spanish, Portuguese, Japanese, and Mandarin. More languages are added quarterly.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What payment methods do you accept?</summary>
+        <p data-v-7e8f9a>We accept Visa, Mastercard, American Express, PayPal, and bank transfer (for annual Enterprise plans). Payment details are stored securely via Stripe.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>How do I get started after sign-up?</summary>
+        <p data-v-7e8f9a>After sign-up, our onboarding wizard guides you through key setup steps. You'll also receive a welcome email with video tutorials and our getting-started guide.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>Can I run Axiom on-premises?</summary>
+        <p data-v-7e8f9a>On-premises deployment is available for Enterprise customers with specific data residency requirements. Contact us to discuss your infrastructure constraints.</p>
+      </details>
+      <details class="FaqItem--v4w5x6" data-v-7e8f9a>
+        <summary data-v-7e8f9a>What is your data retention policy?</summary>
+        <p data-v-7e8f9a>Active account data is retained indefinitely. Deleted items are soft-deleted for 30 days before permanent removal. Audit logs are retained for 2 years.</p>
+      </details>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials-bg" data-v-7e8f9a>
+    <div class="section" data-v-7e8f9a>
+      <h2 class="section-title" data-v-7e8f9a>Loved by teams worldwide</h2>
+      <p class="section-sub" data-v-7e8f9a>40,000+ companies trust Axiom to run their operations.</p>
+      <div class="testimonials-grid" data-v-7e8f9a>
+        <!-- t_07: NONE target — first testimonial block, volatile class only -->
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a data-oracle-id="t_07">
+          <p class="testimonial-quote" data-v-7e8f9a>"Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Priya Sharma</div>
+          <div class="testimonial-role" data-v-7e8f9a>Head of Operations, Finova</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The automation features alone saved my team 12 hours a week. Setup was straightforward and support was excellent."</p>
+          <div class="testimonial-author" data-v-7e8f9a>James Kowalski</div>
+          <div class="testimonial-role" data-v-7e8f9a>CTO, Bluepeak</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We migrated from a custom-built system in under a week. Axiom's import tools are genuinely impressive."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Sara Okonkwo</div>
+          <div class="testimonial-role" data-v-7e8f9a>Product Manager, TalentLab</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Our customer satisfaction scores went up 22% after switching to Axiom's unified inbox. Game changer."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Luca Ferretti</div>
+          <div class="testimonial-role" data-v-7e8f9a>Director of CX, Luminary</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The pricing is transparent and fair. We've scaled from 10 to 80 users without any awkward contract renegotiations."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Maria Lindqvist</div>
+          <div class="testimonial-role" data-v-7e8f9a>CFO, Nordelv</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Best onboarding experience I've had with enterprise software. The team was responsive and the docs are excellent."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Kwame Asante</div>
+          <div class="testimonial-role" data-v-7e8f9a>IT Lead, Meridian Group</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Axiom's API is clean, well-documented, and reliable. We built our internal dashboard on top of it in two sprints."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Elena Petrova</div>
+          <div class="testimonial-role" data-v-7e8f9a>Senior Engineer, Synaptix</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We evaluated six platforms. Axiom won on features, UX, and pricing. The trial period sealed the deal."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Tomás García</div>
+          <div class="testimonial-role" data-v-7e8f9a>CEO, Orbis Digital</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Our compliance team loved the audit trail feature. It made our SOC 2 audit significantly easier to navigate."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Nadia Hakim</div>
+          <div class="testimonial-role" data-v-7e8f9a>Compliance Officer, Certex</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The mobile app is genuinely better than most native apps I've used. My field team adopted it immediately."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Derek Wallis</div>
+          <div class="testimonial-role" data-v-7e8f9a>Operations Director, Fieldcraft</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Switched from a competitor in January and haven't looked back. The reporting features are in a different league."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Anika Bauer</div>
+          <div class="testimonial-role" data-v-7e8f9a>Data Analyst, Vantage Solutions</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Customer support resolved every issue within the hour. That level of service is rare in enterprise SaaS."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Oliver Chen</div>
+          <div class="testimonial-role" data-v-7e8f9a>Founder, Proxima Labs</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The Zapier integration works flawlessly. We have 30+ zaps running and they've never dropped a record."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Isabelle Morel</div>
+          <div class="testimonial-role" data-v-7e8f9a>Growth Manager, Helixa</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We process 50,000 records a day through Axiom. Not once has it stumbled. The reliability is phenomenal."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Stefan Nowak</div>
+          <div class="testimonial-role" data-v-7e8f9a>Engineering Manager, DataVault</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The SSO setup with Okta took 20 minutes. Our IT team couldn't believe how straightforward the process was."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Camille Dupont</div>
+          <div class="testimonial-role" data-v-7e8f9a>IT Security Lead, Euroclear</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The analytics dashboards are beautiful and informative. Our board now asks for Axiom exports in every meeting."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Raj Pillai</div>
+          <div class="testimonial-role" data-v-7e8f9a>VP Strategy, Kestrel Finance</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Onboarding our remote team was seamless. The guided setup wizard anticipates exactly the questions you have."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Yuki Tanaka</div>
+          <div class="testimonial-role" data-v-7e8f9a>People Lead, Aeroform</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We use Axiom's white-label offering for all our clients. The reseller programme is well-structured and profitable."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Brendan O'Sullivan</div>
+          <div class="testimonial-role" data-v-7e8f9a>Partner, TechBridge Agency</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The document signing workflow cut our contract cycle from 8 days to under 24 hours. Massive time saver."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Fiona MacAlister</div>
+          <div class="testimonial-role" data-v-7e8f9a>Legal Operations, Thornfield LLP</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The custom field builder let us model our niche workflow perfectly. We didn't have to compromise on any feature."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Hans Zimmermann</div>
+          <div class="testimonial-role" data-v-7e8f9a>Product Owner, Construtura</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The offline mobile support is a lifesaver for our field inspectors. Data syncs perfectly when they reconnect."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Amara Diallo</div>
+          <div class="testimonial-role" data-v-7e8f9a>Field Operations Manager, TerraTrack</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Multi-language support meant we could roll out to our offices in Paris, Berlin, and Tokyo simultaneously."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Sophie Renard</div>
+          <div class="testimonial-role" data-v-7e8f9a>Global Ops, Luxan Brands</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We run 200+ automated workflows in Axiom. The monitoring dashboard tells us immediately if anything fails."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Carlos Mendoza</div>
+          <div class="testimonial-role" data-v-7e8f9a>Automation Lead, Velocita</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The data warehouse connector to BigQuery was configured in an afternoon. No custom code required at all."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Lin Wei</div>
+          <div class="testimonial-role" data-v-7e8f9a>Data Engineer, Pulse Analytics</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Security was our top concern. Axiom's pen test reports and certifications gave our CISO the confidence to approve."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Ibrahim Al-Rashid</div>
+          <div class="testimonial-role" data-v-7e8f9a>CISO, Meridian Bank</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The volume pricing unlocked significant savings as our team grew. Axiom scales with us, not against us."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Petra Horáčková</div>
+          <div class="testimonial-role" data-v-7e8f9a>CFO, Scalepath</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Guest users for client review have been a game-changer. No extra seats, clean permissions, clients love it."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Samuel Oduya</div>
+          <div class="testimonial-role" data-v-7e8f9a>Agency Director, Clearpoint Creative</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Migrating from Notion took an afternoon. Axiom's import tool handled our structure perfectly without manual cleanup."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Maya Robertson</div>
+          <div class="testimonial-role" data-v-7e8f9a>COO, Waypoint Ventures</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The changelog is a delight — clear, concise, and released every week. It shows the team really ships."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Anders Lindgren</div>
+          <div class="testimonial-role" data-v-7e8f9a>Tech Lead, Nordvind</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The educational discount made Axiom accessible for our research group. Features rival tools costing ten times more."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Prof. Ana Sousa</div>
+          <div class="testimonial-role" data-v-7e8f9a>Research Lead, Universidade Nova</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Axiom's on-premises deployment option was the only reason we could get regulatory approval. Essential for us."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Dmitri Volkov</div>
+          <div class="testimonial-role" data-v-7e8f9a>CTO, SecureVault</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The sandbox environment let us fully test our integration before going live. Saved us from a significant outage."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Rachel Ng</div>
+          <div class="testimonial-role" data-v-7e8f9a>Release Manager, Apexia</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The GraphQL API let us build a custom internal tool in React in a single sprint. Documentation is stellar."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Chidi Okafor</div>
+          <div class="testimonial-role" data-v-7e8f9a>Senior Developer, StackBridge</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Status page transparency during incidents is exemplary. We always know what's happening and when it'll be fixed."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Fatima El-Amin</div>
+          <div class="testimonial-role" data-v-7e8f9a>Platform Lead, Nexaris</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Multi-currency billing meant rolling out to our Latin American subsidiaries was a single config change."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Roberto Almeida</div>
+          <div class="testimonial-role" data-v-7e8f9a>Finance Director, Grupo Clave</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The 90-day data retention after cancellation gave us breathing room during a tool evaluation. Thoughtful policy."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Emma Johansson</div>
+          <div class="testimonial-role" data-v-7e8f9a>Operations Analyst, Fluxpoint</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"We have a non-technical founding team. Axiom's no-code automation builder let us ship our ops stack ourselves."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Nia Williams</div>
+          <div class="testimonial-role" data-v-7e8f9a>Co-founder, Bloombase</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"Axiom's audit logs satisfied every question from our external auditors. Two-year retention is exactly what we needed."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Paul Nakamura</div>
+          <div class="testimonial-role" data-v-7e8f9a>Internal Audit, Tokai Holdings</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"The soft-delete feature saved us twice this quarter when users accidentally removed project data. Lifesaver."</p>
+          <div class="testimonial-author" data-v-7e8f9a>Chiara Russo</div>
+          <div class="testimonial-role" data-v-7e8f9a>Product Owner, Vitale</div>
+        </div>
+        <div class="TestimonyBlock--i9j0k1" data-v-7e8f9a>
+          <p class="testimonial-quote" data-v-7e8f9a>"After three years on Axiom I still learn new features that simplify my workflow. The product keeps getting better."</p>
+          <div class="testimonial-author" data-v-7e8f9a>George Papadopoulos</div>
+          <div class="testimonial-role" data-v-7e8f9a>Managing Director, Helios Digital</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partners -->
+  <div class="partners-section" data-v-7e8f9a>
+    <p data-v-7e8f9a style="font-size:13px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Trusted by teams at</p>
+    <div class="partners-logos" data-v-7e8f9a>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+      <div class="partner-logo" data-v-7e8f9a></div>
+    </div>
+  </div>
+
+  <!-- Signup / lead form -->
+  <div class="signup-bg" id="signup" data-v-7e8f9a>
+    <div class="signup-form-wrap" data-v-7e8f9a>
+      <h2 data-v-7e8f9a style="text-align:center;margin-bottom:6px;">Start your free trial</h2>
+      <p data-v-7e8f9a style="text-align:center;color:#666;font-size:14px;margin-bottom:24px;">14 days free. No credit card required.</p>
+      <div class="form-row" data-v-7e8f9a>
+        <div data-v-7e8f9a>
+          <label class="form-label" data-v-7e8f9a>First name</label>
+          <input type="text" name="first_name" class="LeadForm--l2m3n4" data-v-7e8f9a placeholder="Jane" />
+        </div>
+        <div data-v-7e8f9a>
+          <label class="form-label" data-v-7e8f9a>Last name</label>
+          <input type="text" name="last_name" class="LeadForm--l2m3n4" data-v-7e8f9a placeholder="Smith" />
+        </div>
+      </div>
+      <label class="form-label" data-v-7e8f9a>Work email</label>
+      <input type="email" name="email" class="LeadForm--l2m3n4" data-v-7e8f9a placeholder="jane@company.com" />
+      <label class="form-label" data-v-7e8f9a>Company name</label>
+      <!-- t_06: input[name="company_name"] - signals: name -->
+      <input type="text" name="company_name" class="LeadForm--l2m3n4"
+             data-v-7e8f9a data-oracle-id="t_06" placeholder="Acme Inc." />
+      <label class="form-label" data-v-7e8f9a>Team size</label>
+      <select name="team_size" class="LeadForm--l2m3n4" data-v-7e8f9a style="appearance:auto;">
+        <option data-v-7e8f9a>1–5</option>
+        <option data-v-7e8f9a>6–20</option>
+        <option data-v-7e8f9a>21–100</option>
+        <option data-v-7e8f9a>100+</option>
+      </select>
+      <div class="terms-row" data-v-7e8f9a>
+        <!-- t_09: input#terms-checkbox - signals: name -->
+        <input type="checkbox" name="terms_agree" id="terms-checkbox"
+               data-v-7e8f9a data-oracle-id="t_09" />
+        <label for="terms-checkbox" data-v-7e8f9a>
+          I agree to the <a href="/terms" data-v-7e8f9a>Terms of Service</a> and
+          <a href="/privacy" data-v-7e8f9a>Privacy Policy</a>
+        </label>
+      </div>
+      <button type="submit" class="signup-submit" data-v-7e8f9a>Create my free account</button>
+    </div>
+  </div>
+
+  <!-- Contact form -->
+  <div class="contact-bg" data-v-7e8f9a>
+    <div class="contact-wrap" data-v-7e8f9a>
+      <h2 data-v-7e8f9a>Talk to sales</h2>
+      <p data-v-7e8f9a>Have questions about Enterprise? Our team responds within one business day.</p>
+      <input type="text" name="contact_name" class="ContactForm--u1v2w3"
+             data-v-7e8f9a placeholder="Your name" />
+      <input type="email" name="contact_email" class="ContactForm--u1v2w3"
+             data-v-7e8f9a placeholder="Work email" />
+      <input type="text" name="contact_company" class="ContactForm--u1v2w3"
+             data-v-7e8f9a placeholder="Company" />
+      <textarea name="contact_message" class="ContactForm--u1v2w3" rows="4"
+                data-v-7e8f9a placeholder="Tell us about your use case..." style="resize:vertical;"></textarea>
+      <!-- t_08: button[aria-label="Submit contact form"] - signals: aria-label -->
+      <button type="submit" class="contact-submit-btn"
+              aria-label="Submit contact form"
+              data-v-7e8f9a data-oracle-id="t_08">Send message</button>
+    </div>
+  </div>
+
+  <footer data-v-7e8f9a>
+    <div data-v-7e8f9a>
+      <strong data-v-7e8f9a style="color:#ccc;">Axiom</strong> &nbsp;·&nbsp;
+      <a href="/about" data-v-7e8f9a>About</a>
+      <a href="/careers" data-v-7e8f9a>Careers</a>
+      <a href="/blog" data-v-7e8f9a>Blog</a>
+      <a href="/press" data-v-7e8f9a>Press</a>
+      <a href="/legal/privacy" data-v-7e8f9a>Privacy</a>
+      <a href="/legal/terms" data-v-7e8f9a>Terms</a>
+      <a href="/legal/cookies" data-v-7e8f9a>Cookies</a>
+      <a href="/security" data-v-7e8f9a>Security</a>
+      <a href="/accessibility" data-v-7e8f9a>Accessibility</a>
+    </div>
+    <div data-v-7e8f9a style="margin-top:8px;">© 2026 Axiom Technologies Ltd. All rights reserved. Registered in England &amp; Wales No. 09876543.</div>
+  </footer>
+
+</body>
+</html>

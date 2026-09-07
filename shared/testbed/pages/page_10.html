@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Harbour Hotel, Barcelona — StayFinder</title>
+<!-- targets: see pages/page_10.truth.json -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;color:#222;background:#f4f5f7}
+a{color:#0055c8;text-decoration:none}a:hover{text-decoration:underline}
+button{cursor:pointer;font-family:inherit}
+/* header */
+.site-header{background:#fff;border-bottom:1px solid #e0e4ea;position:sticky;top:0;z-index:200}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:20px;padding:12px 20px}
+.logo{font-size:22px;font-weight:800;color:#0a3c6e}
+.logo span{color:#e07000}
+.header-nav{display:flex;gap:8px;margin-left:auto}
+.header-nav a{font-size:13px;color:#444;padding:5px 10px;border-radius:3px}
+.header-nav a:hover{background:#f0f4ff;color:#0a3c6e;text-decoration:none}
+.header-cta{background:#e07000;color:#fff;border:none;padding:8px 18px;border-radius:4px;font-size:13px;font-weight:600}
+/* breadcrumb */
+.breadcrumb-wrap{background:#fff;border-bottom:1px solid #e8edf3;padding:9px 20px}
+.breadcrumb{max-width:1200px;margin:0 auto;display:flex;gap:6px;font-size:13px;color:#666;flex-wrap:wrap}
+.breadcrumb a{color:#0055c8}
+.breadcrumb__sep{color:#ccc}
+/* hero */
+.hotel-hero{max-width:1200px;margin:20px auto 0;padding:0 20px;display:grid;grid-template-columns:2fr 1fr;gap:4px;border-radius:10px;overflow:hidden}
+.hero-main{position:relative;background:#c8d4e8;aspect-ratio:16/9;overflow:hidden;border-radius:0}
+.hero-main-img{width:100%;height:100%;object-fit:cover;display:block;background:linear-gradient(135deg,#a0b8d8,#c0cce0)}
+.gallery-badge{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:4px 10px;border-radius:12px}
+/* gallery nav buttons */
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.85);border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#333;font-size:18px;line-height:1;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.gallery-nav--prev{left:10px}
+.gallery-nav--next{right:10px}
+.hero-thumbs{display:grid;grid-template-rows:repeat(2,1fr);gap:4px}
+.hero-thumb{background:linear-gradient(135deg,#b0c4dc,#d8e4ef);aspect-ratio:4/3;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;color:#6080a0}
+/* hotel info */
+.hotel-info{max-width:1200px;margin:24px auto 0;padding:0 20px;display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:start}
+.hotel-main{}
+.hotel-name{font-size:26px;font-weight:700;color:#0a3c6e;margin-bottom:6px}
+.hotel-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:14px;color:#555;margin-bottom:10px}
+.hotel-stars{color:#f0a500;font-size:16px}
+.rating-badge{background:#0a3c6e;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:4px}
+.review-summary{font-size:13px;color:#444}
+.hotel-location{font-size:14px;color:#555;margin-bottom:14px}
+.hotel-desc{font-size:14px;color:#333;line-height:1.6;margin-bottom:16px}
+.amenity-list{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.amenity{background:#f0f4ff;color:#0a3c6e;font-size:12px;padding:4px 10px;border-radius:12px;border:1px solid #c8d8f0}
+/* booking card */
+.booking-card{background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.10);padding:20px;position:sticky;top:80px}
+.booking-card__title{font-size:16px;font-weight:700;color:#0a3c6e;margin-bottom:14px}
+.booking-card__price{font-size:22px;font-weight:700;color:#0a3c6e;margin-bottom:4px}
+.booking-card__price-note{font-size:12px;color:#666;margin-bottom:14px}
+/* form elements in booking card */
+.form-row{margin-bottom:12px}
+.form-row label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:4px}
+.form-select{width:100%;padding:9px 12px;border:1.5px solid #ccd;border-radius:5px;font-size:14px;background:#fff;outline:none;color:#333}
+.form-select:focus{border-color:#0a3c6e}
+.form-checkbox-row{display:flex;align-items:center;gap:8px;margin-bottom:12px;padding:10px 12px;background:#f8f9fb;border-radius:5px;border:1px solid #e0e4ea}
+.form-checkbox-row label{font-size:14px;color:#333;cursor:pointer}
+.form-checkbox-row .price-add{font-size:13px;color:#0a3c6e;font-weight:600;margin-left:auto}
+/* shadow DOM date widget host */
+.date-widget-host{margin-bottom:12px}
+booking-date-picker{display:block;width:100%}
+/* book-now button */
+.btn-book-now{width:100%;background:#e07000;color:#fff;border:none;padding:13px 20px;border-radius:6px;font-size:16px;font-weight:700;margin-top:4px;margin-bottom:10px}
+.btn-book-now:hover{background:#c86000}
+.booking-guarantees{font-size:12px;color:#666;text-align:center;display:flex;flex-direction:column;gap:4px}
+/* star filter */
+.star-filter-section{max-width:1200px;margin:24px auto 0;padding:0 20px}
+.star-filter-section h3{font-size:16px;font-weight:700;color:#0a3c6e;margin-bottom:10px}
+.star-filter-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.star-filter-row label{font-size:14px;color:#333}
+/* reviews section */
+.reviews-section{max-width:1200px;margin:24px auto 0;padding:0 20px}
+.reviews-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.reviews-header h2{font-size:20px;font-weight:700;color:#0a3c6e}
+.reviews-summary{display:flex;gap:16px;align-items:center;margin-bottom:20px;padding:16px;background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.reviews-score{font-size:40px;font-weight:800;color:#0a3c6e}
+.reviews-label{font-size:14px;color:#555}
+.review-card{background:#fff;border-radius:8px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.review-card__head{display:flex;justify-content:space-between;margin-bottom:6px}
+.review-card__author{font-size:14px;font-weight:600;color:#333}
+.review-card__date{font-size:12px;color:#888}
+.review-card__stars{color:#f0a500;font-size:14px;margin-bottom:6px}
+.review-card__text{font-size:14px;color:#444;line-height:1.5}
+/* footer */
+.site-footer{background:#0a3c6e;color:rgba(255,255,255,.75);font-size:13px;padding:28px 20px 16px;margin-top:32px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.footer-section h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:8px}
+.footer-section a{display:block;color:rgba(255,255,255,.65);margin-bottom:5px;font-size:13px}
+.footer-bottom{max-width:1200px;margin:16px auto 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.15);text-align:center;font-size:12px;color:rgba(255,255,255,.4)}
+/* Vue-style scope containers */
+[data-v-7ba5bd90],[data-v-2c3d4e5f],[data-v-a1b2c3d4],[data-v-f5e4d3c2],
+[data-v-9b8a7c6d],[data-v-c1d2e3f4],[data-v-8b7c6d5e],[data-v-1a2b3c4d]{display:contents}
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────── -->
+<header class="site-header" data-v-1a2b3c4d>
+  <div class="header-inner">
+    <a href="/" class="logo">Stay<span>Finder</span></a>
+    <nav class="header-nav">
+      <a href="/hotels">Hotels</a>
+      <a href="/apartments">Apartments</a>
+      <a href="/villas">Villas</a>
+      <a href="/hostels">Hostels</a>
+      <a href="/deals">Deals</a>
+    </nav>
+    <button class="header-cta" type="button">Sign in</button>
+  </div>
+</header>
+
+<!-- ── Breadcrumb ──────────────────────────────────────────────────────── -->
+<div class="breadcrumb-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span class="breadcrumb__sep">›</span>
+    <a href="/hotels">Hotels</a><span class="breadcrumb__sep">›</span>
+    <a href="/hotels/spain">Spain</a><span class="breadcrumb__sep">›</span>
+    <a href="/hotels/spain/barcelona">Barcelona</a><span class="breadcrumb__sep">›</span>
+    <span>Grand Harbour Hotel</span>
+  </nav>
+</div>
+
+<!-- ── Hotel hero gallery ──────────────────────────────────────────────── -->
+<div class="hotel-hero" data-v-7ba5bd90>
+  <div class="hero-main">
+    <div class="hero-main-img" role="img" aria-label="Hotel exterior view"></div>
+    <div class="gallery-badge">1 / 24 photos</div>
+    <button class="gallery-nav gallery-nav--prev data-v-7ba5bd90" type="button" aria-label="Previous photo">‹</button>
+    <!-- t_10: button[type="button"] - NONE, no stable signal -->
+    <button
+      id="gallery-next--a1b2c3"
+      class="gallery-nav gallery-nav--next data-v-7ba5bd90"
+      type="button"
+      data-oracle-id="t_10">›</button>
+  </div>
+  <div class="hero-thumbs">
+    <div class="hero-thumb">🏨</div>
+    <div class="hero-thumb">🌊</div>
+  </div>
+</div>
+
+<!-- ── Hotel info + booking card ──────────────────────────────────────── -->
+<div class="hotel-info">
+
+  <!-- Left: hotel details -->
+  <div class="hotel-main" data-v-8b7c6d5e>
+    <h1 class="hotel-name">Grand Harbour Hotel Barcelona</h1>
+    <div class="hotel-meta">
+      <span class="hotel-stars" aria-label="4 out of 5 stars">★★★★☆</span>
+      <span class="rating-badge">8.7</span>
+      <a href="#reviews" class="review-summary">2,341 reviews</a>
+    </div>
+    <p class="hotel-location">📍 Port Olímpic, Barcelona, Spain · <a href="#map">Show on map</a></p>
+    <p class="hotel-desc">
+      Located steps from the Olympic Port with stunning Mediterranean views, the Grand Harbour Hotel
+      combines contemporary design with Barcelona's vibrant culture. Our rooftop terrace, spa, and
+      world-class dining make it the perfect base for exploring the city.
+    </p>
+    <div class="amenity-list">
+      <span class="amenity">🏊 Pool</span>
+      <span class="amenity">🧖 Spa</span>
+      <span class="amenity">🍽 Restaurant</span>
+      <span class="amenity">🅿 Parking</span>
+      <span class="amenity">📶 Free Wi-Fi</span>
+      <span class="amenity">🏋 Gym</span>
+      <span class="amenity">🍳 Breakfast</span>
+      <span class="amenity">♿ Accessible</span>
+    </div>
+
+    <!-- ── Star rating filter ─────────────────────────────────────────── -->
+    <div class="star-filter-section" data-v-f5e4d3c2>
+      <h3>Filter rooms by star category</h3>
+      <div class="star-filter-row">
+        <label>Show:
+        <!-- t_08: select[aria-label="Filter by star rating"] - signals: aria-label -->
+        <select
+          aria-label="Filter by star rating"
+          class="form-select"
+          data-oracle-id="t_08">
+          <option value="">All star ratings</option>
+          <option value="3">3 stars &amp; above</option>
+          <option value="4">4 stars &amp; above</option>
+          <option value="5">5 stars only</option>
+        </select></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: booking card -->
+  <aside class="booking-card" data-v-2c3d4e5f>
+    <p class="booking-card__title">Reserve your stay</p>
+    <p class="booking-card__price">£145 <span style="font-size:14px;font-weight:400;color:#666">/ night</span></p>
+    <p class="booking-card__price-note">Avg. price excl. taxes</p>
+
+    <!-- Shadow DOM widget: check-in / check-out (t_01, t_02, t_03) -->
+    <div class="date-widget-host">
+      <booking-date-picker></booking-date-picker>
+    </div>
+
+    <div class="form-row">
+      <label>Guests
+      <!-- t_04: select[name="guests"] - signals: name -->
+      <select
+        name="guests"
+        class="form-select data-v-2c3d4e5f"
+        data-oracle-id="t_04">
+        <option value="1">1 guest</option>
+        <option value="2">2 guests</option>
+        <option value="3">3 guests</option>
+        <option value="4">4 guests</option>
+        <option value="5">5 guests</option>
+      </select></label>
+    </div>
+
+    <div class="form-row">
+      <label>Room type
+      <!-- t_05: select[aria-label="Select room type"] - signals: aria-label -->
+      <select
+        aria-label="Select room type"
+        class="form-select data-v-2c3d4e5f"
+        data-oracle-id="t_05">
+        <option value="standard">Standard Room — from £145/night</option>
+        <option value="deluxe">Deluxe Sea View — from £195/night</option>
+        <option value="suite">Junior Suite — from £280/night</option>
+        <option value="penthouse">Penthouse — from £450/night</option>
+      </select></label>
+    </div>
+
+    <div class="form-checkbox-row" data-v-a1b2c3d4>
+      <!-- t_07: label - signals: name -->
+      <label><input
+        type="checkbox"
+        name="breakfast_included"
+        class="data-v-a1b2c3d4"
+        data-oracle-id="t_07" />Include breakfast</label>
+      <span class="price-add">+£18/night</span>
+    </div>
+
+    <!-- t_06: button[book-now-btn] - signals: data-testid -->
+    <button
+      type="button"
+      data-testid="book-now-btn"
+      class="btn-book-now data-v-2c3d4e5f"
+      data-oracle-id="t_06">Book Now</button>
+
+    <div class="booking-guarantees">
+      <span>✓ Free cancellation until 48h before</span>
+      <span>✓ Best price guarantee</span>
+      <span>✓ Secure payment</span>
+    </div>
+  </aside>
+
+</div><!-- .hotel-info -->
+
+<!-- ── Reviews section ────────────────────────────────────────────────── -->
+<section class="reviews-section" data-v-c1d2e3f4>
+  <div class="reviews-header">
+    <h2>Guest reviews</h2>
+    <!-- t_09: a[write-review-link] - signals: data-testid -->
+    <a
+      href="/review/grand-harbour-barcelona/new"
+      data-testid="write-review-link"
+      class="data-v-c1d2e3f4"
+      data-oracle-id="t_09">Write a review</a>
+  </div>
+
+  <div class="reviews-summary">
+    <div>
+      <div class="reviews-score">8.7</div>
+      <div class="reviews-label">Excellent</div>
+      <div class="reviews-label" style="font-size:12px">2,341 reviews</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;flex:1;padding-left:20px">
+      <div style="display:flex;gap:8px;align-items:center;font-size:13px">
+        <span style="width:100px;color:#555">Location</span>
+        <div style="flex:1;height:6px;background:#e0e4ea;border-radius:3px">
+          <div style="width:94%;height:100%;background:#0a3c6e;border-radius:3px"></div>
+        </div>
+        <span style="color:#0a3c6e;font-weight:600">9.4</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;font-size:13px">
+        <span style="width:100px;color:#555">Cleanliness</span>
+        <div style="flex:1;height:6px;background:#e0e4ea;border-radius:3px">
+          <div style="width:88%;height:100%;background:#0a3c6e;border-radius:3px"></div>
+        </div>
+        <span style="color:#0a3c6e;font-weight:600">8.8</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;font-size:13px">
+        <span style="width:100px;color:#555">Service</span>
+        <div style="flex:1;height:6px;background:#e0e4ea;border-radius:3px">
+          <div style="width:86%;height:100%;background:#0a3c6e;border-radius:3px"></div>
+        </div>
+        <span style="color:#0a3c6e;font-weight:600">8.6</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;font-size:13px">
+        <span style="width:100px;color:#555">Value</span>
+        <div style="flex:1;height:6px;background:#e0e4ea;border-radius:3px">
+          <div style="width:80%;height:100%;background:#0a3c6e;border-radius:3px"></div>
+        </div>
+        <span style="color:#0a3c6e;font-weight:600">8.0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-card__head">
+      <span class="review-card__author">Sarah M.</span>
+      <span class="review-card__date">November 2024</span>
+    </div>
+    <div class="review-card__stars">★★★★★</div>
+    <p class="review-card__text">Absolutely stunning hotel. The sea views from our deluxe room were spectacular and the rooftop pool area was a highlight. Staff were incredibly helpful and the breakfast was superb.</p>
+  </div>
+
+  <div class="review-card">
+    <div class="review-card__head">
+      <span class="review-card__author">Marco P.</span>
+      <span class="review-card__date">October 2024</span>
+    </div>
+    <div class="review-card__stars">★★★★☆</div>
+    <p class="review-card__text">Great location near the marina. Room was spacious and well-appointed. Only minor issue was the noise from the port on one evening. Would definitely return.</p>
+  </div>
+
+  <div class="review-card">
+    <div class="review-card__head">
+      <span class="review-card__author">Joanna K.</span>
+      <span class="review-card__date">September 2024</span>
+    </div>
+    <div class="review-card__stars">★★★★★</div>
+    <p class="review-card__text">The spa and wellness facilities are exceptional. We booked the junior suite and it was worth every penny. The in-house restaurant serves outstanding Catalan cuisine.</p>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────── -->
+<footer class="site-footer" data-v-8b7c6d5e>
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h4>Find accommodation</h4>
+      <a href="/hotels">Hotels</a>
+      <a href="/apartments">Apartments</a>
+      <a href="/villas">Villas</a>
+      <a href="/hostels">Hostels</a>
+    </div>
+    <div class="footer-section">
+      <h4>Top destinations</h4>
+      <a href="/hotels/spain/barcelona">Barcelona</a>
+      <a href="/hotels/uk/london">London</a>
+      <a href="/hotels/france/paris">Paris</a>
+      <a href="/hotels/italy/rome">Rome</a>
+    </div>
+    <div class="footer-section">
+      <h4>Support</h4>
+      <a href="/help">Help centre</a>
+      <a href="/contact">Contact us</a>
+      <a href="/cancellation">Cancellation policies</a>
+      <a href="/accessibility">Accessibility</a>
+    </div>
+    <div class="footer-section">
+      <h4>StayFinder</h4>
+      <a href="/about">About us</a>
+      <a href="/press">Press</a>
+      <a href="/careers">Careers</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2024 StayFinder Ltd. All rights reserved.</div>
+</footer>
+
+<!-- ── Shadow DOM: booking date picker widget ──────────────────────────── -->
+<script>
+customElements.define('booking-date-picker', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+      <style>
+        .widget{display:flex;flex-direction:column;gap:8px;padding:0}
+        .field{display:flex;flex-direction:column;gap:3px}
+        .field label{font-size:13px;font-weight:600;color:#333}
+        .field input{padding:9px 12px;border:1.5px solid #ccd;border-radius:5px;font-size:14px;outline:none}
+        .field input:focus{border-color:#0a3c6e}
+        .btn-search{width:100%;background:#0a3c6e;color:#fff;border:none;padding:11px 16px;border-radius:5px;font-size:14px;font-weight:700;cursor:pointer;margin-top:4px}
+        .btn-search:hover{background:#082e54}
+      </style>
+      <div class="widget">
+        <div class="field">
+          <label for="check-in-field">Check in</label>
+          <!-- t_01: input#check-in-field - signals: name -->
+          <input
+            type="date"
+            id="check-in-field"
+            name="check_in"
+            aria-label="Check-in date"
+            data-oracle-id="t_01" />
+        </div>
+        <div class="field">
+          <label for="check-out-field">Check out</label>
+          <!-- t_02: input#check-out-field - signals: name -->
+          <input
+            type="date"
+            id="check-out-field"
+            name="check_out"
+            aria-label="Check-out date"
+            data-oracle-id="t_02" />
+        </div>
+        <!-- t_03: button[aria-label="Search availability"] - signals: aria-label -->
+        <button
+          class="btn-search"
+          type="button"
+          aria-label="Search availability"
+          data-oracle-id="t_03">Search availability</button>
+      </div>
+    `;
+  }
+});
+</script>
+
+</body>
+</html>

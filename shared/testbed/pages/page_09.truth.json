@@ -1,0 +1,107 @@
+{
+  "page_id": "page_09",
+  "group": "G3",
+  "shadow": "S1",
+  "semantic_density": "high",
+  "size_tier": "large",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["calendar-widget-q8r9s0"],
+    "volatile_classes": [
+      "ContactCard--b3c4d5",
+      "ActivityRow--e6f7g8",
+      "TaskItem--h9i0j1",
+      "FieldGroup--k2l3m4",
+      "EmailRow--n5o6p7",
+      "CalSlot--z8a9b0",
+      "_ngcontent-crm-c9",
+      "_nghost-crm-c9"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the input field where you edit the contact's first name",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='contact-first-name' and aria-label='Contact first name'; Angular attr _ngcontent-crm-c9 is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that sets the lead status for this contact",
+      "signal_attrs": ["name", "aria-label", "id"],
+      "expected_stable_signal": "select with name='lead_status' and aria-label='Lead status'; id='lead-status' also present but name+aria-label are the recorded signals"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the button that saves changes to the contact record",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='save-contact' and aria-label='Save contact record'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find a row in the activity timeline table",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — tr with class ActivityRow--e6f7g8 only (JS-generated row 5); no aria-label, no id, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the search input that filters the activity timeline",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input[type=search] with placeholder='Search activity timeline'; no name, no id, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the link that opens the contact's primary email thread",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with aria-label='Open primary email thread'; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the button that adds a new task for this contact",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='add-task'; no aria-label on the button; data-testid is the sole stable signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the search input that filters the custom fields panel",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=search] with aria-label='Search custom fields'; no name, no id; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the calendar widget that books the selected appointment slot",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside calendar-widget shadow root with data-testid='book-appointment-btn' and aria-label='Book appointment slot'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the first time-slot element inside the calendar widget",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside calendar-widget shadow root with class CalSlot--z8a9b0 only (first slot, '09:00'); no aria-label, no data-testid, no id; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Self-Service – PeoplePlus HR</title>
+  <style>
+    :root{--brand:#1e40af;--brand-dark:#1e3a8a;--accent:#059669;--warn:#b45309;--text:#1e293b;--muted:#64748b;--border:#e2e8f0;--bg:#f8fafc;--card:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+    header{background:var(--brand-dark);color:#fff}
+    .header-bar{max-width:1180px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;gap:16px}
+    .logo{color:#fff;font-size:17px;font-weight:800;text-decoration:none;letter-spacing:-.4px}
+    .header-nav{display:flex;margin-left:28px;gap:0}
+    .header-nav a{color:rgba(255,255,255,.7);text-decoration:none;font-size:13px;padding:0 14px;height:60px;display:flex;align-items:center;border-bottom:3px solid transparent}
+    .header-nav a:hover{color:#fff}
+    .header-nav a.active{color:#fff;border-bottom-color:#60a5fa}
+    .header-right{margin-left:auto;display:flex;gap:12px;align-items:center}
+    .header-right a{color:rgba(255,255,255,.8);text-decoration:none;font-size:13px}
+    .alert-bar{background:#fef3c7;border-bottom:1px solid #fcd34d;padding:8px 24px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px}
+    .content-wrap{max-width:1180px;margin:0 auto;padding:24px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
+    .side-nav{background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden;position:sticky;top:20px}
+    .side-nav-section{padding:8px 0}
+    .side-nav-section+.side-nav-section{border-top:1px solid var(--border)}
+    .side-nav-label{padding:8px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+    .side-nav a{display:flex;align-items:center;gap:8px;padding:9px 16px;font-size:13px;color:var(--text);text-decoration:none;border-left:3px solid transparent}
+    .side-nav a:hover{background:#f1f5f9}
+    .side-nav a.active{background:#eff6ff;color:var(--brand);border-left-color:var(--brand);font-weight:600}
+    .side-icon{font-size:15px;opacity:.7}
+    .main-col{display:flex;flex-direction:column;gap:20px}
+    .welcome-banner{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);border-radius:10px;padding:24px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .welcome-text h2{font-size:20px;font-weight:700;margin-bottom:4px}
+    .welcome-text p{font-size:13px;opacity:.85}
+    .kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .PayslipCard--r3s4t5{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;text-align:center}
+    .kpi-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
+    .kpi-value{font-size:28px;font-weight:800;color:var(--text)}
+    .kpi-sub{font-size:12px;color:var(--muted);margin-top:4px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+    .card-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    .card-title{font-size:15px;font-weight:700}
+    .card-body{padding:18px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+    .form-group{display:flex;flex-direction:column;gap:6px}
+    .form-group label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+    .form-group input,.form-group select{height:40px;border:1px solid var(--border);border-radius:6px;padding:0 12px;font-size:14px;color:var(--text);background:#fff}
+    .toggle-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--border)}
+    .toggle-row:last-child{border-bottom:none}
+    .toggle-info{flex:1}
+    .toggle-title{font-size:14px;font-weight:600}
+    .toggle-desc{font-size:12px;color:var(--muted);margin-top:2px}
+    .toggle-switch{position:relative;display:inline-flex;align-items:center;cursor:pointer}
+    .toggle-switch input{opacity:0;width:0;height:0;position:absolute}
+    .toggle-track{width:44px;height:24px;background:#cbd5e1;border-radius:12px;position:relative;transition:background .2s}
+    .toggle-track.on{background:var(--accent)}
+    .toggle-thumb{width:18px;height:18px;background:#fff;border-radius:50%;position:absolute;top:3px;left:3px;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+    .toggle-track.on .toggle-thumb{left:23px}
+    .btn-primary{background:var(--brand);color:#fff;border:none;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer}
+    .btn-secondary{background:#fff;color:var(--text);border:1px solid var(--border);padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer}
+    .quick-links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .NavLink--s5t6u7{display:flex;align-items:center;gap:10px;padding:14px;background:var(--card);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600}
+    .NavLink--s5t6u7:hover{background:#f1f5f9;border-color:var(--brand)}
+    .quick-link-icon{font-size:20px}
+    .hr-portal-host{margin-top:0}
+    hr-portal{display:block}
+    footer{background:#1e293b;color:#94a3b8;padding:24px;margin-top:40px}
+    .footer-inner{max-width:1180px;margin:0 auto;display:flex;gap:24px;flex-wrap:wrap;font-size:12px;align-items:center}
+    .footer-inner a{color:#94a3b8;text-decoration:none}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_20.truth.json -->
+
+<header>
+  <div class="header-bar">
+    <a class="logo" href="/" _nghost-hr-c20>PeoplePlus HR</a>
+    <nav class="header-nav" _ngcontent-hr-c20>
+      <a href="/dashboard" class="active" _ngcontent-hr-c20>Dashboard</a>
+      <a href="/time" _ngcontent-hr-c20>Time &amp; Attendance</a>
+      <a href="/payroll" _ngcontent-hr-c20>Payroll</a>
+      <a href="/learning" _ngcontent-hr-c20>Learning</a>
+      <a href="/org" _ngcontent-hr-c20>Organisation</a>
+    </nav>
+    <div class="header-right" _ngcontent-hr-c20>
+      <!-- t_01: My Account nav link (aria-label sole signal) -->
+      <a
+        _ngcontent-hr-c20
+        href="/account/profile"
+        data-oracle-id="t_01"
+        aria-label="My Account">&#128100; My Account</a>
+      <a href="/notifications" _ngcontent-hr-c20 aria-label="Notifications">&#128276;</a>
+      <a href="/signout" _ngcontent-hr-c20>Sign out</a>
+    </div>
+  </div>
+</header>
+
+<div class="alert-bar" _ngcontent-hr-c20>
+  &#9888; Open enrolment closes 30 June — update your benefits selections before the deadline.
+</div>
+
+<div class="content-wrap" _ngcontent-hr-c20>
+
+  <!-- Side navigation -->
+  <nav class="side-nav" _ngcontent-hr-c20 aria-label="Employee self-service navigation">
+    <div class="side-nav-section" _ngcontent-hr-c20>
+      <div class="side-nav-label" _ngcontent-hr-c20>Personal</div>
+      <a href="/dashboard" class="active" _ngcontent-hr-c20><span class="side-icon">&#127968;</span>Dashboard</a>
+      <a href="/profile" _ngcontent-hr-c20><span class="side-icon">&#128100;</span>My Profile</a>
+      <a href="/documents" _ngcontent-hr-c20><span class="side-icon">&#128196;</span>Documents</a>
+    </div>
+    <div class="side-nav-section" _ngcontent-hr-c20>
+      <div class="side-nav-label" _ngcontent-hr-c20>Pay</div>
+      <a href="/payslips" _ngcontent-hr-c20><span class="side-icon">&#128181;</span>Payslips</a>
+      <a href="/expenses" _ngcontent-hr-c20><span class="side-icon">&#128178;</span>Expenses</a>
+      <a href="/p60" _ngcontent-hr-c20><span class="side-icon">&#128203;</span>Tax Documents</a>
+    </div>
+    <div class="side-nav-section" _ngcontent-hr-c20>
+      <div class="side-nav-label" _ngcontent-hr-c20>Benefits</div>
+      <a href="/benefits" _ngcontent-hr-c20><span class="side-icon">&#10024;</span>Benefits</a>
+      <a href="/pension" _ngcontent-hr-c20><span class="side-icon">&#127981;</span>Pension</a>
+      <a href="/leave" _ngcontent-hr-c20><span class="side-icon">&#127958;</span>Leave</a>
+    </div>
+  </nav>
+
+  <!-- Main column -->
+  <div class="main-col" _ngcontent-hr-c20>
+
+    <!-- Welcome banner -->
+    <div class="welcome-banner" _ngcontent-hr-c20>
+      <div class="welcome-text" _ngcontent-hr-c20>
+        <h2 _ngcontent-hr-c20>Good morning, Sarah &#128075;</h2>
+        <p _ngcontent-hr-c20>Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.</p>
+      </div>
+      <!-- t_02: enrol benefits button -->
+      <button
+        _ngcontent-hr-c20
+        type="button"
+        class="btn-primary"
+        data-testid="enroll-benefits-btn"
+        data-oracle-id="t_02"
+        aria-label="Start benefits enrolment">Enrol in benefits</button>
+    </div>
+
+    <!-- KPI cards (3) — t_03 NONE on the total hours card -->
+    <div class="kpi-grid" _ngcontent-hr-c20>
+      <!-- t_03: NONE — volatile class only, no stable attrs -->
+      <div
+        _ngcontent-hr-c20
+        class="PayslipCard--r3s4t5"
+        data-oracle-id="t_03">
+        <div class="kpi-label" _ngcontent-hr-c20>Hours this month</div>
+        <div class="kpi-value" _ngcontent-hr-c20>142.5</div>
+        <div class="kpi-sub" _ngcontent-hr-c20>of 160 contracted</div>
+      </div>
+      <div class="PayslipCard--r3s4t5" _ngcontent-hr-c20>
+        <div class="kpi-label" _ngcontent-hr-c20>Annual leave remaining</div>
+        <div class="kpi-value" _ngcontent-hr-c20>14</div>
+        <div class="kpi-sub" _ngcontent-hr-c20>days of 25 entitlement</div>
+      </div>
+      <div class="PayslipCard--r3s4t5" _ngcontent-hr-c20>
+        <div class="kpi-label" _ngcontent-hr-c20>Next net pay</div>
+        <div class="kpi-value" _ngcontent-hr-c20>£3,214</div>
+        <div class="kpi-sub" _ngcontent-hr-c20>estimated, due 30 Jun</div>
+      </div>
+    </div>
+
+    <!-- Payroll settings card -->
+    <div class="card" _ngcontent-hr-c20>
+      <div class="card-header" _ngcontent-hr-c20>
+        <span class="card-title" _ngcontent-hr-c20>&#128181; Payroll settings</span>
+        <button class="btn-secondary" type="button" _ngcontent-hr-c20>Save changes</button>
+      </div>
+      <div class="card-body" _ngcontent-hr-c20>
+        <div class="toggle-row" _ngcontent-hr-c20>
+          <div class="toggle-info" _ngcontent-hr-c20>
+            <div class="toggle-title" _ngcontent-hr-c20>Direct deposit</div>
+            <div class="toggle-desc" _ngcontent-hr-c20>Salary paid directly to your nominated bank account</div>
+          </div>
+          <label class="toggle-switch" _ngcontent-hr-c20>
+            <!-- t_04: direct deposit toggle (id + aria-label) -->
+            <input
+              _ngcontent-hr-c20
+              id="direct-deposit-toggle"
+              type="checkbox"
+              data-oracle-id="t_04"
+              aria-label="Enable direct deposit"
+              checked>
+            <span class="toggle-track on" _ngcontent-hr-c20>
+              <span class="toggle-thumb" _ngcontent-hr-c20></span>
+            </span>
+          </label>
+        </div>
+        <div class="toggle-row" _ngcontent-hr-c20>
+          <div class="toggle-info" _ngcontent-hr-c20>
+            <div class="toggle-title" _ngcontent-hr-c20>Paperless payslips</div>
+            <div class="toggle-desc" _ngcontent-hr-c20>Receive payslips by email only — no printed copy</div>
+          </div>
+          <label class="toggle-switch" _ngcontent-hr-c20>
+            <input type="checkbox" checked _ngcontent-hr-c20 aria-label="Enable paperless payslips">
+            <span class="toggle-track on" _ngcontent-hr-c20>
+              <span class="toggle-thumb" _ngcontent-hr-c20></span>
+            </span>
+          </label>
+        </div>
+        <div class="toggle-row" _ngcontent-hr-c20>
+          <div class="toggle-info" _ngcontent-hr-c20>
+            <div class="toggle-title" _ngcontent-hr-c20>Salary sacrifice (pension)</div>
+            <div class="toggle-desc" _ngcontent-hr-c20>Contribute an additional 2% of gross salary to your pension pre-tax</div>
+          </div>
+          <label class="toggle-switch" _ngcontent-hr-c20>
+            <input type="checkbox" _ngcontent-hr-c20 aria-label="Enable salary sacrifice for pension">
+            <span class="toggle-track" _ngcontent-hr-c20>
+              <span class="toggle-thumb" _ngcontent-hr-c20></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payslip lookup card -->
+    <div class="card" _ngcontent-hr-c20>
+      <div class="card-header" _ngcontent-hr-c20>
+        <span class="card-title" _ngcontent-hr-c20>&#128203; Payslip lookup</span>
+      </div>
+      <div class="card-body" _ngcontent-hr-c20>
+        <div class="form-row" _ngcontent-hr-c20>
+          <div class="form-group" _ngcontent-hr-c20>
+            <label _ngcontent-hr-c20>Pay period (select date)</label>
+            <!-- t_05: date input — structural type (sole) — only date input on this page -->
+            <input
+              _ngcontent-hr-c20
+              type="date"
+              class="PeriodPicker--f8g9h0"
+              data-oracle-id="t_05">
+          </div>
+          <div class="form-group" _ngcontent-hr-c20>
+            <label _ngcontent-hr-c20>Format</label>
+            <select _ngcontent-hr-c20 aria-label="Payslip download format">
+              <option value="pdf">PDF</option>
+              <option value="csv">CSV</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-primary" type="button" _ngcontent-hr-c20>Search payslips</button>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div _ngcontent-hr-c20>
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:12px" _ngcontent-hr-c20>Quick links</h3>
+      <div class="quick-links" _ngcontent-hr-c20>
+        <!-- t_06: benefits nav link (href sole stable signal) -->
+        <a
+          _ngcontent-hr-c20
+          href="/benefits"
+          data-oracle-id="t_06"
+          class="NavLink--s5t6u7">
+          <span class="quick-link-icon">&#10024;</span>Benefits
+        </a>
+        <a href="/leave/request" class="NavLink--s5t6u7" _ngcontent-hr-c20>
+          <span class="quick-link-icon">&#127958;</span>Request leave
+        </a>
+        <a href="/expenses/submit" class="NavLink--s5t6u7" _ngcontent-hr-c20>
+          <span class="quick-link-icon">&#128178;</span>Submit expenses
+        </a>
+        <a href="/profile/bank" class="NavLink--s5t6u7" _ngcontent-hr-c20>
+          <span class="quick-link-icon">&#127981;</span>Bank details
+        </a>
+      </div>
+    </div>
+
+    <!-- HR Portal — S2 shadow host -->
+    <div class="hr-portal-host" _ngcontent-hr-c20>
+      <hr-portal id="hr-portal-a1b2c3" _ngcontent-hr-c20></hr-portal>
+    </div>
+
+  </div><!-- /main-col -->
+</div><!-- /content-wrap -->
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 PeoplePlus HR Ltd.</span>
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+    <a href="/accessibility">Accessibility</a>
+    <a href="/contact">Contact HR</a>
+  </div>
+</footer>
+
+<script>
+// Inner custom element defined FIRST (per §13: inner before outer)
+customElements.define('payslip-viewer', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.viewer{padding:0}' +
+      '.payslip-header{background:#f8fafc;border-radius:6px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}' +
+      '.payslip-period{font-size:14px;font-weight:700;color:#1e293b}' +
+      '.payslip-net{font-size:20px;font-weight:800;color:#059669}' +
+      '.download-btn{background:#1e40af;color:#fff;border:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer}' +
+      '.breakdown-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#64748b;margin-bottom:10px}' +
+      '.breakdown-table{width:100%;border-collapse:collapse;margin-bottom:14px}' +
+      '.breakdown-table th{text-align:left;padding:7px 10px;font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;border-bottom:1px solid #e2e8f0}' +
+      '.breakdown-table td{padding:8px 10px;font-size:13px;border-bottom:1px solid #f1f5f9;color:#1e293b}' +
+      '.PayRow--v7w8x9{color:#1e293b}' +
+      '.breakdown-table td:last-child{text-align:right;font-weight:600}' +
+      '.summary-row{display:flex;justify-content:space-between;padding:10px 0;font-size:13px;border-top:2px solid #1e40af;margin-top:4px;font-weight:700}' +
+      '</style>' +
+      '<div class="viewer">' +
+        '<div class="payslip-header">' +
+          '<div>' +
+            '<div class="payslip-period">Pay period: May 2026</div>' +
+            '<div style="font-size:12px;color:#64748b;margin-top:2px">Paid: 31 May 2026 to Sarah Thompson</div>' +
+          '</div>' +
+          '<div style="display:flex;align-items:center;gap:12px">' +
+            '<div class="payslip-net">£3,214.00 net</div>' +
+            '<button' +
+              ' class="download-btn"' +
+              ' type="button"' +
+              ' data-oracle-id="t_09"' +
+              ' aria-label="Download current payslip as PDF"' +
+            '>&#8595; Download PDF</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="breakdown-title">Earnings</div>' +
+        '<table class="breakdown-table">' +
+          '<thead><tr><th>Description</th><th>Units</th><th style="text-align:right">Amount</th></tr></thead>' +
+          '<tbody>' +
+            '<tr class="PayRow--v7w8x9" data-oracle-id="t_10"><td>Basic salary</td><td>1 month</td><td>£4,166.67</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>Bonus</td><td>—</td><td>£500.00</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>Car allowance</td><td>1 month</td><td>£250.00</td></tr>' +
+          '</tbody>' +
+        '</table>' +
+        '<div class="breakdown-title">Deductions</div>' +
+        '<table class="breakdown-table">' +
+          '<thead><tr><th>Description</th><th></th><th style="text-align:right">Amount</th></tr></thead>' +
+          '<tbody>' +
+            '<tr class="PayRow--v7w8x9"><td>Income tax (PAYE)</td><td></td><td>£912.00</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>National Insurance</td><td></td><td>£487.00</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>Pension (employee 5%)</td><td></td><td>£208.33</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>Salary sacrifice</td><td></td><td>£83.33</td></tr>' +
+            '<tr class="PayRow--v7w8x9"><td>Health plan</td><td></td><td>£12.00</td></tr>' +
+          '</tbody>' +
+        '</table>' +
+        '<div class="summary-row"><span>Net pay</span><span>£3,214.01</span></div>' +
+      '</div>';
+  }
+});
+
+// Outer custom element defined SECOND (after inner payslip-viewer)
+customElements.define('hr-portal', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.portal-box{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden}' +
+      '.portal-header{background:#1e3a8a;padding:14px 20px;display:flex;align-items:center;gap:16px}' +
+      '.portal-title{color:#fff;font-size:15px;font-weight:700}' +
+      '.portal-tabs{display:flex;gap:0}' +
+      '.tab-btn{background:none;border:none;color:rgba(255,255,255,.65);padding:8px 14px;font-size:13px;cursor:pointer;border-bottom:2px solid transparent;font-family:inherit}' +
+      '.tab-btn.active{color:#fff;border-bottom-color:#60a5fa}' +
+      '.ShadowSection--y1z2a3{height:1px;background:#e2e8f0}' +
+      '.portal-body{padding:20px}' +
+      '.section-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#64748b;margin-bottom:14px}' +
+      '</style>' +
+      '<div class="portal-box">' +
+        '<div class="portal-header">' +
+          '<span class="portal-title">&#128203; HR Portal</span>' +
+          '<div class="portal-tabs">' +
+            '<button class="tab-btn active" type="button"' +
+              ' data-testid="payslips-tab"' +
+              ' data-oracle-id="t_07"' +
+              ' aria-label="View my payslips"' +
+            '>Payslips</button>' +
+            '<button class="tab-btn" type="button" aria-label="View benefits summary">Benefits</button>' +
+            '<button class="tab-btn" type="button" aria-label="View documents">Documents</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="ShadowSection--y1z2a3" data-oracle-id="t_08"></div>' +
+        '<div class="portal-body">' +
+          '<div class="section-label">May 2026 payslip</div>' +
+          '<payslip-viewer></payslip-viewer>' +
+        '</div>' +
+      '</div>';
+  }
+});
+</script>
+
+</body>
+</html>

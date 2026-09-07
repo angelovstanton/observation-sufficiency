@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Jobs – WorkHive</title>
+  <style>
+    :root{--brand:#7c3aed;--brand-dark:#4c1d95;--accent:#f59e0b;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--bg:#f9fafb;--card:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+    header{background:var(--brand-dark);color:#fff}
+    .header-bar{max-width:1200px;margin:0 auto;padding:0 20px;height:58px;display:flex;align-items:center;gap:16px}
+    .logo{color:#fff;font-size:18px;font-weight:800;text-decoration:none;letter-spacing:-.5px}
+    .header-nav{display:flex;gap:0;margin-left:20px}
+    .header-nav a{color:rgba(255,255,255,.75);text-decoration:none;font-size:13px;padding:0 14px;height:58px;display:flex;align-items:center}
+    .header-nav a:hover,.header-nav a.active{color:#fff}
+    .header-actions{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn-signin{color:rgba(255,255,255,.8);text-decoration:none;font-size:13px;padding:7px 14px;border:1px solid rgba(255,255,255,.3);border-radius:4px}
+    .btn-post{background:var(--accent);color:#1a1a1a;text-decoration:none;font-size:13px;font-weight:700;padding:7px 16px;border-radius:4px}
+    .search-hero{background:var(--brand);padding:28px 20px}
+    .search-hero-inner{max-width:900px;margin:0 auto}
+    .search-hero h1{color:#fff;font-size:22px;font-weight:700;margin-bottom:14px}
+    .search-row{display:flex;gap:8px;flex-wrap:wrap}
+    .search-row input{height:44px;border:none;border-radius:6px;padding:0 14px;font-size:14px;flex:1;min-width:180px}
+    .btn-find{background:var(--accent);color:#1a1a1a;border:none;height:44px;padding:0 22px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+    .page-layout{max-width:1200px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 280px;gap:20px;align-items:start}
+    .results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+    .results-count{font-size:13px;color:var(--muted)}
+    .sort-sel{height:36px;border:1px solid var(--border);border-radius:4px;padding:0 8px;font-size:13px;cursor:pointer}
+    .jobs-list{display:flex;flex-direction:column;gap:10px}
+    .JobCard__listing___Ng3aB{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;position:relative}
+    .JobCard__listing___Ng3aB:hover{border-color:var(--brand);box-shadow:0 2px 8px rgba(124,58,237,.1)}
+    .job-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+    .job-logo{width:48px;height:48px;border-radius:6px;background:#f3f4f6;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+    .job-title-row{flex:1}
+    .job-title{font-size:16px;font-weight:700;color:var(--brand);text-decoration:none;margin-bottom:2px;display:block}
+    .job-company{font-size:13px;color:var(--text);font-weight:600}
+    .job-meta{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:10px}
+    .job-meta span{display:flex;align-items:center;gap:4px}
+    .SalaryBadge__label___Kv2zR{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;border-radius:4px;padding:2px 8px;font-size:12px;font-weight:600}
+    .job-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+    .tag{background:#f3f4f6;color:#374151;border-radius:4px;padding:3px 8px;font-size:11px}
+    .job-desc{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .job-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .job-posted{font-size:12px;color:var(--muted)}
+    .ApplyBtn__cta___P9xLm{background:var(--brand);color:#fff;border:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer}
+    .pagination{display:flex;justify-content:center;gap:6px;margin-top:20px;padding-top:20px;border-top:1px solid var(--border)}
+    .page-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:4px;font-size:13px;cursor:pointer;background:var(--card);color:var(--text);text-decoration:none}
+    .page-btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .sidebar-host{position:sticky;top:20px}
+    filter-sidebar{display:block}
+    footer{background:#111827;color:#9ca3af;padding:28px 20px;margin-top:40px}
+    .footer-inner{max-width:1200px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;font-size:12px}
+    .footer-inner a{color:#9ca3af;text-decoration:none}
+    .footer-bottom{max-width:1200px;margin:16px auto 0;padding-top:16px;border-top:1px solid #1f2937;font-size:11px;color:#6b7280}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_15.truth.json -->
+
+<header>
+  <div class="header-bar">
+    <a class="logo" href="/" _nghost-jb-c15>WorkHive</a>
+    <nav class="header-nav" _ngcontent-jb-c15>
+      <a href="/jobs" class="active" _ngcontent-jb-c15>Jobs</a>
+      <a href="/companies" _ngcontent-jb-c15>Companies</a>
+      <a href="/salary" _ngcontent-jb-c15>Salaries</a>
+      <a href="/career-advice" _ngcontent-jb-c15>Career Advice</a>
+    </nav>
+    <div class="header-actions" _ngcontent-jb-c15>
+      <a href="/signin" class="btn-signin" _ngcontent-jb-c15>Sign in</a>
+      <a href="/post-job" class="btn-post" _ngcontent-jb-c15>Post a job</a>
+    </div>
+  </div>
+</header>
+
+<div class="search-hero" _ngcontent-jb-c15>
+  <div class="search-hero-inner" _ngcontent-jb-c15>
+    <h1 _ngcontent-jb-c15>Find your next opportunity</h1>
+    <div class="search-row" _ngcontent-jb-c15>
+      <!-- t_01: keyword search -->
+      <input
+        _ngcontent-jb-c15
+        id="job-search"
+        data-oracle-id="t_01"
+        name="keywords"
+        type="search"
+        aria-label="Search job titles or keywords"
+        placeholder="Job title, skills, or company…">
+      <!-- t_02: location search (placeholder sole signal) -->
+      <input
+        _ngcontent-jb-c15
+        data-oracle-id="t_02"
+        class="LocationInput__field___Jn8kP"
+        type="text"
+        placeholder="City or postcode">
+      <button class="btn-find" type="button" _ngcontent-jb-c15>Find jobs</button>
+    </div>
+  </div>
+</div>
+
+<div class="page-layout" _ngcontent-jb-c15>
+
+  <div class="main-col" _ngcontent-jb-c15>
+
+    <div class="results-header" _ngcontent-jb-c15>
+      <span class="results-count" _ngcontent-jb-c15>1,284 jobs found</span>
+      <!-- t_05: sort dropdown -->
+      <select
+        _ngcontent-jb-c15
+        data-oracle-id="t_05"
+        class="sort-sel"
+        aria-label="Sort listings by">
+        <option value="relevance">Most relevant</option>
+        <option value="date">Most recent</option>
+        <option value="salary-desc">Highest salary</option>
+        <option value="salary-asc">Lowest salary</option>
+      </select>
+    </div>
+
+    <div class="jobs-list" _ngcontent-jb-c15>
+
+      <!-- Job 1: Software Engineer at TechCorp — t_03 link, t_04 salary NONE, t_06 apply btn -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#128187;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <!-- t_03: first job card link -->
+            <a
+              _ngcontent-jb-c15
+              href="/jobs/software-engineer-techcorp-001"
+              data-testid="job-card-001"
+              data-oracle-id="t_03"
+              class="job-title">Software Engineer</a>
+            <div class="job-company" _ngcontent-jb-c15>TechCorp Ltd</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; London, UK (Hybrid)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Senior</span>
+          <!-- t_04: NONE salary badge -->
+          <span
+            _ngcontent-jb-c15
+            class="SalaryBadge__label___Kv2zR"
+            data-oracle-id="t_04">£65,000 – £90,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Python</span>
+          <span class="tag" _ngcontent-jb-c15>AWS</span>
+          <span class="tag" _ngcontent-jb-c15>Kubernetes</span>
+          <span class="tag" _ngcontent-jb-c15>PostgreSQL</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Design and build scalable backend services for our data platform. Work closely with product and ML teams to deliver high-quality features to millions of users.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 2 hours ago</span>
+          <!-- t_06: apply button (aria-label sole signal) -->
+          <button
+            _ngcontent-jb-c15
+            type="button"
+            class="ApplyBtn__cta___P9xLm"
+            data-oracle-id="t_06"
+            aria-label="Apply for Software Engineer position at TechCorp">Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#127758;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/product-manager-globalco-002" class="job-title" _ngcontent-jb-c15>Senior Product Manager</a>
+            <div class="job-company" _ngcontent-jb-c15>GlobalCo</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; Manchester, UK (Remote)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Senior</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£70,000 – £95,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Product Strategy</span>
+          <span class="tag" _ngcontent-jb-c15>Agile</span>
+          <span class="tag" _ngcontent-jb-c15>SaaS</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Drive product roadmap and strategy for our enterprise SaaS platform. Partner with engineering, design, and go-to-market teams to deliver exceptional user experiences.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 5 hours ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#128200;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/data-analyst-fintech-003" class="job-title" _ngcontent-jb-c15>Data Analyst</a>
+            <div class="job-company" _ngcontent-jb-c15>FinTech Ventures</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; Edinburgh, UK (On-site)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Mid-level</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£40,000 – £55,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>SQL</span>
+          <span class="tag" _ngcontent-jb-c15>Python</span>
+          <span class="tag" _ngcontent-jb-c15>Tableau</span>
+          <span class="tag" _ngcontent-jb-c15>Excel</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Analyse financial datasets, build dashboards, and support the business intelligence team with data-driven insights across our lending and payments products.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 1 day ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#127912;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/ux-designer-studio-004" class="job-title" _ngcontent-jb-c15>UX Designer</a>
+            <div class="job-company" _ngcontent-jb-c15>Studio Eleven</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; Bristol, UK (Hybrid)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Mid-level</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£38,000 – £52,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Figma</span>
+          <span class="tag" _ngcontent-jb-c15>User Research</span>
+          <span class="tag" _ngcontent-jb-c15>Prototyping</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Create intuitive digital experiences for a portfolio of consumer and B2B products. Collaborate with developers to ship pixel-perfect designs that delight users.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 2 days ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#9729;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/devops-engineer-cloudnine-005" class="job-title" _ngcontent-jb-c15>DevOps Engineer</a>
+            <div class="job-company" _ngcontent-jb-c15>CloudNine Systems</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; Remote (UK)</span>
+          <span _ngcontent-jb-c15>&#128188; Contract</span>
+          <span _ngcontent-jb-c15>&#127891; Senior</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£550 – £700/day</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Terraform</span>
+          <span class="tag" _ngcontent-jb-c15>Docker</span>
+          <span class="tag" _ngcontent-jb-c15>Azure</span>
+          <span class="tag" _ngcontent-jb-c15>CI/CD</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Build and maintain cloud infrastructure and deployment pipelines for a fast-growing SaaS business. 6-month rolling contract with strong potential for extension.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 3 days ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 6 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#128104;&#8205;&#9877;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/marketing-manager-brandco-006" class="job-title" _ngcontent-jb-c15>Marketing Manager</a>
+            <div class="job-company" _ngcontent-jb-c15>BrandCo</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; London, UK (On-site)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Senior</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£55,000 – £70,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>B2B Marketing</span>
+          <span class="tag" _ngcontent-jb-c15>HubSpot</span>
+          <span class="tag" _ngcontent-jb-c15>SEO</span>
+          <span class="tag" _ngcontent-jb-c15>Paid Media</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Lead marketing strategy across digital, content, and events for our B2B software brand. Manage a team of three specialists and a £2M annual budget.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 4 days ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 7 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#128091;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/sales-executive-saas-007" class="job-title" _ngcontent-jb-c15>Enterprise Sales Executive</a>
+            <div class="job-company" _ngcontent-jb-c15>SaaSify</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; London, UK (Hybrid)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Senior</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£60,000 + OTE £120,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Enterprise Sales</span>
+          <span class="tag" _ngcontent-jb-c15>SaaS</span>
+          <span class="tag" _ngcontent-jb-c15>Salesforce</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Own the full enterprise sales cycle from prospecting through to close. Target FTSE 500 accounts and deliver £2M+ ARR in your first year.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 5 days ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+      <!-- Job 8 -->
+      <div class="JobCard__listing___Ng3aB" _ngcontent-jb-c15>
+        <div class="job-header" _ngcontent-jb-c15>
+          <div class="job-logo" _ngcontent-jb-c15>&#128267;</div>
+          <div class="job-title-row" _ngcontent-jb-c15>
+            <a href="/jobs/backend-developer-medtech-008" class="job-title" _ngcontent-jb-c15>Backend Developer (Go)</a>
+            <div class="job-company" _ngcontent-jb-c15>MedTech Solutions</div>
+          </div>
+        </div>
+        <div class="job-meta" _ngcontent-jb-c15>
+          <span _ngcontent-jb-c15>&#128205; Cambridge, UK (Hybrid)</span>
+          <span _ngcontent-jb-c15>&#128188; Full-time</span>
+          <span _ngcontent-jb-c15>&#127891; Mid-level</span>
+          <span class="SalaryBadge__label___Kv2zR" _ngcontent-jb-c15>£55,000 – £72,000</span>
+        </div>
+        <div class="job-tags" _ngcontent-jb-c15>
+          <span class="tag" _ngcontent-jb-c15>Go</span>
+          <span class="tag" _ngcontent-jb-c15>gRPC</span>
+          <span class="tag" _ngcontent-jb-c15>MySQL</span>
+          <span class="tag" _ngcontent-jb-c15>GCP</span>
+        </div>
+        <div class="job-desc" _ngcontent-jb-c15>Build reliable, high-throughput APIs for a regulated medical device data platform. Strong Go skills and interest in healthcare technology required.</div>
+        <div class="job-footer" _ngcontent-jb-c15>
+          <span class="job-posted" _ngcontent-jb-c15>Posted 1 week ago</span>
+          <button type="button" class="ApplyBtn__cta___P9xLm" _ngcontent-jb-c15>Apply now</button>
+        </div>
+      </div>
+
+    </div><!-- /jobs-list -->
+
+    <div class="pagination" _ngcontent-jb-c15>
+      <a href="?page=1" class="page-btn active" _ngcontent-jb-c15>1</a>
+      <a href="?page=2" class="page-btn" _ngcontent-jb-c15>2</a>
+      <a href="?page=3" class="page-btn" _ngcontent-jb-c15>3</a>
+      <a href="?page=4" class="page-btn" _ngcontent-jb-c15>4</a>
+      <a href="?page=5" class="page-btn" _ngcontent-jb-c15>5</a>
+      <a href="?page=2" class="page-btn" style="width:auto;padding:0 12px" _ngcontent-jb-c15>Next &rarr;</a>
+    </div>
+
+  </div><!-- /main-col -->
+
+  <div class="sidebar-host" _ngcontent-jb-c15>
+    <filter-sidebar id="filter-sidebar-d3e4f5" _ngcontent-jb-c15></filter-sidebar>
+  </div>
+
+</div><!-- /page-layout -->
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 WorkHive Ltd. &bull;</span>
+    <a href="/about">About</a>
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/sitemap">Sitemap</a>
+  </div>
+</footer>
+
+<script>
+customElements.define('filter-sidebar', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}' +
+      '.sidebar{background:#fff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden}' +
+      '.sidebar-hdr{padding:14px 16px;background:#f9fafb;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between}' +
+      '.sidebar-title{font-size:14px;font-weight:700;color:#111827}' +
+      '.reset-link{font-size:12px;color:#7c3aed;cursor:pointer;background:none;border:none;padding:0}' +
+      '.filter-section{padding:14px 16px;border-bottom:1px solid #e5e7eb}' +
+      '.filter-label{font-size:12px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}' +
+      '.check-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:13px;color:#374151;cursor:pointer}' +
+      'input[type="checkbox"]{width:16px;height:16px;cursor:pointer;accent-color:#7c3aed}' +
+      'input[type="number"]{width:100%;height:36px;border:1px solid #e5e7eb;border-radius:4px;padding:0 10px;font-size:13px}' +
+      '.salary-row{display:flex;gap:8px;align-items:center;font-size:12px;color:#6b7280}' +
+      '.salary-row input{flex:1}' +
+      '.apply-btn{display:block;width:100%;padding:11px;background:#7c3aed;color:#fff;border:none;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer;margin-top:4px}' +
+      '.active-filters{padding:10px 16px;border-bottom:1px solid #e5e7eb;display:flex;flex-wrap:wrap;gap:6px}' +
+      '.FilterChip__tag___Qf4mW{background:#ede9fe;color:#4c1d95;border-radius:4px;padding:3px 8px;font-size:12px;display:flex;align-items:center;gap:4px}' +
+      '</style>' +
+      '<div class="sidebar">' +
+        '<div class="sidebar-hdr">' +
+          '<span class="sidebar-title">Filters</span>' +
+          '<button class="reset-link" type="button">Clear all</button>' +
+        '</div>' +
+        '<div class="active-filters">' +
+          '<div class="FilterChip__tag___Qf4mW" data-oracle-id="t_10">Remote &#10005;</div>' +
+          '<div class="FilterChip__tag___Qf4mW">Full-time &#10005;</div>' +
+        '</div>' +
+        '<div class="filter-section">' +
+          '<div class="filter-label">Job type</div>' +
+          '<label class="check-row">' +
+            '<input type="checkbox" checked' +
+            ' data-oracle-id="t_07"' +
+            ' aria-label="Show full-time jobs only"> Full-time' +
+          '</label>' +
+          '<label class="check-row"><input type="checkbox"> Part-time</label>' +
+          '<label class="check-row"><input type="checkbox"> Contract</label>' +
+          '<label class="check-row"><input type="checkbox"> Freelance</label>' +
+          '<label class="check-row"><input type="checkbox"> Internship</label>' +
+        '</div>' +
+        '<div class="filter-section">' +
+          '<div class="filter-label">Work model</div>' +
+          '<label class="check-row"><input type="checkbox" checked> Remote</label>' +
+          '<label class="check-row"><input type="checkbox"> Hybrid</label>' +
+          '<label class="check-row"><input type="checkbox"> On-site</label>' +
+        '</div>' +
+        '<div class="filter-section">' +
+          '<div class="filter-label">Minimum salary (£/year)</div>' +
+          '<div class="salary-row">' +
+            '<input type="number"' +
+            ' name="salary_min"' +
+            ' data-oracle-id="t_08"' +
+            ' aria-label="Minimum salary"' +
+            ' placeholder="e.g. 40000"' +
+            ' min="0" max="500000" step="5000">' +
+          '</div>' +
+        '</div>' +
+        '<div class="filter-section">' +
+          '<div class="filter-label">Experience level</div>' +
+          '<label class="check-row"><input type="checkbox"> Entry level</label>' +
+          '<label class="check-row"><input type="checkbox" checked> Mid-level</label>' +
+          '<label class="check-row"><input type="checkbox" checked> Senior</label>' +
+          '<label class="check-row"><input type="checkbox"> Director / VP</label>' +
+        '</div>' +
+        '<div class="filter-section">' +
+          '<div class="filter-label">Date posted</div>' +
+          '<label class="check-row"><input type="checkbox"> Last 24 hours</label>' +
+          '<label class="check-row"><input type="checkbox" checked> Last 7 days</label>' +
+          '<label class="check-row"><input type="checkbox"> Last 30 days</label>' +
+        '</div>' +
+        '<div style="padding:14px 16px">' +
+          '<button' +
+          ' class="apply-btn"' +
+          ' type="button"' +
+          ' data-testid="apply-filters-btn"' +
+          ' data-oracle-id="t_09"' +
+          ' aria-label="Apply selected filters">Apply filters</button>' +
+        '</div>' +
+      '</div>';
+  }
+});
+</script>
+
+</body>
+</html>

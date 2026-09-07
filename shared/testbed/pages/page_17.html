@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management — CorpAdmin</title>
+<!-- targets: see pages/page_17.truth.json -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;color:#111827;background:#f3f4f6}
+a{color:#2563eb;text-decoration:none}
+
+/* ── Framework fingerprint (volatile) — Angular _ngcontent/_nghost markers ── */
+[_ngcontent-adm-c17],[_nghost-adm-c17]{/* volatile Angular attribute markers */}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.AdminLayout_header__a1b2c3{background:#1e3a5f;height:56px;display:flex;align-items:center;padding:0 24px;gap:16px;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.AdminLayout_brand__d4e5f6{color:#fff;font-size:18px;font-weight:800;letter-spacing:-.5px;white-space:nowrap}
+.AdminLayout_brand__d4e5f6 span{color:#60a5fa}
+.AdminLayout_nav__g7h8i9{display:flex;gap:2px;margin-left:20px}
+.AdminLayout_nav__g7h8i9 a{color:rgba(255,255,255,.75);font-size:13px;padding:6px 12px;border-radius:4px;font-weight:500}
+.AdminLayout_nav__g7h8i9 a:hover,.AdminLayout_nav__g7h8i9 a.active{background:rgba(255,255,255,.15);color:#fff}
+.AdminLayout_headerRight__h0i1j2{margin-left:auto;display:flex;align-items:center;gap:12px}
+.AdminLayout_userLabel__k3l4m5{font-size:13px;color:rgba(255,255,255,.7)}
+.AdminLayout_avatar__m6n7o8{width:32px;height:32px;border-radius:50%;background:#60a5fa;color:#1e3a5f;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+
+/* ── Main ────────────────────────────────────────────────────────────────── */
+.AdminLayout_main__j0k1l2{padding:28px 32px;max-width:1440px;margin:0 auto}
+.AdminLayout_pageTitle__m6n7o8{font-size:22px;font-weight:700;color:#111827;margin-bottom:4px}
+.AdminLayout_subTitle__p9q0r1{font-size:13px;color:#6b7280;margin-bottom:20px}
+
+/* ── Toolbar ─────────────────────────────────────────────────────────────── */
+.AdminLayout_toolbar__m3n4o5{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.Toolbar_searchWrap__s2t3u4{flex:1;min-width:200px;max-width:340px;display:flex;align-items:center;border:1px solid #d1d5db;border-radius:6px;background:#fff;overflow:hidden}
+.Toolbar_searchIcon__v5w6x7{padding:8px 10px;color:#9ca3af;font-size:15px;line-height:1}
+.Toolbar_searchInput__y8z9a0{flex:1;border:none;outline:none;padding:8px 8px 8px 0;font-size:13px;color:#111827;background:transparent}
+.Toolbar_roleFilter__b1c2d3{height:36px;padding:0 8px;border:1px solid #d1d5db;border-radius:6px;background:#fff;font-size:13px;color:#374151;min-width:150px;cursor:pointer}
+.Toolbar_newUserBtn__e4f5g6{height:36px;padding:0 16px;background:#2563eb;color:#fff;border:none;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.Toolbar_newUserBtn__e4f5g6:hover{background:#1d4ed8}
+.Toolbar_exportBtn__h7i8j9{height:36px;padding:0 12px;background:#fff;border:1px solid #d1d5db;border-radius:6px;font-size:13px;color:#374151;cursor:pointer}
+.Toolbar_exportBtn__h7i8j9:hover{background:#f9fafb}
+.Toolbar_statsChip__i0j1k2{height:36px;padding:0 12px;background:#f0fdf4;border:1px solid #86efac;border-radius:6px;font-size:12px;font-weight:600;color:#166534;display:flex;align-items:center;gap:4px}
+
+/* ── Users table ─────────────────────────────────────────────────────────── */
+.UsersTable_wrapper__p6q7r8{background:#fff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin-bottom:20px}
+.UsersTable_root__s9t0u1{width:100%;border-collapse:collapse}
+.UsersTable_head__v2w3x4{background:#f9fafb}
+.UsersTable_head__v2w3x4 th{padding:10px 14px;text-align:left;font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #e5e7eb;white-space:nowrap}
+.UsersTable_row__j1k2l3{border-bottom:1px solid #f3f4f6;transition:background .1s}
+.UsersTable_row__j1k2l3:hover{background:#f9fafb}
+.UsersTable_row__j1k2l3:last-child{border-bottom:none}
+.UsersTable_cell__ck,.UsersTable_cell__ca,.UsersTable_cell__ci,
+.UsersTable_cell__cd,.UsersTable_cell__cr,.UsersTable_cell__cs,
+.UsersTable_cell__cl,.UsersTable_cell__cax{padding:11px 14px;vertical-align:middle}
+.UsersTable_cell__ck{width:36px}
+.UsersTable_cell__ca{width:44px}
+.UsersTable_cell__cax{white-space:nowrap}
+
+/* ── Row sub-elements ────────────────────────────────────────────────────── */
+.UserAvatar_root__v6w7x8{width:30px;height:30px;border-radius:50%;background:#dbeafe;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.UserAvatar_initials__y9z0a1{font-size:11px;font-weight:700;color:#1d4ed8;letter-spacing:.02em}
+.UserCell_stack__b2c3d4{display:flex;flex-direction:column;gap:1px}
+.UserCell_username__e5f6g7{font-size:13px;font-weight:600;color:#111827}
+.UserCell_email__h8i9j0{font-size:11px;color:#6b7280}
+.DeptBadge_root__k1l2m3{font-size:11px;color:#374151;background:#f3f4f6;border-radius:4px;padding:2px 7px;white-space:nowrap}
+.RoleBadge_root__n4o5p6{font-size:11px;font-weight:600;padding:2px 7px;border-radius:4px;background:#ede9fe;color:#6d28d9;white-space:nowrap}
+.StatusBadge_badge__m3n4o5{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:500;background:#d1fae5;color:#065f46}
+.StatusBadge_dot__p7q8r9{width:5px;height:5px;border-radius:50%;background:#10b981;flex-shrink:0}
+.StatusBadge_label__s0t1u2{}
+.LoginTime_root__f2g3h4{font-size:11px;color:#6b7280}
+.ActionMenu_root__i5j6k7{display:flex;gap:4px}
+.ActionMenu_editBtn__l8m9n0{padding:4px 10px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;font-size:11px;font-weight:600;color:#374151;cursor:pointer}
+.ActionMenu_editBtn__l8m9n0:hover{background:#e5e7eb}
+.ActionMenu_moreBtn__r4s5t6{width:26px;height:26px;border:1px solid #e5e7eb;border-radius:4px;background:#f9fafb;cursor:pointer;font-size:14px;color:#6b7280;padding:0;line-height:1}
+.ActionMenu_moreBtn__r4s5t6:hover{background:#e5e7eb}
+
+/* ── Shadow host placeholder ─────────────────────────────────────────────── */
+admin-console-shell{display:block}
+
+/* ── Footer ──────────────────────────────────────────────────────────────── */
+.AdminLayout_footer__z5a6b7{max-width:1440px;margin:0 auto;padding:20px 32px;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.AdminLayout_footer__z5a6b7 a{color:#9ca3af}
+.AdminLayout_footer__z5a6b7 a:hover{color:#6b7280}
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
+<header _nghost-adm-c17="" class="AdminLayout_header__a1b2c3">
+  <a _ngcontent-adm-c17="" href="/" class="AdminLayout_brand__d4e5f6">Corp<span _ngcontent-adm-c17="">Admin</span></a>
+  <nav _ngcontent-adm-c17="" class="AdminLayout_nav__g7h8i9" aria-label="Primary navigation">
+    <a _ngcontent-adm-c17="" href="/dashboard">Dashboard</a>
+    <a _ngcontent-adm-c17="" href="/users" class="active" aria-current="page">Users</a>
+    <a _ngcontent-adm-c17="" href="/roles">Roles</a>
+    <a _ngcontent-adm-c17="" href="/audit">Audit Log</a>
+    <a _ngcontent-adm-c17="" href="/settings">Settings</a>
+  </nav>
+  <div _ngcontent-adm-c17="" class="AdminLayout_headerRight__h0i1j2">
+    <span _ngcontent-adm-c17="" class="AdminLayout_userLabel__k3l4m5">Jane Doe</span>
+    <div _ngcontent-adm-c17="" class="AdminLayout_avatar__m6n7o8">JD</div>
+  </div>
+</header>
+
+<!-- ── Main ───────────────────────────────────────────────────────────────── -->
+<main _nghost-adm-c17="" class="AdminLayout_main__j0k1l2">
+
+  <h1 _ngcontent-adm-c17="" class="AdminLayout_pageTitle__m6n7o8">User Management</h1>
+  <p _ngcontent-adm-c17="" class="AdminLayout_subTitle__p9q0r1">
+    Manage user accounts, roles, and access permissions across your organisation.
+    200 users &middot; 5 roles &middot; 8 departments.
+  </p>
+
+  <!-- ── Toolbar ─────────────────────────────────────────────────────────── -->
+  <div _ngcontent-adm-c17="" class="AdminLayout_toolbar__m3n4o5"
+       role="toolbar" aria-label="User management actions">
+    <div _ngcontent-adm-c17="" class="Toolbar_searchWrap__s2t3u4">
+      <span _ngcontent-adm-c17="" class="Toolbar_searchIcon__v5w6x7" aria-hidden="true">&#128269;</span>
+      <input _ngcontent-adm-c17=""
+             type="search"
+             class="Toolbar_searchInput__y8z9a0"
+             placeholder="Search users…"
+             aria-label="Search users by name or email">
+    </div>
+    <!-- ★ t_02 — select option — filter users by role -->
+    <select _ngcontent-adm-c17=""
+            id="role-filter-select"
+            class="Toolbar_roleFilter__b1c2d3"
+            aria-label="Filter by role"
+            data-oracle-id="t_02">
+      <option value="">All roles</option>
+      <option value="admin">Admin</option>
+      <option value="editor">Editor</option>
+      <option value="viewer">Viewer</option>
+      <option value="auditor">Auditor</option>
+      <option value="manager">Manager</option>
+    </select>
+    <!-- ★ t_01 — click — open create new user form -->
+    <button _ngcontent-adm-c17=""
+            type="button"
+            class="Toolbar_newUserBtn__e4f5g6"
+            data-testid="new-user-btn"
+            aria-label="Create new user"
+            data-oracle-id="t_01">+ New User</button>
+    <button _ngcontent-adm-c17=""
+            type="button"
+            class="Toolbar_exportBtn__h7i8j9"
+            aria-label="Export user list as CSV">&#11015; Export CSV</button>
+    <div _ngcontent-adm-c17="" class="Toolbar_statsChip__i0j1k2">
+      <span _ngcontent-adm-c17="">&#10003;</span>
+      <span _ngcontent-adm-c17="">160 active</span>
+    </div>
+  </div>
+
+  <!-- ── Users table ─────────────────────────────────────────────────────── -->
+  <div _ngcontent-adm-c17="" class="UsersTable_wrapper__p6q7r8">
+    <table _ngcontent-adm-c17="" class="UsersTable_root__s9t0u1">
+      <thead _ngcontent-adm-c17="" class="UsersTable_head__v2w3x4">
+        <tr _ngcontent-adm-c17="">
+          <th _ngcontent-adm-c17="" scope="col">
+            <input _ngcontent-adm-c17="" type="checkbox" aria-label="Select all users">
+          </th>
+          <th _ngcontent-adm-c17="" scope="col"></th>
+          <th _ngcontent-adm-c17="" scope="col">User</th>
+          <th _ngcontent-adm-c17="" scope="col">Department</th>
+          <th _ngcontent-adm-c17="" scope="col">Role</th>
+          <th _ngcontent-adm-c17="" scope="col">Status</th>
+          <th _ngcontent-adm-c17="" scope="col">Last login</th>
+          <th _ngcontent-adm-c17="" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody _ngcontent-adm-c17="" id="users-tbody">
+        <!-- 200 rows injected by generator script below -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Admin console shell: level-1 shadow host ────────────────────────── -->
+  <!-- Contains: pagination (t_06 NONE), selected-user controls (t_04, t_05),
+       and user-detail-panel (level-2 shadow host) for t_07/t_08/t_09/t_10  -->
+  <admin-console-shell _ngcontent-adm-c17="" id="admin-console-shell-x1y2z3"></admin-console-shell>
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer _nghost-adm-c17="" class="AdminLayout_footer__z5a6b7">
+  <div _ngcontent-adm-c17="">
+    <span _ngcontent-adm-c17="">&copy; 2026 CorpAdmin Ltd.</span>
+    &nbsp;&middot;&nbsp;
+    <a _ngcontent-adm-c17="" href="/terms">Terms</a>
+    &nbsp;&middot;&nbsp;
+    <a _ngcontent-adm-c17="" href="/privacy">Privacy</a>
+    &nbsp;&middot;&nbsp;
+    <a _ngcontent-adm-c17="" href="/support">Support</a>
+    &nbsp;&middot;&nbsp;
+    <a _ngcontent-adm-c17="" href="/accessibility">Accessibility</a>
+  </div>
+  <span _ngcontent-adm-c17="">CorpAdmin v4.2.1</span>
+</footer>
+
+<!-- ── Custom element definitions ────────────────────────────────────────── -->
+<script>
+// Inner element defined FIRST (per §13: inner before outer ensures connectedCallback
+// fires in the correct order when admin-console-shell injects <user-detail-panel>
+// via innerHTML).
+
+customElements.define('user-detail-panel', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}' +
+      '.EditPanel_root__a2b3c4{padding:20px 24px}' +
+      '.EditPanel_title__d5e6f7{font-size:15px;font-weight:700;color:#111827;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid #f3f4f6}' +
+      '.EditPanel_grid__e8f9g0{display:grid;grid-template-columns:1fr 1fr;gap:14px}' +
+      '.EditPanel_field__g8h9i0{display:flex;flex-direction:column;gap:5px}' +
+      '.EditPanel_field__g8h9i0.full{grid-column:1/-1}' +
+      '.EditPanel_label__j1k2l3{font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.06em}' +
+      '.EditPanel_input__m4n5o6{height:38px;border:1px solid #d1d5db;border-radius:6px;padding:0 10px;font-size:13px;color:#111827;background:#fff;outline:none;width:100%}' +
+      '.EditPanel_input__m4n5o6:focus{border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.15)}' +
+      '.EditPanel_select__p7q8r9{height:38px;border:1px solid #d1d5db;border-radius:6px;padding:0 8px;font-size:13px;color:#111827;background:#fff;outline:none;width:100%;cursor:pointer}' +
+      '.EditPanel_select__p7q8r9:focus{border-color:#2563eb}' +
+      '.EditPanel_footer__s0t1u2{display:flex;justify-content:flex-end;gap:8px;margin-top:20px;padding-top:14px;border-top:1px solid #f3f4f6}' +
+      '.EditPanel_cancelBtn__u3v4w5{padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:6px;font-size:13px;color:#374151;cursor:pointer}' +
+      '.EditPanel_cancelBtn__u3v4w5:hover{background:#f9fafb}' +
+      '.EditPanel_saveBtn__x6y7z8{padding:8px 18px;background:#2563eb;border:none;border-radius:6px;font-size:13px;font-weight:600;color:#fff;cursor:pointer}' +
+      '.EditPanel_saveBtn__x6y7z8:hover{background:#1d4ed8}' +
+      '</style>' +
+      '<div class="EditPanel_root__a2b3c4">' +
+        '<h3 class="EditPanel_title__d5e6f7">Edit User: alice.johnson</h3>' +
+        '<div class="EditPanel_grid__e8f9g0">' +
+          // ★ t_07 — input text — username (stable: id="edit-username" + name="username")
+          '<div class="EditPanel_field__g8h9i0">' +
+            '<label class="EditPanel_label__j1k2l3" for="edit-username">Username</label>' +
+            '<input class="EditPanel_input__m4n5o6"' +
+                   ' id="edit-username"' +
+                   ' name="username"' +
+                   ' type="text"' +
+                   ' value="alice.johnson"' +
+                   ' autocomplete="off"' +
+                   ' data-oracle-id="t_07">' +
+          '</div>' +
+          // ★ t_09 — input text — email (stable: placeholder + type="email"; NO aria-label, NO id, NO name)
+          '<div class="EditPanel_field__g8h9i0">' +
+            '<label class="EditPanel_label__j1k2l3">Email address</label>' +
+            '<input class="EditPanel_input__m4n5o6"' +
+                   ' type="email"' +
+                   ' placeholder="user@domain.com"' +
+                   ' value="alice.johnson@corp.example"' +
+                   ' data-oracle-id="t_09">' +
+          '</div>' +
+          '<div class="EditPanel_field__g8h9i0">' +
+            '<label class="EditPanel_label__j1k2l3" for="edit-dept">Department</label>' +
+            '<input class="EditPanel_input__m4n5o6"' +
+                   ' id="edit-dept"' +
+                   ' type="text"' +
+                   ' aria-label="Department"' +
+                   ' value="Engineering">' +
+          '</div>' +
+          // ★ t_08 — select option — role assignment (stable: aria-label="Assign role to user" + name="user_role")
+          '<div class="EditPanel_field__g8h9i0">' +
+            '<label class="EditPanel_label__j1k2l3" for="edit-role">Role</label>' +
+            '<select class="EditPanel_select__p7q8r9"' +
+                    ' id="edit-role"' +
+                    ' aria-label="Assign role to user"' +
+                    ' name="user_role"' +
+                    ' data-oracle-id="t_08">' +
+              '<option value="viewer">Viewer</option>' +
+              '<option value="editor">Editor</option>' +
+              '<option value="manager">Manager</option>' +
+              '<option value="auditor">Auditor</option>' +
+              '<option value="admin" selected>Admin</option>' +
+            '</select>' +
+          '</div>' +
+        '</div>' +
+        '<div class="EditPanel_footer__s0t1u2">' +
+          '<button class="EditPanel_cancelBtn__u3v4w5" type="button">Cancel</button>' +
+          // ★ t_10 — submit — save user changes (stable: aria-label + data-testid)
+          '<button class="EditPanel_saveBtn__x6y7z8"' +
+                  ' type="button"' +
+                  ' aria-label="Save user changes"' +
+                  ' data-testid="save-changes-btn"' +
+                  ' data-oracle-id="t_10">Save changes</button>' +
+        '</div>' +
+      '</div>';
+  }
+});
+
+// Outer element defined AFTER inner (level-1 shadow root).
+// Its connectedCallback injects <user-detail-panel> via innerHTML;
+// user-detail-panel is already registered above so its connectedCallback fires immediately.
+customElements.define('admin-console-shell', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}' +
+      '.PaginationBar_root__o0p1q2{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:11px 20px;margin-bottom:16px}' +
+      '.PaginationBar_info__q2r3s4{font-size:12px;color:#6b7280}' +
+      '.PaginationBar_controls__t5u6v7{display:flex;gap:6px;align-items:center}' +
+      '.PaginationBar_prevBtn__r3s4t5{padding:5px 10px;background:#fff;border:1px solid #d1d5db;border-radius:5px;font-size:12px;color:#374151;cursor:pointer}' +
+      '.PaginationBar_prevBtn__r3s4t5:hover{background:#f9fafb}' +
+      '.PaginationBar_label__u6v7w8{padding:5px 10px;font-size:12px;color:#374151;font-weight:600}' +
+      '.PaginationBar_nextBtn__x9y0z1{padding:5px 10px;background:#fff;border:1px solid #d1d5db;border-radius:5px;font-size:12px;color:#374151;cursor:pointer}' +
+      '.PaginationBar_nextBtn__x9y0z1:hover{background:#f9fafb}' +
+      '.PaginationBar_nextBtn__x9y0z1::after{content:"›"}' +
+      '.PaginationBar_prevBtn__r3s4t5::after{content:"‹"}' +
+      '.ConsolePanel_root__c8d9e0{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:14px}' +
+      '.ConsolePanel_badge__f1g2h3{background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;color:#1d4ed8;white-space:nowrap}' +
+      '.ConsolePanel_userInfo__j1k2l3{flex:1}' +
+      '.ConsolePanel_userName__l4m5n6{font-size:14px;font-weight:700;color:#111827}' +
+      '.ConsolePanel_userEmail__o7p8q9{font-size:12px;color:#6b7280;margin-top:1px}' +
+      '.ConsolePanel_toggleWrap__i4j5k6{display:flex;align-items:center;gap:8px}' +
+      '.ConsolePanel_toggleLabel__p0q1r2{font-size:12px;color:#374151;font-weight:500}' +
+      '.ConsolePanel_toggleTrack__r0s1t2{width:38px;height:20px;background:#10b981;border-radius:10px;position:relative;cursor:pointer;flex-shrink:0}' +
+      '.ConsolePanel_toggleThumb__u3v4w5{position:absolute;top:2px;left:20px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}' +
+      '.ConsolePanel_toggleInput__w6x7y8{position:absolute;opacity:0;width:100%;height:100%;cursor:pointer;margin:0;top:0;left:0}' +
+      '.ConsolePanel_editBtn__l7m8n9{padding:8px 16px;background:#2563eb;color:#fff;border:none;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}' +
+      '.ConsolePanel_editBtn__l7m8n9:hover{background:#1d4ed8}' +
+      '.ConsolePanel_detailWrap__z8a9b0{background:#fff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden}' +
+      '.ConsolePanel_detailHead__b1c2d3{background:#f8fafc;border-bottom:1px solid #e5e7eb;padding:12px 20px;font-size:13px;font-weight:600;color:#374151}' +
+      '</style>' +
+
+      // Pagination bar — t_06 NONE: Next button has class only; no text (CSS ::after), no aria-label
+      '<div class="PaginationBar_root__o0p1q2">' +
+        '<span class="PaginationBar_info__q2r3s4">Showing 1–200 of 200 users</span>' +
+        '<div class="PaginationBar_controls__t5u6v7">' +
+          '<button class="PaginationBar_prevBtn__r3s4t5" type="button" aria-label="Previous page"></button>' +
+          '<span class="PaginationBar_label__u6v7w8">Page 1 of 1</span>' +
+          // ★ t_06 NONE — button class only; text rendered via CSS ::after (not in DOM textContent)
+          '<button class="PaginationBar_nextBtn__x9y0z1" type="button" data-oracle-id="t_06"></button>' +
+        '</div>' +
+      '</div>' +
+
+      // Selected-user control panel
+      '<div class="ConsolePanel_root__c8d9e0">' +
+        '<div class="ConsolePanel_badge__f1g2h3">Selected user</div>' +
+        '<div class="ConsolePanel_userInfo__j1k2l3">' +
+          '<div class="ConsolePanel_userName__l4m5n6">alice.johnson</div>' +
+          '<div class="ConsolePanel_userEmail__o7p8q9">alice.johnson@corp.example</div>' +
+        '</div>' +
+        // ★ t_04 — toggle — active/inactive (stable: aria-label only, no data-testid)
+        '<div class="ConsolePanel_toggleWrap__i4j5k6">' +
+          '<span class="ConsolePanel_toggleLabel__p0q1r2">Active</span>' +
+          '<label class="ConsolePanel_toggleTrack__r0s1t2">' +
+            '<input class="ConsolePanel_toggleInput__w6x7y8"' +
+                   ' type="checkbox"' +
+                   ' checked' +
+                   ' aria-label="Toggle active status for alice.johnson"' +
+                   ' data-oracle-id="t_04">' +
+            '<div class="ConsolePanel_toggleThumb__u3v4w5"></div>' +
+          '</label>' +
+        '</div>' +
+        // ★ t_05 — click — open edit drawer (stable: aria-label only, no data-testid)
+        '<button class="ConsolePanel_editBtn__l7m8n9"' +
+                ' type="button"' +
+                ' aria-label="Edit user alice.johnson"' +
+                ' data-oracle-id="t_05">Edit user</button>' +
+      '</div>' +
+
+      // Level-2 shadow host: edit drawer
+      '<div class="ConsolePanel_detailWrap__z8a9b0">' +
+        '<div class="ConsolePanel_detailHead__b1c2d3">User detail &amp; permissions</div>' +
+        '<user-detail-panel></user-detail-panel>' +
+      '</div>';
+  }
+});
+</script>
+
+<!-- ── Bulk row generator (200 rows × ~27 elements ≈ 5400 elements) ──────── -->
+<script>
+(function () {
+  var NAMES = [
+    'alice.johnson',    'bob.smith',        'carol.white',    'dan.brown',
+    'eve.taylor',       'frank.davis',      'grace.wilson',   'harry.moore',
+    'iris.jackson',     'jack.thomas',      'karen.harris',   'liam.martin',
+    'mia.garcia',       'noah.martinez',    'olivia.robinson','peter.clark',
+    'quinn.rodriguez',  'rachel.lewis',     'sam.lee',        'tara.walker'
+  ];
+  var DEPTS  = ['Engineering','Product','Marketing','Finance','Legal','HR','Sales','Operations'];
+  var ROLES  = ['Admin','Editor','Viewer','Auditor','Manager'];
+  var LOGINS = ['2 hours ago','Yesterday','3 days ago','1 week ago','2 weeks ago','3 weeks ago'];
+
+  var NONE_ROW = 6; // row 6 carries t_03 NONE status badge
+
+  function row(idx) {
+    var name    = NAMES[idx % NAMES.length];
+    var parts   = name.split('.');
+    var initials = parts[0][0].toUpperCase() + parts[1][0].toUpperCase();
+    var dept    = DEPTS[idx % DEPTS.length];
+    var role    = ROLES[idx % ROLES.length];
+    var login   = LOGINS[idx % LOGINS.length];
+    var isActive = (idx % 5) !== 3; // 80% Active → "Active" text dominates (non-unique)
+    var statusText = isActive ? 'Active' : 'Suspended';
+    var isNoneRow  = (idx === NONE_ROW);
+
+    return (
+      '<tr _ngcontent-adm-c17="" class="UsersTable_row__j1k2l3">' +
+
+        // Checkbox cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__ck">' +
+          '<label _ngcontent-adm-c17="">' +
+            '<input _ngcontent-adm-c17="" type="checkbox" aria-label="Select ' + name + '">' +
+          '</label>' +
+        '</td>' +
+
+        // Avatar cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__ca">' +
+          '<div _ngcontent-adm-c17="" class="UserAvatar_root__v6w7x8">' +
+            '<span _ngcontent-adm-c17="" class="UserAvatar_initials__y9z0a1">' + initials + '</span>' +
+          '</div>' +
+        '</td>' +
+
+        // Identity cell (name + email)
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__ci">' +
+          '<div _ngcontent-adm-c17="" class="UserCell_stack__b2c3d4">' +
+            '<span _ngcontent-adm-c17="" class="UserCell_username__e5f6g7">' + name + '</span>' +
+            '<span _ngcontent-adm-c17="" class="UserCell_email__h8i9j0">' + name + '@corp.example</span>' +
+          '</div>' +
+        '</td>' +
+
+        // Department cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__cd">' +
+          '<span _ngcontent-adm-c17="" class="DeptBadge_root__k1l2m3">' + dept + '</span>' +
+        '</td>' +
+
+        // Role cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__cr">' +
+          '<span _ngcontent-adm-c17="" class="RoleBadge_root__n4o5p6">' + role + '</span>' +
+        '</td>' +
+
+        // Status cell — t_03 NONE oracle placed on row 6 badge (duplicate "Active" text, class only)
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__cs">' +
+          '<span _ngcontent-adm-c17="" class="StatusBadge_badge__m3n4o5"' +
+            (isNoneRow ? ' data-oracle-id="t_03"' : '') + '>' +
+            '<span _ngcontent-adm-c17="" class="StatusBadge_dot__p7q8r9"></span>' +
+            '<span _ngcontent-adm-c17="" class="StatusBadge_label__s0t1u2">' + statusText + '</span>' +
+          '</span>' +
+        '</td>' +
+
+        // Last login cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__cl">' +
+          '<time _ngcontent-adm-c17="" class="LoginTime_root__f2g3h4">' + login + '</time>' +
+        '</td>' +
+
+        // Actions cell
+        '<td _ngcontent-adm-c17="" class="UsersTable_cell__cax">' +
+          '<div _ngcontent-adm-c17="" class="ActionMenu_root__i5j6k7">' +
+            '<button _ngcontent-adm-c17="" class="ActionMenu_editBtn__l8m9n0" type="button">Edit</button>' +
+            '<button _ngcontent-adm-c17="" class="ActionMenu_moreBtn__r4s5t6" type="button">&#8943;</button>' +
+          '</div>' +
+        '</td>' +
+
+      '</tr>'
+    );
+  }
+
+  var html = '';
+  for (var i = 0; i < 200; i++) html += row(i);
+  document.getElementById('users-tbody').innerHTML = html;
+}());
+</script>
+
+</body>
+</html>

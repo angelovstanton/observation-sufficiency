@@ -1,0 +1,104 @@
+{
+  "page_id": "page_19",
+  "group": "G5",
+  "shadow": "S2",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": ["quote-wizard-e5f6g7"],
+    "volatile_classes": ["data-v-2b3c4d"]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the button that begins the insurance quote process",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='start-quote-btn' and aria-label='Start your insurance quote'; Vue data-v-2b3c4d scope attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the link that saves the current quote progress so you can continue later",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with href='/quote/save' and aria-label='Save your quote progress and continue later'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the step indicator button for Step 1 in the quote wizard",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "element inside quote-wizard shadow root (level-1) with data-testid='step-1-indicator' and aria-label='Step 1: Personal Information'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the quote wizard that advances to Step 2",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside quote-wizard shadow root (level-1) with data-testid='next-step-btn' and aria-label='Continue to step 2: Property Details'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the first name input field in Step 1 of the quote wizard",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "input inside form-section shadow root (level-2, step=1) with id='quote-first-name', name='first_name', and aria-label='First name'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the date of birth input in Step 1 of the quote wizard",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input[type=date] inside form-section shadow root (level-2, step=1) with id='quote-dob' and aria-label='Your date of birth'"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown for selecting the property type in Step 2 of the quote wizard",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "select inside form-section shadow root (level-2, step=2) with id='property-type', name='property_type', and aria-label='Property type'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the input where you enter the desired coverage amount in pounds",
+      "signal_attrs": ["aria-label", "id"],
+      "expected_stable_signal": "input inside form-section shadow root (level-2, step=3) with aria-label='Desired coverage amount in GBP'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the progress bar element that indicates how far through the quote wizard you are",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside quote-wizard shadow root (level-1) with class progress-fill and role=progressbar only; no stable id, no aria-label text, no data-testid; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the submit button in Step 3 that requests the final insurance quote",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside form-section shadow root (level-2, step=3) with data-testid='submit-quote-btn' and aria-label='Submit your quote request'"
+    }
+  ]
+}

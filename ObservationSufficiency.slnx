@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/experiments/">
+    <Project Path="experiments/Experiments.csproj" />
+  </Folder>
+  <Folder Name="/shared/" />
+  <Folder Name="/shared/harness/">
+    <Project Path="shared/harness/Shared.Harness.csproj" />
+  </Folder>
+  <Folder Name="/shared/oracle/">
+    <Project Path="shared/oracle/Shared.Oracle.csproj" />
+  </Folder>
+  <Folder Name="/shared/oracle.tests/">
+    <Project Path="shared/oracle.tests/Oracle.Tests.csproj" />
+  </Folder>
+  <Folder Name="/shared/testbed/">
+    <Project Path="shared/testbed/Shared.Testbed.csproj" />
+  </Folder>
+  <Folder Name="/shared/tokenizer/">
+    <Project Path="shared/tokenizer/Shared.Tokenizer.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Flights – SkyRoute Airlines</title>
+  <style>
+    :root{--sky:#0057b8;--sky-dark:#003d82;--accent:#ff6b00;--text:#1a1a2e;--border:#cdd0d5;--bg:#f8f9fc}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;color:var(--text);font-size:16px}
+    header{background:var(--sky);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}
+    header .logo{color:#fff;font-size:22px;font-weight:700;text-decoration:none}
+    header nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+    .hero{background:linear-gradient(135deg,var(--sky-dark),var(--sky));padding:40px 20px;color:#fff;text-align:center}
+    .hero h1{font-size:32px;font-weight:700;margin-bottom:8px}
+    .hero p{font-size:16px;opacity:.85}
+    .search-card{background:#fff;border-radius:8px;padding:28px 32px;max-width:860px;margin:-28px auto 0;box-shadow:0 4px 20px rgba(0,0,0,.12);position:relative}
+    .trip-tabs{display:flex;gap:8px;margin-bottom:20px}
+    .trip-tab{padding:8px 18px;border:2px solid var(--border);border-radius:4px;background:#fff;cursor:pointer;font-size:14px;font-weight:600}
+    .trip-tab.active{border-color:var(--sky);color:var(--sky);background:#eef3fb}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+    .form-group{margin-bottom:0}
+    label.lbl{display:block;font-size:13px;font-weight:700;color:#555;margin-bottom:4px}
+    input.inp,select.sel{width:100%;height:44px;border:2px solid var(--border);border-radius:4px;padding:0 12px;font-size:15px;color:var(--text);background:#fff}
+    input.inp:focus,select.sel:focus{border-color:var(--sky);outline:none}
+    .passenger-row{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+    .passenger-group{display:flex;flex-direction:column}
+    .search-row{display:flex;gap:16px;align-items:flex-end;margin-top:4px}
+    .btn-search{background:var(--accent);color:#fff;border:none;padding:12px 32px;border-radius:4px;font-size:17px;font-weight:700;cursor:pointer;flex-shrink:0}
+    .btn-filter{background:#fff;border:2px solid var(--border);padding:10px 16px;border-radius:4px;font-size:14px;cursor:pointer;display:flex;align-items:center;gap:6px}
+    .results-bar{max-width:860px;margin:24px auto 8px;display:flex;align-items:center;justify-content:space-between;padding:0 4px}
+    .results-count{font-size:14px;color:#555}
+    .sort-bar{display:flex;gap:8px;align-items:center}
+    .sort-label{font-size:14px;color:#555}
+    .sort-btn{padding:7px 14px;border:2px solid var(--border);border-radius:4px;background:#fff;font-size:13px;cursor:pointer}
+    .sort-btn.active{border-color:var(--sky);color:var(--sky)}
+    .flights{max-width:860px;margin:0 auto;padding:0 4px 32px}
+    .flight-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:12px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+    .flight-info{display:flex;gap:32px;align-items:center}
+    .route{font-size:22px;font-weight:700;color:var(--sky)}
+    .time{font-size:14px;color:#555}
+    .airline{font-size:13px;color:#777;margin-top:4px}
+    .duration{font-size:14px;text-align:center}
+    .stops{font-size:12px;color:#888}
+    .price-col{text-align:right}
+    .price{font-size:24px;font-weight:700;color:var(--sky-dark)}
+    .per-person{font-size:12px;color:#777}
+    .btn-select{background:var(--sky);color:#fff;border:none;padding:10px 22px;border-radius:4px;font-size:15px;font-weight:700;cursor:pointer;margin-top:8px;display:block;width:100%}
+    .flight-tags{display:flex;gap:6px;margin-top:8px}
+    .tag{background:#eef3fb;color:var(--sky);font-size:11px;padding:3px 8px;border-radius:10px}
+    .tag-green{background:#e6f4ea;color:#1a7a3a}
+    footer{background:#1a1a2e;color:#aaa;padding:24px 20px;margin-top:40px}
+    .footer-inner{max-width:860px;margin:0 auto;display:flex;gap:40px;flex-wrap:wrap}
+    .footer-col h4{color:#fff;font-size:13px;margin-bottom:10px}
+    .footer-col ul{list-style:none}
+    .footer-col li{margin-bottom:6px}
+    .footer-col a{color:#aaa;font-size:13px;text-decoration:none}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_04.truth.json -->
+
+<header data-v-5e6f7a="">
+  <a data-v-5e6f7a="" href="/" class="logo">&#9992; SkyRoute</a>
+  <nav data-v-5e6f7a="" aria-label="Main navigation">
+    <a data-v-5e6f7a="" href="/flights">Flights</a>
+    <a data-v-5e6f7a="" href="/hotels">Hotels</a>
+    <a data-v-5e6f7a="" href="/cars">Car hire</a>
+    <a data-v-5e6f7a="" href="/holidays">Holidays</a>
+    <a data-v-5e6f7a="" href="/manage">Manage booking</a>
+    <a data-v-5e6f7a="" href="/sign-in">Sign in</a>
+  </nav>
+</header>
+
+<div data-v-5e6f7a="" class="hero">
+  <h1 data-v-5e6f7a="">Search Flights</h1>
+  <p data-v-5e6f7a="">Compare hundreds of airlines and find the best fares for your journey</p>
+</div>
+
+<div data-v-5e6f7a="" class="search-card">
+
+  <div data-v-5e6f7a="" class="trip-tabs">
+    <button data-v-5e6f7a="" class="trip-tab active" type="button">Return</button>
+    <button data-v-5e6f7a="" class="trip-tab" type="button">One-way</button>
+    <button data-v-5e6f7a="" class="trip-tab" type="button">Multi-city</button>
+  </div>
+
+  <div data-v-5e6f7a="" class="form-row">
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="origin-airport">From</label>
+      <!-- t_01: input[origin-input] - signals: id, aria-label, data-testid -->
+      <input data-v-5e6f7a=""
+             id="origin-airport"
+             data-oracle-id="t_01"
+             data-testid="origin-input"
+             aria-label="Departure city or airport"
+             class="inp"
+             type="text"
+             name="origin"
+             placeholder="City or airport"
+             autocomplete="off">
+    </div>
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="destination-airport">To</label>
+      <!-- t_02: input#destination-airport - signals: id, aria-label -->
+      <input data-v-5e6f7a=""
+             id="destination-airport"
+             data-oracle-id="t_02"
+             aria-label="Destination city or airport"
+             class="inp"
+             type="text"
+             name="destination"
+             placeholder="City or airport"
+             autocomplete="off">
+    </div>
+  </div>
+
+  <div data-v-5e6f7a="" class="form-row">
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="departure-date">Departure</label>
+      <!-- t_03: input[departure-date] - signals: id, aria-label, data-testid -->
+      <input data-v-5e6f7a=""
+             id="departure-date"
+             data-oracle-id="t_03"
+             data-testid="departure-date"
+             aria-label="Departure date"
+             class="inp"
+             type="date"
+             name="departure_date">
+    </div>
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="return-date">Return</label>
+      <!-- t_04: input#return-date - signals: id, aria-label -->
+      <input data-v-5e6f7a=""
+             id="return-date"
+             data-oracle-id="t_04"
+             aria-label="Return date"
+             class="inp"
+             type="date"
+             name="return_date">
+    </div>
+  </div>
+
+  <div data-v-5e6f7a="" class="form-row">
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="adult-passengers">Adults</label>
+      <!-- t_05: select#adult-passengers - signals: id, name, aria-label -->
+      <select data-v-5e6f7a=""
+              id="adult-passengers"
+              data-oracle-id="t_05"
+              name="adults"
+              aria-label="Number of adult passengers"
+              class="sel">
+        <option data-v-5e6f7a="" value="1">1 adult</option>
+        <option data-v-5e6f7a="" value="2" selected>2 adults</option>
+        <option data-v-5e6f7a="" value="3">3 adults</option>
+        <option data-v-5e6f7a="" value="4">4 adults</option>
+        <option data-v-5e6f7a="" value="5">5 adults</option>
+        <option data-v-5e6f7a="" value="6">6 adults</option>
+      </select>
+    </div>
+    <div data-v-5e6f7a="" class="form-group">
+      <label data-v-5e6f7a="" class="lbl" for="cabin-class">Cabin class</label>
+      <!-- t_06: select#cabin-class - signals: id, name, aria-label -->
+      <select data-v-5e6f7a=""
+              id="cabin-class"
+              data-oracle-id="t_06"
+              name="cabin_class"
+              aria-label="Select cabin class"
+              class="sel">
+        <option data-v-5e6f7a="" value="economy" selected>Economy</option>
+        <option data-v-5e6f7a="" value="premium">Premium Economy</option>
+        <option data-v-5e6f7a="" value="business">Business</option>
+        <option data-v-5e6f7a="" value="first">First Class</option>
+      </select>
+    </div>
+  </div>
+
+  <div data-v-5e6f7a="" class="search-row">
+    <!-- t_07: button[search-flights-btn] - signals: data-testid, aria-label -->
+    <button data-v-5e6f7a=""
+            type="button"
+            data-testid="search-flights-btn"
+            data-oracle-id="t_07"
+            aria-label="Search available flights"
+            class="btn-search">Search flights</button>
+    <div data-v-5e6f7a="" class="btn-filter" aria-label="Filter options">
+      <span data-v-5e6f7a="">&#9881;</span> Filters
+    </div>
+  </div>
+
+</div>
+
+<div data-v-5e6f7a="" class="results-bar">
+  <span data-v-5e6f7a="" class="results-count">Showing 47 flights &mdash; London (LHR) &rarr; Paris (CDG), 15 Mar</span>
+  <div data-v-5e6f7a="" class="sort-bar">
+    <span data-v-5e6f7a="" class="sort-label">Sort by:</span>
+    <!-- t_08: button[type="button"] - NONE, no stable signal -->
+    <button data-v-5e6f7a=""
+            id="sort-btn-p3q4r5"
+            data-oracle-id="t_08"
+            class="sort-btn active"
+            type="button">Best</button>
+    <button data-v-5e6f7a="" class="sort-btn" type="button">Cheapest</button>
+    <button data-v-5e6f7a="" class="sort-btn" type="button">Fastest</button>
+  </div>
+</div>
+
+<div data-v-5e6f7a="" id="results-wrap-m7n8o9" class="flights">
+
+  <!-- Filter toggle -->
+  <div data-v-5e6f7a="" style="margin-bottom:12px;display:flex;gap:10px;align-items:center">
+    <span data-v-5e6f7a="" style="font-size:14px;color:#555">Filters:</span>
+    <label data-v-5e6f7a="" style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
+      <!-- t_09: input[nonstop-filter] - signals: data-testid, aria-label -->
+      <input data-v-5e6f7a=""
+             type="checkbox"
+             data-testid="nonstop-filter"
+             data-oracle-id="t_09"
+             aria-label="Non-stop flights only">
+      Non-stop only
+    </label>
+    <label data-v-5e6f7a="" style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
+      <input data-v-5e6f7a="" type="checkbox">
+      Morning departure
+    </label>
+    <label data-v-5e6f7a="" style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
+      <input data-v-5e6f7a="" type="checkbox">
+      Hand luggage only
+    </label>
+  </div>
+
+  <!-- Flight card 1 — target t_10 (ambiguous: multiple Select buttons exist) -->
+  <div data-v-5e6f7a="" class="flight-card">
+    <div data-v-5e6f7a="" class="flight-info">
+      <div data-v-5e6f7a="">
+        <div data-v-5e6f7a="" class="route">LHR &rarr; CDG</div>
+        <div data-v-5e6f7a="" class="time">07:30 &mdash; 09:35</div>
+        <div data-v-5e6f7a="" class="airline">SkyRoute direct &bull; SR 204</div>
+      </div>
+      <div data-v-5e6f7a="" class="duration">
+        <div data-v-5e6f7a="" style="font-weight:700">2h 05m</div>
+        <div data-v-5e6f7a="" class="stops">Non-stop</div>
+      </div>
+      <div data-v-5e6f7a="" class="flight-tags">
+        <span data-v-5e6f7a="" class="tag tag-green">Cheapest</span>
+        <span data-v-5e6f7a="" class="tag">Fastest</span>
+      </div>
+    </div>
+    <div data-v-5e6f7a="" class="price-col">
+      <div data-v-5e6f7a="" class="price">&pound;89</div>
+      <div data-v-5e6f7a="" class="per-person">per person</div>
+      <!-- t_10: button[aria-label="Select flight LHR&#x2192;CD..."] - signals: aria-label; ambiguous -->
+      <button data-v-5e6f7a=""
+              type="button"
+              data-oracle-id="t_10"
+              aria-label="Select flight LHR&#x2192;CDG 07:30&#x2013;09:35, 2h 05m, &#xA3;89"
+              class="btn-select">Select</button>
+    </div>
+  </div>
+
+  <!-- Flight card 2 -->
+  <div data-v-5e6f7a="" class="flight-card">
+    <div data-v-5e6f7a="" class="flight-info">
+      <div data-v-5e6f7a="">
+        <div data-v-5e6f7a="" class="route">LHR &rarr; CDG</div>
+        <div data-v-5e6f7a="" class="time">10:15 &mdash; 12:20</div>
+        <div data-v-5e6f7a="" class="airline">EuroAir &bull; EA 712</div>
+      </div>
+      <div data-v-5e6f7a="" class="duration">
+        <div data-v-5e6f7a="" style="font-weight:700">2h 05m</div>
+        <div data-v-5e6f7a="" class="stops">Non-stop</div>
+      </div>
+      <div data-v-5e6f7a="" class="flight-tags">
+        <span data-v-5e6f7a="" class="tag">Standard</span>
+      </div>
+    </div>
+    <div data-v-5e6f7a="" class="price-col">
+      <div data-v-5e6f7a="" class="price">&pound;112</div>
+      <div data-v-5e6f7a="" class="per-person">per person</div>
+      <button data-v-5e6f7a="" type="button" class="btn-select">Select</button>
+    </div>
+  </div>
+
+  <!-- Flight card 3 -->
+  <div data-v-5e6f7a="" class="flight-card">
+    <div data-v-5e6f7a="" class="flight-info">
+      <div data-v-5e6f7a="">
+        <div data-v-5e6f7a="" class="route">LHR &rarr; CDG</div>
+        <div data-v-5e6f7a="" class="time">14:45 &mdash; 16:55</div>
+        <div data-v-5e6f7a="" class="airline">AirConnect &bull; AC 889</div>
+      </div>
+      <div data-v-5e6f7a="" class="duration">
+        <div data-v-5e6f7a="" style="font-weight:700">2h 10m</div>
+        <div data-v-5e6f7a="" class="stops">Non-stop</div>
+      </div>
+    </div>
+    <div data-v-5e6f7a="" class="price-col">
+      <div data-v-5e6f7a="" class="price">&pound;97</div>
+      <div data-v-5e6f7a="" class="per-person">per person</div>
+      <button data-v-5e6f7a="" type="button" class="btn-select">Select</button>
+    </div>
+  </div>
+
+  <!-- Flight card 4 -->
+  <div data-v-5e6f7a="" class="flight-card">
+    <div data-v-5e6f7a="" class="flight-info">
+      <div data-v-5e6f7a="">
+        <div data-v-5e6f7a="" class="route">LHR &rarr; CDG</div>
+        <div data-v-5e6f7a="" class="time">18:00 &mdash; 20:10</div>
+        <div data-v-5e6f7a="" class="airline">SkyRoute &bull; SR 210</div>
+      </div>
+      <div data-v-5e6f7a="" class="duration">
+        <div data-v-5e6f7a="" style="font-weight:700">2h 10m</div>
+        <div data-v-5e6f7a="" class="stops">Non-stop</div>
+      </div>
+    </div>
+    <div data-v-5e6f7a="" class="price-col">
+      <div data-v-5e6f7a="" class="price">&pound;103</div>
+      <div data-v-5e6f7a="" class="per-person">per person</div>
+      <button data-v-5e6f7a="" type="button" class="btn-select">Select</button>
+    </div>
+  </div>
+
+</div>
+
+<footer data-v-5e6f7a="">
+  <div data-v-5e6f7a="" class="footer-inner">
+    <div data-v-5e6f7a="" class="footer-col">
+      <h4 data-v-5e6f7a="">Explore</h4>
+      <ul data-v-5e6f7a="">
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/destinations">Destinations</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/deals">Flight deals</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/travel-guide">Travel guides</a></li>
+      </ul>
+    </div>
+    <div data-v-5e6f7a="" class="footer-col">
+      <h4 data-v-5e6f7a="">Help</h4>
+      <ul data-v-5e6f7a="">
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/faq">FAQ</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/contact">Contact us</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/accessibility">Accessibility</a></li>
+      </ul>
+    </div>
+    <div data-v-5e6f7a="" class="footer-col">
+      <h4 data-v-5e6f7a="">Legal</h4>
+      <ul data-v-5e6f7a="">
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/privacy">Privacy policy</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/cookies">Cookie policy</a></li>
+        <li data-v-5e6f7a=""><a data-v-5e6f7a="" href="/terms">Terms of use</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

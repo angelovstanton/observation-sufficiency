@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarah Chen — Contact Record | Nexus CRM</title>
+  <!-- targets: see pages/page_09.truth.json -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #f0f2f5; color: #222; font-size: 14px; }
+    .app-nav { display: flex; align-items: center; gap: 20px; padding: 0 24px; height: 56px; background: #1e2d4a; }
+    .nav-brand { color: #fff; font-weight: 700; font-size: 18px; text-decoration: none; }
+    .nav-link { color: #8a9fc0; text-decoration: none; font-size: 14px; }
+    .nav-link:hover { color: #fff; }
+    .app-body { display: flex; min-height: calc(100vh - 56px); }
+    .sidebar-nav { width: 220px; background: #fff; border-right: 1px solid #e0e4ec; padding: 16px 0; flex-shrink: 0; }
+    .sidebar-nav a { display: block; padding: 9px 20px; color: #444; text-decoration: none; font-size: 14px; }
+    .sidebar-nav a:hover { background: #f0f2f5; color: #1e2d4a; }
+    .sidebar-nav a.active { background: #e8edf5; color: #1e2d4a; font-weight: 600; border-right: 3px solid #3b6fd4; }
+    .main-content { flex: 1; padding: 24px; min-width: 0; }
+    .page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .page-header h1 { font-size: 22px; margin: 0; color: #1e2d4a; }
+    .card { background: #fff; border-radius: 8px; border: 1px solid #e0e4ec; padding: 20px; margin-bottom: 16px; }
+    .card-title { font-size: 14px; font-weight: 700; color: #1e2d4a; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 14px; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+    .field-group { display: flex; flex-direction: column; gap: 4px; }
+    .field-label { font-size: 12px; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; }
+    .field-input { padding: 8px 10px; border: 1px solid #cdd2da; border-radius: 5px; font-size: 14px; }
+    .field-input:focus { outline: 2px solid #3b6fd4; border-color: #3b6fd4; }
+    .FieldGroup--k2l3m4 { border-left: 3px solid #e0e4ec; padding-left: 12px; margin-bottom: 10px; }
+    .ContactCard--b3c4d5 { background: #f8f9fc; border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+    .contact-avatar { width: 40px; height: 40px; border-radius: 50%; background: #3b6fd4; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+    .btn-primary { padding: 8px 18px; background: #3b6fd4; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: 600; }
+    .btn-secondary { padding: 8px 18px; background: #fff; color: #3b6fd4; border: 1px solid #3b6fd4; border-radius: 5px; cursor: pointer; font-size: 14px; }
+    .btn-sm { padding: 5px 12px; font-size: 13px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+    .tag-green { background: #d4edda; color: #155724; }
+    .tag-blue { background: #cfe2ff; color: #0a367a; }
+    .tag-orange { background: #fff3cd; color: #856404; }
+    .activity-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
+    .search-input { padding: 7px 10px; border: 1px solid #cdd2da; border-radius: 5px; font-size: 14px; flex: 1; }
+    .activity-table { width: 100%; border-collapse: collapse; }
+    .activity-table th { padding: 8px 12px; background: #f0f2f5; text-align: left; font-size: 12px; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 1px solid #e0e4ec; }
+    .ActivityRow--e6f7g8 { border-bottom: 1px solid #f0f2f5; }
+    .ActivityRow--e6f7g8:hover { background: #f8f9fc; }
+    .activity-table td { padding: 9px 12px; font-size: 13px; }
+    .EmailRow--n5o6p7 { border-bottom: 1px solid #f0f2f5; padding: 10px 0; display: flex; align-items: flex-start; gap: 10px; }
+    .email-subject { font-weight: 600; font-size: 14px; color: #222; }
+    .email-preview { font-size: 13px; color: #666; margin-top: 2px; }
+    .TaskItem--h9i0j1 { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #f0f2f5; }
+    .task-text { font-size: 14px; flex: 1; }
+    .task-due { font-size: 12px; color: #888; }
+    calendar-widget { display: block; }
+    .right-panel { width: 300px; flex-shrink: 0; padding: 0 0 0 16px; }
+    .layout-2col { display: flex; gap: 16px; }
+    .layout-2col .main { flex: 1; min-width: 0; }
+    footer { background: #1e2d4a; color: #6a7f9a; text-align: center; padding: 14px; font-size: 12px; margin-top: 24px; }
+    footer a { color: #8a9fc0; margin: 0 8px; }
+  </style>
+</head>
+<body _nghost-crm-c9>
+
+  <nav class="app-nav" _nghost-crm-c9>
+    <a href="/" class="nav-brand" _ngcontent-crm-c9>Nexus CRM</a>
+    <a href="/contacts" class="nav-link" _ngcontent-crm-c9>Contacts</a>
+    <a href="/deals" class="nav-link" _ngcontent-crm-c9>Deals</a>
+    <a href="/tasks" class="nav-link" _ngcontent-crm-c9>Tasks</a>
+    <a href="/reports" class="nav-link" _ngcontent-crm-c9>Reports</a>
+    <a href="/settings" class="nav-link" _ngcontent-crm-c9>Settings</a>
+    <span style="margin-left:auto;color:#8a9fc0;font-size:13px;" _ngcontent-crm-c9>Alex Jordan</span>
+  </nav>
+
+  <div class="app-body" _ngcontent-crm-c9>
+    <aside class="sidebar-nav" _ngcontent-crm-c9>
+      <a href="/contacts" class="active" _ngcontent-crm-c9>All Contacts</a>
+      <a href="/contacts/recent" _ngcontent-crm-c9>Recently Viewed</a>
+      <a href="/contacts/mine" _ngcontent-crm-c9>My Contacts</a>
+      <a href="/contacts/import" _ngcontent-crm-c9>Import</a>
+      <div _ngcontent-crm-c9 style="padding:14px 20px 6px;font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:0.5px;">Lists</div>
+      <a href="/contacts/lists/prospects" _ngcontent-crm-c9>Prospects</a>
+      <a href="/contacts/lists/customers" _ngcontent-crm-c9>Customers</a>
+      <a href="/contacts/lists/inactive" _ngcontent-crm-c9>Inactive</a>
+      <a href="/contacts/lists/partners" _ngcontent-crm-c9>Partners</a>
+    </aside>
+
+    <main class="main-content" _ngcontent-crm-c9>
+
+      <!-- Page header -->
+      <div class="page-header" _ngcontent-crm-c9>
+        <div _ngcontent-crm-c9>
+          <div _ngcontent-crm-c9 style="font-size:12px;color:#888;margin-bottom:4px;">
+            <a href="/contacts" _ngcontent-crm-c9 style="color:#3b6fd4;">Contacts</a> › Sarah Chen
+          </div>
+          <h1 _ngcontent-crm-c9>Sarah Chen</h1>
+        </div>
+        <div style="display:flex;gap:8px;" _ngcontent-crm-c9>
+          <!-- t_03: button[save-contact] - signals: data-testid, aria-label -->
+          <button data-testid="save-contact" aria-label="Save contact record"
+                  class="btn-primary" type="button"
+                  _ngcontent-crm-c9 data-oracle-id="t_03">Save</button>
+          <button type="button" class="btn-secondary" _ngcontent-crm-c9>Archive</button>
+          <button type="button" class="btn-secondary" _ngcontent-crm-c9>Delete</button>
+        </div>
+      </div>
+
+      <div class="layout-2col" _ngcontent-crm-c9>
+        <div class="main" _ngcontent-crm-c9>
+
+          <!-- Contact info -->
+          <div class="card" _ngcontent-crm-c9>
+            <div class="card-title" _ngcontent-crm-c9>Contact Information</div>
+            <div class="field-row" _ngcontent-crm-c9>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" for="contact-first-name" _ngcontent-crm-c9>First Name</label>
+                <!-- t_01: input#contact-first-name - signals: id, aria-label -->
+                <input id="contact-first-name" type="text" value="Sarah"
+                       aria-label="Contact first name"
+                       class="field-input" _ngcontent-crm-c9 data-oracle-id="t_01" />
+              </div>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Last Name</label>
+                <input type="text" value="Chen" class="field-input" _ngcontent-crm-c9 />
+              </div>
+            </div>
+            <div class="field-row" _ngcontent-crm-c9>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Email</label>
+                <input type="email" value="sarah.chen@luminartech.com" class="field-input" _ngcontent-crm-c9 />
+              </div>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Phone</label>
+                <input type="tel" value="+44 7700 900 123" class="field-input" _ngcontent-crm-c9 />
+              </div>
+            </div>
+            <div class="field-row" _ngcontent-crm-c9>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Job Title</label>
+                <input type="text" value="VP of Product" class="field-input" _ngcontent-crm-c9 />
+              </div>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Company</label>
+                <input type="text" value="Luminar Technologies" class="field-input" _ngcontent-crm-c9 />
+              </div>
+            </div>
+            <div class="field-row" _ngcontent-crm-c9>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" for="lead-status" _ngcontent-crm-c9>Lead Status</label>
+                <!-- t_02: select#lead-status - signals: name, aria-label -->
+                <select id="lead-status" name="lead_status" aria-label="Lead status"
+                        class="field-input" _ngcontent-crm-c9 data-oracle-id="t_02">
+                  <option _ngcontent-crm-c9>Qualified Lead</option>
+                  <option _ngcontent-crm-c9>Prospect</option>
+                  <option _ngcontent-crm-c9>Customer</option>
+                  <option _ngcontent-crm-c9>Churned</option>
+                  <option _ngcontent-crm-c9>Cold</option>
+                </select>
+              </div>
+              <div class="field-group" _ngcontent-crm-c9>
+                <label class="field-label" _ngcontent-crm-c9>Source</label>
+                <select class="field-input" _ngcontent-crm-c9>
+                  <option _ngcontent-crm-c9>Website</option>
+                  <option _ngcontent-crm-c9>Referral</option>
+                  <option _ngcontent-crm-c9>Event</option>
+                  <option _ngcontent-crm-c9>Cold outreach</option>
+                </select>
+              </div>
+            </div>
+            <div _ngcontent-crm-c9 style="margin-top:6px;">
+              <span class="tag tag-blue" _ngcontent-crm-c9>Enterprise</span>
+              <span class="tag tag-green" _ngcontent-crm-c9 style="margin-left:6px;">Active</span>
+              <span class="tag tag-orange" _ngcontent-crm-c9 style="margin-left:6px;">Follow up</span>
+            </div>
+          </div>
+
+          <!-- Email threads -->
+          <div class="card" _ngcontent-crm-c9>
+            <div _ngcontent-crm-c9 style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+              <div class="card-title" _ngcontent-crm-c9 style="margin:0;">Email Threads</div>
+              <button type="button" class="btn-primary btn-sm" _ngcontent-crm-c9>Compose</button>
+            </div>
+            <div class="EmailRow--n5o6p7" _ngcontent-crm-c9>
+              <div class="contact-avatar" _ngcontent-crm-c9 style="width:32px;height:32px;font-size:13px;">SC</div>
+              <div _ngcontent-crm-c9 style="flex:1;">
+                <!-- t_06: a[aria-label="Open primary email thread"] - signals: aria-label -->
+                <a aria-label="Open primary email thread" href="/emails/thread-sc-001"
+                   _ngcontent-crm-c9 data-oracle-id="t_06" class="email-subject">
+                  Re: Renewal proposal — Q3 2026
+                </a>
+                <div class="email-preview" _ngcontent-crm-c9>Thanks for sending over the revised proposal. I've flagged it with our procurement team and...</div>
+                <div _ngcontent-crm-c9 style="font-size:11px;color:#aaa;margin-top:2px;">2 hours ago</div>
+              </div>
+            </div>
+            <div class="EmailRow--n5o6p7" _ngcontent-crm-c9>
+              <div class="contact-avatar" _ngcontent-crm-c9 style="width:32px;height:32px;font-size:13px;">AJ</div>
+              <div _ngcontent-crm-c9 style="flex:1;">
+                <a href="/emails/thread-sc-002" _ngcontent-crm-c9 class="email-subject">
+                  Intro call follow-up — action items
+                </a>
+                <div class="email-preview" _ngcontent-crm-c9>Great speaking with you yesterday. As discussed, here are the three action items we agreed...</div>
+                <div _ngcontent-crm-c9 style="font-size:11px;color:#aaa;margin-top:2px;">Yesterday at 14:32</div>
+              </div>
+            </div>
+            <div class="EmailRow--n5o6p7" _ngcontent-crm-c9>
+              <div class="contact-avatar" _ngcontent-crm-c9 style="width:32px;height:32px;font-size:13px;">SC</div>
+              <div _ngcontent-crm-c9 style="flex:1;">
+                <a href="/emails/thread-sc-003" _ngcontent-crm-c9 class="email-subject">
+                  Security questionnaire — responses attached
+                </a>
+                <div class="email-preview" _ngcontent-crm-c9>Please find our completed security questionnaire attached. Let me know if you need anything...</div>
+                <div _ngcontent-crm-c9 style="font-size:11px;color:#aaa;margin-top:2px;">15 Jun 2026</div>
+              </div>
+            </div>
+            <div class="EmailRow--n5o6p7" _ngcontent-crm-c9>
+              <div class="contact-avatar" _ngcontent-crm-c9 style="width:32px;height:32px;font-size:13px;">AJ</div>
+              <div _ngcontent-crm-c9 style="flex:1;">
+                <a href="/emails/thread-sc-004" _ngcontent-crm-c9 class="email-subject">
+                  Proposal — Enterprise plan customisation
+                </a>
+                <div class="email-preview" _ngcontent-crm-c9>Hi Sarah, as promised here is the tailored Enterprise proposal based on your team size and...</div>
+                <div _ngcontent-crm-c9 style="font-size:11px;color:#aaa;margin-top:2px;">12 Jun 2026</div>
+              </div>
+            </div>
+            <div class="EmailRow--n5o6p7" _ngcontent-crm-c9>
+              <div class="contact-avatar" _ngcontent-crm-c9 style="width:32px;height:32px;font-size:13px;">SC</div>
+              <div _ngcontent-crm-c9 style="flex:1;">
+                <a href="/emails/thread-sc-005" _ngcontent-crm-c9 class="email-subject">
+                  Inbound inquiry — pricing for 150 seats
+                </a>
+                <div class="email-preview" _ngcontent-crm-c9>Hello, we're evaluating CRM platforms for a team of approximately 150 users and I came...</div>
+                <div _ngcontent-crm-c9 style="font-size:11px;color:#aaa;margin-top:2px;">8 Jun 2026</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasks -->
+          <div class="card" _ngcontent-crm-c9>
+            <div _ngcontent-crm-c9 style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+              <div class="card-title" _ngcontent-crm-c9 style="margin:0;">Tasks</div>
+              <!-- t_07: button[add-task] - signals: data-testid -->
+              <button data-testid="add-task" type="button"
+                      class="btn-primary btn-sm" _ngcontent-crm-c9 data-oracle-id="t_07">+ Add task</button>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Send revised contract to legal team</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 20 Jun</span>
+              <span class="tag tag-orange btn-sm" _ngcontent-crm-c9>High</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Schedule technical discovery call</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 21 Jun</span>
+              <span class="tag tag-blue btn-sm" _ngcontent-crm-c9>Medium</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Follow up on security questionnaire responses</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 22 Jun</span>
+              <span class="tag tag-blue btn-sm" _ngcontent-crm-c9>Medium</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 checked />
+              <span class="task-text" _ngcontent-crm-c9 style="text-decoration:line-through;color:#aaa;">Send initial proposal</span>
+              <span class="task-due" _ngcontent-crm-c9>Completed</span>
+              <span class="tag tag-green btn-sm" _ngcontent-crm-c9>Done</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Confirm data residency requirements</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 25 Jun</span>
+              <span class="tag tag-orange btn-sm" _ngcontent-crm-c9>High</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Prepare demo environment with sample data</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 24 Jun</span>
+              <span class="tag tag-blue btn-sm" _ngcontent-crm-c9>Medium</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Get procurement contact details from Sarah</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 19 Jun</span>
+              <span class="tag tag-orange btn-sm" _ngcontent-crm-c9>High</span>
+            </div>
+            <div class="TaskItem--h9i0j1" _ngcontent-crm-c9>
+              <input type="checkbox" _ngcontent-crm-c9 />
+              <span class="task-text" _ngcontent-crm-c9>Share SSO integration documentation</span>
+              <span class="task-due" _ngcontent-crm-c9>Due: 23 Jun</span>
+              <span class="tag tag-blue btn-sm" _ngcontent-crm-c9>Medium</span>
+            </div>
+          </div>
+
+          <!-- Activity timeline -->
+          <div class="card" _ngcontent-crm-c9>
+            <div class="card-title" _ngcontent-crm-c9>Activity Timeline</div>
+            <div class="activity-toolbar" _ngcontent-crm-c9>
+              <!-- t_05: input[type="search"] - signals: placeholder -->
+              <input type="search" placeholder="Search activity timeline"
+                     class="search-input" _ngcontent-crm-c9 data-oracle-id="t_05" />
+              <select class="field-input" _ngcontent-crm-c9 style="width:auto;">
+                <option _ngcontent-crm-c9>All types</option>
+                <option _ngcontent-crm-c9>Emails</option>
+                <option _ngcontent-crm-c9>Calls</option>
+                <option _ngcontent-crm-c9>Notes</option>
+                <option _ngcontent-crm-c9>Meetings</option>
+              </select>
+            </div>
+            <table class="activity-table" _ngcontent-crm-c9>
+              <thead _ngcontent-crm-c9>
+                <tr _ngcontent-crm-c9>
+                  <th _ngcontent-crm-c9>Date</th>
+                  <th _ngcontent-crm-c9>Activity</th>
+                  <th _ngcontent-crm-c9>User</th>
+                  <th _ngcontent-crm-c9>Type</th>
+                  <th _ngcontent-crm-c9>Reference</th>
+                  <th _ngcontent-crm-c9>Status</th>
+                  <th _ngcontent-crm-c9>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="activity-tbody" _ngcontent-crm-c9>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- /.main -->
+
+        <!-- Right panel -->
+        <div class="right-panel" _ngcontent-crm-c9>
+
+          <!-- Custom fields -->
+          <div class="card" _ngcontent-crm-c9>
+            <div _ngcontent-crm-c9 style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+              <div class="card-title" _ngcontent-crm-c9 style="margin:0;">Custom Fields</div>
+            </div>
+            <!-- t_08: input[aria-label="Search custom fields"] - signals: aria-label -->
+            <input type="search" aria-label="Search custom fields"
+                   placeholder="Search fields..." class="search-input"
+                   _ngcontent-crm-c9 data-oracle-id="t_08"
+                   style="width:100%;margin-bottom:12px;" />
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Deal Size (£)</div>
+              <input type="number" value="180000" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Contract Start</div>
+              <input type="date" value="2026-09-01" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>NPS Score</div>
+              <input type="number" value="8" min="0" max="10" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Preferred Contact</div>
+              <select class="field-input" _ngcontent-crm-c9 style="width:100%;">
+                <option _ngcontent-crm-c9>Email</option>
+                <option _ngcontent-crm-c9>Phone</option>
+                <option _ngcontent-crm-c9>Slack</option>
+              </select>
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Seats Requested</div>
+              <input type="number" value="150" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Region</div>
+              <input type="text" value="EMEA" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Tier</div>
+              <select class="field-input" _ngcontent-crm-c9 style="width:100%;">
+                <option _ngcontent-crm-c9>Enterprise</option>
+                <option _ngcontent-crm-c9>Professional</option>
+                <option _ngcontent-crm-c9>Starter</option>
+              </select>
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Renewal Date</div>
+              <input type="date" value="2027-03-31" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Referral Source</div>
+              <input type="text" value="G2 Review" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+            <div class="FieldGroup--k2l3m4" _ngcontent-crm-c9>
+              <div class="field-label" _ngcontent-crm-c9>Use Case</div>
+              <input type="text" value="Sales ops + CX" class="field-input" _ngcontent-crm-c9 style="width:100%;" />
+            </div>
+          </div>
+
+          <!-- Calendar widget (shadow host) -->
+          <calendar-widget id="calendar-widget-q8r9s0" _ngcontent-crm-c9></calendar-widget>
+
+        </div><!-- /.right-panel -->
+      </div><!-- /.layout-2col -->
+
+    </main>
+  </div><!-- /.app-body -->
+
+  <footer _ngcontent-crm-c9>
+    <span _ngcontent-crm-c9>© 2026 Nexus CRM Ltd.</span>
+    <a href="/privacy" _ngcontent-crm-c9>Privacy</a>
+    <a href="/terms" _ngcontent-crm-c9>Terms</a>
+    <a href="/status" _ngcontent-crm-c9>Status</a>
+  </footer>
+
+  <script>
+    // Define calendar-widget shadow component (S1 — single open shadow root)
+    class CalendarWidget extends HTMLElement {
+      connectedCallback() {
+        if (this.shadowRoot) return;
+        var shadow = this.attachShadow({ mode: 'open' });
+        shadow.innerHTML = [
+          '<style>',
+          ':host{display:block;background:#fff;border:1px solid #e0e4ec;border-radius:8px;padding:16px;margin-bottom:16px;}',
+          'h3{font-size:14px;font-weight:700;color:#1e2d4a;text-transform:uppercase;letter-spacing:0.5px;margin:0 0 12px;}',
+          '.slot-list{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;}',
+          '.CalSlot--z8a9b0{padding:8px 12px;border:1px solid #e0e4ec;border-radius:5px;font-size:13px;cursor:pointer;color:#333;}',
+          '.CalSlot--z8a9b0:hover{background:#f0f2f5;border-color:#3b6fd4;}',
+          '.book-btn{width:100%;padding:9px;background:#3b6fd4;color:#fff;border:none;border-radius:5px;font-size:14px;font-weight:600;cursor:pointer;}',
+          '.book-btn:hover{background:#2d5ab8;}',
+          '</style>',
+          '<h3>Book Appointment</h3>',
+          '<p style="font-size:12px;color:#888;margin:0 0 10px;">Next available slots — Sarah Chen</p>',
+          '<div class="slot-list">',
+          '<div class="CalSlot--z8a9b0" data-oracle-id="t_10">Tue 18 Jun — 09:00</div>',
+          '<div class="CalSlot--z8a9b0">Tue 18 Jun — 11:00</div>',
+          '<div class="CalSlot--z8a9b0">Wed 19 Jun — 14:00</div>',
+          '<div class="CalSlot--z8a9b0">Thu 20 Jun — 10:30</div>',
+          '</div>',
+          '<button data-testid="book-appointment-btn"',
+          '        aria-label="Book appointment slot"',
+          '        data-oracle-id="t_09"',
+          '        class="book-btn">Book selected slot</button>'
+        ].join('');
+      }
+    }
+    customElements.define('calendar-widget', CalendarWidget);
+
+    // Generate activity timeline rows
+    var A = '_ngcontent-crm-c9';
+    var activities = [
+      'Sent follow-up email', 'Logged phone call', 'Added note', 'Updated lead status',
+      'Created task', 'Sent proposal', 'Scheduled meeting', 'Completed task',
+      'Changed owner', 'Added tag', 'Viewed contact', 'Sent contract',
+      'Left voicemail', 'Opened email', 'Clicked link in email', 'Replied to email'
+    ];
+    var users = ['Alex Jordan','Maria Kovacs','Sam Lee','Chris Park','Priya Nair'];
+    var types = ['Email','Call','Note','System','Task','Meeting'];
+    var statuses = ['Completed','Logged','Auto','Pending','Completed','Completed'];
+    var tbody = document.getElementById('activity-tbody');
+    for (var i = 1; i <= 300; i++) {
+      var tr = document.createElement('tr');
+      tr.className = 'ActivityRow--e6f7g8';
+      tr.setAttribute(A, '');
+      if (i === 5) { tr.setAttribute('data-oracle-id', 't_04'); }
+      var day = ((i - 1) % 28) + 1;
+      var monthNames = ['Jan','Feb','Mar','Apr','May','Jun'];
+      var month = monthNames[Math.floor((i - 1) / 50) % 6];
+      var hour = String(8 + (i % 10)).padStart(2,'0');
+      var cells = [
+        month + ' ' + (day < 10 ? '0' : '') + day + ' ' + hour + ':00',
+        activities[(i - 1) % activities.length] + ' — activity ref ' + i,
+        users[(i - 1) % users.length],
+        types[(i - 1) % types.length],
+        'ACT-' + String(i).padStart(5, '0'),
+        statuses[(i - 1) % statuses.length],
+        'View'
+      ];
+      for (var j = 0; j < cells.length; j++) {
+        var td = document.createElement('td');
+        td.setAttribute(A, '');
+        if (j === 6) {
+          var a = document.createElement('a');
+          a.href = '/activity/' + i;
+          a.setAttribute(A, '');
+          a.style.color = '#3b6fd4';
+          a.textContent = 'View';
+          td.appendChild(a);
+        } else {
+          td.textContent = cells[j];
+        }
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  </script>
+
+</body>
+</html>

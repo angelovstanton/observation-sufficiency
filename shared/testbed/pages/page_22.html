@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipment Tracking — TrackFlow</title>
+  <style>
+    :root{--brand:#1565c0;--brand-dark:#0d47a1;--text:#1a1a2e;--border:#e0e0e0;--bg:#f5f7fa}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;display:flex;flex-direction:column}
+    .TfHeader_root__n1o2p3{background:var(--brand-dark);height:54px;display:flex;align-items:center;padding:0 24px;justify-content:space-between}
+    .TfHeader_logo__q4r5s6{color:#fff;font-size:18px;font-weight:800;text-decoration:none}
+    .TfHeader_nav__t7u8v9{display:flex;gap:20px}
+    .TfHeader_navLink__w0x1y2{color:rgba(255,255,255,.8);font-size:13px;text-decoration:none}
+    .TfSearch_root__c2d3e4{background:#fff;border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;gap:12px}
+    .TfSearch_label__f5g6h7{font-size:13px;font-weight:700;color:#555;white-space:nowrap}
+    .TfSearch_inp__i8j9k0{flex:1;max-width:340px;height:40px;border:2px solid var(--border);border-radius:6px;padding:0 12px;font-size:14px}
+    .TfSearch_inp__i8j9k0:focus{border-color:var(--brand);outline:none}
+    .TfSearch_btn__l1m2n3{background:var(--brand);color:#fff;border:none;height:40px;padding:0 18px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer}
+    .TfSearch_sep__o4p5q6{width:1px;height:28px;background:var(--border);margin:0 4px}
+    .TfSearch_dateWrap__r7s8t9{display:flex;gap:8px;align-items:center}
+    .TfSearch_dateInp__u0v1w2{height:38px;border:1px solid var(--border);border-radius:6px;padding:0 10px;font-size:13px}
+    .TfAction_root__x3y4z5{background:#fff;border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;gap:12px}
+    .TfAction_refreshBtn__a1b2c3{background:#fff;border:1px solid var(--border);border-radius:6px;height:34px;padding:0 14px;font-size:13px;cursor:pointer}
+    .TfAction_count__d4e5f6{font-size:13px;color:#777;margin-left:auto}
+    .TfTable_wrap__g7h8i9{flex:1;overflow:auto;padding:16px 24px}
+    .TfTable_root__j0k1l2{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+    .TfTable_root__j0k1l2 thead{background:#f0f4f8}
+    .TfTable_root__j0k1l2 th{padding:10px 14px;font-size:12px;font-weight:700;text-align:left;color:#555;border-bottom:2px solid var(--border)}
+    .TfTable_root__j0k1l2 td{padding:10px 14px;font-size:13px;border-bottom:1px solid #f0f0f0;vertical-align:middle}
+    .TrackBadge_num__d4e5f6{font-family:monospace;font-size:12px;font-weight:700;color:var(--brand)}
+    .StatusChip_root__g7h8i9{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;background:#e3f2fd;color:#1565c0;white-space:nowrap}
+    .StatusChip_root__g7h8i9.delivered{background:#e8f5e9;color:#2e7d32}
+    .StatusChip_root__g7h8i9.delayed{background:#fff3e0;color:#e65100}
+    .StatusChip_root__g7h8i9.out{background:#f3e5f5;color:#6a1b9a}
+    .RowBtn_view__j1k2l3{background:var(--brand);color:#fff;border:none;border-radius:5px;padding:4px 12px;font-size:12px;cursor:pointer}
+    tracking-shell{display:block}
+    .TfFooter_root__m3n4o5{background:var(--brand-dark);color:rgba(255,255,255,.65);padding:16px 24px;font-size:12px;display:flex;gap:20px;flex-wrap:wrap;margin-top:auto}
+    .TfFooter_root__m3n4o5 a{color:rgba(255,255,255,.65);text-decoration:none}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_22.truth.json -->
+
+<header data-v-a1b2c3="" class="TfHeader_root__n1o2p3">
+  <a data-v-a1b2c3="" href="/" class="TfHeader_logo__q4r5s6">TrackFlow</a>
+  <nav data-v-a1b2c3="" class="TfHeader_nav__t7u8v9" aria-label="Main navigation">
+    <a data-v-a1b2c3="" href="/dashboard" class="TfHeader_navLink__w0x1y2">Dashboard</a>
+    <a data-v-a1b2c3="" href="/shipments" class="TfHeader_navLink__w0x1y2">Shipments</a>
+    <a data-v-a1b2c3="" href="/carriers" class="TfHeader_navLink__w0x1y2">Carriers</a>
+    <a data-v-a1b2c3="" href="/reports" class="TfHeader_navLink__w0x1y2">Reports</a>
+    <a data-v-a1b2c3="" href="/account" class="TfHeader_navLink__w0x1y2">Account</a>
+  </nav>
+</header>
+
+<div data-v-a1b2c3="" class="TfSearch_root__c2d3e4">
+  <label data-v-a1b2c3="" class="TfSearch_label__f5g6h7" for="tracking-search">Tracking #</label>
+  <!-- t_01: input#tracking-search - signals: id, aria-label -->
+  <input
+    data-v-a1b2c3=""
+    class="TfSearch_inp__i8j9k0"
+    id="tracking-search"
+    data-oracle-id="t_01"
+    type="text"
+    aria-label="Enter tracking number"
+    placeholder="e.g. TRK-100000">
+  <button data-v-a1b2c3="" class="TfSearch_btn__l1m2n3" type="button">Search</button>
+  <div data-v-a1b2c3="" class="TfSearch_sep__o4p5q6" aria-hidden="true"></div>
+  <div data-v-a1b2c3="" class="TfSearch_dateWrap__r7s8t9">
+    <label data-v-a1b2c3="" class="TfSearch_label__f5g6h7" for="date-from">From</label>
+    <input data-v-a1b2c3="" class="TfSearch_dateInp__u0v1w2" id="date-from" type="date" aria-label="Start date">
+    <label data-v-a1b2c3="" class="TfSearch_label__f5g6h7" for="date-to">To</label>
+    <input data-v-a1b2c3="" class="TfSearch_dateInp__u0v1w2" id="date-to" type="date" aria-label="End date">
+  </div>
+</div>
+
+<div data-v-a1b2c3="" class="TfAction_root__x3y4z5">
+  <!-- t_02: button[aria-label="Refresh tracking data"] - signals: aria-label -->
+  <button
+    data-v-a1b2c3=""
+    class="TfAction_refreshBtn__a1b2c3"
+    type="button"
+    data-oracle-id="t_02"
+    aria-label="Refresh tracking data">↻ Refresh</button>
+  <button data-v-a1b2c3="" class="TfAction_refreshBtn__a1b2c3" type="button" aria-label="Clear filters">Clear filters</button>
+  <span data-v-a1b2c3="" class="TfAction_count__d4e5f6">200 shipments</span>
+</div>
+
+<div data-v-a1b2c3="" class="TfTable_wrap__g7h8i9">
+  <table data-v-a1b2c3="" class="TfTable_root__j0k1l2">
+    <thead data-v-a1b2c3="">
+      <tr data-v-a1b2c3="">
+        <th data-v-a1b2c3="">Tracking #</th>
+        <th data-v-a1b2c3="">Status</th>
+        <th data-v-a1b2c3="">Carrier</th>
+        <th data-v-a1b2c3="">Est. Delivery</th>
+        <th data-v-a1b2c3="">Route</th>
+        <th data-v-a1b2c3="">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="shipment-rows"></tbody>
+  </table>
+</div>
+
+<!-- S2: tracking-shell (level-1) contains shipment-editor (level-2) -->
+<tracking-shell id="tracking-shell-x3y4z5" data-v-a1b2c3=""></tracking-shell>
+
+<footer data-v-a1b2c3="" class="TfFooter_root__m3n4o5">
+  <span data-v-a1b2c3="">&copy; 2026 TrackFlow Logistics Ltd.</span>
+  <a data-v-a1b2c3="" href="/terms">Terms</a>
+  <a data-v-a1b2c3="" href="/privacy">Privacy</a>
+  <a data-v-a1b2c3="" href="/support">Support</a>
+  <a data-v-a1b2c3="" href="/api">API Docs</a>
+</footer>
+
+<script>
+// Inner element (shipment-editor, L2) defined FIRST per §13
+customElements.define('shipment-editor', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.EditForm_root__p7q8r9{padding:0}' +
+      '.EditForm_title__s0t1u2{font-size:13px;font-weight:700;color:#0d47a1;margin-bottom:12px}' +
+      '.EditForm_field__v3w4x5{margin-bottom:12px}' +
+      '.EditForm_lbl__y6z7a8{display:block;font-size:12px;font-weight:700;color:#555;margin-bottom:3px}' +
+      '.EditForm_inp__b9c0d1,.EditForm_sel__e2f3g4,.EditForm_ta__h5i6j7{width:100%;border:2px solid #e0e0e0;border-radius:6px;padding:8px 10px;font-size:13px;color:#1a1a2e;background:#fff}' +
+      '.EditForm_inp__b9c0d1,.EditForm_sel__e2f3g4{height:38px}' +
+      '.EditForm_ta__h5i6j7{height:72px;resize:vertical;padding:8px 10px}' +
+      '.EditForm_inp__b9c0d1:focus,.EditForm_sel__e2f3g4:focus,.EditForm_ta__h5i6j7:focus{border-color:#1565c0;outline:none}' +
+      '.EditForm_actions__k8l9m0{display:flex;gap:8px;margin-top:12px;padding-top:10px;border-top:1px solid #f0f0f0}' +
+      '.EditForm_cancelBtn__n1o2p3{flex:1;background:#fff;border:2px solid #e0e0e0;border-radius:6px;height:36px;font-size:13px;cursor:pointer}' +
+      '.EditForm_saveBtn__q4r5s6{flex:2;background:#1565c0;color:#fff;border:none;border-radius:6px;height:36px;font-size:13px;font-weight:700;cursor:pointer}' +
+      '</style>' +
+      '<div class="EditForm_root__p7q8r9">' +
+        '<p class="EditForm_title__s0t1u2">Update Shipment</p>' +
+        '<div class="EditForm_field__v3w4x5">' +
+          '<label class="EditForm_lbl__y6z7a8" for="shipment-ref">Reference ID</label>' +
+          '<input class="EditForm_inp__b9c0d1" id="shipment-ref" data-oracle-id="t_07" name="reference_id" type="text" value="TRK-100000" autocomplete="off">' +
+        '</div>' +
+        '<div class="EditForm_field__v3w4x5">' +
+          '<label class="EditForm_lbl__y6z7a8" for="delivery-notes">Delivery notes</label>' +
+          '<textarea class="EditForm_ta__h5i6j7" id="delivery-notes" data-oracle-id="t_08" aria-label="Delivery instructions" placeholder="Special delivery instructions…"></textarea>' +
+        '</div>' +
+        '<div class="EditForm_field__v3w4x5">' +
+          '<label class="EditForm_lbl__y6z7a8" for="shipment-priority">Priority level</label>' +
+          '<select class="EditForm_sel__e2f3g4" id="shipment-priority" data-oracle-id="t_09" name="shipment_priority">' +
+            '<option value="standard" selected>Standard</option>' +
+            '<option value="express">Express</option>' +
+            '<option value="overnight">Overnight</option>' +
+            '<option value="economy">Economy</option>' +
+          '</select>' +
+        '</div>' +
+        '<div class="EditForm_actions__k8l9m0">' +
+          '<button class="EditForm_cancelBtn__n1o2p3" type="button">Cancel</button>' +
+          '<button class="EditForm_saveBtn__q4r5s6" type="button" aria-label="Save shipment update" data-testid="save-shipment-btn" data-oracle-id="t_10">Save update</button>' +
+        '</div>' +
+      '</div>';
+  }
+});
+
+// Outer element (tracking-shell, L1) defined SECOND
+customElements.define('tracking-shell', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;background:#fff;border-top:2px solid #e0e0e0;padding:16px 24px;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.TrackPanel_root__t7u8v9{display:flex;gap:20px;align-items:flex-start}' +
+      '.TrackPanel_ctrl__w0x1y2{display:flex;flex-direction:column;gap:10px;min-width:200px}' +
+      '.TrackPanel_ctrlLbl__z3a4b5{font-size:11px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:2px;display:block}' +
+      '.TrackPanel_carrierSel__c6d7e8{height:36px;border:2px solid #e0e0e0;border-radius:6px;padding:0 10px;font-size:13px;background:#fff;width:100%}' +
+      '.TrackPanel_carrierSel__c6d7e8:focus{border-color:#1565c0;outline:none}' +
+      '.TrackPanel_exportBtn__f9g0h1{background:#fff;border:2px solid #1565c0;color:#1565c0;border-radius:6px;height:36px;padding:0 14px;font-size:13px;font-weight:700;cursor:pointer;width:100%}' +
+      '.TrackPanel_detailCard__i2j3k4{flex:1;background:#f5f7fa;border-radius:8px;padding:14px}' +
+      '.TrackPanel_detailHead__l5m6n7{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}' +
+      '.TrackPanel_detailTitle__o8p9q0{font-size:13px;font-weight:700;color:#0d47a1}' +
+      '.TrackPanel_toggle__m4n5o6{background:none;border:none;cursor:pointer;color:#9e9eb4;font-size:16px;padding:4px 6px;border-radius:4px;line-height:1}' +
+      '.TrackPanel_toggle__m4n5o6::after{content:"›";font-size:20px;color:#7986cb}' +
+      '.TrackPanel_infoRow__r1s2t3{display:flex;gap:8px;margin-bottom:6px;font-size:13px}' +
+      '.TrackPanel_infoKey__u4v5w6{font-weight:700;color:#555;min-width:80px}' +
+      '.TrackPanel_infoVal__x7y8z9{color:#1a1a2e}' +
+      '.TrackPanel_editSection__a0b1c2{margin-top:14px;padding-top:12px;border-top:1px solid #e0e0e0}' +
+      '</style>' +
+      '<div class="TrackPanel_root__t7u8v9">' +
+        '<div class="TrackPanel_ctrl__w0x1y2">' +
+          '<div>' +
+            '<span class="TrackPanel_ctrlLbl__z3a4b5">Carrier</span>' +
+            '<select class="TrackPanel_carrierSel__c6d7e8" data-oracle-id="t_04" aria-label="Filter by carrier">' +
+              '<option value="">All carriers</option>' +
+              '<option value="fedex">FedEx</option>' +
+              '<option value="ups">UPS</option>' +
+              '<option value="dhl">DHL</option>' +
+              '<option value="usps">USPS</option>' +
+              '<option value="amazon">Amazon Logistics</option>' +
+            '</select>' +
+          '</div>' +
+          '<button class="TrackPanel_exportBtn__f9g0h1" type="button" data-oracle-id="t_05" aria-label="Export shipment report as CSV">Export CSV</button>' +
+        '</div>' +
+        '<div class="TrackPanel_detailCard__i2j3k4">' +
+          '<div class="TrackPanel_detailHead__l5m6n7">' +
+            '<span class="TrackPanel_detailTitle__o8p9q0">TRK-100000 — Detail</span>' +
+            '<button class="TrackPanel_toggle__m4n5o6" type="button" data-oracle-id="t_06"></button>' +
+          '</div>' +
+          '<div class="TrackPanel_infoRow__r1s2t3"><span class="TrackPanel_infoKey__u4v5w6">Status</span><span class="TrackPanel_infoVal__x7y8z9">In Transit</span></div>' +
+          '<div class="TrackPanel_infoRow__r1s2t3"><span class="TrackPanel_infoKey__u4v5w6">Carrier</span><span class="TrackPanel_infoVal__x7y8z9">FedEx</span></div>' +
+          '<div class="TrackPanel_infoRow__r1s2t3"><span class="TrackPanel_infoKey__u4v5w6">Route</span><span class="TrackPanel_infoVal__x7y8z9">New York → Chicago</span></div>' +
+          '<div class="TrackPanel_infoRow__r1s2t3"><span class="TrackPanel_infoKey__u4v5w6">Est. delivery</span><span class="TrackPanel_infoVal__x7y8z9">Dec 20</span></div>' +
+          '<div class="TrackPanel_editSection__a0b1c2">' +
+            '<shipment-editor></shipment-editor>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+});
+
+// Shipment row generator IIFE — 200 rows × 13 elements = 2600 row elements
+(function() {
+  var PREFIXES  = ['TRK','SHP','PKG','DLV','EXP'];
+  var STATUSES  = ['In Transit','In Transit','In Transit','Delivered','Delayed','Out for Delivery','In Transit'];
+  var SCLASSES  = ['','','','delivered','delayed','out',''];
+  var CARRIERS  = ['FedEx','UPS','DHL','USPS','Amazon Logistics','OnTrac'];
+  var ROUTES    = ['New York → Chicago','LA → Seattle','Miami → Dallas','Denver → Boston','Atlanta → Phoenix'];
+  var DATES     = ['Dec 20','Dec 21','Dec 22','Dec 23','Dec 24','Jan 2','Jan 5','Jan 8'];
+
+  function row(idx) {
+    var tnum    = PREFIXES[idx % PREFIXES.length] + '-' + (100000 + idx);
+    var status  = STATUSES[idx % STATUSES.length];
+    var scls    = SCLASSES[idx % SCLASSES.length];
+    var carrier = CARRIERS[idx % CARRIERS.length];
+    var date    = DATES[idx % DATES.length];
+    var route   = ROUTES[idx % ROUTES.length];
+    var isNone  = (idx === 0);
+    return '<tr data-v-a1b2c3="">' +
+      '<td data-v-a1b2c3=""><span data-v-a1b2c3="" class="TrackBadge_num__d4e5f6">' + tnum + '</span></td>' +
+      '<td data-v-a1b2c3=""><span data-v-a1b2c3="" class="StatusChip_root__g7h8i9' + (scls ? ' ' + scls : '') + '"' +
+        (isNone ? ' data-oracle-id="t_03"' : '') + '>' + status + '</span></td>' +
+      '<td data-v-a1b2c3=""><span data-v-a1b2c3="">' + carrier + '</span></td>' +
+      '<td data-v-a1b2c3=""><time data-v-a1b2c3="">' + date + '</time></td>' +
+      '<td data-v-a1b2c3=""><span data-v-a1b2c3="">' + route + '</span></td>' +
+      '<td data-v-a1b2c3=""><button data-v-a1b2c3="" class="RowBtn_view__j1k2l3" type="button">View</button></td>' +
+    '</tr>';
+  }
+
+  var html = '';
+  for (var i = 0; i < 200; i++) html += row(i);
+  document.getElementById('shipment-rows').innerHTML = html;
+})();
+</script>
+
+</body>
+</html>

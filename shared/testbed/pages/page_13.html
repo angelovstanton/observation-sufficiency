@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kronos Analytics – Dashboard</title>
+  <!-- targets: see pages/page_13.truth.json -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f8; color: #1a1a2e; }
+    nav { background: #1a1a2e; color: #fff; padding: 0.75rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
+    nav h1 { margin: 0; font-size: 1.1rem; flex: 1; }
+    .nav-search { padding: 0.4rem 0.75rem; border-radius: 4px; border: none; font-size: 0.875rem; }
+    .UserSearch--q2r3s4 { padding: 0.4rem 0.75rem; border-radius: 4px; border: none; font-size: 0.875rem; min-width: 220px; }
+    main { padding: 1.5rem; }
+    .dashboard-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .dashboard-header h2 { margin: 0; font-size: 1.25rem; }
+    .period-picker { display: flex; gap: 0.5rem; align-items: center; font-size: 0.875rem; }
+    .period-picker label { font-weight: 500; }
+    .period-picker input[type=date] { padding: 0.35rem 0.5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.875rem; }
+    .PeriodBtn--x7y8z9 { display: flex; gap: 0.4rem; }
+    .PeriodBtn--x7y8z9 button { padding: 0.3rem 0.7rem; border: 1px solid #1a1a2e; border-radius: 4px; background: #fff; cursor: pointer; font-size: 0.8rem; }
+    .export-link { color: #0d6efd; text-decoration: none; padding: 0.4rem 0.8rem; border: 1px solid #0d6efd; border-radius: 4px; font-size: 0.875rem; }
+    analytics-filter { display: block; margin-bottom: 1.5rem; }
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+    .MetricCard--q1r2s3 { background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .metric-label { font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: .04em; }
+    .metric-value { font-size: 1.6rem; font-weight: 700; margin-top: 0.4rem; }
+    .metric-delta { font-size: 0.8rem; color: #2e7d32; margin-top: 0.25rem; }
+    .charts-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+    .ChartBlock--t7u8v9 { background: #fff; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .chart-title { font-size: 0.9rem; font-weight: 600; margin: 0 0 0.75rem; }
+    .chart-bars { display: flex; align-items: flex-end; gap: 2px; height: 90px; }
+    .chart-bar { flex: 1; background: #4e79a7; border-radius: 2px 2px 0 0; min-height: 4px; }
+    .table-section { margin-bottom: 1.5rem; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .table-header { padding: 0.75rem 1rem; border-bottom: 1px solid #e8eaed; font-weight: 600; font-size: 0.9rem; }
+    .data-table { width: 100%; border-collapse: collapse; }
+    .data-table th { background: #f8f9fa; padding: 0.45rem 0.6rem; text-align: left; font-size: 0.8rem; font-weight: 600; border-bottom: 2px solid #e8eaed; white-space: nowrap; }
+    .data-table td { padding: 0.35rem 0.6rem; border-bottom: 1px solid #f0f0f0; font-size: 0.8rem; }
+    .TableRow--d4e5f6:hover { background: #f8f9fa; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1 data-v-4a5b6c>Kronos Analytics</h1>
+  <input data-v-4a5b6c class="nav-search" type="text"
+         name="table_filter" aria-label="Filter dashboard data"
+         placeholder="Filter table…" data-oracle-id="t_01">
+  <input data-v-4a5b6c class="UserSearch--q2r3s4" type="text"
+         placeholder="Search by user name or email" data-oracle-id="t_06">
+</nav>
+
+<main data-v-4a5b6c>
+
+  <!-- DASHBOARD HEADER / PERIOD CONTROLS -->
+  <div class="dashboard-header" data-v-4a5b6c>
+    <h2 data-v-4a5b6c>Overview Dashboard</h2>
+    <div class="period-picker" data-v-4a5b6c>
+      <label data-v-4a5b6c for="date-from">From</label>
+      <input data-v-4a5b6c id="date-from" name="date_from" type="date"
+             aria-label="Start date" value="2026-05-01" data-oracle-id="t_02">
+      <label data-v-4a5b6c>To</label>
+      <input data-v-4a5b6c name="date_to" type="date"
+             aria-label="End date for report range" value="2026-06-17" data-oracle-id="t_04">
+    </div>
+    <!-- t_03: NONE — period preset strip; class PeriodBtn--x7y8z9 is volatile; no other stable attrs -->
+    <div data-v-4a5b6c class="PeriodBtn--x7y8z9" data-oracle-id="t_03">
+      <button data-v-4a5b6c type="button">Today</button>
+      <button data-v-4a5b6c type="button">7 days</button>
+      <button data-v-4a5b6c type="button">30 days</button>
+      <button data-v-4a5b6c type="button">90 days</button>
+    </div>
+    <a data-v-4a5b6c class="export-link" data-testid="export-csv"
+       href="/export?fmt=csv" data-oracle-id="t_05">Export CSV</a>
+  </div>
+
+  <!-- FILTER PANEL (S1 SHADOW HOST) -->
+  <analytics-filter id="analytics-filter-c8d9e0"></analytics-filter>
+
+  <!-- METRIC CARDS (12) -->
+  <div class="metrics-grid" data-v-4a5b6c id="metrics-grid"></div>
+
+  <!-- CHART BLOCKS (4 × 20 bars each) -->
+  <div class="charts-row" data-v-4a5b6c id="charts-row"></div>
+
+  <!-- USER EVENTS TABLE (200 rows × 8 cols) -->
+  <div class="table-section" data-v-4a5b6c>
+    <div class="table-header" data-v-4a5b6c>User Events</div>
+    <table class="data-table" data-v-4a5b6c>
+      <thead data-v-4a5b6c>
+        <tr data-v-4a5b6c>
+          <th data-v-4a5b6c>#</th>
+          <th data-v-4a5b6c>User</th>
+          <th data-v-4a5b6c>Event</th>
+          <th data-v-4a5b6c>Page</th>
+          <th data-v-4a5b6c>Duration&nbsp;(s)</th>
+          <th data-v-4a5b6c>Device</th>
+          <th data-v-4a5b6c>Country</th>
+          <th data-v-4a5b6c>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody data-v-4a5b6c id="events-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- HOURLY BREAKDOWN TABLE (60 rows × 6 cols) -->
+  <div class="table-section" data-v-4a5b6c>
+    <div class="table-header" data-v-4a5b6c>Hourly Breakdown</div>
+    <table class="data-table" data-v-4a5b6c>
+      <thead data-v-4a5b6c>
+        <tr data-v-4a5b6c>
+          <th data-v-4a5b6c>Hour</th>
+          <th data-v-4a5b6c>Sessions</th>
+          <th data-v-4a5b6c>Page Views</th>
+          <th data-v-4a5b6c>Bounce&nbsp;Rate</th>
+          <th data-v-4a5b6c>Conversions</th>
+          <th data-v-4a5b6c>Revenue&nbsp;($)</th>
+        </tr>
+      </thead>
+      <tbody data-v-4a5b6c id="hourly-tbody"></tbody>
+    </table>
+  </div>
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var V = "data-v-4a5b6c";
+
+  // ── S1 Shadow: analytics-filter ──────────────────────────────────────────
+  class AnalyticsFilter extends HTMLElement {
+    connectedCallback() {
+      var shadow = this.attachShadow({ mode: "open" });
+      shadow.innerHTML = [
+        "<style>",
+        "  :host { display: block; }",
+        "  .filter-panel { background:#fff; border:1px solid #ddd; border-radius:8px;",
+        "    padding:1rem; display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap; }",
+        "  .filter-row { display:flex; align-items:center; gap:0.5rem; }",
+        "  label { font-size:0.875rem; font-weight:500; }",
+        "  select { padding:0.3rem 0.5rem; border:1px solid #ccc; border-radius:4px; cursor:pointer; }",
+        "  input[type=checkbox] { cursor:pointer; width:15px; height:15px; }",
+        "  .export-btn { padding:0.4rem 0.9rem; background:#1a1a2e; color:#fff;",
+        "    border:none; border-radius:4px; cursor:pointer; font-size:0.875rem; }",
+        "  .FilterChip--a1b2c3 { background:#e3f2fd; padding:0.2rem 0.6rem;",
+        "    border-radius:12px; font-size:0.8rem; color:#1565c0; }",
+        "</style>",
+        "<div class='filter-panel'>",
+        "  <div class='filter-row'>",
+        "    <label for='date-preset'>Date range</label>",
+        "    <select id='date-preset' aria-label='Date range preset' data-oracle-id='t_07'>",
+        "      <option>Last 7 days</option>",
+        "      <option selected>Last 30 days</option>",
+        "      <option>Last 90 days</option>",
+        "      <option>Custom range</option>",
+        "    </select>",
+        "  </div>",
+        "  <div class='filter-row'>",
+        "    <label>",
+        "      <input type='checkbox' aria-label='Toggle Revenue metric visibility' data-oracle-id='t_08'>",
+        "      Revenue",
+        "    </label>",
+        "  </div>",
+        "  <div class='filter-row'>",
+        "    <label><input type='checkbox' checked> Sessions</label>",
+        "  </div>",
+        "  <div class='filter-row'>",
+        "    <label><input type='checkbox' checked> Page views</label>",
+        "  </div>",
+        "  <div class='filter-row'>",
+        "    <label><input type='checkbox'> Conversions</label>",
+        "  </div>",
+        "  <button class='export-btn' data-testid='export-pdf-btn'",
+        "          aria-label='Export dashboard as PDF' data-oracle-id='t_09'>",
+        "    Export PDF",
+        "  </button>",
+        "  <!-- t_10: NONE — FilterChip--a1b2c3 is volatile; no stable attrs -->",
+        "  <div class='FilterChip--a1b2c3' data-oracle-id='t_10'>Active: Last 30 days</div>",
+        "</div>"
+      ].join("\n");
+    }
+  }
+  customElements.define("analytics-filter", AnalyticsFilter);
+
+  // ── Metric cards (12) ────────────────────────────────────────────────────
+  var METRICS = [
+    ["Total Sessions",  "124,832", "+8.4%"],
+    ["Page Views",      "389,241", "+12.1%"],
+    ["Unique Users",    "48,129",  "+5.7%"],
+    ["Avg Duration",    "3m 42s",  "-1.2%"],
+    ["Bounce Rate",     "34.2%",   "-2.1%"],
+    ["Conversions",     "2,841",   "+19.3%"],
+    ["Revenue",         "$48,920", "+22.7%"],
+    ["Avg Pages/Visit", "4.7",     "+0.3%"],
+    ["New Users",       "18,320",  "+6.8%"],
+    ["Returning Users", "29,809",  "+4.5%"],
+    ["Mobile Sessions", "61,230",  "+14.2%"],
+    ["Desktop Sessions","63,602",  "+2.9%"]
+  ];
+  var metricsGrid = document.getElementById("metrics-grid");
+  METRICS.forEach(function (m) {
+    var card = document.createElement("div");
+    card.className = "MetricCard--q1r2s3";
+    card.setAttribute(V, "");
+    var label = document.createElement("div");
+    label.className = "metric-label";
+    label.setAttribute(V, "");
+    label.textContent = m[0];
+    var value = document.createElement("div");
+    value.className = "metric-value";
+    value.setAttribute(V, "");
+    value.textContent = m[1];
+    var delta = document.createElement("div");
+    delta.className = "metric-delta";
+    delta.setAttribute(V, "");
+    delta.textContent = m[2] + " vs last period";
+    card.appendChild(label);
+    card.appendChild(value);
+    card.appendChild(delta);
+    metricsGrid.appendChild(card);
+  });
+
+  // ── Chart blocks (4 × 20 bars each) ─────────────────────────────────────
+  var CHARTS = [
+    "Sessions by Day",
+    "Revenue by Day",
+    "Top Pages Traffic",
+    "Device Split"
+  ];
+  var chartsRow = document.getElementById("charts-row");
+  CHARTS.forEach(function (title, ci) {
+    var block = document.createElement("div");
+    block.className = "ChartBlock--t7u8v9";
+    block.setAttribute(V, "");
+    var h = document.createElement("h3");
+    h.className = "chart-title";
+    h.setAttribute(V, "");
+    h.textContent = title;
+    block.appendChild(h);
+    var barsDiv = document.createElement("div");
+    barsDiv.className = "chart-bars";
+    barsDiv.setAttribute(V, "");
+    for (var bi = 0; bi < 20; bi++) {
+      var bar = document.createElement("div");
+      bar.className = "chart-bar";
+      bar.setAttribute(V, "");
+      bar.style.height = (15 + ((ci * 7 + bi * 3 + 13) % 70)) + "px";
+      bar.title = title + " — Day " + (bi + 1);
+      barsDiv.appendChild(bar);
+    }
+    block.appendChild(barsDiv);
+    chartsRow.appendChild(block);
+  });
+
+  // ── User events table (200 rows × 8 cols) ────────────────────────────────
+  var EVENTS    = ["click","pageview","scroll","purchase","signup","logout","search","download"];
+  var PAGES     = ["/home","/pricing","/docs","/blog","/about","/login","/dashboard","/settings"];
+  var DEVICES   = ["Desktop","Mobile","Tablet"];
+  var COUNTRIES = ["US","UK","DE","FR","CA","AU","JP","IN"];
+  var tbody1 = document.getElementById("events-tbody");
+  var frag1 = document.createDocumentFragment();
+  for (var i = 1; i <= 212; i++) {
+    var tr = document.createElement("tr");
+    tr.className = "TableRow--d4e5f6";
+    tr.setAttribute(V, "");
+    var day  = String(1 + (i % 30)).padStart(2, "0");
+    var hour = String(i % 24).padStart(2, "0");
+    var min  = String(i % 60).padStart(2, "0");
+    var cols = [
+      i,
+      "user_" + (1000 + i).toString(36) + "@example.com",
+      EVENTS[i % EVENTS.length],
+      PAGES[i % PAGES.length],
+      ((i * 137) % 3000 / 10).toFixed(1),
+      DEVICES[i % DEVICES.length],
+      COUNTRIES[i % COUNTRIES.length],
+      "2026-06-" + day + " " + hour + ":" + min
+    ];
+    cols.forEach(function (c) {
+      var td = document.createElement("td");
+      td.setAttribute(V, "");
+      td.textContent = c;
+      tr.appendChild(td);
+    });
+    frag1.appendChild(tr);
+  }
+  tbody1.appendChild(frag1);
+
+  // ── Hourly breakdown table (60 rows × 6 cols) ────────────────────────────
+  var tbody2 = document.getElementById("hourly-tbody");
+  var frag2 = document.createDocumentFragment();
+  for (var j = 0; j < 60; j++) {
+    var tr2 = document.createElement("tr");
+    tr2.setAttribute(V, "");
+    var hh  = String(Math.floor(j * 24 / 60)).padStart(2, "0");
+    var mm  = (j % 2 === 0) ? "00" : "30";
+    var cols2 = [
+      hh + ":" + mm,
+      50 + (j * 17) % 800,
+      200 + (j * 43) % 2000,
+      (30 + j % 50).toFixed(1) + "%",
+      5 + (j * 7) % 80,
+      "$" + ((100 + j * 83) % 5000).toFixed(2)
+    ];
+    cols2.forEach(function (c) {
+      var td2 = document.createElement("td");
+      td2.setAttribute(V, "");
+      td2.textContent = c;
+      tr2.appendChild(td2);
+    });
+    frag2.appendChild(tr2);
+  }
+  tbody2.appendChild(frag2);
+
+}());
+</script>
+</body>
+</html>

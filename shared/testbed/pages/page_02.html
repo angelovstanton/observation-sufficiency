@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Housing Benefit – UK Government</title>
+  <style>
+    :root { --gov-blue:#005ea5; --gov-green:#00703c; --gov-border:#b1b4b6; --gov-text:#0b0c0c; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;color:var(--gov-text);font-size:16px;line-height:1.5}
+    .govuk-header{background:var(--gov-blue);padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+    .govuk-header a{color:#fff;text-decoration:none;font-size:24px;font-weight:700;line-height:56px}
+    .govuk-nav{display:flex;gap:20px;align-items:center}
+    .govuk-nav a{color:#fff;font-size:15px;text-decoration:none}
+    .phase{background:#f3f2f1;padding:8px 20px;font-size:14px}
+    .phase a{color:var(--gov-blue)}
+    .breadcrumb{padding:10px 20px;font-size:14px}
+    .breadcrumb a{color:var(--gov-blue)}
+    main{max-width:860px;margin:0 auto;padding:20px}
+    h1{font-size:36px;font-weight:700;margin-bottom:16px}
+    h2{font-size:24px;font-weight:700;margin:24px 0 12px}
+    .body{margin-bottom:14px}
+    .form-group{margin-bottom:20px}
+    label.lbl{display:block;font-weight:700;margin-bottom:4px}
+    .hint{color:#505a5f;font-size:14px;margin-bottom:6px}
+    input.inp,select.sel{width:100%;max-width:480px;height:40px;padding:0 8px;border:2px solid var(--gov-border);font-size:16px}
+    .btn{background:var(--gov-green);color:#fff;border:none;padding:10px 20px;font-size:17px;font-weight:700;cursor:pointer;display:inline-block;margin-top:6px}
+    .btn-secondary{background:var(--gov-blue)}
+    .inset{border-left:10px solid var(--gov-border);padding:12px 16px;margin:16px 0}
+    .dl-list{margin:0;padding:0;list-style:none}
+    .dl-list li{margin-bottom:8px}
+    .dl-list a{color:var(--gov-blue)}
+    .status-panel{border:1px solid var(--gov-border);border-radius:4px;overflow:hidden;margin-top:8px}
+    .step{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--gov-border)}
+    .step:last-child{border-bottom:none}
+    .badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;flex-shrink:0}
+    .b-done{background:var(--gov-green)}
+    .b-now{background:var(--gov-blue)}
+    .b-wait{background:var(--gov-border);color:var(--gov-text)}
+    .cb-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .cb{width:40px;height:40px;border:2px solid var(--gov-text);flex-shrink:0}
+    .faq-section{margin-top:24px}
+    .faq-item{border-bottom:1px solid var(--gov-border)}
+    .faq-toggle{width:100%;text-align:left;background:none;border:none;padding:14px 0;font-size:16px;cursor:pointer;color:var(--gov-blue);font-weight:600}
+    .faq-toggle::after{content:" +";float:right}
+    .faq-body{padding:0 0 12px;display:none}
+    footer{background:#f3f2f1;border-top:1px solid var(--gov-border);padding:24px 20px;margin-top:40px}
+    .footer-cols{display:flex;gap:40px;flex-wrap:wrap}
+    .footer-col h4{font-size:14px;font-weight:700;margin-bottom:8px}
+    .footer-col ul{list-style:none}
+    .footer-col li{margin-bottom:6px}
+    .footer-col a{font-size:14px;color:var(--gov-text)}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_02.truth.json -->
+
+<header _ngcontent-gov-c42="" class="govuk-header">
+  <a _ngcontent-gov-c42="" href="/">GOV.UK</a>
+  <nav _ngcontent-gov-c42="" class="govuk-nav" aria-label="Site navigation">
+    <a _ngcontent-gov-c42="" href="/benefits">Benefits</a>
+    <a _ngcontent-gov-c42="" href="/housing">Housing</a>
+    <a _ngcontent-gov-c42="" href="/work">Work</a>
+    <a _ngcontent-gov-c42="" href="/health">Health</a>
+    <a _ngcontent-gov-c42="" href="/sign-in">Sign in</a>
+  </nav>
+</header>
+
+<div _ngcontent-gov-c42="" class="phase">
+  <strong _ngcontent-gov-c42="">BETA</strong>
+  This is a new service &mdash; your <a _ngcontent-gov-c42="" href="/feedback">feedback</a> will help us improve it.
+</div>
+
+<nav _ngcontent-gov-c42="" class="breadcrumb" aria-label="Breadcrumb">
+  <a _ngcontent-gov-c42="" href="/">Home</a> &rsaquo;
+  <a _ngcontent-gov-c42="" href="/benefits">Benefits</a> &rsaquo;
+  <span _ngcontent-gov-c42="">Housing Benefit</span>
+</nav>
+
+<main _ngcontent-gov-c42="" id="main-content">
+
+  <h1 _ngcontent-gov-c42="">Apply for Housing Benefit</h1>
+
+  <p _ngcontent-gov-c42="" class="body">
+    Housing Benefit can help you pay your rent if you are on a low income or claim certain benefits.
+    Use this service to check your eligibility and submit your application online.
+    You will need your National Insurance number, rent details, and your most recent bank statements.
+  </p>
+
+  <div _ngcontent-gov-c42="" class="inset">
+    <p _ngcontent-gov-c42="" class="body">
+      <strong _ngcontent-gov-c42="">Processing times</strong> are currently 15 working days.
+      Apply as soon as possible to avoid disruption to your payments.
+    </p>
+  </div>
+
+  <!-- ── Check existing application ─────────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="check-heading">
+    <h2 _ngcontent-gov-c42="" id="check-heading">Check an existing application</h2>
+
+    <div _ngcontent-gov-c42="" class="form-group">
+      <label _ngcontent-gov-c42="" class="lbl" for="application-ref">Application reference number</label>
+      <div _ngcontent-gov-c42="" class="hint">For example, HB-2024-001234</div>
+      <!-- t_01: input#application-ref - signals: id, aria-label -->
+      <input _ngcontent-gov-c42=""
+             id="application-ref"
+             data-oracle-id="t_01"
+             aria-label="Application reference number"
+             class="inp"
+             type="text"
+             name="application_ref"
+             autocomplete="off">
+    </div>
+
+    <!-- t_02: button[check-eligibility-btn] - signals: data-testid, aria-label -->
+    <button _ngcontent-gov-c42=""
+            type="button"
+            data-testid="check-eligibility-btn"
+            data-oracle-id="t_02"
+            aria-label="Check benefit eligibility"
+            class="btn">Check eligibility</button>
+  </section>
+
+  <!-- ── New application form ──────────────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="apply-heading">
+    <h2 _ngcontent-gov-c42="" id="apply-heading">New application</h2>
+
+    <div _ngcontent-gov-c42="" class="form-group">
+      <label _ngcontent-gov-c42="" class="lbl" for="ni-number">National Insurance number</label>
+      <div _ngcontent-gov-c42="" class="hint">It&rsquo;s on your payslip, P60, or benefit letter. For example, QQ&nbsp;12&nbsp;34&nbsp;56&nbsp;C</div>
+      <!-- t_03: input#ni-number - signals: id, aria-label -->
+      <input _ngcontent-gov-c42=""
+             id="ni-number"
+             data-oracle-id="t_03"
+             aria-label="National Insurance number"
+             class="inp"
+             type="text"
+             name="ni_number"
+             autocomplete="off">
+    </div>
+
+    <div _ngcontent-gov-c42="" class="form-group">
+      <label _ngcontent-gov-c42="" class="lbl" for="benefit-type">Type of benefit</label>
+      <!-- t_04: select[benefit-type-select] - signals: id, name, data-testid -->
+      <select _ngcontent-gov-c42=""
+              id="benefit-type"
+              data-oracle-id="t_04"
+              name="benefit_type"
+              data-testid="benefit-type-select"
+              aria-label="Type of benefit to apply for"
+              class="sel">
+        <option _ngcontent-gov-c42="" value="">Select benefit type</option>
+        <option _ngcontent-gov-c42="" value="housing">Housing Benefit</option>
+        <option _ngcontent-gov-c42="" value="jsa">Jobseeker&rsquo;s Allowance (JSA)</option>
+        <option _ngcontent-gov-c42="" value="pip">Personal Independence Payment (PIP)</option>
+        <option _ngcontent-gov-c42="" value="esa">Employment Support Allowance (ESA)</option>
+        <option _ngcontent-gov-c42="" value="uc">Universal Credit</option>
+      </select>
+    </div>
+
+    <div _ngcontent-gov-c42="" class="form-group">
+      <label _ngcontent-gov-c42="" class="lbl">Supporting documents</label>
+      <div _ngcontent-gov-c42="" class="hint">
+        Upload proof of identity, tenancy agreement, and 3 months of bank statements.
+        Accepted formats: PDF, JPG, PNG (max 10&nbsp;MB each).
+      </div>
+      <!-- t_05: button[aria-label="Upload supporting documents..."] - signals: aria-label -->
+      <button _ngcontent-gov-c42=""
+              type="button"
+              data-oracle-id="t_05"
+              aria-label="Upload supporting documents for your application"
+              class="btn btn-secondary">Upload documents</button>
+    </div>
+
+    <div _ngcontent-gov-c42="" class="inset">
+      <p _ngcontent-gov-c42="" class="body">
+        By submitting you confirm that all information provided is accurate and complete.
+        Providing false information may result in prosecution and recovery of overpayments.
+      </p>
+    </div>
+
+    <!-- t_06: button[submit-application-btn] - signals: data-testid -->
+    <button _ngcontent-gov-c42=""
+            type="submit"
+            data-testid="submit-application-btn"
+            data-oracle-id="t_06"
+            class="btn">Submit application</button>
+  </section>
+
+  <!-- ── Downloadable forms ────────────────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="downloads-heading">
+    <h2 _ngcontent-gov-c42="" id="downloads-heading">Download forms</h2>
+    <ul _ngcontent-gov-c42="" class="dl-list">
+      <li _ngcontent-gov-c42="">
+        <!-- t_07: a[aria-label="Download SA-2024 applicatio..."] - signals: aria-label, href -->
+        <a _ngcontent-gov-c42=""
+           href="/forms/benefits-SA2024.pdf"
+           data-oracle-id="t_07"
+           aria-label="Download SA-2024 application form PDF">
+          SA-2024 Application form (PDF, 1.2&nbsp;MB)
+        </a>
+      </li>
+      <li _ngcontent-gov-c42="">
+        <a _ngcontent-gov-c42="" href="/forms/evidence-checklist.pdf" aria-label="Download evidence checklist PDF">
+          Evidence checklist (PDF, 340&nbsp;KB)
+        </a>
+      </li>
+      <li _ngcontent-gov-c42="">
+        <a _ngcontent-gov-c42="" href="/forms/landlord-declaration.pdf" aria-label="Download landlord declaration PDF">
+          Landlord declaration form (PDF, 280&nbsp;KB)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Application status tracker ──────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="status-heading">
+    <h2 _ngcontent-gov-c42="" id="status-heading">Track your application</h2>
+    <!-- t_08: div[application-status-tracker] - signals: data-testid, aria-label -->
+    <div _ngcontent-gov-c42=""
+         data-testid="application-status-tracker"
+         data-oracle-id="t_08"
+         aria-label="Your application status"
+         class="status-panel"
+         role="region">
+      <div _ngcontent-gov-c42="" class="step">
+        <span _ngcontent-gov-c42="" class="badge b-done">1</span>
+        <div _ngcontent-gov-c42="">
+          <strong _ngcontent-gov-c42="">Application received</strong>
+          <p _ngcontent-gov-c42="" class="hint">12 June 2024</p>
+        </div>
+      </div>
+      <div _ngcontent-gov-c42="" class="step">
+        <span _ngcontent-gov-c42="" class="badge b-now">2</span>
+        <div _ngcontent-gov-c42="">
+          <strong _ngcontent-gov-c42="">Under review</strong>
+          <p _ngcontent-gov-c42="" class="hint">Documents being assessed</p>
+        </div>
+      </div>
+      <div _ngcontent-gov-c42="" class="step">
+        <span _ngcontent-gov-c42="" class="badge b-wait">3</span>
+        <div _ngcontent-gov-c42="">
+          <strong _ngcontent-gov-c42="">Decision</strong>
+          <p _ngcontent-gov-c42="" class="hint">Estimated: 27 June 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Email updates ──────────────────────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="updates-heading">
+    <h2 _ngcontent-gov-c42="" id="updates-heading">Stay informed</h2>
+    <div _ngcontent-gov-c42="" class="cb-row">
+      <!-- t_09: input#benefit-updates-sub - signals: id, aria-label -->
+      <input _ngcontent-gov-c42=""
+             type="checkbox"
+             id="benefit-updates-sub"
+             data-oracle-id="t_09"
+             aria-label="Subscribe to benefit update notifications"
+             class="cb">
+      <label _ngcontent-gov-c42="" for="benefit-updates-sub">
+        Send me email updates about changes to Housing Benefit rules and policy
+      </label>
+    </div>
+    <div _ngcontent-gov-c42="" class="cb-row">
+      <input _ngcontent-gov-c42="" type="checkbox" id="local-council-news" class="cb">
+      <label _ngcontent-gov-c42="" for="local-council-news">
+        Send me local council housing news and events
+      </label>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────────── -->
+  <section _ngcontent-gov-c42="" aria-labelledby="faq-heading" class="faq-section">
+    <h2 _ngcontent-gov-c42="" id="faq-heading">Frequently asked questions</h2>
+
+    <div _ngcontent-gov-c42="" class="faq-item">
+      <!-- t_10: button[type="button"] - NONE, no stable signal -->
+      <button _ngcontent-gov-c42=""
+              id="faq-item-a1b2c3"
+              data-oracle-id="t_10"
+              class="faq-toggle"
+              type="button">How long does it take to process my application?</button>
+      <div _ngcontent-gov-c42="" class="faq-body">
+        <p _ngcontent-gov-c42="">Standard processing takes 15 working days once we have your completed
+        application and all supporting documents.</p>
+      </div>
+    </div>
+
+    <div _ngcontent-gov-c42="" class="faq-item">
+      <button _ngcontent-gov-c42="" class="faq-toggle" type="button">What documents do I need?</button>
+      <div _ngcontent-gov-c42="" class="faq-body">
+        <p _ngcontent-gov-c42="">You need proof of identity, proof of address, tenancy agreement, and 3&nbsp;months of bank statements.</p>
+      </div>
+    </div>
+
+    <div _ngcontent-gov-c42="" class="faq-item">
+      <button _ngcontent-gov-c42="" class="faq-toggle" type="button">Can I apply if I work part-time?</button>
+      <div _ngcontent-gov-c42="" class="faq-body">
+        <p _ngcontent-gov-c42="">Yes. Eligibility is means-tested and considers your income, savings, and household circumstances.</p>
+      </div>
+    </div>
+
+    <div _ngcontent-gov-c42="" class="faq-item">
+      <button _ngcontent-gov-c42="" class="faq-toggle" type="button">What happens if my circumstances change?</button>
+      <div _ngcontent-gov-c42="" class="faq-body">
+        <p _ngcontent-gov-c42="">Report any change in income, household, or housing within one month. Failure to report may lead to overpayment recovery.</p>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer _ngcontent-gov-c42="">
+  <div _ngcontent-gov-c42="" class="footer-cols">
+    <div _ngcontent-gov-c42="" class="footer-col">
+      <h4 _ngcontent-gov-c42="">Support links</h4>
+      <ul _ngcontent-gov-c42="">
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/accessibility">Accessibility statement</a></li>
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/cookies">Cookie policy</a></li>
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/privacy">Privacy notice</a></li>
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/contact">Contact us</a></li>
+      </ul>
+    </div>
+    <div _ngcontent-gov-c42="" class="footer-col">
+      <h4 _ngcontent-gov-c42="">Related services</h4>
+      <ul _ngcontent-gov-c42="">
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/universal-credit">Universal Credit</a></li>
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/council-tax">Council Tax Reduction</a></li>
+        <li _ngcontent-gov-c42=""><a _ngcontent-gov-c42="" href="/pip">PIP</a></li>
+      </ul>
+    </div>
+    <div _ngcontent-gov-c42="" class="footer-col">
+      <p _ngcontent-gov-c42="" style="font-size:14px">
+        &copy; Crown copyright 2024.
+        <a _ngcontent-gov-c42="" href="/ogl">Open Government Licence v3.0</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

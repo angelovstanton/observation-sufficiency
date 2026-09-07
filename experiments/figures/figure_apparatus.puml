@@ -1,0 +1,89 @@
+@startuml figure_apparatus
+' Figure 1 - UML 2.5 activity diagram: measurement apparatus for one grounding event.
+'
+' Notation, all standard UML 2.5:
+'   filled circle       initial node
+'   rounded rectangle   action
+'   diamond             decision node, guards in [square brackets]
+'   solid bar           fork / join node
+'   bullseye            activity final node
+'
+' SIZING FOR PRINT (Applied Sciences, single column, ~16 cm text width).
+' The diagram's aspect ratio, not its pixel count, decides how large the text
+' prints. A tall narrow diagram scaled to 16 cm runs off the page; a squarer one
+' keeps both the height and the type size reasonable. Three decisions follow from
+' that and should not be undone without re-measuring:
+'   1. The four failure modes branch from ONE decision node, side by side, rather
+'      than from nested decisions. Wide and short instead of narrow and tall.
+'   2. Short outcome names; the full identifiers are expanded in the caption.
+'      They were the widest row and drove the whole diagram's scale.
+'   3. Explanatory notes live in the caption, and swimlanes are not used -
+'      activity partitions pushed the diagram well past the printable width.
+
+'
+' PLANTUML LAYOUT FIX - DO NOT DELETE THE PADDING BELOW.
+' In a four-branch switch, PlantUML drops the third branch's arrow directly
+' beneath the decision node and left-aligns that branch's guard text at the
+' arrow's own x, so the line is drawn straight through the label. Verified
+' 11.09.2026: the collision follows the POSITION, not the wording - reordering
+' the cases just moves it to whichever guard lands third, and widening the
+' decision node does not move it at all. The <U+00A0> run indents that one
+' guard clear of the arrow. Removing it reinstates the overlap.
+
+skinparam backgroundColor White
+skinparam shadowing false
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam ArrowColor #333333
+skinparam ArrowFontSize 12
+skinparam ActivityBorderColor #333333
+skinparam ActivityBackgroundColor #FFFFFF
+skinparam ActivityBorderThickness 1
+skinparam ActivityDiamondBackgroundColor #FFFFFF
+skinparam ActivityDiamondBorderColor #333333
+skinparam ActivityDiamondFontSize 12
+
+start
+
+:Load test page and walk the DOM,
+piercing shadow roots;
+
+' Multi-line #color: action before a fork breaks the PlantUML parser (v1.2026.8);
+' the line break is written as \n, not a physical newline.
+#E8F0F8:**Apply attribute bundle**  ""A′ <U+2286> A""\n<b>Axis A - what is sent</b>;
+
+#FBEDED:Remove oracle anchors;
+
+fork
+  ' Multi-line #color: action before a fork breaks the PlantUML parser (v1.2026.8);
+  ' the line break is written as \n, not a physical newline.
+  #E9F3E4:**Serialise observation**  ""O = R(A′, f, D)""\n<b>Axis B - how it is sent</b>;
+fork again
+  :Count observation tokens;
+fork again
+  #FBEDED:Check the ARIA path;
+end fork
+
+:Query the model, receive ""css: <selector>"";
+
+#FBEDED:Screen the locator for anchor leakage;
+
+:Evaluate the five-condition predicate
+<b>against the raw DOM</b>;
+
+switch (Outcome?)
+case ([no stable signal in bundle])
+  #F2F2F2:lacked;
+case ([all five conditions met])
+  #F2F2F2:success;
+case ([format unreachable])
+  #F2F2F2:unreachable;
+case ([signal present, locator failed])
+  #F2F2F2:grabbed;
+endswitch
+
+:Write grounding record (JSONL);
+
+stop
+
+@enduml

@@ -1,0 +1,108 @@
+{
+  "page_id": "page_06",
+  "group": "G2",
+  "shadow": "S0",
+  "semantic_density": "low",
+  "size_tier": "large",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["ad-slot-mobile-a1b2c3", "ad-slot-desktop-b3c4d5"],
+    "volatile_classes": [
+      "ArticleCard--d4e5f6",
+      "AdSlot--mobile--a1b2c3",
+      "AdSlot--desktop--b3c4d5",
+      "TagBadge--q7r8s9",
+      "AuthorLine--t0u1v2",
+      "TrendingRow--p6q7r8",
+      "HeroBlock--j0k1l2",
+      "NewsletterInput--g4h5i6",
+      "ShareBtn--z6a7b8",
+      "_ngcontent-news-c6",
+      "_nghost-news-c6"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the search field where you type keywords to search for articles",
+      "signal_attrs": ["name"],
+      "expected_stable_signal": "input[type=search] with name='search'; no aria-label, no id; name is the sole stable signal"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the navigation link to the Politics section of the site",
+      "signal_attrs": ["href"],
+      "expected_stable_signal": "anchor with href='/politics'; unique on the page (no other link shares this href); no aria-label, no data-testid; href is the sole stable signal"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the mobile ad banner slot (the responsive-dup version hidden on desktop)",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with id='ad-slot-mobile-a1b2c3' (volatile) and class='AdSlot--mobile--a1b2c3 d-md-none' (volatile); no aria-label, no data-testid, no stable anchor; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the email input in the newsletter signup block",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input[type=email] with placeholder='Enter your email'; no name, no id, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the button that subscribes the user to the newsletter",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Subscribe to newsletter'; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the link to the lead article in the breaking news section",
+      "signal_attrs": ["data-testid", "href"],
+      "expected_stable_signal": "anchor with data-testid='breaking-news-lead'; data-testid is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find an article card in the main article grid",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — article element with class ArticleCard--d4e5f6 only (JS-generated card 7); no aria-label, no data-testid, no id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that filters the article grid by content category",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "select with aria-label='Filter articles by category'; no name, no id; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find a trending topic row in the sidebar",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class TrendingRow--p6q7r8 only (first static trending row, the AI regulation story); no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the social share button in the page header",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Share on social media' and class ShareBtn--z6a7b8 (volatile class); aria-label is the sole stable signal"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "page_id": "page_03",
+  "group": "G1",
+  "shadow": "S0",
+  "semantic_density": "high",
+  "size_tier": "large",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": [],
+    "volatile_classes": [
+      "AccountCard--p4q5r6",
+      "TransRow--s7t8u9",
+      "TransferBtn--v0w1x2",
+      "CardItem--a3b4c5",
+      "FilterTx--b6c7d8",
+      "StateBadge--e9f0g1",
+      "BalanceCard--mobile--h2i3j4",
+      "BalanceCard--desktop--k5l6m7",
+      "_ngcontent-bank-c3",
+      "_nghost-bank-c3"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the number input where you type the amount of money to transfer",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='transfer-amount' and aria-label='Amount to transfer'; Angular attr _ngcontent-bank-c3 is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that selects which account to send the transfer from",
+      "signal_attrs": ["name", "aria-label", "id"],
+      "expected_stable_signal": "select with name='from_account' and aria-label='Transfer from account'; id='from-account' also present but name+aria-label are recorded signals"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the button that submits the quick-transfer form",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='submit-transfer' and aria-label='Submit transfer'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the mobile-only account balance summary card (the responsive-dup version hidden on desktop)",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class BalanceCard--mobile--h2i3j4 and d-md-none only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the text input that filters the transaction history by keyword",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input with placeholder='Search transactions'; no id, no name, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the link that opens the credit card statement",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with aria-label='View credit card statement'; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the button that freezes the debit card",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='freeze-debit-card'; no aria-label on this specific button; data-testid is the sole stable signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that filters the transaction list by transaction type",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "select with aria-label='Filter transactions by type'; no name, no id; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the link that navigates to the page for scheduling a new bill payment",
+      "signal_attrs": ["href"],
+      "expected_stable_signal": "anchor with href='/payments/schedule'; unique on the page; no aria-label, no data-testid; href is the sole stable signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find a row in the transaction history table",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — tr with class TransRow--s7t8u9 only (JS-generated row 5); no aria-label, no id, no data-testid; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to HTML – Web Dev 101 | LearnPath LMS</title>
+  <style>
+    :root{--brand:#0d6efd;--brand-dark:#084cc0;--success:#198754;--text:#212529;--border:#dee2e6;--bg:#f8f9fa}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--text);background:var(--bg)}
+    .top-bar{background:var(--brand);height:56px;display:flex;align-items:center;padding:0 24px;gap:16px}
+    .top-bar .logo{color:#fff;font-size:18px;font-weight:700;text-decoration:none}
+    .top-bar .course-title{color:rgba(255,255,255,.8);font-size:14px}
+    .top-bar-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .top-bar-right a{color:rgba(255,255,255,.85);font-size:13px;text-decoration:none}
+    .breadcrumb{background:#fff;padding:10px 24px;font-size:13px;border-bottom:1px solid var(--border);display:flex;gap:6px;align-items:center;color:#666}
+    .breadcrumb a{color:var(--brand);text-decoration:none}
+    .breadcrumb span{color:#999}
+    .layout{display:grid;grid-template-columns:1fr 300px;gap:0;max-width:1140px;margin:0 auto;padding:0 24px}
+    .main-content{padding:24px 24px 40px 0;border-right:1px solid var(--border)}
+    .sidebar{padding:24px 0 24px 24px}
+    .lesson-header{margin-bottom:20px}
+    .lesson-meta{font-size:13px;color:#666;display:flex;gap:12px;margin-bottom:8px}
+    .lesson-title{font-size:26px;font-weight:700;color:var(--text)}
+    .player-host{margin:20px 0;border-radius:8px;overflow:hidden;background:#000}
+    lesson-player-widget{display:block}
+    .lesson-actions{display:flex;gap:12px;margin-top:20px;align-items:center}
+    .btn-complete{background:var(--success);color:#fff;border:none;padding:11px 22px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px}
+    .btn-next{background:var(--brand);color:#fff;border:none;padding:11px 22px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer}
+    .lesson-nav-footer{display:flex;justify-content:space-between;margin-top:32px;padding-top:20px;border-top:1px solid var(--border)}
+    .rating-row{margin:28px 0;padding:20px;background:#fff;border:1px solid var(--border);border-radius:8px}
+    .rating-row label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+    .star-select{display:flex;gap:8px;align-items:center}
+    select.star-sel{height:38px;border:1px solid var(--border);border-radius:4px;padding:0 10px;font-size:14px;min-width:140px}
+    .materials-row{margin-bottom:24px}
+    .materials-row h3{font-size:16px;font-weight:600;margin-bottom:10px}
+    .dl-link{display:inline-flex;align-items:center;gap:6px;color:var(--brand);text-decoration:none;font-size:14px;padding:8px 14px;border:1px solid var(--brand);border-radius:4px}
+    .discussion{margin-top:28px}
+    .discussion h3{font-size:18px;font-weight:700;margin-bottom:16px}
+    .comment-form{background:#fff;padding:16px;border:1px solid var(--border);border-radius:8px;margin-bottom:20px}
+    .comment-form textarea{width:100%;height:80px;border:1px solid var(--border);border-radius:4px;padding:8px;font-size:14px;font-family:inherit;resize:vertical}
+    .comment-form .form-footer{display:flex;justify-content:flex-end;margin-top:8px}
+    .btn-post{background:var(--brand);color:#fff;border:none;padding:8px 18px;border-radius:4px;font-size:14px;font-weight:600;cursor:pointer}
+    .comment-item{background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:10px}
+    .comment-author{font-size:13px;font-weight:600;color:var(--brand-dark)}
+    .comment-body{font-size:14px;margin-top:4px;color:#444}
+    .sidebar h3{font-size:16px;font-weight:700;margin-bottom:12px}
+    .assignment-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:10px}
+    .assignment-card h4{font-size:14px;font-weight:600;margin-bottom:4px}
+    .assignment-card p{font-size:13px;color:#666}
+    .assignment-card .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-top:6px}
+    .badge-due{background:#fff3cd;color:#856404}
+    .badge-done{background:#d1e7dd;color:#0a3622}
+    footer{background:var(--brand-dark);color:rgba(255,255,255,.7);padding:24px;margin-top:40px}
+    .footer-inner{max-width:1140px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;font-size:13px}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_12.truth.json -->
+
+<div data-v-c1d2e3="" class="top-bar">
+  <a data-v-c1d2e3="" href="/" class="logo">LearnPath</a>
+  <span data-v-c1d2e3="" class="course-title">Web Dev 101 &rsaquo; Module 1</span>
+  <div data-v-c1d2e3="" class="top-bar-right">
+    <a data-v-c1d2e3="" href="/dashboard">Dashboard</a>
+    <a data-v-c1d2e3="" href="/profile">My profile</a>
+  </div>
+</div>
+
+<nav data-v-c1d2e3="" class="breadcrumb" aria-label="Breadcrumb">
+  <a data-v-c1d2e3="" href="/courses">Courses</a>
+  <span data-v-c1d2e3="">/</span>
+  <a data-v-c1d2e3="" href="/courses/web-dev-101">Web Dev 101</a>
+  <span data-v-c1d2e3="">/</span>
+  <a data-v-c1d2e3="" href="/courses/web-dev-101/module-1">Module 1: Foundations</a>
+  <span data-v-c1d2e3="">/</span>
+  <span data-v-c1d2e3="" aria-current="page">Lesson 1: Introduction to HTML</span>
+</nav>
+
+<div data-v-c1d2e3="" class="layout">
+
+  <main data-v-c1d2e3="" class="main-content">
+
+    <div data-v-c1d2e3="" class="lesson-header">
+      <div data-v-c1d2e3="" class="lesson-meta">
+        <span data-v-c1d2e3="">Module 1, Lesson 1</span>
+        <span data-v-c1d2e3="">&bull;</span>
+        <span data-v-c1d2e3="">12 min</span>
+        <span data-v-c1d2e3="">&bull;</span>
+        <span data-v-c1d2e3="">Beginner</span>
+      </div>
+      <h1 data-v-c1d2e3="" class="lesson-title">Introduction to HTML</h1>
+    </div>
+
+    <!-- S1 lesson player widget -->
+    <div data-v-c1d2e3="" class="player-host">
+      <lesson-player-widget id="lesson-player-a8b9c0"></lesson-player-widget>
+    </div>
+
+    <div data-v-c1d2e3="" class="lesson-actions">
+      <!-- t_01: button[mark-complete-btn] - signals: data-testid, aria-label -->
+      <button
+        data-v-c1d2e3=""
+        type="button"
+        class="btn-complete"
+        data-testid="mark-complete-btn"
+        data-oracle-id="t_01"
+        aria-label="Mark this lesson as complete">
+        &#10003; Mark as complete
+      </button>
+      <!-- t_10: button[next-lesson-btn] - signals: data-testid, aria-label -->
+      <button
+        data-v-c1d2e3=""
+        type="button"
+        class="btn-next"
+        data-testid="next-lesson-btn"
+        data-oracle-id="t_10"
+        aria-label="Continue to next lesson: CSS Flexbox Basics">
+        Next lesson &rarr;
+      </button>
+    </div>
+
+    <div data-v-c1d2e3="" class="materials-row" style="margin-top:24px">
+      <h3 data-v-c1d2e3="">Lesson materials</h3>
+      <!-- t_02: a[aria-label="Download lesson materials PDF"] - signals: aria-label, href -->
+      <a
+        data-v-c1d2e3=""
+        href="/courses/web-dev-101/materials.pdf"
+        class="dl-link"
+        data-oracle-id="t_02"
+        aria-label="Download lesson materials PDF">
+        &#8595; Download PDF
+      </a>
+    </div>
+
+    <div data-v-c1d2e3="" class="rating-row">
+      <label data-v-c1d2e3="" for="course-rating">Rate this lesson</label>
+      <div data-v-c1d2e3="" class="star-select">
+        <!-- t_04: select#course-rating - signals: id, aria-label -->
+        <select
+          data-v-c1d2e3=""
+          id="course-rating"
+          data-oracle-id="t_04"
+          aria-label="Rate this course from 1 to 5 stars"
+          class="star-sel">
+          <option data-v-c1d2e3="" value="">Select a rating</option>
+          <option data-v-c1d2e3="" value="5">5 stars – Excellent</option>
+          <option data-v-c1d2e3="" value="4">4 stars – Good</option>
+          <option data-v-c1d2e3="" value="3">3 stars – OK</option>
+          <option data-v-c1d2e3="" value="2">2 stars – Poor</option>
+          <option data-v-c1d2e3="" value="1">1 star – Very poor</option>
+        </select>
+      </div>
+    </div>
+
+    <div data-v-c1d2e3="" class="discussion">
+      <h3 data-v-c1d2e3="">Discussion</h3>
+      <div data-v-c1d2e3="" class="comment-form">
+        <textarea data-v-c1d2e3="" placeholder="Share a question or insight about this lesson..."></textarea>
+        <div data-v-c1d2e3="" class="form-footer">
+          <!-- t_03: button[post-comment-btn] - signals: data-testid -->
+          <button
+            data-v-c1d2e3=""
+            type="button"
+            class="btn-post"
+            data-testid="post-comment-btn"
+            data-oracle-id="t_03">Post comment</button>
+        </div>
+      </div>
+      <div data-v-c1d2e3="" class="comment-item">
+        <span data-v-c1d2e3="" class="comment-author">Alex T.</span>
+        <p data-v-c1d2e3="" class="comment-body">Great intro! The live code demo at 8:20 really helped it click.</p>
+      </div>
+      <div data-v-c1d2e3="" class="comment-item">
+        <span data-v-c1d2e3="" class="comment-author">Maria S.</span>
+        <p data-v-c1d2e3="" class="comment-body">Could you add more on semantic elements in lesson 2?</p>
+      </div>
+    </div>
+
+  </main>
+
+  <aside data-v-c1d2e3="" class="sidebar">
+    <h3 data-v-c1d2e3="">Assignments</h3>
+    <div data-v-c1d2e3="" class="assignment-card">
+      <h4 data-v-c1d2e3="">Exercise 1.1: Build a page structure</h4>
+      <p data-v-c1d2e3="">Create a page with header, main, and footer.</p>
+      <span data-v-c1d2e3="" class="badge badge-due">Due 20 Jun</span>
+    </div>
+    <div data-v-c1d2e3="" class="assignment-card">
+      <h4 data-v-c1d2e3="">Quiz 1.1: HTML Basics</h4>
+      <p data-v-c1d2e3="">10-question quiz on HTML elements and attributes.</p>
+      <span data-v-c1d2e3="" class="badge badge-due">Due 22 Jun</span>
+    </div>
+    <div data-v-c1d2e3="" class="assignment-card">
+      <h4 data-v-c1d2e3="">Exercise 1.2: Forms &amp; inputs</h4>
+      <p data-v-c1d2e3="">Practice building accessible forms.</p>
+      <span data-v-c1d2e3="" class="badge badge-done">&#10003; Submitted</span>
+    </div>
+  </aside>
+
+</div>
+
+<footer data-v-c1d2e3="">
+  <div data-v-c1d2e3="" class="footer-inner">
+    <span data-v-c1d2e3="">&copy; 2026 LearnPath Ltd.</span>
+    <a data-v-c1d2e3="" href="/accessibility" style="color:inherit">Accessibility</a>
+    <a data-v-c1d2e3="" href="/terms" style="color:inherit">Terms</a>
+    <a data-v-c1d2e3="" href="/privacy" style="color:inherit">Privacy</a>
+  </div>
+</footer>
+
+<script>
+customElements.define('lesson-player-widget', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;background:#000;border-radius:8px;overflow:hidden;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.video-area{background:#1a1a1a;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative}' +
+      '.thumbnail{width:100%;height:100%;object-fit:cover;opacity:.6}' +
+      '.play-overlay{position:absolute;width:72px;height:72px;background:rgba(255,255,255,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer}' +
+      '.play-tri{border-left:28px solid #0d6efd;border-top:17px solid transparent;border-bottom:17px solid transparent;margin-left:6px}' +
+      '.controls{background:#111;padding:10px 16px;display:flex;gap:12px;align-items:center}' +
+      '.ctrl-btn{background:none;border:none;color:#fff;cursor:pointer;padding:4px 6px;border-radius:4px;font-size:18px;line-height:1;display:flex;align-items:center}' +
+      '.ctrl-btn:hover{background:rgba(255,255,255,.15)}' +
+      '.seek-wrap{flex:1;display:flex;align-items:center}' +
+      'input[type=range].seek{width:100%;accent-color:#0d6efd;height:4px}' +
+      '.time-display{color:rgba(255,255,255,.7);font-size:12px;white-space:nowrap;margin:0 6px}' +
+      '.vol-wrap{display:flex;align-items:center;gap:6px}' +
+      'input[type=range].vol{width:70px;accent-color:#0d6efd;height:4px}' +
+      '.caption-badge{background:#333;color:#aaa;font-size:11px;font-weight:700;padding:2px 6px;border-radius:3px}' +
+      '.quality-btn{background:rgba(255,255,255,.1);border:none;color:#fff;font-size:12px;padding:3px 8px;border-radius:4px;cursor:pointer}' +
+      '.progress-bar-row{height:4px;background:#333;position:relative}' +
+      '.progress-fill{height:100%;width:35%;background:#0d6efd;border-radius:2px}' +
+      '</style>' +
+      '<div class="video-area">' +
+        '<div style="width:100%;height:100%;background:linear-gradient(135deg,#0d3d6b,#0d6efd);display:flex;align-items:center;justify-content:center;">' +
+          '<span style="color:#fff;font-size:28px;opacity:.4">&#9654;</span>' +
+        '</div>' +
+        '<div class="play-overlay">' +
+          '<div class="play-tri"></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="progress-bar-row"><div class="progress-fill"></div></div>' +
+      '<div class="controls">' +
+        '<button type="button" class="ctrl-btn"' +
+          ' data-testid="play-pause-btn"' +
+          ' aria-label="Play lesson video"' +
+          ' data-oracle-id="t_05"' +
+        '>&#9654;</button>' +
+        '<div class="seek-wrap">' +
+          '<input type="range"' +
+            ' class="seek"' +
+            ' min="0" max="100" value="35"' +
+            ' data-testid="video-seek-bar"' +
+            ' aria-label="Video seek position"' +
+            ' data-oracle-id="t_06"' +
+          '>' +
+        '</div>' +
+        '<span class="time-display">04:12 / 12:00</span>' +
+        '<div class="vol-wrap">' +
+          '<button type="button" class="ctrl-btn" aria-label="Mute/unmute audio">&#128266;</button>' +
+          '<input type="range"' +
+            ' class="vol"' +
+            ' min="0" max="100" value="80"' +
+            ' aria-label="Adjust video volume"' +
+            ' data-oracle-id="t_07"' +
+          '>' +
+        '</div>' +
+        '<button type="button" class="ctrl-btn"' +
+          ' data-testid="captions-btn"' +
+          ' aria-label="Toggle closed captions"' +
+          ' data-oracle-id="t_08"' +
+        '><span class="caption-badge">CC</span></button>' +
+        '<button type="button"' +
+          ' class="quality-btn"' +
+          ' id="quality-btn-v0w1x2"' +
+          ' data-oracle-id="t_09"' +
+        '>1080p</button>' +
+      '</div>';
+  }
+});
+</script>
+
+</body>
+</html>

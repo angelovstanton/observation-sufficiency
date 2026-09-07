@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Static testbed files — included as None so they appear in Solution Explorer
+       without being compiled or copied to output. -->
+  <ItemGroup>
+    <None Include="pages\**\*.html" />
+    <None Include="pages\**\*.json" />
+    <None Include="*.py" />
+    <None Include="README.md" />
+  </ItemGroup>
+
+</Project>

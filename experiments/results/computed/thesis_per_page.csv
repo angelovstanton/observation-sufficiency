@@ -1,0 +1,25 @@
+page,semantic_density,B_full %,B_noVolatile %,delta pp
+page_21,LOW,0.0,65.0,65.0
+page_11,HIGH,57.5,77.5,20.0
+page_13,LOW,57.5,75.0,17.5
+page_16,LOW,42.5,60.0,17.5
+page_06,LOW,52.5,67.5,15.0
+page_08,LOW,55.0,70.0,15.0
+page_07,LOW,55.0,67.5,12.5
+page_15,LOW,55.0,67.5,12.5
+page_03,HIGH,65.0,75.0,10.0
+page_09,HIGH,65.0,75.0,10.0
+page_05,LOW,55.0,65.0,10.0
+page_23,LOW,62.5,70.0,7.5
+page_14,LOW,52.5,60.0,7.5
+page_04,HIGH,77.5,82.5,5.0
+page_22,LOW,37.5,40.0,2.5
+page_10,HIGH,87.5,90.0,2.5
+page_18,HIGH,25.0,27.5,2.5
+page_19,HIGH,87.5,90.0,2.5
+page_02,HIGH,82.5,82.5,0.0
+page_01,HIGH,67.5,67.5,0.0
+page_12,HIGH,77.5,77.5,0.0
+page_20,HIGH,42.5,42.5,0.0
+page_24,LOW,42.5,40.0,-2.5
+page_17,HIGH,12.5,7.5,-5.0

@@ -1,0 +1,96 @@
+{
+  "page_id": "page_04",
+  "group": "G1",
+  "shadow": "S0",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": ["sort-btn-p3q4r5", "results-wrap-m7n8o9"],
+    "volatile_classes": ["data-v-5e6f7a"]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the field where you type the city or airport you are flying from",
+      "signal_attrs": ["id", "aria-label", "data-testid"],
+      "expected_stable_signal": "input with id='origin-airport', aria-label='Departure city or airport', and data-testid='origin-input'; Vue data-v-5e6f7a scope attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the field where you type the city or airport you are flying to",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='destination-airport' and aria-label='Destination city or airport'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the date picker for the outbound departure date",
+      "signal_attrs": ["id", "aria-label", "data-testid"],
+      "expected_stable_signal": "input[type=date] with id='departure-date', aria-label='Departure date', and data-testid='departure-date'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the date picker for the return flight date",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input[type=date] with id='return-date' and aria-label='Return date'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that lets you choose how many adults are travelling",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "select with id='adult-passengers', name='adults', and aria-label='Number of adult passengers'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that lets you choose your preferred cabin class",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "select with id='cabin-class', name='cabin_class', and aria-label='Select cabin class'"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the button that starts the flight search",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='search-flights-btn' and aria-label='Search available flights'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the button that sorts the flight results by the best overall score",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — volatile id sort-btn-p3q4r5 and Vue data-v-5e6f7a scope attr only; no aria-label, no data-testid, no stable id on this element; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the checkbox that filters results to show only non-stop flights",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "input[type=checkbox] with data-testid='nonstop-filter' and aria-label='Non-stop flights only'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": true,
+      "intent": "Find the button to select the SkyRoute flight departing at 07:30, arriving 09:35, duration 2h 05m, priced at £89",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Select flight LHR→CDG 07:30–09:35, 2h 05m, £89'; multiple Select buttons exist so aria-label is the only stable disambiguator"
+    }
+  ]
+}

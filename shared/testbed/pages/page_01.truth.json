@@ -1,0 +1,112 @@
+{
+  "page_id": "page_01",
+  "group": "G1",
+  "shadow": "S0",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": [
+      "price-badge-a1b2c3",
+      "stock-indicator-9f8e7d",
+      "gallery-next-f7a9e1"
+    ],
+    "volatile_classes": [
+      "data-v-7ba5bd90",
+      "data-v-2c3d4e5f",
+      "data-v-a1b2c3d4",
+      "data-v-f5e4d3c2",
+      "data-v-9b8a7c6d",
+      "data-v-c1d2e3f4",
+      "data-v-8b7c6d5e",
+      "data-v-1a2b3c4d",
+      "pkg-select--a9b8c7",
+      "gallery__nav-btn--next--b3c4d5",
+      "price-tag--vue-d4e5f6"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "intent": "Find the field where you enter the number of packs to add to the cart",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with id='qty-input', name='quantity', aria-label='Quantity', data-testid='qty-input' — full redundant stack; all four stable signals independently sufficient",
+      "signal_attrs": ["id", "data-testid", "aria-label", "name"]
+    },
+    {
+      "id": "t_02",
+      "intent": "Find the button that adds the product to the shopping cart",
+      "oracle": "t_02",
+      "is_ambiguous": true,
+      "expected_stable_signal": "button with data-testid='add-to-cart-btn' (sole stable signal); near-duplicate 'Add to wishlist' button (t_09) has identical class structure and same data-v scope — text 'Add to cart' is also present but accessible name only (not a structured attribute)",
+      "signal_attrs": ["data-testid"]
+    },
+    {
+      "id": "t_03",
+      "intent": "Find the control that lets you choose the strength of the antibiotic",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with aria-label='Select dosage strength' (sole stable signal); no data-testid, no name, no id; parent label is a <span> (no programmatic association)",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_04",
+      "intent": "Find the Antibiotics link in the breadcrumb trail",
+      "oracle": "t_04",
+      "is_ambiguous": true,
+      "expected_stable_signal": "link with visible text 'Antibiotics' in the breadcrumb nav region; mega-menu link shares identical href '/medicines/antibiotics' and text — href does NOT disambiguate; sole stable disambiguator is visible text + Structural/landmark ancestry of the breadcrumb nav; bundles that remove text leave only Structural ancestry (outcome-dependent, leaning insufficient — structural context alone may not produce a unique locator the model can map to 'Antibiotics link'); B_playwrightMCP exposes two links with accessible name 'Antibiotics' — unique resolve depends on whether snapshot exposes Breadcrumb-landmark hierarchy clearly enough for the model to act on it (outcome-dependent, not a guaranteed pass); B_identityCore and B_minimalCore: insufficient",
+      "signal_attrs": ["text"]
+    },
+    {
+      "id": "t_05",
+      "intent": "Find the link to the lower-dose 250mg capsule variant in the related products section",
+      "oracle": "t_05",
+      "is_ambiguous": true,
+      "expected_stable_signal": "link with data-testid='related-product-amoxicillin-250' (sole stable signal); all related-product cards share identical DOM structure and data-v scope — cards are disambiguated only by data-testid or visible text content; no aria-label on the anchor",
+      "signal_attrs": ["data-testid", "href"]
+    },
+    {
+      "id": "t_06",
+      "intent": "Find the checkbox that enrols you in subscription delivery to get a recurring discount",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "expected_stable_signal": "checkbox with name='subscribe_save' (sole stable signal); no data-testid, no aria-label; outer wrapper is a <span> not a <label> so no programmatic label association",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_07",
+      "intent": "Find the control that lets you choose how many tablets are in the pack",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only distinguishing markers are volatile class 'pkg-select--a9b8c7' and Vue scope marker; failure classification: insufficient",
+      "signal_attrs": []
+    },
+    {
+      "id": "t_08",
+      "intent": "Find the button that opens the form to submit a new customer review",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "expected_stable_signal": "button with id='write-review-btn' (sole stable signal); no data-testid, no aria-label; visible text 'Write a review' is also present but id is the structured anchor",
+      "signal_attrs": ["id"]
+    },
+    {
+      "id": "t_09",
+      "intent": "Find the button that saves this product to your saved items list for later",
+      "oracle": "t_09",
+      "is_ambiguous": true,
+      "expected_stable_signal": "button with aria-label='Save Amoxicillin 500mg Capsules to wishlist' (sole stable signal); no data-testid; near-duplicate 'Add to cart' button (t_02) has same class pattern, same parent container, same data-v scope marker",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_10",
+      "intent": "Find the button that advances to the next photo in the product image gallery",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — aria-hidden='true', no aria-label, no data-testid, no name; id 'gallery-next-f7a9e1' is volatile; class 'gallery__nav-btn--next--b3c4d5' is volatile; failure classification: insufficient",
+      "signal_attrs": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.key
+*credentials*
+*secret*
+
+# --- Raw data cache (not committed) ---
+data/raw/
+data/cache/
+*.sqlite
+*.db
+
+# --- Generated analysis artifacts ---
+*.png
+*.pdf
+*.svg
+!docs/**/*.png
+!docs/**/*.svg
+!experiments/figures/**
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# --- .NET build artifacts ---
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# --- Node / Playwright ---
+node_modules/
+playwright-report/
+test-results/
+.playwright/
+/blob-report/
+
+# --- Verification artifacts ---
+# --replay re-classifies archived locators and writes a dated JSONL. It is a
+# throwaway check against the tracked matrix_page_*.jsonl, not a result.
+experiments/runs/replay_*.jsonl
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp

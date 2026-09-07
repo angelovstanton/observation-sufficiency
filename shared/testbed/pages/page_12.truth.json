@@ -1,0 +1,101 @@
+{
+  "page_id": "page_12",
+  "group": "G3",
+  "shadow": "S1",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": ["lesson-player-a8b9c0", "quality-btn-v0w1x2"],
+    "volatile_classes": ["data-v-c1d2e3"]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the button that marks the current lesson as completed",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='mark-complete-btn' and aria-label='Mark this lesson as complete'; Vue data-v-c1d2e3 scope attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the link that downloads the lesson materials as a PDF file",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with href='/courses/web-dev-101/materials.pdf' and aria-label='Download lesson materials PDF'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the button that posts a comment in the lesson discussion",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='post-comment-btn'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that lets you rate the course from 1 to 5 stars",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "select with id='course-rating' and aria-label='Rate this course from 1 to 5 stars'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the play/pause button inside the embedded lesson video player",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside lesson-player-widget shadow root with aria-label='Play lesson video' and data-testid='play-pause-btn'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the seek bar that lets you scrub to a position in the lesson video",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "input[type=range] inside lesson-player-widget shadow root with aria-label='Video seek position' and data-testid='video-seek-bar'"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the slider that controls the video player volume",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=range] inside lesson-player-widget shadow root with aria-label='Adjust video volume'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that toggles closed captions on or off in the video player",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside lesson-player-widget shadow root with aria-label='Toggle closed captions' and data-testid='captions-btn'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that changes the video playback quality resolution",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — volatile id quality-btn-v0w1x2 inside lesson-player-widget shadow root; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the button that navigates to the next lesson in the course",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='next-lesson-btn' and aria-label='Continue to next lesson: CSS Flexbox Basics'"
+    }
+  ]
+}

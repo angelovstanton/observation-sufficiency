@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Overview — NorthVault Bank</title>
+  <!-- targets: see pages/page_03.truth.json -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; color: #222; }
+    nav { background: #1a2e5a; padding: 12px 24px; display: flex; gap: 20px; align-items: center; }
+    nav a { color: #c8d3f0; text-decoration: none; font-size: 14px; }
+    nav a:hover { color: #fff; }
+    .page-wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+    section { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    h2 { font-size: 17px; color: #1a2e5a; margin: 0 0 14px; }
+    .d-md-none { display: block; }
+    .d-none-md { display: none; }
+    @media (min-width: 768px) { .d-md-none { display: none; } .d-none-md { display: block; } }
+    .BalanceCard--mobile--h2i3j4 { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .BalanceCard--desktop--k5l6m7 { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; display: flex; gap: 32px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .AccountCard--p4q5r6 { background: #f0f2f8; border-radius: 6px; padding: 12px 16px; margin-bottom: 8px; }
+    .StateBadge--e9f0g1 { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+    .TransferBtn--v0w1x2 { background: #1a2e5a; color: #fff; padding: 9px 22px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; white-space: nowrap; }
+    .FilterTx--b6c7d8 { border: 1px solid #ccc; border-radius: 4px; padding: 7px 10px; font-size: 14px; }
+    .CardItem--a3b4c5 { border: 1px solid #e0e0e0; border-radius: 6px; padding: 14px; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 13px; }
+    th { background: #f0f2f8; font-weight: 600; color: #444; }
+    .TransRow--s7t8u9:hover { background: #f9f9fb; }
+    .alert { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 14px; font-size: 14px; }
+    footer { background: #1a2e5a; color: #8a9ac0; text-align: center; padding: 18px; font-size: 12px; margin-top: 24px; }
+    footer a { color: #7891c9; margin-left: 12px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; align-items: end; }
+    label { display: block; font-size: 13px; color: #555; margin-bottom: 4px; }
+    input[type=number], input[type=text] { width: 100%; box-sizing: border-box; }
+    .btn-outline { padding: 7px 14px; border: 1px solid #1a2e5a; background: #fff; color: #1a2e5a; border-radius: 4px; cursor: pointer; font-size: 13px; }
+    .quick-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .quick-actions a { padding: 8px 16px; background: #e8eaf0; border-radius: 4px; text-decoration: none; color: #1a2e5a; font-size: 14px; }
+  </style>
+</head>
+<body _nghost-bank-c3>
+
+  <nav _nghost-bank-c3>
+    <span style="color:#fff;font-weight:700;font-size:18px;letter-spacing:-0.5px;" _ngcontent-bank-c3>NorthVault</span>
+    <a href="/accounts" _ngcontent-bank-c3>Accounts</a>
+    <a href="/transfers" _ngcontent-bank-c3>Transfers</a>
+    <a href="/payments" _ngcontent-bank-c3>Payments</a>
+    <a href="/cards" _ngcontent-bank-c3>Cards</a>
+    <a href="/investments" _ngcontent-bank-c3>Investments</a>
+    <a href="/support" _ngcontent-bank-c3>Support</a>
+    <span style="margin-left:auto;color:#8a9ac0;font-size:13px;" _ngcontent-bank-c3>John Smith | Logout</span>
+  </nav>
+
+  <div class="page-wrap" _ngcontent-bank-c3>
+
+    <div class="alert" _ngcontent-bank-c3>
+      Your direct debit for Council Tax is due in 3 days. <a href="/payments/dd" _ngcontent-bank-c3 style="color:#856404;">View</a>
+    </div>
+
+    <!-- Balance cards — responsive dup -->
+    <!-- Mobile version: NONE target t_04 (volatile class only, no stable signal) -->
+    <div class="BalanceCard--mobile--h2i3j4 d-md-none" _ngcontent-bank-c3 data-oracle-id="t_04">
+      <div _ngcontent-bank-c3 style="font-size:12px;color:#666;margin-bottom:4px;">Current Account ••4821</div>
+      <div _ngcontent-bank-c3 style="font-size:28px;font-weight:700;color:#1a2e5a;">£12,450.00</div>
+      <div _ngcontent-bank-c3 style="font-size:12px;color:#888;">Available balance</div>
+    </div>
+    <!-- Desktop version: aria-label stable anchor, not a target -->
+    <div class="BalanceCard--desktop--k5l6m7 d-none-md" aria-label="Account balance summary" _ngcontent-bank-c3>
+      <div _ngcontent-bank-c3>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#666;">Current Account ••4821</div>
+        <div _ngcontent-bank-c3 style="font-size:26px;font-weight:700;color:#1a2e5a;">£12,450.00</div>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#888;">Available balance</div>
+      </div>
+      <div _ngcontent-bank-c3>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#666;">Savings Account ••7293</div>
+        <div _ngcontent-bank-c3 style="font-size:26px;font-weight:700;color:#1a2e5a;">£8,200.00</div>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#888;">Available balance</div>
+      </div>
+      <div _ngcontent-bank-c3>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#666;">Credit Card ••9034</div>
+        <div _ngcontent-bank-c3 style="font-size:26px;font-weight:700;color:#c0392b;">-£340.00</div>
+        <!-- t_06: a[aria-label="View credit card statement"] - signals: aria-label -->
+        <a href="/statements/credit-card" aria-label="View credit card statement" _ngcontent-bank-c3 data-oracle-id="t_06" style="font-size:13px;color:#1a2e5a;text-decoration:underline;">View statement</a>
+      </div>
+      <div _ngcontent-bank-c3>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#666;">ISA Account ••2210</div>
+        <div _ngcontent-bank-c3 style="font-size:26px;font-weight:700;color:#1a2e5a;">£22,000.00</div>
+        <div _ngcontent-bank-c3 style="font-size:12px;color:#888;">Tax-free savings</div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <section _ngcontent-bank-c3>
+      <h2 _ngcontent-bank-c3>Quick Actions</h2>
+      <div class="quick-actions" _ngcontent-bank-c3>
+        <!-- t_09: a[href="/payments/schedule"] - signals: href -->
+        <a href="/payments/schedule" _ngcontent-bank-c3 data-oracle-id="t_09">Schedule payment</a>
+        <a href="/statements/download" _ngcontent-bank-c3>Download statement</a>
+        <a href="/alerts" _ngcontent-bank-c3>Manage alerts</a>
+        <a href="/notifications" _ngcontent-bank-c3>Notifications</a>
+        <a href="/direct-debits" _ngcontent-bank-c3>Direct debits</a>
+        <a href="/standing-orders" _ngcontent-bank-c3>Standing orders</a>
+      </div>
+    </section>
+
+    <!-- Quick Transfer -->
+    <section _ngcontent-bank-c3>
+      <h2 _ngcontent-bank-c3>Quick Transfer</h2>
+      <div class="grid-3" _ngcontent-bank-c3>
+        <div _ngcontent-bank-c3>
+          <label for="from-account" _ngcontent-bank-c3>From account</label>
+          <!-- t_02: select#from-account - signals: name, aria-label -->
+          <select id="from-account" name="from_account" aria-label="Transfer from account"
+                  class="FilterTx--b6c7d8" _ngcontent-bank-c3 data-oracle-id="t_02" style="width:100%;">
+            <option value="current" _ngcontent-bank-c3>Current Account ••4821</option>
+            <option value="savings" _ngcontent-bank-c3>Savings Account ••7293</option>
+            <option value="isa" _ngcontent-bank-c3>ISA ••2210</option>
+          </select>
+        </div>
+        <div _ngcontent-bank-c3>
+          <label for="transfer-amount" _ngcontent-bank-c3>Amount (£)</label>
+          <!-- t_01: input#transfer-amount - signals: id, aria-label -->
+          <input id="transfer-amount" type="number" name="amount"
+                 aria-label="Amount to transfer" min="0.01" step="0.01"
+                 class="FilterTx--b6c7d8" _ngcontent-bank-c3 data-oracle-id="t_01"
+                 placeholder="0.00" />
+        </div>
+        <div _ngcontent-bank-c3>
+          <label _ngcontent-bank-c3>&nbsp;</label>
+          <!-- t_03: button[submit-transfer] - signals: data-testid, aria-label -->
+          <button data-testid="submit-transfer" aria-label="Submit transfer"
+                  class="TransferBtn--v0w1x2" type="button"
+                  _ngcontent-bank-c3 data-oracle-id="t_03">Transfer</button>
+        </div>
+      </div>
+      <div _ngcontent-bank-c3 style="margin-top:12px;">
+        <label _ngcontent-bank-c3>To payee</label>
+        <select class="FilterTx--b6c7d8" _ngcontent-bank-c3 style="min-width:220px;">
+          <option _ngcontent-bank-c3>Select payee...</option>
+          <option _ngcontent-bank-c3>Jane Smith ••8812</option>
+          <option _ngcontent-bank-c3>Council Tax Direct Debit</option>
+          <option _ngcontent-bank-c3>Mortgage — Halifax</option>
+          <option _ngcontent-bank-c3>Gym Membership</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Card Management -->
+    <section _ngcontent-bank-c3>
+      <h2 _ngcontent-bank-c3>My Cards</h2>
+      <div class="CardItem--a3b4c5" _ngcontent-bank-c3>
+        <div style="display:flex;justify-content:space-between;align-items:center;" _ngcontent-bank-c3>
+          <div _ngcontent-bank-c3>
+            <div _ngcontent-bank-c3 style="font-weight:600;font-size:15px;">Debit Card ••4821</div>
+            <div _ngcontent-bank-c3 style="font-size:12px;color:#666;margin-top:2px;">
+              Expires 09/27 &nbsp;|&nbsp;
+              <span class="StateBadge--e9f0g1" _ngcontent-bank-c3 style="background:#d4edda;color:#155724;">Active</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;" _ngcontent-bank-c3>
+            <!-- t_07: button[freeze-debit-card] - signals: data-testid -->
+            <button data-testid="freeze-debit-card" type="button"
+                    _ngcontent-bank-c3 data-oracle-id="t_07"
+                    class="btn-outline">Freeze card</button>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">Report lost</button>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">PIN reminder</button>
+          </div>
+        </div>
+      </div>
+      <div class="CardItem--a3b4c5" _ngcontent-bank-c3>
+        <div style="display:flex;justify-content:space-between;align-items:center;" _ngcontent-bank-c3>
+          <div _ngcontent-bank-c3>
+            <div _ngcontent-bank-c3 style="font-weight:600;font-size:15px;">Credit Card ••9034</div>
+            <div _ngcontent-bank-c3 style="font-size:12px;color:#666;margin-top:2px;">
+              Expires 12/26 &nbsp;|&nbsp;
+              <span class="StateBadge--e9f0g1" _ngcontent-bank-c3 style="background:#d4edda;color:#155724;">Active</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;" _ngcontent-bank-c3>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">Freeze card</button>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">Report lost</button>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">PIN reminder</button>
+          </div>
+        </div>
+      </div>
+      <div class="CardItem--a3b4c5" _ngcontent-bank-c3>
+        <div style="display:flex;justify-content:space-between;align-items:center;" _ngcontent-bank-c3>
+          <div _ngcontent-bank-c3>
+            <div _ngcontent-bank-c3 style="font-weight:600;font-size:15px;">Virtual Card ••0077</div>
+            <div _ngcontent-bank-c3 style="font-size:12px;color:#666;margin-top:2px;">
+              Expires 03/26 &nbsp;|&nbsp;
+              <span class="StateBadge--e9f0g1" _ngcontent-bank-c3 style="background:#d4edda;color:#155724;">Active</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;" _ngcontent-bank-c3>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">Freeze card</button>
+            <button type="button" _ngcontent-bank-c3 class="btn-outline">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transaction History -->
+    <section _ngcontent-bank-c3>
+      <h2 _ngcontent-bank-c3>Transaction History</h2>
+      <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;" _ngcontent-bank-c3>
+        <!-- t_05: input[type="text"] - signals: placeholder -->
+        <input type="text" placeholder="Search transactions"
+               class="FilterTx--b6c7d8" _ngcontent-bank-c3 data-oracle-id="t_05"
+               style="flex:1;min-width:160px;" />
+        <!-- t_08: select[aria-label="Filter transactions by type"] - signals: aria-label -->
+        <select aria-label="Filter transactions by type"
+                class="FilterTx--b6c7d8" _ngcontent-bank-c3 data-oracle-id="t_08">
+          <option value="" _ngcontent-bank-c3>All types</option>
+          <option value="debit" _ngcontent-bank-c3>Debit</option>
+          <option value="credit" _ngcontent-bank-c3>Credit</option>
+          <option value="transfer" _ngcontent-bank-c3>Transfer</option>
+          <option value="dd" _ngcontent-bank-c3>Direct Debit</option>
+        </select>
+        <select class="FilterTx--b6c7d8" _ngcontent-bank-c3>
+          <option _ngcontent-bank-c3>Last 30 days</option>
+          <option _ngcontent-bank-c3>Last 90 days</option>
+          <option _ngcontent-bank-c3>This year</option>
+          <option _ngcontent-bank-c3>All time</option>
+        </select>
+        <button type="button" _ngcontent-bank-c3
+                style="padding:7px 14px;border:1px solid #ccc;background:#fff;border-radius:4px;cursor:pointer;font-size:14px;">
+          Export CSV
+        </button>
+      </div>
+      <table _ngcontent-bank-c3>
+        <thead _ngcontent-bank-c3>
+          <tr _ngcontent-bank-c3>
+            <th _ngcontent-bank-c3>Date</th>
+            <th _ngcontent-bank-c3>Description</th>
+            <th _ngcontent-bank-c3>Amount</th>
+            <th _ngcontent-bank-c3>Balance</th>
+            <th _ngcontent-bank-c3>Type</th>
+            <th _ngcontent-bank-c3>Reference</th>
+            <th _ngcontent-bank-c3>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tx-tbody" _ngcontent-bank-c3>
+        </tbody>
+      </table>
+      <div _ngcontent-bank-c3 style="margin-top:12px;text-align:center;">
+        <button type="button" _ngcontent-bank-c3
+                style="padding:8px 20px;border:1px solid #1a2e5a;background:#fff;color:#1a2e5a;border-radius:4px;cursor:pointer;font-size:14px;">
+          Load more
+        </button>
+      </div>
+    </section>
+
+  </div><!-- /.page-wrap -->
+
+  <footer _ngcontent-bank-c3>
+    <span _ngcontent-bank-c3>NorthVault Bank plc — Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority (FRN 123456)</span>
+    <br _ngcontent-bank-c3>
+    <a href="/privacy" _ngcontent-bank-c3>Privacy Policy</a>
+    <a href="/cookies" _ngcontent-bank-c3>Cookie Policy</a>
+    <a href="/terms" _ngcontent-bank-c3>Terms of Use</a>
+    <a href="/accessibility" _ngcontent-bank-c3>Accessibility</a>
+    <a href="/security" _ngcontent-bank-c3>Security</a>
+  </footer>
+
+  <script>
+    var A = '_ngcontent-bank-c3';
+    var descs = [
+      'Tesco Supermarket', 'Amazon Prime', 'Netflix Subscription', 'Council Tax DD',
+      'Salary — TechCorp Ltd', 'Costa Coffee', 'TfL Oyster Top-up', 'Gym Membership',
+      'Mortgage DD — Halifax', 'Utility Bill — British Gas', 'Spotify Premium', 'PayPal Transfer',
+      'John Lewis Purchase', 'Ocado Grocery Delivery', 'Apple iCloud+', 'BT Broadband DD',
+      'Dentist — Crown Dental', 'Waitrose Supermarket', 'NCP Parking', 'Vodafone DD',
+      'HMRC Self Assessment', 'Amazon Purchase', 'Uber', 'Just Eat',
+      'Deliveroo', 'Marks & Spencer', 'Sainsbury\'s', 'IKEA Purchase',
+      'Boots Pharmacy', 'Sky Sports DD'
+    ];
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var types = ['Debit','Credit','Transfer','Direct Debit','Standing Order'];
+    var statuses = ['Completed','Completed','Completed','Pending'];
+    var tbody = document.getElementById('tx-tbody');
+    var balance = 12450.00;
+    for (var i = 1; i <= 300; i++) {
+      var tr = document.createElement('tr');
+      tr.className = 'TransRow--s7t8u9';
+      tr.setAttribute(A, '');
+      if (i === 5) { tr.setAttribute('data-oracle-id', 't_10'); }
+      var isCredit = (i % 7 === 0 || i % 13 === 0);
+      var amount = parseFloat(((i * 13.7 % 195) + 4.50).toFixed(2));
+      balance = isCredit ? balance + amount : balance - amount;
+      var day = ((i - 1) % 28) + 1;
+      var month = months[Math.floor((i - 1) / 25) % 12];
+      var desc = descs[(i - 1) % descs.length];
+      var type = isCredit ? 'Credit' : types[i % 4];
+      var cells = [
+        month + ' ' + (day < 10 ? '0' : '') + day + ', 2024',
+        desc,
+        (isCredit ? '+£' : '-£') + amount.toFixed(2),
+        '£' + Math.abs(balance).toFixed(2),
+        type,
+        'REF' + String(i).padStart(6, '0'),
+        statuses[i % statuses.length]
+      ];
+      for (var j = 0; j < cells.length; j++) {
+        var td = document.createElement('td');
+        td.setAttribute(A, '');
+        td.textContent = cells[j];
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+  </script>
+
+</body>
+</html>

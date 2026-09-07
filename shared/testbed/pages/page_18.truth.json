@@ -1,0 +1,108 @@
+{
+  "page_id": "page_18",
+  "group": "G5",
+  "shadow": "S2",
+  "semantic_density": "high",
+  "size_tier": "large",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": ["kanban-shell-f3g4h5"],
+    "volatile_classes": [
+      "KanbanCard_root__a1b2c3",
+      "KanbanCard_priority__j0k1l2",
+      "KanbanPanel_cardCount__e5f6g7",
+      "KanbanCard_menu__h4i5j6"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the button that opens the form to create a new task card",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button in light DOM toolbar with data-testid='new-card-btn' and aria-label='Create new task card'; KanbanCard CSS module classes are volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the input that filters or searches the tasks on the board",
+      "signal_attrs": ["aria-label", "id", "name"],
+      "expected_stable_signal": "input in light DOM board toolbar with id='board-filter', name='filter', and aria-label='Filter board tasks'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the priority badge on the first card in the To Do column",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span in light DOM card with class KanbanCard_priority__j0k1l2 only; text 'High' appears 50+ times across cards; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that quickly adds a new card to the In Progress column",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button inside kanban-shell shadow root (level-1) with aria-label='Quick-add card to In Progress'; no data-testid; KanbanPanel_addBtn__w9x0y1 class is volatile"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the dropdown that controls how cards on the board are sorted",
+      "signal_attrs": ["aria-label", "name"],
+      "expected_stable_signal": "select inside kanban-shell shadow root (level-1) with aria-label='Sort cards by' and name='sort_by'; KanbanPanel_sortSel__d7e8f9 class is volatile"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the badge that shows the total number of cards on the board",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span inside kanban-shell shadow root (level-1) with class KanbanPanel_cardCount__e5f6g7 only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the title input field in the card editor panel",
+      "signal_attrs": ["id", "name"],
+      "expected_stable_signal": "input inside card-editor shadow root (level-2) with id='card-title' and name='title'; type=text"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the dropdown that assigns a team member to the card being edited",
+      "signal_attrs": ["aria-label", "name", "id"],
+      "expected_stable_signal": "select inside card-editor shadow root (level-2) with aria-label='Assign to team member' and name='assignee'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the due date input in the card editor",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input[type=date] inside card-editor shadow root (level-2) with placeholder='YYYY-MM-DD'; no id, no aria-label, no data-testid; stable discriminators are placeholder (semantic-textual) and structural type='date'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S2",
+      "intent": "Find the button that saves changes made to a card in the editor",
+      "signal_attrs": ["aria-label", "data-testid"],
+      "expected_stable_signal": "button inside card-editor shadow root (level-2) with aria-label='Save card changes' and data-testid='save-card-btn'"
+    }
+  ]
+}

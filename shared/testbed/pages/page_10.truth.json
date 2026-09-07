@@ -1,0 +1,108 @@
+{
+  "page_id": "page_10",
+  "group": "G3",
+  "shadow": "S1",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": [
+      "gallery-next--a1b2c3",
+      "rating-widget--d4e5f6"
+    ],
+    "volatile_classes": [
+      "data-v-7ba5bd90",
+      "data-v-2c3d4e5f",
+      "data-v-a1b2c3d4",
+      "data-v-f5e4d3c2",
+      "data-v-9b8a7c6d",
+      "data-v-c1d2e3f4",
+      "data-v-8b7c6d5e",
+      "data-v-1a2b3c4d"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "intent": "Find the date input for selecting the check-in date in the booking widget",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='check_in' inside the shadow DOM of the booking-date-picker custom element (sole stable signal); F0–F3 DOM walk cannot cross the shadow boundary and will produce observation_lacked_stable_signal; F4 ARIA snapshot crosses the shadow root natively",
+      "signal_attrs": ["name", "id"]
+    },
+    {
+      "id": "t_02",
+      "intent": "Find the date input for selecting the check-out date in the booking widget",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='check_out' inside the shadow DOM (sole stable signal); same shadow boundary constraint as t_01",
+      "signal_attrs": ["name", "id"]
+    },
+    {
+      "id": "t_03",
+      "intent": "Find the button that searches for available rooms with the selected dates",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "expected_stable_signal": "button with aria-label='Search availability' inside the shadow DOM (sole stable signal); same shadow boundary constraint as t_01",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_04",
+      "intent": "Find the selector that lets you specify how many guests will be staying",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with name='guests' in the light DOM (sole stable signal); no aria-label, no data-testid",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_05",
+      "intent": "Find the control that lets you choose the type of room you want to book",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with aria-label='Select room type' in the light DOM (sole stable signal); no data-testid, no name",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_06",
+      "intent": "Find the primary booking button that confirms and books the selected room",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "expected_stable_signal": "button with data-testid='book-now-btn' (sole stable signal); no aria-label beyond button text",
+      "signal_attrs": ["data-testid"]
+    },
+    {
+      "id": "t_07",
+      "intent": "Find the checkbox that adds breakfast to your room booking",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input type=checkbox with name='breakfast_included' (sole stable signal); no aria-label, no data-testid",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_08",
+      "intent": "Find the star-rating filter that lets you limit rooms by their star category",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with aria-label='Filter by star rating' (sole stable signal); no data-testid, no name",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_09",
+      "intent": "Find the link to the form where you can submit a new customer review",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "expected_stable_signal": "anchor with data-testid='write-review-link' (sole stable signal); no aria-label",
+      "signal_attrs": ["data-testid", "href"]
+    },
+    {
+      "id": "t_10",
+      "intent": "Find the button that advances the hotel photo gallery to the next image",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name; id 'gallery-next--a1b2c3' is volatile; class includes only volatile Vue scope marker 'data-v-7ba5bd90'; failure classification: insufficient",
+      "signal_attrs": []
+    }
+  ]
+}

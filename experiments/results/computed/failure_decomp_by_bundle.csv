@@ -1,0 +1,8 @@
+bundle,total_fail,lacked_n,lacked_pct,grabbed_n,grabbed_pct,grabbed_of_all_pct,unreachable_n
+B_full,434,192,44.2,242,55.8,25.2,0
+B_noVolatile,343,192,56.0,151,44.0,15.7,0
+B_noState,431,192,44.5,239,55.5,24.9,0
+B_noSemantic,621,472,76.0,149,24.0,15.5,0
+B_identityCore,580,528,91.0,52,9.0,5.4,0
+B_minimalCore,960,960,100.0,0,0.0,0.0,0
+B_playwrightMCP,127,48,37.8,79,62.2,32.9,0

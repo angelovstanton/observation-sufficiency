@@ -1,0 +1,108 @@
+{
+  "page_id": "page_16",
+  "group": "G4",
+  "shadow": "S1",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": ["chat-widget-n4o5p6"],
+    "volatile_classes": [
+      "HelpSearch--b2c3d4",
+      "ArticleCard--e5f6g7",
+      "HelpRating--f3g4h5",
+      "ChatClose--m4n5o6",
+      "HelpCta--c8d9e0",
+      "CallbackForm--j0k1l2",
+      "ChatBtn--h8i9j0",
+      "ChatWidget--p7q8r9"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the search field at the top of the help centre where you type words to find articles",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='help-search' and aria-label='Search for help articles'; React hashed class HelpSearch--b2c3d4 is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the link that opens the first article in the search results",
+      "signal_attrs": ["data-testid", "href"],
+      "expected_stable_signal": "anchor with data-testid='article-card-001'; React class ArticleCard--e5f6g7 is volatile"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the navigation link that takes you to the Account and Billing help category",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with aria-label='View Account and Billing articles'; no data-testid; sole stable signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the article helpfulness rating widget below the first article card",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class HelpRating--f3g4h5 only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the link that navigates to the Contact Us page",
+      "signal_attrs": ["href"],
+      "expected_stable_signal": "anchor with href='/contact'; no aria-label, no data-testid; href is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the button that submits the help article search query",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Submit help search'; no data-testid; sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the email field in the callback request form",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input with placeholder='Your email address'; no id, no name, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the chat panel that starts a live chat session with support",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button inside chat-widget shadow root with aria-label='Start a live chat session'; sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the text input inside the chat panel where you type your support message",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "input inside chat-widget shadow root with data-testid='chat-input' and aria-label='Type your support message'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the chat widget that closes or dismisses the chat panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — button inside chat-widget shadow root with class ChatClose--m4n5o6 only; no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

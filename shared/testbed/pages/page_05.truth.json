@@ -1,0 +1,108 @@
+{
+  "page_id": "page_05",
+  "group": "G2",
+  "shadow": "S0",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": [
+      "hero-cta--f3a2b1",
+      "map-toggle--e9d8c7"
+    ],
+    "volatile_classes": [
+      "SearchBar--a3f2c1",
+      "PropertyCard--b4e7d9",
+      "FavBtn--c8a1f0",
+      "PriceRange--9e3b2a",
+      "SortDropdown--7c6b5a",
+      "FilterChip--4d3e2f",
+      "Pagination--1a9b8c",
+      "ResultCount--6e5f4d"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "intent": "Find the main location search field where you type a city or postcode to search for properties",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='location' and placeholder='Enter city or postcode' (both stable); the navigation bar also has a search input but it lacks name='location', making the main search bar uniquely identifiable by name",
+      "signal_attrs": ["name", "placeholder"]
+    },
+    {
+      "id": "t_02",
+      "intent": "Find the minimum price input in the property price range filter",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='price_min' (sole stable signal); no aria-label, no data-testid — low-semantic page design",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_03",
+      "intent": "Find the maximum price input in the property price range filter",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='price_max' (sole stable signal); no aria-label, no data-testid",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_04",
+      "intent": "Find the bedrooms filter dropdown that lets you narrow results by number of bedrooms",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with name='bedrooms' (sole stable signal); no aria-label, no data-testid",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_05",
+      "intent": "Find the listing link for the property at 14 Elmwood Close in the search results",
+      "oracle": "t_05",
+      "is_ambiguous": true,
+      "expected_stable_signal": "anchor with data-testid='property-card-1' (sole stable signal); 20 property card links are on the page sharing identical class structure — only data-testid and visible address text distinguish each card",
+      "signal_attrs": ["data-testid", "href"]
+    },
+    {
+      "id": "t_06",
+      "intent": "Find the save button on the second property listed in the search results",
+      "oracle": "t_06",
+      "is_ambiguous": true,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only distinguishing attribute is volatile class 'FavBtn--c8a1f0' shared by all 20 save buttons; failure classification: insufficient",
+      "signal_attrs": []
+    },
+    {
+      "id": "t_07",
+      "intent": "Find the dropdown control that changes how the property search results are sorted",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with aria-label='Sort results by' (sole stable signal); no data-testid, no name",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_08",
+      "intent": "Find the button that navigates to the next page of property results",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "expected_stable_signal": "button with aria-label='Next page' (sole stable signal); no data-testid, no id",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_09",
+      "intent": "Find the element that displays how many properties matched the current search",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only volatile class 'ResultCount--6e5f4d'; failure classification: insufficient",
+      "signal_attrs": []
+    },
+    {
+      "id": "t_10",
+      "intent": "Find the filter button that restricts the property results to show only houses",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only volatile class 'FilterChip--4d3e2f' shared by all filter chips; visible text 'Houses' is present but is text content, not a structured attribute; failure classification: insufficient",
+      "signal_attrs": []
+    }
+  ]
+}

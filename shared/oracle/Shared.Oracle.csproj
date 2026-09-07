@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Playwright" Version="1.60.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- IsBemBaseOfVolatile is internal (visibility-only change; the frozen predicate
+         logic is unchanged). Observation delegates to it after the Phase 3 §5c dedup,
+         and the oracle tests exercise it directly. -->
+    <InternalsVisibleTo Include="Shared.Harness" />
+    <InternalsVisibleTo Include="Oracle.Tests" />
+  </ItemGroup>
+
+</Project>

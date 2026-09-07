@@ -1,0 +1,96 @@
+{
+  "page_id": "page_02",
+  "group": "G1",
+  "shadow": "S0",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["faq-item-a1b2c3"],
+    "volatile_classes": ["_ngcontent-gov-c42"]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the field where you enter your application reference number to check its status",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='application-ref' and aria-label='Application reference number'; Angular _ngcontent-gov-c42 scope attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the button that checks whether you qualify for housing benefit",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='check-eligibility-btn' and aria-label='Check benefit eligibility'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the field where you enter your National Insurance number",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input with id='ni-number' and aria-label='National Insurance number'"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the selector that lets you choose the type of benefit you are applying for",
+      "signal_attrs": ["id", "name", "data-testid"],
+      "expected_stable_signal": "select with id='benefit-type', name='benefit_type', and data-testid='benefit-type-select'"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the button that lets you upload your supporting documents",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Upload supporting documents for your application'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the button that submits your housing benefit application",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='submit-application-btn'"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "intent": "Find the link that lets you download the SA-2024 application form",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor with href='/forms/benefits-SA2024.pdf' and aria-label='Download SA-2024 application form PDF'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the element that shows the current processing status of your housing benefit application",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "div with data-testid='application-status-tracker' and aria-label='Your application status'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the checkbox that subscribes you to email updates about Housing Benefit changes",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "input[type=checkbox] with id='benefit-updates-sub' and aria-label='Subscribe to benefit update notifications'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "intent": "Find the button that expands the FAQ item about how long it takes to process an application",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — volatile id faq-item-a1b2c3 and Angular _ngcontent-gov-c42 scope attr only; no aria-label, no data-testid, no stable id on this element; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "page_id": "page_15",
+  "group": "G4",
+  "shadow": "S1",
+  "semantic_density": "low",
+  "size_tier": "standard",
+  "fingerprint_variant": "A",
+
+  "volatility_labels": {
+    "volatile_ids": ["filter-sidebar-d3e4f5"],
+    "volatile_classes": [
+      "JobCard__listing___Ng3aB",
+      "SalaryBadge__label___Kv2zR",
+      "FilterChip__tag___Qf4mW",
+      "ApplyBtn__cta___P9xLm",
+      "LocationInput__field___Jn8kP",
+      "_ngcontent-jb-c15",
+      "_nghost-jb-c15"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the main search field where you type job titles or keywords to find matching listings",
+      "signal_attrs": ["id", "name", "aria-label"],
+      "expected_stable_signal": "input with id='job-search', name='keywords', and aria-label='Search job titles or keywords'; Angular _ngcontent-jb-c15 attr is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the field where you enter a city or postcode to narrow results by location",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input with placeholder='City or postcode'; no id, no name, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the link that opens the first job listing in the search results",
+      "signal_attrs": ["data-testid", "href"],
+      "expected_stable_signal": "anchor with data-testid='job-card-001'; Angular volatile class is not a stable signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the salary range badge on the first job card",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — span with class SalaryBadge__label___Kv2zR only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the dropdown that changes the order in which job listings are displayed",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "select with aria-label='Sort listings by'; no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the button that begins the application for the first job in the results list",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "button with aria-label='Apply for Software Engineer position at TechCorp'; sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the checkbox inside the filter panel that restricts results to full-time positions only",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=checkbox] inside filter-sidebar shadow root with aria-label='Show full-time jobs only'; sole stable signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the input inside the filter panel where you set the minimum acceptable salary",
+      "signal_attrs": ["name", "aria-label"],
+      "expected_stable_signal": "input inside filter-sidebar shadow root with name='salary_min' and aria-label='Minimum salary'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the filter panel that applies the chosen filters to the job listings",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside filter-sidebar shadow root with data-testid='apply-filters-btn' and aria-label='Apply selected filters'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the active filter tag chip currently shown inside the filter panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside filter-sidebar shadow root with class FilterChip__tag___Qf4mW only; no aria-label, no data-testid; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "page_id": "page_13",
+  "group": "G4",
+  "shadow": "S1",
+  "semantic_density": "low",
+  "size_tier": "large",
+  "fingerprint_variant": "V",
+
+  "volatility_labels": {
+    "volatile_ids": ["analytics-filter-c8d9e0"],
+    "volatile_classes": [
+      "MetricCard--q1r2s3",
+      "ChartBlock--t7u8v9",
+      "PeriodBtn--x7y8z9",
+      "TableRow--d4e5f6",
+      "FilterChip--a1b2c3",
+      "UserSearch--q2r3s4",
+      "data-v-4a5b6c"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the search field at the top of the page where you type to filter the rows in the data table",
+      "signal_attrs": ["name", "aria-label"],
+      "expected_stable_signal": "input with name='table_filter' and aria-label='Filter dashboard data'; Vue scope attr data-v-4a5b6c is volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "intent": "Find the date input that sets the start of the reporting period",
+      "signal_attrs": ["id", "name"],
+      "expected_stable_signal": "input with id='date-from' and name='date_from'; aria-label is secondary but id+name are the authoritative stable signals"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "intent": "Find the container bar holding the quick period-selector buttons (Today, 7d, 30d, 90d)",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div with class PeriodBtn--x7y8z9 only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "intent": "Find the date input that sets the end of the reporting period",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input with aria-label='End date for report range'; no id, no data-testid; aria-label is the sole stable signal"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "intent": "Find the link that downloads the current dashboard view as a CSV file",
+      "signal_attrs": ["data-testid", "href"],
+      "expected_stable_signal": "anchor with data-testid='export-csv' and href='/export?fmt=csv'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "intent": "Find the input field where you type a name or email address to look up a specific user",
+      "signal_attrs": ["placeholder"],
+      "expected_stable_signal": "input with placeholder='Search by user name or email'; no id, no name, no aria-label; placeholder is the sole stable signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the dropdown inside the filter panel that selects a pre-set date range",
+      "signal_attrs": ["aria-label", "id"],
+      "expected_stable_signal": "select inside analytics-filter shadow root with aria-label='Date range preset'; sole stable signal"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the toggle inside the filter panel that shows or hides the Revenue metric on the chart",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "input[type=checkbox] inside analytics-filter shadow root with aria-label='Toggle Revenue metric visibility'; sole stable signal"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button inside the filter panel that exports the dashboard as a PDF report",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside analytics-filter shadow root with data-testid='export-pdf-btn' and aria-label='Export dashboard as PDF'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the active filter chip element inside the filter panel",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside analytics-filter shadow root with class FilterChip--a1b2c3 only; no aria-label, no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    }
+  ]
+}

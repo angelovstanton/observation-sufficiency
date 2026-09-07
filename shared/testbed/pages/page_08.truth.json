@@ -1,0 +1,109 @@
+{
+  "page_id": "page_08",
+  "group": "G2",
+  "shadow": "S0",
+  "semantic_density": "low",
+  "size_tier": "extreme",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": [
+      "promo-banner--f1e2d3",
+      "sticky-cart--b2c3d4"
+    ],
+    "volatile_classes": [
+      "ProductCard--b4e7d9",
+      "BtnCart--e8f9a0",
+      "WishlistBtn--c8a1f0",
+      "SearchBar--a3f2c1",
+      "SortSelect--7c6b5a",
+      "FilterChip--4d3e2f",
+      "Pagination--1a9b8c",
+      "ResultCount--6e5f4d",
+      "SidebarFilter--2b3c4d"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "intent": "Find the main product search input at the top of the page",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='q' and aria-label='Search products' (both stable; either independently sufficient)",
+      "signal_attrs": ["name", "aria-label"]
+    },
+    {
+      "id": "t_02",
+      "intent": "Find the checkbox that filters the category to show only laptops",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input type=checkbox with name='category-laptops' (sole stable signal); no aria-label, no data-testid",
+      "signal_attrs": ["name"]
+    },
+    {
+      "id": "t_03",
+      "intent": "Find the minimum price input in the price range filter",
+      "oracle": "t_03",
+      "is_ambiguous": false,
+      "expected_stable_signal": "input with name='price_min' and aria-label='Minimum price' (both stable)",
+      "signal_attrs": ["name", "aria-label"]
+    },
+    {
+      "id": "t_04",
+      "intent": "Find the dropdown control that changes how the product results are sorted",
+      "oracle": "t_04",
+      "is_ambiguous": false,
+      "expected_stable_signal": "select with name='sort_by' and aria-label='Sort by' (both stable)",
+      "signal_attrs": ["name", "aria-label"]
+    },
+    {
+      "id": "t_05",
+      "intent": "Find the desktop Add to cart button for the ALPHA-500 laptop, the first product shown in the results",
+      "oracle": "t_05",
+      "is_ambiguous": true,
+      "expected_stable_signal": "button with data-testid='add-to-cart-ALPHA-500' on the desktop CTA (d-none d-md-block wrapper) — sole stable signal; the mobile CTA duplicate has a different class but no data-testid; 49 other product cards have identically structured add-to-cart buttons",
+      "signal_attrs": ["data-testid"]
+    },
+    {
+      "id": "t_06",
+      "intent": "Find the desktop Add to cart button for the BETA-200 laptop",
+      "oracle": "t_06",
+      "is_ambiguous": true,
+      "expected_stable_signal": "button with data-testid='add-to-cart-BETA-200' on the desktop CTA (sole stable signal); same responsive-duplication structure as t_05",
+      "signal_attrs": ["data-testid"]
+    },
+    {
+      "id": "t_07",
+      "intent": "Find the wishlist button on the ALPHA-500 laptop product card",
+      "oracle": "t_07",
+      "is_ambiguous": true,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only volatile class 'WishlistBtn--c8a1f0' shared by all 50 product wishlists; failure classification: insufficient",
+      "signal_attrs": []
+    },
+    {
+      "id": "t_08",
+      "intent": "Find the product card link for the GAMMA-900 laptop in the results grid",
+      "oracle": "t_08",
+      "is_ambiguous": true,
+      "expected_stable_signal": "anchor with data-testid='product-link-GAMMA-900' (sole stable signal); 50 identical-structure product card anchors on page; disambiguated by data-testid encoding the product name",
+      "signal_attrs": ["data-testid"]
+    },
+    {
+      "id": "t_09",
+      "intent": "Find the button that goes to the next page of product search results",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "expected_stable_signal": "button with aria-label='Next page' (sole stable signal); no data-testid, no name",
+      "signal_attrs": ["aria-label"]
+    },
+    {
+      "id": "t_10",
+      "intent": "Find the element showing the total number of products matching the search",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "expected_stable_signal": "NONE — no aria-label, no data-testid, no name, no stable id; only volatile class 'ResultCount--6e5f4d'; failure classification: insufficient",
+      "signal_attrs": []
+    }
+  ]
+}

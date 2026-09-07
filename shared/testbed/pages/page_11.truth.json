@@ -1,0 +1,115 @@
+{
+  "page_id": "page_11",
+  "group": "G3",
+  "shadow": "S1",
+  "semantic_density": "high",
+  "size_tier": "standard",
+  "fingerprint_variant": "R",
+
+  "volatility_labels": {
+    "volatile_ids": ["plan-session-b2c3d4"],
+    "volatile_classes": [
+      "PlanCard--a3b4c5",
+      "PlanSelector--d6e7f8",
+      "PlanBadge--g9h0i1",
+      "PlanCta--j2k3l4",
+      "DataLimit--m5n6o7",
+      "NavBar--c8d9e0",
+      "CurrentPlanBanner--f1g2h3",
+      "PageHeader--i4j5k6",
+      "BillingToggleRow--l7m8n9",
+      "ActionBar--o0p1q2",
+      "SiteFooter--r3s4t5"
+    ]
+  },
+
+  "targets": [
+    {
+      "id": "t_01",
+      "oracle": "t_01",
+      "is_ambiguous": false,
+      "intent": "Find the element that shows which mobile plan you are currently subscribed to",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "span with data-testid='current-plan-label' and aria-label='Your current plan: Basic'; React hashed classes are volatile"
+    },
+    {
+      "id": "t_02",
+      "oracle": "t_02",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the button that selects the Basic mobile plan",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside plan-comparison-widget shadow root with data-testid='select-basic-btn' and aria-label='Select Basic plan for £9.99 per month'"
+    },
+    {
+      "id": "t_03",
+      "oracle": "t_03",
+      "is_ambiguous": true,
+      "in_shadow": "S1",
+      "intent": "Find the button that selects the Plus mobile plan",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside plan-comparison-widget shadow root with data-testid='select-plus-btn' and aria-label='Select Plus plan for £19.99 per month'; ambiguous because three Select buttons exist"
+    },
+    {
+      "id": "t_04",
+      "oracle": "t_04",
+      "is_ambiguous": true,
+      "in_shadow": "S1",
+      "intent": "Find the button that selects the Pro mobile plan",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button inside plan-comparison-widget shadow root with data-testid='select-pro-btn' and aria-label='Select Pro plan for £39.99 per month'; ambiguous because three Select buttons exist"
+    },
+    {
+      "id": "t_05",
+      "oracle": "t_05",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the element that displays the Basic plan monthly price",
+      "signal_attrs": ["aria-label"],
+      "expected_stable_signal": "element inside plan-comparison-widget shadow root with aria-label='Basic plan price: £9.99 per month'"
+    },
+    {
+      "id": "t_06",
+      "oracle": "t_06",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the badge that marks the Plus plan as the most popular option",
+      "signal_attrs": [],
+      "expected_stable_signal": "NONE — div inside plan-comparison-widget shadow root with class PlanBadge--g9h0i1 only; no aria-label (aria-hidden=true), no data-testid, no stable id; failure classification: observation_lacked_stable_signal"
+    },
+    {
+      "id": "t_07",
+      "oracle": "t_07",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the link that takes enterprise customers to the sales contact page",
+      "signal_attrs": ["aria-label", "href"],
+      "expected_stable_signal": "anchor inside plan-comparison-widget shadow root with href='/contact-sales' and aria-label='Contact sales for Enterprise pricing'"
+    },
+    {
+      "id": "t_08",
+      "oracle": "t_08",
+      "is_ambiguous": false,
+      "intent": "Find the button that opens the full plan feature comparison table",
+      "signal_attrs": ["data-testid"],
+      "expected_stable_signal": "button with data-testid='compare-all-plans-btn'"
+    },
+    {
+      "id": "t_09",
+      "oracle": "t_09",
+      "is_ambiguous": false,
+      "intent": "Find the toggle that switches between monthly and annual billing",
+      "signal_attrs": ["data-testid", "aria-label"],
+      "expected_stable_signal": "button with data-testid='billing-toggle' and aria-label='Toggle between monthly and annual billing'"
+    },
+    {
+      "id": "t_10",
+      "oracle": "t_10",
+      "is_ambiguous": false,
+      "in_shadow": "S1",
+      "intent": "Find the element that shows the data allowance included in the Plus plan",
+      "signal_attrs": ["id", "aria-label"],
+      "expected_stable_signal": "element inside plan-comparison-widget shadow root with id='plus-data-allowance' and aria-label='Data allowance for Plus plan'"
+    }
+  ]
+}

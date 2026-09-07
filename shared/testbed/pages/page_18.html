@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Kanban Board</title>
+  <style>
+    :root{--brand:#5c6bc0;--brand-dark:#3949ab;--text:#1a1a2e;--border:#e0e0e0;--bg:#f4f5f7;--col-bg:#ebecf0;--card:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--text);background:var(--bg);min-height:100vh;display:flex;flex-direction:column}
+    .AppHeader_root__n1o2p3{background:var(--brand-dark);height:52px;display:flex;align-items:center;padding:0 20px;justify-content:space-between;flex-shrink:0}
+    .AppHeader_logo__q4r5s6{color:#fff;font-size:18px;font-weight:800;text-decoration:none}
+    .AppHeader_nav__t7u8v9{display:flex;gap:16px;align-items:center}
+    .AppHeader_navLink__w0x1y2{color:rgba(255,255,255,.8);font-size:13px;text-decoration:none}
+    .AppHeader_avatar__z3a4b5{width:32px;height:32px;border-radius:50%;background:#7986cb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+    .BoardToolbar_root__c2d3e4{background:#fff;border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .BoardToolbar_title__f5g6h7{font-size:15px;font-weight:700;color:var(--brand-dark);flex:1}
+    .BoardToolbar_btnGroup__r7s8t9{display:flex;gap:8px;align-items:center}
+    .BoardToolbar_filterInput__l1m2n3{height:36px;border:2px solid var(--border);border-radius:6px;padding:0 10px;font-size:13px;width:220px}
+    .BoardToolbar_filterInput__l1m2n3:focus{border-color:var(--brand);outline:none}
+    .BoardToolbar_iconBtn__u0v1w2{background:#fff;border:1px solid var(--border);border-radius:6px;padding:0 12px;height:36px;font-size:13px;cursor:pointer}
+    .BoardToolbar_newBtn__o4p5q6{background:var(--brand);color:#fff;border:none;padding:0 16px;height:36px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer}
+    .Board_root__x3y4z5{display:flex;gap:14px;padding:16px 20px;flex:1;align-items:flex-start;overflow-x:auto}
+    .KanbanCol_root__l1m2n3{background:var(--col-bg);border-radius:8px;width:300px;min-width:300px;display:flex;flex-direction:column}
+    .KanbanCol_header__o4p5q6{padding:12px 14px 8px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid rgba(0,0,0,.06)}
+    .KanbanCol_title__r7s8t9{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#5a5a6e}
+    .KanbanCol_count__u0v1w2{background:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;color:#5a5a6e}
+    .KanbanCol_body__a1b2c3{padding:8px;display:flex;flex-direction:column;gap:8px}
+    .KanbanCard_root__a1b2c3{background:var(--card);border-radius:6px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.08);cursor:pointer}
+    .KanbanCard_header__d4e5f6{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+    .KanbanLabel_chip__g7h8i9{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;background:#e8eaf6;color:var(--brand)}
+    .KanbanCard_priority__j0k1l2{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:auto;background:#fce4ec;color:#c62828}
+    .KanbanCard_priority__j0k1l2.medium{background:#fff8e1;color:#e65100}
+    .KanbanCard_priority__j0k1l2.low{background:#e8f5e9;color:#2e7d32}
+    .KanbanCard_priority__j0k1l2.critical{background:#f3e5f5;color:#6a1b9a}
+    .KanbanCard_title__m3n4o5{font-size:13px;font-weight:600;margin-bottom:4px;line-height:1.3}
+    .KanbanCard_desc__p6q7r8{font-size:12px;color:#6e6e82;margin-bottom:8px;line-height:1.4}
+    .KanbanCard_footer__s9t0u1{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .KanbanCard_assignee__v2w3x4{font-size:11px;color:#6e6e82;background:#f0f0f5;border-radius:10px;padding:2px 7px}
+    .KanbanCard_due__y5z6a7{font-size:11px;color:#8a8a9a;margin-left:auto}
+    .KanbanCard_menu__h4i5j6{background:none;border:none;cursor:pointer;color:#9e9eb4;font-size:16px;padding:2px 4px;border-radius:4px}
+    .KanbanCard_tags__b8c9d0{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px;width:100%}
+    .KanbanCard_tag__e1f2g3{font-size:10px;color:#7986cb;background:#e8eaf6;padding:1px 5px;border-radius:4px}
+    kanban-shell{display:block}
+    .AppFooter_root__c3d4e5{background:#fff;border-top:1px solid var(--border);padding:10px 20px;font-size:12px;color:#9e9eb4;text-align:center;flex-shrink:0}
+  </style>
+</head>
+<body>
+
+<!-- targets: see pages/page_18.truth.json -->
+
+<header class="AppHeader_root__n1o2p3">
+  <a class="AppHeader_logo__q4r5s6" href="/">TaskFlow</a>
+  <nav class="AppHeader_nav__t7u8v9" aria-label="Main navigation">
+    <a class="AppHeader_navLink__w0x1y2" href="/boards">Boards</a>
+    <a class="AppHeader_navLink__w0x1y2" href="/backlog">Backlog</a>
+    <a class="AppHeader_navLink__w0x1y2" href="/reports">Reports</a>
+    <a class="AppHeader_navLink__w0x1y2" href="/settings">Settings</a>
+    <div class="AppHeader_avatar__z3a4b5" role="button" tabindex="0" aria-label="User menu">AS</div>
+  </nav>
+</header>
+
+<div class="BoardToolbar_root__c2d3e4">
+  <span class="BoardToolbar_title__f5g6h7">Project Alpha — Sprint 14</span>
+  <div class="BoardToolbar_btnGroup__r7s8t9">
+    <!-- t_02: input#board-filter - signals: aria-label, id, name -->
+    <input
+      class="BoardToolbar_filterInput__l1m2n3"
+      id="board-filter"
+      data-oracle-id="t_02"
+      type="search"
+      name="filter"
+      aria-label="Filter board tasks"
+      placeholder="Search tasks…">
+    <button class="BoardToolbar_iconBtn__u0v1w2" type="button" aria-label="Filter by label">Labels</button>
+    <button class="BoardToolbar_iconBtn__u0v1w2" type="button" aria-label="Filter by assignee">Assignee</button>
+    <!-- t_01: button[new-card-btn] - signals: data-testid, aria-label -->
+    <button
+      class="BoardToolbar_newBtn__o4p5q6"
+      type="button"
+      data-testid="new-card-btn"
+      data-oracle-id="t_01"
+      aria-label="Create new task card">+ New Card</button>
+  </div>
+</div>
+
+<div class="Board_root__x3y4z5">
+  <div class="KanbanCol_root__l1m2n3">
+    <div class="KanbanCol_header__o4p5q6">
+      <span class="KanbanCol_title__r7s8t9">To Do</span>
+      <span class="KanbanCol_count__u0v1w2">70</span>
+    </div>
+    <div class="KanbanCol_body__a1b2c3" id="col-todo"></div>
+  </div>
+  <div class="KanbanCol_root__l1m2n3">
+    <div class="KanbanCol_header__o4p5q6">
+      <span class="KanbanCol_title__r7s8t9">In Progress</span>
+      <span class="KanbanCol_count__u0v1w2">70</span>
+    </div>
+    <div class="KanbanCol_body__a1b2c3" id="col-inprogress"></div>
+  </div>
+  <div class="KanbanCol_root__l1m2n3">
+    <div class="KanbanCol_header__o4p5q6">
+      <span class="KanbanCol_title__r7s8t9">Done</span>
+      <span class="KanbanCol_count__u0v1w2">60</span>
+    </div>
+    <div class="KanbanCol_body__a1b2c3" id="col-done"></div>
+  </div>
+</div>
+
+<!-- S2: kanban-shell (level-1) contains card-editor (level-2) -->
+<kanban-shell id="kanban-shell-f3g4h5"></kanban-shell>
+
+<footer class="AppFooter_root__c3d4e5">&copy; 2026 TaskFlow Inc.</footer>
+
+<script>
+// Inner element (card-editor, L2) defined FIRST per §13
+customElements.define('card-editor', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.EditPanel_root__m4n5o6{padding:0}' +
+      '.EditPanel_title__p7q8r9{font-size:14px;font-weight:700;color:#3949ab;margin-bottom:14px}' +
+      '.EditPanel_field__s0t1u2{margin-bottom:12px}' +
+      '.EditPanel_lbl__v3w4x5{display:block;font-size:12px;font-weight:700;color:#555;margin-bottom:4px}' +
+      '.EditPanel_inp__y6z7a8,.EditPanel_sel__b9c0d1{width:100%;height:38px;border:2px solid #e0e0e0;border-radius:6px;padding:0 10px;font-size:13px;color:#1a1a2e;background:#fff}' +
+      '.EditPanel_inp__y6z7a8:focus,.EditPanel_sel__b9c0d1:focus{border-color:#5c6bc0;outline:none}' +
+      '.EditPanel_actions__e2f3g4{display:flex;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid #f0f0f0}' +
+      '.EditPanel_cancelBtn__h5i6j7{flex:1;background:#fff;border:2px solid #e0e0e0;border-radius:6px;height:38px;font-size:13px;cursor:pointer}' +
+      '.EditPanel_saveBtn__k8l9m0{flex:2;background:#5c6bc0;color:#fff;border:none;border-radius:6px;height:38px;font-size:13px;font-weight:700;cursor:pointer}' +
+      '</style>' +
+      '<div class="EditPanel_root__m4n5o6">' +
+        '<p class="EditPanel_title__p7q8r9">Edit Card</p>' +
+        '<div class="EditPanel_field__s0t1u2">' +
+          '<label class="EditPanel_lbl__v3w4x5" for="card-title">Title</label>' +
+          '<input class="EditPanel_inp__y6z7a8" id="card-title" data-oracle-id="t_07" name="title" type="text" value="Fix login redirect" autocomplete="off">' +
+        '</div>' +
+        '<div class="EditPanel_field__s0t1u2">' +
+          '<span class="EditPanel_lbl__v3w4x5">Assignee</span>' +
+          '<select class="EditPanel_sel__b9c0d1" id="card-assignee" data-oracle-id="t_08" aria-label="Assign to team member" name="assignee">' +
+            '<option value="">Unassigned</option>' +
+            '<option value="alice.smith" selected>alice.smith</option>' +
+            '<option value="bob.jones">bob.jones</option>' +
+            '<option value="carol.white">carol.white</option>' +
+            '<option value="david.lee">david.lee</option>' +
+            '<option value="emma.brown">emma.brown</option>' +
+            '<option value="frank.chen">frank.chen</option>' +
+          '</select>' +
+        '</div>' +
+        '<div class="EditPanel_field__s0t1u2">' +
+          '<span class="EditPanel_lbl__v3w4x5">Due date</span>' +
+          '<input class="EditPanel_inp__y6z7a8" data-oracle-id="t_09" type="date" placeholder="YYYY-MM-DD">' +
+        '</div>' +
+        '<div class="EditPanel_actions__e2f3g4">' +
+          '<button class="EditPanel_cancelBtn__h5i6j7" type="button">Cancel</button>' +
+          '<button class="EditPanel_saveBtn__k8l9m0" type="button" aria-label="Save card changes" data-testid="save-card-btn" data-oracle-id="t_10">Save changes</button>' +
+        '</div>' +
+      '</div>';
+  }
+});
+
+// Outer element (kanban-shell, L1) defined SECOND
+customElements.define('kanban-shell', class extends HTMLElement {
+  connectedCallback() {
+    const root = this.attachShadow({ mode: 'open' });
+    root.innerHTML =
+      '<style>' +
+      ':host{display:block;background:#fff;border-top:1px solid #e0e0e0;padding:16px 20px;font-family:"Segoe UI",system-ui,sans-serif}' +
+      '.KanbanPanel_root__k7l8m9{display:flex;gap:20px;align-items:flex-start}' +
+      '.KanbanPanel_ctrl__t6u7v8{display:flex;flex-direction:column;gap:12px;min-width:210px}' +
+      '.KanbanPanel_head__n0o1p2{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}' +
+      '.KanbanPanel_title__q3r4s5{font-size:12px;font-weight:700;color:#3949ab;text-transform:uppercase;letter-spacing:.5px}' +
+      '.KanbanPanel_cardCount__e5f6g7{font-size:12px;font-weight:700;background:#e8eaf6;color:#5c6bc0;padding:2px 10px;border-radius:10px}' +
+      '.KanbanPanel_sortLbl__a4b5c6{font-size:11px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px;display:block}' +
+      '.KanbanPanel_sortSel__d7e8f9{height:36px;border:2px solid #e0e0e0;border-radius:6px;padding:0 10px;font-size:13px;background:#fff;width:100%}' +
+      '.KanbanPanel_sortSel__d7e8f9:focus{border-color:#5c6bc0;outline:none}' +
+      '.KanbanPanel_addBtn__w9x0y1{background:#5c6bc0;color:#fff;border:none;border-radius:6px;padding:0 16px;height:36px;font-size:13px;font-weight:700;cursor:pointer;width:100%;text-align:left}' +
+      '.KanbanPanel_editSection__c5d6e7{flex:1;background:#f4f5f7;border-radius:8px;padding:16px}' +
+      '.KanbanPanel_editHead__g0h1i2{font-size:12px;font-weight:700;color:#5a5a6e;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}' +
+      '</style>' +
+      '<div class="KanbanPanel_root__k7l8m9">' +
+        '<div class="KanbanPanel_ctrl__t6u7v8">' +
+          '<div class="KanbanPanel_head__n0o1p2">' +
+            '<span class="KanbanPanel_title__q3r4s5">Board Controls</span>' +
+            '<span class="KanbanPanel_cardCount__e5f6g7" data-oracle-id="t_06">200</span>' +
+          '</div>' +
+          '<button class="KanbanPanel_addBtn__w9x0y1" type="button" aria-label="Quick-add card to In Progress" data-oracle-id="t_04">+ Quick add to In Progress</button>' +
+          '<div>' +
+            '<span class="KanbanPanel_sortLbl__a4b5c6">Sort cards</span>' +
+            '<select class="KanbanPanel_sortSel__d7e8f9" data-oracle-id="t_05" aria-label="Sort cards by" name="sort_by">' +
+              '<option value="priority">By Priority</option>' +
+              '<option value="due">By Due Date</option>' +
+              '<option value="assignee">By Assignee</option>' +
+              '<option value="created">By Created</option>' +
+            '</select>' +
+          '</div>' +
+        '</div>' +
+        '<div class="KanbanPanel_editSection__c5d6e7">' +
+          '<p class="KanbanPanel_editHead__g0h1i2">Quick Edit</p>' +
+          '<card-editor></card-editor>' +
+        '</div>' +
+      '</div>';
+  }
+});
+
+// Card generator IIFE — 200 cards × 13 elements = 2600 card elements
+(function() {
+  var TITLES = [
+    'Fix login redirect loop','Add OAuth2 support','Refactor auth middleware',
+    'Update node dependencies','Write unit tests for API','Design new onboarding flow',
+    'Implement dark mode','Optimise database queries','Set up CI/CD pipeline',
+    'Fix mobile navigation bug','Add export to CSV feature','Review pull requests',
+    'Update API documentation','Migrate to PostgreSQL','Add multi-language support',
+    'Performance profiling sprint','Security audit Q1','Release v2.4.0',
+    'User research interviews','Accessibility review'
+  ];
+  var LABELS   = ['Bug','Feature','Chore','Epic','Design','QA','Docs'];
+  var PRIKEYS  = ['high','medium','low','critical'];
+  var PRITEXTS = ['High','Medium','Low','Critical'];
+  var ASSIGNEES= ['alice.smith','bob.jones','carol.white','david.lee','emma.brown','frank.chen'];
+  var DESCS    = [
+    'Users are being redirected to an old URL after login. Affects all browsers.',
+    'Implement secure token flow and refresh handling for third-party auth.',
+    'Split the monolithic auth module into composable middlewares.',
+    'Run npm audit and update packages to address security advisories.',
+    'Cover edge cases for pagination, filtering and sorting endpoints.',
+    'Design screens for the 3-step new user onboarding experience.',
+    'Add system and per-user dark mode toggle with persistent preference.',
+    'Identified N+1 queries in the dashboard endpoint. Add eager loading.',
+    'Automate build, test and deploy steps using GitHub Actions.',
+    'Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.'
+  ];
+  var TAGS = ['frontend','backend','api','ui','perf','security','mobile','infra'];
+  var DUES = ['Jan 15','Jan 31','Feb 14','Feb 28','Mar 10','Mar 31','Apr 15','Apr 30'];
+
+  function card(idx) {
+    var isNone = (idx === 0);
+    var priKey  = PRIKEYS[idx % PRIKEYS.length];
+    var priTxt  = PRITEXTS[idx % PRITEXTS.length];
+    return '<div class="KanbanCard_root__a1b2c3">' +
+      '<div class="KanbanCard_header__d4e5f6">' +
+        '<span class="KanbanLabel_chip__g7h8i9">' + LABELS[idx % LABELS.length] + '</span>' +
+        '<span class="KanbanCard_priority__j0k1l2 ' + priKey + '"' +
+          (isNone ? ' data-oracle-id="t_03"' : '') + '>' + priTxt + '</span>' +
+      '</div>' +
+      '<p class="KanbanCard_title__m3n4o5">' + TITLES[idx % TITLES.length] + '</p>' +
+      '<p class="KanbanCard_desc__p6q7r8">' + DESCS[idx % DESCS.length] + '</p>' +
+      '<div class="KanbanCard_footer__s9t0u1">' +
+        '<span class="KanbanCard_assignee__v2w3x4">' + ASSIGNEES[idx % ASSIGNEES.length] + '</span>' +
+        '<time class="KanbanCard_due__y5z6a7">' + DUES[idx % DUES.length] + '</time>' +
+        '<button class="KanbanCard_menu__h4i5j6" type="button" aria-hidden="true">⋯</button>' +
+      '</div>' +
+      '<div class="KanbanCard_tags__b8c9d0">' +
+        '<span class="KanbanCard_tag__e1f2g3">' + TAGS[idx % TAGS.length] + '</span>' +
+        '<span class="KanbanCard_tag__e1f2g3">' + TAGS[(idx + 3) % TAGS.length] + '</span>' +
+      '</div>' +
+    '</div>';
+  }
+
+  var todo = '', inprog = '', done = '';
+  for (var i = 0; i < 200; i++) {
+    var h = card(i);
+    if (i < 70)       todo   += h;
+    else if (i < 140) inprog += h;
+    else              done   += h;
+  }
+  document.getElementById('col-todo').innerHTML       = todo;
+  document.getElementById('col-inprogress').innerHTML = inprog;
+  document.getElementById('col-done').innerHTML       = done;
+})();
+</script>
+
+</body>
+</html>
