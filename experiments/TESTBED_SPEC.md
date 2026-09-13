@@ -36,12 +36,10 @@ produced its CSS selector from the stripped observation and never saw the anchor
 Three guarantees, non-negotiable:
 
 1. **What:** strip every `data-oracle-*` attribute.
-2. **Which channels:** strip on **every** path that produces an observation —
-   both the JS DOM-walk bundles **and** the genuine Playwright ARIA snapshot
-   (`F4` / `B_playwrightMCP`). Stripping happens at the "build observation" stage,
-   not per-bundle. The ARIA snapshot does not normally serialize arbitrary
-   `data-*` attributes, so the anchor *should* not appear in `F4` — but this is an
-   assumption to **verify empirically on page 1**, never to assume.
+2. **Which channels:** the DOM-walk paths strip every `data-oracle-*` attribute
+   before serialisation. F4 is produced separately through the Playwright ARIA
+   snapshot. Arbitrary `data-*` attributes are not normally present in this snapshot,
+   so F4 is checked empirically for oracle leakage.
 3. **When:** strip **before** token counting. The anchor must add zero tokens to
    the observation cost, or it contaminates the cost axis.
 
@@ -53,8 +51,8 @@ stripping this can never happen, so it is a free tripwire.
 signals are unstable by nature and are rejected by the non-volatile criterion
 **independent of `volatility_labels`**:
 
-- **State attributes** (`value`, `checked`, `selected`, `disabled`) — change at
-  runtime as the user interacts; a locator keyed on them is brittle by definition.
+- **State attributes** (`value`, `checked`, `selected`, `disabled`) — treated as
+  volatile by this predicate because they can change during interaction.
 - **Playwright `ref` handle** — ephemeral snapshot identifier, changes between
   Playwright invocations and browser state; a navigation handle, never a grounding
   signal.
@@ -82,8 +80,9 @@ cites this section as the authority for that ordering:
 2. `output_format_unreachable` — the model emitted XPath despite the CSS-only
    instruction (§12) and the target sits inside a shadow root, where XPath cannot
    reach (§13).
-3. `model_grabbed_brittle_signal` — a stable signal existed, and the model used the
-   volatile one instead.
+3. `model_grabbed_brittle_signal` — a stable signal existed, but the locator did not
+   succeed and was not output-format-unreachable. A volatile grab is the main case,
+   not every member of this class.
 
 `lacked` takes precedence for the same reason it beats `grabbed`: the
 classification names the **root cause**, not a secondary property of the locator.
@@ -238,9 +237,10 @@ Only after all checks pass do we replicate the template across the 24-page plan
 A prediction table maps **signal availability**, not model behavior. These are
 different things for any bundle that retains volatile signals.
 
-- **B_noVolatile** strips volatile ids/classes from the observation. For this
-  bundle, if a stable signal is available, the model cannot accidentally pick a
-  volatile one — success is predictable from availability.
+- **B_noVolatile** strips volatile class and id values from the observation. If a
+  stable signal is available, the volatile alternative is no longer present. This
+  does not guarantee success because the model can still return a wrong, non-unique,
+  or otherwise invalid locator.
 - **All other bundles** (B_full, B_noState, B_noSemantic, B_identityCore, and
   even B_playwrightMCP for computed-name targets) may retain some volatile
   signals in the observation. For these bundles, the model *sees* both the
@@ -307,10 +307,10 @@ predicate development.
 
 - Playwright's CSS engine pierces open shadow DOM at all depths; XPath cannot — shadow
   roots are opaque to XPath axis traversal.
-- XPath's main advantage over CSS is axis-based relational navigation
-  (`preceding-sibling`, `ancestor`), but this is positional and is rejected by predicate
-  4 (non-positional). Removing XPath eliminates an uncontrolled variable without blocking
-  any predicate-valid success path.
+- XPath also provides axis-based relational navigation (`preceding-sibling`,
+  `ancestor`). Positional forms of this navigation are rejected by predicate 4.
+  CSS is fixed so the same locator format can be used across the open shadow roots
+  in the corpus.
 
 **Rule for page authors:** every target's stable signal must be reachable by a CSS
 attribute selector alone, without axis-based ancestor/sibling disambiguation.

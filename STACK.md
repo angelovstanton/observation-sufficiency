@@ -12,12 +12,10 @@ load-bearing, the reason is given — change it only with the reason addressed.
 - **Harness: C#** (.NET). Browser control, observation building, model calls,
   record writing. Chosen for author fluency → fewer silent errors in the
   execution phase, where velocity is the binding constraint. The harness language
-  is scientifically orthogonal: cost is tokens under a fixed tokenizer, success is
-  a static XPath parse — neither depends on the language.
-- **Analysis: C# (Math.NET) by default, Python/R optional on the same JSONL.**
-  The JSONL output is the boundary; anything can read it. Author has prior
-  experience with `MathNet.Numerics`, so C# analysis is viable. Python/R stays available where its plotting/stats
-  ecosystem is stronger and where reviewers expect those figures.
+  is scientifically orthogonal: cost is counted with a fixed tokenizer and success is
+  evaluated from the returned CSS locator using the fixed predicate.
+- **Analysis: Python.** The JSONL output is the boundary between the C# measurement
+  layer and the Python analysis layer.
 
 ## 2. Browser automation — Playwright for .NET
 
@@ -37,8 +35,8 @@ tie to any commercial automation framework.
 - DOM-attribute extraction (the DOM walk for the non-AX bundles) is
   browser-agnostic injected JS (`document.evaluate`, attribute reads) — runs the
   same under Playwright.
-- Locator resolution (evaluating a returned XPath against the DOM) is also
-  injected JS. **Resolution only — never an action.**
+- Locator resolution evaluates the returned CSS selector against the DOM.
+  **Resolution only — never an action.**
 - The 24 testbed pages are static HTML served locally (`TESTBED_BASE_URL`), so
   flakiness is low; Playwright's determinism is a bonus.
 
@@ -61,7 +59,7 @@ Clients (all on Azure, one cloud, one billing, API-key auth):
 | Auth | `AzureKeyCredential` (OpenAI) / `x-api-key` header (Anthropic) | API keys from `.env` (`BAR_AZURE_OPENAI_KEY`, `BAR_AZURE_ANTHROPIC_KEY`); no `DefaultAzureCredential` / `az login` in code |
 | JSON records | `System.Text.Json` | one JSONL record per grounding event |
 
-Call shape: single message, no tools, no retries, parse the returned XPath.
+Call shape: single message, no tools, no retries, parse the returned CSS selector.
 `temperature = 0` for GPT-4.1 and GPT-4.1-nano; omitted for o-series (the API
 rejects the field) and for Anthropic (the request has no `temperature` field at
 all, so Claude runs at the provider's own default, not 0). If maximum
@@ -74,8 +72,8 @@ completions endpoint.
   recommend **`o200k_base`**. Record the encoding + library version on every run.
 - **The cost metric is `token_count(observation)` under this single fixed
   tokenizer — NOT the per-model API `usage` field.** Cost is a property of the
-  *representation* under a canonical reference tokenizer, which is what makes it
-  model-agnostic and comparable across families. This is also the answer to the
+  *representation* under a fixed reference tokenizer, which gives the same
+  measurement basis across model families. This is also the answer to the
   reviewer question "why count GPT tokens for a Llama run?": because cost is a
   property of the observation, not the model.
 - Native per-model `usage` tokens are logged as a **secondary sanity field**
@@ -83,17 +81,15 @@ completions endpoint.
 
 ## 5. Statistics & plots
 
-- `MathNet.Numerics` for what it covers (e.g. Wilcoxon signed-rank).
-- Implement the small remainder in C# and validate against a reference:
-  **McNemar** (simple formula), **Cliff's Delta** (trivial), **bootstrap 95% CIs**
-  (resampling loop). α = 0.05. Statistical unit = the grounding event.
-- Plots: **ScottPlot** if staying single-language in C#; **matplotlib/seaborn
-  (Python)** if richer publication figures are wanted — both read the JSONL.
+The analysis is implemented in Python. The main paired comparison uses McNemar
+with an odds ratio. The page-level analysis uses the sign test and Wilcoxon
+signed-rank test. The confidence interval uses a page-clustered percentile
+bootstrap. The cost-success comparison uses a Pareto frontier. Publication figures
+are produced from the same JSONL records.
 
 ## 6. Model slate (Azure)
 
-Two families, capability spread, and a reasoning contrast. Robustness check, **not** a
-leaderboard. The model's own API price is the *experiment budget*, not the paper's
+Two families and a capability spread. Robustness check, **not** a leaderboard. The model's own API price is the *experiment budget*, not the paper's
 cost metric (which is fixed-tokenizer observation tokens).
 
 **Slate as run** (produced the committed `axisc_*.jsonl` corpus):
@@ -101,8 +97,8 @@ cost metric (which is fixed-tokenizer observation tokens).
 | Model | Family | Surface | Role | Why |
 |-------|--------|---------|------|-----|
 | **GPT-4.1** | OpenAI | Azure OpenAI | **Primary** — full sweep, derives COP | 1M context (model limit never clips before cap C → clean R1/R2); strong instruction-following; deterministic at temp=0 |
-| GPT-4.1-nano | OpenAI | Azure OpenAI | Light robustness | same family as primary → isolates the capability axis cleanly |
-| o4-mini | OpenAI | Azure OpenAI | Reasoning contrast (COP-only) | reasoning model; tests whether internal reasoning reaches the COP ceiling |
+| GPT-4.1-nano | OpenAI | Azure OpenAI | Light robustness | same family as primary → lighter-tier robustness check |
+| o4-mini | OpenAI | Azure OpenAI | COP-only robustness | reasoning model, but model type is not a controlled factor in this study |
 | Claude Sonnet 4.6 | Anthropic | Anthropic Messages (via Azure AI Services) | Independent family (no extended thinking) | the key non-OpenAI replication; runs in standard mode, not a reasoning test |
 
 Usage: the **primary** carries the full bundle × encoding matrix; the robustness models
@@ -123,8 +119,7 @@ Foundry** serverless endpoints, keeping everything in one cloud/billing.
 ```
 Microsoft.Playwright          # browser + genuine ARIA snapshot (F4 / B_playwrightMCP)
 Azure.AI.OpenAI               # GPT-4.1, GPT-4.1-nano
-Azure.AI.Inference            # Llama / Phi / Claude via Foundry (unified API)
-Azure.Identity                # DefaultAzureCredential (Entra ID)
+Azure.AI.Inference            # Llama / Phi via Foundry; not part of the locked corpus
 SharpToken                    # fixed o200k_base token counting (the cost metric)
 MathNet.Numerics              # stats (Wilcoxon, etc.)
 ScottPlot                     # optional C# plotting (else Python/matplotlib on the JSONL)

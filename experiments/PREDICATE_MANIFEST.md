@@ -117,15 +117,14 @@ hash recorded (§1).
    (`shared/harness/AttributeBundles.cs:212`) drops every attribute whose key begins
    `data-oracle-`; it is called unconditionally in `BuildObservationAsync`
    (`shared/harness/Observation.cs:126`). DOM encodings physically cannot carry oracle anchors.
-3. **Zero leak warnings ever emitted.** The only emitter of the warning is
-   `GroundingRunner.cs:179` (`[WARN] F4 oracle leak detected`); `grep` over all of
-   `experiments/runs/` finds **0** such lines.
+3. **Current F4 leak check is clean.** The smoke test regenerates the F4 snapshot
+   and reports `oracle-leak: none`. The raw historical F4 snapshot text was not
+   persisted, so the locked F4 observations cannot be re-scanned byte-for-byte.
 
-**Conclusion:** zero oracle leakage in the locked corpus, established by the record
-scan and warning scan above, the strip-by-construction guarantee, and the frozen
-predicate logic (hash recorded in §1). The F4 leak oracle
-(`shared/harness/Observation.cs:98`, a case-insensitive substring test for `"oracle"`
-over the ARIA YAML) never tripped during the run.
+**Conclusion:** no oracle anchor appears in the stored records. F0–F3 strip the
+anchors by construction, and the current F4 smoke test finds no leakage. The raw
+historical F4 snapshot text was not persisted, so a per-record byte-level recheck of
+the locked F4 observations is not possible.
 
 ### Forward recommendation (not implemented here)
 

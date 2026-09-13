@@ -9,7 +9,7 @@ preserves grounding success at minimum token cost.
   `B_noSemantic`, `B_identityCore`, `B_minimalCore`, `B_playwrightMCP`
   (`B_truncatedText` was planned but not implemented — not in the locked corpus)
 - **Axis B** (format): encodings — F0 (HTML), F1 (flat JSON), F2 (compact JSON), F3
-  (linearized path), F4 (real ARIA snapshot)
+  (linearised DSL), F4 (real ARIA snapshot)
 
 Full definitions of every bundle, encoding, and the JSONL record schema are in
 [`docs/SCHEMA.md`](docs/SCHEMA.md).
@@ -20,9 +20,8 @@ per page, across the 24-page corpus in `shared/testbed/pages/`. Empirics are **L
 
 ## Deliverable
 
-The **Canonical Observation Profile (COP)**: approved attribute subset, approved encoding,
-default context regime, and structural-abstraction policy that hold success ≥ δ at
-minimum token cost.
+The **Cost-Optimal Profile (COP)** is the measured bundle × encoding combination
+identified from the Pareto frontier. The study does not use a fixed success threshold.
 
 ## Running
 

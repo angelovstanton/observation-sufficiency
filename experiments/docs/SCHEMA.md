@@ -26,7 +26,7 @@ changed between design and implementation, noted where relevant.
 | `prompt_tokens_total` | integer | Token count of the full prompt sent to the model (observation + instructions). |
 | `completion_tokens` | integer | Token count of the model's response. |
 | `locator_raw` | string | The raw locator string returned by the model, prefixed by type (e.g. `css:input#qty-input...`). |
-| `locator_type` | string | Parsed locator type — `css` in the overwhelming majority of records; the canonical prompt is CSS-only (XPath is permitted only where CSS cannot reach, e.g. into a shadow root). |
+| `locator_type` | string | Parsed locator type. The canonical prompt is CSS-only. An XPath response is out of format; for a target inside an open shadow root it is classified as `output-format-unreachable`. |
 | `locator_value` | string | The locator string with the type prefix stripped. |
 | `success` | boolean | Result of the five-part success predicate (§5). |
 | `failure_mode` | string \| null | One of three values when `success` is false (see below); `null` on success. |
@@ -40,7 +40,7 @@ changed between design and implementation, noted where relevant.
 | `schema_version` | string | Version tag for this record schema (`1.0` in the shipped corpus). |
 | `testbed_page` | string | Duplicate of `page`, kept for join convenience in some analysis paths. |
 | `timestamp_utc` | string (ISO-8601) | Wall-clock time the record was produced. |
-| `seed` | integer | Fixed random seed used for the run (`42` throughout the shipped corpus). |
+| `seed` | integer | Recorded metadata value (`42` throughout the shipped corpus). It was not used as a model-generation seed. |
 
 **`failure_mode` enum** (exactly one of three, in priority order — see §5):
 `observation-lacked-a-stable-signal` · `output-format-unreachable` ·
@@ -83,7 +83,7 @@ Seven bundles are implemented:
 
 | Bundle | Definition |
 |---|---|
-| `B_full` | All categories — production baseline. |
+| `B_full` | All categories — full-observation baseline. |
 | `B_noVolatile` | `B_full` minus attribute *values* flagged volatile for this page (hashed/generated ids and class tokens) — a value-level ablation, not a category removal. |
 | `B_noState` | `B_full` minus State (`disabled`, `checked`, `selected`, `value`). |
 | `B_noSemantic` | `B_full` minus Semantic-textual (visible text, `aria-label`, `placeholder`, `name`). `role` and other `aria-*` are kept. |
@@ -92,24 +92,24 @@ Seven bundles are implemented:
 | `B_playwrightMCP` | Role + accessible name + Playwright `ref` + level + ARIA state, sourced from the genuine Playwright ARIA snapshot (§3, F4) — not reconstructed from the DOM walk. |
 
 State attributes and Playwright `ref` are present in the observation for the
-bundles that carry them, but are inherently unstable at runtime (state changes,
-`ref` changes between snapshots) and are therefore excluded from what counts as a
-non-volatile signal — a locator keyed on them fails predicate condition 3 even
-when resolution succeeds.
+bundles that carry them, but the fixed predicate treats them as volatile because
+state can change during interaction and `ref` changes between snapshots. A locator
+keyed on them therefore fails predicate condition 3 even when resolution succeeds.
 
 ## 3. Encodings (Axis B — format)
 
-Encoding changes only the token cost of representing a fixed attribute set; it
-never adds or removes attributes (that is Axis A's job). Five encodings are
-implemented, all applied to the same bundle-filtered element list except F4, which
-uses Playwright's own accessibility-tree snapshot instead of the DOM walk:
+Encoding changes how a fixed attribute set is serialised; it does not add or remove
+attributes (that is Axis A's job). Both token cost and grounding success are measured
+for each encoding. Five encodings are implemented, all applied to the same
+bundle-filtered element list except F4, which uses Playwright's own accessibility-tree
+snapshot instead of the DOM walk:
 
 | Encoding | What it emits |
 |---|---|
 | `F0` | Raw HTML reconstruction — each element as an HTML tag with its filtered attributes and text. Verbose structural baseline. |
 | `F1` | Flat JSON array, one object per element, full attribute key names, compact (no whitespace). |
 | `F2` | The same JSON structure as F1 with a fixed, bijective key-abbreviation map (e.g. `tag`→`t`, `id`→`i`, `aria-label`→`al`) — a lossless minification, verified by expanding F2 keys back to F1 field names and comparing element-by-element. |
-| `F3` | Linearized one-line-per-element DSL: `tag key=value ... {text}`, with values quoted only when they contain a space, `=`, quote, or brace; shadow-root elements are prefixed `[S]`. |
+| `F3` | Linearised one-line-per-element DSL: `tag key=value ... {text}`, with values quoted only when they contain a space, `=`, quote, or brace; shadow-root elements are prefixed `[S]`. |
 | `F4` | The genuine Playwright ARIA snapshot (`page.AriaSnapshotAsync()`), a YAML-like indented accessibility tree keyed by role and accessible name — never a DOM-walk reconstruction. |
 
 **Worked example**, a button `<button id="qty-add" class="btn-primary" aria-label="Increase quantity">+</button>`, under each encoding (F0–F3 derived directly from the actual encoder implementation in `shared/harness/ObservationEncoders.cs`; F4 shown in the general syntax Playwright's own ARIA snapshot uses, since F4's content comes from Playwright itself rather than this repository's code):

@@ -6,8 +6,10 @@ factor *levels* and the *target placement* are deliberately set and labelled by
 us. Realistic chrome (nav, footer, ads, decorative blocks) is wanted — it creates
 authentic distractor density, which is part of what we measure.
 
-This is an initial plan to lock the shape of the corpus before we build. Numbers
-and domains are adjustable; the factor structure is not.
+This is the original design-time plan used to lock the shape of the corpus before
+the pages were built. The final corpus has 24 pages with exactly 10 targets per page.
+For the implemented oracle, predicate and ground-truth contract, `TESTBED_SPEC.md`
+and the per-page `*.truth.json` files are authoritative.
 
 ---
 
@@ -15,27 +17,27 @@ and domains are adjustable; the factor structure is not.
 
 **Factor groups (page-level):** Shadow DOM (S0 none / S1 shallow, 1 open root /
 S2 deep, ≥2 nested) × semantic density (high = rich aria/role/data-testid/text /
-low = div-soup, style-only classes) → 6 groups × 4 replica pages = **24 pages**.
+low = fewer stable identity attributes and more build-generated/style-only classes)
+→ 6 groups × 4 replica pages = **24 pages**.
 
 **Element-level factors — present on EVERY page, not a column below:**
 - *Volatility:* every page carries both stable targets and volatile ones (hashed
   ids / generated classes). The volatile attributes take the form of an imitated
-  framework fingerprint (see column). These are the decoy the stability predicate
-  punishes.
+  framework fingerprint (see column). These are the decoys rejected by the
+  non-volatile predicate.
 - *Ambiguity:* every page carries both uniquely-signalled targets and
   near-identical ones. "Special ambiguity" column flags only the *extra*,
   structural sources (responsive duplication, near-duplicate component cards).
 
 **Size tiers (distributed across the 24):** Standard ~600–1500 el (×16) · Large
-~2500–4000 el (×6) · Extreme 5000+ el (×2, near/over the context cap → truncation
-behaviour).
+~2500–4000 el (×6) · Extreme 5000+ el (×2).
 
 **Fingerprint variants (the volatility vehicle, imitated in static HTML):**
 `R` = React-style hashed classes · `A` = Angular-style `_ngcontent` markers ·
 `V` = Vue-style `data-v-` scoped markers. Paper wording is always "pages imitating
 characteristic framework DOM patterns", never "tested on React/Angular/Vue".
 
-**Target intents (≈8–12 per page, roughly balanced across the corpus):**
+**Target intents (10 per page, roughly balanced across the corpus):**
 click · input text · toggle · select option · submit · navigate.
 
 ---
@@ -60,7 +62,7 @@ attributes hurts most and where structure is the only remaining signal.*
 | 5 | Std | Real-estate listing (legacy portal) — property detail | R | — | click(gallery), click(save), navigate(contact agent) | div-soup; B_noSemantic should collapse here |
 | 6 | Large | News/media homepage — article grid + ads | A | responsive dup (ad/promo slots) | navigate(articles), click(subscribe) | huge distractor density, low semantic |
 | 7 | Std | Marketing landing (page-builder) — lead capture | V | — | input(email), click(CTA), submit(signup) | utility-class soup, style-only classes |
-| 8 | **Extreme** | E-commerce mega-listing — product grid | R | responsive dup (grid/list view) + near-duplicate cards | navigate(product), click(filter), click(add to cart) | over the cap → truncation; high ambiguity among cards |
+| 8 | **Extreme** | E-commerce mega-listing — product grid | R | responsive dup (grid/list view) + near-duplicate cards | navigate(product), click(filter), click(add to cart) | extreme observation size; high ambiguity among cards |
 
 ## G3 — S1 (shallow shadow, 1 open root) · HIGH semantic
 *Accessible component-library pages. Tests whether structured encodings hold across
@@ -89,7 +91,7 @@ encodings collapse and the COP must still hold.*
 
 | # | Tier | Domain & page | FP | Special ambiguity | Primary intents | What it stresses |
 |---|------|---------------|----|-----|-----------------|------------------|
-| 17 | **Extreme** | Enterprise admin — user/role management console | A | near-duplicate rows | click(edit user), toggle(active), select(role), submit(save) | deep shadow + extreme size + truncation |
+| 17 | **Extreme** | Enterprise admin — user/role management console | A | near-duplicate rows | click(edit user), toggle(active), select(role), submit(save) | deep shadow + extreme observation size |
 | 18 | Large | Project management — kanban board | R | near-duplicate cards across columns | click(card), toggle(filter), navigate(board) | deep shadow + structural ambiguity |
 | 19 | Std | Insurance — multi-step quote flow | V | — | input(details), select(coverage), toggle(add-on), submit(next) | deep-shadow stepper, multi-form |
 | 20 | Std | HR/payroll — employee self-service portal | A | — | click(payslip), toggle(direct deposit), navigate(benefits) | deep shadow + high semantic |
@@ -109,7 +111,7 @@ encodings collapse and the COP must still hold.*
 ## Coverage check
 
 - **Size tiers:** 16 Standard · 6 Large (#3, #6, #9, #13, #18, #22) · 2 Extreme (#8, #17). ✓
-- **Fingerprints spread:** R on 1,2-no… R: 5,8,11,14,16,18,21,23 · A: 2,3,6,9,15,17,20,24 · V: 1,4,7,10,12,13,19,22. ✓
+- **Fingerprints spread:** R: 5,8,11,14,16,18,21,23 · A: 2,3,6,9,15,17,20,24 · V: 1,4,7,10,12,13,19,22. ✓
 - **Responsive duplication:** #3, #6, #8, #23. ✓
 - **Intent coverage:** submit on forms/checkout (4,7,9,14,17,19,23,24); toggle on settings/booking/media; select across booking/admin/checkout; navigate on listings/media; click + input everywhere. ✓
 - **Special ambiguity sources:** responsive dup (4 pages) + near-duplicate component cards (8, 11, 14, 17, 18). ✓
@@ -118,19 +120,19 @@ encodings collapse and the COP must still hold.*
 
 ## Next step — the per-target truth file (separate from the HTML)
 
-Ground truth lives in a sibling file (`pages/page_NN.html` + `pages/page_NN.truth.json`),
-**never** in the served DOM — otherwise the answer leaks into the observation the
-model sees. Proposed truth-file shape, to lock on one page before building 24:
+Ground truth lives in a sibling file (`pages/page_NN.html` + `pages/page_NN.truth.json`).
+The raw DOM also contains a `data-oracle-id` bookkeeping anchor so the harness can
+identify the correct target. The anchor is removed before DOM serialisation and is
+never shown to the model.
+
+The final truth-file shape contains:
 
 - page id, group, size tier, fingerprint variant
-- per target: target id · intent · oracle element (a stable internal handle the
-  harness can resolve, e.g. a private `data-truth-id` stripped before snapshotting,
-  or an absolute path the oracle keeps) · is-ambiguous flag · expected-stable-signal
-  (what a correct non-volatile locator could key on)
-- per attribute/class label: volatile? (so the success predicate can check
-  "non-volatile signals only" deterministically)
+- per target: target id · intent · oracle id · is-ambiguous flag · expected-stable-signal
+  · `signal_attrs`
+- per-page `volatility_labels` for volatile ids and classes
 
-Open question to decide first: how the harness maps a returned XPath back to "the
-oracle element" without that handle being visible in the snapshot. Cleanest is a
-private attribute injected for the oracle, stripped from every bundle/encoding
-before the observation is built.
+The returned CSS selector is resolved against the raw DOM, where `data-oracle-id`
+identifies the expected element. F4 is generated separately through Playwright's
+ARIA snapshot; the current leak check verifies that the oracle anchor is not exposed
+there.

@@ -1,9 +1,9 @@
 # observation-sufficiency
 
 Public artifact for a paper on cost-bounded LLM-driven UI element grounding. The
-question: when a language model is asked to produce a locator for a UI element, which
-minimal attribute subset and serialization format preserve grounding success at
-minimum token cost? Cost is measured in tokens under a fixed tokenizer — never dollars,
+question: when a language model is asked to produce a locator for a UI element, how do
+the tested attribute subsets and serialisation formats affect grounding success and
+token cost? Cost is measured in tokens under a fixed tokenizer — never dollars,
 never latency.
 
 ## What's in the box
@@ -38,10 +38,11 @@ model should be invoked at all; those are separate, unpublished lines of work.
 
 ## Model slate
 
-GPT-4.1 (primary corpus), GPT-4.1-nano, o4-mini, and Claude Sonnet are the **models
-under study** in the cross-model robustness check — the question is whether the
-bundle/encoding recommendation holds across light-to-frontier models spanning two
-families, not which model wins. See `experiments/FINDINGS.md` (cross-model form-invariance).
+GPT-4.1, GPT-4.1-nano, o4-mini, and Claude Sonnet are used in the cross-model
+robustness check. The paired bundle comparison is available for GPT-4.1,
+GPT-4.1-nano, and Claude. o4-mini was run only on the COP cell. The purpose is to
+check whether the main observation result appears across the tested models, not
+which model wins. See `experiments/FINDINGS.md` for the full accounting.
 
 ## Verifying the results
 
