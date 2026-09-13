@@ -24,7 +24,7 @@ startup, so no environment setup is needed — the steps below run as-is on a pl
 (If you run some other, older script that lacks that guard, set `PYTHONIOENCODING=utf-8`
 first; this is a console-encoding issue, not a data problem.)
 
-Env-var syntax below is bash. In PowerShell use `$env:NAME=1; dotnet run ...`.
+Env-var syntax below is PowerShell: `$env:NAME=1; dotnet run ...`.
 
 ---
 
@@ -51,7 +51,7 @@ agree. Pure unit facts — no browser, no pages.
 ## 3. Predicate controls
 
 ```
-PREDICATE_CONTROLS=1 dotnet run --project experiments/
+$env:PREDICATE_CONTROLS=1; dotnet run --project experiments/
 ```
 
 **Proves:** the frozen predicate still returns the hand-labeled verdict for 29 curated
@@ -63,7 +63,7 @@ This is the strongest single guard on the locked empirics: if the predicate drif
 ## 4. Smoke test
 
 ```
-SMOKE_TEST=1 dotnet run --project experiments/
+$env:SMOKE_TEST=1; dotnet run --project experiments/
 ```
 
 **Proves:** DOM walk, tokenizer, oracle resolution, encoders, and the oracle-anchor strip
@@ -95,20 +95,6 @@ but a reviewer who runs all 24 at once will hit the timeout and assume something
 Split the corpus into two runs, each on its own fresh server (the harness starts and kills a
 server per invocation): pages 01–20 (5000 records) then 21–24 (1000).
 
-Bash:
-
-```bash
-# batch 1 — pages 01–20
-mkdir -p /tmp/rs1 && cp experiments/runs/matrix_page_{01..20}.jsonl /tmp/rs1/
-dotnet run --project experiments/ -- --replay /tmp/rs1
-# batch 2 — pages 21–24 (fresh server; the batch-1 process has already exited)
-mkdir -p /tmp/rs2 && cp experiments/runs/matrix_page_2{1..4}.jsonl /tmp/rs2/
-dotnet run --project experiments/ -- --replay /tmp/rs2
-```
-
-PowerShell (this repo's primary shell — the bash above uses `mkdir -p`, `&&`, brace
-expansion and `/tmp`, none of which work in PowerShell 5.1):
-
 ```powershell
 # batch 1 — pages 01–20
 $rs1 = "$env:TEMP\rs1"; New-Item -ItemType Directory -Force $rs1 | Out-Null
@@ -120,15 +106,14 @@ $rs2 = "$env:TEMP\rs2"; New-Item -ItemType Directory -Force $rs2 | Out-Null
 dotnet run --project experiments/ -- --replay $rs2
 ```
 
-Both batches append to the same `experiments/runs/replay_YYYYMMDD.jsonl` → 6000 records total.
-(Delete a stale same-day `replay_*.jsonl` before a fresh run, since batches append.)
+Both batches append to the same `experiments/runs/replay_YYYYMMDD.jsonl`, giving 6000
+records. Delete a stale file from the same day first, or the counts will be wrong.
 
-**Proves:** predicate and DOM stability. `ReplayMode` itself prints only the record total
-and the NONE-target invariant — it does **not** compare against the source, so do not read
-its NONE-invariant line as the delta verdict. Produce the actual verdict with the delta
-script, which joins the replay output to the source `matrix_page_*.jsonl` on
-`page / bundle / encoding / task_id / repetition` and checks `success`, `failure_mode`,
-`stable_signal_present_in_bundle`, and `observation_tokens`:
+**Proves:** predicate and DOM stability. `ReplayMode` prints the record total and the
+NONE-target invariant. It does not compare against the source, so that line is not the
+delta verdict. The delta script produces it — it joins the replay output to the source
+`matrix_page_*.jsonl` on `page / bundle / encoding / task_id / repetition` and checks
+`success`, `failure_mode`, `stable_signal_present_in_bundle`, and `observation_tokens`:
 
 ```
 python experiments/analysis/replay_delta.py     # defaults: newest replay_*.jsonl vs experiments/runs/matrix_page_*.jsonl
@@ -138,15 +123,16 @@ python experiments/analysis/replay_delta.py     # defaults: newest replay_*.json
 counts and exits non-zero on any difference — meaning the predicate or the corpus HTML
 changed. This is the guard to run after **any** edit to `shared/testbed/pages/`.
 
-Output goes to `experiments/runs/replay_YYYYMMDD.jsonl` (gitignored — it is a check, not a result;
-delete a stale same-day file before a fresh run, since batches append). Full-corpus replay
-drives a real browser over 6000 records; measured on reference hardware: ~16 minutes for
-the 5000-record batch, ~5 minutes for the 1000-record batch (~21 minutes total).
+Output goes to `experiments/runs/replay_YYYYMMDD.jsonl` (gitignored — it is a check, not
+a result). Delete a stale same-day file before a fresh run, since batches append.
+Full-corpus replay drives a real browser over 6000 records; measured on reference
+hardware: ~16 minutes for the 5000-record batch, ~5 minutes for the 1000-record batch
+(~21 minutes total).
 
 ## 6. Analysis reconciliation
 
 ```
-cd experiments/analysis && python run_all.py
+cd experiments/analysis; python run_all.py
 ```
 
 **Proves:** every headline number in the paper still recomputes from the raw JSONL. Runs
@@ -162,7 +148,7 @@ hash)`. An import-time assertion guarantees the two paths can never collide.
 ## 7. Python unit tests (pytest)
 
 ```
-cd experiments/analysis && python -m pytest
+cd experiments/analysis; python -m pytest
 ```
 
 **Proves:** the analysis-layer tripwires hold — the three-mode failure taxonomy

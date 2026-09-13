@@ -56,14 +56,17 @@ Clients (all on Azure, one cloud, one billing, API-key auth):
 | Concern | Library | Notes |
 |---------|---------|-------|
 | OpenAI-family models (GPT-4.1, nano, o4-mini) | `Azure.AI.OpenAI` | official, thin; gives raw request/response |
-| Anthropic (Claude via Azure AI Services) | raw `HttpClient` (Anthropic Messages) | `x-api-key` + `anthropic-version` headers; extended thinking on |
+| Anthropic (Claude via Azure AI Services) | raw `HttpClient` (Anthropic Messages) | `x-api-key` + `anthropic-version` headers; no `thinking` field — extended thinking off |
 | Cross-family models (Llama, Phi via Foundry) | `Azure.AI.Inference` | unified Azure AI Model Inference API — same client for all catalog models, switch by deployment-name string. *Present in code but not part of the locked corpus — see §6.* |
 | Auth | `AzureKeyCredential` (OpenAI) / `x-api-key` header (Anthropic) | API keys from `.env` (`BAR_AZURE_OPENAI_KEY`, `BAR_AZURE_ANTHROPIC_KEY`); no `DefaultAzureCredential` / `az login` in code |
 | JSON records | `System.Text.Json` | one JSONL record per grounding event |
 
-Call shape: single message, `temperature = 0`, no tools, no retries, parse the
-returned XPath. If maximum transparency is ever needed, drop to raw `HttpClient`
-against the chat completions endpoint.
+Call shape: single message, no tools, no retries, parse the returned XPath.
+`temperature = 0` for GPT-4.1 and GPT-4.1-nano; omitted for o-series (the API
+rejects the field) and for Anthropic (the request has no `temperature` field at
+all, so Claude runs at the provider's own default, not 0). If maximum
+transparency is ever needed, drop to raw `HttpClient` against the chat
+completions endpoint.
 
 ## 4. Token counting — fixed reference tokenizer (methodologically critical)
 
@@ -100,44 +103,11 @@ cost metric (which is fixed-tokenizer observation tokens).
 | **GPT-4.1** | OpenAI | Azure OpenAI | **Primary** — full sweep, derives COP | 1M context (model limit never clips before cap C → clean R1/R2); strong instruction-following; deterministic at temp=0 |
 | GPT-4.1-nano | OpenAI | Azure OpenAI | Light robustness | same family as primary → isolates the capability axis cleanly |
 | o4-mini | OpenAI | Azure OpenAI | Reasoning contrast (COP-only) | reasoning model; tests whether internal reasoning reaches the COP ceiling |
-| Claude Sonnet 4.6 | Anthropic | Anthropic Messages (via Azure AI Services) | Reasoning (thinking ON) + independent family | the key non-OpenAI replication; tests whether reasoning compensates for a poor observation |
+| Claude Sonnet 4.6 | Anthropic | Anthropic Messages (via Azure AI Services) | Independent family (no extended thinking) | the key non-OpenAI replication; runs in standard mode, not a reasoning test |
 
 Usage: the **primary** carries the full bundle × encoding matrix; the robustness models
 run only the recommended profile + a few neighbouring points to confirm the **curve
 shape** holds (o4-mini is COP-only).
-
-> **Superseded plan (why the slate changed).** The original slate named Llama 3.x 70B and
-> Phi-4 as open-weight cross-family points and excluded reasoning models to keep one-shot
-> temp=0 clean. In practice the Azure Foundry serverless TPM quota (~20K TPM) is exceeded by
-> large-page observations, so those models could not process the heavy pages; o4-mini was
-> substituted, and the reasoning-vs-instruction contrast became a finding rather than a
-> confound. Reasoning models are handled explicitly in `LlmClient` (temperature omitted,
-> `max_tokens` omitted for o-series). See `experiments/FINDINGS.md:111` for the coverage decision and
-> `experiments/FINDINGS.md:87` for the reasoning finding. Hidden thinking tokens are output, not
-> observation input, so they never touch the fixed-tokenizer cost metric.
-
-Notes / open confirmations:
-- Verify exact current deployment names + Foundry serverless pricing in the Azure
-  portal at setup (catalog and rates move independently of this doc).
-- **Claude Sonnet 4.6 is the reasoning contrast point**, run with extended
-  thinking ON. Same three conditions as every other model: the canonical *simple*
-  prompt, one shot, no retry. The "reasoning" must come from the model's internal
-  thinking, never from prompt strategy or a retry loop — otherwise it recreates
-  the confounded production setup. It answers "does reasoning compensate for a
-  poor observation?" and doubles as a 4th family.
-  - Cost metric is unaffected: hidden reasoning tokens are output/thinking, not
-    observation input, so they never touch the fixed-tokenizer input cost.
-  - Determinism caveat: reasoning models may not honour temp=0 the same way (some
-    require temp=1 when thinking is on). Pin a seed where available and run a few
-    repetitions to confirm stability; report it as a robustness point, not an
-    exact-number cell.
-  - Confirm at setup whether Foundry's Claude deployment exposes extended thinking
-    via the unified Inference API; if not, fall back to the Anthropic-native call
-    shape for this one model.
-- GPT-5 / GPT-5-nano exist and are cheaper on input; GPT-4.1 is preferred as
-  primary for the 1M context + clearly non-reasoning, controlled one-shot
-  behaviour. Revisit only if a current flagship is wanted and is confirmed to be a
-  standard (non-hidden-reasoning) model.
 
 ## 7. Provider decision — Azure (OpenAI + Foundry), not OpenRouter
 

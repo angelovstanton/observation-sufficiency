@@ -3,16 +3,15 @@ cross_model.py — Axis C cross-model robustness analysis.
 
 Loads the GPT-4.1 matrix (4-cell subset, reuse) and the three new-model
 axisc_*.jsonl files, then computes the key numbers that appear in the
-Axis C section of this paper.  Six claims are quantified:
+Axis C section of this paper.  Five claims are quantified:
 
   1. Per-model success per diagnostic cell
   2. Form-invariance: B_noVolatile > B_full per model on F1 (shared encoding)
   3. Fair 22-page subset: page_08 and page_17 excluded for ALL models so
      Claude's TPM-constrained coverage does not bias the comparison
-  4. Reasoning-vs-instruction gap on the COP cell (B_noVolatile x F3,
-     linearized DSL) -- this is the PRIMARY finding
-  5. grabbed_brittle reduction on COP: reasoning avg 11, instruction avg 34
-  6. Nano-F2 grabbed_brittle blowup: 122 (F2) vs 29 (F1), same observations
+  4. COP cell (B_noVolatile x F3, linearized DSL) per model -- the one cell
+     all four models ran, so the one valid cross-model comparison
+  5. Nano-F2 grabbed_brittle blowup: 122 (F2) vs 29 (F1), same observations
 
 CRITICAL FRAMING NOTE:
   The overall success table (section 1) is NOT a valid cross-model comparison:
@@ -20,9 +19,17 @@ CRITICAL FRAMING NOTE:
   cells including the weak F2 cell (overall 69.1%).  Comparing those numbers
   implies o4-mini > Claude, which is wrong.  On the SAME COP cell both score
   ~75% (o4-mini 75.4%, Claude 75.2%) -- they are statistically equal.
-  The real finding is reasoning TIER vs instruction TIER (~75% vs ~66%), which
-  holds for BOTH reasoning models vs BOTH instruction models on the COP cell.
-  Section 5 is the valid comparison; section 1 is context only.
+  Section 5 reports each model on that shared cell; section 1 is context only.
+
+  This file used to group o4-mini and claude-sonnet-4-6 into a "reasoning"
+  tier against gpt-4.1/gpt-4.1-nano as "instruction", and reported the
+  tier-average gap as the primary finding. That grouping is removed:
+  claude-sonnet-4-6's request carries no `thinking` field (see
+  shared/harness/models/AnthropicRequest.cs) -- it ran in the provider's
+  standard mode, not an extended-thinking mode -- so "reasoning" described a
+  code label, not a property of how the model was actually called. Each
+  model is now reported on its own number; see experiments/FINDINGS.md for
+  the current framing of the o4-mini/Claude COP result.
 
 Every key number is reconciled against expected values pinned from the Axis C run
 (2026-06-20 10:38 Sofia).  Mismatches are flagged MISMATCH in the
@@ -87,8 +94,6 @@ GRABBED     = "model_grabbed_brittle_signal"
 UNREACHABLE = "output_format_unreachable"
 
 SKIP_PAGES    = {"pages/page_08.html", "pages/page_17.html"}
-REASONING     = {"o4-mini", "claude-sonnet-4-6"}
-INSTRUCTION   = {"gpt-4.1", "gpt-4.1-nano"}
 MODELS_ORDER  = ["gpt-4.1", "gpt-4.1-nano", "o4-mini", "claude-sonnet-4-6"]
 
 # ── Expected values from the Axis C run ──────────────────────────────────────
@@ -401,36 +406,6 @@ def cop_deepdive(cell_matrix: dict) -> dict:
     return out
 
 
-def reasoning_vs_instruction(cop: dict) -> dict:
-    """
-    Aggregate COP success and grabbed_brittle by model tier.
-    Reasoning = o4-mini, claude-sonnet-4-6.
-    Instruction = gpt-4.1, gpt-4.1-nano.
-    Returns per-tier averages and the COP gap in pp.
-    """
-    def _avg(models, key):
-        vals = [cop[m][key] for m in models if m in cop]
-        return round(sum(vals) / len(vals), 1) if vals else None
-
-    r_pct     = _avg(list(REASONING),   "pct")
-    i_pct     = _avg(list(INSTRUCTION), "pct")
-    r_grabbed = _avg(list(REASONING),   "grabbed")
-    i_grabbed = _avg(list(INSTRUCTION), "grabbed")
-
-    gap = round(r_pct - i_pct, 1) if r_pct and i_pct else None
-    assert gap is not None and gap > 0, (
-        f"Reasoning-vs-instruction COP gap is {gap}pp — expected positive"
-    )
-    return {
-        "reasoning_cop_pct":        r_pct,
-        "instruction_cop_pct":      i_pct,
-        "cop_gap_pp":               gap,
-        "reasoning_cop_grabbed":    r_grabbed,
-        "instruction_cop_grabbed":  i_grabbed,
-        "grabbed_reduction_pp":     round(i_grabbed - r_grabbed, 1),
-    }
-
-
 def nano_f2_anomaly(data: dict) -> dict:
     """
     Nano B_noVolatile × F1 vs F2: same observations, different serialisation.
@@ -475,7 +450,7 @@ def _check(label: str, computed, expected, tolerance=0.0) -> tuple[str, str, str
 
 
 def reconcile(overall: dict, cop: dict, fi_rows: list,
-              fair: dict, rvi: dict, f2: dict) -> list:
+              fair: dict, f2: dict) -> list:
     """
     Build reconciliation table: list of (label, computed, expected, status).
     Mismatches are accumulated, not raised, so all checks complete in one run.
@@ -524,10 +499,6 @@ def reconcile(overall: dict, cop: dict, fi_rows: list,
         rows.append(_check(f"{m} fair ok",  v["ok"],  REPORT[f"{s}_fair_ok"]))
         rows.append(_check(f"{m} fair %",   v["pct"], REPORT[f"{s}_fair_pct"], 0.1))
 
-    # Reasoning vs instruction
-    rows.append(_check("reasoning COP grabbed avg",   rvi["reasoning_cop_grabbed"],   11.0, 0.1))
-    rows.append(_check("instruction COP grabbed avg", rvi["instruction_cop_grabbed"],  31.0, 0.1))
-
     # Nano F2 anomaly
     rows.append(_check("nano nvF1 n",       f2["F1"]["n"],       REPORT["nano_nvF1_n"]))
     rows.append(_check("nano nvF1 ok",      f2["F1"]["ok"],      REPORT["nano_nvF1_ok"]))
@@ -550,7 +521,7 @@ def _print_section(title: str) -> None:
 
 
 def print_report(overall: dict, cell_matrix: dict, fi_rows: list,
-                 fair: dict, cop: dict, rvi: dict, f2: dict,
+                 fair: dict, cop: dict, f2: dict,
                  recon: list) -> None:
 
     # 1. Per-model overall
@@ -563,11 +534,10 @@ def print_report(overall: dict, cell_matrix: dict, fi_rows: list,
     }
     rows = [(m, overall[m]["ok"], overall[m]["n"],
              f"{overall[m]['pct']}%",
-             "reasoning" if m in REASONING else "instruction",
              cells_run[m])
             for m in MODELS_ORDER]
     print(tabulate(rows,
-                   headers=["model", "ok", "n", "success%", "tier", "cells_run"],
+                   headers=["model", "ok", "n", "success%", "cells_run"],
                    tablefmt="pipe"))
     print()
     print("  *** COMPARISON WARNING ***")
@@ -628,37 +598,21 @@ def print_report(overall: dict, cell_matrix: dict, fi_rows: list,
     cop_rows = [(m,
                  f"{cop[m]['ok']}/{cop[m]['n']}={cop[m]['pct']}%",
                  cop[m]["lacked"],
-                 cop[m]["grabbed"],
-                 "reasoning" if m in REASONING else "instruction")
+                 cop[m]["grabbed"])
                 for m in MODELS_ORDER if m in cop]
     print(tabulate(cop_rows,
-                   headers=["model", "success", "lacked", "grabbed", "tier"],
+                   headers=["model", "success", "lacked", "grabbed"],
                    tablefmt="pipe"))
     o4_pct     = cop["o4-mini"]["pct"]
     claude_pct = cop["claude-sonnet-4-6"]["pct"]
     print()
     print(f"  o4-mini vs Claude on the SAME cell: {o4_pct}% vs {claude_pct}%")
     print(f"  Difference: {abs(o4_pct - claude_pct):.1f}pp -- statistically negligible.")
-    print(f"  FINDING: o4-mini and Claude are EQUAL on COP. The gap is tier, not model.")
+    print(f"  FINDING: o4-mini and Claude score equal on COP; the gap seen in section 1")
+    print(f"  comes from different cell coverage, not a difference between the models.")
 
-    # 6. Reasoning vs instruction — the primary finding
-    _print_section("6. PRIMARY FINDING: REASONING TIER vs INSTRUCTION TIER - COP gap")
-    print("  (This is the finding. NOT o4-mini vs Claude -- those two are equal on COP.)")
-    print()
-    print(f"  Reasoning tier   (o4-mini + claude): avg COP = {rvi['reasoning_cop_pct']}%  "
-          f"avg grabbed = {rvi['reasoning_cop_grabbed']}")
-    print(f"  Instruction tier (gpt-4.1 + nano):   avg COP = {rvi['instruction_cop_pct']}%  "
-          f"avg grabbed = {rvi['instruction_cop_grabbed']}")
-    print(f"  Tier gap on COP: {rvi['cop_gap_pp']:+.1f}pp  (reasoning leads)")
-    print(f"  grabbed reduction: {rvi['grabbed_reduction_pp']:.1f} fewer brittle grabs per 240 COP tasks")
-    print()
-    print("  Mechanism: reasoning models almost eliminate grabbed_brittle (11 each).")
-    print("  Instruction models grab brittle signals 3x more often (33-35 each).")
-    print("  lacked_signal counts are near-identical across tiers (46-48)")
-    print("  -- the improvement is in signal selection, not signal availability.")
-
-    # 7. Nano F2 anomaly
-    _print_section("7. NANO F2 ANOMALY (B_noVolatile, same observations, different encoding)")
+    # 6. Nano F2 anomaly
+    _print_section("6. NANO F2 ANOMALY (B_noVolatile, same observations, different encoding)")
     f2_rows = [
         ("gpt-4.1-nano", "F1",
          f"{f2['F1']['ok']}/{f2['F1']['n']}={f2['F1']['pct']}%",
@@ -675,8 +629,8 @@ def print_report(overall: dict, cell_matrix: dict, fi_rows: list,
     print(f"  lacked count:   identical ({f2['F1']['lacked']}) -- "
           f"confirms this is encoding sensitivity, not signal absence")
 
-    # 8. Reconciliation table
-    _print_section("8. RECONCILIATION vs AXIS C REPORT")
+    # 7. Reconciliation table
+    _print_section("7. RECONCILIATION vs AXIS C REPORT")
     mismatches = [r for r in recon if r[3] == "MISMATCH"]
     passes     = [r for r in recon if r[3] == "PASS"]
     print(f"  {len(passes)} PASS  /  {len(mismatches)} MISMATCH  "
@@ -694,7 +648,7 @@ def print_report(overall: dict, cell_matrix: dict, fi_rows: list,
 # ── Output ────────────────────────────────────────────────────────────────────
 
 def write_json(overall: dict, cell_matrix: dict, fi_rows: list,
-               fair: dict, cop: dict, rvi: dict, f2: dict,
+               fair: dict, cop: dict, f2: dict,
                recon: list) -> pathlib.Path:
     out = {
         "description":         "Axis C cross-model robustness -- key metrics",
@@ -704,15 +658,15 @@ def write_json(overall: dict, cell_matrix: dict, fi_rows: list,
         "comparison_warning": (
             "overall_success is NOT a valid cross-model comparison: "
             "o4-mini ran COP only (best single cell, 75.4%); Claude ran all 4 cells (69.1%). "
-            "Valid comparison: COP cell only -- o4-mini 75.4% vs Claude 75.2% -- statistically equal. "
-            "Primary finding is reasoning TIER vs instruction TIER (~75% vs ~66%), not o4-mini vs Claude."
+            "Valid comparison: COP cell only -- o4-mini 75.4% vs Claude 75.2%, n=240 vs n=230 -- "
+            "statistically equal. Each model is reported on its own number; see "
+            "experiments/FINDINGS.md for the current framing of this result."
         ),
         "overall":             overall,
         "fair_22p":            fair,
         "cop_cell": {
             m: v for m, v in cop.items()
         },
-        "reasoning_vs_instruction": rvi,
         "form_invariance":     fi_rows,
         "nano_f2_anomaly":     {
             "F1": f2["F1"], "F2": f2["F2"],
@@ -744,13 +698,12 @@ def main() -> None:
     fi_rows     = form_invariance(data)        # takes raw records for event alignment
     fair        = fair_subset(data)
     cop         = cop_deepdive(cell_matrix)
-    rvi         = reasoning_vs_instruction(cop)
     f2          = nano_f2_anomaly(data)
-    recon       = reconcile(overall, cop, fi_rows, fair, rvi, f2)
+    recon       = reconcile(overall, cop, fi_rows, fair, f2)
 
-    print_report(overall, cell_matrix, fi_rows, fair, cop, rvi, f2, recon)
+    print_report(overall, cell_matrix, fi_rows, fair, cop, f2, recon)
 
-    dest = write_json(overall, cell_matrix, fi_rows, fair, cop, rvi, f2, recon)
+    dest = write_json(overall, cell_matrix, fi_rows, fair, cop, f2, recon)
     print(f"\n  written: {dest}")
 
     mismatches = [r for r in recon if r[3] == "MISMATCH"]

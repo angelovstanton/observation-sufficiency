@@ -88,10 +88,9 @@ Source of these facts: `experiments/computed_findings.md` §"Corpus provenance" 
 
 A **separate, earlier** replay event — the 2026-06-17 audit-freeze *validation*
 re-replay (2,750 records over 11 pages, **+46 net**, D5 reclassification of 161
-volatile→stable) — is not to be confused with the corpus reclassification above.
-That is a distinct event from the 2026-07-20 corpus reclassification above (206
-records, +51 net). The two happen to each touch 11 pages but are not the same
-replay and their net counts are not interchangeable.
+volatile→stable) — is not the corpus reclassification above (206 records, +51 net).
+The two happen to touch 11 pages each, but they are not the same replay, and
+their net counts are not interchangeable.
 
 ---
 

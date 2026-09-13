@@ -178,8 +178,9 @@ intent leaks signals a bundle may have removed and is a confound.
 1. Load `page_NN.html` in Playwright → **raw DOM** (anchors present).
 2. Build the **observation**: select bundle → strip `data-oracle-*` → serialize in
    the encoding → **count tokens** (`SharpToken`, `o200k_base`).
-3. Send canonical *simple* prompt + `targets[i].intent`. One shot, `temperature=0`,
-   no tools, no retry. Parse the returned `css:<selector>`. (See §12.)
+3. Send canonical *simple* prompt + `targets[i].intent`. One shot, no tools, no
+   retry. `temperature=0` for GPT-4.1/GPT-4.1-nano; omitted for o-series and for
+   Anthropic (see STACK.md §3). Parse the returned `css:<selector>`. (See §12.)
 4. Resolve the CSS selector against the **raw DOM**. Record match count + resolved
    element(s).
 5. **Success predicate (all five):** unique match ∧ resolved element's

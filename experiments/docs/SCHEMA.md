@@ -56,6 +56,14 @@ recorded); an "out-of-bundle attribute usage flag" — no such field exists in t
 shipped schema, that signal is captured indirectly through
 `stable_signal_present_in_bundle` and `failure_mode` instead.
 
+**Temperature is not a recorded field.** No per-record temperature value exists in
+this schema — it must be read from the harness code, not from any record.
+`shared/harness/LlmClient.cs` sends `temperature=0` only for `gpt-4.1` and
+`gpt-4.1-nano`; omits the field for o-series models (`o4-mini`), which reject it;
+and omits it entirely for the Anthropic path (`claude-sonnet-4-6`), which has no
+`temperature` field in its request at all and so runs at the provider's own
+default. See STACK.md §3.
+
 ## 2. Attribute bundles (Axis A — content)
 
 Attribute categories (web-DOM instantiation):

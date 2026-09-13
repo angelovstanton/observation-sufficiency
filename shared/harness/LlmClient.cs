@@ -11,9 +11,12 @@ public record LlmResponse(string Content, int PromptTokens, int CompletionTokens
 
 public static partial class LlmClient
 {
-    // temperature=0 is an invariant (§6) — never expose as a parameter.
-    // Exception: o-series reasoning models (o1/o3/o4) reject temperature=0 — the
-    // API either errors or silently ignores it; omit the field instead.
+    // temperature=0 for the two OpenAI-family models that accept it (GPT-4.1,
+    // GPT-4.1-nano) — never expose as a parameter. o-series reasoning models
+    // (o1/o3/o4) reject temperature=0 — the API either errors or silently
+    // ignores it — so it is omitted for them. The Anthropic path
+    // (CallAnthropicAsync) has no temperature field at all: Claude runs at
+    // the provider's own default, not 0.
     private const float Temperature = 0f;
     private const int MaxTokens = 256;
 

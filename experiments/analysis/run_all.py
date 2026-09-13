@@ -71,7 +71,16 @@ FINDINGS_MD_PATH = REPO_ROOT / "experiments" / "FINDINGS.md"
 # negatives): B_noSemantic 28.54%→35.31%, B_identityCore 33.54%→39.58%, cliff
 # −26.56→−19.79pp, lacked 2728→2584, grabbed 891→912. Thesis (+9.48pp), COP headline
 # (+10.00pp), −91 substitution, McNemar, and Pareto frontier membership UNCHANGED.
-EXPECTED_FINDINGS_SHA256 = "7a401197e2fc0d10736e5f4ea28d63cff3f7c48269bce057aa841fb85d405472"
+#
+# Re-pinned 2026-09-13 — the reasoning-vs-instruction cross-model finding was moved
+# to REFUTED: the "reasoning" tier grouping (o4-mini + claude-sonnet-4-6) was a
+# cross_model.py code label, not a property of the run — claude-sonnet-4-6's
+# request never carried a `thinking` field. Also: dropped "and reasoning capability"
+# / "and reasoning" from the Axis C framing bullets, added a caveat that Axis C is
+# not temperature-aligned across models, and fixed the "58/58 reconcile" citation
+# to 56/56 (two tier-average reconciliation checks were removed from cross_model.py).
+# No per-model number changed.
+EXPECTED_FINDINGS_SHA256 = "eb097af69311c5cc62c790a3379de9d2473bb558253d93bdff432149419a3bfe"
 
 # Safety invariant: the two paths must never resolve to the same file.
 # This assertion fires at import time, before any data is loaded.

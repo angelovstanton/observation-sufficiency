@@ -6,7 +6,7 @@
     "page_17"
   ],
   "F3_encoding_note": "F3 = linearized DSL (EncodeF3Linearized). Not YAML.",
-  "comparison_warning": "overall_success is NOT a valid cross-model comparison: o4-mini ran COP only (best single cell, 75.4%); Claude ran all 4 cells (69.1%). Valid comparison: COP cell only -- o4-mini 75.4% vs Claude 75.2% -- statistically equal. Primary finding is reasoning TIER vs instruction TIER (~75% vs ~66%), not o4-mini vs Claude.",
+  "comparison_warning": "overall_success is NOT a valid cross-model comparison: o4-mini ran COP only (best single cell, 75.4%); Claude ran all 4 cells (69.1%). Valid comparison: COP cell only -- o4-mini 75.4% vs Claude 75.2%, n=240 vs n=230 -- statistically equal. Each model is reported on its own number; see experiments/FINDINGS.md for the current framing of this result.",
   "overall": {
     "gpt-4.1": {
       "n": 960,
@@ -80,14 +80,6 @@
       "lacked": 46,
       "grabbed": 11
     }
-  },
-  "reasoning_vs_instruction": {
-    "reasoning_cop_pct": 75.3,
-    "instruction_cop_pct": 67.1,
-    "cop_gap_pp": 8.2,
-    "reasoning_cop_grabbed": 11.0,
-    "instruction_cop_grabbed": 31.0,
-    "grabbed_reduction_pp": 20.0
   },
   "form_invariance": [
     {
@@ -434,18 +426,6 @@
       "status": "PASS"
     },
     {
-      "check": "reasoning COP grabbed avg",
-      "computed": "11.0",
-      "expected": "11.0",
-      "status": "PASS"
-    },
-    {
-      "check": "instruction COP grabbed avg",
-      "computed": "31.0",
-      "expected": "31.0",
-      "status": "PASS"
-    },
-    {
       "check": "nano nvF1 n",
       "computed": "240",
       "expected": "240",
@@ -495,8 +475,8 @@
     }
   ],
   "reconciliation_summary": {
-    "pass": 58,
+    "pass": 56,
     "mismatch": 0,
-    "total": 58
+    "total": 56
   }
 }
