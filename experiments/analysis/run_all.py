@@ -736,15 +736,18 @@ def main():
 
     print("\n\nAll analysis modules completed.")
 
-    # ── Write computed tables and computed_findings.md ────────────────────
+    # ── Write computed tables, then print reconciliation before the ──────────
+    # FINDINGS.md content-guard check below — a legitimate doc edit that
+    # trips the guard must not hide the rest of the run's output behind a
+    # bare stack trace.
     write_computed_tables(thesis_r, ladder_r, encoding_r, pareto_r, decomp_r)
     recon_rows, all_match = make_reconciliation_table(
         thesis_r, ladder_r, encoding_r, pareto_r, decomp_r, stats_r
     )
-    write_computed_findings(thesis_r, ladder_r, encoding_r, pareto_r, decomp_r, stats_r, recon_rows)
-
-    # ── Print reconciliation ───────────────────────────────────────────────
     print_reconciliation(recon_rows)
+
+    # ── Write computed_findings.md (contains the FINDINGS.md content guard) ──
+    write_computed_findings(thesis_r, ladder_r, encoding_r, pareto_r, decomp_r, stats_r, recon_rows)
 
     # Non-zero exit code if any mismatch — useful in CI.
     if not all_match:
