@@ -80,7 +80,15 @@ FINDINGS_MD_PATH = REPO_ROOT / "experiments" / "FINDINGS.md"
 # not temperature-aligned across models, and fixed the "58/58 reconcile" citation
 # to 56/56 (two tier-average reconciliation checks were removed from cross_model.py).
 # No per-model number changed.
-EXPECTED_FINDINGS_SHA256 = "eb097af69311c5cc62c790a3379de9d2473bb558253d93bdff432149419a3bfe"
+#
+# Re-pinned 2026-09-13 (442f77f "update docs") — four claims softened to match
+# the manuscript and the analysis code: B_noState no longer claims state
+# attributes are generally useless; the F3 mechanism is stated as syntax
+# removal with attribute names retained, not key-name elimination; the ARIA
+# failure decomposition is stated as observed counts rather than 100%/zero;
+# and the form-invariance finding is scoped to the three models with paired
+# measurements (o4-mini was COP-cell only). No reported value changed.
+EXPECTED_FINDINGS_SHA256 = "0199e613505583f0521de8ee93c1021414660bbd66d02d0b7f4917fd855971f3"
 
 # Safety invariant: the two paths must never resolve to the same file.
 # This assertion fires at import time, before any data is loaded.
