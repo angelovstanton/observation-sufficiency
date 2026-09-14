@@ -6,5 +6,7 @@ authors:
     given-names: Anton
 year: 2026
 license: MIT
+version: 1.0.0
+date-released: 2026-09-13
+doi: 10.5281/zenodo.22744988
 # repository-code: TODO — fill in once the public repository URL exists.
-# doi: TODO — fill in once a DOI is minted (e.g. via Zenodo) at publication/acceptance.
