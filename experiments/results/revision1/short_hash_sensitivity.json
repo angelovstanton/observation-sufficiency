@@ -1,0 +1,1816 @@
+{
+  "tokens": [
+    [
+      "page_17",
+      "ActionMenu_root__i5j6k7"
+    ],
+    [
+      "page_17",
+      "AdminLayout_main__j0k1l2"
+    ],
+    [
+      "page_17",
+      "AdminLayout_nav__g7h8i9"
+    ],
+    [
+      "page_17",
+      "ConsolePanel_root__c8d9e0"
+    ],
+    [
+      "page_17",
+      "DeptBadge_root__k1l2m3"
+    ],
+    [
+      "page_17",
+      "EditPanel_grid__e8f9g0"
+    ],
+    [
+      "page_17",
+      "EditPanel_root__a2b3c4"
+    ],
+    [
+      "page_17",
+      "LoginTime_root__f2g3h4"
+    ],
+    [
+      "page_17",
+      "PaginationBar_info__q2r3s4"
+    ],
+    [
+      "page_17",
+      "PaginationBar_root__o0p1q2"
+    ],
+    [
+      "page_17",
+      "RoleBadge_root__n4o5p6"
+    ],
+    [
+      "page_17",
+      "StatusBadge_dot__p7q8r9"
+    ],
+    [
+      "page_17",
+      "UserAvatar_root__v6w7x8"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__ca"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__cax"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__cd"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__ci"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__ck"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__cl"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__cr"
+    ],
+    [
+      "page_17",
+      "UsersTable_cell__cs"
+    ],
+    [
+      "page_17",
+      "UsersTable_head__v2w3x4"
+    ],
+    [
+      "page_17",
+      "UsersTable_root__s9t0u1"
+    ],
+    [
+      "page_17",
+      "UsersTable_row__j1k2l3"
+    ],
+    [
+      "page_18",
+      "AppFooter_root__c3d4e5"
+    ],
+    [
+      "page_18",
+      "AppHeader_logo__q4r5s6"
+    ],
+    [
+      "page_18",
+      "AppHeader_nav__t7u8v9"
+    ],
+    [
+      "page_18",
+      "AppHeader_root__n1o2p3"
+    ],
+    [
+      "page_18",
+      "BoardToolbar_root__c2d3e4"
+    ],
+    [
+      "page_18",
+      "Board_root__x3y4z5"
+    ],
+    [
+      "page_18",
+      "EditPanel_inp__y6z7a8"
+    ],
+    [
+      "page_18",
+      "EditPanel_lbl__v3w4x5"
+    ],
+    [
+      "page_18",
+      "EditPanel_root__m4n5o6"
+    ],
+    [
+      "page_18",
+      "EditPanel_sel__b9c0d1"
+    ],
+    [
+      "page_18",
+      "KanbanCard_desc__p6q7r8"
+    ],
+    [
+      "page_18",
+      "KanbanCard_due__y5z6a7"
+    ],
+    [
+      "page_18",
+      "KanbanCard_tag__e1f2g3"
+    ],
+    [
+      "page_18",
+      "KanbanCard_tags__b8c9d0"
+    ],
+    [
+      "page_18",
+      "KanbanCol_body__a1b2c3"
+    ],
+    [
+      "page_18",
+      "KanbanCol_root__l1m2n3"
+    ],
+    [
+      "page_18",
+      "KanbanLabel_chip__g7h8i9"
+    ],
+    [
+      "page_18",
+      "KanbanPanel_ctrl__t6u7v8"
+    ],
+    [
+      "page_18",
+      "KanbanPanel_head__n0o1p2"
+    ],
+    [
+      "page_18",
+      "KanbanPanel_root__k7l8m9"
+    ],
+    [
+      "page_21",
+      "ChannelInfo_name__q0r1s2"
+    ],
+    [
+      "page_21",
+      "ChannelInfo_subs__t3u4v5"
+    ],
+    [
+      "page_21",
+      "CommentCard_body__x3y4z5"
+    ],
+    [
+      "page_21",
+      "CommentCard_date__b9c0d1"
+    ],
+    [
+      "page_21",
+      "CommentCard_root__r7s8t9"
+    ],
+    [
+      "page_21",
+      "CommentCard_text__d9e0f1"
+    ],
+    [
+      "page_21",
+      "Description_box__w6x7y8"
+    ],
+    [
+      "page_21",
+      "Description_tag__g8h9i0"
+    ],
+    [
+      "page_21",
+      "Description_tags__d5e6f7"
+    ],
+    [
+      "page_21",
+      "Description_text__z9a0b1"
+    ],
+    [
+      "page_21",
+      "Footer_copy__z3a4b5"
+    ],
+    [
+      "page_21",
+      "Header_logo__f7g8h9"
+    ],
+    [
+      "page_21",
+      "PageLayout_main__a8b9c0"
+    ],
+    [
+      "page_21",
+      "SearchBar_btn__o6p7q8"
+    ],
+    [
+      "page_21",
+      "SidePanel_card__n5o6p7"
+    ],
+    [
+      "page_21",
+      "SidePanel_info__b3c4d5"
+    ],
+    [
+      "page_21",
+      "SidePanel_meta__k2l3m4"
+    ],
+    [
+      "page_21",
+      "VideoMeta_date__s6t7u8"
+    ],
+    [
+      "page_22",
+      "EditForm_inp__b9c0d1"
+    ],
+    [
+      "page_22",
+      "EditForm_lbl__y6z7a8"
+    ],
+    [
+      "page_22",
+      "EditForm_root__p7q8r9"
+    ],
+    [
+      "page_22",
+      "EditForm_sel__e2f3g4"
+    ],
+    [
+      "page_22",
+      "EditForm_ta__h5i6j7"
+    ],
+    [
+      "page_22",
+      "TfAction_root__x3y4z5"
+    ],
+    [
+      "page_22",
+      "TfFooter_root__m3n4o5"
+    ],
+    [
+      "page_22",
+      "TfHeader_logo__q4r5s6"
+    ],
+    [
+      "page_22",
+      "TfHeader_nav__t7u8v9"
+    ],
+    [
+      "page_22",
+      "TfHeader_root__n1o2p3"
+    ],
+    [
+      "page_22",
+      "TfSearch_btn__l1m2n3"
+    ],
+    [
+      "page_22",
+      "TfSearch_inp__i8j9k0"
+    ],
+    [
+      "page_22",
+      "TfSearch_root__c2d3e4"
+    ],
+    [
+      "page_22",
+      "TfSearch_sep__o4p5q6"
+    ],
+    [
+      "page_22",
+      "TfTable_root__j0k1l2"
+    ],
+    [
+      "page_22",
+      "TfTable_wrap__g7h8i9"
+    ],
+    [
+      "page_22",
+      "TrackBadge_num__d4e5f6"
+    ],
+    [
+      "page_22",
+      "TrackPanel_ctrl__w0x1y2"
+    ],
+    [
+      "page_22",
+      "TrackPanel_root__t7u8v9"
+    ],
+    [
+      "page_23",
+      "Breadcrumb_item__p0a1s2"
+    ],
+    [
+      "page_23",
+      "Breadcrumb_root__u7i8o9"
+    ],
+    [
+      "page_23",
+      "Breadcrumb_sep__d3f4g5"
+    ],
+    [
+      "page_23",
+      "Checkout_left__l9z0x1"
+    ],
+    [
+      "page_23",
+      "Header_logo__q1w2e3"
+    ],
+    [
+      "page_23",
+      "OrderItem_img__d4e5f6"
+    ],
+    [
+      "page_23",
+      "OrderItem_info__g7h8i9"
+    ],
+    [
+      "page_23",
+      "OrderItem_name__j0k1l2"
+    ],
+    [
+      "page_23",
+      "OrderItem_row__a1b2c3"
+    ],
+    [
+      "page_23",
+      "PayShell_root__g0h1i2"
+    ],
+    [
+      "page_23",
+      "PayShell_tab__n8o9p0"
+    ],
+    [
+      "page_23",
+      "PayShell_tabs__k5l6m7"
+    ],
+    [
+      "page_23",
+      "PayWidget_form__c4d5e6"
+    ],
+    [
+      "page_23",
+      "PayWidget_row__n5o6p7"
+    ],
+    [
+      "page_23",
+      "PromoRow_btn__n3o4p5"
+    ],
+    [
+      "page_23",
+      "PromoRow_root__g7h8j9"
+    ],
+    [
+      "page_23",
+      "ShippingForm_root__e5r6t7"
+    ],
+    [
+      "page_23",
+      "ShippingForm_row__s4d5f6"
+    ],
+    [
+      "page_24",
+      "AccountSection_btn__h4i5j6"
+    ],
+    [
+      "page_24",
+      "AppLayout_root__g7h8i9"
+    ],
+    [
+      "page_24",
+      "Header_logo__a1b2c3"
+    ],
+    [
+      "page_24",
+      "Header_user__d4e5f6"
+    ],
+    [
+      "page_24",
+      "PrefPanel_root__n0o1p2"
+    ],
+    [
+      "page_24",
+      "PrefPanel_row__s6t7u8"
+    ],
+    [
+      "page_24",
+      "Section_root__v2w3x4"
+    ],
+    [
+      "page_24",
+      "SettingRow_desc__l0m1n2"
+    ],
+    [
+      "page_24",
+      "SettingRow_name__i7j8k9"
+    ],
+    [
+      "page_24",
+      "SettingRow_root__c1d2e3"
+    ],
+    [
+      "page_24",
+      "SettingsPanel_root__b1c2d3"
+    ],
+    [
+      "page_24",
+      "SideNav_icon__p6q7r8"
+    ],
+    [
+      "page_24",
+      "SideNav_item__m3n4o5"
+    ]
+  ],
+  "controls": {
+    "substring_counts_equal_section7": true,
+    "p5_equal_sensitivity": {
+      "B_full \u2192 B_noVolatile (960, F0\u2013F3)": true,
+      "B_full \u2192 NVC (960, F0\u2013F3)": true,
+      "B_full\u00d7F1 \u2192 B_noVolatile\u00d7F3 (240, published COP)": true,
+      "B_full\u00d7F1 \u2192 NVC\u00d7F3 (240)": true
+    }
+  },
+  "per_bundle": [
+    {
+      "bundle": "B_full",
+      "n": 960,
+      "locators_with_token_bounded": 43,
+      "locators_with_token_substring": 43,
+      "P5_success": 526,
+      "P5_success_using_token": 24,
+      "P5_sh_success": 502
+    },
+    {
+      "bundle": "B_noVolatile",
+      "n": 960,
+      "locators_with_token_bounded": 48,
+      "locators_with_token_substring": 48,
+      "P5_success": 617,
+      "P5_success_using_token": 26,
+      "P5_sh_success": 591
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "n": 960,
+      "locators_with_token_bounded": 53,
+      "locators_with_token_substring": 53,
+      "P5_success": 683,
+      "P5_success_using_token": 20,
+      "P5_sh_success": 663
+    }
+  ],
+  "comparisons": {
+    "B_full \u2192 B_noVolatile (960, F0\u2013F3)": {
+      "all": {
+        "P5": {
+          "n": 960,
+          "n11_both": 515,
+          "b_second_only": 102,
+          "c_first_only": 11,
+          "n00_neither": 332,
+          "success_first": 526,
+          "success_second": 617,
+          "rate_first_pct": 54.79166666666667,
+          "rate_second_pct": 64.27083333333333,
+          "delta_pp": 9.479166666666666,
+          "chi2": 73.28318584070796,
+          "p": 1.1232069193514942e-17,
+          "p_exact": 1.2518282545755144e-19,
+          "odds_ratio": 9.272727272727273,
+          "or_ci_lo": 4.970015706738754,
+          "or_ci_hi": 19.15991729895992,
+          "boot_ci_lo_pp": 4.895833333333338,
+          "boot_ci_hi_pp": 15.520833333333329,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 960,
+          "n11_both": 492,
+          "b_second_only": 99,
+          "c_first_only": 10,
+          "n00_neither": 359,
+          "success_first": 502,
+          "success_second": 591,
+          "rate_first_pct": 52.29166666666667,
+          "rate_second_pct": 61.5625,
+          "delta_pp": 9.270833333333334,
+          "chi2": 72.6697247706422,
+          "p": 1.532673517201519e-17,
+          "p_exact": 1.4578362112536647e-19,
+          "odds_ratio": 9.9,
+          "or_ci_lo": 5.1632577955125285,
+          "or_ci_hi": 21.283768277803574,
+          "boot_ci_lo_pp": 4.6875,
+          "boot_ci_hi_pp": 15.312500000000002,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "has_attribute_signal": {
+        "P5": {
+          "n": 768,
+          "n11_both": 515,
+          "b_second_only": 102,
+          "c_first_only": 11,
+          "n00_neither": 140,
+          "success_first": 526,
+          "success_second": 617,
+          "rate_first_pct": 68.48958333333334,
+          "rate_second_pct": 80.33854166666666,
+          "delta_pp": 11.848958333333332,
+          "chi2": 73.28318584070796,
+          "p": 1.1232069193514942e-17,
+          "p_exact": 1.2518282545755144e-19,
+          "odds_ratio": 9.272727272727273,
+          "or_ci_lo": 4.970015706738754,
+          "or_ci_hi": 19.15991729895992,
+          "boot_ci_lo_pp": 6.122448979591832,
+          "boot_ci_hi_pp": 19.598171779952388,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 768,
+          "n11_both": 492,
+          "b_second_only": 99,
+          "c_first_only": 10,
+          "n00_neither": 167,
+          "success_first": 502,
+          "success_second": 591,
+          "rate_first_pct": 65.36458333333334,
+          "rate_second_pct": 76.953125,
+          "delta_pp": 11.588541666666668,
+          "chi2": 72.6697247706422,
+          "p": 1.532673517201519e-17,
+          "p_exact": 1.4578362112536647e-19,
+          "odds_ratio": 9.9,
+          "or_ci_lo": 5.1632577955125285,
+          "or_ci_hi": 21.283768277803574,
+          "boot_ci_lo_pp": 5.859167220744681,
+          "boot_ci_hi_pp": 19.37206022342302,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 192,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 192,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 192,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 192,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      }
+    },
+    "B_full \u2192 NVC (960, F0\u2013F3)": {
+      "all": {
+        "P5": {
+          "n": 960,
+          "n11_both": 517,
+          "b_second_only": 166,
+          "c_first_only": 9,
+          "n00_neither": 268,
+          "success_first": 526,
+          "success_second": 683,
+          "rate_first_pct": 54.79166666666667,
+          "rate_second_pct": 71.14583333333333,
+          "delta_pp": 16.354166666666668,
+          "chi2": 140.85142857142858,
+          "p": 1.7339233099327002e-32,
+          "p_exact": 1.5185698993215456e-38,
+          "odds_ratio": 18.444444444444443,
+          "or_ci_lo": 9.484364658378063,
+          "or_ci_hi": 41.046836994303746,
+          "boot_ci_lo_pp": 10.416666666666663,
+          "boot_ci_hi_pp": 23.124999999999996,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 960,
+          "n11_both": 494,
+          "b_second_only": 169,
+          "c_first_only": 8,
+          "n00_neither": 289,
+          "success_first": 502,
+          "success_second": 663,
+          "rate_first_pct": 52.29166666666667,
+          "rate_second_pct": 69.0625,
+          "delta_pp": 16.770833333333332,
+          "chi2": 146.4463276836158,
+          "p": 1.0369749348576121e-33,
+          "p_exact": 2.2289024434153056e-40,
+          "odds_ratio": 21.125,
+          "or_ci_lo": 10.479380978923547,
+          "or_ci_hi": 49.729653059669396,
+          "boot_ci_lo_pp": 10.518229166666659,
+          "boot_ci_hi_pp": 23.958333333333332,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "has_attribute_signal": {
+        "P5": {
+          "n": 768,
+          "n11_both": 517,
+          "b_second_only": 166,
+          "c_first_only": 9,
+          "n00_neither": 76,
+          "success_first": 526,
+          "success_second": 683,
+          "rate_first_pct": 68.48958333333334,
+          "rate_second_pct": 88.93229166666666,
+          "delta_pp": 20.442708333333336,
+          "chi2": 140.85142857142858,
+          "p": 1.7339233099327002e-32,
+          "p_exact": 1.5185698993215456e-38,
+          "odds_ratio": 18.444444444444443,
+          "or_ci_lo": 9.484364658378063,
+          "or_ci_hi": 41.046836994303746,
+          "boot_ci_lo_pp": 12.882556431663577,
+          "boot_ci_hi_pp": 29.232804232804234,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 768,
+          "n11_both": 494,
+          "b_second_only": 169,
+          "c_first_only": 8,
+          "n00_neither": 97,
+          "success_first": 502,
+          "success_second": 663,
+          "rate_first_pct": 65.36458333333334,
+          "rate_second_pct": 86.328125,
+          "delta_pp": 20.963541666666664,
+          "chi2": 146.4463276836158,
+          "p": 1.0369749348576121e-33,
+          "p_exact": 2.2289024434153056e-40,
+          "odds_ratio": 21.125,
+          "or_ci_lo": 10.479380978923547,
+          "or_ci_hi": 49.729653059669396,
+          "boot_ci_lo_pp": 12.972722722722724,
+          "boot_ci_hi_pp": 30.186297378211837,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 192,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 192,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 192,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 192,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      }
+    },
+    "B_full\u00d7F1 \u2192 B_noVolatile\u00d7F3 (240, published COP)": {
+      "all": {
+        "P5": {
+          "n": 240,
+          "n11_both": 135,
+          "b_second_only": 28,
+          "c_first_only": 4,
+          "n00_neither": 73,
+          "success_first": 139,
+          "success_second": 163,
+          "rate_first_pct": 57.91666666666667,
+          "rate_second_pct": 67.91666666666667,
+          "delta_pp": 10.0,
+          "chi2": 18.0,
+          "p": 2.2090496998585475e-05,
+          "p_exact": 1.9301194697618484e-05,
+          "odds_ratio": 7.0,
+          "or_ci_lo": 2.4488892863844702,
+          "or_ci_hi": 27.46516963573728,
+          "boot_ci_lo_pp": 4.1666666666666625,
+          "boot_ci_hi_pp": 17.08333333333334,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 240,
+          "n11_both": 131,
+          "b_second_only": 26,
+          "c_first_only": 5,
+          "n00_neither": 78,
+          "success_first": 136,
+          "success_second": 157,
+          "rate_first_pct": 56.666666666666664,
+          "rate_second_pct": 65.41666666666667,
+          "delta_pp": 8.75,
+          "chi2": 14.225806451612904,
+          "p": 0.00016213175204392638,
+          "p_exact": 0.00019219517707824707,
+          "odds_ratio": 5.2,
+          "or_ci_lo": 1.964969610705635,
+          "or_ci_hi": 17.34043755176862,
+          "boot_ci_lo_pp": 3.3333333333333326,
+          "boot_ci_hi_pp": 15.833333333333332,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "has_attribute_signal": {
+        "P5": {
+          "n": 192,
+          "n11_both": 135,
+          "b_second_only": 28,
+          "c_first_only": 4,
+          "n00_neither": 25,
+          "success_first": 139,
+          "success_second": 163,
+          "rate_first_pct": 72.39583333333334,
+          "rate_second_pct": 84.89583333333334,
+          "delta_pp": 12.5,
+          "chi2": 18.0,
+          "p": 2.2090496998585475e-05,
+          "p_exact": 1.9301194697618484e-05,
+          "odds_ratio": 7.0,
+          "or_ci_lo": 2.4488892863844702,
+          "or_ci_hi": 27.46516963573728,
+          "boot_ci_lo_pp": 5.075501204942823,
+          "boot_ci_hi_pp": 21.92513368983957,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 192,
+          "n11_both": 131,
+          "b_second_only": 26,
+          "c_first_only": 5,
+          "n00_neither": 30,
+          "success_first": 136,
+          "success_second": 157,
+          "rate_first_pct": 70.83333333333334,
+          "rate_second_pct": 81.77083333333334,
+          "delta_pp": 10.9375,
+          "chi2": 14.225806451612904,
+          "p": 0.00016213175204392638,
+          "p_exact": 0.00019219517707824707,
+          "odds_ratio": 5.2,
+          "or_ci_lo": 1.964969610705635,
+          "or_ci_hi": 17.34043755176862,
+          "boot_ci_lo_pp": 4.039896451956746,
+          "boot_ci_hi_pp": 20.103160966563035,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 48,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 48,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 48,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 48,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      }
+    },
+    "B_full\u00d7F1 \u2192 NVC\u00d7F3 (240)": {
+      "all": {
+        "P5": {
+          "n": 240,
+          "n11_both": 138,
+          "b_second_only": 46,
+          "c_first_only": 1,
+          "n00_neither": 55,
+          "success_first": 139,
+          "success_second": 184,
+          "rate_first_pct": 57.91666666666667,
+          "rate_second_pct": 76.66666666666667,
+          "delta_pp": 18.75,
+          "chi2": 43.08510638297872,
+          "p": 5.240970415196181e-11,
+          "p_exact": 6.821210263296962e-13,
+          "odds_ratio": 46.0,
+          "or_ci_lo": 7.854437873077506,
+          "or_ci_hi": 1855.900884534351,
+          "boot_ci_lo_pp": 11.249999999999993,
+          "boot_ci_hi_pp": 27.499999999999996,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 240,
+          "n11_both": 135,
+          "b_second_only": 45,
+          "c_first_only": 1,
+          "n00_neither": 59,
+          "success_first": 136,
+          "success_second": 180,
+          "rate_first_pct": 56.666666666666664,
+          "rate_second_pct": 75.0,
+          "delta_pp": 18.333333333333332,
+          "chi2": 42.08695652173913,
+          "p": 8.730357350832804e-11,
+          "p_exact": 1.3358203432289883e-12,
+          "odds_ratio": 45.0,
+          "or_ci_lo": 7.675146722213769,
+          "or_ci_hi": 1816.4029953052816,
+          "boot_ci_lo_pp": 11.249999999999993,
+          "boot_ci_hi_pp": 26.666666666666668,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "has_attribute_signal": {
+        "P5": {
+          "n": 192,
+          "n11_both": 138,
+          "b_second_only": 46,
+          "c_first_only": 1,
+          "n00_neither": 7,
+          "success_first": 139,
+          "success_second": 184,
+          "rate_first_pct": 72.39583333333334,
+          "rate_second_pct": 95.83333333333334,
+          "delta_pp": 23.4375,
+          "chi2": 43.08510638297872,
+          "p": 5.240970415196181e-11,
+          "p_exact": 6.821210263296962e-13,
+          "odds_ratio": 46.0,
+          "or_ci_lo": 7.854437873077506,
+          "or_ci_hi": 1855.900884534351,
+          "boot_ci_lo_pp": 13.756613756613756,
+          "boot_ci_hi_pp": 34.595651517439215,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 192,
+          "n11_both": 135,
+          "b_second_only": 45,
+          "c_first_only": 1,
+          "n00_neither": 11,
+          "success_first": 136,
+          "success_second": 180,
+          "rate_first_pct": 70.83333333333334,
+          "rate_second_pct": 93.75,
+          "delta_pp": 22.916666666666664,
+          "chi2": 42.08695652173913,
+          "p": 8.730357350832804e-11,
+          "p_exact": 1.3358203432289883e-12,
+          "odds_ratio": 45.0,
+          "or_ci_lo": 7.675146722213769,
+          "or_ci_hi": 1816.4029953052816,
+          "boot_ci_lo_pp": 13.636363636363635,
+          "boot_ci_hi_pp": 33.86243386243386,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 48,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 48,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "original five-condition predicate (success field)"
+        },
+        "P5_sh": {
+          "n": 48,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 48,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24,
+          "definition": "P5 AND the locator contains no unflagged short-middle CSS-module class token"
+        }
+      }
+    }
+  },
+  "per_page": [
+    {
+      "page": "page_17",
+      "distinct_tokens": 24,
+      "B_full_locators": 6,
+      "B_full_success_lost": 0,
+      "B_noVolatile_locators": 4,
+      "B_noVolatile_success_lost": 0,
+      "B_noVolatileConsistent_locators": 6,
+      "B_noVolatileConsistent_success_lost": 1
+    },
+    {
+      "page": "page_18",
+      "distinct_tokens": 20,
+      "B_full_locators": 9,
+      "B_full_success_lost": 8,
+      "B_noVolatile_locators": 13,
+      "B_noVolatile_success_lost": 9,
+      "B_noVolatileConsistent_locators": 9,
+      "B_noVolatileConsistent_success_lost": 4
+    },
+    {
+      "page": "page_21",
+      "distinct_tokens": 18,
+      "B_full_locators": 2,
+      "B_full_success_lost": 0,
+      "B_noVolatile_locators": 4,
+      "B_noVolatile_success_lost": 0,
+      "B_noVolatileConsistent_locators": 4,
+      "B_noVolatileConsistent_success_lost": 0
+    },
+    {
+      "page": "page_22",
+      "distinct_tokens": 19,
+      "B_full_locators": 10,
+      "B_full_success_lost": 6,
+      "B_noVolatile_locators": 7,
+      "B_noVolatile_success_lost": 5,
+      "B_noVolatileConsistent_locators": 9,
+      "B_noVolatileConsistent_success_lost": 4
+    },
+    {
+      "page": "page_23",
+      "distinct_tokens": 18,
+      "B_full_locators": 16,
+      "B_full_success_lost": 10,
+      "B_noVolatile_locators": 16,
+      "B_noVolatile_success_lost": 12,
+      "B_noVolatileConsistent_locators": 17,
+      "B_noVolatileConsistent_success_lost": 11
+    },
+    {
+      "page": "page_24",
+      "distinct_tokens": 13,
+      "B_full_locators": 0,
+      "B_full_success_lost": 0,
+      "B_noVolatile_locators": 4,
+      "B_noVolatile_success_lost": 0,
+      "B_noVolatileConsistent_locators": 8,
+      "B_noVolatileConsistent_success_lost": 0
+    }
+  ],
+  "affected_successes": [
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F0",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input.EditPanel_inp__y6z7a8#card-title"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F1",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input#card-title.EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input#card-title.EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input#card-title.EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_08",
+      "encoding": "F0",
+      "tokens": [
+        "EditPanel_sel__b9c0d1"
+      ],
+      "locator": "css:select.EditPanel_sel__b9c0d1#card-assignee"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_08",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_sel__b9c0d1"
+      ],
+      "locator": "css:select.EditPanel_sel__b9c0d1#card-assignee"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F0",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input.EditPanel_inp__y6z7a8[type=\"date\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input.EditPanel_inp__y6z7a8[type=\"date\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_01",
+      "encoding": "F0",
+      "tokens": [
+        "TfSearch_inp__i8j9k0"
+      ],
+      "locator": "css:input.TfSearch_inp__i8j9k0#tracking-search"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea.EditForm_ta__h5i6j7#delivery-notes"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F2",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea.EditForm_ta__h5i6j7#delivery-notes"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F3",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea#delivery-notes.EditForm_ta__h5i6j7"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_09",
+      "encoding": "F1",
+      "tokens": [
+        "EditForm_sel__e2f3g4"
+      ],
+      "locator": "css:select.EditForm_sel__e2f3g4#shipment-priority"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_22",
+      "task_id": "t_09",
+      "encoding": "F2",
+      "tokens": [
+        "EditForm_sel__e2f3g4"
+      ],
+      "locator": "css:select#shipment-priority.EditForm_sel__e2f3g4"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F0",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F1",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F2",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F3",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[role=\"tab\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F3",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[role=\"tab\"]:not(.active)"
+    },
+    {
+      "bundle": "B_full",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F3",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F1",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input#card-title.EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input#card-title.EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_07",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:.EditPanel_inp__y6z7a8#card-title"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_08",
+      "encoding": "F0",
+      "tokens": [
+        "EditPanel_sel__b9c0d1"
+      ],
+      "locator": "css:select#card-assignee.EditPanel_sel__b9c0d1"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_08",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_sel__b9c0d1"
+      ],
+      "locator": "css:select.EditPanel_sel__b9c0d1#card-assignee[name=\"assignee\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F0",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input[type=\"date\"].EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F1",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input[type=\"date\"].EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input[type=\"date\"].EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:.EditPanel_inp__y6z7a8[type=\"date\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_22",
+      "task_id": "t_01",
+      "encoding": "F0",
+      "tokens": [
+        "TfSearch_inp__i8j9k0"
+      ],
+      "locator": "css:input.TfSearch_inp__i8j9k0#tracking-search"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_22",
+      "task_id": "t_07",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_inp__b9c0d1"
+      ],
+      "locator": "css:.EditForm_inp__b9c0d1#shipment-ref"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea.EditForm_ta__h5i6j7#delivery-notes"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F2",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea.EditForm_ta__h5i6j7"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_22",
+      "task_id": "t_09",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_sel__e2f3g4"
+      ],
+      "locator": "css:select.EditForm_sel__e2f3g4#shipment-priority[name=\"shipment_priority\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F0",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F1",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F2",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F3",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F1",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[role=\"tab\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F3",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F1",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[role=\"tab\"][aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[role=\"tab\"]:not(.active)"
+    },
+    {
+      "bundle": "B_noVolatile",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F3",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_17",
+      "task_id": "t_09",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_root__a2b3c4"
+      ],
+      "locator": "css:.EditPanel_root__a2b3c4 input[type=\"email\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_18",
+      "task_id": "t_08",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_sel__b9c0d1"
+      ],
+      "locator": "css:select.EditPanel_sel__b9c0d1[name=\"assignee\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F1",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:input[type=\"date\"].EditPanel_inp__y6z7a8"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F2",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:.EditPanel_inp__y6z7a8[type=\"date\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_18",
+      "task_id": "t_09",
+      "encoding": "F3",
+      "tokens": [
+        "EditPanel_inp__y6z7a8"
+      ],
+      "locator": "css:.EditPanel_inp__y6z7a8[type=\"date\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_22",
+      "task_id": "t_01",
+      "encoding": "F0",
+      "tokens": [
+        "TfSearch_inp__i8j9k0"
+      ],
+      "locator": "css:input#tracking-search.TfSearch_inp__i8j9k0"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:textarea.EditForm_ta__h5i6j7#delivery-notes[aria-label=\"Delivery instructions\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_22",
+      "task_id": "t_08",
+      "encoding": "F1",
+      "tokens": [
+        "EditForm_ta__h5i6j7"
+      ],
+      "locator": "css:.EditForm_ta__h5i6j7"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_22",
+      "task_id": "t_09",
+      "encoding": "F0",
+      "tokens": [
+        "EditForm_sel__e2f3g4"
+      ],
+      "locator": "css:select.EditForm_sel__e2f3g4#shipment-priority[name=\"shipment_priority\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F0",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F1",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F2",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_02",
+      "encoding": "F3",
+      "tokens": [
+        "PromoRow_btn__n3o4p5"
+      ],
+      "locator": "css:button.PromoRow_btn__n3o4p5[aria-label=\"Apply discount code\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F1",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0.active[role=\"tab\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_04",
+      "encoding": "F3",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button[role=\"tab\"].PayShell_tab__n8o9p0.active[aria-label=\"Pay by credit or debit card\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F0",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F1",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[aria-label=\"Continue with PayPal\"]"
+    },
+    {
+      "bundle": "B_noVolatileConsistent",
+      "page": "page_23",
+      "task_id": "t_05",
+      "encoding": "F2",
+      "tokens": [
+        "PayShell_tab__n8o9p0"
+      ],
+      "locator": "css:button.PayShell_tab__n8o9p0[role=\"tab\"]:not(.active)"
+    }
+  ]
+}

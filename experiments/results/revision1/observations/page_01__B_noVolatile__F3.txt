@@ -1,0 +1,658 @@
+div class=notice-bar {🚚 Free standard delivery on orders over £25  ·  GPhC registered pharmacy No. 1111111  ·  Same-day dispatch before 3 pm Track order Prescriptions Help}
+div class=notice-bar__inner {🚚 Free standard delivery on orders over £25  ·  GPhC registered pharmacy No. 1111111  ·  Same-day dispatch before 3 pm Track order Prescriptions Help}
+span {🚚 Free standard delivery on orders over £25  ·  GPhC registered pharmacy No. 1111111  ·  Same-day dispatch before 3 pm}
+nav class=notice-bar__links aria-label="Utility links" {Track order Prescriptions Help}
+a href=/track-order {Track order}
+a href=/prescription {Prescriptions}
+a href=/help {Help}
+header class=site-header role=banner {PharmaCare All Medicines Vitamins Beauty Baby Search products Search 👤 Account ♡ Saved 🛒 Basket 0 Medicines ▾ Vitamins & Supplements ▾ Beauty & Skincare ▾ Sexual Health ▾ Baby & Child ▾ Medical Devices ▾ Offers & Deals ▾ Health Advice}
+div class=header-top {PharmaCare All Medicines Vitamins Beauty Baby Search products Search 👤 Account ♡ Saved 🛒 Basket 0}
+a href=/ class=header__logo-link aria-label="PharmaCare home" {PharmaCare}
+span class=header__logo-rx {Care}
+form class=header-search role=search {All Medicines Vitamins Beauty Baby Search products Search}
+select class=header-search__cat name=cat aria-label="Search category" {All Medicines Vitamins Beauty Baby}
+label for=site-search class=sr-only {Search products}
+input type=search id=site-search name=q class=header-search__input placeholder="Search medicines, vitamins and more…" aria-label="Search products"
+button type=submit class=header-search__btn aria-label="Submit search" {Search}
+nav class=header-utils aria-label="Account and basket" {👤 Account ♡ Saved 🛒 Basket 0}
+button class=header-utils__btn aria-label="My account" {👤 Account}
+span class=header-utils__icon aria-hidden=true {👤}
+span {Account}
+button class=header-utils__btn aria-label="Saved items" {♡ Saved}
+span class=header-utils__icon aria-hidden=true {♡}
+span {Saved}
+button class="header-utils__btn basket-wrap" aria-label="Shopping basket, 0 items" {🛒 Basket 0}
+span class=header-utils__icon aria-hidden=true {🛒}
+span {Basket}
+span class=basket-count aria-hidden=true {0}
+nav class=mega-menu-bar aria-label="Category navigation" {Medicines ▾ Vitamins & Supplements ▾ Beauty & Skincare ▾ Sexual Health ▾ Baby & Child ▾ Medical Devices ▾ Offers & Deals ▾ Health Advice}
+ul class=mega-menu-nav role=list {Medicines ▾ Vitamins & Supplements ▾ Beauty & Skincare ▾ Sexual Health ▾ Baby & Child ▾ Medical Devices ▾ Offers & Deals ▾ Health Advice}
+li class=mm-item {Medicines ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Medicines ▾}
+div class="mm-panel mm-panel-wide" role=region aria-label="Medicines subcategories" {By condition           Antibiotics           Antivirals           Pain Relief           Cold & Flu           Allergy           Hay Fever           Digestion           Heartburn & Reflux           Skin Conditions           Eye Drops           Ear Drops           Oral Health           By type         …}
+span class=mm-heading {By condition}
+a class=mm-link href=/medicines/antibiotics {Antibiotics}
+a class=mm-link href=/medicines/antivirals {Antivirals}
+a class=mm-link href=/medicines/pain-relief {Pain Relief}
+a class=mm-link href=/medicines/cold-flu {Cold & Flu}
+a class=mm-link href=/medicines/allergy {Allergy}
+a class=mm-link href=/medicines/hay-fever {Hay Fever}
+a class=mm-link href=/medicines/digestion {Digestion}
+a class=mm-link href=/medicines/heartburn {Heartburn & Reflux}
+a class=mm-link href=/medicines/skin {Skin Conditions}
+a class=mm-link href=/medicines/eye {Eye Drops}
+a class=mm-link href=/medicines/ear {Ear Drops}
+a class=mm-link href=/medicines/oral-health {Oral Health}
+span class=mm-heading {By type}
+a class=mm-link href=/medicines/prescription {Prescription (POM)}
+a class=mm-link href=/medicines/otc {Over the Counter}
+a class=mm-link href=/medicines/pharmacy-only {Pharmacy Only}
+li class=mm-item {Vitamins & Supplements ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Vitamins & Supplements ▾}
+div class=mm-panel role=region aria-label="Vitamins subcategories" {Multivitamins           Vitamin C           Vitamin D           Vitamin B12           Omega-3 Fish Oil           Iron Supplements           Calcium & Magnesium           Probiotics           Zinc           Sports Nutrition           Pregnancy           Children's Vitamins}
+a class=mm-link href=/vitamins/multivitamins {Multivitamins}
+a class=mm-link href=/vitamins/vitamin-c {Vitamin C}
+a class=mm-link href=/vitamins/vitamin-d {Vitamin D}
+a class=mm-link href=/vitamins/vitamin-b12 {Vitamin B12}
+a class=mm-link href=/vitamins/omega-3 {Omega-3 Fish Oil}
+a class=mm-link href=/vitamins/iron {Iron Supplements}
+a class=mm-link href=/vitamins/calcium {Calcium & Magnesium}
+a class=mm-link href=/vitamins/probiotics {Probiotics}
+a class=mm-link href=/vitamins/zinc {Zinc}
+a class=mm-link href=/vitamins/sports {Sports Nutrition}
+a class=mm-link href=/vitamins/pregnancy {Pregnancy}
+a class=mm-link href=/vitamins/childrens {Children's Vitamins}
+li class=mm-item {Beauty & Skincare ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Beauty & Skincare ▾}
+div class=mm-panel role=region aria-label="Beauty subcategories" {Moisturisers           Sunscreen & SPF           Acne & Blemish           Anti-ageing           Hair Care           Dental Hygiene           Deodorants           Shaving           Feminine Care           Men's Grooming}
+a class=mm-link href=/beauty/moisturisers {Moisturisers}
+a class=mm-link href=/beauty/sunscreen {Sunscreen & SPF}
+a class=mm-link href=/beauty/acne {Acne & Blemish}
+a class=mm-link href=/beauty/anti-ageing {Anti-ageing}
+a class=mm-link href=/beauty/hair-care {Hair Care}
+a class=mm-link href=/beauty/dental {Dental Hygiene}
+a class=mm-link href=/beauty/deodorants {Deodorants}
+a class=mm-link href=/beauty/shaving {Shaving}
+a class=mm-link href=/beauty/feminine {Feminine Care}
+a class=mm-link href=/beauty/mens {Men's Grooming}
+li class=mm-item {Sexual Health ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Sexual Health ▾}
+div class=mm-panel role=region aria-label="Sexual Health subcategories" {Contraception           STI Testing           Emergency Contraception           Lubricants           Pregnancy Tests           Ovulation Tests           Erectile Dysfunction           Thrush Treatment}
+a class=mm-link href=/sexual-health/contraception {Contraception}
+a class=mm-link href=/sexual-health/sti-testing {STI Testing}
+a class=mm-link href=/sexual-health/morning-after {Emergency Contraception}
+a class=mm-link href=/sexual-health/lubricants {Lubricants}
+a class=mm-link href=/sexual-health/pregnancy-tests {Pregnancy Tests}
+a class=mm-link href=/sexual-health/ovulation {Ovulation Tests}
+a class=mm-link href=/sexual-health/erectile {Erectile Dysfunction}
+a class=mm-link href=/sexual-health/thrush {Thrush Treatment}
+li class=mm-item {Baby & Child ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Baby & Child ▾}
+div class=mm-panel role=region aria-label="Baby and Child subcategories" {Nappies & Wipes           Baby Formula           Baby Skincare           Children's Medicines           Children's Vitamins           Toothbrushes & Toothpaste           Feeding & Nursing           Thermometers}
+a class=mm-link href=/baby/nappies {Nappies & Wipes}
+a class=mm-link href=/baby/formula {Baby Formula}
+a class=mm-link href=/baby/skincare {Baby Skincare}
+a class=mm-link href=/baby/medicines {Children's Medicines}
+a class=mm-link href=/baby/vitamins {Children's Vitamins}
+a class=mm-link href=/baby/oral-care {Toothbrushes & Toothpaste}
+a class=mm-link href=/baby/feeding {Feeding & Nursing}
+a class=mm-link href=/baby/thermometers {Thermometers}
+li class=mm-item {Medical Devices ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Medical Devices ▾}
+div class=mm-panel role=region aria-label="Medical Devices subcategories" {Blood Pressure Monitors           Glucose Monitors           Thermometers           Peak Flow Meters           TENS Machines           Nebulisers           Supports & Braces           First Aid           Inhaler Accessories}
+a class=mm-link href=/devices/blood-pressure {Blood Pressure Monitors}
+a class=mm-link href=/devices/glucose {Glucose Monitors}
+a class=mm-link href=/devices/thermometers {Thermometers}
+a class=mm-link href=/devices/peak-flow {Peak Flow Meters}
+a class=mm-link href=/devices/tens {TENS Machines}
+a class=mm-link href=/devices/nebulisers {Nebulisers}
+a class=mm-link href=/devices/supports {Supports & Braces}
+a class=mm-link href=/devices/first-aid {First Aid}
+a class=mm-link href=/devices/inhalers {Inhaler Accessories}
+li class=mm-item {Offers & Deals ▾}
+button class=mm-btn aria-haspopup=true aria-expanded=false {Offers & Deals ▾}
+div class=mm-panel role=region aria-label="Offers subcategories" {3 for 2 Offers           Clearance           This Week's Deals           Buy One Get One Half Price           NHS Discount           Loyalty Points}
+a class=mm-link href=/offers/3-for-2 {3 for 2 Offers}
+a class=mm-link href=/offers/clearance {Clearance}
+a class=mm-link href=/offers/weekly-deals {This Week's Deals}
+a class=mm-link href=/offers/buy2 {Buy One Get One Half Price}
+a class=mm-link href=/offers/nhs-discount {NHS Discount}
+a class=mm-link href=/offers/loyalty {Loyalty Points}
+li class=mm-item {Health Advice}
+a class=mm-btn href=/advice {Health Advice}
+div class=breadcrumb-wrap {Home › Medicines › Antibiotics › Amoxicillin 500mg Capsules}
+nav class=breadcrumb-inner aria-label=Breadcrumb {Home › Medicines › Antibiotics › Amoxicillin 500mg Capsules}
+ol class=breadcrumb {Home › Medicines › Antibiotics › Amoxicillin 500mg Capsules}
+li class=breadcrumb__item {Home}
+a href=/ {Home}
+li class=breadcrumb__sep aria-hidden=true {›}
+li class=breadcrumb__item {Medicines}
+a href=/medicines {Medicines}
+li class=breadcrumb__sep aria-hidden=true {›}
+li class=breadcrumb__item {Antibiotics}
+a href=/medicines/antibiotics {Antibiotics}
+li class=breadcrumb__sep aria-hidden=true {›}
+li class=breadcrumb__item {Amoxicillin 500mg Capsules}
+span class=breadcrumb__current {Amoxicillin 500mg Capsules}
+div class=promo-banner role=region aria-label="Promotional offer" {🎉 Earn double loyalty points on all antibiotics this week Learn more}
+div class=promo-banner__inner {🎉 Earn double loyalty points on all antibiotics this week Learn more}
+span {🎉 Earn double loyalty points on all antibiotics this week}
+a href=/offers/loyalty class=promo-banner__cta {Learn more}
+main id=main-content class=page-main tabindex=-1 {SANDOZ  ·  VIEW ALL SANDOZ PRODUCTS  Amoxicillin 500mg Capsules ★★★★½ 284 reviews ✓ No prescription required 🛡 Pharmacy verified £8.49 RRP £10.99 Save £2.50 (23%) per pack of 28 capsules In stock — dispatched within 24 hours Strength 250mg capsules 500mg capsules 1000mg tablets Pack size 14 capsule…}
+article class=product-detail aria-label="Product detail" {SANDOZ  ·  VIEW ALL SANDOZ PRODUCTS  Amoxicillin 500mg Capsules ★★★★½ 284 reviews ✓ No prescription required 🛡 Pharmacy verified £8.49 RRP £10.99 Save £2.50 (23%) per pack of 28 capsules In stock — dispatched within 24 hours Strength 250mg capsules 500mg capsules 1000mg tablets Pack size 14 capsule…}
+div class=gallery__main
+img class=gallery__main-img alt="Amoxicillin 500mg Capsules — front of pack" data-testid=product-image-main
+button class=gallery__nav-btn--prev aria-label="Previous product image"
+svg aria-hidden=true
+button aria-hidden=true
+svg aria-hidden=true
+div class=gallery__thumbs aria-label="Product image thumbnails"
+button class="gallery__thumb gallery__thumb--active" aria-label="View image 1: front of pack"
+img alt="Front of pack"
+button class=gallery__thumb aria-label="View image 2: back of pack"
+img alt="Back of pack"
+button class=gallery__thumb aria-label="View image 3: capsule close-up"
+img alt="Capsule close-up"
+button class=gallery__thumb aria-label="View image 4: full pack contents"
+img alt="Full pack contents"
+div class=product-info {SANDOZ  ·  VIEW ALL SANDOZ PRODUCTS  Amoxicillin 500mg Capsules ★★★★½ 284 reviews ✓ No prescription required 🛡 Pharmacy verified £8.49 RRP £10.99 Save £2.50 (23%) per pack of 28 capsules In stock — dispatched within 24 hours Strength 250mg capsules 500mg capsules 1000mg tablets Pack size 14 capsule…}
+p class=product-brand {SANDOZ  ·  VIEW ALL SANDOZ PRODUCTS}
+a href=/brands/sandoz {VIEW ALL SANDOZ PRODUCTS}
+h1 class=product-title {Amoxicillin 500mg Capsules}
+div class=product-rating {★★★★½ 284 reviews}
+span class=stars aria-hidden=true {★★★★½}
+a href=#tab-reviews class=rating-count aria-label="4.5 out of 5 — read 284 reviews" {284 reviews}
+div class=product-badges {✓ No prescription required 🛡 Pharmacy verified}
+span class="badge badge-otc" aria-label="No prescription required" {✓ No prescription required}
+span aria-hidden=true {✓}
+span class="badge badge-verified" aria-label="Pharmacy verified product" {🛡 Pharmacy verified}
+span aria-hidden=true {🛡}
+div class=price-section {£8.49 RRP £10.99 Save £2.50 (23%) per pack of 28 capsules}
+div class=price-row {£8.49 RRP £10.99 Save £2.50 (23%)}
+span aria-label="Price: £8.49" {£8.49}
+span class=price-rrp aria-label="RRP £10.99" {RRP £10.99}
+span class=price-saving {Save £2.50 (23%)}
+span class=price-per {per pack of 28 capsules}
+div class=stock-row {In stock — dispatched within 24 hours}
+span class=stock-dot aria-hidden=true
+span class=in-stock-label aria-live=polite {In stock}
+span class=dispatch-info {— dispatched within 24 hours}
+form class=purchase-form {Strength 250mg capsules 500mg capsules 1000mg tablets Pack size 14 capsules 28 capsules 56 capsules Quantity − + Subscribe & Save — 10% off on every delivery. Cancel anytime. Add to cart Add to wishlist}
+div class=form-group {Strength 250mg capsules 500mg capsules 1000mg tablets}
+span class=form-label {Strength}
+select aria-label="Select dosage strength" class=form-select {250mg capsules 500mg capsules 1000mg tablets}
+option value=250mg {250mg capsules}
+option value=500mg {500mg capsules}
+option value=1000mg {1000mg tablets}
+div class=form-group {Pack size 14 capsules 28 capsules 56 capsules}
+span class=form-label aria-hidden=true {Pack size}
+select {14 capsules 28 capsules 56 capsules}
+option value=14 {14 capsules}
+option value=28 {28 capsules}
+option value=56 {56 capsules}
+div class=form-group {Quantity − +}
+label class=form-label for=qty-input {Quantity}
+div class=qty-wrap {− +}
+button type=button class=qty-adj aria-label="Decrease quantity" {−}
+input type=number id=qty-input name=quantity aria-label=Quantity data-testid=qty-input class=qty-input value=1
+button type=button class=qty-adj aria-label="Increase quantity" {+}
+div class=subscribe-row {Subscribe & Save — 10% off on every delivery. Cancel anytime.}
+span class=subscribe-label {Subscribe & Save — 10% off on every delivery. Cancel anytime.}
+input type=checkbox name=subscribe_save
+span {Subscribe & Save — 10% off on every delivery. Cancel anytime.}
+span class=subscribe-saving {10% off}
+div class=action-row {Add to cart Add to wishlist}
+button type=submit data-testid=add-to-cart-btn class="btn btn-primary" {Add to cart}
+button type=button aria-label="Save Amoxicillin 500mg Capsules to wishlist" class="btn btn-secondary" {Add to wishlist}
+div class=delivery-card {Delivery options  Standard (3–5 days) FREE on orders over £25 Express (next day) £3.99 Click & Collect FREE}
+p class=delivery-card__title {Delivery options}
+div class=delivery-option {Standard (3–5 days) FREE on orders over £25}
+span class=delivery-label {Standard (3–5 days)}
+span {FREE on orders over £25}
+span class=delivery-free {FREE}
+span class=delivery-eta {on orders over £25}
+div class=delivery-option {Express (next day) £3.99}
+span class=delivery-label {Express (next day)}
+span class=delivery-price {£3.99}
+div class=delivery-option {Click & Collect FREE}
+span class=delivery-label {Click & Collect}
+span class=delivery-free {FREE}
+div class=trust-row aria-label="Trust and security indicators" {🔒 SSL secure 🏥 GPhC regulated ↩ Easy returns 💳 Visa · MC · PayPal}
+span class=trust-badge {🔒 SSL secure}
+span class=trust-badge__icon aria-hidden=true {🔒}
+span class=trust-badge {🏥 GPhC regulated}
+span class=trust-badge__icon aria-hidden=true {🏥}
+span class=trust-badge {↩ Easy returns}
+span class=trust-badge__icon aria-hidden=true {↩}
+span class=trust-badge {💳 Visa · MC · PayPal}
+span class=trust-badge__icon aria-hidden=true {💳}
+section class=product-tabs aria-label="Product information" {Description Dosage & Administration Reviews (284) Q&A (18) About Amoxicillin 500mg Capsules  Amoxicillin is a broad-spectrum penicillin-type antibiotic used to treat a wide range of bacterial infections. It works by interfering with the formation of the bacteria's cell wall, causing the bacteria to …}
+div class=tabs-header role=tablist aria-label="Product information sections" {Description Dosage & Administration Reviews (284) Q&A (18)}
+button class=tab-btn role=tab aria-selected=true aria-controls=tab-description id=tab-btn-desc {Description}
+button class=tab-btn role=tab aria-selected=false aria-controls=tab-dosage id=tab-btn-dosage {Dosage & Administration}
+button class=tab-btn role=tab aria-selected=false aria-controls=tab-reviews id=tab-btn-reviews {Reviews (284)}
+button class=tab-btn role=tab aria-selected=false aria-controls=tab-qa id=tab-btn-qa {Q&A (18)}
+div id=tab-description class="tab-panel desc" role=tabpanel aria-labelledby=tab-btn-desc {About Amoxicillin 500mg Capsules  Amoxicillin is a broad-spectrum penicillin-type antibiotic used to treat a wide range of bacterial infections. It works by interfering with the formation of the bacteria's cell wall, causing the bacteria to die. Amoxicillin 500mg Capsules are suitable for adults and…}
+div class=desc {About Amoxicillin 500mg Capsules  Amoxicillin is a broad-spectrum penicillin-type antibiotic used to treat a wide range of bacterial infections. It works by interfering with the formation of the bacteria's cell wall, causing the bacteria to die. Amoxicillin 500mg Capsules are suitable for adults and…}
+h3 {About Amoxicillin 500mg Capsules}
+p {Amoxicillin is a broad-spectrum penicillin-type antibiotic used to treat a wide range of bacterial infections. It works by interfering with the formation of the bacteria's cell wall, causing the bacteria to die. Amoxicillin 500mg Capsules are suitable for adults and children weighing 40 kg or more.}
+p {This medicine is available without a prescription and is manufactured by Sandoz, a leading global generics company. Each capsule contains 500mg of amoxicillin (as amoxicillin trihydrate).}
+div class=warning-box role=note aria-label="Important warning" {⚠️ Important: Do not take if you are allergic to penicillin or any other beta-lactam antibiotics. Seek medical advice before use if you have kidney disease or mononucleosis.}
+h3 {Active Ingredients}
+ul {Amoxicillin trihydrate equivalent to 500mg amoxicillin per capsule Magnesium stearate (E572) Capsule shell: gelatin, titanium dioxide (E171), patent blue V (E131)}
+li {Amoxicillin trihydrate equivalent to 500mg amoxicillin per capsule}
+li {Magnesium stearate (E572)}
+li {Capsule shell: gelatin, titanium dioxide (E171), patent blue V (E131)}
+h3 {Indications}
+p {Amoxicillin 500mg Capsules are indicated for the treatment of the following infections caused by susceptible organisms:}
+ul {Upper respiratory tract infections: ear, nose and throat infections Lower respiratory tract infections: acute bronchitis, pneumonia Urinary tract infections including cystitis and pyelonephritis Skin and soft tissue infections Dental infections and abscesses (in combination with metronidazole) Helic…}
+li {Upper respiratory tract infections: ear, nose and throat infections}
+li {Lower respiratory tract infections: acute bronchitis, pneumonia}
+li {Urinary tract infections including cystitis and pyelonephritis}
+li {Skin and soft tissue infections}
+li {Dental infections and abscesses (in combination with metronidazole)}
+li {Helicobacter pylori eradication (in triple therapy)}
+h3 {Contraindications}
+p {Do not use Amoxicillin 500mg Capsules if you have a known allergy to amoxicillin, any other penicillin antibiotic, or any of the other ingredients of this medicine. Previous allergic reactions to penicillin may increase the risk of cross-sensitivity with other beta-lactam antibiotics such as cephalo…}
+h3 {Storage}
+p {Store below 25°C in a dry place, away from direct sunlight. Keep out of the reach and sight of children. Do not use after the expiry date printed on the carton.}
+h3 {Manufacturer}
+table {Detail	Information Manufacturer	Sandoz Ltd PL Number	PL 04416/0010 Pack size	28 capsules Legal category	P (Pharmacy medicine) MHRA approved	Yes}
+thead {Detail	Information}
+tr {Detail	Information}
+th {Detail}
+th {Information}
+tbody {Manufacturer	Sandoz Ltd PL Number	PL 04416/0010 Pack size	28 capsules Legal category	P (Pharmacy medicine) MHRA approved	Yes}
+tr {Manufacturer	Sandoz Ltd}
+td {Manufacturer}
+td {Sandoz Ltd}
+tr {PL Number	PL 04416/0010}
+td {PL Number}
+td {PL 04416/0010}
+tr {Pack size	28 capsules}
+td {Pack size}
+td {28 capsules}
+tr {Legal category	P (Pharmacy medicine)}
+td {Legal category}
+td {P (Pharmacy medicine)}
+tr {MHRA approved	Yes}
+td {MHRA approved}
+td {Yes}
+div id=tab-dosage class=tab-panel role=tabpanel aria-labelledby=tab-btn-dosage {Recommended Dosage         Always take this medicine exactly as directed by your doctor or pharmacist. Do not exceed the recommended dose. The usual doses are shown below.                                                Indication               Adults & children ≥40 kg               Frequency        …}
+div class=desc {Recommended Dosage         Always take this medicine exactly as directed by your doctor or pharmacist. Do not exceed the recommended dose. The usual doses are shown below.                                                Indication               Adults & children ≥40 kg               Frequency        …}
+h3 {Recommended Dosage}
+p {Always take this medicine exactly as directed by your doctor or pharmacist. Do not exceed the recommended dose. The usual doses are shown below.}
+table class=dosage-table {Indication               Adults & children ≥40 kg               Frequency               Duration                                                Mild–moderate infections250mg–500mgThree times daily5–7 days             Severe infections500mg–1000mgThree times daily7–14 days             Urinary tract i…}
+thead {Indication               Adults & children ≥40 kg               Frequency               Duration}
+tr {Indication               Adults & children ≥40 kg               Frequency               Duration}
+th {Indication}
+th {Adults & children ≥40 kg}
+th {Frequency}
+th {Duration}
+tbody {Mild–moderate infections250mg–500mgThree times daily5–7 days             Severe infections500mg–1000mgThree times daily7–14 days             Urinary tract infection500mg–1000mgThree times daily7–14 days             Dental abscess250mg–500mgThree times daily3–7 days             H. pylori eradication1…}
+tr {Mild–moderate infections250mg–500mgThree times daily5–7 days}
+td {Mild–moderate infections}
+td {250mg–500mg}
+td {Three times daily}
+td {5–7 days}
+tr {Severe infections500mg–1000mgThree times daily7–14 days}
+td {Severe infections}
+td {500mg–1000mg}
+td {Three times daily}
+td {7–14 days}
+tr {Urinary tract infection500mg–1000mgThree times daily7–14 days}
+td {Urinary tract infection}
+td {500mg–1000mg}
+td {Three times daily}
+td {7–14 days}
+tr {Dental abscess250mg–500mgThree times daily3–7 days}
+td {Dental abscess}
+td {250mg–500mg}
+td {Three times daily}
+td {3–7 days}
+tr {H. pylori eradication1000mgTwice daily7 days}
+td {H. pylori eradication}
+td {1000mg}
+td {Twice daily}
+td {7 days}
+tr {Community pneumonia500mgThree times daily5–7 days}
+td {Community pneumonia}
+td {500mg}
+td {Three times daily}
+td {5–7 days}
+tr {Otitis media500mg–1000mgThree times daily5–7 days}
+td {Otitis media}
+td {500mg–1000mg}
+td {Three times daily}
+td {5–7 days}
+p class=dosage-note {⚠️ Doses should be spaced as evenly as possible throughout the day. Complete the full course even if you feel better. Stopping early can cause the infection to return.}
+h3 {Method of Administration}
+p {Swallow capsules whole with water. May be taken with or without food. If you have difficulty swallowing capsules, the contents may be dispersed in a small amount of water or mixed with food (e.g. yoghurt) immediately before taking.}
+h3 {Overdose}
+p {If you take more than prescribed, contact a doctor or Accident and Emergency immediately. In the event of overdose, adequate fluid intake and urinary output should be maintained to reduce the risk of amoxicillin crystalluria.}
+div id=tab-reviews class=tab-panel role=tabpanel aria-labelledby=tab-btn-reviews {4.5             ★★★★½             284 reviews                                   5★193             4★51             3★20             2★9             1★11                                                                    Write a review                                                                Sa…}
+div class=reviews-top {4.5             ★★★★½             284 reviews                                   5★193             4★51             3★20             2★9             1★11                                                                    Write a review}
+div class=rating-summary {4.5             ★★★★½             284 reviews                                   5★193             4★51             3★20             2★9             1★11}
+div {4.5             ★★★★½             284 reviews}
+div class=rating-big-num {4.5}
+div class=rating-stars-big aria-hidden=true {★★★★½}
+div class=rating-big-label {284 reviews}
+div class=rating-bars {5★193             4★51             3★20             2★9             1★11}
+div class=rbar-row {5★193}
+span class=rbar-label {5★}
+div class=rbar-bg
+div class=rbar-fill
+span class=rbar-count {193}
+div class=rbar-row {4★51}
+span class=rbar-label {4★}
+div class=rbar-bg
+div class=rbar-fill
+span class=rbar-count {51}
+div class=rbar-row {3★20}
+span class=rbar-label {3★}
+div class=rbar-bg
+div class=rbar-fill
+span class=rbar-count {20}
+div class=rbar-row {2★9}
+span class=rbar-label {2★}
+div class=rbar-bg
+div class=rbar-fill
+span class=rbar-count {9}
+div class=rbar-row {1★11}
+span class=rbar-label {1★}
+div class=rbar-bg
+div class=rbar-fill
+span class=rbar-count {11}
+button id=write-review-btn class="btn btn-outline" {Write a review}
+div class=review-item {Sarah M.             Verified purchase · 14 Mar 2025                      ✓ Verified buyer                  ★★★★★         Cleared my infection within days         Had a chest infection that just would not go away. Doctor recommended amoxicillin and within 3 days I started feeling much better. Fast d…}
+div class=review-header {Sarah M.             Verified purchase · 14 Mar 2025                      ✓ Verified buyer}
+div {Sarah M.             Verified purchase · 14 Mar 2025}
+div class=reviewer-name {Sarah M.}
+div class=reviewer-meta {Verified purchase · 14 Mar 2025}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="5 out of 5 stars" {★★★★★}
+div class=review-title {Cleared my infection within days}
+div class=review-body {Had a chest infection that just would not go away. Doctor recommended amoxicillin and within 3 days I started feeling much better. Fast delivery too — ordered in the evening and it arrived the next morning.}
+div class=review-helpful {Helpful?Yes (12)No (1)}
+span {Helpful?}
+button {Yes (12)}
+button {No (1)}
+div class=review-item {David K.             Verified purchase · 2 Feb 2025                      ✓ Verified buyer                  ★★★★☆         Good product, slightly slow delivery         Works as expected — used it for a sinus infection as advised. Took the full 7-day course and the infection cleared up completely. The …}
+div class=review-header {David K.             Verified purchase · 2 Feb 2025                      ✓ Verified buyer}
+div {David K.             Verified purchase · 2 Feb 2025}
+div class=reviewer-name {David K.}
+div class=reviewer-meta {Verified purchase · 2 Feb 2025}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="4 out of 5 stars" {★★★★☆}
+div class=review-title {Good product, slightly slow delivery}
+div class=review-body {Works as expected — used it for a sinus infection as advised. Took the full 7-day course and the infection cleared up completely. The only minor gripe is delivery took 3 days rather than the stated 1–2.}
+div class=review-helpful {Helpful?Yes (7)No (2)}
+span {Helpful?}
+button {Yes (7)}
+button {No (2)}
+div class=review-item {Priya L.             Verified purchase · 19 Jan 2025                      ✓ Verified buyer                  ★★★★★         Exactly what the doctor ordered         Prescribed by my GP for a UTI. Much cheaper than my local pharmacy and arrived quickly. Packaging was secure and included an information l…}
+div class=review-header {Priya L.             Verified purchase · 19 Jan 2025                      ✓ Verified buyer}
+div {Priya L.             Verified purchase · 19 Jan 2025}
+div class=reviewer-name {Priya L.}
+div class=reviewer-meta {Verified purchase · 19 Jan 2025}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="5 out of 5 stars" {★★★★★}
+div class=review-title {Exactly what the doctor ordered}
+div class=review-body {Prescribed by my GP for a UTI. Much cheaper than my local pharmacy and arrived quickly. Packaging was secure and included an information leaflet. Will definitely use PharmaCare again.}
+div class=review-helpful {Helpful?Yes (9)No (0)}
+span {Helpful?}
+button {Yes (9)}
+button {No (0)}
+div class=review-item {Tom R.             Verified purchase · 5 Jan 2025                      ✓ Verified buyer                  ★★★★★         Great value and easy ordering         Third time ordering from here. Very straightforward process and the medication is always the branded Sandoz product. Saved quite a bit compared…}
+div class=review-header {Tom R.             Verified purchase · 5 Jan 2025                      ✓ Verified buyer}
+div {Tom R.             Verified purchase · 5 Jan 2025}
+div class=reviewer-name {Tom R.}
+div class=reviewer-meta {Verified purchase · 5 Jan 2025}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="5 out of 5 stars" {★★★★★}
+div class=review-title {Great value and easy ordering}
+div class=review-body {Third time ordering from here. Very straightforward process and the medication is always the branded Sandoz product. Saved quite a bit compared to the high street. Five stars from me.}
+div class=review-helpful {Helpful?Yes (5)No (0)}
+span {Helpful?}
+button {Yes (5)}
+button {No (0)}
+div class=review-item {Helen B.             Verified purchase · 22 Dec 2024                      ✓ Verified buyer                  ★★★☆☆         Medication fine, had a stomach upset         The antibiotic worked but I experienced quite bad nausea for the first couple of days. This is a known side effect — probably should …}
+div class=review-header {Helen B.             Verified purchase · 22 Dec 2024                      ✓ Verified buyer}
+div {Helen B.             Verified purchase · 22 Dec 2024}
+div class=reviewer-name {Helen B.}
+div class=reviewer-meta {Verified purchase · 22 Dec 2024}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="3 out of 5 stars" {★★★☆☆}
+div class=review-title {Medication fine, had a stomach upset}
+div class=review-body {The antibiotic worked but I experienced quite bad nausea for the first couple of days. This is a known side effect — probably should have taken it with food from the start. Medication itself was effective.}
+div class=review-helpful {Helpful?Yes (14)No (1)}
+span {Helpful?}
+button {Yes (14)}
+button {No (1)}
+div class=review-item {James O.             Verified purchase · 10 Dec 2024                      ✓ Verified buyer                  ★★★★★         Reliable and reasonably priced         I've been using PharmaCare for about two years. This is one of their best-value products. Packaged discreetly, came with a full patient inf…}
+div class=review-header {James O.             Verified purchase · 10 Dec 2024                      ✓ Verified buyer}
+div {James O.             Verified purchase · 10 Dec 2024}
+div class=reviewer-name {James O.}
+div class=reviewer-meta {Verified purchase · 10 Dec 2024}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="5 out of 5 stars" {★★★★★}
+div class=review-title {Reliable and reasonably priced}
+div class=review-body {I've been using PharmaCare for about two years. This is one of their best-value products. Packaged discreetly, came with a full patient information leaflet, and effective. Good enough to recommend to friends and family.}
+div class=review-helpful {Helpful?Yes (6)No (0)}
+span {Helpful?}
+button {Yes (6)}
+button {No (0)}
+div class=review-item {Fiona C.             Verified purchase · 28 Nov 2024                      ✓ Verified buyer                  ★★★★☆         Does the job         Used for a dental abscess on dentist's advice. Worked well alongside the metronidazole I was taking. Ordering was straightforward and the pharmacist consulta…}
+div class=review-header {Fiona C.             Verified purchase · 28 Nov 2024                      ✓ Verified buyer}
+div {Fiona C.             Verified purchase · 28 Nov 2024}
+div class=reviewer-name {Fiona C.}
+div class=reviewer-meta {Verified purchase · 28 Nov 2024}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="4 out of 5 stars" {★★★★☆}
+div class=review-title {Does the job}
+div class=review-body {Used for a dental abscess on dentist's advice. Worked well alongside the metronidazole I was taking. Ordering was straightforward and the pharmacist consultation before purchase was a nice touch that gives you peace of mind.}
+div class=review-helpful {Helpful?Yes (4)No (1)}
+span {Helpful?}
+button {Yes (4)}
+button {No (1)}
+div class=review-item {Maria T.             Verified purchase · 15 Nov 2024                      ✓ Verified buyer                  ★★★★★         Highly recommend this pharmacy         I was sceptical about ordering medicines online but PharmaCare has a very professional setup. The pharmacist called me to check my details …}
+div class=review-header {Maria T.             Verified purchase · 15 Nov 2024                      ✓ Verified buyer}
+div {Maria T.             Verified purchase · 15 Nov 2024}
+div class=reviewer-name {Maria T.}
+div class=reviewer-meta {Verified purchase · 15 Nov 2024}
+span class=review-verified {✓ Verified buyer}
+div class=review-stars aria-label="5 out of 5 stars" {★★★★★}
+div class=review-title {Highly recommend this pharmacy}
+div class=review-body {I was sceptical about ordering medicines online but PharmaCare has a very professional setup. The pharmacist called me to check my details before dispatching. Medication arrived promptly and worked as expected. Will be ordering again.}
+div class=review-helpful {Helpful?Yes (10)No (0)}
+span {Helpful?}
+button {Yes (10)}
+button {No (0)}
+div id=tab-qa class=tab-panel role=tabpanel aria-labelledby=tab-btn-qa {Can I take amoxicillin if I'm allergic to penicillin?         No. Amoxicillin is a type of penicillin antibiotic. If you have a known penicillin allergy you must not take this medicine. Speak to your doctor or pharmacist who can advise on suitable alternatives.         Answered by PharmaCare pharmac…}
+div class=qa-item {Can I take amoxicillin if I'm allergic to penicillin?         No. Amoxicillin is a type of penicillin antibiotic. If you have a known penicillin allergy you must not take this medicine. Speak to your doctor or pharmacist who can advise on suitable alternatives.         Answered by PharmaCare pharmac…}
+p class=qa-q {Can I take amoxicillin if I'm allergic to penicillin?}
+p class=qa-a {No. Amoxicillin is a type of penicillin antibiotic. If you have a known penicillin allergy you must not take this medicine. Speak to your doctor or pharmacist who can advise on suitable alternatives.}
+p class=qa-meta {Answered by PharmaCare pharmacist · 10 Jan 2025}
+div class=qa-item {Can I drink alcohol while taking amoxicillin?         Alcohol does not directly interact with amoxicillin and will not reduce its effectiveness. However, alcohol can worsen some of the side effects such as nausea and dizziness, and it may slow your recovery. Moderate consumption is generally conside…}
+p class=qa-q {Can I drink alcohol while taking amoxicillin?}
+p class=qa-a {Alcohol does not directly interact with amoxicillin and will not reduce its effectiveness. However, alcohol can worsen some of the side effects such as nausea and dizziness, and it may slow your recovery. Moderate consumption is generally considered acceptable, but it's best to avoid alcohol while u…}
+p class=qa-meta {Answered by PharmaCare pharmacist · 3 Dec 2024}
+div class=qa-item {What should I do if I miss a dose?         Take it as soon as you remember, unless it is nearly time for your next dose. In that case, skip the missed dose and continue as normal. Do not take two doses at the same time to make up for a missed one.         Answered by PharmaCare pharmacist · 18 Nov 2…}
+p class=qa-q {What should I do if I miss a dose?}
+p class=qa-a {Take it as soon as you remember, unless it is nearly time for your next dose. In that case, skip the missed dose and continue as normal. Do not take two doses at the same time to make up for a missed one.}
+p class=qa-meta {Answered by PharmaCare pharmacist · 18 Nov 2024}
+div class=qa-item {Is amoxicillin safe to take during pregnancy?         Amoxicillin is generally considered safe during pregnancy when used at recommended doses for appropriate infections. However, you should always consult your GP or midwife before taking any medicine during pregnancy.         Answered by PharmaCare…}
+p class=qa-q {Is amoxicillin safe to take during pregnancy?}
+p class=qa-a {Amoxicillin is generally considered safe during pregnancy when used at recommended doses for appropriate infections. However, you should always consult your GP or midwife before taking any medicine during pregnancy.}
+p class=qa-meta {Answered by PharmaCare pharmacist · 5 Nov 2024}
+section class=related-section aria-label="Related products" {Customers also viewed Amoxicillin 250mg Capsules Sandoz ★★★★★ (148) £5.29 Amoxicillin 125mg/5ml Oral Suspension Sandoz ★★★★☆ (93) £7.99 Flucloxacillin 500mg Capsules Wockhardt ★★★★☆ (67) £9.49 Phenoxymethylpenicillin 250mg Tablets Actavis ★★★★☆ (41) £6.79 Metronidazole 400mg Tablets Generics UK ★★★★…}
+h2 class=section-title {Customers also viewed}
+div class=product-grid {Amoxicillin 250mg Capsules Sandoz ★★★★★ (148) £5.29 Amoxicillin 125mg/5ml Oral Suspension Sandoz ★★★★☆ (93) £7.99 Flucloxacillin 500mg Capsules Wockhardt ★★★★☆ (67) £9.49 Phenoxymethylpenicillin 250mg Tablets Actavis ★★★★☆ (41) £6.79 Metronidazole 400mg Tablets Generics UK ★★★★★ (112) £7.25 Clarithr…}
+article class=product-card {Amoxicillin 250mg Capsules Sandoz ★★★★★ (148) £5.29}
+a class=product-card__link href=/products/amoxicillin-250mg-capsules data-testid=related-product-amoxicillin-250 {Amoxicillin 250mg Capsules Sandoz ★★★★★ (148) £5.29}
+div class=product-card__img-wrap
+img alt="Amoxicillin 250mg Capsules"
+div class=product-card__body {Amoxicillin 250mg Capsules Sandoz ★★★★★ (148) £5.29}
+span class=product-card__name {Amoxicillin 250mg Capsules}
+div class=product-card__brand {Sandoz}
+div class=product-card__rating {★★★★★ (148)}
+span class=product-card__stars aria-hidden=true {★★★★★}
+span class=product-card__rcount {(148)}
+div class=product-card__price {£5.29}
+article class=product-card {Amoxicillin 125mg/5ml Oral Suspension Sandoz ★★★★☆ (93) £7.99}
+a class=product-card__link href=/products/amoxicillin-125mg-oral-suspension data-testid=related-product-amoxicillin-125 aria-label="View Amoxicillin 125mg/5ml Oral Suspension" {Amoxicillin 125mg/5ml Oral Suspension Sandoz ★★★★☆ (93) £7.99}
+div class=product-card__img-wrap
+img alt="Amoxicillin 125mg Oral Suspension"
+div class=product-card__body {Amoxicillin 125mg/5ml Oral Suspension Sandoz ★★★★☆ (93) £7.99}
+span class=product-card__name {Amoxicillin 125mg/5ml Oral Suspension}
+div class=product-card__brand {Sandoz}
+div class=product-card__rating {★★★★☆ (93)}
+span class=product-card__stars aria-hidden=true {★★★★☆}
+span class=product-card__rcount {(93)}
+div class=product-card__price {£7.99}
+article class=product-card {Flucloxacillin 500mg Capsules Wockhardt ★★★★☆ (67) £9.49}
+a class=product-card__link href=/products/flucloxacillin-500mg-capsules data-testid=related-product-flucloxacillin-500 aria-label="View Flucloxacillin 500mg Capsules" {Flucloxacillin 500mg Capsules Wockhardt ★★★★☆ (67) £9.49}
+div class=product-card__img-wrap
+img alt="Flucloxacillin 500mg Capsules"
+div class=product-card__body {Flucloxacillin 500mg Capsules Wockhardt ★★★★☆ (67) £9.49}
+span class=product-card__name {Flucloxacillin 500mg Capsules}
+div class=product-card__brand {Wockhardt}
+div class=product-card__rating {★★★★☆ (67)}
+span class=product-card__stars aria-hidden=true {★★★★☆}
+span class=product-card__rcount {(67)}
+div class=product-card__price {£9.49}
+article class=product-card {Phenoxymethylpenicillin 250mg Tablets Actavis ★★★★☆ (41) £6.79}
+a class=product-card__link href=/products/penicillin-v-250mg-tablets data-testid=related-product-penicillin-v aria-label="View Phenoxymethylpenicillin 250mg Tablets" {Phenoxymethylpenicillin 250mg Tablets Actavis ★★★★☆ (41) £6.79}
+div class=product-card__img-wrap
+img alt="Phenoxymethylpenicillin 250mg Tablets"
+div class=product-card__body {Phenoxymethylpenicillin 250mg Tablets Actavis ★★★★☆ (41) £6.79}
+span class=product-card__name {Phenoxymethylpenicillin 250mg Tablets}
+div class=product-card__brand {Actavis}
+div class=product-card__rating {★★★★☆ (41)}
+span class=product-card__stars aria-hidden=true {★★★★☆}
+span class=product-card__rcount {(41)}
+div class=product-card__price {£6.79}
+article class=product-card {Metronidazole 400mg Tablets Generics UK ★★★★★ (112) £7.25}
+a class=product-card__link href=/products/metronidazole-400mg-tablets data-testid=related-product-metronidazole aria-label="View Metronidazole 400mg Tablets" {Metronidazole 400mg Tablets Generics UK ★★★★★ (112) £7.25}
+div class=product-card__img-wrap
+img alt="Metronidazole 400mg Tablets"
+div class=product-card__body {Metronidazole 400mg Tablets Generics UK ★★★★★ (112) £7.25}
+span class=product-card__name {Metronidazole 400mg Tablets}
+div class=product-card__brand {Generics UK}
+div class=product-card__rating {★★★★★ (112)}
+span class=product-card__stars aria-hidden=true {★★★★★}
+span class=product-card__rcount {(112)}
+div class=product-card__price {£7.25}
+article class=product-card {Clarithromycin 500mg Tablets Teva ★★★★☆ (58) £11.49}
+a class=product-card__link href=/products/clarithromycin-500mg-tablets data-testid=related-product-clarithromycin aria-label="View Clarithromycin 500mg Tablets" {Clarithromycin 500mg Tablets Teva ★★★★☆ (58) £11.49}
+div class=product-card__img-wrap
+img alt="Clarithromycin 500mg Tablets"
+div class=product-card__body {Clarithromycin 500mg Tablets Teva ★★★★☆ (58) £11.49}
+span class=product-card__name {Clarithromycin 500mg Tablets}
+div class=product-card__brand {Teva}
+div class=product-card__rating {★★★★☆ (58)}
+span class=product-card__stars aria-hidden=true {★★★★☆}
+span class=product-card__rcount {(58)}
+div class=product-card__price {£11.49}
+article class=product-card {Erythromycin 500mg Tablets Sandoz ★★★★☆ (34) £10.99}
+a class=product-card__link href=/products/erythromycin-500mg-tablets data-testid=related-product-erythromycin aria-label="View Erythromycin 500mg Tablets" {Erythromycin 500mg Tablets Sandoz ★★★★☆ (34) £10.99}
+div class=product-card__img-wrap
+img alt="Erythromycin 500mg Tablets"
+div class=product-card__body {Erythromycin 500mg Tablets Sandoz ★★★★☆ (34) £10.99}
+span class=product-card__name {Erythromycin 500mg Tablets}
+div class=product-card__brand {Sandoz}
+div class=product-card__rating {★★★★☆ (34)}
+span class=product-card__stars aria-hidden=true {★★★★☆}
+span class=product-card__rcount {(34)}
+div class=product-card__price {£10.99}
+article class=product-card {Doxycycline 100mg Capsules Actavis ★★★★★ (77) £13.99}
+a class=product-card__link href=/products/doxycycline-100mg-capsules data-testid=related-product-doxycycline aria-label="View Doxycycline 100mg Capsules" {Doxycycline 100mg Capsules Actavis ★★★★★ (77) £13.99}
+div class=product-card__img-wrap
+img alt="Doxycycline 100mg Capsules"
+div class=product-card__body {Doxycycline 100mg Capsules Actavis ★★★★★ (77) £13.99}
+span class=product-card__name {Doxycycline 100mg Capsules}
+div class=product-card__brand {Actavis}
+div class=product-card__rating {★★★★★ (77)}
+span class=product-card__stars aria-hidden=true {★★★★★}
+span class=product-card__rcount {(77)}
+div class=product-card__price {£13.99}
+footer role=contentinfo {PharmaCare  Your trusted online pharmacy, GPhC registered and regulated. Dispensing quality medicines since 2009. All orders reviewed by our qualified pharmacist team.  GPhC Registration No. 1111111  ·  VAT No. 123 4567 89  CUSTOMER SERVICE Contact Us FAQs Track Your Order Returns & Refunds Delivery…}
+div class=footer-top {PharmaCare  Your trusted online pharmacy, GPhC registered and regulated. Dispensing quality medicines since 2009. All orders reviewed by our qualified pharmacist team.  GPhC Registration No. 1111111  ·  VAT No. 123 4567 89  CUSTOMER SERVICE Contact Us FAQs Track Your Order Returns & Refunds Delivery…}
+div class=footer-brand {PharmaCare  Your trusted online pharmacy, GPhC registered and regulated. Dispensing quality medicines since 2009. All orders reviewed by our qualified pharmacist team.  GPhC Registration No. 1111111  ·  VAT No. 123 4567 89}
+div class=footer-logo {PharmaCare}
+p {Your trusted online pharmacy, GPhC registered and regulated. Dispensing quality medicines since 2009. All orders reviewed by our qualified pharmacist team.}
+p {GPhC Registration No. 1111111  ·  VAT No. 123 4567 89}
+div class=footer-col {CUSTOMER SERVICE Contact Us FAQs Track Your Order Returns & Refunds Delivery Information Prescription Services Complaints Procedure Accessibility}
+h3 class=footer-col__heading {CUSTOMER SERVICE}
+ul class=footer-col__links {Contact Us FAQs Track Your Order Returns & Refunds Delivery Information Prescription Services Complaints Procedure Accessibility}
+li {Contact Us}
+a href=/help/contact {Contact Us}
+li {FAQs}
+a href=/help/faq {FAQs}
+li {Track Your Order}
+a href=/help/track-order {Track Your Order}
+li {Returns & Refunds}
+a href=/help/returns {Returns & Refunds}
+li {Delivery Information}
+a href=/help/delivery {Delivery Information}
+li {Prescription Services}
+a href=/help/prescription {Prescription Services}
+li {Complaints Procedure}
+a href=/help/complaints {Complaints Procedure}
+li {Accessibility}
+a href=/help/accessibility {Accessibility}
+div class=footer-col {INFORMATION About Us Our Pharmacists Health Blog News Partner Pharmacies Careers Regulatory Information Site Map}
+h3 class=footer-col__heading {INFORMATION}
+ul class=footer-col__links {About Us Our Pharmacists Health Blog News Partner Pharmacies Careers Regulatory Information Site Map}
+li {About Us}
+a href=/about {About Us}
+li {Our Pharmacists}
+a href=/our-pharmacists {Our Pharmacists}
+li {Health Blog}
+a href=/blog {Health Blog}
+li {News}
+a href=/news {News}
+li {Partner Pharmacies}
+a href=/partners {Partner Pharmacies}
+li {Careers}
+a href=/careers {Careers}
+li {Regulatory Information}
+a href=/regulatory {Regulatory Information}
+li {Site Map}
+a href=/site-map {Site Map}
+div class=footer-col {LEGAL Privacy Policy Terms & Conditions Cookie Policy Pharmacist Terms Modern Slavery Act Medicines Act Compliance GDPR & Data Rights}
+h3 class=footer-col__heading {LEGAL}
+ul class=footer-col__links {Privacy Policy Terms & Conditions Cookie Policy Pharmacist Terms Modern Slavery Act Medicines Act Compliance GDPR & Data Rights}
+li {Privacy Policy}
+a href=/legal/privacy {Privacy Policy}
+li {Terms & Conditions}
+a href=/legal/terms {Terms & Conditions}
+li {Cookie Policy}
+a href=/legal/cookies {Cookie Policy}
+li {Pharmacist Terms}
+a href=/legal/pharmacist-terms {Pharmacist Terms}
+li {Modern Slavery Act}
+a href=/legal/modern-slavery {Modern Slavery Act}
+li {Medicines Act Compliance}
+a href=/legal/medicines-act {Medicines Act Compliance}
+li {GDPR & Data Rights}
+a href=/legal/gdpr {GDPR & Data Rights}
+div class=footer-mid {Health tips & offers Email address Subscribe GPhC Registered MHRA Compliant ISO 9001:2015 Cyber Essentials}
+div class=footer-mid-inner {Health tips & offers Email address Subscribe GPhC Registered MHRA Compliant ISO 9001:2015 Cyber Essentials}
+span class=newsletter-label {Health tips & offers}
+form class=newsletter-form aria-label="Newsletter sign-up" {Email address Subscribe}
+label for=newsletter-email class=sr-only {Email address}
+input type=email id=newsletter-email name=email class=newsletter-input placeholder=your@email.com aria-label="Email address for newsletter"
+button type=submit class=newsletter-btn {Subscribe}
+div class=footer-accred {GPhC Registered MHRA Compliant ISO 9001:2015 Cyber Essentials}
+span class=accred-badge {GPhC Registered}
+span class=accred-badge {MHRA Compliant}
+span class=accred-badge {ISO 9001:2015}
+span class=accred-badge {Cyber Essentials}
+div class=footer-bottom {© 2025 PharmaCare Online Ltd. All rights reserved. Registered in England & Wales No. 07654321. Registered office: 1 Pharma House, London EC1A 1BB. All medicines dispensed by a GPhC-registered pharmacist.  Facebook Twitter Instagram YouTube}
+p class=footer-legal {© 2025 PharmaCare Online Ltd. All rights reserved. Registered in England & Wales No. 07654321. Registered office: 1 Pharma House, London EC1A 1BB. All medicines dispensed by a GPhC-registered pharmacist.}
+nav class=footer-social aria-label="Social media links" {Facebook Twitter Instagram YouTube}
+a href=/social/facebook aria-label="PharmaCare on Facebook" {Facebook}
+a href=/social/twitter aria-label="PharmaCare on X/Twitter" {Twitter}
+a href=/social/instagram aria-label="PharmaCare on Instagram" {Instagram}
+a href=/social/youtube aria-label="PharmaCare on YouTube" {YouTube}

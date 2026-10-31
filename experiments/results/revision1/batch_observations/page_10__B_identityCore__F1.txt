@@ -1,0 +1,1 @@
+[{"tag":"button","id":"gallery-next--a1b2c3"},{"tag":"input","id":"check-in-field","is_shadow":"true"},{"tag":"input","id":"check-out-field","is_shadow":"true"},{"tag":"button","data-testid":"book-now-btn"},{"tag":"a","data-testid":"write-review-link"}]

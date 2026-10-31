@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Paid batch runner. A separate executable on purpose: it contains no matrix, Axis C or
+       other mode code (it does not reference Experiments.csproj), so no flag mistake can make
+       it run anything but the pinned batch plan. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>BoundedAgents.Experiments.Batch</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\harness\Shared.Harness.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Helpers.cs" Link="Linked\Helpers.cs" />
+    <Compile Include="..\models\TruthModels.cs" Link="Linked\TruthModels.cs" />
+    <Compile Include="..\LegacyBatchGuard.cs" Link="Linked\LegacyBatchGuard.cs" />
+    <!-- Pilot profile: the real-site adapter's offline loader only (no other mode code). -->
+    <Compile Include="..\RealPilotOffline.cs" Link="Linked\RealPilotOffline.cs" />
+  </ItemGroup>
+
+</Project>

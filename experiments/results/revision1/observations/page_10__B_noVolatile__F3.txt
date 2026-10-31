@@ -1,0 +1,152 @@
+header class=site-header {StayFinder Hotels Apartments Villas Hostels Deals Sign in}
+div class=header-inner {StayFinder Hotels Apartments Villas Hostels Deals Sign in}
+a href=/ class=logo {StayFinder}
+nav class=header-nav {Hotels Apartments Villas Hostels Deals}
+a href=/hotels {Hotels}
+a href=/apartments {Apartments}
+a href=/villas {Villas}
+a href=/hostels {Hostels}
+a href=/deals {Deals}
+button class=header-cta type=button {Sign in}
+div class=breadcrumb-wrap {Home › Hotels › Spain › Barcelona › Grand Harbour Hotel}
+nav class=breadcrumb aria-label=Breadcrumb {Home › Hotels › Spain › Barcelona › Grand Harbour Hotel}
+a href=/ {Home}
+span class=breadcrumb__sep {›}
+a href=/hotels {Hotels}
+span class=breadcrumb__sep {›}
+a href=/hotels/spain {Spain}
+span class=breadcrumb__sep {›}
+a href=/hotels/spain/barcelona {Barcelona}
+span class=breadcrumb__sep {›}
+div class=hotel-hero {1 / 24 photos ‹ › 🏨 🌊}
+div class=hero-main {1 / 24 photos ‹ ›}
+div class=hero-main-img role=img aria-label="Hotel exterior view"
+div class=gallery-badge {1 / 24 photos}
+button class="gallery-nav gallery-nav--prev" type=button aria-label="Previous photo" {‹}
+button class="gallery-nav gallery-nav--next" type=button {›}
+div class=hero-thumbs {🏨 🌊}
+div class=hero-thumb {🏨}
+div class=hero-thumb {🌊}
+div class=hotel-info {Grand Harbour Hotel Barcelona ★★★★☆ 8.7 2,341 reviews  📍 Port Olímpic, Barcelona, Spain · Show on map  Located steps from the Olympic Port with stunning Mediterranean views, the Grand Harbour Hotel combines contemporary design with Barcelona's vibrant culture. Our rooftop terrace, spa, and world-cl…}
+div class=hotel-main {Grand Harbour Hotel Barcelona ★★★★☆ 8.7 2,341 reviews  📍 Port Olímpic, Barcelona, Spain · Show on map  Located steps from the Olympic Port with stunning Mediterranean views, the Grand Harbour Hotel combines contemporary design with Barcelona's vibrant culture. Our rooftop terrace, spa, and world-cl…}
+h1 class=hotel-name {Grand Harbour Hotel Barcelona}
+div class=hotel-meta {★★★★☆ 8.7 2,341 reviews}
+span class=hotel-stars aria-label="4 out of 5 stars" {★★★★☆}
+span class=rating-badge {8.7}
+a href=#reviews class=review-summary {2,341 reviews}
+p class=hotel-location {📍 Port Olímpic, Barcelona, Spain · Show on map}
+a href=#map {Show on map}
+p class=hotel-desc {Located steps from the Olympic Port with stunning Mediterranean views, the Grand Harbour Hotel combines contemporary design with Barcelona's vibrant culture. Our rooftop terrace, spa, and world-class dining make it the perfect base for exploring the city.}
+div class=amenity-list {🏊 Pool 🧖 Spa 🍽 Restaurant 🅿 Parking 📶 Free Wi-Fi 🏋 Gym 🍳 Breakfast ♿ Accessible}
+span class=amenity {🏊 Pool}
+span class=amenity {🧖 Spa}
+span class=amenity {🍽 Restaurant}
+span class=amenity {🅿 Parking}
+span class=amenity {📶 Free Wi-Fi}
+span class=amenity {🏋 Gym}
+span class=amenity {🍳 Breakfast}
+span class=amenity {♿ Accessible}
+div class=star-filter-section {Filter rooms by star category Show:  All star ratings 3 stars & above 4 stars & above 5 stars only}
+div class=star-filter-row {Show:  All star ratings 3 stars & above 4 stars & above 5 stars only}
+label {Show:  All star ratings 3 stars & above 4 stars & above 5 stars only}
+select aria-label="Filter by star rating" class=form-select {All star ratings 3 stars & above 4 stars & above 5 stars only}
+option {All star ratings}
+option value=3 {3 stars & above}
+option value=4 {4 stars & above}
+option value=5 {5 stars only}
+aside class=booking-card {Reserve your stay  £145 / night  Avg. price excl. taxes  Guests  1 guest 2 guests 3 guests 4 guests 5 guests Room type  Standard Room — from £145/night Deluxe Sea View — from £195/night Junior Suite — from £280/night Penthouse — from £450/night Include breakfast +£18/night Book Now ✓ Free cancellati…}
+p class=booking-card__title {Reserve your stay}
+p class=booking-card__price {£145 / night}
+span {/ night}
+p class=booking-card__price-note {Avg. price excl. taxes}
+div class=date-widget-host
+[S] div class=widget {Check in Check out Search availability}
+[S] div class=field {Check in}
+[S] label for=check-in-field {Check in}
+[S] input type=date id=check-in-field name=check_in aria-label="Check-in date"
+[S] div class=field {Check out}
+[S] label for=check-out-field {Check out}
+[S] input type=date id=check-out-field name=check_out aria-label="Check-out date"
+[S] button class=btn-search type=button aria-label="Search availability" {Search availability}
+div class=form-row {Guests  1 guest 2 guests 3 guests 4 guests 5 guests}
+label {Guests  1 guest 2 guests 3 guests 4 guests 5 guests}
+select name=guests class=form-select {1 guest 2 guests 3 guests 4 guests 5 guests}
+option value=1 {1 guest}
+option value=2 {2 guests}
+option value=3 {3 guests}
+option value=4 {4 guests}
+option value=5 {5 guests}
+div class=form-row {Room type  Standard Room — from £145/night Deluxe Sea View — from £195/night Junior Suite — from £280/night Penthouse — from £450/night}
+label {Room type  Standard Room — from £145/night Deluxe Sea View — from £195/night Junior Suite — from £280/night Penthouse — from £450/night}
+select aria-label="Select room type" class=form-select {Standard Room — from £145/night Deluxe Sea View — from £195/night Junior Suite — from £280/night Penthouse — from £450/night}
+option value=standard {Standard Room — from £145/night}
+option value=deluxe {Deluxe Sea View — from £195/night}
+option value=suite {Junior Suite — from £280/night}
+option value=penthouse {Penthouse — from £450/night}
+div class=form-checkbox-row {Include breakfast +£18/night}
+label {Include breakfast}
+input type=checkbox name=breakfast_included
+span class=price-add {+£18/night}
+button type=button data-testid=book-now-btn class=btn-book-now {Book Now}
+div class=booking-guarantees {✓ Free cancellation until 48h before ✓ Best price guarantee ✓ Secure payment}
+section class=reviews-section {Guest reviews Write a review 8.7 Excellent 2,341 reviews Location 9.4 Cleanliness 8.8 Service 8.6 Value 8.0 Sarah M. November 2024 ★★★★★  Absolutely stunning hotel. The sea views from our deluxe room were spectacular and the rooftop pool area was a highlight. Staff were incredibly helpful and the br…}
+div class=reviews-header {Guest reviews Write a review}
+a href=/review/grand-harbour-barcelona/new data-testid=write-review-link {Write a review}
+div class=reviews-summary {8.7 Excellent 2,341 reviews Location 9.4 Cleanliness 8.8 Service 8.6 Value 8.0}
+div class=reviews-score {8.7}
+div class=reviews-label {Excellent}
+div class=reviews-label {2,341 reviews}
+div {Location 9.4 Cleanliness 8.8 Service 8.6 Value 8.0}
+div {Location 9.4}
+span {Location}
+span {9.4}
+div {Cleanliness 8.8}
+span {Cleanliness}
+span {8.8}
+div {Service 8.6}
+span {Service}
+span {8.6}
+div {Value 8.0}
+span {Value}
+span {8.0}
+div class=review-card {Sarah M. November 2024 ★★★★★  Absolutely stunning hotel. The sea views from our deluxe room were spectacular and the rooftop pool area was a highlight. Staff were incredibly helpful and the breakfast was superb.}
+div class=review-card__head {Sarah M. November 2024}
+span class=review-card__author {Sarah M.}
+span class=review-card__date {November 2024}
+div class=review-card__stars {★★★★★}
+p class=review-card__text {Absolutely stunning hotel. The sea views from our deluxe room were spectacular and the rooftop pool area was a highlight. Staff were incredibly helpful and the breakfast was superb.}
+div class=review-card {Marco P. October 2024 ★★★★☆  Great location near the marina. Room was spacious and well-appointed. Only minor issue was the noise from the port on one evening. Would definitely return.}
+div class=review-card__head {Marco P. October 2024}
+span class=review-card__author {Marco P.}
+span class=review-card__date {October 2024}
+div class=review-card__stars {★★★★☆}
+p class=review-card__text {Great location near the marina. Room was spacious and well-appointed. Only minor issue was the noise from the port on one evening. Would definitely return.}
+div class=review-card {Joanna K. September 2024 ★★★★★  The spa and wellness facilities are exceptional. We booked the junior suite and it was worth every penny. The in-house restaurant serves outstanding Catalan cuisine.}
+div class=review-card__head {Joanna K. September 2024}
+span class=review-card__author {Joanna K.}
+span class=review-card__date {September 2024}
+div class=review-card__stars {★★★★★}
+p class=review-card__text {The spa and wellness facilities are exceptional. We booked the junior suite and it was worth every penny. The in-house restaurant serves outstanding Catalan cuisine.}
+footer class=site-footer {Find accommodation Hotels Apartments Villas Hostels Top destinations Barcelona London Paris Rome Support Help centre Contact us Cancellation policies Accessibility StayFinder About us Press Careers Privacy © 2024 StayFinder Ltd. All rights reserved.}
+div class=footer-inner {Find accommodation Hotels Apartments Villas Hostels Top destinations Barcelona London Paris Rome Support Help centre Contact us Cancellation policies Accessibility StayFinder About us Press Careers Privacy}
+div class=footer-section {Find accommodation Hotels Apartments Villas Hostels}
+a href=/hotels {Hotels}
+a href=/apartments {Apartments}
+a href=/villas {Villas}
+a href=/hostels {Hostels}
+div class=footer-section {Top destinations Barcelona London Paris Rome}
+a href=/hotels/spain/barcelona {Barcelona}
+a href=/hotels/uk/london {London}
+a href=/hotels/france/paris {Paris}
+a href=/hotels/italy/rome {Rome}
+div class=footer-section {Support Help centre Contact us Cancellation policies Accessibility}
+a href=/help {Help centre}
+a href=/contact {Contact us}
+a href=/cancellation {Cancellation policies}
+a href=/accessibility {Accessibility}
+div class=footer-section {StayFinder About us Press Careers Privacy}
+a href=/about {About us}
+a href=/press {Press}
+a href=/careers {Careers}
+a href=/privacy {Privacy}
+div class=footer-bottom {© 2024 StayFinder Ltd. All rights reserved.}

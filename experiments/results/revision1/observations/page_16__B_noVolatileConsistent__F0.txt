@@ -1,0 +1,159 @@
+<div class="header-top">NovaCare Help Centre Community System Status Training My Account Sign in</div>
+<a class="logo" href="/">NovaCare</a>
+<nav class="header-nav">Help Centre Community System Status Training</nav>
+<a href="/help" class="active">Help Centre</a>
+<a href="/community">Community</a>
+<a href="/status">System Status</a>
+<a href="/training">Training</a>
+<div class="header-right">My Account Sign in</div>
+<a href="/account">My Account</a>
+<a href="/signin">Sign in</a>
+<div class="hero">How can we help?  Search our knowledge base or browse articles by category below.  Search</div>
+<div class="search-box">Search</div>
+<input id="help-search" type="search" aria-label="Search for help articles" placeholder="Search articles, guides, FAQs…" />
+<button type="button" class="btn-search" aria-label="Submit help search">Search</button>
+<div class="content">Getting Started 📚 Getting started with NovaCare — a complete overview Learn how to set up your account, configure your team, and get productive in your first week. Updated 3 days ago • 8 min read 👥 How to invite and manage team members Add colleagues, assign roles, and control access permissions a…</div>
+<div class="main-col">Getting Started 📚 Getting started with NovaCare — a complete overview Learn how to set up your account, configure your team, and get productive in your first week. Updated 3 days ago • 8 min read 👥 How to invite and manage team members Add colleagues, assign roles, and control access permissions a…</div>
+<div class="section-title">Getting Started</div>
+<div class="articles-list">📚 Getting started with NovaCare — a complete overview Learn how to set up your account, configure your team, and get productive in your first week. Updated 3 days ago • 8 min read 👥 How to invite and manage team members Add colleagues, assign roles, and control access permissions across your organ…</div>
+<a href="/help/articles/getting-started-overview" data-testid="article-card-001">📚 Getting started with NovaCare — a complete overview Learn how to set up your account, configure your team, and get productive in your first week. Updated 3 days ago • 8 min read</a>
+<span class="art-icon">📚</span>
+<div class="art-body">Getting started with NovaCare — a complete overview Learn how to set up your account, configure your team, and get productive in your first week. Updated 3 days ago • 8 min read</div>
+<div class="art-title">Getting started with NovaCare — a complete overview</div>
+<div class="art-excerpt">Learn how to set up your account, configure your team, and get productive in your first week.</div>
+<div class="art-meta">Updated 3 days ago • 8 min read</div>
+<a href="/help/articles/invite-team-members">👥 How to invite and manage team members Add colleagues, assign roles, and control access permissions across your organisation. Updated 1 week ago • 5 min read</a>
+<span class="art-icon">👥</span>
+<div class="art-body">How to invite and manage team members Add colleagues, assign roles, and control access permissions across your organisation. Updated 1 week ago • 5 min read</div>
+<div class="art-title">How to invite and manage team members</div>
+<div class="art-excerpt">Add colleagues, assign roles, and control access permissions across your organisation.</div>
+<div class="art-meta">Updated 1 week ago • 5 min read</div>
+<a href="/help/articles/configure-notifications">🔔 Configuring notifications and alerts Choose which events trigger notifications and how they are delivered across channels. Updated 2 weeks ago • 4 min read</a>
+<span class="art-icon">🔔</span>
+<div class="art-body">Configuring notifications and alerts Choose which events trigger notifications and how they are delivered across channels. Updated 2 weeks ago • 4 min read</div>
+<div class="art-title">Configuring notifications and alerts</div>
+<div class="art-excerpt">Choose which events trigger notifications and how they are delivered across channels.</div>
+<div class="art-meta">Updated 2 weeks ago • 4 min read</div>
+<a href="/help/articles/data-import-guide">💾 Importing existing data into NovaCare Step-by-step guide for CSV imports, API migrations, and third-party integrations. Updated 3 weeks ago • 12 min read</a>
+<span class="art-icon">💾</span>
+<div class="art-body">Importing existing data into NovaCare Step-by-step guide for CSV imports, API migrations, and third-party integrations. Updated 3 weeks ago • 12 min read</div>
+<div class="art-title">Importing existing data into NovaCare</div>
+<div class="art-excerpt">Step-by-step guide for CSV imports, API migrations, and third-party integrations.</div>
+<div class="art-meta">Updated 3 weeks ago • 12 min read</div>
+<div>Was this section helpful? 👍 Yes 👎 No</div>
+<button class="rating-btn" type="button">👍 Yes</button>
+<button class="rating-btn" type="button">👎 No</button>
+<div class="section-title">Account &amp; Billing</div>
+<div class="articles-list">💳 Managing your subscription and plan Upgrade, downgrade, or cancel your NovaCare plan at any time from your billing settings. Updated 1 day ago • 6 min read 📋 Downloading invoices and receipts Access all your past invoices and receipts from the Billing section of account settings. Updated 5 days …</div>
+<a href="/help/articles/manage-subscription">💳 Managing your subscription and plan Upgrade, downgrade, or cancel your NovaCare plan at any time from your billing settings. Updated 1 day ago • 6 min read</a>
+<span class="art-icon">💳</span>
+<div class="art-body">Managing your subscription and plan Upgrade, downgrade, or cancel your NovaCare plan at any time from your billing settings. Updated 1 day ago • 6 min read</div>
+<div class="art-title">Managing your subscription and plan</div>
+<div class="art-excerpt">Upgrade, downgrade, or cancel your NovaCare plan at any time from your billing settings.</div>
+<div class="art-meta">Updated 1 day ago • 6 min read</div>
+<a href="/help/articles/invoices-receipts">📋 Downloading invoices and receipts Access all your past invoices and receipts from the Billing section of account settings. Updated 5 days ago • 3 min read</a>
+<span class="art-icon">📋</span>
+<div class="art-body">Downloading invoices and receipts Access all your past invoices and receipts from the Billing section of account settings. Updated 5 days ago • 3 min read</div>
+<div class="art-title">Downloading invoices and receipts</div>
+<div class="art-excerpt">Access all your past invoices and receipts from the Billing section of account settings.</div>
+<div class="art-meta">Updated 5 days ago • 3 min read</div>
+<a href="/help/articles/payment-methods">💵 Adding and updating payment methods Keep your payment details current to avoid service interruptions. Updated 2 weeks ago • 4 min read</a>
+<span class="art-icon">💵</span>
+<div class="art-body">Adding and updating payment methods Keep your payment details current to avoid service interruptions. Updated 2 weeks ago • 4 min read</div>
+<div class="art-title">Adding and updating payment methods</div>
+<div class="art-excerpt">Keep your payment details current to avoid service interruptions.</div>
+<div class="art-meta">Updated 2 weeks ago • 4 min read</div>
+<a href="/help/articles/tax-settings">📄 VAT and tax settings for EU customers Enter your VAT number and configure tax settings for compliant billing across the EU. Updated 1 month ago • 5 min read</a>
+<span class="art-icon">📄</span>
+<div class="art-body">VAT and tax settings for EU customers Enter your VAT number and configure tax settings for compliant billing across the EU. Updated 1 month ago • 5 min read</div>
+<div class="art-title">VAT and tax settings for EU customers</div>
+<div class="art-excerpt">Enter your VAT number and configure tax settings for compliant billing across the EU.</div>
+<div class="art-meta">Updated 1 month ago • 5 min read</div>
+<div class="section-title">Troubleshooting</div>
+<div class="articles-list">🔒 I can't log in — what should I do? Common causes for login failures and how to resolve them quickly. Updated 2 days ago • 4 min read ⏳ The app feels slow — performance troubleshooting Steps to diagnose and fix slowness, including cache clearing and browser compatibility. Updated 1 week ago • 7 mi…</div>
+<a href="/help/articles/login-issues">🔒 I can't log in — what should I do? Common causes for login failures and how to resolve them quickly. Updated 2 days ago • 4 min read</a>
+<span class="art-icon">🔒</span>
+<div class="art-body">I can't log in — what should I do? Common causes for login failures and how to resolve them quickly. Updated 2 days ago • 4 min read</div>
+<div class="art-title">I can't log in — what should I do?</div>
+<div class="art-excerpt">Common causes for login failures and how to resolve them quickly.</div>
+<div class="art-meta">Updated 2 days ago • 4 min read</div>
+<a href="/help/articles/slow-performance">⏳ The app feels slow — performance troubleshooting Steps to diagnose and fix slowness, including cache clearing and browser compatibility. Updated 1 week ago • 7 min read</a>
+<span class="art-icon">⏳</span>
+<div class="art-body">The app feels slow — performance troubleshooting Steps to diagnose and fix slowness, including cache clearing and browser compatibility. Updated 1 week ago • 7 min read</div>
+<div class="art-title">The app feels slow — performance troubleshooting</div>
+<div class="art-excerpt">Steps to diagnose and fix slowness, including cache clearing and browser compatibility.</div>
+<div class="art-meta">Updated 1 week ago • 7 min read</div>
+<a href="/help/articles/missing-data">❓ Data appears to be missing or out of date How to check sync status, force a refresh, and escalate to support if needed. Updated 3 days ago • 5 min read</a>
+<span class="art-icon">❓</span>
+<div class="art-body">Data appears to be missing or out of date How to check sync status, force a refresh, and escalate to support if needed. Updated 3 days ago • 5 min read</div>
+<div class="art-title">Data appears to be missing or out of date</div>
+<div class="art-excerpt">How to check sync status, force a refresh, and escalate to support if needed.</div>
+<div class="art-meta">Updated 3 days ago • 5 min read</div>
+<div class="side-col">BROWSE BY CATEGORY 💳 Account &amp; Billing 🚀 Getting Started 🔌 Integrations 🔨 API &amp; Webhooks 🔐 Security &amp; Compliance 📊 Data &amp; Analytics ⚙ Troubleshooting MOST VIEWED THIS WEEK Reset your password Set up two-factor authentication Export your data Generate an API key Understanding usage limits Reque…</div>
+<div class="cat-nav">BROWSE BY CATEGORY 💳 Account &amp; Billing 🚀 Getting Started 🔌 Integrations 🔨 API &amp; Webhooks 🔐 Security &amp; Compliance 📊 Data &amp; Analytics ⚙ Troubleshooting</div>
+<div class="cat-nav-title">BROWSE BY CATEGORY</div>
+<a href="/help/category/account-billing" aria-label="View Account and Billing articles" class="active">💳 Account &amp; Billing</a>
+<span class="cat-icon">💳</span>
+<a href="/help/category/getting-started">🚀 Getting Started</a>
+<span class="cat-icon">🚀</span>
+<a href="/help/category/integrations">🔌 Integrations</a>
+<span class="cat-icon">🔌</span>
+<a href="/help/category/api">🔨 API &amp; Webhooks</a>
+<span class="cat-icon">🔨</span>
+<a href="/help/category/security">🔐 Security &amp; Compliance</a>
+<span class="cat-icon">🔐</span>
+<a href="/help/category/data">📊 Data &amp; Analytics</a>
+<span class="cat-icon">📊</span>
+<a href="/help/category/troubleshooting">⚙ Troubleshooting</a>
+<span class="cat-icon">⚙</span>
+<div class="popular-card">MOST VIEWED THIS WEEK Reset your password Set up two-factor authentication Export your data Generate an API key Understanding usage limits</div>
+<div class="popular-card-title">MOST VIEWED THIS WEEK</div>
+<div class="popular-list">Reset your password Set up two-factor authentication Export your data Generate an API key Understanding usage limits</div>
+<a href="/help/articles/reset-password">Reset your password</a>
+<a href="/help/articles/two-factor-auth">Set up two-factor authentication</a>
+<a href="/help/articles/export-data">Export your data</a>
+<a href="/help/articles/api-keys">Generate an API key</a>
+<a href="/help/articles/usage-limits">Understanding usage limits</a>
+<div class="callback-card">Request a callback  Leave your email and our team will get in touch within 2 business hours.   Request callback</div>
+<input type="email" placeholder="Your email address" />
+<button class="btn-callback" type="button">Request callback</button>
+<div class="contact-banner">Still need help? Our support team is available 24/7.  Contact us</div>
+<a href="/contact">Contact us</a>
+<div class="chat-launcher"></div>
+<button data-shadow="true" class="launcher" aria-label="Open chat support">💬</button>
+<div data-shadow="true" class="panel">NovaCare Support Typically replies in &lt;2 min ✕ 🤖 Nova Support Agent • Online Hi there! How can I help you today? You can chat with me directly or I can connect you to a human agent. Chat with a human agent Send</div>
+<div data-shadow="true" class="panel-header">NovaCare Support Typically replies in &lt;2 min ✕</div>
+<div data-shadow="true" class="panel-title">NovaCare Support</div>
+<div data-shadow="true" class="panel-sub">Typically replies in &lt;2 min</div>
+<button data-shadow="true" type="button" aria-hidden="true">✕</button>
+<div data-shadow="true" class="panel-body">🤖 Nova Support Agent • Online Hi there! How can I help you today? You can chat with me directly or I can connect you to a human agent. Chat with a human agent Send</div>
+<div data-shadow="true" class="agent-row">🤖 Nova Support Agent • Online</div>
+<div data-shadow="true" class="agent-avatar">🤖</div>
+<div data-shadow="true" class="agent-info">Nova Support Agent • Online</div>
+<div data-shadow="true" class="bubble">Hi there! How can I help you today? You can chat with me directly or I can connect you to a human agent.</div>
+<button data-shadow="true" type="button" aria-label="Start a live chat session">Chat with a human agent</button>
+<div data-shadow="true" class="input-row">Send</div>
+<input data-shadow="true" class="ChatInput" data-testid="chat-input" type="text" aria-label="Type your support message" placeholder="Type a message…" />
+<button data-shadow="true" class="send-btn" type="button">Send</button>
+<div class="footer-inner">PRODUCT Features Pricing Changelog Roadmap SUPPORT Help Centre Community Status Contact COMPANY About Blog Careers Press LEGAL Privacy Policy Terms of Service Cookie Policy Security</div>
+<div class="footer-col">PRODUCT Features Pricing Changelog Roadmap</div>
+<a href="/features">Features</a>
+<a href="/pricing">Pricing</a>
+<a href="/changelog">Changelog</a>
+<a href="/roadmap">Roadmap</a>
+<div class="footer-col">SUPPORT Help Centre Community Status Contact</div>
+<a href="/help">Help Centre</a>
+<a href="/community">Community</a>
+<a href="/status">Status</a>
+<a href="/contact">Contact</a>
+<div class="footer-col">COMPANY About Blog Careers Press</div>
+<a href="/about">About</a>
+<a href="/blog">Blog</a>
+<a href="/careers">Careers</a>
+<a href="/press">Press</a>
+<div class="footer-col">LEGAL Privacy Policy Terms of Service Cookie Policy Security</div>
+<a href="/privacy">Privacy Policy</a>
+<a href="/terms">Terms of Service</a>
+<a href="/cookies">Cookie Policy</a>
+<a href="/security">Security</a>
+<div class="footer-bottom">© 2026 NovaCare, Inc. All rights reserved.</div>

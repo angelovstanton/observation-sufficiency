@@ -1,0 +1,149 @@
+div class=header-bar {PeoplePlus HR Dashboard Time & Attendance Payroll Learning Organisation 👤 My Account 🔔 Sign out}
+a class=logo href=/ {PeoplePlus HR}
+nav class=header-nav {Dashboard Time & Attendance Payroll Learning Organisation}
+a href=/dashboard class=active {Dashboard}
+a href=/time {Time & Attendance}
+a href=/payroll {Payroll}
+a href=/learning {Learning}
+a href=/org {Organisation}
+div class=header-right {👤 My Account 🔔 Sign out}
+a href=/account/profile aria-label="My Account" {👤 My Account}
+a href=/notifications aria-label=Notifications {🔔}
+a href=/signout {Sign out}
+div class=alert-bar {⚠ Open enrolment closes 30 June — update your benefits selections before the deadline.}
+div class=content-wrap {PERSONAL 🏠 Dashboard 👤 My Profile 📄 Documents PAY 💵 Payslips 💲 Expenses 📋 Tax Documents BENEFITS ✨ Benefits 🏭 Pension 🏖 Leave Good morning, Sarah 👋  Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.  Enrol in benefits HOURS THIS MONTH 142.5 of 160 contracted ANNUAL LEAVE…}
+nav class=side-nav aria-label="Employee self-service navigation" {PERSONAL 🏠 Dashboard 👤 My Profile 📄 Documents PAY 💵 Payslips 💲 Expenses 📋 Tax Documents BENEFITS ✨ Benefits 🏭 Pension 🏖 Leave}
+div class=side-nav-section {PERSONAL 🏠 Dashboard 👤 My Profile 📄 Documents}
+div class=side-nav-label {PERSONAL}
+a href=/dashboard class=active {🏠 Dashboard}
+span class=side-icon {🏠}
+a href=/profile {👤 My Profile}
+span class=side-icon {👤}
+a href=/documents {📄 Documents}
+span class=side-icon {📄}
+div class=side-nav-section {PAY 💵 Payslips 💲 Expenses 📋 Tax Documents}
+div class=side-nav-label {PAY}
+a href=/payslips {💵 Payslips}
+span class=side-icon {💵}
+a href=/expenses {💲 Expenses}
+span class=side-icon {💲}
+a href=/p60 {📋 Tax Documents}
+span class=side-icon {📋}
+div class=side-nav-section {BENEFITS ✨ Benefits 🏭 Pension 🏖 Leave}
+div class=side-nav-label {BENEFITS}
+a href=/benefits {✨ Benefits}
+span class=side-icon {✨}
+a href=/pension {🏭 Pension}
+span class=side-icon {🏭}
+a href=/leave {🏖 Leave}
+span class=side-icon {🏖}
+div class=main-col {Good morning, Sarah 👋  Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.  Enrol in benefits HOURS THIS MONTH 142.5 of 160 contracted ANNUAL LEAVE REMAINING 14 days of 25 entitlement NEXT NET PAY £3,214 estimated, due 30 Jun 💵 Payroll settings Save changes Direct deposit Salary …}
+div class=welcome-banner {Good morning, Sarah 👋  Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.  Enrol in benefits}
+div class=welcome-text {Good morning, Sarah 👋  Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.}
+h2 {Good morning, Sarah 👋}
+p {Your next payday is 30 June 2026. Benefits enrolment ends in 13 days.}
+button type=button class=btn-primary data-testid=enroll-benefits-btn aria-label="Start benefits enrolment" {Enrol in benefits}
+div class=kpi-grid {HOURS THIS MONTH 142.5 of 160 contracted ANNUAL LEAVE REMAINING 14 days of 25 entitlement NEXT NET PAY £3,214 estimated, due 30 Jun}
+div {HOURS THIS MONTH 142.5 of 160 contracted}
+div class=kpi-label {HOURS THIS MONTH}
+div class=kpi-value {142.5}
+div class=kpi-sub {of 160 contracted}
+div {ANNUAL LEAVE REMAINING 14 days of 25 entitlement}
+div class=kpi-label {ANNUAL LEAVE REMAINING}
+div class=kpi-value {14}
+div class=kpi-sub {days of 25 entitlement}
+div {NEXT NET PAY £3,214 estimated, due 30 Jun}
+div class=kpi-label {NEXT NET PAY}
+div class=kpi-value {£3,214}
+div class=kpi-sub {estimated, due 30 Jun}
+div class=card {💵 Payroll settings Save changes Direct deposit Salary paid directly to your nominated bank account Paperless payslips Receive payslips by email only — no printed copy Salary sacrifice (pension) Contribute an additional 2% of gross salary to your pension pre-tax}
+div class=card-header {💵 Payroll settings Save changes}
+span class=card-title {💵 Payroll settings}
+button class=btn-secondary type=button {Save changes}
+div class=card-body {Direct deposit Salary paid directly to your nominated bank account Paperless payslips Receive payslips by email only — no printed copy Salary sacrifice (pension) Contribute an additional 2% of gross salary to your pension pre-tax}
+div class=toggle-row {Direct deposit Salary paid directly to your nominated bank account}
+div class=toggle-info {Direct deposit Salary paid directly to your nominated bank account}
+div class=toggle-title {Direct deposit}
+div class=toggle-desc {Salary paid directly to your nominated bank account}
+label class=toggle-switch
+input id=direct-deposit-toggle type=checkbox aria-label="Enable direct deposit"
+span class="toggle-track on"
+span class=toggle-thumb
+div class=toggle-row {Paperless payslips Receive payslips by email only — no printed copy}
+div class=toggle-info {Paperless payslips Receive payslips by email only — no printed copy}
+div class=toggle-title {Paperless payslips}
+div class=toggle-desc {Receive payslips by email only — no printed copy}
+label class=toggle-switch
+input type=checkbox aria-label="Enable paperless payslips"
+span class="toggle-track on"
+span class=toggle-thumb
+div class=toggle-row {Salary sacrifice (pension) Contribute an additional 2% of gross salary to your pension pre-tax}
+div class=toggle-info {Salary sacrifice (pension) Contribute an additional 2% of gross salary to your pension pre-tax}
+div class=toggle-title {Salary sacrifice (pension)}
+div class=toggle-desc {Contribute an additional 2% of gross salary to your pension pre-tax}
+label class=toggle-switch
+input type=checkbox aria-label="Enable salary sacrifice for pension"
+span class=toggle-track
+span class=toggle-thumb
+div class=card {📋 Payslip lookup PAY PERIOD (SELECT DATE) FORMAT PDF CSV Search payslips}
+div class=card-header {📋 Payslip lookup}
+span class=card-title {📋 Payslip lookup}
+div class=card-body {PAY PERIOD (SELECT DATE) FORMAT PDF CSV Search payslips}
+div class=form-row {PAY PERIOD (SELECT DATE) FORMAT PDF CSV}
+div class=form-group {PAY PERIOD (SELECT DATE)}
+label {PAY PERIOD (SELECT DATE)}
+input type=date
+div class=form-group {FORMAT PDF CSV}
+label {FORMAT}
+select aria-label="Payslip download format" {PDF CSV}
+option value=pdf {PDF}
+option value=csv {CSV}
+button class=btn-primary type=button {Search payslips}
+div {Quick links ✨ Benefits 🏖 Request leave 💲 Submit expenses 🏭 Bank details}
+h3 {Quick links}
+div class=quick-links {✨ Benefits 🏖 Request leave 💲 Submit expenses 🏭 Bank details}
+a href=/benefits {✨ Benefits}
+span class=quick-link-icon {✨}
+a href=/leave/request {🏖 Request leave}
+span class=quick-link-icon {🏖}
+a href=/expenses/submit {💲 Submit expenses}
+span class=quick-link-icon {💲}
+a href=/profile/bank {🏭 Bank details}
+span class=quick-link-icon {🏭}
+div class=hr-portal-host
+[S] div class=portal-box {📋 HR Portal Payslips Benefits Documents MAY 2026 PAYSLIP}
+[S] div class=portal-header {📋 HR Portal Payslips Benefits Documents}
+[S] span class=portal-title {📋 HR Portal}
+[S] div class=portal-tabs {Payslips Benefits Documents}
+[S] button class="tab-btn active" type=button data-testid=payslips-tab aria-label="View my payslips" {Payslips}
+[S] button class=tab-btn type=button aria-label="View benefits summary" {Benefits}
+[S] button class=tab-btn type=button aria-label="View documents" {Documents}
+[S] div class=portal-body {MAY 2026 PAYSLIP}
+[S] div class=section-label {MAY 2026 PAYSLIP}
+[S] div class=viewer {Pay period: May 2026 Paid: 31 May 2026 to Sarah Thompson £3,214.00 net ↓ Download PDF EARNINGS DESCRIPTION	UNITS	AMOUNT Basic salary	1 month	£4,166.67 Bonus	—	£500.00 Car allowance	1 month	£250.00 DEDUCTIONS DESCRIPTION		AMOUNT Income tax (PAYE)		£912.00 National Insurance		£487.00 Pension (employee…}
+[S] div class=payslip-header {Pay period: May 2026 Paid: 31 May 2026 to Sarah Thompson £3,214.00 net ↓ Download PDF}
+[S] div class=payslip-period {Pay period: May 2026}
+[S] div {Paid: 31 May 2026 to Sarah Thompson}
+[S] div {£3,214.00 net ↓ Download PDF}
+[S] div class=payslip-net {£3,214.00 net}
+[S] button class=download-btn type=button aria-label="Download current payslip as PDF" {↓ Download PDF}
+[S] div class=breakdown-title {EARNINGS}
+[S] table class=breakdown-table {DESCRIPTION	UNITS	AMOUNT Basic salary	1 month	£4,166.67 Bonus	—	£500.00 Car allowance	1 month	£250.00}
+[S] th {AMOUNT}
+[S] tr {Basic salary	1 month	£4,166.67}
+[S] tr {Bonus	—	£500.00}
+[S] tr {Car allowance	1 month	£250.00}
+[S] div class=breakdown-title {DEDUCTIONS}
+[S] table class=breakdown-table {DESCRIPTION		AMOUNT Income tax (PAYE)		£912.00 National Insurance		£487.00 Pension (employee 5%)		£208.33 Salary sacrifice		£83.33 Health plan		£12.00}
+[S] th {AMOUNT}
+[S] tr {Income tax (PAYE)		£912.00}
+[S] tr {National Insurance		£487.00}
+[S] tr {Pension (employee 5%)		£208.33}
+[S] tr {Salary sacrifice		£83.33}
+[S] tr {Health plan		£12.00}
+[S] div class=summary-row {Net pay £3,214.01}
+div class=footer-inner {© 2026 PeoplePlus HR Ltd. Privacy Terms Accessibility Contact HR}
+a href=/privacy {Privacy}
+a href=/terms {Terms}
+a href=/accessibility {Accessibility}
+a href=/contact {Contact HR}

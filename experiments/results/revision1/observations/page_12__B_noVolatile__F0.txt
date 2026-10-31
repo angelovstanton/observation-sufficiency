@@ -1,0 +1,91 @@
+<div class="top-bar">LearnPath Web Dev 101 › Module 1 Dashboard My profile</div>
+<a href="/" class="logo">LearnPath</a>
+<span class="course-title">Web Dev 101 › Module 1</span>
+<div class="top-bar-right">Dashboard My profile</div>
+<a href="/dashboard">Dashboard</a>
+<a href="/profile">My profile</a>
+<nav class="breadcrumb" aria-label="Breadcrumb">Courses / Web Dev 101 / Module 1: Foundations / Lesson 1: Introduction to HTML</nav>
+<a href="/courses">Courses</a>
+<span>/</span>
+<a href="/courses/web-dev-101">Web Dev 101</a>
+<span>/</span>
+<a href="/courses/web-dev-101/module-1">Module 1: Foundations</a>
+<span>/</span>
+<span>Lesson 1: Introduction to HTML</span>
+<div class="layout">Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML ✓ Mark as complete Next lesson → Lesson materials ↓ Download PDF Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor Discussion Post comment Alex T.  Great intro! The live code …</div>
+<main class="main-content">Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML ✓ Mark as complete Next lesson → Lesson materials ↓ Download PDF Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor Discussion Post comment Alex T.  Great intro! The live code …</main>
+<div class="lesson-header">Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML</div>
+<div class="lesson-meta">Module 1, Lesson 1 • 12 min • Beginner</div>
+<span>Module 1, Lesson 1</span>
+<span>•</span>
+<span>12 min</span>
+<span>•</span>
+<span>Beginner</span>
+<h1 class="lesson-title">Introduction to HTML</h1>
+<div class="player-host"></div>
+<div data-shadow="true" class="video-area">▶</div>
+<div data-shadow="true">▶</div>
+<span data-shadow="true">▶</span>
+<div data-shadow="true" class="play-overlay"></div>
+<div data-shadow="true" class="play-tri"></div>
+<div data-shadow="true" class="progress-bar-row"></div>
+<div data-shadow="true" class="progress-fill"></div>
+<div data-shadow="true" class="controls">▶ 04:12 / 12:00 🔊 CC 1080p</div>
+<button data-shadow="true" type="button" class="ctrl-btn" data-testid="play-pause-btn" aria-label="Play lesson video">▶</button>
+<div data-shadow="true" class="seek-wrap"></div>
+<input data-shadow="true" type="range" class="seek" value="35" data-testid="video-seek-bar" aria-label="Video seek position" />
+<span data-shadow="true" class="time-display">04:12 / 12:00</span>
+<div data-shadow="true" class="vol-wrap">🔊</div>
+<button data-shadow="true" type="button" class="ctrl-btn" aria-label="Mute/unmute audio">🔊</button>
+<input data-shadow="true" type="range" class="vol" value="80" aria-label="Adjust video volume" />
+<button data-shadow="true" type="button" class="ctrl-btn" data-testid="captions-btn" aria-label="Toggle closed captions">CC</button>
+<span data-shadow="true" class="caption-badge">CC</span>
+<button data-shadow="true" type="button" class="quality-btn">1080p</button>
+<div class="lesson-actions">✓ Mark as complete Next lesson →</div>
+<button type="button" class="btn-complete" data-testid="mark-complete-btn" aria-label="Mark this lesson as complete">✓ Mark as complete</button>
+<button type="button" class="btn-next" data-testid="next-lesson-btn" aria-label="Continue to next lesson: CSS Flexbox Basics">Next lesson →</button>
+<div class="materials-row">Lesson materials ↓ Download PDF</div>
+<h3>Lesson materials</h3>
+<a href="/courses/web-dev-101/materials.pdf" class="dl-link" aria-label="Download lesson materials PDF">↓ Download PDF</a>
+<div class="rating-row">Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor</div>
+<label for="course-rating">Rate this lesson</label>
+<div class="star-select">Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor</div>
+<select id="course-rating" aria-label="Rate this course from 1 to 5 stars" class="star-sel">Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor</select>
+<option>Select a rating</option>
+<option value="5">5 stars – Excellent</option>
+<option value="4">4 stars – Good</option>
+<option value="3">3 stars – OK</option>
+<option value="2">2 stars – Poor</option>
+<option value="1">1 star – Very poor</option>
+<div class="discussion">Discussion Post comment Alex T.  Great intro! The live code demo at 8:20 really helped it click.  Maria S.  Could you add more on semantic elements in lesson 2?</div>
+<h3>Discussion</h3>
+<div class="comment-form">Post comment</div>
+<textarea placeholder="Share a question or insight about this lesson..."></textarea>
+<div class="form-footer">Post comment</div>
+<button type="button" class="btn-post" data-testid="post-comment-btn">Post comment</button>
+<div class="comment-item">Alex T.  Great intro! The live code demo at 8:20 really helped it click.</div>
+<span class="comment-author">Alex T.</span>
+<p class="comment-body">Great intro! The live code demo at 8:20 really helped it click.</p>
+<div class="comment-item">Maria S.  Could you add more on semantic elements in lesson 2?</div>
+<span class="comment-author">Maria S.</span>
+<p class="comment-body">Could you add more on semantic elements in lesson 2?</p>
+<aside class="sidebar">Assignments Exercise 1.1: Build a page structure  Create a page with header, main, and footer.  Due 20 Jun Quiz 1.1: HTML Basics  10-question quiz on HTML elements and attributes.  Due 22 Jun Exercise 1.2: Forms &amp; inputs  Practice building accessible forms.  ✓ Submitted</aside>
+<h3>Assignments</h3>
+<div class="assignment-card">Exercise 1.1: Build a page structure  Create a page with header, main, and footer.  Due 20 Jun</div>
+<h4>Exercise 1.1: Build a page structure</h4>
+<p>Create a page with header, main, and footer.</p>
+<span class="badge badge-due">Due 20 Jun</span>
+<div class="assignment-card">Quiz 1.1: HTML Basics  10-question quiz on HTML elements and attributes.  Due 22 Jun</div>
+<h4>Quiz 1.1: HTML Basics</h4>
+<p>10-question quiz on HTML elements and attributes.</p>
+<span class="badge badge-due">Due 22 Jun</span>
+<div class="assignment-card">Exercise 1.2: Forms &amp; inputs  Practice building accessible forms.  ✓ Submitted</div>
+<h4>Exercise 1.2: Forms &amp; inputs</h4>
+<p>Practice building accessible forms.</p>
+<span class="badge badge-done">✓ Submitted</span>
+<footer>© 2026 LearnPath Ltd. Accessibility Terms Privacy</footer>
+<div class="footer-inner">© 2026 LearnPath Ltd. Accessibility Terms Privacy</div>
+<span>© 2026 LearnPath Ltd.</span>
+<a href="/accessibility">Accessibility</a>
+<a href="/terms">Terms</a>
+<a href="/privacy">Privacy</a>

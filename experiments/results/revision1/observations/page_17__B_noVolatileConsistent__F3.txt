@@ -1,0 +1,4891 @@
+header {CorpAdmin Dashboard Users Roles Audit Log Settings Jane Doe JD}
+a href=/ {CorpAdmin}
+span {Admin}
+nav class=AdminLayout_nav__g7h8i9 aria-label="Primary navigation" {Dashboard Users Roles Audit Log Settings}
+a href=/dashboard {Dashboard}
+a href=/users class=active {Users}
+a href=/roles {Roles}
+a href=/audit {Audit Log}
+a href=/settings {Settings}
+div {Jane Doe JD}
+span {Jane Doe}
+div {JD}
+main class=AdminLayout_main__j0k1l2 {User Management  Manage user accounts, roles, and access permissions across your organisation. 200 users · 5 roles · 8 departments.  🔍 All roles Admin Editor Viewer Auditor Manager + New User ⬇ Export CSV ✓ 160 active 		USER	DEPARTMENT	ROLE	STATUS	LAST LOGIN	ACTIONS 	 AJ 	 alice.johnson alice.johns…}
+h1 {User Management}
+p {Manage user accounts, roles, and access permissions across your organisation. 200 users · 5 roles · 8 departments.}
+div role=toolbar aria-label="User management actions" {🔍 All roles Admin Editor Viewer Auditor Manager + New User ⬇ Export CSV ✓ 160 active}
+div {🔍}
+span aria-hidden=true {🔍}
+input type=search placeholder="Search users…" aria-label="Search users by name or email"
+select id=role-filter-select aria-label="Filter by role" {All roles Admin Editor Viewer Auditor Manager}
+option {All roles}
+option value=admin {Admin}
+option value=editor {Editor}
+option value=viewer {Viewer}
+option value=auditor {Auditor}
+option value=manager {Manager}
+button type=button data-testid=new-user-btn aria-label="Create new user" {+ New User}
+button type=button aria-label="Export user list as CSV" {⬇ Export CSV}
+div {✓ 160 active}
+span {✓}
+span {160 active}
+div {USER	DEPARTMENT	ROLE	STATUS	LAST LOGIN	ACTIONS 	 AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 hours ago	 Edit ⋯  	 BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	Yesterday	 Edit ⋯  	 CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	3…}
+table class=UsersTable_root__s9t0u1 {USER	DEPARTMENT	ROLE	STATUS	LAST LOGIN	ACTIONS 	 AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 hours ago	 Edit ⋯  	 BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	Yesterday	 Edit ⋯  	 CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	3…}
+thead class=UsersTable_head__v2w3x4 {USER	DEPARTMENT	ROLE	STATUS	LAST LOGIN	ACTIONS}
+tr {USER	DEPARTMENT	ROLE	STATUS	LAST LOGIN	ACTIONS}
+input type=checkbox aria-label="Select all users"
+th {USER}
+th {DEPARTMENT}
+th {ROLE}
+th {STATUS}
+th {LAST LOGIN}
+th {ACTIONS}
+tbody id=users-tbody {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 hours ago	 Edit ⋯  	 BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	Yesterday	 Edit ⋯  	 CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	3 days ago	 Edit ⋯  	 DB 	 dan.brown dan.brown@cor…}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Finance	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Legal	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	HR	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Sales	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Operations	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Engineering	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	Product	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Marketing	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Finance	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Legal	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	HR	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Sales	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Operations	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Engineering	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	Product	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Marketing	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Finance	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Legal	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	HR	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Sales	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Operations	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Engineering	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	Product	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Marketing	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Finance	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Legal	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	HR	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Sales	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Operations	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Engineering	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	Product	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Marketing	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Finance	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Legal	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	HR	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Sales	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Operations	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Finance	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Legal	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	HR	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Sales	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Operations	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Engineering	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	Product	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Marketing	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Finance	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Legal	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	HR	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Sales	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Operations	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Engineering	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	Product	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Marketing	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Finance	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Legal	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	HR	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Sales	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Operations	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Engineering	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	Product	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Marketing	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Finance	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Legal	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	HR	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Sales	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Operations	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Engineering	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	Product	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Marketing	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Finance	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Legal	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	HR	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Sales	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Operations	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Finance	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Legal	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	HR	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Sales	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Operations	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Engineering	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	Product	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Marketing	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Finance	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Legal	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	HR	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Sales	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Operations	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Engineering	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	Product	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Marketing	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Finance	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Legal	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	HR	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Sales	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Operations	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Engineering	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	Product	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Marketing	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Finance	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Legal	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	HR	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Sales	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Operations	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Engineering	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	Product	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Marketing	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Finance	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Legal	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	HR	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Sales	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Operations	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Finance	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Legal	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	HR	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Sales	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Operations	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Engineering	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	Product	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Marketing	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Finance	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Legal	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	HR	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Sales	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Operations	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Engineering	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	Product	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Marketing	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Finance	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Legal	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	HR	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Sales	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Operations	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Engineering	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	Product	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Marketing	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Finance	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Legal	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	HR	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Sales	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Operations	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Engineering	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	Product	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Marketing	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Finance	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Legal	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	HR	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Sales	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Operations	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Engineering	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	Product	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Marketing	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Finance	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Legal	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	HR	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Sales	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Operations	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Engineering	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	Product	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Marketing	Admin	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Finance	Editor	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Legal	Viewer	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	HR	Auditor	 Suspended 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Sales	Manager	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Operations	Admin	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Engineering	Editor	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	Product	Viewer	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Marketing	Auditor	 Suspended 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Finance	Manager	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {AJ 	 alice.johnson alice.johnson@corp.example 	Legal	Admin	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select alice.johnson"
+td class=UsersTable_cell__ca {AJ}
+div class=UserAvatar_root__v6w7x8 {AJ}
+span {AJ}
+td class=UsersTable_cell__ci {alice.johnson alice.johnson@corp.example}
+div {alice.johnson alice.johnson@corp.example}
+span {alice.johnson}
+span {alice.johnson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {BS 	 bob.smith bob.smith@corp.example 	HR	Editor	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select bob.smith"
+td class=UsersTable_cell__ca {BS}
+div class=UserAvatar_root__v6w7x8 {BS}
+span {BS}
+td class=UsersTable_cell__ci {bob.smith bob.smith@corp.example}
+div {bob.smith bob.smith@corp.example}
+span {bob.smith}
+span {bob.smith@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {CW 	 carol.white carol.white@corp.example 	Sales	Viewer	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select carol.white"
+td class=UsersTable_cell__ca {CW}
+div class=UserAvatar_root__v6w7x8 {CW}
+span {CW}
+td class=UsersTable_cell__ci {carol.white carol.white@corp.example}
+div {carol.white carol.white@corp.example}
+span {carol.white}
+span {carol.white@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {DB 	 dan.brown dan.brown@corp.example 	Operations	Auditor	 Suspended 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select dan.brown"
+td class=UsersTable_cell__ca {DB}
+div class=UserAvatar_root__v6w7x8 {DB}
+span {DB}
+td class=UsersTable_cell__ci {dan.brown dan.brown@corp.example}
+div {dan.brown dan.brown@corp.example}
+span {dan.brown}
+span {dan.brown@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {ET 	 eve.taylor eve.taylor@corp.example 	Engineering	Manager	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select eve.taylor"
+td class=UsersTable_cell__ca {ET}
+div class=UserAvatar_root__v6w7x8 {ET}
+span {ET}
+td class=UsersTable_cell__ci {eve.taylor eve.taylor@corp.example}
+div {eve.taylor eve.taylor@corp.example}
+span {eve.taylor}
+span {eve.taylor@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {FD 	 frank.davis frank.davis@corp.example 	Product	Admin	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select frank.davis"
+td class=UsersTable_cell__ca {FD}
+div class=UserAvatar_root__v6w7x8 {FD}
+span {FD}
+td class=UsersTable_cell__ci {frank.davis frank.davis@corp.example}
+div {frank.davis frank.davis@corp.example}
+span {frank.davis}
+span {frank.davis@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {GW 	 grace.wilson grace.wilson@corp.example 	Marketing	Editor	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select grace.wilson"
+td class=UsersTable_cell__ca {GW}
+div class=UserAvatar_root__v6w7x8 {GW}
+span {GW}
+td class=UsersTable_cell__ci {grace.wilson grace.wilson@corp.example}
+div {grace.wilson grace.wilson@corp.example}
+span {grace.wilson}
+span {grace.wilson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {HM 	 harry.moore harry.moore@corp.example 	Finance	Viewer	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select harry.moore"
+td class=UsersTable_cell__ca {HM}
+div class=UserAvatar_root__v6w7x8 {HM}
+span {HM}
+td class=UsersTable_cell__ci {harry.moore harry.moore@corp.example}
+div {harry.moore harry.moore@corp.example}
+span {harry.moore}
+span {harry.moore@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {IJ 	 iris.jackson iris.jackson@corp.example 	Legal	Auditor	 Suspended 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select iris.jackson"
+td class=UsersTable_cell__ca {IJ}
+div class=UserAvatar_root__v6w7x8 {IJ}
+span {IJ}
+td class=UsersTable_cell__ci {iris.jackson iris.jackson@corp.example}
+div {iris.jackson iris.jackson@corp.example}
+span {iris.jackson}
+span {iris.jackson@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {JT 	 jack.thomas jack.thomas@corp.example 	HR	Manager	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select jack.thomas"
+td class=UsersTable_cell__ca {JT}
+div class=UserAvatar_root__v6w7x8 {JT}
+span {JT}
+td class=UsersTable_cell__ci {jack.thomas jack.thomas@corp.example}
+div {jack.thomas jack.thomas@corp.example}
+span {jack.thomas}
+span {jack.thomas@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {KH 	 karen.harris karen.harris@corp.example 	Sales	Admin	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select karen.harris"
+td class=UsersTable_cell__ca {KH}
+div class=UserAvatar_root__v6w7x8 {KH}
+span {KH}
+td class=UsersTable_cell__ci {karen.harris karen.harris@corp.example}
+div {karen.harris karen.harris@corp.example}
+span {karen.harris}
+span {karen.harris@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {LM 	 liam.martin liam.martin@corp.example 	Operations	Editor	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select liam.martin"
+td class=UsersTable_cell__ca {LM}
+div class=UserAvatar_root__v6w7x8 {LM}
+span {LM}
+td class=UsersTable_cell__ci {liam.martin liam.martin@corp.example}
+div {liam.martin liam.martin@corp.example}
+span {liam.martin}
+span {liam.martin@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {MG 	 mia.garcia mia.garcia@corp.example 	Engineering	Viewer	 Active 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select mia.garcia"
+td class=UsersTable_cell__ca {MG}
+div class=UserAvatar_root__v6w7x8 {MG}
+span {MG}
+td class=UsersTable_cell__ci {mia.garcia mia.garcia@corp.example}
+div {mia.garcia mia.garcia@corp.example}
+span {mia.garcia}
+span {mia.garcia@corp.example}
+td class=UsersTable_cell__cd {Engineering}
+span class=DeptBadge_root__k1l2m3 {Engineering}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {NM 	 noah.martinez noah.martinez@corp.example 	Product	Auditor	 Suspended 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select noah.martinez"
+td class=UsersTable_cell__ca {NM}
+div class=UserAvatar_root__v6w7x8 {NM}
+span {NM}
+td class=UsersTable_cell__ci {noah.martinez noah.martinez@corp.example}
+div {noah.martinez noah.martinez@corp.example}
+span {noah.martinez}
+span {noah.martinez@corp.example}
+td class=UsersTable_cell__cd {Product}
+span class=DeptBadge_root__k1l2m3 {Product}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {OR 	 olivia.robinson olivia.robinson@corp.example 	Marketing	Manager	 Active 	3 days ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select olivia.robinson"
+td class=UsersTable_cell__ca {OR}
+div class=UserAvatar_root__v6w7x8 {OR}
+span {OR}
+td class=UsersTable_cell__ci {olivia.robinson olivia.robinson@corp.example}
+div {olivia.robinson olivia.robinson@corp.example}
+span {olivia.robinson}
+span {olivia.robinson@corp.example}
+td class=UsersTable_cell__cd {Marketing}
+span class=DeptBadge_root__k1l2m3 {Marketing}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 days ago}
+time class=LoginTime_root__f2g3h4 {3 days ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {PC 	 peter.clark peter.clark@corp.example 	Finance	Admin	 Active 	1 week ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select peter.clark"
+td class=UsersTable_cell__ca {PC}
+div class=UserAvatar_root__v6w7x8 {PC}
+span {PC}
+td class=UsersTable_cell__ci {peter.clark peter.clark@corp.example}
+div {peter.clark peter.clark@corp.example}
+span {peter.clark}
+span {peter.clark@corp.example}
+td class=UsersTable_cell__cd {Finance}
+span class=DeptBadge_root__k1l2m3 {Finance}
+td class=UsersTable_cell__cr {Admin}
+span class=RoleBadge_root__n4o5p6 {Admin}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {1 week ago}
+time class=LoginTime_root__f2g3h4 {1 week ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {QR 	 quinn.rodriguez quinn.rodriguez@corp.example 	Legal	Editor	 Active 	2 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select quinn.rodriguez"
+td class=UsersTable_cell__ca {QR}
+div class=UserAvatar_root__v6w7x8 {QR}
+span {QR}
+td class=UsersTable_cell__ci {quinn.rodriguez quinn.rodriguez@corp.example}
+div {quinn.rodriguez quinn.rodriguez@corp.example}
+span {quinn.rodriguez}
+span {quinn.rodriguez@corp.example}
+td class=UsersTable_cell__cd {Legal}
+span class=DeptBadge_root__k1l2m3 {Legal}
+td class=UsersTable_cell__cr {Editor}
+span class=RoleBadge_root__n4o5p6 {Editor}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {2 weeks ago}
+time class=LoginTime_root__f2g3h4 {2 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {RL 	 rachel.lewis rachel.lewis@corp.example 	HR	Viewer	 Active 	3 weeks ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select rachel.lewis"
+td class=UsersTable_cell__ca {RL}
+div class=UserAvatar_root__v6w7x8 {RL}
+span {RL}
+td class=UsersTable_cell__ci {rachel.lewis rachel.lewis@corp.example}
+div {rachel.lewis rachel.lewis@corp.example}
+span {rachel.lewis}
+span {rachel.lewis@corp.example}
+td class=UsersTable_cell__cd {HR}
+span class=DeptBadge_root__k1l2m3 {HR}
+td class=UsersTable_cell__cr {Viewer}
+span class=RoleBadge_root__n4o5p6 {Viewer}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {3 weeks ago}
+time class=LoginTime_root__f2g3h4 {3 weeks ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {SL 	 sam.lee sam.lee@corp.example 	Sales	Auditor	 Suspended 	2 hours ago	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select sam.lee"
+td class=UsersTable_cell__ca {SL}
+div class=UserAvatar_root__v6w7x8 {SL}
+span {SL}
+td class=UsersTable_cell__ci {sam.lee sam.lee@corp.example}
+div {sam.lee sam.lee@corp.example}
+span {sam.lee}
+span {sam.lee@corp.example}
+td class=UsersTable_cell__cd {Sales}
+span class=DeptBadge_root__k1l2m3 {Sales}
+td class=UsersTable_cell__cr {Auditor}
+span class=RoleBadge_root__n4o5p6 {Auditor}
+td class=UsersTable_cell__cs {Suspended}
+span {Suspended}
+span class=StatusBadge_dot__p7q8r9
+span {Suspended}
+td class=UsersTable_cell__cl {2 hours ago}
+time class=LoginTime_root__f2g3h4 {2 hours ago}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+tr class=UsersTable_row__j1k2l3 {TW 	 tara.walker tara.walker@corp.example 	Operations	Manager	 Active 	Yesterday	 Edit ⋯}
+td class=UsersTable_cell__ck
+input type=checkbox aria-label="Select tara.walker"
+td class=UsersTable_cell__ca {TW}
+div class=UserAvatar_root__v6w7x8 {TW}
+span {TW}
+td class=UsersTable_cell__ci {tara.walker tara.walker@corp.example}
+div {tara.walker tara.walker@corp.example}
+span {tara.walker}
+span {tara.walker@corp.example}
+td class=UsersTable_cell__cd {Operations}
+span class=DeptBadge_root__k1l2m3 {Operations}
+td class=UsersTable_cell__cr {Manager}
+span class=RoleBadge_root__n4o5p6 {Manager}
+td class=UsersTable_cell__cs {Active}
+span {Active}
+span class=StatusBadge_dot__p7q8r9
+span {Active}
+td class=UsersTable_cell__cl {Yesterday}
+time class=LoginTime_root__f2g3h4 {Yesterday}
+td class=UsersTable_cell__cax {Edit ⋯}
+div class=ActionMenu_root__i5j6k7 {Edit ⋯}
+button type=button {Edit}
+button type=button {⋯}
+[S] div class=PaginationBar_root__o0p1q2 {Showing 1–200 of 200 users Page 1 of 1}
+[S] span class=PaginationBar_info__q2r3s4 {Showing 1–200 of 200 users}
+[S] div {Page 1 of 1}
+[S] button type=button aria-label="Previous page"
+[S] span {Page 1 of 1}
+[S] button type=button
+[S] div class=ConsolePanel_root__c8d9e0 {Selected user alice.johnson alice.johnson@corp.example Active Edit user}
+[S] div {Selected user}
+[S] div {alice.johnson alice.johnson@corp.example}
+[S] div {alice.johnson}
+[S] div {alice.johnson@corp.example}
+[S] div {Active}
+[S] span {Active}
+[S] input type=checkbox aria-label="Toggle active status for alice.johnson"
+[S] button type=button aria-label="Edit user alice.johnson" {Edit user}
+[S] div {User detail & permissions}
+[S] div {User detail & permissions}
+[S] div class=EditPanel_root__a2b3c4 {Edit User: alice.johnson USERNAME EMAIL ADDRESS DEPARTMENT ROLE Viewer Editor Manager Auditor Admin Cancel Save changes}
+[S] h3 {Edit User: alice.johnson}
+[S] div class=EditPanel_grid__e8f9g0 {USERNAME EMAIL ADDRESS DEPARTMENT ROLE Viewer Editor Manager Auditor Admin}
+[S] div {USERNAME}
+[S] label for=edit-username {USERNAME}
+[S] input id=edit-username name=username type=text value=alice.johnson
+[S] div {EMAIL ADDRESS}
+[S] label {EMAIL ADDRESS}
+[S] input type=email placeholder=user@domain.com value=alice.johnson@corp.example
+[S] div {DEPARTMENT}
+[S] label for=edit-dept {DEPARTMENT}
+[S] input id=edit-dept type=text aria-label=Department value=Engineering
+[S] div {ROLE Viewer Editor Manager Auditor Admin}
+[S] label for=edit-role {ROLE}
+[S] select id=edit-role aria-label="Assign role to user" name=user_role {Viewer Editor Manager Auditor Admin}
+[S] option value=viewer {Viewer}
+[S] option value=editor {Editor}
+[S] option value=manager {Manager}
+[S] option value=auditor {Auditor}
+[S] option value=admin {Admin}
+[S] div {Cancel Save changes}
+[S] button type=button {Cancel}
+[S] button type=button aria-label="Save user changes" data-testid=save-changes-btn {Save changes}
+footer {© 2026 CorpAdmin Ltd.  ·  Terms  ·  Privacy  ·  Support  ·  Accessibility CorpAdmin v4.2.1}
+div {© 2026 CorpAdmin Ltd.  ·  Terms  ·  Privacy  ·  Support  ·  Accessibility}
+span {© 2026 CorpAdmin Ltd.}
+a href=/terms {Terms}
+a href=/privacy {Privacy}
+a href=/support {Support}
+a href=/accessibility {Accessibility}
+span {CorpAdmin v4.2.1}

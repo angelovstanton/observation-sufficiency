@@ -1,0 +1,85 @@
+<header>ShieldSure Home Insurance Car Insurance Life Insurance Claims My account</header>
+<a href="/" class="logo">ShieldSure</a>
+<nav aria-label="Main navigation">Home Insurance Car Insurance Life Insurance Claims My account</nav>
+<a href="/home-insurance">Home Insurance</a>
+<a href="/car-insurance">Car Insurance</a>
+<a href="/life-insurance">Life Insurance</a>
+<a href="/claims">Claims</a>
+<a href="/account">My account</a>
+<div class="hero">Get Your Home Insurance Quote  Answer a few short questions and we'll find the right cover for your home in minutes.  Start your quote 💾 Save &amp; continue later</div>
+<h1>Get Your Home Insurance Quote</h1>
+<p>Answer a few short questions and we'll find the right cover for your home in minutes.</p>
+<div class="hero-actions">Start your quote 💾 Save &amp; continue later</div>
+<button type="button" class="btn-start" data-testid="start-quote-btn" aria-label="Start your insurance quote">Start your quote</button>
+<a href="/quote/save" class="btn-save" aria-label="Save your quote progress and continue later">💾 Save &amp; continue later</a>
+<div class="content">★ Rated 4.8/5 by 12,000+ customers 🔒 FCA authorised ✆ 24/7 claims support 📋 Instant cover available Why choose ShieldSure? Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as …</div>
+<div class="trust-bar">★ Rated 4.8/5 by 12,000+ customers 🔒 FCA authorised ✆ 24/7 claims support 📋 Instant cover available</div>
+<div class="trust-item">★ Rated 4.8/5 by 12,000+ customers</div>
+<span class="trust-icon">★</span>
+<div class="trust-item">🔒 FCA authorised</div>
+<span class="trust-icon">🔒</span>
+<div class="trust-item">✆ 24/7 claims support</div>
+<span class="trust-icon">✆</span>
+<div class="trust-item">📋 Instant cover available</div>
+<span class="trust-icon">📋</span>
+<div data-shadow="true" class="wizard-box">Your Quote — Step 1 of 3 1 2 3 Step 1: Personal Information Next: Property Details → Step 2: Property Details Step 3: Coverage &amp; Submit</div>
+<div data-shadow="true" class="wizard-header">Your Quote — Step 1 of 3 1 2 3</div>
+<span data-shadow="true" class="wizard-title">Your Quote — Step 1 of 3</span>
+<div data-shadow="true" class="step-indicators">1 2 3</div>
+<div data-shadow="true" class="step-dot active" data-testid="step-1-indicator" aria-label="Step 1: Personal Information">1</div>
+<div data-shadow="true" class="step-dot" aria-label="Step 2: Property Details">2</div>
+<div data-shadow="true" class="step-dot" aria-label="Step 3: Coverage &amp; Submit">3</div>
+<div data-shadow="true" class="progress-track"></div>
+<div data-shadow="true" class="progress-fill" role="progressbar"></div>
+<div data-shadow="true" class="wizard-body">Step 1: Personal Information Next: Property Details →</div>
+<div data-shadow="true" class="step-heading">Step 1: Personal Information</div>
+<div data-shadow="true" class="section-body">First name  As it appears on official documents  Date of birth</div>
+<div data-shadow="true" class="field-group">First name  As it appears on official documents</div>
+<label data-shadow="true" class="lbl" for="quote-first-name">First name</label>
+<input data-shadow="true" id="quote-first-name" name="first_name" type="text" class="inp" aria-label="First name" placeholder="e.g. Sarah" />
+<p data-shadow="true" class="hint">As it appears on official documents</p>
+<div data-shadow="true" class="field-group">Date of birth</div>
+<label data-shadow="true" class="lbl" for="quote-dob">Date of birth</label>
+<input data-shadow="true" id="quote-dob" type="date" class="inp" aria-label="Your date of birth" />
+<div data-shadow="true" class="nav-footer">Next: Property Details →</div>
+<button data-shadow="true" type="button" class="btn-next" data-testid="next-step-btn" aria-label="Continue to step 2: Property Details">Next: Property Details →</button>
+<div data-shadow="true" class="wizard-body">Step 2: Property Details</div>
+<div data-shadow="true" class="step-heading">Step 2: Property Details</div>
+<div data-shadow="true" class="section-body">Property type Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow Year built (approx.)</div>
+<div data-shadow="true" class="field-group">Property type Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow</div>
+<label data-shadow="true" class="lbl" for="property-type">Property type</label>
+<select data-shadow="true" id="property-type" name="property_type" class="sel" aria-label="Property type">Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow</select>
+<option data-shadow="true">Select a type</option>
+<option data-shadow="true" value="detached">Detached house</option>
+<option data-shadow="true" value="semi">Semi-detached house</option>
+<option data-shadow="true" value="terraced">Terraced house</option>
+<option data-shadow="true" value="flat">Flat / apartment</option>
+<option data-shadow="true" value="bungalow">Bungalow</option>
+<div data-shadow="true" class="field-group">Year built (approx.)</div>
+<label data-shadow="true" class="lbl" for="year-built">Year built (approx.)</label>
+<input data-shadow="true" id="year-built" type="number" class="inp" placeholder="e.g. 1985" aria-label="Approximate year the property was built" />
+<div data-shadow="true" class="wizard-body">Step 3: Coverage &amp; Submit</div>
+<div data-shadow="true" class="step-heading">Step 3: Coverage &amp; Submit</div>
+<div data-shadow="true" class="section-body">Desired coverage amount (£) £  This should cover the full rebuild cost of your home  Get my quote →</div>
+<div data-shadow="true" class="field-group">Desired coverage amount (£) £  This should cover the full rebuild cost of your home</div>
+<label data-shadow="true" class="lbl" for="coverage-amount">Desired coverage amount (£)</label>
+<div data-shadow="true" class="coverage-input-wrap">£</div>
+<span data-shadow="true" class="currency-prefix">£</span>
+<input data-shadow="true" id="coverage-amount" type="number" class="inp" placeholder="e.g. 300000" aria-label="Desired coverage amount in GBP" />
+<p data-shadow="true" class="hint">This should cover the full rebuild cost of your home</p>
+<div data-shadow="true" class="field-group">Get my quote →</div>
+<button data-shadow="true" type="button" class="submit-btn" data-testid="submit-quote-btn" aria-label="Submit your quote request">Get my quote →</button>
+<div class="reassurance">Why choose ShieldSure? Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as standard</div>
+<h2>Why choose ShieldSure?</h2>
+<ul>Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as standard</ul>
+<li>Buildings and contents cover in one policy</li>
+<li>No hidden fees — the price you see is the price you pay</li>
+<li>Cancel within 14 days for a full refund</li>
+<li>Accidental damage cover included as standard</li>
+<footer>© 2026 ShieldSure Ltd. Authorised by the FCA. Terms Privacy Cookies Accessibility</footer>
+<div class="footer-inner">© 2026 ShieldSure Ltd. Authorised by the FCA. Terms Privacy Cookies Accessibility</div>
+<span>© 2026 ShieldSure Ltd. Authorised by the FCA.</span>
+<a href="/terms">Terms</a>
+<a href="/privacy">Privacy</a>
+<a href="/cookies">Cookies</a>
+<a href="/accessibility">Accessibility</a>

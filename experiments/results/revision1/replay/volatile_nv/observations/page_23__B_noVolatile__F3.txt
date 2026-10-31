@@ -1,0 +1,620 @@
+div class=Header_logo__q1w2e3 {ShopNow}
+div class=Header_tagline__r4t5y6 {Secure Checkout}
+nav class=Breadcrumb_root__u7i8o9 aria-label="Checkout steps" {Cart › Shipping › Payment}
+span class=Breadcrumb_item__p0a1s2 {Cart}
+span class=Breadcrumb_sep__d3f4g5 {›}
+span class=Breadcrumb_item__p0a1s2 {Shipping}
+span class=Breadcrumb_sep__d3f4g5 {›}
+span class="Breadcrumb_item__p0a1s2 active" {Payment}
+div class=Checkout_layout__h6j7k8 {Your Order (45 items) Wireless Earbuds Pro $49.99 Save for later Running Shoes X5 $89.99 Save for later Coffee Maker Deluxe $129.00 Save for later Yoga Mat Premium $39.99 Save for later Desk Lamp LED $29.50 Save for later Backpack Urban 30L $79.99 Save for later Protein Powder 2kg $64.99 Save for la…}
+div class=Checkout_left__l9z0x1 {Your Order (45 items) Wireless Earbuds Pro $49.99 Save for later Running Shoes X5 $89.99 Save for later Coffee Maker Deluxe $129.00 Save for later Yoga Mat Premium $39.99 Save for later Desk Lamp LED $29.50 Save for later Backpack Urban 30L $79.99 Save for later Protein Powder 2kg $64.99 Save for la…}
+div class="d-block d-md-none" {Order Summary       Wireless Earbuds Pro$49.99Save for laterRunning Shoes X5$89.99Save for laterCoffee Maker Deluxe$129.00Save for laterYoga Mat Premium$39.99Save for laterDesk Lamp LED$29.50Save for laterBackpack Urban 30L$79.99Save for laterProtein Powder 2kg$64.99Save for laterResistance Bands Se…}
+div class=OrderSummary_header__n5m6l7 {Order Summary}
+div id=order-items-mobile {Wireless Earbuds Pro$49.99Save for laterRunning Shoes X5$89.99Save for laterCoffee Maker Deluxe$129.00Save for laterYoga Mat Premium$39.99Save for laterDesk Lamp LED$29.50Save for laterBackpack Urban 30L$79.99Save for laterProtein Powder 2kg$64.99Save for laterResistance Bands Set$24.99Save for late…}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro$49.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro$49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5$89.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5$89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe$129.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe$129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium$39.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium$39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED$29.50Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED$29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Backpack Urban 30L$79.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Backpack Urban 30L$79.99}
+span class=OrderItem_name__j0k1l2 {Backpack Urban 30L}
+span class=OrderItem_price__m3n4o5 {$79.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Protein Powder 2kg$64.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Protein Powder 2kg$64.99}
+span class=OrderItem_name__j0k1l2 {Protein Powder 2kg}
+span class=OrderItem_price__m3n4o5 {$64.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Resistance Bands Set$24.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Resistance Bands Set$24.99}
+span class=OrderItem_name__j0k1l2 {Resistance Bands Set}
+span class=OrderItem_price__m3n4o5 {$24.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Water Bottle Insulated$34.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Water Bottle Insulated$34.00}
+span class=OrderItem_name__j0k1l2 {Water Bottle Insulated}
+span class=OrderItem_price__m3n4o5 {$34.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Notebook A5 Pack$12.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Notebook A5 Pack$12.99}
+span class=OrderItem_name__j0k1l2 {Notebook A5 Pack}
+span class=OrderItem_price__m3n4o5 {$12.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {USB-C Hub 7-Port$59.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {USB-C Hub 7-Port$59.99}
+span class=OrderItem_name__j0k1l2 {USB-C Hub 7-Port}
+span class=OrderItem_price__m3n4o5 {$59.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mechanical Keyboard TKL$109.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mechanical Keyboard TKL$109.00}
+span class=OrderItem_name__j0k1l2 {Mechanical Keyboard TKL}
+span class=OrderItem_price__m3n4o5 {$109.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mouse Pad XL$18.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mouse Pad XL$18.99}
+span class=OrderItem_name__j0k1l2 {Mouse Pad XL}
+span class=OrderItem_price__m3n4o5 {$18.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Webcam 4K$149.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Webcam 4K$149.99}
+span class=OrderItem_name__j0k1l2 {Webcam 4K}
+span class=OrderItem_price__m3n4o5 {$149.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Standing Desk Mat$44.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Standing Desk Mat$44.99}
+span class=OrderItem_name__j0k1l2 {Standing Desk Mat}
+span class=OrderItem_price__m3n4o5 {$44.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Knee Sleeve Pair$35.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Knee Sleeve Pair$35.00}
+span class=OrderItem_name__j0k1l2 {Knee Sleeve Pair}
+span class=OrderItem_price__m3n4o5 {$35.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Jump Rope Speed$22.50Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Jump Rope Speed$22.50}
+span class=OrderItem_name__j0k1l2 {Jump Rope Speed}
+span class=OrderItem_price__m3n4o5 {$22.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Pull-Up Bar Doorway$55.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Pull-Up Bar Doorway$55.00}
+span class=OrderItem_name__j0k1l2 {Pull-Up Bar Doorway}
+span class=OrderItem_price__m3n4o5 {$55.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Foam Roller 18"$28.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Foam Roller 18"$28.99}
+span class=OrderItem_name__j0k1l2 {Foam Roller 18"}
+span class=OrderItem_price__m3n4o5 {$28.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Massage Gun Mini$89.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Massage Gun Mini$89.00}
+span class=OrderItem_name__j0k1l2 {Massage Gun Mini}
+span class=OrderItem_price__m3n4o5 {$89.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro$49.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro$49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5$89.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5$89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe$129.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe$129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium$39.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium$39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED$29.50Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED$29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Backpack Urban 30L$79.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Backpack Urban 30L$79.99}
+span class=OrderItem_name__j0k1l2 {Backpack Urban 30L}
+span class=OrderItem_price__m3n4o5 {$79.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Protein Powder 2kg$64.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Protein Powder 2kg$64.99}
+span class=OrderItem_name__j0k1l2 {Protein Powder 2kg}
+span class=OrderItem_price__m3n4o5 {$64.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Resistance Bands Set$24.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Resistance Bands Set$24.99}
+span class=OrderItem_name__j0k1l2 {Resistance Bands Set}
+span class=OrderItem_price__m3n4o5 {$24.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Water Bottle Insulated$34.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Water Bottle Insulated$34.00}
+span class=OrderItem_name__j0k1l2 {Water Bottle Insulated}
+span class=OrderItem_price__m3n4o5 {$34.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Notebook A5 Pack$12.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Notebook A5 Pack$12.99}
+span class=OrderItem_name__j0k1l2 {Notebook A5 Pack}
+span class=OrderItem_price__m3n4o5 {$12.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {USB-C Hub 7-Port$59.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {USB-C Hub 7-Port$59.99}
+span class=OrderItem_name__j0k1l2 {USB-C Hub 7-Port}
+span class=OrderItem_price__m3n4o5 {$59.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mechanical Keyboard TKL$109.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mechanical Keyboard TKL$109.00}
+span class=OrderItem_name__j0k1l2 {Mechanical Keyboard TKL}
+span class=OrderItem_price__m3n4o5 {$109.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mouse Pad XL$18.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mouse Pad XL$18.99}
+span class=OrderItem_name__j0k1l2 {Mouse Pad XL}
+span class=OrderItem_price__m3n4o5 {$18.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Webcam 4K$149.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Webcam 4K$149.99}
+span class=OrderItem_name__j0k1l2 {Webcam 4K}
+span class=OrderItem_price__m3n4o5 {$149.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Standing Desk Mat$44.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Standing Desk Mat$44.99}
+span class=OrderItem_name__j0k1l2 {Standing Desk Mat}
+span class=OrderItem_price__m3n4o5 {$44.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Knee Sleeve Pair$35.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Knee Sleeve Pair$35.00}
+span class=OrderItem_name__j0k1l2 {Knee Sleeve Pair}
+span class=OrderItem_price__m3n4o5 {$35.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Jump Rope Speed$22.50Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Jump Rope Speed$22.50}
+span class=OrderItem_name__j0k1l2 {Jump Rope Speed}
+span class=OrderItem_price__m3n4o5 {$22.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Pull-Up Bar Doorway$55.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Pull-Up Bar Doorway$55.00}
+span class=OrderItem_name__j0k1l2 {Pull-Up Bar Doorway}
+span class=OrderItem_price__m3n4o5 {$55.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Foam Roller 18"$28.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Foam Roller 18"$28.99}
+span class=OrderItem_name__j0k1l2 {Foam Roller 18"}
+span class=OrderItem_price__m3n4o5 {$28.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Massage Gun Mini$89.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Massage Gun Mini$89.00}
+span class=OrderItem_name__j0k1l2 {Massage Gun Mini}
+span class=OrderItem_price__m3n4o5 {$89.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro$49.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro$49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5$89.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5$89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe$129.00Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe$129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium$39.99Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium$39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED$29.50Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED$29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderSummary_total__k8j9h0 {Total         $2676.23}
+span id=total-mobile {$2676.23}
+div class="d-none d-md-block" {Your Order (45 items) Wireless Earbuds Pro $49.99 Save for later Running Shoes X5 $89.99 Save for later Coffee Maker Deluxe $129.00 Save for later Yoga Mat Premium $39.99 Save for later Desk Lamp LED $29.50 Save for later Backpack Urban 30L $79.99 Save for later Protein Powder 2kg $64.99 Save for la…}
+div class=OrderSummary_header__n5m6l7 {Your Order (45 items)}
+div id=order-items-desktop {Wireless Earbuds Pro $49.99 Save for later Running Shoes X5 $89.99 Save for later Coffee Maker Deluxe $129.00 Save for later Yoga Mat Premium $39.99 Save for later Desk Lamp LED $29.50 Save for later Backpack Urban 30L $79.99 Save for later Protein Powder 2kg $64.99 Save for later Resistance Bands S…}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro $49.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro $49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5 $89.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5 $89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe $129.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe $129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium $39.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium $39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED $29.50 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED $29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Backpack Urban 30L $79.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Backpack Urban 30L $79.99}
+span class=OrderItem_name__j0k1l2 {Backpack Urban 30L}
+span class=OrderItem_price__m3n4o5 {$79.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Protein Powder 2kg $64.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Protein Powder 2kg $64.99}
+span class=OrderItem_name__j0k1l2 {Protein Powder 2kg}
+span class=OrderItem_price__m3n4o5 {$64.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Resistance Bands Set $24.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Resistance Bands Set $24.99}
+span class=OrderItem_name__j0k1l2 {Resistance Bands Set}
+span class=OrderItem_price__m3n4o5 {$24.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Water Bottle Insulated $34.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Water Bottle Insulated $34.00}
+span class=OrderItem_name__j0k1l2 {Water Bottle Insulated}
+span class=OrderItem_price__m3n4o5 {$34.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Notebook A5 Pack $12.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Notebook A5 Pack $12.99}
+span class=OrderItem_name__j0k1l2 {Notebook A5 Pack}
+span class=OrderItem_price__m3n4o5 {$12.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {USB-C Hub 7-Port $59.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {USB-C Hub 7-Port $59.99}
+span class=OrderItem_name__j0k1l2 {USB-C Hub 7-Port}
+span class=OrderItem_price__m3n4o5 {$59.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mechanical Keyboard TKL $109.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mechanical Keyboard TKL $109.00}
+span class=OrderItem_name__j0k1l2 {Mechanical Keyboard TKL}
+span class=OrderItem_price__m3n4o5 {$109.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mouse Pad XL $18.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mouse Pad XL $18.99}
+span class=OrderItem_name__j0k1l2 {Mouse Pad XL}
+span class=OrderItem_price__m3n4o5 {$18.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Webcam 4K $149.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Webcam 4K $149.99}
+span class=OrderItem_name__j0k1l2 {Webcam 4K}
+span class=OrderItem_price__m3n4o5 {$149.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Standing Desk Mat $44.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Standing Desk Mat $44.99}
+span class=OrderItem_name__j0k1l2 {Standing Desk Mat}
+span class=OrderItem_price__m3n4o5 {$44.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Knee Sleeve Pair $35.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Knee Sleeve Pair $35.00}
+span class=OrderItem_name__j0k1l2 {Knee Sleeve Pair}
+span class=OrderItem_price__m3n4o5 {$35.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Jump Rope Speed $22.50 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Jump Rope Speed $22.50}
+span class=OrderItem_name__j0k1l2 {Jump Rope Speed}
+span class=OrderItem_price__m3n4o5 {$22.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Pull-Up Bar Doorway $55.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Pull-Up Bar Doorway $55.00}
+span class=OrderItem_name__j0k1l2 {Pull-Up Bar Doorway}
+span class=OrderItem_price__m3n4o5 {$55.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Foam Roller 18" $28.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Foam Roller 18" $28.99}
+span class=OrderItem_name__j0k1l2 {Foam Roller 18"}
+span class=OrderItem_price__m3n4o5 {$28.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Massage Gun Mini $89.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Massage Gun Mini $89.00}
+span class=OrderItem_name__j0k1l2 {Massage Gun Mini}
+span class=OrderItem_price__m3n4o5 {$89.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro $49.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro $49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5 $89.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5 $89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe $129.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe $129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium $39.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium $39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED $29.50 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED $29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Backpack Urban 30L $79.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Backpack Urban 30L $79.99}
+span class=OrderItem_name__j0k1l2 {Backpack Urban 30L}
+span class=OrderItem_price__m3n4o5 {$79.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Protein Powder 2kg $64.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Protein Powder 2kg $64.99}
+span class=OrderItem_name__j0k1l2 {Protein Powder 2kg}
+span class=OrderItem_price__m3n4o5 {$64.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Resistance Bands Set $24.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Resistance Bands Set $24.99}
+span class=OrderItem_name__j0k1l2 {Resistance Bands Set}
+span class=OrderItem_price__m3n4o5 {$24.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Water Bottle Insulated $34.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Water Bottle Insulated $34.00}
+span class=OrderItem_name__j0k1l2 {Water Bottle Insulated}
+span class=OrderItem_price__m3n4o5 {$34.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Notebook A5 Pack $12.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Notebook A5 Pack $12.99}
+span class=OrderItem_name__j0k1l2 {Notebook A5 Pack}
+span class=OrderItem_price__m3n4o5 {$12.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {USB-C Hub 7-Port $59.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {USB-C Hub 7-Port $59.99}
+span class=OrderItem_name__j0k1l2 {USB-C Hub 7-Port}
+span class=OrderItem_price__m3n4o5 {$59.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mechanical Keyboard TKL $109.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mechanical Keyboard TKL $109.00}
+span class=OrderItem_name__j0k1l2 {Mechanical Keyboard TKL}
+span class=OrderItem_price__m3n4o5 {$109.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Mouse Pad XL $18.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Mouse Pad XL $18.99}
+span class=OrderItem_name__j0k1l2 {Mouse Pad XL}
+span class=OrderItem_price__m3n4o5 {$18.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Webcam 4K $149.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Webcam 4K $149.99}
+span class=OrderItem_name__j0k1l2 {Webcam 4K}
+span class=OrderItem_price__m3n4o5 {$149.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Standing Desk Mat $44.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Standing Desk Mat $44.99}
+span class=OrderItem_name__j0k1l2 {Standing Desk Mat}
+span class=OrderItem_price__m3n4o5 {$44.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Knee Sleeve Pair $35.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Knee Sleeve Pair $35.00}
+span class=OrderItem_name__j0k1l2 {Knee Sleeve Pair}
+span class=OrderItem_price__m3n4o5 {$35.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Jump Rope Speed $22.50 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Jump Rope Speed $22.50}
+span class=OrderItem_name__j0k1l2 {Jump Rope Speed}
+span class=OrderItem_price__m3n4o5 {$22.50}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Pull-Up Bar Doorway $55.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Pull-Up Bar Doorway $55.00}
+span class=OrderItem_name__j0k1l2 {Pull-Up Bar Doorway}
+span class=OrderItem_price__m3n4o5 {$55.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Foam Roller 18" $28.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Foam Roller 18" $28.99}
+span class=OrderItem_name__j0k1l2 {Foam Roller 18"}
+span class=OrderItem_price__m3n4o5 {$28.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Massage Gun Mini $89.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Massage Gun Mini $89.00}
+span class=OrderItem_name__j0k1l2 {Massage Gun Mini}
+span class=OrderItem_price__m3n4o5 {$89.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Wireless Earbuds Pro $49.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Wireless Earbuds Pro $49.99}
+span class=OrderItem_name__j0k1l2 {Wireless Earbuds Pro}
+span class=OrderItem_price__m3n4o5 {$49.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Running Shoes X5 $89.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Running Shoes X5 $89.99}
+span class=OrderItem_name__j0k1l2 {Running Shoes X5}
+span class=OrderItem_price__m3n4o5 {$89.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Coffee Maker Deluxe $129.00 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Coffee Maker Deluxe $129.00}
+span class=OrderItem_name__j0k1l2 {Coffee Maker Deluxe}
+span class=OrderItem_price__m3n4o5 {$129.00}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Yoga Mat Premium $39.99 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Yoga Mat Premium $39.99}
+span class=OrderItem_name__j0k1l2 {Yoga Mat Premium}
+span class=OrderItem_price__m3n4o5 {$39.99}
+button {Save for later}
+div class=OrderItem_row__a1b2c3 {Desk Lamp LED $29.50 Save for later}
+div class=OrderItem_img__d4e5f6 aria-hidden=true
+div class=OrderItem_info__g7h8i9 {Desk Lamp LED $29.50}
+span class=OrderItem_name__j0k1l2 {Desk Lamp LED}
+span class=OrderItem_price__m3n4o5 {$29.50}
+button {Save for later}
+div class=OrderSummary_total__k8j9h0 {Order Total $2676.23}
+span id=total-desktop {$2676.23}
+div class=Checkout_right__c2v3b4 {Contact & Shipping Email for order confirmation First name Last name Street address City ZIP code Country United States Canada United Kingdom Australia Promo code Apply}
+div class=ShippingForm_root__e5r6t7 {Contact & Shipping Email for order confirmation First name Last name Street address City ZIP code Country United States Canada United Kingdom Australia Promo code Apply}
+div class=ShippingForm_title__y8u9i0 {Contact & Shipping}
+div class=ShippingForm_field__o1p2a3 {Email for order confirmation}
+label for=order-email {Email for order confirmation}
+input id=order-email name=email type=email aria-label="Email address for order confirmation" placeholder=you@example.com
+div class=ShippingForm_row__s4d5f6 {First name Last name}
+div class=ShippingForm_field__o1p2a3 {First name}
+label for=ship-first {First name}
+input id=ship-first name=first_name type=text
+div class=ShippingForm_field__o1p2a3 {Last name}
+label for=ship-last {Last name}
+input id=ship-last name=last_name type=text
+div class=ShippingForm_field__o1p2a3 {Street address}
+label for=ship-address {Street address}
+input id=ship-address name=address type=text
+div class=ShippingForm_row__s4d5f6 {City ZIP code}
+div class=ShippingForm_field__o1p2a3 {City}
+label for=ship-city {City}
+input id=ship-city name=city type=text
+div class=ShippingForm_field__o1p2a3 {ZIP code}
+label for=ship-zip {ZIP code}
+input id=ship-zip name=zip type=text
+div class=ShippingForm_field__o1p2a3 {Country United States Canada United Kingdom Australia}
+label for=ship-country {Country}
+select id=ship-country name=country {United States Canada United Kingdom Australia}
+div class=ShippingForm_field__o1p2a3 {Promo code Apply}
+label for=promo-code {Promo code}
+div class=PromoRow_root__g7h8j9 {Apply}
+input id=promo-code class=PromoRow_input__k0l1m2 type=text placeholder="Enter code"
+button class=PromoRow_btn__n3o4p5 aria-label="Apply discount code" {Apply}
+[S] div class=PayShell_root__g0h1i2 {Payment Method Credit / Debit Card PayPal 256-bit SSL secured payment}
+[S] div class=PayShell_title__h2i3j4 {Payment Method}
+[S] div class=PayShell_tabs__k5l6m7 role=tablist {Credit / Debit Card PayPal}
+[S] button role=tab class="PayShell_tab__n8o9p0 active" aria-label="Pay by credit or debit card" {Credit / Debit Card}
+[S] button role=tab class=PayShell_tab__n8o9p0 aria-label="Continue with PayPal" {PayPal}
+[S] div class=PayShell_secRow__q1r2s3 {256-bit SSL secured payment}
+[S] span class=PayShell_secText__t4u5v6 {256-bit SSL secured payment}
+[S] form class=PayWidget_form__c4d5e6 {Card number Expiry (MM/YY) CVC Number of installments 1 payment (full amount) 3 monthly payments 6 monthly payments 12 monthly payments Save card for future purchases Pay Now}
+[S] div class=PayWidget_field__e6f7g8 {Card number}
+[S] label for=pw-card-number {Card number}
+[S] input id=pw-card-number aria-label="Card number" name=card_number type=text placeholder="1234 5678 9012 3456"
+[S] div class=PayWidget_row__n5o6p7 {Expiry (MM/YY) CVC}
+[S] div class=PayWidget_field__e6f7g8 {Expiry (MM/YY)}
+[S] label for=pw-expiry {Expiry (MM/YY)}
+[S] input id=pw-expiry name=expiry type=text placeholder=MM/YY
+[S] div class=PayWidget_field__e6f7g8 {CVC}
+[S] label for=pw-cvc {CVC}
+[S] input id=pw-cvc name=cvc type=text placeholder=123
+[S] div class=PayWidget_field__e6f7g8 {Number of installments 1 payment (full amount) 3 monthly payments 6 monthly payments 12 monthly payments}
+[S] label for=pw-installments {Number of installments}
+[S] select id=pw-installments aria-label="Number of installments" name=installments {1 payment (full amount) 3 monthly payments 6 monthly payments 12 monthly payments}
+[S] option value=1 {1 payment (full amount)}
+[S] option value=3 {3 monthly payments}
+[S] option value=6 {6 monthly payments}
+[S] option value=12 {12 monthly payments}
+[S] div class=PayWidget_checkRow__h9i0j1 {Save card for future purchases}
+[S] input type=checkbox name=save_card id=pw-save-card
+[S] label for=pw-save-card {Save card for future purchases}
+[S] button type=submit class=PayWidget_submitBtn__k2l3m4 aria-label="Pay and place order" data-testid=submit-payment-btn {Pay Now}

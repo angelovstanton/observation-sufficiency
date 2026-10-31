@@ -10,9 +10,10 @@ using BoundedAgents.Shared.Oracle;
 // Scope: 7 bundles × 5 encodings (25 valid pairs + 10 skipped) × 10 targets
 //        × MODEL_DEPLOYMENT_1 × repetition=0 × each page in BAR_PAGE_IDS
 //
-// Usage (from repo root):
-//   dotnet run --project experiments/                                     # page_01 only
-//   BAR_PAGE_IDS=page_05,page_08,page_10 dotnet run --project experiments/
+// Usage (from repo root; PAID — needs --execute and BAR_LEGACY_CONFIRM=paid in the process):
+//   BAR_LEGACY_CONFIRM=paid dotnet run --project experiments/ -- --execute                    # page_01 only
+//   BAR_LEGACY_CONFIRM=paid BAR_PAGE_IDS=page_05,page_08 dotnet run --project experiments/ -- --execute
+// Without both, every model-calling mode exits 2 (experiments/LegacyEntry.cs); zero-LLM modes need neither.
 //
 // Requires .env with BAR_AZURE_OPENAI_ENDPOINT, BAR_AZURE_OPENAI_KEY + BAR_MODEL_DEPLOYMENT_1.
 // Auth: API key via AzureKeyCredential (no DefaultAzureCredential / az login).
@@ -21,38 +22,88 @@ using BoundedAgents.Shared.Oracle;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+// ── Batch guard: first, before every other mode flag ─────────────────────
+// The paid batch runs only through its own executable (experiments/batch). A batch flag here never
+// falls through to the matrix, Axis C or any other mode — including a flag set only in .env,
+// which Config would load later (the file is read here, not loaded).
+if (BoundedAgents.Experiments.LegacyBatchGuard.RefuseReason(
+        Environment.GetEnvironmentVariable, args, AppContext.BaseDirectory) is { } batchFlag)
+{
+    Console.Error.WriteLine($"REVISION_BATCH ({batchFlag}): the Revision 1 batch runs only via `dotnet run --project experiments/batch`. Nothing started.");
+    Environment.ExitCode = 2;
+    return;
+}
+
+// ── Paid opt-in: the one choke point before any mode ─────────────────────
+// A mode that calls a model (the matrix below, LLM_SMOKE_TEST, VALIDATE_ENCODING, AXIS_C,
+// SENSITIVITY_CONSISTENT) needs the "--execute" argument and env BAR_LEGACY_CONFIRM=paid in the
+// process; otherwise exit 2 before Config, a client or the network. Zero-LLM modes need neither.
+// The mode is resolved once, here; the dispatch below follows it.
+var (legacyMode, legacyProblems) = BoundedAgents.Experiments.LegacyEntry.Gate(
+    Environment.GetEnvironmentVariable, args, AppContext.BaseDirectory);
+if (legacyProblems.Count > 0)
+{
+    Environment.ExitCode = BoundedAgents.Experiments.LegacyEntry.Refuse(legacyProblems);
+    return;
+}
+
 // ── Smoke test (DOM walk + tokenizer only, no LLM call) ─────────────────
-if (Environment.GetEnvironmentVariable("SMOKE_TEST") == "1")
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.Smoke)
 {
     await SmokeTests.RunAsync();
     return;
 }
 // ── LLM connectivity smoke test (5 calls, one per model) ─────────────────
-if (Environment.GetEnvironmentVariable("LLM_SMOKE_TEST") == "1")
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.LlmSmoke)
 {
     await SmokeTests.RunLlmAsync();
     return;
 }
 // ── Predicate control set (hand-labeled verdicts, zero LLM) ──────────────
-if (Environment.GetEnvironmentVariable("PREDICATE_CONTROLS") == "1")
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.PredicateControls)
 {
     await PredicateControlsMode.RunAsync();
     return;
 }
 // ── Encoding-invariance validation (B_full × F0/F1/F2/F3 only) ──────────
-if (Environment.GetEnvironmentVariable("VALIDATE_ENCODING") == "1")
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.ValidateEncoding)
 {
     await EncodingValidationMode.RunAsync();
     return;
 }
 // ── Axis C — cross-model robustness (nano + o4-mini + Claude) ────────────
-if (Environment.GetEnvironmentVariable("AXIS_C") == "1")
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.AxisC)
 {
     await AxisCMode.RunAsync();
     return;
 }
+// ── Observation dump + guard (zero LLM) ──────────────────────────────────
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.DumpObservations)
+{
+    Environment.ExitCode = await ObservationDumpMode.RunAsync();
+    return;
+}
+// ── B_noVolatileConsistent sensitivity run (differing cells only) ─────────
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.SensitivityConsistent)
+{
+    await ConsistentSensitivityMode.RunAsync();
+    return;
+}
+// ── Batch observation dump for Blocks 1–2 + ladder composition (zero LLM) ─
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.DumpBatchObservations)
+{
+    Environment.ExitCode = await BatchObservationDumpMode.RunAsync();
+    return;
+}
+// ── Real-site pilot adapter: offline load + observation dump (zero LLM) ──
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.RealPilot
+    && Environment.GetEnvironmentVariable("REAL_PILOT") is { Length: > 0 } realPilotMode)
+{
+    Environment.ExitCode = await RealPilotMode.RunAsync(realPilotMode);
+    return;
+}
 // ── Offline replay (re-classify archived locators, zero LLM spend) ───────
-if (args.Contains("--replay"))
+if (legacyMode == BoundedAgents.Experiments.LegacyMode.Replay)
 {
     var idx = Array.IndexOf(args, "--replay");
     var repoRootR = Helpers.FindRepoRoot(AppContext.BaseDirectory);
@@ -62,10 +113,18 @@ if (args.Contains("--replay"))
         : Directory.GetDirectories(runsDirR, "archive_*")
                    .OrderByDescending(d => d).FirstOrDefault()
           ?? throw new InvalidOperationException("No archive_* directory found under experiments/runs/. Specify path: --replay <dir>");
-    await ReplayMode.RunAsync(repoRootR, runsDirR, archiveDirR);
+    var outIdx = Array.IndexOf(args, "--replay-out");
+    var replayOut = outIdx >= 0 && outIdx + 1 < args.Length ? args[outIdx + 1] : null;
+    var obsIdx = Array.IndexOf(args, "--dump-obs");
+    var dumpObs = obsIdx >= 0 && obsIdx + 1 < args.Length ? args[obsIdx + 1] : null;
+    await ReplayMode.RunAsync(repoRootR, runsDirR, archiveDirR, replayOut, dumpObs);
     return;
 }
 // ─────────────────────────────────────────────────────────────────────────
+if (legacyMode != BoundedAgents.Experiments.LegacyMode.Matrix)
+{
+    throw new InvalidOperationException($"unreachable: mode {legacyMode} fell through to the matrix");
+}
 
 // ── Page list from env ───────────────────────────────────────────────────
 var pageIds = (Environment.GetEnvironmentVariable("BAR_PAGE_IDS") ?? "page_01")

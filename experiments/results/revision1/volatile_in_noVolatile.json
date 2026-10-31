@@ -1,0 +1,2288 @@
+{
+  "scope": {
+    "grabbed_and_volatile_under_B_noVolatile": 84,
+    "volatile_regressions_success_to_grabbed": 4,
+    "volatile_regressions_contained_in_scope": 4,
+    "B_noVolatile_volatile_but_not_grabbed (lacked, outside scope)": 35
+  },
+  "port_validation": {
+    "records": 6000,
+    "agree_with_stored_predicate_non_volatile": 6000
+  },
+  "observation_rebuild": {
+    "observations": 20,
+    "token_count_matches_stored": 20,
+    "replay_predicate_mismatches": 0
+  },
+  "by_class": {
+    "(i) leak into observation": 83,
+    "(ii) invented by model": 1,
+    "(iii) other": 0
+  },
+  "by_class_encoding": {
+    "(i) leak into observation": {
+      "F0": 22,
+      "F1": 20,
+      "F2": 20,
+      "F3": 21
+    },
+    "(ii) invented by model": {
+      "F0": 0,
+      "F1": 1,
+      "F2": 0,
+      "F3": 0
+    },
+    "(iii) other": {
+      "F0": 0,
+      "F1": 0,
+      "F2": 0,
+      "F3": 0
+    }
+  },
+  "by_page": {
+    "page_17": {
+      "(i) leak into observation": 29,
+      "(ii) invented by model": 0,
+      "(iii) other": 0
+    },
+    "page_18": {
+      "(i) leak into observation": 20,
+      "(ii) invented by model": 0,
+      "(iii) other": 0
+    },
+    "page_22": {
+      "(i) leak into observation": 15,
+      "(ii) invented by model": 1,
+      "(iii) other": 0
+    },
+    "page_23": {
+      "(i) leak into observation": 4,
+      "(ii) invented by model": 0,
+      "(iii) other": 0
+    },
+    "page_24": {
+      "(i) leak into observation": 15,
+      "(ii) invented by model": 0,
+      "(iii) other": 0
+    }
+  },
+  "by_rule": {
+    "R4 .class — VolatileClassRe": {
+      "(i) leak into observation": 83,
+      "(ii) invented by model": 1,
+      "(iii) other": 0
+    }
+  },
+  "leak_bundle_vs_predicate": {
+    "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases": 83
+  },
+  "records": [
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.Toolbar_newUserBtn__e4f5g6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_newUserBtn__e4f5g6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_newUserBtn__e4f5g6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "select.Toolbar_roleFilter__b1c2d3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_roleFilter__b1c2d3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_roleFilter__b1c2d3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "ConsolePanel_toggleInput__w6x7y8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "ConsolePanel_toggleInput__w6x7y8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "tr.UsersTable_row__j1k2l3:has(.UserCell_username__e5f6g7:where(:not([class*=\" \"])):contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "UserCell_username__e5f6g7",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "UserCell_username__e5f6g7",
+          "reason": "VolatileClassRe"
+        },
+        {
+          "rule": "R4 .class",
+          "token": "ActionMenu_editBtn__l8m9n0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 200,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_07",
+      "regression_from_B_full_success": false,
+      "locator": "input#edit-username.EditPanel_input__m4n5o6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_08",
+      "regression_from_B_full_success": false,
+      "locator": "[data-shadow=\"true\"] .EditPanel_select__p7q8r9#edit-role",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_select__p7q8r9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_select__p7q8r9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_09",
+      "regression_from_B_full_success": false,
+      "locator": ".EditPanel_input__m4n5o6[type=\"email\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__x6y7z8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__x6y7z8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.Toolbar_newUserBtn__e4f5g6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_newUserBtn__e4f5g6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_newUserBtn__e4f5g6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_02",
+      "regression_from_B_full_success": true,
+      "locator": "select.Toolbar_roleFilter__b1c2d3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_roleFilter__b1c2d3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_roleFilter__b1c2d3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "ConsolePanel_toggleInput__w6x7y8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "ConsolePanel_toggleInput__w6x7y8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": ".UsersTable_row__j1k2l3:has(.UserCell_username__e5f6g7:contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "UserCell_username__e5f6g7",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "UserCell_username__e5f6g7",
+          "reason": "VolatileClassRe"
+        },
+        {
+          "rule": "R4 .class",
+          "token": "ActionMenu_editBtn__l8m9n0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 200,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_07",
+      "regression_from_B_full_success": true,
+      "locator": "input#edit-username.EditPanel_input__m4n5o6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_08",
+      "regression_from_B_full_success": false,
+      "locator": "select#edit-role.EditPanel_select__p7q8r9[aria-label=\"Assign role to user\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_select__p7q8r9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_select__p7q8r9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_09",
+      "regression_from_B_full_success": false,
+      "locator": ".EditPanel_input__m4n5o6[type=\"email\"][placeholder=\"user@domain.com\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__x6y7z8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__x6y7z8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.Toolbar_newUserBtn__e4f5g6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_newUserBtn__e4f5g6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_newUserBtn__e4f5g6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "select.Toolbar_roleFilter__b1c2d3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_roleFilter__b1c2d3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_roleFilter__b1c2d3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "ConsolePanel_toggleInput__w6x7y8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "ConsolePanel_toggleInput__w6x7y8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "tr:has(td:has(span.UserCell_username__e5f6g7:contains(\"alice.johnson\"))) button.ActionMenu_editBtn__l8m9n0",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "UserCell_username__e5f6g7",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "UserCell_username__e5f6g7",
+          "reason": "VolatileClassRe"
+        },
+        {
+          "rule": "R4 .class",
+          "token": "ActionMenu_editBtn__l8m9n0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 200,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_09",
+      "regression_from_B_full_success": false,
+      "locator": ".EditPanel_input__m4n5o6[type=\"email\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__x6y7z8",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__x6y7z8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__x6y7z8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.Toolbar_newUserBtn__e4f5g6[data-testid=\"new-user-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_newUserBtn__e4f5g6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_newUserBtn__e4f5g6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "select.Toolbar_roleFilter__b1c2d3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "Toolbar_roleFilter__b1c2d3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "Toolbar_roleFilter__b1c2d3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "ConsolePanel_toggleInput__w6x7y8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "ConsolePanel_toggleInput__w6x7y8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "tr:has(.UserCell_username__e5f6g7:contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "UserCell_username__e5f6g7",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "UserCell_username__e5f6g7",
+          "reason": "VolatileClassRe"
+        },
+        {
+          "rule": "R4 .class",
+          "token": "ActionMenu_editBtn__l8m9n0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 200,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_08",
+      "regression_from_B_full_success": false,
+      "locator": "select.EditPanel_select__p7q8r9#edit-role[aria-label=\"Assign role to user\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_select__p7q8r9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_select__p7q8r9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_09",
+      "regression_from_B_full_success": false,
+      "locator": ".EditPanel_input__m4n5o6[type=\"email\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_input__m4n5o6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_input__m4n5o6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 3,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__x6y7z8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__x6y7z8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.BoardToolbar_newBtn__o4p5q6[aria-label=\"Create new task card\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_newBtn__o4p5q6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_newBtn__o4p5q6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "input.BoardToolbar_filterInput__l1m2n3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_filterInput__l1m2n3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_filterInput__l1m2n3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_addBtn__w9x0y1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_addBtn__w9x0y1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "select.KanbanPanel_sortSel__d7e8f9",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_sortSel__d7e8f9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_sortSel__d7e8f9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__k8l9m0[data-testid=\"save-card-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__k8l9m0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__k8l9m0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.BoardToolbar_newBtn__o4p5q6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_newBtn__o4p5q6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_newBtn__o4p5q6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "input.BoardToolbar_filterInput__l1m2n3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_filterInput__l1m2n3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_filterInput__l1m2n3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_addBtn__w9x0y1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_addBtn__w9x0y1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "select.KanbanPanel_sortSel__d7e8f9[aria-label=\"Sort cards by\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_sortSel__d7e8f9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_sortSel__d7e8f9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__k8l9m0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__k8l9m0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.BoardToolbar_newBtn__o4p5q6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_newBtn__o4p5q6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_newBtn__o4p5q6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "input.BoardToolbar_filterInput__l1m2n3",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_filterInput__l1m2n3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_filterInput__l1m2n3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "button.KanbanPanel_addBtn__w9x0y1",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_addBtn__w9x0y1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_addBtn__w9x0y1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "select.KanbanPanel_sortSel__d7e8f9",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_sortSel__d7e8f9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_sortSel__d7e8f9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__k8l9m0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__k8l9m0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "task_id": "t_01",
+      "regression_from_B_full_success": false,
+      "locator": "button.BoardToolbar_newBtn__o4p5q6[data-testid=\"new-card-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_newBtn__o4p5q6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_newBtn__o4p5q6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "input.BoardToolbar_filterInput__l1m2n3#board-filter",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "BoardToolbar_filterInput__l1m2n3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "BoardToolbar_filterInput__l1m2n3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_addBtn__w9x0y1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_addBtn__w9x0y1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "select.KanbanPanel_sortSel__d7e8f9",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "KanbanPanel_sortSel__d7e8f9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "KanbanPanel_sortSel__d7e8f9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditPanel_saveBtn__k8l9m0[data-testid=\"save-card-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditPanel_saveBtn__k8l9m0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditPanel_saveBtn__k8l9m0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TfAction_refreshBtn__a1b2c3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TfAction_refreshBtn__a1b2c3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "select.TfTable_root__j0k1l2 ~ select[aria-label=\"Filter by carrier\"], select.TrackPanel_carrierSel__c6d7e8[aria-label=\"Filter by carrier\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_carrierSel__c6d7e8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_carrierSel__c6d7e8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "button.TrackPanel_exportBtn__f9g0h1[aria-label=\"Export shipment report as CSV\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_exportBtn__f9g0h1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_exportBtn__f9g0h1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditForm_saveBtn__q4r5s6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditForm_saveBtn__q4r5s6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TfAction_refreshBtn__a1b2c3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TfAction_refreshBtn__a1b2c3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "select.TfPanel_carrierSel__c6d7e8,select.TrackPanel_carrierSel__c6d7e8",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TfPanel_carrierSel__c6d7e8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TfPanel_carrierSel__c6d7e8",
+          "reason": "VolatileClassRe"
+        },
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_carrierSel__c6d7e8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": false,
+      "in_target_field": [],
+      "n_elements_with_token_in_target_field": 0,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "",
+      "class": "(ii) invented by model"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": ".TrackPanel_exportBtn__f9g0h1",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_exportBtn__f9g0h1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_exportBtn__f9g0h1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1",
+      "task_id": "t_10",
+      "regression_from_B_full_success": true,
+      "locator": "button.EditForm_saveBtn__q4r5s6",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditForm_saveBtn__q4r5s6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditForm_saveBtn__q4r5s6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TfAction_refreshBtn__a1b2c3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TfAction_refreshBtn__a1b2c3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "select.TrackPanel_carrierSel__c6d7e8",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_carrierSel__c6d7e8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_carrierSel__c6d7e8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "button.TrackPanel_exportBtn__f9g0h1",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_exportBtn__f9g0h1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_exportBtn__f9g0h1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditForm_saveBtn__q4r5s6[aria-label=\"Save shipment update\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditForm_saveBtn__q4r5s6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditForm_saveBtn__q4r5s6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TfAction_refreshBtn__a1b2c3",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TfAction_refreshBtn__a1b2c3",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "select.TfSearch_inp__i8j9k0[aria-label=\"Filter by carrier\"], select.TrackPanel_carrierSel__c6d7e8[aria-label=\"Filter by carrier\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_carrierSel__c6d7e8",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_carrierSel__c6d7e8",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "button.TrackPanel_exportBtn__f9g0h1[aria-label=\"Export shipment report as CSV\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "TrackPanel_exportBtn__f9g0h1",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "TrackPanel_exportBtn__f9g0h1",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "EditForm_saveBtn__q4r5s6",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "EditForm_saveBtn__q4r5s6",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F0",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PayWidget_submitBtn__k2l3m4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PayWidget_submitBtn__k2l3m4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F1",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PayWidget_submitBtn__k2l3m4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PayWidget_submitBtn__k2l3m4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F2",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PayWidget_submitBtn__k2l3m4[type=\"submit\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PayWidget_submitBtn__k2l3m4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PayWidget_submitBtn__k2l3m4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F3",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PayWidget_submitBtn__k2l3m4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PayWidget_submitBtn__k2l3m4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "AccountSection_btnOutline__k7l8m9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "AccountSection_btnOutline__k7l8m9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PrefPanel_saveBtn__y2z3a4[aria-label=\"Save all preferences\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PrefPanel_saveBtn__y2z3a4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PrefPanel_saveBtn__y2z3a4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F1",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F1",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F1",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PrefPanel_saveBtn__y2z3a4[aria-label=\"Save all preferences\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PrefPanel_saveBtn__y2z3a4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PrefPanel_saveBtn__y2z3a4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "AccountSection_btnOutline__k7l8m9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "AccountSection_btnOutline__k7l8m9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input[type=\"checkbox\"].SettingsPanel_check__f8g9h0[alt=\"Toggle data sharing\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "input[type=\"checkbox\"].SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2",
+      "task_id": "t_10",
+      "regression_from_B_full_success": false,
+      "locator": "button.PrefPanel_saveBtn__y2z3a4",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PrefPanel_saveBtn__y2z3a4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PrefPanel_saveBtn__y2z3a4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3",
+      "task_id": "t_02",
+      "regression_from_B_full_success": false,
+      "locator": "button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "AccountSection_btnOutline__k7l8m9",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "AccountSection_btnOutline__k7l8m9",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3",
+      "task_id": "t_04",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3",
+      "task_id": "t_05",
+      "regression_from_B_full_success": false,
+      "locator": "input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "SettingsPanel_check__f8g9h0",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "SettingsPanel_check__f8g9h0",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 2,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3",
+      "task_id": "t_10",
+      "regression_from_B_full_success": true,
+      "locator": "button.PrefPanel_saveBtn__y2z3a4[data-testid=\"save-prefs-btn\"]",
+      "trigger_rule": "R4 .class",
+      "trigger_token": "PrefPanel_saveBtn__y2z3a4",
+      "trigger_reason": "VolatileClassRe",
+      "all_hits": [
+        {
+          "rule": "R4 .class",
+          "token": "PrefPanel_saveBtn__y2z3a4",
+          "reason": "VolatileClassRe"
+        }
+      ],
+      "token_literally_in_observation": true,
+      "in_target_field": [
+        "class token"
+      ],
+      "n_elements_with_token_in_target_field": 1,
+      "elsewhere_fields": [],
+      "token_in_truth_volatile_list": false,
+      "bundle_vs_predicate": "class token matches the predicate's VolatileClassRe (or is a prefix of a listed class) but is neither listed in truth volatile_classes nor a BEM base of a listed class; ApplyBundleNoVolatile removes only listed tokens and their BEM bases",
+      "class": "(i) leak into observation"
+    }
+  ]
+}

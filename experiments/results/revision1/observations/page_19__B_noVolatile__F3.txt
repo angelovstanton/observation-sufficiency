@@ -1,0 +1,85 @@
+header {ShieldSure Home Insurance Car Insurance Life Insurance Claims My account}
+a href=/ class=logo {ShieldSure}
+nav aria-label="Main navigation" {Home Insurance Car Insurance Life Insurance Claims My account}
+a href=/home-insurance {Home Insurance}
+a href=/car-insurance {Car Insurance}
+a href=/life-insurance {Life Insurance}
+a href=/claims {Claims}
+a href=/account {My account}
+div class=hero {Get Your Home Insurance Quote  Answer a few short questions and we'll find the right cover for your home in minutes.  Start your quote 💾 Save & continue later}
+h1 {Get Your Home Insurance Quote}
+p {Answer a few short questions and we'll find the right cover for your home in minutes.}
+div class=hero-actions {Start your quote 💾 Save & continue later}
+button type=button class=btn-start data-testid=start-quote-btn aria-label="Start your insurance quote" {Start your quote}
+a href=/quote/save class=btn-save aria-label="Save your quote progress and continue later" {💾 Save & continue later}
+div class=content {★ Rated 4.8/5 by 12,000+ customers 🔒 FCA authorised ✆ 24/7 claims support 📋 Instant cover available Why choose ShieldSure? Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as …}
+div class=trust-bar {★ Rated 4.8/5 by 12,000+ customers 🔒 FCA authorised ✆ 24/7 claims support 📋 Instant cover available}
+div class=trust-item {★ Rated 4.8/5 by 12,000+ customers}
+span class=trust-icon {★}
+div class=trust-item {🔒 FCA authorised}
+span class=trust-icon {🔒}
+div class=trust-item {✆ 24/7 claims support}
+span class=trust-icon {✆}
+div class=trust-item {📋 Instant cover available}
+span class=trust-icon {📋}
+[S] div class=wizard-box {Your Quote — Step 1 of 3 1 2 3 Step 1: Personal Information Next: Property Details → Step 2: Property Details Step 3: Coverage & Submit}
+[S] div class=wizard-header {Your Quote — Step 1 of 3 1 2 3}
+[S] span class=wizard-title {Your Quote — Step 1 of 3}
+[S] div class=step-indicators {1 2 3}
+[S] div class="step-dot active" data-testid=step-1-indicator aria-label="Step 1: Personal Information" {1}
+[S] div class=step-dot aria-label="Step 2: Property Details" {2}
+[S] div class=step-dot aria-label="Step 3: Coverage & Submit" {3}
+[S] div class=progress-track
+[S] div class=progress-fill role=progressbar
+[S] div class=wizard-body {Step 1: Personal Information Next: Property Details →}
+[S] div class=step-heading {Step 1: Personal Information}
+[S] div class=section-body {First name  As it appears on official documents  Date of birth}
+[S] div class=field-group {First name  As it appears on official documents}
+[S] label class=lbl for=quote-first-name {First name}
+[S] input id=quote-first-name name=first_name type=text class=inp aria-label="First name" placeholder="e.g. Sarah"
+[S] p class=hint {As it appears on official documents}
+[S] div class=field-group {Date of birth}
+[S] label class=lbl for=quote-dob {Date of birth}
+[S] input id=quote-dob type=date class=inp aria-label="Your date of birth"
+[S] div class=nav-footer {Next: Property Details →}
+[S] button type=button class=btn-next data-testid=next-step-btn aria-label="Continue to step 2: Property Details" {Next: Property Details →}
+[S] div class=wizard-body {Step 2: Property Details}
+[S] div class=step-heading {Step 2: Property Details}
+[S] div class=section-body {Property type Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow Year built (approx.)}
+[S] div class=field-group {Property type Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow}
+[S] label class=lbl for=property-type {Property type}
+[S] select id=property-type name=property_type class=sel aria-label="Property type" {Select a type Detached house Semi-detached house Terraced house Flat / apartment Bungalow}
+[S] option {Select a type}
+[S] option value=detached {Detached house}
+[S] option value=semi {Semi-detached house}
+[S] option value=terraced {Terraced house}
+[S] option value=flat {Flat / apartment}
+[S] option value=bungalow {Bungalow}
+[S] div class=field-group {Year built (approx.)}
+[S] label class=lbl for=year-built {Year built (approx.)}
+[S] input id=year-built type=number class=inp placeholder="e.g. 1985" aria-label="Approximate year the property was built"
+[S] div class=wizard-body {Step 3: Coverage & Submit}
+[S] div class=step-heading {Step 3: Coverage & Submit}
+[S] div class=section-body {Desired coverage amount (£) £  This should cover the full rebuild cost of your home  Get my quote →}
+[S] div class=field-group {Desired coverage amount (£) £  This should cover the full rebuild cost of your home}
+[S] label class=lbl for=coverage-amount {Desired coverage amount (£)}
+[S] div class=coverage-input-wrap {£}
+[S] span class=currency-prefix {£}
+[S] input id=coverage-amount type=number class=inp placeholder="e.g. 300000" aria-label="Desired coverage amount in GBP"
+[S] p class=hint {This should cover the full rebuild cost of your home}
+[S] div class=field-group {Get my quote →}
+[S] button type=button class=submit-btn data-testid=submit-quote-btn aria-label="Submit your quote request" {Get my quote →}
+div class=reassurance {Why choose ShieldSure? Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as standard}
+h2 {Why choose ShieldSure?}
+ul {Buildings and contents cover in one policy No hidden fees — the price you see is the price you pay Cancel within 14 days for a full refund Accidental damage cover included as standard}
+li {Buildings and contents cover in one policy}
+li {No hidden fees — the price you see is the price you pay}
+li {Cancel within 14 days for a full refund}
+li {Accidental damage cover included as standard}
+footer {© 2026 ShieldSure Ltd. Authorised by the FCA. Terms Privacy Cookies Accessibility}
+div class=footer-inner {© 2026 ShieldSure Ltd. Authorised by the FCA. Terms Privacy Cookies Accessibility}
+span {© 2026 ShieldSure Ltd. Authorised by the FCA.}
+a href=/terms {Terms}
+a href=/privacy {Privacy}
+a href=/cookies {Cookies}
+a href=/accessibility {Accessibility}

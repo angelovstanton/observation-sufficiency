@@ -1,0 +1,33 @@
+{
+ "reference_sha256": "d115fe48f201bea1e2291563d511efc0ca8ef6c16e0ae37c1965c364af79b1b3",
+ "code_commit": "6cf43b193d863b0c46e0097e1f6bfbfcfd57357b",
+ "utc_start": "2026-10-15T13:51:53Z",
+ "machine": {
+  "quiet": false,
+  "processes": {
+   "firefox.exe": 27,
+   "chrome.exe": 0,
+   "msedge.exe": 0,
+   "onedrive.exe": 0
+  }
+ },
+ "no_reference_sites": [
+  "0337_drom.ru"
+ ],
+ "utc_end": "2026-10-15T14:14:07Z",
+ "machine_end": {
+  "quiet": false,
+  "processes": {
+   "firefox.exe": 27,
+   "chrome.exe": 0,
+   "msedge.exe": 0,
+   "onedrive.exe": 0
+  }
+ },
+ "exit_code": 0,
+ "counts": {
+  "survived": 1207,
+  "broken": 353,
+  "undetermined_no_reference": 30
+ }
+}

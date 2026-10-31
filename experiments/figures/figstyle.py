@@ -1,5 +1,5 @@
 """
-figstyle.py - the single place where Paper 1 figures are sized and written.
+figstyle.py - the single place where the paper's figures are sized and written.
 
 The rule this module enforces: a figure is authored at its PRINT size. The
 figsize passed to plt.subplots is the width the figure will occupy in the

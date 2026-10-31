@@ -1,0 +1,156 @@
+header {VideoNest 🔍 + Create Sign in}
+div {VideoNest 🔍 + Create Sign in}
+a href=/ class=Header_logo__f7g8h9 {VideoNest}
+div {🔍}
+input type=text placeholder=Search aria-label="Search videos"
+button class=SearchBar_btn__o6p7q8 aria-label="Submit search" {🔍}
+div {+ Create Sign in}
+button {+ Create}
+button {Sign in}
+div class=PageLayout_main__a8b9c0 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…}
+div {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…}
+[S] div {▶ 14:32 Chapter 3 — Deployment}
+[S] div {▶ 14:32 Chapter 3 — Deployment}
+[S] span {▶}
+[S] div aria-label="Video duration: 14:32" {14:32}
+[S] div {Chapter 3 — Deployment}
+[S] div role=toolbar aria-label="Video controls" {▶ 🔈 HD CC}
+[S] button aria-label="Play video" {▶}
+[S] input type=range aria-label="Seek video" data-testid=seek-bar value=22
+[S] button aria-label="Mute audio" {🔈}
+[S] button {HD}
+[S] button aria-label="Toggle captions" data-testid=caption-toggle {CC}
+div {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe}
+h1 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes}
+div {1,421,094 views 3 months ago #DevOps #CICD}
+span {1,421,094 views}
+span class=VideoMeta_date__s6t7u8 {3 months ago}
+div {👍 12K 👎 → Share + Save ⋯}
+button data-testid=like-btn type=button {👍 12K}
+button type=button {👎}
+button type=button {→ Share}
+button type=button {+ Save}
+button type=button {⋯}
+div {D DevOps Academy 248K subscribers Subscribe}
+div {D}
+div {DevOps Academy 248K subscribers}
+a href=#channel class=ChannelInfo_name__q0r1s2 {DevOps Academy}
+span class=ChannelInfo_subs__t3u4v5 {248K subscribers}
+button data-testid=subscribe-btn aria-label="Subscribe to VideoNest" type=button {Subscribe}
+div class=Description_box__w6x7y8 {1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, an…}
+div {1,421,094 views Jun 8, 2024}
+p class=Description_text__z9a0b1 {In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, and observability with Promethe…}
+div class=Description_tags__d5e6f7 {#DevOps #CICD #Kubernetes #GitHubActions #Docker}
+a href=# class=Description_tag__g8h9i0 {#DevOps}
+a href=# class=Description_tag__g8h9i0 {#CICD}
+a href=# class=Description_tag__g8h9i0 {#Kubernetes}
+a href=# class=Description_tag__g8h9i0 {#GitHubActions}
+a href=# class=Description_tag__g8h9i0 {#Docker}
+button type=button {Show more}
+div {847 Comments ☰ Sort by A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply C cloudCarla 1 month ago …}
+h3 {847 Comments}
+div {☰ Sort by}
+span {☰}
+button type=button {Sort by}
+div class=CommentCard_root__r7s8t9 {A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply}
+div {A}
+div class=CommentCard_body__x3y4z5 {alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply}
+span {alicedev}
+span class=CommentCard_date__b9c0d1 {2 months ago}
+p class=CommentCard_text__d9e0f1 {This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.}
+div {👍 234 Reply}
+button type=button {👍 234}
+button type=button {Reply}
+div class=CommentCard_root__r7s8t9 {B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply}
+div {B}
+div class=CommentCard_body__x3y4z5 {backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply}
+span {backend_bob}
+span class=CommentCard_date__b9c0d1 {2 months ago}
+p class=CommentCard_text__d9e0f1 {Any chance you could do a part 2 covering ArgoCD and GitOps workflows?}
+div {👍 89 Reply}
+button type=button {👍 89}
+button type=button {Reply}
+div class=CommentCard_root__r7s8t9 {C cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply}
+div {C}
+div class=CommentCard_body__x3y4z5 {cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply}
+span {cloudCarla}
+span class=CommentCard_date__b9c0d1 {1 month ago}
+p class=CommentCard_text__d9e0f1 {The secrets management walkthrough was incredibly clear. Subscribed immediately!}
+div {👍 45 Reply}
+button type=button {👍 45}
+button type=button {Reply}
+div class=CommentCard_root__r7s8t9 {D devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply}
+div {D}
+div class=CommentCard_body__x3y4z5 {devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply}
+span {devdan42}
+span class=CommentCard_date__b9c0d1 {3 weeks ago}
+p class=CommentCard_text__d9e0f1 {Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.}
+div {👍 31 Reply}
+button type=button {👍 31}
+button type=button {Reply}
+aside {Up next ▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…}
+div {Up next ▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…}
+h4 {Up next}
+div {▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago}
+span {Advanced Kubernetes Networking — Services, Ingress & CNI}
+span {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {890K views · 1 week ago}
+div class=SidePanel_card__n5o6p7 {▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Docker Compose for Local Development Container Crew 342K views · 4 months ago}
+span {Docker Compose for Local Development}
+span {Container Crew}
+span class=SidePanel_meta__k2l3m4 {342K views · 4 months ago}
+div class=SidePanel_card__n5o6p7 {▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago}
+span {GitHub Actions Secrets & OIDC Deep Dive}
+span {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {156K views · 5 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago}
+span {Zero-Downtime Deployments Explained}
+span {Cloud Native Labs}
+span class=SidePanel_meta__k2l3m4 {78K views · 6 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago}
+span {Terraform for Beginners — IaC Fundamentals}
+span {Infra Ninja}
+span class=SidePanel_meta__k2l3m4 {512K views · 2 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago}
+span {Monitoring with Prometheus and Grafana}
+span {SRE Mastery}
+span class=SidePanel_meta__k2l3m4 {234K views · 3 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago}
+span {Service Mesh with Istio — Complete Guide}
+span {Cloud Native Labs}
+span class=SidePanel_meta__k2l3m4 {189K views · 2 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago}
+div {▶}
+div class=SidePanel_info__b3c4d5 {Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago}
+span {Helm Charts — Package Your Kubernetes Apps}
+span {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {445K views · 7 months ago}
+footer {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features  © 2024 VideoNest LLC}
+div {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features  © 2024 VideoNest LLC}
+div {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features}
+a href=# {About}
+a href=# {Press}
+a href=# {Copyright}
+a href=# {Contact us}
+a href=# {Creators}
+a href=# {Advertise}
+a href=# {Developers}
+a href=# {Privacy}
+a href=# {Policy & Safety}
+a href=# {How VideoNest works}
+a href=# {Test new features}
+p class=Footer_copy__z3a4b5 {© 2024 VideoNest LLC}

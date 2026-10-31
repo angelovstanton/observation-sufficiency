@@ -1,0 +1,521 @@
+{
+ "table1": {
+  "shadow": {
+   "S0": 8,
+   "S1": 8,
+   "S2": 8
+  },
+  "semantic_density": {
+   "high": 12,
+   "low": 12
+  },
+  "size_tier": {
+   "standard": 16,
+   "large": 6,
+   "extreme": 2
+  },
+  "fingerprint": {
+   "Angular": 8,
+   "React": 8,
+   "Vue": 8
+  },
+  "fingerprint_low": {
+   "React": 6,
+   "Angular": 3,
+   "Vue": 3
+  }
+ },
+ "truncated_fields": {
+  "per_page": {
+   "page_01": 32,
+   "page_02": 2,
+   "page_03": 5,
+   "page_04": 1,
+   "page_05": 2,
+   "page_06": 7,
+   "page_07": 17,
+   "page_08": 155,
+   "page_09": 10,
+   "page_10": 4,
+   "page_11": 1,
+   "page_12": 2,
+   "page_13": 8,
+   "page_14": 2,
+   "page_15": 11,
+   "page_16": 6,
+   "page_17": 4,
+   "page_18": 7,
+   "page_19": 1,
+   "page_20": 3,
+   "page_21": 7,
+   "page_22": 3,
+   "page_23": 6,
+   "page_24": 6
+  },
+  "tags": {
+   "div": 206,
+   "article": 51,
+   "main": 8,
+   "table": 8,
+   "tbody": 8,
+   "section": 5,
+   "body": 5,
+   "aside": 4,
+   "p": 3,
+   "footer": 3,
+   "ul": 1
+  }
+ },
+ "fingerprint_gains": {
+  "React (all)": {
+   "pages": 6,
+   "events_per_bundle": 240,
+   "delta_pp": 20.416666666666664
+  },
+  "React (without page_21)": {
+   "pages": 5,
+   "events_per_bundle": 200,
+   "delta_pp": 11.5
+  },
+  "Angular (all)": {
+   "pages": 3,
+   "events_per_bundle": 120,
+   "delta_pp": 8.333333333333336
+  },
+  "Vue (all)": {
+   "pages": 3,
+   "events_per_bundle": 120,
+   "delta_pp": 10.833333333333336
+  },
+  "page_21": {
+   "pages": 1,
+   "events_per_bundle": 40,
+   "delta_pp": 65.0
+  }
+ },
+ "low_f2": {
+  "events_per_encoding": 120,
+  "F1_pct": 67.5,
+  "F2_pct": 52.5,
+  "delta_pp": -15.0
+ },
+ "f4_failures": {
+  "events": 240,
+  "failures": 127,
+  "lacked": 48,
+  "grabbed": 79,
+  "grabbed_not_unique": 75,
+  "grabbed_primary_subtype": {
+   "volatile": 9,
+   "positional": 5,
+   "invalid cross-shadow syntax": 0,
+   "non-unique": 65,
+   "wrong element": 0
+  }
+ },
+ "f3_savings": {
+  "per_page_pct": {
+   "page_01": 31.619673521305913,
+   "page_02": 24.756212645486,
+   "page_03": 35.99568267674043,
+   "page_04": 32.408263953129826,
+   "page_05": 34.69849763325787,
+   "page_06": 26.805448873700875,
+   "page_07": 30.623020063357977,
+   "page_08": 31.05203386330787,
+   "page_09": 33.839012792935584,
+   "page_10": 35.548256695300665,
+   "page_11": 32.21734357848518,
+   "page_12": 32.287581699346404,
+   "page_13": 32.59903106298091,
+   "page_14": 37.482993197278915,
+   "page_15": 37.579719387755105,
+   "page_16": 31.862040648737423,
+   "page_17": 24.03607080565554,
+   "page_18": 21.999525968062095,
+   "page_19": 33.333333333333336,
+   "page_20": 37.1896722939424,
+   "page_21": 28.028293545534922,
+   "page_22": 37.27855462093961,
+   "page_23": 21.752406239628275,
+   "page_24": 22.49964931968018
+  },
+  "f1_mean_tokens": {
+   "page_01": 18868.0,
+   "page_02": 3179.0,
+   "page_03": 40766.0,
+   "page_04": 3243.0,
+   "page_05": 9718.0,
+   "page_06": 63793.0,
+   "page_07": 14205.0,
+   "page_08": 96860.0,
+   "page_09": 44165.0,
+   "page_10": 3958.0,
+   "page_11": 1822.0,
+   "page_12": 2295.0,
+   "page_13": 35090.0,
+   "page_14": 2940.0,
+   "page_15": 6272.0,
+   "page_16": 4871.0,
+   "page_17": 107788.0,
+   "page_18": 67506.0,
+   "page_19": 2397.0,
+   "page_20": 4028.0,
+   "page_21": 5655.0,
+   "page_22": 36973.0,
+   "page_23": 15065.0,
+   "page_24": 14258.0
+  },
+  "tiers": {
+   "standard": {
+    "pages": 16,
+    "mean_saving_pct": 31.492934859722524
+   },
+   "large": {
+    "pages": 6,
+    "mean_saving_pct": 31.41954266589325
+   },
+   "extreme": {
+    "pages": 2,
+    "mean_saving_pct": 27.544052334481705
+   }
+  },
+  "min": {
+   "page": "page_23",
+   "pct": 21.752406239628275
+  },
+  "max": {
+   "page": "page_15",
+   "pct": 37.579719387755105
+  },
+  "spearman_rho": -0.3026086956521739,
+  "spearman_p": 0.15063640962783909
+ },
+ "claude": {
+  "nv_f2_success": 116,
+  "nv_f2_events": 220,
+  "nv_f2_pct": 52.72727272727273,
+  "all_success": 608,
+  "all_events": 880
+ },
+ "shadow_targets": {
+  "targets": 240,
+  "in_shadow": 76,
+  "pct": 31.666666666666668,
+  "by_depth": {
+   "none": 164,
+   "S1": 49,
+   "S2": 27
+  }
+ },
+ "claude_coverage": {
+  "planned_cells": 96,
+  "skipped": [
+   "page_08 B_full × F1",
+   "page_08 B_noVolatile × F1",
+   "page_08 B_noVolatile × F2",
+   "page_17 B_full × F1",
+   "page_17 B_noVolatile × F1",
+   "page_17 B_noVolatile × F2",
+   "page_17 B_noVolatile × F3",
+   "page_18 B_full × F1"
+  ],
+  "skipped_per_page": {
+   "page_08": 3,
+   "page_17": 4,
+   "page_18": 1
+  },
+  "over_guard": [
+   "page_08 B_full × F1",
+   "page_08 B_noVolatile × F1",
+   "page_08 B_noVolatile × F2",
+   "page_17 B_full × F1",
+   "page_17 B_noVolatile × F1",
+   "page_17 B_noVolatile × F2",
+   "page_17 B_noVolatile × F3",
+   "page_18 B_full × F1"
+  ],
+  "max_obs_tokens": {
+   "page_08 B_full × F1": 99161,
+   "page_08 B_noVolatile × F1": 96860,
+   "page_08 B_noVolatile × F2": 96694,
+   "page_17 B_full × F1": 110620,
+   "page_17 B_noVolatile × F1": 107788,
+   "page_17 B_noVolatile × F2": 107531,
+   "page_17 B_noVolatile × F3": 81880,
+   "page_18 B_full × F1": 75339
+  }
+ },
+ "checks": [
+  {
+   "item": "Table 1 shadow S0/S1/S2",
+   "recomputed": [
+    8,
+    8,
+    8
+   ],
+   "manuscript": [
+    8,
+    8,
+    8
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Table 1 density HIGH/LOW",
+   "recomputed": [
+    12,
+    12
+   ],
+   "manuscript": [
+    12,
+    12
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Table 1 size standard/large/extreme",
+   "recomputed": [
+    16,
+    6,
+    2
+   ],
+   "manuscript": [
+    16,
+    6,
+    2
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Table 1 fingerprint React/Angular/Vue",
+   "recomputed": [
+    8,
+    8,
+    8
+   ],
+   "manuscript": [
+    8,
+    8,
+    8
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶51 LOW pages React/Angular/Vue",
+   "recomputed": [
+    6,
+    3,
+    3
+   ],
+   "manuscript": [
+    6,
+    3,
+    3
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶74 truncated fields",
+   "recomputed": 302,
+   "manuscript": 302,
+   "result": "MATCH"
+  },
+  {
+   "item": "¶74 pages with a truncated field",
+   "recomputed": 24,
+   "manuscript": 24,
+   "result": "MATCH"
+  },
+  {
+   "item": "¶74 div + article are the majority",
+   "recomputed": true,
+   "manuscript": true,
+   "result": "MATCH"
+  },
+  {
+   "item": "¶141 React LOW Δ pp",
+   "recomputed": "+20.42",
+   "manuscript": "+20.42",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶141 React LOW without page_21 Δ pp",
+   "recomputed": "+11.50",
+   "manuscript": "+11.50",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶141 Vue LOW Δ pp",
+   "recomputed": "+10.83",
+   "manuscript": "+10.83",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶141 Angular LOW Δ pp",
+   "recomputed": "+8.33",
+   "manuscript": "+8.33",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶141 page_21 Δ pp",
+   "recomputed": "+65.0",
+   "manuscript": "+65.0",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶149 LOW B_noVolatile F2 − F1 pp",
+   "recomputed": "-15.00",
+   "manuscript": "-15.00",
+   "result": "MATCH"
+  },
+  {
+   "item": "¶160 F4 failures / lacked / grabbed",
+   "recomputed": [
+    127,
+    48,
+    79
+   ],
+   "manuscript": [
+    127,
+    48,
+    79
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶160 grabbed with unique match false",
+   "recomputed": 75,
+   "manuscript": 75,
+   "result": "MATCH"
+  },
+  {
+   "item": "¶160 grabbed, non-unique by priority",
+   "recomputed": 65,
+   "manuscript": 65,
+   "result": "MATCH"
+  },
+  {
+   "item": "¶168 tier savings %",
+   "recomputed": [
+    "31.5",
+    "31.4",
+    "27.5"
+   ],
+   "manuscript": [
+    "31.5",
+    "31.4",
+    "27.5"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶168 lowest per-page saving",
+   "recomputed": [
+    "page_23",
+    "21.8"
+   ],
+   "manuscript": [
+    "page_23",
+    "21.8"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶168 highest per-page saving",
+   "recomputed": [
+    "page_15",
+    "37.6"
+   ],
+   "manuscript": [
+    "page_15",
+    "37.6"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶168 Spearman ρ, p",
+   "recomputed": [
+    "-0.30",
+    "0.15"
+   ],
+   "manuscript": [
+    "-0.30",
+    "0.15"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶173 Claude B_noVolatile × F2",
+   "recomputed": [
+    116,
+    220,
+    "52.73"
+   ],
+   "manuscript": [
+    116,
+    220,
+    "52.73"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "¶173 Claude all cells",
+   "recomputed": [
+    608,
+    880
+   ],
+   "manuscript": [
+    608,
+    880
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Targets inside shadow roots",
+   "recomputed": [
+    76,
+    240,
+    "31.7"
+   ],
+   "manuscript": [
+    76,
+    240,
+    "31.7"
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Claude cells skipped",
+   "recomputed": [
+    8,
+    96
+   ],
+   "manuscript": [
+    8,
+    96
+   ],
+   "result": "MATCH"
+  },
+  {
+   "item": "Claude cells skipped per page",
+   "recomputed": {
+    "page_08": 3,
+    "page_17": 4,
+    "page_18": 1
+   },
+   "manuscript": {
+    "page_08": 3,
+    "page_17": 4,
+    "page_18": 1
+   },
+   "result": "MATCH"
+  },
+  {
+   "item": "Claude skipped cells = cells over the 75,000-token guard",
+   "recomputed": true,
+   "manuscript": true,
+   "result": "MATCH"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+[{"tag":"input","id":"job-search"},{"tag":"a","data-testid":"job-card-001"},{"tag":"filter-sidebar","id":"filter-sidebar-d3e4f5"},{"tag":"button","data-testid":"apply-filters-btn","is_shadow":"true"}]

@@ -1,0 +1,1 @@
+[{"tag":"video-player-shell","id":"player-session-a3f4b5"},{"tag":"input","data-testid":"seek-bar","is_shadow":"true"},{"tag":"button","data-testid":"caption-toggle","is_shadow":"true"},{"tag":"button","data-testid":"like-btn"},{"tag":"button","data-testid":"subscribe-btn"}]

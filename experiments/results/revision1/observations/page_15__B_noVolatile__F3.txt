@@ -1,0 +1,248 @@
+div class=header-bar {WorkHive Jobs Companies Salaries Career Advice Sign in Post a job}
+a class=logo href=/ {WorkHive}
+nav class=header-nav {Jobs Companies Salaries Career Advice}
+a href=/jobs class=active {Jobs}
+a href=/companies {Companies}
+a href=/salary {Salaries}
+a href=/career-advice {Career Advice}
+div class=header-actions {Sign in Post a job}
+a href=/signin class=btn-signin {Sign in}
+a href=/post-job class=btn-post {Post a job}
+div class=search-hero {Find your next opportunity Find jobs}
+div class=search-hero-inner {Find your next opportunity Find jobs}
+h1 {Find your next opportunity}
+div class=search-row {Find jobs}
+input id=job-search name=keywords type=search aria-label="Search job titles or keywords" placeholder="Job title, skills, or company…"
+input type=text placeholder="City or postcode"
+button class=btn-find type=button {Find jobs}
+div class=page-layout {1,284 jobs found Most relevant Most recent Highest salary Lowest salary 💻 Software Engineer TechCorp Ltd 📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £65,000 – £90,000 Python AWS Kubernetes PostgreSQL Design and build scalable backend services for our data platform. Work closely with product and M…}
+div class=main-col {1,284 jobs found Most relevant Most recent Highest salary Lowest salary 💻 Software Engineer TechCorp Ltd 📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £65,000 – £90,000 Python AWS Kubernetes PostgreSQL Design and build scalable backend services for our data platform. Work closely with product and M…}
+div class=results-header {1,284 jobs found Most relevant Most recent Highest salary Lowest salary}
+span class=results-count {1,284 jobs found}
+select class=sort-sel aria-label="Sort listings by" {Most relevant Most recent Highest salary Lowest salary}
+option value=relevance {Most relevant}
+option value=date {Most recent}
+option value=salary-desc {Highest salary}
+option value=salary-asc {Lowest salary}
+div class=jobs-list {💻 Software Engineer TechCorp Ltd 📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £65,000 – £90,000 Python AWS Kubernetes PostgreSQL Design and build scalable backend services for our data platform. Work closely with product and ML teams to deliver high-quality features to millions of users. Posted 2 …}
+div {💻 Software Engineer TechCorp Ltd 📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £65,000 – £90,000 Python AWS Kubernetes PostgreSQL Design and build scalable backend services for our data platform. Work closely with product and ML teams to deliver high-quality features to millions of users. Posted 2 …}
+div class=job-header {💻 Software Engineer TechCorp Ltd}
+div class=job-logo {💻}
+div class=job-title-row {Software Engineer TechCorp Ltd}
+a href=/jobs/software-engineer-techcorp-001 data-testid=job-card-001 class=job-title {Software Engineer}
+div class=job-company {TechCorp Ltd}
+div class=job-meta {📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £65,000 – £90,000}
+span {📍 London, UK (Hybrid)}
+span {💼 Full-time}
+span {🎓 Senior}
+span {£65,000 – £90,000}
+div class=job-tags {Python AWS Kubernetes PostgreSQL}
+span class=tag {Python}
+span class=tag {AWS}
+span class=tag {Kubernetes}
+span class=tag {PostgreSQL}
+div class=job-desc {Design and build scalable backend services for our data platform. Work closely with product and ML teams to deliver high-quality features to millions of users.}
+div class=job-footer {Posted 2 hours ago Apply now}
+span class=job-posted {Posted 2 hours ago}
+button type=button aria-label="Apply for Software Engineer position at TechCorp" {Apply now}
+div {🌎 Senior Product Manager GlobalCo 📍 Manchester, UK (Remote) 💼 Full-time 🎓 Senior £70,000 – £95,000 Product Strategy Agile SaaS Drive product roadmap and strategy for our enterprise SaaS platform. Partner with engineering, design, and go-to-market teams to deliver exceptional user experiences. Po…}
+div class=job-header {🌎 Senior Product Manager GlobalCo}
+div class=job-logo {🌎}
+div class=job-title-row {Senior Product Manager GlobalCo}
+a href=/jobs/product-manager-globalco-002 class=job-title {Senior Product Manager}
+div class=job-company {GlobalCo}
+div class=job-meta {📍 Manchester, UK (Remote) 💼 Full-time 🎓 Senior £70,000 – £95,000}
+span {📍 Manchester, UK (Remote)}
+span {💼 Full-time}
+span {🎓 Senior}
+span {£70,000 – £95,000}
+div class=job-tags {Product Strategy Agile SaaS}
+span class=tag {Product Strategy}
+span class=tag {Agile}
+span class=tag {SaaS}
+div class=job-desc {Drive product roadmap and strategy for our enterprise SaaS platform. Partner with engineering, design, and go-to-market teams to deliver exceptional user experiences.}
+div class=job-footer {Posted 5 hours ago Apply now}
+span class=job-posted {Posted 5 hours ago}
+button type=button {Apply now}
+div {📈 Data Analyst FinTech Ventures 📍 Edinburgh, UK (On-site) 💼 Full-time 🎓 Mid-level £40,000 – £55,000 SQL Python Tableau Excel Analyse financial datasets, build dashboards, and support the business intelligence team with data-driven insights across our lending and payments products. Posted 1 day a…}
+div class=job-header {📈 Data Analyst FinTech Ventures}
+div class=job-logo {📈}
+div class=job-title-row {Data Analyst FinTech Ventures}
+a href=/jobs/data-analyst-fintech-003 class=job-title {Data Analyst}
+div class=job-company {FinTech Ventures}
+div class=job-meta {📍 Edinburgh, UK (On-site) 💼 Full-time 🎓 Mid-level £40,000 – £55,000}
+span {📍 Edinburgh, UK (On-site)}
+span {💼 Full-time}
+span {🎓 Mid-level}
+span {£40,000 – £55,000}
+div class=job-tags {SQL Python Tableau Excel}
+span class=tag {SQL}
+span class=tag {Python}
+span class=tag {Tableau}
+span class=tag {Excel}
+div class=job-desc {Analyse financial datasets, build dashboards, and support the business intelligence team with data-driven insights across our lending and payments products.}
+div class=job-footer {Posted 1 day ago Apply now}
+span class=job-posted {Posted 1 day ago}
+button type=button {Apply now}
+div {🎨 UX Designer Studio Eleven 📍 Bristol, UK (Hybrid) 💼 Full-time 🎓 Mid-level £38,000 – £52,000 Figma User Research Prototyping Create intuitive digital experiences for a portfolio of consumer and B2B products. Collaborate with developers to ship pixel-perfect designs that delight users. Posted 2 d…}
+div class=job-header {🎨 UX Designer Studio Eleven}
+div class=job-logo {🎨}
+div class=job-title-row {UX Designer Studio Eleven}
+a href=/jobs/ux-designer-studio-004 class=job-title {UX Designer}
+div class=job-company {Studio Eleven}
+div class=job-meta {📍 Bristol, UK (Hybrid) 💼 Full-time 🎓 Mid-level £38,000 – £52,000}
+span {📍 Bristol, UK (Hybrid)}
+span {💼 Full-time}
+span {🎓 Mid-level}
+span {£38,000 – £52,000}
+div class=job-tags {Figma User Research Prototyping}
+span class=tag {Figma}
+span class=tag {User Research}
+span class=tag {Prototyping}
+div class=job-desc {Create intuitive digital experiences for a portfolio of consumer and B2B products. Collaborate with developers to ship pixel-perfect designs that delight users.}
+div class=job-footer {Posted 2 days ago Apply now}
+span class=job-posted {Posted 2 days ago}
+button type=button {Apply now}
+div {☁ DevOps Engineer CloudNine Systems 📍 Remote (UK) 💼 Contract 🎓 Senior £550 – £700/day Terraform Docker Azure CI/CD Build and maintain cloud infrastructure and deployment pipelines for a fast-growing SaaS business. 6-month rolling contract with strong potential for extension. Posted 3 days ago App…}
+div class=job-header {☁ DevOps Engineer CloudNine Systems}
+div class=job-logo {☁}
+div class=job-title-row {DevOps Engineer CloudNine Systems}
+a href=/jobs/devops-engineer-cloudnine-005 class=job-title {DevOps Engineer}
+div class=job-company {CloudNine Systems}
+div class=job-meta {📍 Remote (UK) 💼 Contract 🎓 Senior £550 – £700/day}
+span {📍 Remote (UK)}
+span {💼 Contract}
+span {🎓 Senior}
+span {£550 – £700/day}
+div class=job-tags {Terraform Docker Azure CI/CD}
+span class=tag {Terraform}
+span class=tag {Docker}
+span class=tag {Azure}
+span class=tag {CI/CD}
+div class=job-desc {Build and maintain cloud infrastructure and deployment pipelines for a fast-growing SaaS business. 6-month rolling contract with strong potential for extension.}
+div class=job-footer {Posted 3 days ago Apply now}
+span class=job-posted {Posted 3 days ago}
+button type=button {Apply now}
+div {👨‍⚕ Marketing Manager BrandCo 📍 London, UK (On-site) 💼 Full-time 🎓 Senior £55,000 – £70,000 B2B Marketing HubSpot SEO Paid Media Lead marketing strategy across digital, content, and events for our B2B software brand. Manage a team of three specialists and a £2M annual budget. Posted 4 days ago A…}
+div class=job-header {👨‍⚕ Marketing Manager BrandCo}
+div class=job-logo {👨‍⚕}
+div class=job-title-row {Marketing Manager BrandCo}
+a href=/jobs/marketing-manager-brandco-006 class=job-title {Marketing Manager}
+div class=job-company {BrandCo}
+div class=job-meta {📍 London, UK (On-site) 💼 Full-time 🎓 Senior £55,000 – £70,000}
+span {📍 London, UK (On-site)}
+span {💼 Full-time}
+span {🎓 Senior}
+span {£55,000 – £70,000}
+div class=job-tags {B2B Marketing HubSpot SEO Paid Media}
+span class=tag {B2B Marketing}
+span class=tag {HubSpot}
+span class=tag {SEO}
+span class=tag {Paid Media}
+div class=job-desc {Lead marketing strategy across digital, content, and events for our B2B software brand. Manage a team of three specialists and a £2M annual budget.}
+div class=job-footer {Posted 4 days ago Apply now}
+span class=job-posted {Posted 4 days ago}
+button type=button {Apply now}
+div {👛 Enterprise Sales Executive SaaSify 📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £60,000 + OTE £120,000 Enterprise Sales SaaS Salesforce Own the full enterprise sales cycle from prospecting through to close. Target FTSE 500 accounts and deliver £2M+ ARR in your first year. Posted 5 days ago Apply…}
+div class=job-header {👛 Enterprise Sales Executive SaaSify}
+div class=job-logo {👛}
+div class=job-title-row {Enterprise Sales Executive SaaSify}
+a href=/jobs/sales-executive-saas-007 class=job-title {Enterprise Sales Executive}
+div class=job-company {SaaSify}
+div class=job-meta {📍 London, UK (Hybrid) 💼 Full-time 🎓 Senior £60,000 + OTE £120,000}
+span {📍 London, UK (Hybrid)}
+span {💼 Full-time}
+span {🎓 Senior}
+span {£60,000 + OTE £120,000}
+div class=job-tags {Enterprise Sales SaaS Salesforce}
+span class=tag {Enterprise Sales}
+span class=tag {SaaS}
+span class=tag {Salesforce}
+div class=job-desc {Own the full enterprise sales cycle from prospecting through to close. Target FTSE 500 accounts and deliver £2M+ ARR in your first year.}
+div class=job-footer {Posted 5 days ago Apply now}
+span class=job-posted {Posted 5 days ago}
+button type=button {Apply now}
+div {🔋 Backend Developer (Go) MedTech Solutions 📍 Cambridge, UK (Hybrid) 💼 Full-time 🎓 Mid-level £55,000 – £72,000 Go gRPC MySQL GCP Build reliable, high-throughput APIs for a regulated medical device data platform. Strong Go skills and interest in healthcare technology required. Posted 1 week ago Ap…}
+div class=job-header {🔋 Backend Developer (Go) MedTech Solutions}
+div class=job-logo {🔋}
+div class=job-title-row {Backend Developer (Go) MedTech Solutions}
+a href=/jobs/backend-developer-medtech-008 class=job-title {Backend Developer (Go)}
+div class=job-company {MedTech Solutions}
+div class=job-meta {📍 Cambridge, UK (Hybrid) 💼 Full-time 🎓 Mid-level £55,000 – £72,000}
+span {📍 Cambridge, UK (Hybrid)}
+span {💼 Full-time}
+span {🎓 Mid-level}
+span {£55,000 – £72,000}
+div class=job-tags {Go gRPC MySQL GCP}
+span class=tag {Go}
+span class=tag {gRPC}
+span class=tag {MySQL}
+span class=tag {GCP}
+div class=job-desc {Build reliable, high-throughput APIs for a regulated medical device data platform. Strong Go skills and interest in healthcare technology required.}
+div class=job-footer {Posted 1 week ago Apply now}
+span class=job-posted {Posted 1 week ago}
+button type=button {Apply now}
+div class=pagination {1 2 3 4 5 Next →}
+a href="?page=1" class="page-btn active" {1}
+a href="?page=2" class=page-btn {2}
+a href="?page=3" class=page-btn {3}
+a href="?page=4" class=page-btn {4}
+a href="?page=5" class=page-btn {5}
+a href="?page=2" class=page-btn {Next →}
+div class=sidebar-host
+[S] div class=sidebar {Filters Clear all Remote ✕ Full-time ✕ JOB TYPE Full-time Part-time Contract Freelance Internship WORK MODEL Remote Hybrid On-site MINIMUM SALARY (£/YEAR) EXPERIENCE LEVEL Entry level Mid-level Senior Director / VP DATE POSTED Last 24 hours Last 7 days Last 30 days Apply filters}
+[S] div class=sidebar-hdr {Filters Clear all}
+[S] span class=sidebar-title {Filters}
+[S] button class=reset-link type=button {Clear all}
+[S] div class=active-filters {Remote ✕ Full-time ✕}
+[S] div {Remote ✕}
+[S] div {Full-time ✕}
+[S] div class=filter-section {JOB TYPE Full-time Part-time Contract Freelance Internship}
+[S] div class=filter-label {JOB TYPE}
+[S] label class=check-row {Full-time}
+[S] input type=checkbox aria-label="Show full-time jobs only"
+[S] label class=check-row {Part-time}
+[S] input type=checkbox
+[S] label class=check-row {Contract}
+[S] input type=checkbox
+[S] label class=check-row {Freelance}
+[S] input type=checkbox
+[S] label class=check-row {Internship}
+[S] input type=checkbox
+[S] div class=filter-section {WORK MODEL Remote Hybrid On-site}
+[S] div class=filter-label {WORK MODEL}
+[S] label class=check-row {Remote}
+[S] input type=checkbox
+[S] label class=check-row {Hybrid}
+[S] input type=checkbox
+[S] label class=check-row {On-site}
+[S] input type=checkbox
+[S] div class=filter-section {MINIMUM SALARY (£/YEAR)}
+[S] div class=filter-label {MINIMUM SALARY (£/YEAR)}
+[S] div class=salary-row
+[S] input type=number name=salary_min aria-label="Minimum salary" placeholder="e.g. 40000"
+[S] div class=filter-section {EXPERIENCE LEVEL Entry level Mid-level Senior Director / VP}
+[S] div class=filter-label {EXPERIENCE LEVEL}
+[S] label class=check-row {Entry level}
+[S] input type=checkbox
+[S] label class=check-row {Mid-level}
+[S] input type=checkbox
+[S] label class=check-row {Senior}
+[S] input type=checkbox
+[S] label class=check-row {Director / VP}
+[S] input type=checkbox
+[S] div class=filter-section {DATE POSTED Last 24 hours Last 7 days Last 30 days}
+[S] div class=filter-label {DATE POSTED}
+[S] label class=check-row {Last 24 hours}
+[S] input type=checkbox
+[S] label class=check-row {Last 7 days}
+[S] input type=checkbox
+[S] label class=check-row {Last 30 days}
+[S] input type=checkbox
+[S] div {Apply filters}
+[S] button class=apply-btn type=button data-testid=apply-filters-btn aria-label="Apply selected filters" {Apply filters}
+div class=footer-inner {© 2026 WorkHive Ltd. • About Terms Privacy Sitemap}
+a href=/about {About}
+a href=/terms {Terms}
+a href=/privacy {Privacy}
+a href=/sitemap {Sitemap}

@@ -1,0 +1,1 @@
+[{"tag":"select","id":"from-account"},{"tag":"input","id":"transfer-amount"},{"tag":"button","data-testid":"submit-transfer"},{"tag":"button","data-testid":"freeze-debit-card"},{"tag":"tbody","id":"tx-tbody"}]

@@ -1,0 +1,189 @@
+{
+  "status": "EXPLORATORY — not part of any registered plan",
+  "model": "claude-sonnet-4-6",
+  "key": [
+    "page",
+    "task_id"
+  ],
+  "reference": [
+    "B_full",
+    "F1"
+  ],
+  "cop": [
+    "B_noVolatile",
+    "F3"
+  ],
+  "common_events": 210,
+  "common_pages": [
+    "pages/page_01.html",
+    "pages/page_02.html",
+    "pages/page_03.html",
+    "pages/page_04.html",
+    "pages/page_05.html",
+    "pages/page_06.html",
+    "pages/page_07.html",
+    "pages/page_09.html",
+    "pages/page_10.html",
+    "pages/page_11.html",
+    "pages/page_12.html",
+    "pages/page_13.html",
+    "pages/page_14.html",
+    "pages/page_15.html",
+    "pages/page_16.html",
+    "pages/page_19.html",
+    "pages/page_20.html",
+    "pages/page_21.html",
+    "pages/page_22.html",
+    "pages/page_23.html",
+    "pages/page_24.html"
+  ],
+  "excluded_pages": [
+    {
+      "page": "pages/page_08.html",
+      "reason": "No B_full×F1 reference events; 10 COP events cannot be paired (partial TPM skip).",
+      "available_events_by_cell": {
+        "B_full×F1": 0,
+        "B_noVolatile×F1": 0,
+        "B_noVolatile×F2": 0,
+        "B_noVolatile×F3": 10
+      }
+    },
+    {
+      "page": "pages/page_17.html",
+      "reason": "No Claude input file; no events in either cell (TPM skip).",
+      "available_events_by_cell": {
+        "B_full×F1": 0,
+        "B_noVolatile×F1": 0,
+        "B_noVolatile×F2": 0,
+        "B_noVolatile×F3": 0
+      }
+    },
+    {
+      "page": "pages/page_18.html",
+      "reason": "No B_full×F1 reference events; 10 COP events cannot be paired (partial TPM skip).",
+      "available_events_by_cell": {
+        "B_full×F1": 0,
+        "B_noVolatile×F1": 10,
+        "B_noVolatile×F2": 10,
+        "B_noVolatile×F3": 10
+      }
+    }
+  ],
+  "bootstrap": {
+    "function": "revision1_diagnostics.page_bootstrap",
+    "replicates": 10000,
+    "seed": 42,
+    "ci": "page-clustered percentile, 2.5/97.5 percentiles",
+    "page_order": "sorted",
+    "fresh_generator_per_measure": true
+  },
+  "measures": {
+    "observation_tokens": {
+      "reference_mean": 17390.52380952381,
+      "cop_mean": 10856.238095238095,
+      "reduction": 0.37573829206382237,
+      "reduction_pct": 37.573829206382236,
+      "ci95_pct": [
+        34.39859808720658,
+        39.835483130435165
+      ]
+    },
+    "prompt_tokens_total": {
+      "reference_mean": 20443.123809523808,
+      "cop_mean": 13335.409523809523,
+      "reduction": 0.3476823968753261,
+      "reduction_pct": 34.768239687532606,
+      "ci95_pct": [
+        30.77548369006805,
+        37.48812579599408
+      ]
+    }
+  },
+  "cell_ratios_scope": "all available events per cell (unpaired)",
+  "cell_ratios": [
+    {
+      "cell": "B_full×F1",
+      "events": 210,
+      "pages": 21,
+      "observation_tokens": 3652010,
+      "prompt_tokens_total": 4293056,
+      "api_to_observation_ratio": 1.175532378060301
+    },
+    {
+      "cell": "B_noVolatile×F1",
+      "events": 220,
+      "pages": 22,
+      "observation_tokens": 4010670,
+      "prompt_tokens_total": 4718758,
+      "api_to_observation_ratio": 1.1765510500739278
+    },
+    {
+      "cell": "B_noVolatile×F2",
+      "events": 220,
+      "pages": 22,
+      "observation_tokens": 4003080,
+      "prompt_tokens_total": 4701218,
+      "api_to_observation_ratio": 1.1744002118368857
+    },
+    {
+      "cell": "B_noVolatile×F3",
+      "events": 230,
+      "pages": 23,
+      "observation_tokens": 3474190,
+      "prompt_tokens_total": 4293449,
+      "api_to_observation_ratio": 1.235812952083795
+    }
+  ],
+  "independent_python_random_check": {
+    "observation_tokens": {
+      "reference_mean": 17390.52380952381,
+      "cop_mean": 10856.238095238095,
+      "reduction_pct": 37.573829206382236,
+      "ci95_pct": [
+        34.493050929469234,
+        39.86124663667318
+      ]
+    },
+    "prompt_tokens_total": {
+      "reference_mean": 20443.123809523808,
+      "cop_mean": 13335.409523809523,
+      "reduction_pct": 34.768239687532606,
+      "ci95_pct": [
+        30.82645002784295,
+        37.458075913453726
+      ]
+    }
+  },
+  "supplied_point_estimate_mismatches": [],
+  "limitations": [
+    "The Pareto frontier cannot be recomputed under Claude tokens because Claude covers only 4 cells.",
+    "gpt-4.1 uses o200k_base, so the existing gpt-4.1 API-token check (diagnostics.md D3) tests the prompt overhead, not a different tokenizer.",
+    "Claude prompt_tokens_total is Anthropic API-reported for the whole prompt (system + observation + task); no Claude observation-only token count is available. This comparison combines tokenizer dependence and prompt overhead; it does not isolate them.",
+    "Coverage exclusions constrain generalization to the omitted large/extreme pages. No LLM calls, network access, or retokenization are used by this script."
+  ],
+  "input_sha256": {
+    "experiments/runs/axisc_claude-sonnet-4-6_page_01.jsonl": "51a18b9eb9f2bb1b2c2c76e922a909a87f6bd26ed2afbb5847301f19f4ad2999",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_02.jsonl": "54173093f7cf325d39b6f111d836a359cf147fe45a88ba0fbf2f26eab727e43d",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_03.jsonl": "544cb09577d725b7023d47c1dfa326ce6bf2ce5235214f2dfcc5b973d3842527",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_04.jsonl": "fc899f534cb226bec7e97b0367d9b7377904fa387a8aa08e1150a99bec65077f",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_05.jsonl": "bfba7812a69478fae98a94bbb42c9d01ba6dbe9cfc7ea7268453abdd8fec1efa",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_06.jsonl": "6b69766785642c52144a0179466786efd702f791311909d42dbb129d23f89c3e",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_07.jsonl": "95aa6608953791ce2676f24aee914f6ebd71788ff6a3b1d0654c3e0659e73213",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_08.jsonl": "e7252ca268480f0431ff72a011b003e9e693a45228cdc47181ed4a6494a2ad63",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_09.jsonl": "f3e72b31d8e6c06be8720e3be6b0b73e8ed364ce1028c97d29bf75d8f8184bb4",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_10.jsonl": "03820873307d48707f5dea733da51bcfad1b01431bd9d035300da67105e14b3f",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_11.jsonl": "a9771c25a89ad60e5c773f38ca8ebfdc92bac8e54a9d0bf376c1ecb1b7f570a9",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_12.jsonl": "9fb4930ab67fa6e9b831eb5b3f1673f491dd6763ad3d54306a506d90018318d3",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_13.jsonl": "af6cae00d96fddd0b375f3aa74304a6e0a2508251236ed6f08e9c628755f81cd",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_14.jsonl": "b1dc507c3f9f48397cfbbb143ba9122b9b50d650607df1fccef029d0212f6f53",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_15.jsonl": "b675c32e931ac53a0241d970f1149dff141bd6da6f29089eb1b64c99e0e5b4fe",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_16.jsonl": "4638eb694fd8fc26f8086163ca6d064c22faa022ee8e03fdef980431e280c9ee",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_18.jsonl": "9451711da479c56dc2163d62a73662ffaf3218f044f4cc094e679e8606749a66",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_19.jsonl": "0cb4d9d14883e710433136029add8bc9b324cb4718263f2b954b7fd4b76c489b",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_20.jsonl": "5ec8127faf4e26380c9602851f99b8e06f8480e33c274a010b34560a28660f43",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_21.jsonl": "9342d02fa2d818e76ee5d6a604354e225160db75039a23ec482f62dd44bbd037",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_22.jsonl": "6144daad88b69c8111a49c560a8273e9b0556d04b4b3bc0db0f79aab8177e097",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_23.jsonl": "3f26d073d68152fc99a13949ba8aaa0e08e68873fc518d89b39301991b83ed5b",
+    "experiments/runs/axisc_claude-sonnet-4-6_page_24.jsonl": "fb9f244ee2ac9992dd4b9f63bf65f8bb05b4bab860c48621e3b5dbe97257fba4"
+  }
+}

@@ -1,0 +1,2532 @@
+<h1>Kronos Analytics</h1>
+<input class="nav-search" type="text" name="table_filter" aria-label="Filter dashboard data" placeholder="Filter table…" />
+<input type="text" placeholder="Search by user name or email" />
+<main>Overview Dashboard From To Today 7 days 30 days 90 days Export CSV TOTAL SESSIONS 124,832 +8.4% vs last period PAGE VIEWS 389,241 +12.1% vs last period UNIQUE USERS 48,129 +5.7% vs last period AVG DURATION 3m 42s -1.2% vs last period BOUNCE RATE 34.2% -2.1% vs last period CONVERSIONS 2,841 +19.3% vs…</main>
+<div class="dashboard-header">Overview Dashboard From To Today 7 days 30 days 90 days Export CSV</div>
+<h2>Overview Dashboard</h2>
+<div class="period-picker">From To</div>
+<label for="date-from">From</label>
+<input id="date-from" name="date_from" type="date" aria-label="Start date" value="2026-05-01" />
+<label>To</label>
+<input name="date_to" type="date" aria-label="End date for report range" value="2026-06-17" />
+<div>Today 7 days 30 days 90 days</div>
+<button type="button">Today</button>
+<button type="button">7 days</button>
+<button type="button">30 days</button>
+<button type="button">90 days</button>
+<a class="export-link" data-testid="export-csv" href="/export?fmt=csv">Export CSV</a>
+<div data-shadow="true" class="filter-panel">Date range Last 7 days Last 30 days Last 90 days Custom range  Revenue  Sessions  Page views  Conversions Export PDF Active: Last 30 days</div>
+<div data-shadow="true" class="filter-row">Date range Last 7 days Last 30 days Last 90 days Custom range</div>
+<label data-shadow="true" for="date-preset">Date range</label>
+<select data-shadow="true" id="date-preset" aria-label="Date range preset">Last 7 days Last 30 days Last 90 days Custom range</select>
+<option data-shadow="true">Last 30 days</option>
+<div data-shadow="true" class="filter-row">Revenue</div>
+<label data-shadow="true">Revenue</label>
+<input data-shadow="true" type="checkbox" aria-label="Toggle Revenue metric visibility" />
+<div data-shadow="true" class="filter-row">Sessions</div>
+<label data-shadow="true">Sessions</label>
+<input data-shadow="true" type="checkbox" />
+<div data-shadow="true" class="filter-row">Page views</div>
+<label data-shadow="true">Page views</label>
+<input data-shadow="true" type="checkbox" />
+<div data-shadow="true" class="filter-row">Conversions</div>
+<label data-shadow="true">Conversions</label>
+<input data-shadow="true" type="checkbox" />
+<button data-shadow="true" class="export-btn" data-testid="export-pdf-btn" aria-label="Export dashboard as PDF">Export PDF</button>
+<div data-shadow="true">Active: Last 30 days</div>
+<div class="metrics-grid" id="metrics-grid">TOTAL SESSIONS 124,832 +8.4% vs last period PAGE VIEWS 389,241 +12.1% vs last period UNIQUE USERS 48,129 +5.7% vs last period AVG DURATION 3m 42s -1.2% vs last period BOUNCE RATE 34.2% -2.1% vs last period CONVERSIONS 2,841 +19.3% vs last period REVENUE $48,920 +22.7% vs last period AVG PAGES/VISIT …</div>
+<div>TOTAL SESSIONS 124,832 +8.4% vs last period</div>
+<div class="metric-label">TOTAL SESSIONS</div>
+<div class="metric-value">124,832</div>
+<div class="metric-delta">+8.4% vs last period</div>
+<div>PAGE VIEWS 389,241 +12.1% vs last period</div>
+<div class="metric-label">PAGE VIEWS</div>
+<div class="metric-value">389,241</div>
+<div class="metric-delta">+12.1% vs last period</div>
+<div>UNIQUE USERS 48,129 +5.7% vs last period</div>
+<div class="metric-label">UNIQUE USERS</div>
+<div class="metric-value">48,129</div>
+<div class="metric-delta">+5.7% vs last period</div>
+<div>AVG DURATION 3m 42s -1.2% vs last period</div>
+<div class="metric-label">AVG DURATION</div>
+<div class="metric-value">3m 42s</div>
+<div class="metric-delta">-1.2% vs last period</div>
+<div>BOUNCE RATE 34.2% -2.1% vs last period</div>
+<div class="metric-label">BOUNCE RATE</div>
+<div class="metric-value">34.2%</div>
+<div class="metric-delta">-2.1% vs last period</div>
+<div>CONVERSIONS 2,841 +19.3% vs last period</div>
+<div class="metric-label">CONVERSIONS</div>
+<div class="metric-value">2,841</div>
+<div class="metric-delta">+19.3% vs last period</div>
+<div>REVENUE $48,920 +22.7% vs last period</div>
+<div class="metric-label">REVENUE</div>
+<div class="metric-value">$48,920</div>
+<div class="metric-delta">+22.7% vs last period</div>
+<div>AVG PAGES/VISIT 4.7 +0.3% vs last period</div>
+<div class="metric-label">AVG PAGES/VISIT</div>
+<div class="metric-value">4.7</div>
+<div class="metric-delta">+0.3% vs last period</div>
+<div>NEW USERS 18,320 +6.8% vs last period</div>
+<div class="metric-label">NEW USERS</div>
+<div class="metric-value">18,320</div>
+<div class="metric-delta">+6.8% vs last period</div>
+<div>RETURNING USERS 29,809 +4.5% vs last period</div>
+<div class="metric-label">RETURNING USERS</div>
+<div class="metric-value">29,809</div>
+<div class="metric-delta">+4.5% vs last period</div>
+<div>MOBILE SESSIONS 61,230 +14.2% vs last period</div>
+<div class="metric-label">MOBILE SESSIONS</div>
+<div class="metric-value">61,230</div>
+<div class="metric-delta">+14.2% vs last period</div>
+<div>DESKTOP SESSIONS 63,602 +2.9% vs last period</div>
+<div class="metric-label">DESKTOP SESSIONS</div>
+<div class="metric-value">63,602</div>
+<div class="metric-delta">+2.9% vs last period</div>
+<div class="charts-row" id="charts-row">Sessions by Day Revenue by Day Top Pages Traffic Device Split</div>
+<div>Sessions by Day</div>
+<h3 class="chart-title">Sessions by Day</h3>
+<div class="chart-bars"></div>
+<div class="chart-bar" title="Sessions by Day — Day 1"></div>
+<div class="chart-bar" title="Sessions by Day — Day 2"></div>
+<div class="chart-bar" title="Sessions by Day — Day 3"></div>
+<div class="chart-bar" title="Sessions by Day — Day 4"></div>
+<div class="chart-bar" title="Sessions by Day — Day 5"></div>
+<div class="chart-bar" title="Sessions by Day — Day 6"></div>
+<div class="chart-bar" title="Sessions by Day — Day 7"></div>
+<div class="chart-bar" title="Sessions by Day — Day 8"></div>
+<div class="chart-bar" title="Sessions by Day — Day 9"></div>
+<div class="chart-bar" title="Sessions by Day — Day 10"></div>
+<div class="chart-bar" title="Sessions by Day — Day 11"></div>
+<div class="chart-bar" title="Sessions by Day — Day 12"></div>
+<div class="chart-bar" title="Sessions by Day — Day 13"></div>
+<div class="chart-bar" title="Sessions by Day — Day 14"></div>
+<div class="chart-bar" title="Sessions by Day — Day 15"></div>
+<div class="chart-bar" title="Sessions by Day — Day 16"></div>
+<div class="chart-bar" title="Sessions by Day — Day 17"></div>
+<div class="chart-bar" title="Sessions by Day — Day 18"></div>
+<div class="chart-bar" title="Sessions by Day — Day 19"></div>
+<div class="chart-bar" title="Sessions by Day — Day 20"></div>
+<div>Revenue by Day</div>
+<h3 class="chart-title">Revenue by Day</h3>
+<div class="chart-bars"></div>
+<div class="chart-bar" title="Revenue by Day — Day 1"></div>
+<div class="chart-bar" title="Revenue by Day — Day 2"></div>
+<div class="chart-bar" title="Revenue by Day — Day 3"></div>
+<div class="chart-bar" title="Revenue by Day — Day 4"></div>
+<div class="chart-bar" title="Revenue by Day — Day 5"></div>
+<div class="chart-bar" title="Revenue by Day — Day 6"></div>
+<div class="chart-bar" title="Revenue by Day — Day 7"></div>
+<div class="chart-bar" title="Revenue by Day — Day 8"></div>
+<div class="chart-bar" title="Revenue by Day — Day 9"></div>
+<div class="chart-bar" title="Revenue by Day — Day 10"></div>
+<div class="chart-bar" title="Revenue by Day — Day 11"></div>
+<div class="chart-bar" title="Revenue by Day — Day 12"></div>
+<div class="chart-bar" title="Revenue by Day — Day 13"></div>
+<div class="chart-bar" title="Revenue by Day — Day 14"></div>
+<div class="chart-bar" title="Revenue by Day — Day 15"></div>
+<div class="chart-bar" title="Revenue by Day — Day 16"></div>
+<div class="chart-bar" title="Revenue by Day — Day 17"></div>
+<div class="chart-bar" title="Revenue by Day — Day 18"></div>
+<div class="chart-bar" title="Revenue by Day — Day 19"></div>
+<div class="chart-bar" title="Revenue by Day — Day 20"></div>
+<div>Top Pages Traffic</div>
+<h3 class="chart-title">Top Pages Traffic</h3>
+<div class="chart-bars"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 1"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 2"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 3"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 4"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 5"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 6"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 7"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 8"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 9"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 10"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 11"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 12"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 13"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 14"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 15"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 16"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 17"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 18"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 19"></div>
+<div class="chart-bar" title="Top Pages Traffic — Day 20"></div>
+<div>Device Split</div>
+<h3 class="chart-title">Device Split</h3>
+<div class="chart-bars"></div>
+<div class="chart-bar" title="Device Split — Day 1"></div>
+<div class="chart-bar" title="Device Split — Day 2"></div>
+<div class="chart-bar" title="Device Split — Day 3"></div>
+<div class="chart-bar" title="Device Split — Day 4"></div>
+<div class="chart-bar" title="Device Split — Day 5"></div>
+<div class="chart-bar" title="Device Split — Day 6"></div>
+<div class="chart-bar" title="Device Split — Day 7"></div>
+<div class="chart-bar" title="Device Split — Day 8"></div>
+<div class="chart-bar" title="Device Split — Day 9"></div>
+<div class="chart-bar" title="Device Split — Day 10"></div>
+<div class="chart-bar" title="Device Split — Day 11"></div>
+<div class="chart-bar" title="Device Split — Day 12"></div>
+<div class="chart-bar" title="Device Split — Day 13"></div>
+<div class="chart-bar" title="Device Split — Day 14"></div>
+<div class="chart-bar" title="Device Split — Day 15"></div>
+<div class="chart-bar" title="Device Split — Day 16"></div>
+<div class="chart-bar" title="Device Split — Day 17"></div>
+<div class="chart-bar" title="Device Split — Day 18"></div>
+<div class="chart-bar" title="Device Split — Day 19"></div>
+<div class="chart-bar" title="Device Split — Day 20"></div>
+<div class="table-section">User Events #	User	Event	Page	Duration (s)	Device	Country	Timestamp 1	user_rt@example.com	pageview	/pricing	13.7	Mobile	UK	2026-06-02 01:01 2	user_ru@example.com	scroll	/docs	27.4	Tablet	DE	2026-06-03 02:02 3	user_rv@example.com	purchase	/blog	41.1	Desktop	FR	2026-06-04 03:03 4	user_rw@example.com	s…</div>
+<div class="table-header">User Events</div>
+<table class="data-table">#	User	Event	Page	Duration (s)	Device	Country	Timestamp 1	user_rt@example.com	pageview	/pricing	13.7	Mobile	UK	2026-06-02 01:01 2	user_ru@example.com	scroll	/docs	27.4	Tablet	DE	2026-06-03 02:02 3	user_rv@example.com	purchase	/blog	41.1	Desktop	FR	2026-06-04 03:03 4	user_rw@example.com	signup	/about…</table>
+<thead>#	User	Event	Page	Duration (s)	Device	Country	Timestamp</thead>
+<tr>#	User	Event	Page	Duration (s)	Device	Country	Timestamp</tr>
+<th>#</th>
+<th>User</th>
+<th>Event</th>
+<th>Page</th>
+<th>Duration (s)</th>
+<th>Device</th>
+<th>Country</th>
+<th>Timestamp</th>
+<tbody id="events-tbody">1	user_rt@example.com	pageview	/pricing	13.7	Mobile	UK	2026-06-02 01:01 2	user_ru@example.com	scroll	/docs	27.4	Tablet	DE	2026-06-03 02:02 3	user_rv@example.com	purchase	/blog	41.1	Desktop	FR	2026-06-04 03:03 4	user_rw@example.com	signup	/about	54.8	Mobile	CA	2026-06-05 04:04 5	user_rx@example.com	l…</tbody>
+<tr>1	user_rt@example.com	pageview	/pricing	13.7	Mobile	UK	2026-06-02 01:01</tr>
+<td>1</td>
+<td>user_rt@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>13.7</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-02 01:01</td>
+<tr>2	user_ru@example.com	scroll	/docs	27.4	Tablet	DE	2026-06-03 02:02</tr>
+<td>2</td>
+<td>user_ru@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>27.4</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-03 02:02</td>
+<tr>3	user_rv@example.com	purchase	/blog	41.1	Desktop	FR	2026-06-04 03:03</tr>
+<td>3</td>
+<td>user_rv@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>41.1</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-04 03:03</td>
+<tr>4	user_rw@example.com	signup	/about	54.8	Mobile	CA	2026-06-05 04:04</tr>
+<td>4</td>
+<td>user_rw@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>54.8</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-05 04:04</td>
+<tr>5	user_rx@example.com	logout	/login	68.5	Tablet	AU	2026-06-06 05:05</tr>
+<td>5</td>
+<td>user_rx@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>68.5</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-06 05:05</td>
+<tr>6	user_ry@example.com	search	/dashboard	82.2	Desktop	JP	2026-06-07 06:06</tr>
+<td>6</td>
+<td>user_ry@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>82.2</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-07 06:06</td>
+<tr>7	user_rz@example.com	download	/settings	95.9	Mobile	IN	2026-06-08 07:07</tr>
+<td>7</td>
+<td>user_rz@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>95.9</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-08 07:07</td>
+<tr>8	user_s0@example.com	click	/home	109.6	Tablet	US	2026-06-09 08:08</tr>
+<td>8</td>
+<td>user_s0@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>109.6</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-09 08:08</td>
+<tr>9	user_s1@example.com	pageview	/pricing	123.3	Desktop	UK	2026-06-10 09:09</tr>
+<td>9</td>
+<td>user_s1@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>123.3</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-10 09:09</td>
+<tr>10	user_s2@example.com	scroll	/docs	137.0	Mobile	DE	2026-06-11 10:10</tr>
+<td>10</td>
+<td>user_s2@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>137.0</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-11 10:10</td>
+<tr>11	user_s3@example.com	purchase	/blog	150.7	Tablet	FR	2026-06-12 11:11</tr>
+<td>11</td>
+<td>user_s3@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>150.7</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-12 11:11</td>
+<tr>12	user_s4@example.com	signup	/about	164.4	Desktop	CA	2026-06-13 12:12</tr>
+<td>12</td>
+<td>user_s4@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>164.4</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-13 12:12</td>
+<tr>13	user_s5@example.com	logout	/login	178.1	Mobile	AU	2026-06-14 13:13</tr>
+<td>13</td>
+<td>user_s5@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>178.1</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-14 13:13</td>
+<tr>14	user_s6@example.com	search	/dashboard	191.8	Tablet	JP	2026-06-15 14:14</tr>
+<td>14</td>
+<td>user_s6@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>191.8</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-15 14:14</td>
+<tr>15	user_s7@example.com	download	/settings	205.5	Desktop	IN	2026-06-16 15:15</tr>
+<td>15</td>
+<td>user_s7@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>205.5</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-16 15:15</td>
+<tr>16	user_s8@example.com	click	/home	219.2	Mobile	US	2026-06-17 16:16</tr>
+<td>16</td>
+<td>user_s8@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>219.2</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-17 16:16</td>
+<tr>17	user_s9@example.com	pageview	/pricing	232.9	Tablet	UK	2026-06-18 17:17</tr>
+<td>17</td>
+<td>user_s9@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>232.9</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-18 17:17</td>
+<tr>18	user_sa@example.com	scroll	/docs	246.6	Desktop	DE	2026-06-19 18:18</tr>
+<td>18</td>
+<td>user_sa@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>246.6</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-19 18:18</td>
+<tr>19	user_sb@example.com	purchase	/blog	260.3	Mobile	FR	2026-06-20 19:19</tr>
+<td>19</td>
+<td>user_sb@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>260.3</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-20 19:19</td>
+<tr>20	user_sc@example.com	signup	/about	274.0	Tablet	CA	2026-06-21 20:20</tr>
+<td>20</td>
+<td>user_sc@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>274.0</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-21 20:20</td>
+<tr>21	user_sd@example.com	logout	/login	287.7	Desktop	AU	2026-06-22 21:21</tr>
+<td>21</td>
+<td>user_sd@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>287.7</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-22 21:21</td>
+<tr>22	user_se@example.com	search	/dashboard	1.4	Mobile	JP	2026-06-23 22:22</tr>
+<td>22</td>
+<td>user_se@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>1.4</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-23 22:22</td>
+<tr>23	user_sf@example.com	download	/settings	15.1	Tablet	IN	2026-06-24 23:23</tr>
+<td>23</td>
+<td>user_sf@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>15.1</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-24 23:23</td>
+<tr>24	user_sg@example.com	click	/home	28.8	Desktop	US	2026-06-25 00:24</tr>
+<td>24</td>
+<td>user_sg@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>28.8</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-25 00:24</td>
+<tr>25	user_sh@example.com	pageview	/pricing	42.5	Mobile	UK	2026-06-26 01:25</tr>
+<td>25</td>
+<td>user_sh@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>42.5</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-26 01:25</td>
+<tr>26	user_si@example.com	scroll	/docs	56.2	Tablet	DE	2026-06-27 02:26</tr>
+<td>26</td>
+<td>user_si@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>56.2</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-27 02:26</td>
+<tr>27	user_sj@example.com	purchase	/blog	69.9	Desktop	FR	2026-06-28 03:27</tr>
+<td>27</td>
+<td>user_sj@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>69.9</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-28 03:27</td>
+<tr>28	user_sk@example.com	signup	/about	83.6	Mobile	CA	2026-06-29 04:28</tr>
+<td>28</td>
+<td>user_sk@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>83.6</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-29 04:28</td>
+<tr>29	user_sl@example.com	logout	/login	97.3	Tablet	AU	2026-06-30 05:29</tr>
+<td>29</td>
+<td>user_sl@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>97.3</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-30 05:29</td>
+<tr>30	user_sm@example.com	search	/dashboard	111.0	Desktop	JP	2026-06-01 06:30</tr>
+<td>30</td>
+<td>user_sm@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>111.0</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-01 06:30</td>
+<tr>31	user_sn@example.com	download	/settings	124.7	Mobile	IN	2026-06-02 07:31</tr>
+<td>31</td>
+<td>user_sn@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>124.7</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-02 07:31</td>
+<tr>32	user_so@example.com	click	/home	138.4	Tablet	US	2026-06-03 08:32</tr>
+<td>32</td>
+<td>user_so@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>138.4</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-03 08:32</td>
+<tr>33	user_sp@example.com	pageview	/pricing	152.1	Desktop	UK	2026-06-04 09:33</tr>
+<td>33</td>
+<td>user_sp@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>152.1</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-04 09:33</td>
+<tr>34	user_sq@example.com	scroll	/docs	165.8	Mobile	DE	2026-06-05 10:34</tr>
+<td>34</td>
+<td>user_sq@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>165.8</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-05 10:34</td>
+<tr>35	user_sr@example.com	purchase	/blog	179.5	Tablet	FR	2026-06-06 11:35</tr>
+<td>35</td>
+<td>user_sr@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>179.5</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-06 11:35</td>
+<tr>36	user_ss@example.com	signup	/about	193.2	Desktop	CA	2026-06-07 12:36</tr>
+<td>36</td>
+<td>user_ss@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>193.2</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-07 12:36</td>
+<tr>37	user_st@example.com	logout	/login	206.9	Mobile	AU	2026-06-08 13:37</tr>
+<td>37</td>
+<td>user_st@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>206.9</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-08 13:37</td>
+<tr>38	user_su@example.com	search	/dashboard	220.6	Tablet	JP	2026-06-09 14:38</tr>
+<td>38</td>
+<td>user_su@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>220.6</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-09 14:38</td>
+<tr>39	user_sv@example.com	download	/settings	234.3	Desktop	IN	2026-06-10 15:39</tr>
+<td>39</td>
+<td>user_sv@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>234.3</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-10 15:39</td>
+<tr>40	user_sw@example.com	click	/home	248.0	Mobile	US	2026-06-11 16:40</tr>
+<td>40</td>
+<td>user_sw@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>248.0</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-11 16:40</td>
+<tr>41	user_sx@example.com	pageview	/pricing	261.7	Tablet	UK	2026-06-12 17:41</tr>
+<td>41</td>
+<td>user_sx@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>261.7</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-12 17:41</td>
+<tr>42	user_sy@example.com	scroll	/docs	275.4	Desktop	DE	2026-06-13 18:42</tr>
+<td>42</td>
+<td>user_sy@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>275.4</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-13 18:42</td>
+<tr>43	user_sz@example.com	purchase	/blog	289.1	Mobile	FR	2026-06-14 19:43</tr>
+<td>43</td>
+<td>user_sz@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>289.1</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-14 19:43</td>
+<tr>44	user_t0@example.com	signup	/about	2.8	Tablet	CA	2026-06-15 20:44</tr>
+<td>44</td>
+<td>user_t0@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>2.8</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-15 20:44</td>
+<tr>45	user_t1@example.com	logout	/login	16.5	Desktop	AU	2026-06-16 21:45</tr>
+<td>45</td>
+<td>user_t1@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>16.5</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-16 21:45</td>
+<tr>46	user_t2@example.com	search	/dashboard	30.2	Mobile	JP	2026-06-17 22:46</tr>
+<td>46</td>
+<td>user_t2@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>30.2</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-17 22:46</td>
+<tr>47	user_t3@example.com	download	/settings	43.9	Tablet	IN	2026-06-18 23:47</tr>
+<td>47</td>
+<td>user_t3@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>43.9</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-18 23:47</td>
+<tr>48	user_t4@example.com	click	/home	57.6	Desktop	US	2026-06-19 00:48</tr>
+<td>48</td>
+<td>user_t4@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>57.6</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-19 00:48</td>
+<tr>49	user_t5@example.com	pageview	/pricing	71.3	Mobile	UK	2026-06-20 01:49</tr>
+<td>49</td>
+<td>user_t5@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>71.3</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-20 01:49</td>
+<tr>50	user_t6@example.com	scroll	/docs	85.0	Tablet	DE	2026-06-21 02:50</tr>
+<td>50</td>
+<td>user_t6@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>85.0</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-21 02:50</td>
+<tr>51	user_t7@example.com	purchase	/blog	98.7	Desktop	FR	2026-06-22 03:51</tr>
+<td>51</td>
+<td>user_t7@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>98.7</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-22 03:51</td>
+<tr>52	user_t8@example.com	signup	/about	112.4	Mobile	CA	2026-06-23 04:52</tr>
+<td>52</td>
+<td>user_t8@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>112.4</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-23 04:52</td>
+<tr>53	user_t9@example.com	logout	/login	126.1	Tablet	AU	2026-06-24 05:53</tr>
+<td>53</td>
+<td>user_t9@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>126.1</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-24 05:53</td>
+<tr>54	user_ta@example.com	search	/dashboard	139.8	Desktop	JP	2026-06-25 06:54</tr>
+<td>54</td>
+<td>user_ta@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>139.8</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-25 06:54</td>
+<tr>55	user_tb@example.com	download	/settings	153.5	Mobile	IN	2026-06-26 07:55</tr>
+<td>55</td>
+<td>user_tb@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>153.5</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-26 07:55</td>
+<tr>56	user_tc@example.com	click	/home	167.2	Tablet	US	2026-06-27 08:56</tr>
+<td>56</td>
+<td>user_tc@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>167.2</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-27 08:56</td>
+<tr>57	user_td@example.com	pageview	/pricing	180.9	Desktop	UK	2026-06-28 09:57</tr>
+<td>57</td>
+<td>user_td@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>180.9</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-28 09:57</td>
+<tr>58	user_te@example.com	scroll	/docs	194.6	Mobile	DE	2026-06-29 10:58</tr>
+<td>58</td>
+<td>user_te@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>194.6</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-29 10:58</td>
+<tr>59	user_tf@example.com	purchase	/blog	208.3	Tablet	FR	2026-06-30 11:59</tr>
+<td>59</td>
+<td>user_tf@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>208.3</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-30 11:59</td>
+<tr>60	user_tg@example.com	signup	/about	222.0	Desktop	CA	2026-06-01 12:00</tr>
+<td>60</td>
+<td>user_tg@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>222.0</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-01 12:00</td>
+<tr>61	user_th@example.com	logout	/login	235.7	Mobile	AU	2026-06-02 13:01</tr>
+<td>61</td>
+<td>user_th@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>235.7</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-02 13:01</td>
+<tr>62	user_ti@example.com	search	/dashboard	249.4	Tablet	JP	2026-06-03 14:02</tr>
+<td>62</td>
+<td>user_ti@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>249.4</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-03 14:02</td>
+<tr>63	user_tj@example.com	download	/settings	263.1	Desktop	IN	2026-06-04 15:03</tr>
+<td>63</td>
+<td>user_tj@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>263.1</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-04 15:03</td>
+<tr>64	user_tk@example.com	click	/home	276.8	Mobile	US	2026-06-05 16:04</tr>
+<td>64</td>
+<td>user_tk@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>276.8</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-05 16:04</td>
+<tr>65	user_tl@example.com	pageview	/pricing	290.5	Tablet	UK	2026-06-06 17:05</tr>
+<td>65</td>
+<td>user_tl@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>290.5</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-06 17:05</td>
+<tr>66	user_tm@example.com	scroll	/docs	4.2	Desktop	DE	2026-06-07 18:06</tr>
+<td>66</td>
+<td>user_tm@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>4.2</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-07 18:06</td>
+<tr>67	user_tn@example.com	purchase	/blog	17.9	Mobile	FR	2026-06-08 19:07</tr>
+<td>67</td>
+<td>user_tn@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>17.9</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-08 19:07</td>
+<tr>68	user_to@example.com	signup	/about	31.6	Tablet	CA	2026-06-09 20:08</tr>
+<td>68</td>
+<td>user_to@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>31.6</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-09 20:08</td>
+<tr>69	user_tp@example.com	logout	/login	45.3	Desktop	AU	2026-06-10 21:09</tr>
+<td>69</td>
+<td>user_tp@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>45.3</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-10 21:09</td>
+<tr>70	user_tq@example.com	search	/dashboard	59.0	Mobile	JP	2026-06-11 22:10</tr>
+<td>70</td>
+<td>user_tq@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>59.0</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-11 22:10</td>
+<tr>71	user_tr@example.com	download	/settings	72.7	Tablet	IN	2026-06-12 23:11</tr>
+<td>71</td>
+<td>user_tr@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>72.7</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-12 23:11</td>
+<tr>72	user_ts@example.com	click	/home	86.4	Desktop	US	2026-06-13 00:12</tr>
+<td>72</td>
+<td>user_ts@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>86.4</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-13 00:12</td>
+<tr>73	user_tt@example.com	pageview	/pricing	100.1	Mobile	UK	2026-06-14 01:13</tr>
+<td>73</td>
+<td>user_tt@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>100.1</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-14 01:13</td>
+<tr>74	user_tu@example.com	scroll	/docs	113.8	Tablet	DE	2026-06-15 02:14</tr>
+<td>74</td>
+<td>user_tu@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>113.8</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-15 02:14</td>
+<tr>75	user_tv@example.com	purchase	/blog	127.5	Desktop	FR	2026-06-16 03:15</tr>
+<td>75</td>
+<td>user_tv@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>127.5</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-16 03:15</td>
+<tr>76	user_tw@example.com	signup	/about	141.2	Mobile	CA	2026-06-17 04:16</tr>
+<td>76</td>
+<td>user_tw@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>141.2</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-17 04:16</td>
+<tr>77	user_tx@example.com	logout	/login	154.9	Tablet	AU	2026-06-18 05:17</tr>
+<td>77</td>
+<td>user_tx@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>154.9</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-18 05:17</td>
+<tr>78	user_ty@example.com	search	/dashboard	168.6	Desktop	JP	2026-06-19 06:18</tr>
+<td>78</td>
+<td>user_ty@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>168.6</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-19 06:18</td>
+<tr>79	user_tz@example.com	download	/settings	182.3	Mobile	IN	2026-06-20 07:19</tr>
+<td>79</td>
+<td>user_tz@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>182.3</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-20 07:19</td>
+<tr>80	user_u0@example.com	click	/home	196.0	Tablet	US	2026-06-21 08:20</tr>
+<td>80</td>
+<td>user_u0@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>196.0</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-21 08:20</td>
+<tr>81	user_u1@example.com	pageview	/pricing	209.7	Desktop	UK	2026-06-22 09:21</tr>
+<td>81</td>
+<td>user_u1@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>209.7</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-22 09:21</td>
+<tr>82	user_u2@example.com	scroll	/docs	223.4	Mobile	DE	2026-06-23 10:22</tr>
+<td>82</td>
+<td>user_u2@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>223.4</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-23 10:22</td>
+<tr>83	user_u3@example.com	purchase	/blog	237.1	Tablet	FR	2026-06-24 11:23</tr>
+<td>83</td>
+<td>user_u3@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>237.1</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-24 11:23</td>
+<tr>84	user_u4@example.com	signup	/about	250.8	Desktop	CA	2026-06-25 12:24</tr>
+<td>84</td>
+<td>user_u4@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>250.8</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-25 12:24</td>
+<tr>85	user_u5@example.com	logout	/login	264.5	Mobile	AU	2026-06-26 13:25</tr>
+<td>85</td>
+<td>user_u5@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>264.5</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-26 13:25</td>
+<tr>86	user_u6@example.com	search	/dashboard	278.2	Tablet	JP	2026-06-27 14:26</tr>
+<td>86</td>
+<td>user_u6@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>278.2</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-27 14:26</td>
+<tr>87	user_u7@example.com	download	/settings	291.9	Desktop	IN	2026-06-28 15:27</tr>
+<td>87</td>
+<td>user_u7@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>291.9</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-28 15:27</td>
+<tr>88	user_u8@example.com	click	/home	5.6	Mobile	US	2026-06-29 16:28</tr>
+<td>88</td>
+<td>user_u8@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>5.6</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-29 16:28</td>
+<tr>89	user_u9@example.com	pageview	/pricing	19.3	Tablet	UK	2026-06-30 17:29</tr>
+<td>89</td>
+<td>user_u9@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>19.3</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-30 17:29</td>
+<tr>90	user_ua@example.com	scroll	/docs	33.0	Desktop	DE	2026-06-01 18:30</tr>
+<td>90</td>
+<td>user_ua@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>33.0</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-01 18:30</td>
+<tr>91	user_ub@example.com	purchase	/blog	46.7	Mobile	FR	2026-06-02 19:31</tr>
+<td>91</td>
+<td>user_ub@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>46.7</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-02 19:31</td>
+<tr>92	user_uc@example.com	signup	/about	60.4	Tablet	CA	2026-06-03 20:32</tr>
+<td>92</td>
+<td>user_uc@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>60.4</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-03 20:32</td>
+<tr>93	user_ud@example.com	logout	/login	74.1	Desktop	AU	2026-06-04 21:33</tr>
+<td>93</td>
+<td>user_ud@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>74.1</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-04 21:33</td>
+<tr>94	user_ue@example.com	search	/dashboard	87.8	Mobile	JP	2026-06-05 22:34</tr>
+<td>94</td>
+<td>user_ue@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>87.8</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-05 22:34</td>
+<tr>95	user_uf@example.com	download	/settings	101.5	Tablet	IN	2026-06-06 23:35</tr>
+<td>95</td>
+<td>user_uf@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>101.5</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-06 23:35</td>
+<tr>96	user_ug@example.com	click	/home	115.2	Desktop	US	2026-06-07 00:36</tr>
+<td>96</td>
+<td>user_ug@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>115.2</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-07 00:36</td>
+<tr>97	user_uh@example.com	pageview	/pricing	128.9	Mobile	UK	2026-06-08 01:37</tr>
+<td>97</td>
+<td>user_uh@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>128.9</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-08 01:37</td>
+<tr>98	user_ui@example.com	scroll	/docs	142.6	Tablet	DE	2026-06-09 02:38</tr>
+<td>98</td>
+<td>user_ui@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>142.6</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-09 02:38</td>
+<tr>99	user_uj@example.com	purchase	/blog	156.3	Desktop	FR	2026-06-10 03:39</tr>
+<td>99</td>
+<td>user_uj@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>156.3</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-10 03:39</td>
+<tr>100	user_uk@example.com	signup	/about	170.0	Mobile	CA	2026-06-11 04:40</tr>
+<td>100</td>
+<td>user_uk@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>170.0</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-11 04:40</td>
+<tr>101	user_ul@example.com	logout	/login	183.7	Tablet	AU	2026-06-12 05:41</tr>
+<td>101</td>
+<td>user_ul@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>183.7</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-12 05:41</td>
+<tr>102	user_um@example.com	search	/dashboard	197.4	Desktop	JP	2026-06-13 06:42</tr>
+<td>102</td>
+<td>user_um@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>197.4</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-13 06:42</td>
+<tr>103	user_un@example.com	download	/settings	211.1	Mobile	IN	2026-06-14 07:43</tr>
+<td>103</td>
+<td>user_un@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>211.1</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-14 07:43</td>
+<tr>104	user_uo@example.com	click	/home	224.8	Tablet	US	2026-06-15 08:44</tr>
+<td>104</td>
+<td>user_uo@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>224.8</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-15 08:44</td>
+<tr>105	user_up@example.com	pageview	/pricing	238.5	Desktop	UK	2026-06-16 09:45</tr>
+<td>105</td>
+<td>user_up@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>238.5</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-16 09:45</td>
+<tr>106	user_uq@example.com	scroll	/docs	252.2	Mobile	DE	2026-06-17 10:46</tr>
+<td>106</td>
+<td>user_uq@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>252.2</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-17 10:46</td>
+<tr>107	user_ur@example.com	purchase	/blog	265.9	Tablet	FR	2026-06-18 11:47</tr>
+<td>107</td>
+<td>user_ur@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>265.9</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-18 11:47</td>
+<tr>108	user_us@example.com	signup	/about	279.6	Desktop	CA	2026-06-19 12:48</tr>
+<td>108</td>
+<td>user_us@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>279.6</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-19 12:48</td>
+<tr>109	user_ut@example.com	logout	/login	293.3	Mobile	AU	2026-06-20 13:49</tr>
+<td>109</td>
+<td>user_ut@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>293.3</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-20 13:49</td>
+<tr>110	user_uu@example.com	search	/dashboard	7.0	Tablet	JP	2026-06-21 14:50</tr>
+<td>110</td>
+<td>user_uu@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>7.0</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-21 14:50</td>
+<tr>111	user_uv@example.com	download	/settings	20.7	Desktop	IN	2026-06-22 15:51</tr>
+<td>111</td>
+<td>user_uv@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>20.7</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-22 15:51</td>
+<tr>112	user_uw@example.com	click	/home	34.4	Mobile	US	2026-06-23 16:52</tr>
+<td>112</td>
+<td>user_uw@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>34.4</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-23 16:52</td>
+<tr>113	user_ux@example.com	pageview	/pricing	48.1	Tablet	UK	2026-06-24 17:53</tr>
+<td>113</td>
+<td>user_ux@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>48.1</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-24 17:53</td>
+<tr>114	user_uy@example.com	scroll	/docs	61.8	Desktop	DE	2026-06-25 18:54</tr>
+<td>114</td>
+<td>user_uy@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>61.8</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-25 18:54</td>
+<tr>115	user_uz@example.com	purchase	/blog	75.5	Mobile	FR	2026-06-26 19:55</tr>
+<td>115</td>
+<td>user_uz@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>75.5</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-26 19:55</td>
+<tr>116	user_v0@example.com	signup	/about	89.2	Tablet	CA	2026-06-27 20:56</tr>
+<td>116</td>
+<td>user_v0@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>89.2</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-27 20:56</td>
+<tr>117	user_v1@example.com	logout	/login	102.9	Desktop	AU	2026-06-28 21:57</tr>
+<td>117</td>
+<td>user_v1@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>102.9</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-28 21:57</td>
+<tr>118	user_v2@example.com	search	/dashboard	116.6	Mobile	JP	2026-06-29 22:58</tr>
+<td>118</td>
+<td>user_v2@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>116.6</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-29 22:58</td>
+<tr>119	user_v3@example.com	download	/settings	130.3	Tablet	IN	2026-06-30 23:59</tr>
+<td>119</td>
+<td>user_v3@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>130.3</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-30 23:59</td>
+<tr>120	user_v4@example.com	click	/home	144.0	Desktop	US	2026-06-01 00:00</tr>
+<td>120</td>
+<td>user_v4@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>144.0</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-01 00:00</td>
+<tr>121	user_v5@example.com	pageview	/pricing	157.7	Mobile	UK	2026-06-02 01:01</tr>
+<td>121</td>
+<td>user_v5@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>157.7</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-02 01:01</td>
+<tr>122	user_v6@example.com	scroll	/docs	171.4	Tablet	DE	2026-06-03 02:02</tr>
+<td>122</td>
+<td>user_v6@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>171.4</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-03 02:02</td>
+<tr>123	user_v7@example.com	purchase	/blog	185.1	Desktop	FR	2026-06-04 03:03</tr>
+<td>123</td>
+<td>user_v7@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>185.1</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-04 03:03</td>
+<tr>124	user_v8@example.com	signup	/about	198.8	Mobile	CA	2026-06-05 04:04</tr>
+<td>124</td>
+<td>user_v8@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>198.8</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-05 04:04</td>
+<tr>125	user_v9@example.com	logout	/login	212.5	Tablet	AU	2026-06-06 05:05</tr>
+<td>125</td>
+<td>user_v9@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>212.5</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-06 05:05</td>
+<tr>126	user_va@example.com	search	/dashboard	226.2	Desktop	JP	2026-06-07 06:06</tr>
+<td>126</td>
+<td>user_va@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>226.2</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-07 06:06</td>
+<tr>127	user_vb@example.com	download	/settings	239.9	Mobile	IN	2026-06-08 07:07</tr>
+<td>127</td>
+<td>user_vb@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>239.9</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-08 07:07</td>
+<tr>128	user_vc@example.com	click	/home	253.6	Tablet	US	2026-06-09 08:08</tr>
+<td>128</td>
+<td>user_vc@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>253.6</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-09 08:08</td>
+<tr>129	user_vd@example.com	pageview	/pricing	267.3	Desktop	UK	2026-06-10 09:09</tr>
+<td>129</td>
+<td>user_vd@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>267.3</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-10 09:09</td>
+<tr>130	user_ve@example.com	scroll	/docs	281.0	Mobile	DE	2026-06-11 10:10</tr>
+<td>130</td>
+<td>user_ve@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>281.0</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-11 10:10</td>
+<tr>131	user_vf@example.com	purchase	/blog	294.7	Tablet	FR	2026-06-12 11:11</tr>
+<td>131</td>
+<td>user_vf@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>294.7</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-12 11:11</td>
+<tr>132	user_vg@example.com	signup	/about	8.4	Desktop	CA	2026-06-13 12:12</tr>
+<td>132</td>
+<td>user_vg@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>8.4</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-13 12:12</td>
+<tr>133	user_vh@example.com	logout	/login	22.1	Mobile	AU	2026-06-14 13:13</tr>
+<td>133</td>
+<td>user_vh@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>22.1</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-14 13:13</td>
+<tr>134	user_vi@example.com	search	/dashboard	35.8	Tablet	JP	2026-06-15 14:14</tr>
+<td>134</td>
+<td>user_vi@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>35.8</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-15 14:14</td>
+<tr>135	user_vj@example.com	download	/settings	49.5	Desktop	IN	2026-06-16 15:15</tr>
+<td>135</td>
+<td>user_vj@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>49.5</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-16 15:15</td>
+<tr>136	user_vk@example.com	click	/home	63.2	Mobile	US	2026-06-17 16:16</tr>
+<td>136</td>
+<td>user_vk@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>63.2</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-17 16:16</td>
+<tr>137	user_vl@example.com	pageview	/pricing	76.9	Tablet	UK	2026-06-18 17:17</tr>
+<td>137</td>
+<td>user_vl@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>76.9</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-18 17:17</td>
+<tr>138	user_vm@example.com	scroll	/docs	90.6	Desktop	DE	2026-06-19 18:18</tr>
+<td>138</td>
+<td>user_vm@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>90.6</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-19 18:18</td>
+<tr>139	user_vn@example.com	purchase	/blog	104.3	Mobile	FR	2026-06-20 19:19</tr>
+<td>139</td>
+<td>user_vn@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>104.3</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-20 19:19</td>
+<tr>140	user_vo@example.com	signup	/about	118.0	Tablet	CA	2026-06-21 20:20</tr>
+<td>140</td>
+<td>user_vo@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>118.0</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-21 20:20</td>
+<tr>141	user_vp@example.com	logout	/login	131.7	Desktop	AU	2026-06-22 21:21</tr>
+<td>141</td>
+<td>user_vp@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>131.7</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-22 21:21</td>
+<tr>142	user_vq@example.com	search	/dashboard	145.4	Mobile	JP	2026-06-23 22:22</tr>
+<td>142</td>
+<td>user_vq@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>145.4</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-23 22:22</td>
+<tr>143	user_vr@example.com	download	/settings	159.1	Tablet	IN	2026-06-24 23:23</tr>
+<td>143</td>
+<td>user_vr@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>159.1</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-24 23:23</td>
+<tr>144	user_vs@example.com	click	/home	172.8	Desktop	US	2026-06-25 00:24</tr>
+<td>144</td>
+<td>user_vs@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>172.8</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-25 00:24</td>
+<tr>145	user_vt@example.com	pageview	/pricing	186.5	Mobile	UK	2026-06-26 01:25</tr>
+<td>145</td>
+<td>user_vt@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>186.5</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-26 01:25</td>
+<tr>146	user_vu@example.com	scroll	/docs	200.2	Tablet	DE	2026-06-27 02:26</tr>
+<td>146</td>
+<td>user_vu@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>200.2</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-27 02:26</td>
+<tr>147	user_vv@example.com	purchase	/blog	213.9	Desktop	FR	2026-06-28 03:27</tr>
+<td>147</td>
+<td>user_vv@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>213.9</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-28 03:27</td>
+<tr>148	user_vw@example.com	signup	/about	227.6	Mobile	CA	2026-06-29 04:28</tr>
+<td>148</td>
+<td>user_vw@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>227.6</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-29 04:28</td>
+<tr>149	user_vx@example.com	logout	/login	241.3	Tablet	AU	2026-06-30 05:29</tr>
+<td>149</td>
+<td>user_vx@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>241.3</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-30 05:29</td>
+<tr>150	user_vy@example.com	search	/dashboard	255.0	Desktop	JP	2026-06-01 06:30</tr>
+<td>150</td>
+<td>user_vy@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>255.0</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-01 06:30</td>
+<tr>151	user_vz@example.com	download	/settings	268.7	Mobile	IN	2026-06-02 07:31</tr>
+<td>151</td>
+<td>user_vz@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>268.7</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-02 07:31</td>
+<tr>152	user_w0@example.com	click	/home	282.4	Tablet	US	2026-06-03 08:32</tr>
+<td>152</td>
+<td>user_w0@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>282.4</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-03 08:32</td>
+<tr>153	user_w1@example.com	pageview	/pricing	296.1	Desktop	UK	2026-06-04 09:33</tr>
+<td>153</td>
+<td>user_w1@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>296.1</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-04 09:33</td>
+<tr>154	user_w2@example.com	scroll	/docs	9.8	Mobile	DE	2026-06-05 10:34</tr>
+<td>154</td>
+<td>user_w2@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>9.8</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-05 10:34</td>
+<tr>155	user_w3@example.com	purchase	/blog	23.5	Tablet	FR	2026-06-06 11:35</tr>
+<td>155</td>
+<td>user_w3@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>23.5</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-06 11:35</td>
+<tr>156	user_w4@example.com	signup	/about	37.2	Desktop	CA	2026-06-07 12:36</tr>
+<td>156</td>
+<td>user_w4@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>37.2</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-07 12:36</td>
+<tr>157	user_w5@example.com	logout	/login	50.9	Mobile	AU	2026-06-08 13:37</tr>
+<td>157</td>
+<td>user_w5@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>50.9</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-08 13:37</td>
+<tr>158	user_w6@example.com	search	/dashboard	64.6	Tablet	JP	2026-06-09 14:38</tr>
+<td>158</td>
+<td>user_w6@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>64.6</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-09 14:38</td>
+<tr>159	user_w7@example.com	download	/settings	78.3	Desktop	IN	2026-06-10 15:39</tr>
+<td>159</td>
+<td>user_w7@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>78.3</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-10 15:39</td>
+<tr>160	user_w8@example.com	click	/home	92.0	Mobile	US	2026-06-11 16:40</tr>
+<td>160</td>
+<td>user_w8@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>92.0</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-11 16:40</td>
+<tr>161	user_w9@example.com	pageview	/pricing	105.7	Tablet	UK	2026-06-12 17:41</tr>
+<td>161</td>
+<td>user_w9@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>105.7</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-12 17:41</td>
+<tr>162	user_wa@example.com	scroll	/docs	119.4	Desktop	DE	2026-06-13 18:42</tr>
+<td>162</td>
+<td>user_wa@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>119.4</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-13 18:42</td>
+<tr>163	user_wb@example.com	purchase	/blog	133.1	Mobile	FR	2026-06-14 19:43</tr>
+<td>163</td>
+<td>user_wb@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>133.1</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-14 19:43</td>
+<tr>164	user_wc@example.com	signup	/about	146.8	Tablet	CA	2026-06-15 20:44</tr>
+<td>164</td>
+<td>user_wc@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>146.8</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-15 20:44</td>
+<tr>165	user_wd@example.com	logout	/login	160.5	Desktop	AU	2026-06-16 21:45</tr>
+<td>165</td>
+<td>user_wd@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>160.5</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-16 21:45</td>
+<tr>166	user_we@example.com	search	/dashboard	174.2	Mobile	JP	2026-06-17 22:46</tr>
+<td>166</td>
+<td>user_we@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>174.2</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-17 22:46</td>
+<tr>167	user_wf@example.com	download	/settings	187.9	Tablet	IN	2026-06-18 23:47</tr>
+<td>167</td>
+<td>user_wf@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>187.9</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-18 23:47</td>
+<tr>168	user_wg@example.com	click	/home	201.6	Desktop	US	2026-06-19 00:48</tr>
+<td>168</td>
+<td>user_wg@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>201.6</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-19 00:48</td>
+<tr>169	user_wh@example.com	pageview	/pricing	215.3	Mobile	UK	2026-06-20 01:49</tr>
+<td>169</td>
+<td>user_wh@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>215.3</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-20 01:49</td>
+<tr>170	user_wi@example.com	scroll	/docs	229.0	Tablet	DE	2026-06-21 02:50</tr>
+<td>170</td>
+<td>user_wi@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>229.0</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-21 02:50</td>
+<tr>171	user_wj@example.com	purchase	/blog	242.7	Desktop	FR	2026-06-22 03:51</tr>
+<td>171</td>
+<td>user_wj@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>242.7</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-22 03:51</td>
+<tr>172	user_wk@example.com	signup	/about	256.4	Mobile	CA	2026-06-23 04:52</tr>
+<td>172</td>
+<td>user_wk@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>256.4</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-23 04:52</td>
+<tr>173	user_wl@example.com	logout	/login	270.1	Tablet	AU	2026-06-24 05:53</tr>
+<td>173</td>
+<td>user_wl@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>270.1</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-24 05:53</td>
+<tr>174	user_wm@example.com	search	/dashboard	283.8	Desktop	JP	2026-06-25 06:54</tr>
+<td>174</td>
+<td>user_wm@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>283.8</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-25 06:54</td>
+<tr>175	user_wn@example.com	download	/settings	297.5	Mobile	IN	2026-06-26 07:55</tr>
+<td>175</td>
+<td>user_wn@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>297.5</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-26 07:55</td>
+<tr>176	user_wo@example.com	click	/home	11.2	Tablet	US	2026-06-27 08:56</tr>
+<td>176</td>
+<td>user_wo@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>11.2</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-27 08:56</td>
+<tr>177	user_wp@example.com	pageview	/pricing	24.9	Desktop	UK	2026-06-28 09:57</tr>
+<td>177</td>
+<td>user_wp@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>24.9</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-28 09:57</td>
+<tr>178	user_wq@example.com	scroll	/docs	38.6	Mobile	DE	2026-06-29 10:58</tr>
+<td>178</td>
+<td>user_wq@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>38.6</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-29 10:58</td>
+<tr>179	user_wr@example.com	purchase	/blog	52.3	Tablet	FR	2026-06-30 11:59</tr>
+<td>179</td>
+<td>user_wr@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>52.3</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-30 11:59</td>
+<tr>180	user_ws@example.com	signup	/about	66.0	Desktop	CA	2026-06-01 12:00</tr>
+<td>180</td>
+<td>user_ws@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>66.0</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-01 12:00</td>
+<tr>181	user_wt@example.com	logout	/login	79.7	Mobile	AU	2026-06-02 13:01</tr>
+<td>181</td>
+<td>user_wt@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>79.7</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-02 13:01</td>
+<tr>182	user_wu@example.com	search	/dashboard	93.4	Tablet	JP	2026-06-03 14:02</tr>
+<td>182</td>
+<td>user_wu@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>93.4</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-03 14:02</td>
+<tr>183	user_wv@example.com	download	/settings	107.1	Desktop	IN	2026-06-04 15:03</tr>
+<td>183</td>
+<td>user_wv@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>107.1</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-04 15:03</td>
+<tr>184	user_ww@example.com	click	/home	120.8	Mobile	US	2026-06-05 16:04</tr>
+<td>184</td>
+<td>user_ww@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>120.8</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-05 16:04</td>
+<tr>185	user_wx@example.com	pageview	/pricing	134.5	Tablet	UK	2026-06-06 17:05</tr>
+<td>185</td>
+<td>user_wx@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>134.5</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-06 17:05</td>
+<tr>186	user_wy@example.com	scroll	/docs	148.2	Desktop	DE	2026-06-07 18:06</tr>
+<td>186</td>
+<td>user_wy@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>148.2</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-07 18:06</td>
+<tr>187	user_wz@example.com	purchase	/blog	161.9	Mobile	FR	2026-06-08 19:07</tr>
+<td>187</td>
+<td>user_wz@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>161.9</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-08 19:07</td>
+<tr>188	user_x0@example.com	signup	/about	175.6	Tablet	CA	2026-06-09 20:08</tr>
+<td>188</td>
+<td>user_x0@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>175.6</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-09 20:08</td>
+<tr>189	user_x1@example.com	logout	/login	189.3	Desktop	AU	2026-06-10 21:09</tr>
+<td>189</td>
+<td>user_x1@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>189.3</td>
+<td>Desktop</td>
+<td>AU</td>
+<td>2026-06-10 21:09</td>
+<tr>190	user_x2@example.com	search	/dashboard	203.0	Mobile	JP	2026-06-11 22:10</tr>
+<td>190</td>
+<td>user_x2@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>203.0</td>
+<td>Mobile</td>
+<td>JP</td>
+<td>2026-06-11 22:10</td>
+<tr>191	user_x3@example.com	download	/settings	216.7	Tablet	IN	2026-06-12 23:11</tr>
+<td>191</td>
+<td>user_x3@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>216.7</td>
+<td>Tablet</td>
+<td>IN</td>
+<td>2026-06-12 23:11</td>
+<tr>192	user_x4@example.com	click	/home	230.4	Desktop	US	2026-06-13 00:12</tr>
+<td>192</td>
+<td>user_x4@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>230.4</td>
+<td>Desktop</td>
+<td>US</td>
+<td>2026-06-13 00:12</td>
+<tr>193	user_x5@example.com	pageview	/pricing	244.1	Mobile	UK	2026-06-14 01:13</tr>
+<td>193</td>
+<td>user_x5@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>244.1</td>
+<td>Mobile</td>
+<td>UK</td>
+<td>2026-06-14 01:13</td>
+<tr>194	user_x6@example.com	scroll	/docs	257.8	Tablet	DE	2026-06-15 02:14</tr>
+<td>194</td>
+<td>user_x6@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>257.8</td>
+<td>Tablet</td>
+<td>DE</td>
+<td>2026-06-15 02:14</td>
+<tr>195	user_x7@example.com	purchase	/blog	271.5	Desktop	FR	2026-06-16 03:15</tr>
+<td>195</td>
+<td>user_x7@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>271.5</td>
+<td>Desktop</td>
+<td>FR</td>
+<td>2026-06-16 03:15</td>
+<tr>196	user_x8@example.com	signup	/about	285.2	Mobile	CA	2026-06-17 04:16</tr>
+<td>196</td>
+<td>user_x8@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>285.2</td>
+<td>Mobile</td>
+<td>CA</td>
+<td>2026-06-17 04:16</td>
+<tr>197	user_x9@example.com	logout	/login	298.9	Tablet	AU	2026-06-18 05:17</tr>
+<td>197</td>
+<td>user_x9@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>298.9</td>
+<td>Tablet</td>
+<td>AU</td>
+<td>2026-06-18 05:17</td>
+<tr>198	user_xa@example.com	search	/dashboard	12.6	Desktop	JP	2026-06-19 06:18</tr>
+<td>198</td>
+<td>user_xa@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>12.6</td>
+<td>Desktop</td>
+<td>JP</td>
+<td>2026-06-19 06:18</td>
+<tr>199	user_xb@example.com	download	/settings	26.3	Mobile	IN	2026-06-20 07:19</tr>
+<td>199</td>
+<td>user_xb@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>26.3</td>
+<td>Mobile</td>
+<td>IN</td>
+<td>2026-06-20 07:19</td>
+<tr>200	user_xc@example.com	click	/home	40.0	Tablet	US	2026-06-21 08:20</tr>
+<td>200</td>
+<td>user_xc@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>40.0</td>
+<td>Tablet</td>
+<td>US</td>
+<td>2026-06-21 08:20</td>
+<tr>201	user_xd@example.com	pageview	/pricing	53.7	Desktop	UK	2026-06-22 09:21</tr>
+<td>201</td>
+<td>user_xd@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>53.7</td>
+<td>Desktop</td>
+<td>UK</td>
+<td>2026-06-22 09:21</td>
+<tr>202	user_xe@example.com	scroll	/docs	67.4	Mobile	DE	2026-06-23 10:22</tr>
+<td>202</td>
+<td>user_xe@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>67.4</td>
+<td>Mobile</td>
+<td>DE</td>
+<td>2026-06-23 10:22</td>
+<tr>203	user_xf@example.com	purchase	/blog	81.1	Tablet	FR	2026-06-24 11:23</tr>
+<td>203</td>
+<td>user_xf@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>81.1</td>
+<td>Tablet</td>
+<td>FR</td>
+<td>2026-06-24 11:23</td>
+<tr>204	user_xg@example.com	signup	/about	94.8	Desktop	CA	2026-06-25 12:24</tr>
+<td>204</td>
+<td>user_xg@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>94.8</td>
+<td>Desktop</td>
+<td>CA</td>
+<td>2026-06-25 12:24</td>
+<tr>205	user_xh@example.com	logout	/login	108.5	Mobile	AU	2026-06-26 13:25</tr>
+<td>205</td>
+<td>user_xh@example.com</td>
+<td>logout</td>
+<td>/login</td>
+<td>108.5</td>
+<td>Mobile</td>
+<td>AU</td>
+<td>2026-06-26 13:25</td>
+<tr>206	user_xi@example.com	search	/dashboard	122.2	Tablet	JP	2026-06-27 14:26</tr>
+<td>206</td>
+<td>user_xi@example.com</td>
+<td>search</td>
+<td>/dashboard</td>
+<td>122.2</td>
+<td>Tablet</td>
+<td>JP</td>
+<td>2026-06-27 14:26</td>
+<tr>207	user_xj@example.com	download	/settings	135.9	Desktop	IN	2026-06-28 15:27</tr>
+<td>207</td>
+<td>user_xj@example.com</td>
+<td>download</td>
+<td>/settings</td>
+<td>135.9</td>
+<td>Desktop</td>
+<td>IN</td>
+<td>2026-06-28 15:27</td>
+<tr>208	user_xk@example.com	click	/home	149.6	Mobile	US	2026-06-29 16:28</tr>
+<td>208</td>
+<td>user_xk@example.com</td>
+<td>click</td>
+<td>/home</td>
+<td>149.6</td>
+<td>Mobile</td>
+<td>US</td>
+<td>2026-06-29 16:28</td>
+<tr>209	user_xl@example.com	pageview	/pricing	163.3	Tablet	UK	2026-06-30 17:29</tr>
+<td>209</td>
+<td>user_xl@example.com</td>
+<td>pageview</td>
+<td>/pricing</td>
+<td>163.3</td>
+<td>Tablet</td>
+<td>UK</td>
+<td>2026-06-30 17:29</td>
+<tr>210	user_xm@example.com	scroll	/docs	177.0	Desktop	DE	2026-06-01 18:30</tr>
+<td>210</td>
+<td>user_xm@example.com</td>
+<td>scroll</td>
+<td>/docs</td>
+<td>177.0</td>
+<td>Desktop</td>
+<td>DE</td>
+<td>2026-06-01 18:30</td>
+<tr>211	user_xn@example.com	purchase	/blog	190.7	Mobile	FR	2026-06-02 19:31</tr>
+<td>211</td>
+<td>user_xn@example.com</td>
+<td>purchase</td>
+<td>/blog</td>
+<td>190.7</td>
+<td>Mobile</td>
+<td>FR</td>
+<td>2026-06-02 19:31</td>
+<tr>212	user_xo@example.com	signup	/about	204.4	Tablet	CA	2026-06-03 20:32</tr>
+<td>212</td>
+<td>user_xo@example.com</td>
+<td>signup</td>
+<td>/about</td>
+<td>204.4</td>
+<td>Tablet</td>
+<td>CA</td>
+<td>2026-06-03 20:32</td>
+<div class="table-section">Hourly Breakdown Hour	Sessions	Page Views	Bounce Rate	Conversions	Revenue ($) 00:00	50	200	30.0%	5	$100.00 00:30	67	243	31.0%	12	$183.00 00:00	84	286	32.0%	19	$266.00 01:30	101	329	33.0%	26	$349.00 01:00	118	372	34.0%	33	$432.00 02:30	135	415	35.0%	40	$515.00 02:00	152	458	36.0%	47	$598.00 02:30	169…</div>
+<div class="table-header">Hourly Breakdown</div>
+<table class="data-table">Hour	Sessions	Page Views	Bounce Rate	Conversions	Revenue ($) 00:00	50	200	30.0%	5	$100.00 00:30	67	243	31.0%	12	$183.00 00:00	84	286	32.0%	19	$266.00 01:30	101	329	33.0%	26	$349.00 01:00	118	372	34.0%	33	$432.00 02:30	135	415	35.0%	40	$515.00 02:00	152	458	36.0%	47	$598.00 02:30	169	501	37.0%	54	$68…</table>
+<thead>Hour	Sessions	Page Views	Bounce Rate	Conversions	Revenue ($)</thead>
+<tr>Hour	Sessions	Page Views	Bounce Rate	Conversions	Revenue ($)</tr>
+<th>Hour</th>
+<th>Sessions</th>
+<th>Page Views</th>
+<th>Bounce Rate</th>
+<th>Conversions</th>
+<th>Revenue ($)</th>
+<tbody id="hourly-tbody">00:00	50	200	30.0%	5	$100.00 00:30	67	243	31.0%	12	$183.00 00:00	84	286	32.0%	19	$266.00 01:30	101	329	33.0%	26	$349.00 01:00	118	372	34.0%	33	$432.00 02:30	135	415	35.0%	40	$515.00 02:00	152	458	36.0%	47	$598.00 02:30	169	501	37.0%	54	$681.00 03:00	186	544	38.0%	61	$764.00 03:30	203	587	39.0%	68	$8…</tbody>
+<tr>00:00	50	200	30.0%	5	$100.00</tr>
+<td>00:00</td>
+<td>50</td>
+<td>200</td>
+<td>30.0%</td>
+<td>5</td>
+<td>$100.00</td>
+<tr>00:30	67	243	31.0%	12	$183.00</tr>
+<td>00:30</td>
+<td>67</td>
+<td>243</td>
+<td>31.0%</td>
+<td>12</td>
+<td>$183.00</td>
+<tr>00:00	84	286	32.0%	19	$266.00</tr>
+<td>00:00</td>
+<td>84</td>
+<td>286</td>
+<td>32.0%</td>
+<td>19</td>
+<td>$266.00</td>
+<tr>01:30	101	329	33.0%	26	$349.00</tr>
+<td>01:30</td>
+<td>101</td>
+<td>329</td>
+<td>33.0%</td>
+<td>26</td>
+<td>$349.00</td>
+<tr>01:00	118	372	34.0%	33	$432.00</tr>
+<td>01:00</td>
+<td>118</td>
+<td>372</td>
+<td>34.0%</td>
+<td>33</td>
+<td>$432.00</td>
+<tr>02:30	135	415	35.0%	40	$515.00</tr>
+<td>02:30</td>
+<td>135</td>
+<td>415</td>
+<td>35.0%</td>
+<td>40</td>
+<td>$515.00</td>
+<tr>02:00	152	458	36.0%	47	$598.00</tr>
+<td>02:00</td>
+<td>152</td>
+<td>458</td>
+<td>36.0%</td>
+<td>47</td>
+<td>$598.00</td>
+<tr>02:30	169	501	37.0%	54	$681.00</tr>
+<td>02:30</td>
+<td>169</td>
+<td>501</td>
+<td>37.0%</td>
+<td>54</td>
+<td>$681.00</td>
+<tr>03:00	186	544	38.0%	61	$764.00</tr>
+<td>03:00</td>
+<td>186</td>
+<td>544</td>
+<td>38.0%</td>
+<td>61</td>
+<td>$764.00</td>
+<tr>03:30	203	587	39.0%	68	$847.00</tr>
+<td>03:30</td>
+<td>203</td>
+<td>587</td>
+<td>39.0%</td>
+<td>68</td>
+<td>$847.00</td>
+<tr>04:00	220	630	40.0%	75	$930.00</tr>
+<td>04:00</td>
+<td>220</td>
+<td>630</td>
+<td>40.0%</td>
+<td>75</td>
+<td>$930.00</td>
+<tr>04:30	237	673	41.0%	82	$1013.00</tr>
+<td>04:30</td>
+<td>237</td>
+<td>673</td>
+<td>41.0%</td>
+<td>82</td>
+<td>$1013.00</td>
+<tr>04:00	254	716	42.0%	9	$1096.00</tr>
+<td>04:00</td>
+<td>254</td>
+<td>716</td>
+<td>42.0%</td>
+<td>9</td>
+<td>$1096.00</td>
+<tr>05:30	271	759	43.0%	16	$1179.00</tr>
+<td>05:30</td>
+<td>271</td>
+<td>759</td>
+<td>43.0%</td>
+<td>16</td>
+<td>$1179.00</td>
+<tr>05:00	288	802	44.0%	23	$1262.00</tr>
+<td>05:00</td>
+<td>288</td>
+<td>802</td>
+<td>44.0%</td>
+<td>23</td>
+<td>$1262.00</td>
+<tr>06:30	305	845	45.0%	30	$1345.00</tr>
+<td>06:30</td>
+<td>305</td>
+<td>845</td>
+<td>45.0%</td>
+<td>30</td>
+<td>$1345.00</td>
+<tr>06:00	322	888	46.0%	37	$1428.00</tr>
+<td>06:00</td>
+<td>322</td>
+<td>888</td>
+<td>46.0%</td>
+<td>37</td>
+<td>$1428.00</td>
+<tr>06:30	339	931	47.0%	44	$1511.00</tr>
+<td>06:30</td>
+<td>339</td>
+<td>931</td>
+<td>47.0%</td>
+<td>44</td>
+<td>$1511.00</td>
+<tr>07:00	356	974	48.0%	51	$1594.00</tr>
+<td>07:00</td>
+<td>356</td>
+<td>974</td>
+<td>48.0%</td>
+<td>51</td>
+<td>$1594.00</td>
+<tr>07:30	373	1017	49.0%	58	$1677.00</tr>
+<td>07:30</td>
+<td>373</td>
+<td>1017</td>
+<td>49.0%</td>
+<td>58</td>
+<td>$1677.00</td>
+<tr>08:00	390	1060	50.0%	65	$1760.00</tr>
+<td>08:00</td>
+<td>390</td>
+<td>1060</td>
+<td>50.0%</td>
+<td>65</td>
+<td>$1760.00</td>
+<tr>08:30	407	1103	51.0%	72	$1843.00</tr>
+<td>08:30</td>
+<td>407</td>
+<td>1103</td>
+<td>51.0%</td>
+<td>72</td>
+<td>$1843.00</td>
+<tr>08:00	424	1146	52.0%	79	$1926.00</tr>
+<td>08:00</td>
+<td>424</td>
+<td>1146</td>
+<td>52.0%</td>
+<td>79</td>
+<td>$1926.00</td>
+<tr>09:30	441	1189	53.0%	6	$2009.00</tr>
+<td>09:30</td>
+<td>441</td>
+<td>1189</td>
+<td>53.0%</td>
+<td>6</td>
+<td>$2009.00</td>
+<tr>09:00	458	1232	54.0%	13	$2092.00</tr>
+<td>09:00</td>
+<td>458</td>
+<td>1232</td>
+<td>54.0%</td>
+<td>13</td>
+<td>$2092.00</td>
+<tr>10:30	475	1275	55.0%	20	$2175.00</tr>
+<td>10:30</td>
+<td>475</td>
+<td>1275</td>
+<td>55.0%</td>
+<td>20</td>
+<td>$2175.00</td>
+<tr>10:00	492	1318	56.0%	27	$2258.00</tr>
+<td>10:00</td>
+<td>492</td>
+<td>1318</td>
+<td>56.0%</td>
+<td>27</td>
+<td>$2258.00</td>
+<tr>10:30	509	1361	57.0%	34	$2341.00</tr>
+<td>10:30</td>
+<td>509</td>
+<td>1361</td>
+<td>57.0%</td>
+<td>34</td>
+<td>$2341.00</td>
+<tr>11:00	526	1404	58.0%	41	$2424.00</tr>
+<td>11:00</td>
+<td>526</td>
+<td>1404</td>
+<td>58.0%</td>
+<td>41</td>
+<td>$2424.00</td>
+<tr>11:30	543	1447	59.0%	48	$2507.00</tr>
+<td>11:30</td>
+<td>543</td>
+<td>1447</td>
+<td>59.0%</td>
+<td>48</td>
+<td>$2507.00</td>
+<tr>12:00	560	1490	60.0%	55	$2590.00</tr>
+<td>12:00</td>
+<td>560</td>
+<td>1490</td>
+<td>60.0%</td>
+<td>55</td>
+<td>$2590.00</td>
+<tr>12:30	577	1533	61.0%	62	$2673.00</tr>
+<td>12:30</td>
+<td>577</td>
+<td>1533</td>
+<td>61.0%</td>
+<td>62</td>
+<td>$2673.00</td>
+<tr>12:00	594	1576	62.0%	69	$2756.00</tr>
+<td>12:00</td>
+<td>594</td>
+<td>1576</td>
+<td>62.0%</td>
+<td>69</td>
+<td>$2756.00</td>
+<tr>13:30	611	1619	63.0%	76	$2839.00</tr>
+<td>13:30</td>
+<td>611</td>
+<td>1619</td>
+<td>63.0%</td>
+<td>76</td>
+<td>$2839.00</td>
+<tr>13:00	628	1662	64.0%	83	$2922.00</tr>
+<td>13:00</td>
+<td>628</td>
+<td>1662</td>
+<td>64.0%</td>
+<td>83</td>
+<td>$2922.00</td>
+<tr>14:30	645	1705	65.0%	10	$3005.00</tr>
+<td>14:30</td>
+<td>645</td>
+<td>1705</td>
+<td>65.0%</td>
+<td>10</td>
+<td>$3005.00</td>
+<tr>14:00	662	1748	66.0%	17	$3088.00</tr>
+<td>14:00</td>
+<td>662</td>
+<td>1748</td>
+<td>66.0%</td>
+<td>17</td>
+<td>$3088.00</td>
+<tr>14:30	679	1791	67.0%	24	$3171.00</tr>
+<td>14:30</td>
+<td>679</td>
+<td>1791</td>
+<td>67.0%</td>
+<td>24</td>
+<td>$3171.00</td>
+<tr>15:00	696	1834	68.0%	31	$3254.00</tr>
+<td>15:00</td>
+<td>696</td>
+<td>1834</td>
+<td>68.0%</td>
+<td>31</td>
+<td>$3254.00</td>
+<tr>15:30	713	1877	69.0%	38	$3337.00</tr>
+<td>15:30</td>
+<td>713</td>
+<td>1877</td>
+<td>69.0%</td>
+<td>38</td>
+<td>$3337.00</td>
+<tr>16:00	730	1920	70.0%	45	$3420.00</tr>
+<td>16:00</td>
+<td>730</td>
+<td>1920</td>
+<td>70.0%</td>
+<td>45</td>
+<td>$3420.00</td>
+<tr>16:30	747	1963	71.0%	52	$3503.00</tr>
+<td>16:30</td>
+<td>747</td>
+<td>1963</td>
+<td>71.0%</td>
+<td>52</td>
+<td>$3503.00</td>
+<tr>16:00	764	2006	72.0%	59	$3586.00</tr>
+<td>16:00</td>
+<td>764</td>
+<td>2006</td>
+<td>72.0%</td>
+<td>59</td>
+<td>$3586.00</td>
+<tr>17:30	781	2049	73.0%	66	$3669.00</tr>
+<td>17:30</td>
+<td>781</td>
+<td>2049</td>
+<td>73.0%</td>
+<td>66</td>
+<td>$3669.00</td>
+<tr>17:00	798	2092	74.0%	73	$3752.00</tr>
+<td>17:00</td>
+<td>798</td>
+<td>2092</td>
+<td>74.0%</td>
+<td>73</td>
+<td>$3752.00</td>
+<tr>18:30	815	2135	75.0%	80	$3835.00</tr>
+<td>18:30</td>
+<td>815</td>
+<td>2135</td>
+<td>75.0%</td>
+<td>80</td>
+<td>$3835.00</td>
+<tr>18:00	832	2178	76.0%	7	$3918.00</tr>
+<td>18:00</td>
+<td>832</td>
+<td>2178</td>
+<td>76.0%</td>
+<td>7</td>
+<td>$3918.00</td>
+<tr>18:30	849	221	77.0%	14	$4001.00</tr>
+<td>18:30</td>
+<td>849</td>
+<td>221</td>
+<td>77.0%</td>
+<td>14</td>
+<td>$4001.00</td>
+<tr>19:00	66	264	78.0%	21	$4084.00</tr>
+<td>19:00</td>
+<td>66</td>
+<td>264</td>
+<td>78.0%</td>
+<td>21</td>
+<td>$4084.00</td>
+<tr>19:30	83	307	79.0%	28	$4167.00</tr>
+<td>19:30</td>
+<td>83</td>
+<td>307</td>
+<td>79.0%</td>
+<td>28</td>
+<td>$4167.00</td>
+<tr>20:00	100	350	30.0%	35	$4250.00</tr>
+<td>20:00</td>
+<td>100</td>
+<td>350</td>
+<td>30.0%</td>
+<td>35</td>
+<td>$4250.00</td>
+<tr>20:30	117	393	31.0%	42	$4333.00</tr>
+<td>20:30</td>
+<td>117</td>
+<td>393</td>
+<td>31.0%</td>
+<td>42</td>
+<td>$4333.00</td>
+<tr>20:00	134	436	32.0%	49	$4416.00</tr>
+<td>20:00</td>
+<td>134</td>
+<td>436</td>
+<td>32.0%</td>
+<td>49</td>
+<td>$4416.00</td>
+<tr>21:30	151	479	33.0%	56	$4499.00</tr>
+<td>21:30</td>
+<td>151</td>
+<td>479</td>
+<td>33.0%</td>
+<td>56</td>
+<td>$4499.00</td>
+<tr>21:00	168	522	34.0%	63	$4582.00</tr>
+<td>21:00</td>
+<td>168</td>
+<td>522</td>
+<td>34.0%</td>
+<td>63</td>
+<td>$4582.00</td>
+<tr>22:30	185	565	35.0%	70	$4665.00</tr>
+<td>22:30</td>
+<td>185</td>
+<td>565</td>
+<td>35.0%</td>
+<td>70</td>
+<td>$4665.00</td>
+<tr>22:00	202	608	36.0%	77	$4748.00</tr>
+<td>22:00</td>
+<td>202</td>
+<td>608</td>
+<td>36.0%</td>
+<td>77</td>
+<td>$4748.00</td>
+<tr>22:30	219	651	37.0%	84	$4831.00</tr>
+<td>22:30</td>
+<td>219</td>
+<td>651</td>
+<td>37.0%</td>
+<td>84</td>
+<td>$4831.00</td>
+<tr>23:00	236	694	38.0%	11	$4914.00</tr>
+<td>23:00</td>
+<td>236</td>
+<td>694</td>
+<td>38.0%</td>
+<td>11</td>
+<td>$4914.00</td>
+<tr>23:30	253	737	39.0%	18	$4997.00</tr>
+<td>23:30</td>
+<td>253</td>
+<td>737</td>
+<td>39.0%</td>
+<td>18</td>
+<td>$4997.00</td>

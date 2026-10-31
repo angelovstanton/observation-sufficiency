@@ -1,0 +1,4067 @@
+{
+  "gate": {
+    "conflicts_empty": true,
+    "condition5_identical_960": true,
+    "condition5_matches_stored_960": true,
+    "token_fidelity": true,
+    "dump_guard_clean": true,
+    "python_port_agrees_with_predicate": true,
+    "differing_pages_equal_leak_pages": true,
+    "pass": true
+  },
+  "fidelity": {
+    "cells": 120,
+    "mismatches": 0,
+    "mismatch_rows": []
+  },
+  "census_by_kind": [
+    {
+      "kind": "class",
+      "distinct": 1226,
+      "predicate_flags": 285,
+      "listed": 110,
+      "bem_base": 2,
+      "regex": 197
+    },
+    {
+      "kind": "id",
+      "distinct": 236,
+      "predicate_flags": 29,
+      "listed": 29,
+      "bem_base": 0,
+      "regex": 0
+    }
+  ],
+  "python_port_disagreements": [],
+  "leaked_tokens": [
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ActionMenu_editBtn__l8m9n0",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ActionMenu_moreBtn__r4s5t6",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_avatar__m6n7o8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_brand__d4e5f6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_footer__z5a6b7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_headerRight__h0i1j2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_header__a1b2c3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_pageTitle__m6n7o8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_subTitle__p9q0r1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_toolbar__m3n4o5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "AdminLayout_userLabel__k3l4m5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_badge__f1g2h3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_detailHead__b1c2d3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_detailWrap__z8a9b0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_editBtn__l7m8n9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_toggleInput__w6x7y8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_toggleLabel__p0q1r2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_toggleThumb__u3v4w5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_toggleTrack__r0s1t2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_toggleWrap__i4j5k6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_userEmail__o7p8q9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_userInfo__j1k2l3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "ConsolePanel_userName__l4m5n6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_cancelBtn__u3v4w5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_field__g8h9i0",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_footer__s0t1u2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_input__m4n5o6",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 6,
+      "NV_locators_using_token_by_enc": {
+        "F0": 2,
+        "F1": 2,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_label__j1k2l3",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_saveBtn__x6y7z8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_select__p7q8r9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 3,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "EditPanel_title__d5e6f7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "PaginationBar_controls__t5u6v7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 2,
+      "NV_locators_using_token_by_enc": {
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "PaginationBar_label__u6v7w8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "PaginationBar_prevBtn__r3s4t5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 2,
+      "NV_locators_using_token_by_enc": {
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "StatusBadge_label__s0t1u2",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_exportBtn__h7i8j9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_newUserBtn__e4f5g6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_roleFilter__b1c2d3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_searchIcon__v5w6x7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_searchInput__y8z9a0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_searchWrap__s2t3u4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "Toolbar_statsChip__i0j1k2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "UserAvatar_initials__y9z0a1",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "UserCell_email__h8i9j0",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "UserCell_stack__b2c3d4",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "UserCell_username__e5f6g7",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_17",
+      "kind": "class",
+      "token": "UsersTable_wrapper__p6q7r8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "AppHeader_avatar__z3a4b5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "AppHeader_navLink__w0x1y2",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "BoardToolbar_btnGroup__r7s8t9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "BoardToolbar_filterInput__l1m2n3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "BoardToolbar_iconBtn__u0v1w2",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "BoardToolbar_newBtn__o4p5q6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "BoardToolbar_title__f5g6h7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "EditPanel_actions__e2f3g4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "EditPanel_cancelBtn__h5i6j7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "EditPanel_field__s0t1u2",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "EditPanel_saveBtn__k8l9m0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "EditPanel_title__p7q8r9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCard_assignee__v2w3x4",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCard_footer__s9t0u1",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCard_header__d4e5f6",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 3,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCard_title__m3n4o5",
+      "NV_F0": 200,
+      "NVC_F0": 0,
+      "NV_F1": 200,
+      "NVC_F1": 0,
+      "NV_F2": 200,
+      "NVC_F2": 0,
+      "NV_F3": 200,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCol_count__u0v1w2",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F1": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCol_header__o4p5q6",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanCol_title__r7s8t9",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_addBtn__w9x0y1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_editHead__g0h1i2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_editSection__c5d6e7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_sortLbl__a4b5c6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_sortSel__d7e8f9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_18",
+      "kind": "class",
+      "token": "KanbanPanel_title__q3r4s5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1
+      }
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "ChannelInfo_avatar__k4l5m6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "ChannelInfo_details__n7o8p9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "CommentCard_actions__g2h3i4",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "CommentCard_author__a6b7c8",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "CommentCard_avatar__u0v1w2",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "CommentCard_likeBtn__j5k6l7",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "CommentCard_replyBtn__m8n9o0",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Comments_heading__i8j9k0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Comments_section__f5g6h7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Comments_sortBtn__o4p5q6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Comments_sortIcon__j1k2l3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Comments_sortRow__l1m2n3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "ControlBar_container__h8i9j0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 2,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Description_moreBtn__c2d3e4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Description_stats__a1b2c3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Footer_inner__t7u8v9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Footer_links__w0x1y2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Header_actions__r9s0t1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Header_inner__c4d5e6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Header_search__i0j1k2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Header_signInBtn__x5y6z7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Header_uploadBtn__u2v3w4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "PageLayout_footer__q4r5s6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "PageLayout_header__z1a2b3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "PageLayout_sidebar__p1q2r3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "PageLayout_videoCol__d1e2f3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "PlayerHost_shell__g4h5i6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "SearchBar_input__l3m4n5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "SidePanel_channel__h9i0j1",
+      "NV_F0": 8,
+      "NVC_F0": 0,
+      "NV_F1": 8,
+      "NVC_F1": 0,
+      "NV_F2": 8,
+      "NVC_F2": 0,
+      "NV_F3": 8,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "SidePanel_thumb__y0z1a2",
+      "NV_F0": 8,
+      "NVC_F0": 0,
+      "NV_F1": 8,
+      "NVC_F1": 0,
+      "NV_F2": 8,
+      "NVC_F2": 0,
+      "NV_F3": 8,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "SidePanel_title__e6f7g8",
+      "NV_F0": 8,
+      "NVC_F0": 0,
+      "NV_F1": 8,
+      "NVC_F1": 0,
+      "NV_F2": 8,
+      "NVC_F2": 0,
+      "NV_F3": 8,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Sidebar_heading__v7w8x9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "Sidebar_section__s4t5u6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_actions__v9w0x1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_channelRow__h1i2j3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_container__c1d2e3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_dislikeBtn__y2z3a4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_moreBtn__h1i2j3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_saveBtn__e8f9g0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_shareBtn__b5c6d7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_stats__m0n1o2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_title__j7k8l9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoMeta_views__p3q4r5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoPlayer_paused__c8d9e0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoPlayer_viewport__b1c2d3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_21",
+      "kind": "class",
+      "token": "VideoPlayer_wrapper__f3g4h5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 2,
+      "NV_locators_using_token_by_enc": {
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "EditForm_actions__k8l9m0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "EditForm_cancelBtn__n1o2p3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "EditForm_field__v3w4x5",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "EditForm_saveBtn__q4r5s6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "EditForm_title__s0t1u2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfAction_count__d4e5f6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfAction_refreshBtn__a1b2c3",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfHeader_navLink__w0x1y2",
+      "NV_F0": 5,
+      "NVC_F0": 0,
+      "NV_F1": 5,
+      "NVC_F1": 0,
+      "NV_F2": 5,
+      "NVC_F2": 0,
+      "NV_F3": 5,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfSearch_dateInp__u0v1w2",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfSearch_dateWrap__r7s8t9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TfSearch_label__f5g6h7",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_carrierSel__c6d7e8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_ctrlLbl__z3a4b5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_detailCard__i2j3k4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_detailHead__l5m6n7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 2,
+      "NV_locators_using_token_by_enc": {
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_detailTitle__o8p9q0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_editSection__a0b1c2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F1": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_exportBtn__f9g0h1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_infoKey__u4v5w6",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_infoRow__r1s2t3",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_22",
+      "kind": "class",
+      "token": "TrackPanel_infoVal__x7y8z9",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "Checkout_layout__h6j7k8",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "Checkout_right__c2v3b4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "Header_tagline__r4t5y6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "OrderItem_price__m3n4o5",
+      "NV_F0": 90,
+      "NVC_F0": 0,
+      "NV_F1": 90,
+      "NVC_F1": 0,
+      "NV_F2": 90,
+      "NVC_F2": 0,
+      "NV_F3": 90,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1
+      }
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "OrderSummary_header__n5m6l7",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "OrderSummary_total__k8j9h0",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayShell_secRow__q1r2s3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 3,
+      "NV_locators_using_token_by_enc": {
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayShell_secText__t4u5v6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1
+      }
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayShell_title__h2i3j4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayWidget_checkRow__h9i0j1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayWidget_field__e6f7g8",
+      "NV_F0": 4,
+      "NVC_F0": 0,
+      "NV_F1": 4,
+      "NVC_F1": 0,
+      "NV_F2": 4,
+      "NVC_F2": 0,
+      "NV_F3": 4,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PayWidget_submitBtn__k2l3m4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "PromoRow_input__k0l1m2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "ShippingForm_field__o1p2a3",
+      "NV_F0": 8,
+      "NVC_F0": 0,
+      "NV_F1": 8,
+      "NVC_F1": 0,
+      "NV_F2": 8,
+      "NVC_F2": 0,
+      "NV_F3": 8,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_23",
+      "kind": "class",
+      "token": "ShippingForm_title__y8u9i0",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "AccountSection_actions__e1f2g3",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "AccountSection_btnOutline__k7l8m9",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 3,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "AccountSection_field__b8c9d0",
+      "NV_F0": 3,
+      "NVC_F0": 0,
+      "NV_F1": 3,
+      "NVC_F1": 0,
+      "NV_F2": 3,
+      "NVC_F2": 0,
+      "NV_F3": 3,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "NotifSection_header__n0o1p2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "NotifSection_title__q3r4s5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 3,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "PrefPanel_checkRow__v9w0x1",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "PrefPanel_saveBtn__y2z3a4",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 4,
+      "NV_locators_using_token_by_enc": {
+        "F0": 1,
+        "F1": 1,
+        "F2": 1,
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "PrefPanel_title__q3r4s5",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "Section_title__y5z6a7",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingRow_label__f4g5h6",
+      "NV_F0": 70,
+      "NVC_F0": 0,
+      "NV_F1": 70,
+      "NVC_F1": 0,
+      "NV_F2": 70,
+      "NVC_F2": 0,
+      "NV_F3": 70,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingRow_slider__r6s7t8",
+      "NV_F0": 70,
+      "NVC_F0": 0,
+      "NV_F1": 70,
+      "NVC_F1": 0,
+      "NV_F2": 70,
+      "NVC_F2": 0,
+      "NV_F3": 70,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingRow_status__u9v0w1",
+      "NV_F0": 70,
+      "NVC_F0": 0,
+      "NV_F1": 70,
+      "NVC_F1": 0,
+      "NV_F2": 70,
+      "NVC_F2": 0,
+      "NV_F3": 70,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingRow_toggle__o3p4q5",
+      "NV_F0": 70,
+      "NVC_F0": 0,
+      "NV_F1": 70,
+      "NVC_F1": 0,
+      "NV_F2": 70,
+      "NVC_F2": 0,
+      "NV_F3": 70,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingsPanel_check__f8g9h0",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 8,
+      "NV_locators_using_token_by_enc": {
+        "F0": 2,
+        "F1": 2,
+        "F2": 2,
+        "F3": 2
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingsPanel_title__e4f5g6",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 1,
+      "NV_locators_using_token_by_enc": {
+        "F3": 1
+      }
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingsPanel_toggleDesc__n3o4p5",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingsPanel_toggleLabel__k0l1m2",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SettingsPanel_toggleRow__h7i8j9",
+      "NV_F0": 2,
+      "NVC_F0": 0,
+      "NV_F1": 2,
+      "NVC_F1": 0,
+      "NV_F2": 2,
+      "NVC_F2": 0,
+      "NV_F3": 2,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    },
+    {
+      "page": "page_24",
+      "kind": "class",
+      "token": "SideNav_title__j0k1l2",
+      "NV_F0": 1,
+      "NVC_F0": 0,
+      "NV_F1": 1,
+      "NVC_F1": 0,
+      "NV_F2": 1,
+      "NVC_F2": 0,
+      "NV_F3": 1,
+      "NVC_F3": 0,
+      "NV_locators_using_token": 0,
+      "NV_locators_using_token_by_enc": {}
+    }
+  ],
+  "leak_usage_in_NV_locators": {
+    "NV_records_predicate_non_volatile_false": 119,
+    "NV_records_with_leaked_token_in_locator": 114,
+    "of_which_non_volatile_false": 114,
+    "by_failure_mode": {
+      "model_grabbed_brittle_signal": 84,
+      "observation_lacked_stable_signal": 30
+    },
+    "by_page": {
+      "page_17": 35,
+      "page_18": 25,
+      "page_21": 5,
+      "page_22": 20,
+      "page_23": 9,
+      "page_24": 20
+    }
+  },
+  "prefix_form_tokens": [
+    {
+      "page": "page_05",
+      "kind": "class",
+      "token": "pagination"
+    },
+    {
+      "page": "page_07",
+      "kind": "class",
+      "token": "hero"
+    },
+    {
+      "page": "page_08",
+      "kind": "class",
+      "token": "pagination"
+    },
+    {
+      "page": "page_08",
+      "kind": "class",
+      "token": "sidebar"
+    }
+  ],
+  "special_character_tokens": [],
+  "names22": {
+    "names": [
+      "gallery__nav-btn--next",
+      "gallery__nav-btn",
+      "pkg-select",
+      "price-tag",
+      "btn",
+      "btn-primary",
+      "btn-search",
+      "form-select",
+      "nav-search",
+      "add-to-cart-btn",
+      "qty-input",
+      "write-review-btn",
+      "breadcrumb",
+      "notice-bar",
+      "notice-bar__inner",
+      "header-search",
+      "header-search__btn",
+      "header-utils__btn",
+      "mm-panel",
+      "nav-bar",
+      "list-item",
+      "tab-content"
+    ],
+    "test_volatile_classes": [
+      "gallery__nav-btn--next--b3c4d5",
+      "pkg-select--a9b8c7",
+      "price-tag--vue-d4e5f6",
+      "data-v-7ba5bd90"
+    ],
+    "intersection_with_leaked_tokens": [],
+    "names_present_in_corpus_dom": [
+      "breadcrumb",
+      "btn",
+      "btn-primary",
+      "btn-search",
+      "form-select",
+      "gallery__nav-btn",
+      "header-search",
+      "header-search__btn",
+      "header-utils__btn",
+      "mm-panel",
+      "nav-search",
+      "notice-bar",
+      "notice-bar__inner",
+      "qty-input"
+    ],
+    "names_matching_VolatileClassRe": []
+  },
+  "idclass_signal_values": [
+    {
+      "page": "page_01",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "qty-input",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_01",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "write-review-btn",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_02",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "application-ref",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_02",
+      "task_id": "t_03",
+      "attr": "id",
+      "value": "ni-number",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_02",
+      "task_id": "t_04",
+      "attr": "id",
+      "value": "benefit-type",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_02",
+      "task_id": "t_09",
+      "attr": "id",
+      "value": "benefit-updates-sub",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_03",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "transfer-amount",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_03",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "from-account",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "origin-airport",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "destination-airport",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_03",
+      "attr": "id",
+      "value": "departure-date",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_04",
+      "attr": "id",
+      "value": "return-date",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_05",
+      "attr": "id",
+      "value": "adult-passengers",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_04",
+      "task_id": "t_06",
+      "attr": "id",
+      "value": "cabin-class",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_07",
+      "task_id": "t_09",
+      "attr": "id",
+      "value": "terms-checkbox",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_09",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "contact-first-name",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_09",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "lead-status",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_10",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "check-in-field",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_10",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "check-out-field",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_11",
+      "task_id": "t_10",
+      "attr": "id",
+      "value": "plus-data-allowance",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_12",
+      "task_id": "t_04",
+      "attr": "id",
+      "value": "course-rating",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_13",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "date-from",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_13",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "date-preset",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_14",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "menu-search",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_14",
+      "task_id": "t_10",
+      "attr": "id",
+      "value": "delivery-address",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_15",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "job-search",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_16",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "help-search",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_17",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "role-filter-select",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_17",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "edit-username",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_17",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "edit-role",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_18",
+      "task_id": "t_02",
+      "attr": "id",
+      "value": "board-filter",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_18",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "card-title",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_18",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "card-assignee",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_19",
+      "task_id": "t_05",
+      "attr": "id",
+      "value": "quote-first-name",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_19",
+      "task_id": "t_06",
+      "attr": "id",
+      "value": "quote-dob",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_19",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "property-type",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_19",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "coverage-amount",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_20",
+      "task_id": "t_04",
+      "attr": "id",
+      "value": "direct-deposit-toggle",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_22",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "tracking-search",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_22",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "shipment-ref",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_22",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "delivery-notes",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_22",
+      "task_id": "t_09",
+      "attr": "id",
+      "value": "shipment-priority",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_23",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "order-email",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_23",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "pw-card-number",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_23",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "pw-installments",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_23",
+      "task_id": "t_09",
+      "attr": "id",
+      "value": "pw-save-card",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_24",
+      "task_id": "t_01",
+      "attr": "id",
+      "value": "display-name",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_24",
+      "task_id": "t_07",
+      "attr": "id",
+      "value": "pref-language",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_24",
+      "task_id": "t_08",
+      "attr": "id",
+      "value": "pref-timezone",
+      "listed": false,
+      "predicate_flags": false
+    },
+    {
+      "page": "page_24",
+      "task_id": "t_09",
+      "attr": "id",
+      "value": "pref-newsletter",
+      "listed": false,
+      "predicate_flags": false
+    }
+  ],
+  "conflicts": [],
+  "condition5": {
+    "differences_NV_vs_NVC": [],
+    "differences_vs_stored": [],
+    "true_counts": {
+      "B_noVolatile": 768,
+      "B_noVolatileConsistent": 768,
+      "stored_B_noVolatile": 768
+    }
+  },
+  "byte_comparison": [
+    {
+      "page": "page_01",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 14588,
+      "tokens_NVC": 14588
+    },
+    {
+      "page": "page_01",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 18868,
+      "tokens_NVC": 18868
+    },
+    {
+      "page": "page_01",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 18780,
+      "tokens_NVC": 18780
+    },
+    {
+      "page": "page_01",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 12902,
+      "tokens_NVC": 12902
+    },
+    {
+      "page": "page_02",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 2661,
+      "tokens_NVC": 2661
+    },
+    {
+      "page": "page_02",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 3179,
+      "tokens_NVC": 3179
+    },
+    {
+      "page": "page_02",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 3157,
+      "tokens_NVC": 3157
+    },
+    {
+      "page": "page_02",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 2392,
+      "tokens_NVC": 2392
+    },
+    {
+      "page": "page_03",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 31168,
+      "tokens_NVC": 31168
+    },
+    {
+      "page": "page_03",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 40766,
+      "tokens_NVC": 40766
+    },
+    {
+      "page": "page_03",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 40758,
+      "tokens_NVC": 40758
+    },
+    {
+      "page": "page_03",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 26092,
+      "tokens_NVC": 26092
+    },
+    {
+      "page": "page_04",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 2547,
+      "tokens_NVC": 2547
+    },
+    {
+      "page": "page_04",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 3243,
+      "tokens_NVC": 3243
+    },
+    {
+      "page": "page_04",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 3228,
+      "tokens_NVC": 3228
+    },
+    {
+      "page": "page_04",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 2192,
+      "tokens_NVC": 2192
+    },
+    {
+      "page": "page_05",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 6979,
+      "tokens_NVC": 6979
+    },
+    {
+      "page": "page_05",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 9718,
+      "tokens_NVC": 9718
+    },
+    {
+      "page": "page_05",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 9672,
+      "tokens_NVC": 9672
+    },
+    {
+      "page": "page_05",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 6346,
+      "tokens_NVC": 6346
+    },
+    {
+      "page": "page_06",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 52302,
+      "tokens_NVC": 52302
+    },
+    {
+      "page": "page_06",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 63793,
+      "tokens_NVC": 63793
+    },
+    {
+      "page": "page_06",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 63789,
+      "tokens_NVC": 63789
+    },
+    {
+      "page": "page_06",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 46693,
+      "tokens_NVC": 46693
+    },
+    {
+      "page": "page_07",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 11074,
+      "tokens_NVC": 11074
+    },
+    {
+      "page": "page_07",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 14205,
+      "tokens_NVC": 14205
+    },
+    {
+      "page": "page_07",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 14202,
+      "tokens_NVC": 14202
+    },
+    {
+      "page": "page_07",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 9855,
+      "tokens_NVC": 9855
+    },
+    {
+      "page": "page_08",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 75530,
+      "tokens_NVC": 75530
+    },
+    {
+      "page": "page_08",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 96860,
+      "tokens_NVC": 96860
+    },
+    {
+      "page": "page_08",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 96694,
+      "tokens_NVC": 96694
+    },
+    {
+      "page": "page_08",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 66783,
+      "tokens_NVC": 66783
+    },
+    {
+      "page": "page_09",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 35064,
+      "tokens_NVC": 35064
+    },
+    {
+      "page": "page_09",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 44165,
+      "tokens_NVC": 44165
+    },
+    {
+      "page": "page_09",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 44149,
+      "tokens_NVC": 44149
+    },
+    {
+      "page": "page_09",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 29220,
+      "tokens_NVC": 29220
+    },
+    {
+      "page": "page_10",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 2911,
+      "tokens_NVC": 2911
+    },
+    {
+      "page": "page_10",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 3958,
+      "tokens_NVC": 3958
+    },
+    {
+      "page": "page_10",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 3939,
+      "tokens_NVC": 3939
+    },
+    {
+      "page": "page_10",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 2551,
+      "tokens_NVC": 2551
+    },
+    {
+      "page": "page_11",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 1517,
+      "tokens_NVC": 1517
+    },
+    {
+      "page": "page_11",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 1822,
+      "tokens_NVC": 1822
+    },
+    {
+      "page": "page_11",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 1781,
+      "tokens_NVC": 1781
+    },
+    {
+      "page": "page_11",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 1235,
+      "tokens_NVC": 1235
+    },
+    {
+      "page": "page_12",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 1809,
+      "tokens_NVC": 1809
+    },
+    {
+      "page": "page_12",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 2295,
+      "tokens_NVC": 2295
+    },
+    {
+      "page": "page_12",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 2261,
+      "tokens_NVC": 2261
+    },
+    {
+      "page": "page_12",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 1554,
+      "tokens_NVC": 1554
+    },
+    {
+      "page": "page_13",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 28805,
+      "tokens_NVC": 28805
+    },
+    {
+      "page": "page_13",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 35090,
+      "tokens_NVC": 35090
+    },
+    {
+      "page": "page_13",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 35063,
+      "tokens_NVC": 35063
+    },
+    {
+      "page": "page_13",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 23651,
+      "tokens_NVC": 23651
+    },
+    {
+      "page": "page_14",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 2199,
+      "tokens_NVC": 2199
+    },
+    {
+      "page": "page_14",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 2940,
+      "tokens_NVC": 2940
+    },
+    {
+      "page": "page_14",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 2902,
+      "tokens_NVC": 2902
+    },
+    {
+      "page": "page_14",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 1838,
+      "tokens_NVC": 1838
+    },
+    {
+      "page": "page_15",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 4560,
+      "tokens_NVC": 4560
+    },
+    {
+      "page": "page_15",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 6272,
+      "tokens_NVC": 6272
+    },
+    {
+      "page": "page_15",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 6213,
+      "tokens_NVC": 6213
+    },
+    {
+      "page": "page_15",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 3915,
+      "tokens_NVC": 3915
+    },
+    {
+      "page": "page_16",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 3714,
+      "tokens_NVC": 3714
+    },
+    {
+      "page": "page_16",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 4871,
+      "tokens_NVC": 4871
+    },
+    {
+      "page": "page_16",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 4848,
+      "tokens_NVC": 4848
+    },
+    {
+      "page": "page_16",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 3319,
+      "tokens_NVC": 3319
+    },
+    {
+      "page": "page_17",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 92432,
+      "tokens_NVC": 73981
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 107788,
+      "tokens_NVC": 88327
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 107531,
+      "tokens_NVC": 88072
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 81880,
+      "tokens_NVC": 63876
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 58542,
+      "tokens_NVC": 47377
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 67506,
+      "tokens_NVC": 55646
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 67458,
+      "tokens_NVC": 55598
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 52655,
+      "tokens_NVC": 41628
+    },
+    {
+      "page": "page_19",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 1947,
+      "tokens_NVC": 1947
+    },
+    {
+      "page": "page_19",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 2397,
+      "tokens_NVC": 2397
+    },
+    {
+      "page": "page_19",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 2333,
+      "tokens_NVC": 2333
+    },
+    {
+      "page": "page_19",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 1598,
+      "tokens_NVC": 1598
+    },
+    {
+      "page": "page_20",
+      "encoding": "F0",
+      "identical": true,
+      "tokens_NV": 2942,
+      "tokens_NVC": 2942
+    },
+    {
+      "page": "page_20",
+      "encoding": "F1",
+      "identical": true,
+      "tokens_NV": 4028,
+      "tokens_NVC": 4028
+    },
+    {
+      "page": "page_20",
+      "encoding": "F2",
+      "identical": true,
+      "tokens_NV": 3983,
+      "tokens_NVC": 3983
+    },
+    {
+      "page": "page_20",
+      "encoding": "F3",
+      "identical": true,
+      "tokens_NV": 2530,
+      "tokens_NVC": 2530
+    },
+    {
+      "page": "page_21",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 4454,
+      "tokens_NVC": 3427
+    },
+    {
+      "page": "page_21",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 5655,
+      "tokens_NVC": 4575
+    },
+    {
+      "page": "page_21",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 5631,
+      "tokens_NVC": 4551
+    },
+    {
+      "page": "page_21",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 4070,
+      "tokens_NVC": 3074
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 28791,
+      "tokens_NVC": 28233
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 36973,
+      "tokens_NVC": 36412
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 36916,
+      "tokens_NVC": 36356
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 23190,
+      "tokens_NVC": 22674
+    },
+    {
+      "page": "page_23",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 13328,
+      "tokens_NVC": 11920
+    },
+    {
+      "page": "page_23",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 15065,
+      "tokens_NVC": 13555
+    },
+    {
+      "page": "page_23",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 15027,
+      "tokens_NVC": 13517
+    },
+    {
+      "page": "page_23",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 11788,
+      "tokens_NVC": 10394
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0",
+      "identical": false,
+      "tokens_NV": 12388,
+      "tokens_NVC": 8190
+    },
+    {
+      "page": "page_24",
+      "encoding": "F1",
+      "identical": false,
+      "tokens_NV": 14258,
+      "tokens_NVC": 9777
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2",
+      "identical": false,
+      "tokens_NV": 14218,
+      "tokens_NVC": 9737
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3",
+      "identical": false,
+      "tokens_NV": 11050,
+      "tokens_NVC": 7150
+    }
+  ],
+  "differing_cells": [
+    {
+      "page": "page_17",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_17",
+      "encoding": "F3"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_18",
+      "encoding": "F3"
+    },
+    {
+      "page": "page_21",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_21",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_21",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_21",
+      "encoding": "F3"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_22",
+      "encoding": "F3"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_23",
+      "encoding": "F3"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F0"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F1"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F2"
+    },
+    {
+      "page": "page_24",
+      "encoding": "F3"
+    }
+  ],
+  "dump_guard_violations": [],
+  "python_guard_violations": []
+}

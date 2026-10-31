@@ -50,6 +50,9 @@ test-results/
 # --replay re-classifies archived locators and writes a dated JSONL. It is a
 # throwaway check against the tracked matrix_page_*.jsonl, not a result.
 experiments/runs/replay_*.jsonl
+# Revision-1 scripts that replay through the harness also write a console log next to their output.
+experiments/results/revision1/replay/log_*.txt
+experiments/results/revision1/replay/volatile_nv/log.txt
 
 # --- Editor / OS ---
 .vscode/

@@ -216,6 +216,21 @@ public static class ObservationEncoders
     }
 
     /// <summary>
+    /// F2L legend line: every F2KeyMap pair as `abbr=full`, in declaration
+    /// order, identical for every observation. Part of the observation, not of the prompt.
+    /// </summary>
+    public static readonly string F2Legend =
+        "legend: " + string.Join(", ", F2KeyMap.Select(kv => $"{kv.Value}={kv.Key}"));
+
+    /// <summary>
+    /// F2L: the F2 observation preceded by the F2Legend line —
+    /// F2Legend + "\n" + EncodeF2CompactJson(elements). The legend is counted in the
+    /// observation tokens; the F2 part is unchanged.
+    /// </summary>
+    public static string EncodeF2LLegend(IReadOnlyList<ElementData> elements) =>
+        F2Legend + "\n" + EncodeF2CompactJson(elements);
+
+    /// <summary>
     /// Expand F2 abbreviated keys back to full key names for round-trip verification.
     /// </summary>
     public static string ExpandF2Keys(string f2Json)

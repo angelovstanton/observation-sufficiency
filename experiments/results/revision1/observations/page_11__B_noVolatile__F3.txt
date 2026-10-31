@@ -1,0 +1,79 @@
+header {ConnectNow Plans Devices Roaming Support My account}
+a class=logo href=/ {ConnectNow}
+nav aria-label="Main navigation" {Plans Devices Roaming Support My account}
+a href=/plans {Plans}
+a href=/devices {Devices}
+a href=/roaming {Roaming}
+a href=/support {Support}
+a href=/account {My account}
+div class=current-plan-bar {You are on the Basic plan Manage billing ›}
+span class=current-plan-label {You are on the}
+span class=current-plan-name data-testid=current-plan-label aria-label="Your current plan: Basic" {Basic plan}
+a class=upgrade-link href=/billing {Manage billing ›}
+div class=page-header {Choose Your Plan  Simple, transparent pricing. No hidden fees. Cancel or switch any time.}
+h1 {Choose Your Plan}
+p {Simple, transparent pricing. No hidden fees. Cancel or switch any time.}
+div class=billing-row {Monthly Annual Save 20%}
+span class=billing-label {Monthly}
+button type=button data-testid=billing-toggle aria-label="Toggle between monthly and annual billing"
+svg aria-hidden=true
+span class=billing-label {Annual}
+span class=billing-badge {Save 20%}
+div class=plans-section
+[S] div class=grid {Basic £9.99 per month  5 GB data  Unlimited calls & texts 5G included Wi-Fi calling EU roaming 30 days/yr Select Basic  Current plan  Most Popular Plus £19.99 per month  Unlimited data  Unlimited calls & texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priorit…}
+[S] div class=card {Basic £9.99 per month  5 GB data  Unlimited calls & texts 5G included Wi-Fi calling EU roaming 30 days/yr Select Basic  Current plan}
+[S] div class=plan-name {Basic}
+[S] div class=price id=basic-price-display {£9.99}
+[S] div class=per-month {per month}
+[S] p class=data-row id=basic-data-allowance aria-label="Basic plan included data: 5 GB" {5 GB data}
+[S] ul class=features {Unlimited calls & texts 5G included Wi-Fi calling EU roaming 30 days/yr}
+[S] button type=button class="btn-plan btn-basic" data-testid=select-basic-btn aria-label="Select Basic plan for £9.99 per month" {Select Basic}
+[S] p class=data-row {Current plan}
+[S] div class="card featured" {Most Popular Plus £19.99 per month  Unlimited data  Unlimited calls & texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priority network access Select Plus}
+[S] div class=badge aria-hidden=true {Most Popular}
+[S] div class=plan-name {Plus}
+[S] div class=price id=plus-price-display {£19.99}
+[S] div class=per-month {per month}
+[S] p class=data-row id=plus-data-allowance aria-label="Data allowance for Plus plan" {Unlimited data}
+[S] ul class=features {Unlimited calls & texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priority network access}
+[S] button type=button class="btn-plan btn-plus" data-testid=select-plus-btn aria-label="Select Plus plan for £19.99 per month" {Select Plus}
+[S] div class=card {Pro £39.99 per month  £9.99 / month baseline  Unlimited calls & texts 5G Ultra Max included Wi-Fi calling Global roaming 90 countries International calls unlimited Priority & dedicated network lane Hotspot 100 GB/mo Select Pro Need more? Contact Sales ›}
+[S] div class=plan-name {Pro}
+[S] div class=price id=pro-price-display {£39.99}
+[S] div class=per-month {per month}
+[S] p class=data-row aria-label="Basic plan price: £9.99 per month" {£9.99 / month baseline}
+[S] ul class=features {Unlimited calls & texts 5G Ultra Max included Wi-Fi calling Global roaming 90 countries International calls unlimited Priority & dedicated network lane Hotspot 100 GB/mo}
+[S] button type=button class="btn-plan btn-pro" data-testid=select-pro-btn aria-label="Select Pro plan for £39.99 per month" {Select Pro}
+[S] a href=/contact-sales aria-label="Contact sales for Enterprise pricing" {Need more? Contact Sales ›}
+div class=actions-bar {Compare all plan features Enterprise & teams ›}
+button class=btn-compare type=button data-testid=compare-all-plans-btn {Compare all plan features}
+button class=btn-enterprise type=button {Enterprise & teams ›}
+footer {PRODUCTS Mobile plans Broadband Devices HELP FAQs Contact us Coverage checker LEGAL Terms Privacy Cookies}
+div class=footer-inner {PRODUCTS Mobile plans Broadband Devices HELP FAQs Contact us Coverage checker LEGAL Terms Privacy Cookies}
+div class=footer-col {PRODUCTS Mobile plans Broadband Devices}
+h4 {PRODUCTS}
+ul {Mobile plans Broadband Devices}
+li {Mobile plans}
+a href=/plans {Mobile plans}
+li {Broadband}
+a href=/broadband {Broadband}
+li {Devices}
+a href=/devices {Devices}
+div class=footer-col {HELP FAQs Contact us Coverage checker}
+h4 {HELP}
+ul {FAQs Contact us Coverage checker}
+li {FAQs}
+a href=/faq {FAQs}
+li {Contact us}
+a href=/contact {Contact us}
+li {Coverage checker}
+a href=/coverage {Coverage checker}
+div class=footer-col {LEGAL Terms Privacy Cookies}
+h4 {LEGAL}
+ul {Terms Privacy Cookies}
+li {Terms}
+a href=/terms {Terms}
+li {Privacy}
+a href=/privacy {Privacy}
+li {Cookies}
+a href=/cookies {Cookies}

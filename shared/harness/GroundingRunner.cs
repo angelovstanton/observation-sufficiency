@@ -239,4 +239,120 @@ public static class GroundingRunner
             await browser.CloseAsync();
         }
     }
+
+    /// <summary>The locator parse RunOneAsync applies (for re-scoring a stored response).</summary>
+    public static (string type, string value) ParseLocatorForReplay(string raw) => ParseLocator(raw);
+
+    /// <summary>The canonical user prompt (same template RunOneAsync sends).</summary>
+    public static string BuildUserPrompt(string observation, string taskDescription) =>
+        UserPrompt(observation, taskDescription);
+
+    /// <summary>
+    /// Same pipeline as <see cref="RunOneAsync"/>, split at the model call: the caller supplies
+    /// <paramref name="callModel"/>(observation text, user prompt) → LlmResponse. Lets a runner
+    /// verify the observation and journal the raw response before oracle evaluation. Everything
+    /// else (browser, observation, SystemPrompt, user prompt, locator parse, oracle, record) is
+    /// a copy of RunOneAsync and must stay in step with it.
+    /// </summary>
+    public static async Task<GroundingRecord> RunOneStagedAsync(
+        string taskId,
+        string taskDescription,
+        OracleRef oracleRef,
+        string pagePath,
+        string bundle,
+        string encoding,
+        string regime,
+        string model,
+        int repetition,
+        Func<string, string, Task<LlmResponse>> callModel,
+        string? expectedStableSignal = null,
+        IReadOnlySet<string>? volatileIds = null,
+        IReadOnlySet<string>? volatileClasses = null,
+        IReadOnlyList<string>? signalAttrs = null,
+        int? seed = null,
+        string? baseUrl = null)
+    {
+        seed ??= Config.RandomSeed;
+        baseUrl = (baseUrl ?? Config.TestbedBaseUrl).TrimEnd('/');
+        var pageUrl = $"{baseUrl}/{pagePath}";
+        var runId = Guid.NewGuid().ToString();
+        var timestamp = DateTimeOffset.UtcNow.ToString("O");
+
+        using var playwright = await Playwright.CreateAsync();
+        var browser = await playwright.Chromium.LaunchAsync(new() { Headless = true });
+        try
+        {
+            var page = await browser.NewPageAsync();
+            await page.GotoAsync(pageUrl, new() { Timeout = 90_000 });
+            await page.WaitForLoadStateAsync(LoadState.NetworkIdle, new() { Timeout = 90_000 });
+
+            string obsText;
+            IReadOnlyList<ElementData> rawWithAnchors;
+
+            if (encoding.Equals("F4", StringComparison.OrdinalIgnoreCase))
+            {
+                var (ariaYaml, raw, leak) = await Observation.BuildAriaObservationAsync(page);
+                obsText = ariaYaml;
+                rawWithAnchors = raw;
+                if (leak)
+                {
+                    Console.Error.WriteLine($"[WARN] F4 oracle leak detected on {taskId}");
+                }
+            }
+            else
+            {
+                (obsText, rawWithAnchors, _) = await Observation.BuildObservationAsync(
+                    page, bundle, encoding, volatileIds, volatileClasses);
+            }
+
+            var bundleSet = AttributeBundles.ResolveBundleSetForSignalCheck(bundle);
+
+            int observationTokens = TokenCounter.CountTokens(obsText);
+
+            var userPrompt = UserPrompt(obsText, taskDescription);
+            var llmResp = await callModel(obsText, userPrompt);
+
+            var (locatorType, locatorValue) = ParseLocator(llmResp.Content);
+
+            var oracleEl = await Oracle.Oracle.FindOracleElementAsync(page, oracleRef);
+            var evalResult = await Oracle.Oracle.EvaluateLocatorAsync(
+                page, locatorType, locatorValue, oracleEl,
+                rawWithAnchors, oracleRef.OracleId, attr => bundleSet.Contains(attr),
+                expectedStableSignal, volatileIds, volatileClasses, signalAttrs);
+
+            return new GroundingRecord(
+                RunId: runId,
+                TaskId: taskId,
+                Page: pagePath,
+                Bundle: bundle,
+                Encoding: encoding,
+                Regime: regime,
+                Model: model,
+                Repetition: repetition,
+                ObservationTokens: observationTokens,
+                PromptTokensTotal: llmResp.PromptTokens,
+                CompletionTokens: llmResp.CompletionTokens,
+                LocatorRaw: llmResp.Content,
+                LocatorType: locatorType,
+                LocatorValue: locatorValue,
+                Success: evalResult.Success,
+                FailureMode: evalResult.FailureMode,
+                PredicateUniqueMatch: evalResult.PredicateUniqueMatch,
+                PredicateMatchesOracle: evalResult.PredicateMatchesOracle,
+                PredicateNonVolatile: evalResult.PredicateNonVolatile,
+                PredicateNonPositional: evalResult.PredicateNonPositional,
+                StableSignalPresentInBundle: evalResult.StableSignalPresentInBundle,
+                ModelIdReturned: llmResp.ModelId,
+                TokenizerVersion: TokenCounter.TokenizerVersion(),
+                SchemaVersion: SchemaVersion,
+                TestbedPage: pagePath,
+                TimestampUtc: timestamp,
+                Seed: seed.Value
+            );
+        }
+        finally
+        {
+            await browser.CloseAsync();
+        }
+    }
 }

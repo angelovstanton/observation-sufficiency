@@ -1,0 +1,26 @@
+{
+  "analysis_plan_commit": {
+    "sha": "d8f1bc9bf81a71c9a80f51ba57eacc96a110ae73",
+    "committed": "2026-10-12T14:32:55+03:00",
+    "clean": true
+  },
+  "cli": "assembly=<repo>\\p1\\results\\revision1\\cc_volatility\\oracle_cli\\bin\\Release\\net10.0\\Shared.Oracle.dll\nclass=Boolean IsVolatileClass(System.String)\nid=Boolean IsVolatileId(System.String)",
+  "sources": {
+    "static_html_pages": 24,
+    "f1_dumps": 24
+  },
+  "values": {
+    "class": 1073,
+    "id": 234
+  },
+  "cli_flagged": {
+    "class": 197,
+    "id": 0
+  },
+  "agreement": {
+    "class": 1073,
+    "id": 234
+  },
+  "disagreements": [],
+  "passed": true
+}

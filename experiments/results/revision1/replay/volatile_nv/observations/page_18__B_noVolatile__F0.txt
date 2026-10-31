@@ -1,0 +1,2667 @@
+<header class="AppHeader_root__n1o2p3">TaskFlow Boards Backlog Reports Settings AS</header>
+<a class="AppHeader_logo__q4r5s6" href="/">TaskFlow</a>
+<nav class="AppHeader_nav__t7u8v9" aria-label="Main navigation">Boards Backlog Reports Settings AS</nav>
+<a class="AppHeader_navLink__w0x1y2" href="/boards">Boards</a>
+<a class="AppHeader_navLink__w0x1y2" href="/backlog">Backlog</a>
+<a class="AppHeader_navLink__w0x1y2" href="/reports">Reports</a>
+<a class="AppHeader_navLink__w0x1y2" href="/settings">Settings</a>
+<div class="AppHeader_avatar__z3a4b5" role="button" tabindex="0" aria-label="User menu">AS</div>
+<div class="BoardToolbar_root__c2d3e4">Project Alpha — Sprint 14 Labels Assignee + New Card</div>
+<span class="BoardToolbar_title__f5g6h7">Project Alpha — Sprint 14</span>
+<div class="BoardToolbar_btnGroup__r7s8t9">Labels Assignee + New Card</div>
+<input class="BoardToolbar_filterInput__l1m2n3" id="board-filter" type="search" name="filter" aria-label="Filter board tasks" placeholder="Search tasks…" />
+<button class="BoardToolbar_iconBtn__u0v1w2" type="button" aria-label="Filter by label">Labels</button>
+<button class="BoardToolbar_iconBtn__u0v1w2" type="button" aria-label="Filter by assignee">Assignee</button>
+<button class="BoardToolbar_newBtn__o4p5q6" type="button" data-testid="new-card-btn" aria-label="Create new task card">+ New Card</button>
+<div class="Board_root__x3y4z5">TO DO 70 Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Jan 15 ⋯ frontend ui Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Jan 31 ⋯ backend perf Chore …</div>
+<div class="KanbanCol_root__l1m2n3">TO DO 70 Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Jan 15 ⋯ frontend ui Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Jan 31 ⋯ backend perf Chore …</div>
+<div class="KanbanCol_header__o4p5q6">TO DO 70</div>
+<span class="KanbanCol_title__r7s8t9">TO DO</span>
+<span class="KanbanCol_count__u0v1w2">70</span>
+<div class="KanbanCol_body__a1b2c3" id="col-todo">Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Jan 15 ⋯ frontend ui Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Jan 31 ⋯ backend perf Chore Low  Refa…</div>
+<div>Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Chore Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Epic Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Design High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>QA Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Docs Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Bug Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Feature High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Chore Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Epic Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Design Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>QA High  Update API documentation  Split the monolithic auth module into composable middlewares.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Docs Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Bug Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Feature Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Chore High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Epic Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Design Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>QA Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Docs High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Bug Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Feature Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Chore Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Epic High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Design Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>QA Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Docs Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Bug High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Feature Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Chore Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Epic Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Design High  Update API documentation  Split the monolithic auth module into composable middlewares.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>QA Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Docs Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Bug Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Feature High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Chore Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Epic Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Design Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>QA High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Docs Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Bug Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Feature Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Chore High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Epic Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Design Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>QA Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Docs High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Bug Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Feature Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Chore Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Epic High  Update API documentation  Split the monolithic auth module into composable middlewares.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Design Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>QA Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Docs Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Bug High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Feature Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Chore Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Epic Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Design High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>QA Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Docs Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Bug Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Feature High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Chore Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Epic Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Design Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>QA High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Docs Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div class="KanbanCol_root__l1m2n3">IN PROGRESS 70 Bug Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Apr 15 ⋯ mobile backend Feature Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Apr 30 ⋯ infra…</div>
+<div class="KanbanCol_header__o4p5q6">IN PROGRESS 70</div>
+<span class="KanbanCol_title__r7s8t9">IN PROGRESS</span>
+<span class="KanbanCol_count__u0v1w2">70</span>
+<div class="KanbanCol_body__a1b2c3" id="col-inprogress">Bug Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Apr 15 ⋯ mobile backend Feature Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Apr 30 ⋯ infra api Chore High…</div>
+<div>Bug Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Feature Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Chore High  Update API documentation  Split the monolithic auth module into composable middlewares.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Epic Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Design Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>QA Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Docs High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Bug Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Feature Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Chore Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Epic High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Design Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>QA Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Docs Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Bug High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Feature Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Chore Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Epic Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Design High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>QA Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Docs Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Bug Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Feature High  Update API documentation  Split the monolithic auth module into composable middlewares.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Chore Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Epic Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Design Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>QA High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Docs Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Bug Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Feature Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Chore High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Epic Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Design Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>QA Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Docs High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Bug Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Feature Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Chore Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Epic High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Design Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>QA Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Docs Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Bug High  Update API documentation  Split the monolithic auth module into composable middlewares.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Feature Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Chore Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Epic Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Design High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>QA Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Docs Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Bug Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Feature High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Chore Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Epic Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Design Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>QA High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Docs Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Bug Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Feature Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Chore High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Epic Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Design Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>QA Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Docs High  Update API documentation  Split the monolithic auth module into composable middlewares.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Bug Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Feature Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Chore Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Epic High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Design Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>QA Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Docs Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div class="KanbanCol_root__l1m2n3">DONE 60 Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Mar 10 ⋯ perf infra Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  david.lee Mar 31 ⋯ security frontend Cho…</div>
+<div class="KanbanCol_header__o4p5q6">DONE 60</div>
+<span class="KanbanCol_title__r7s8t9">DONE</span>
+<span class="KanbanCol_count__u0v1w2">60</span>
+<div class="KanbanCol_body__a1b2c3" id="col-done">Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Mar 10 ⋯ perf infra Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  david.lee Mar 31 ⋯ security frontend Chore Low  …</div>
+<div>Bug High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Feature Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Chore Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Epic Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Design High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>QA Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Docs Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Bug Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Feature High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Chore Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Epic Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Design Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>QA High  Update API documentation  Split the monolithic auth module into composable middlewares.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Docs Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Bug Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Feature Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Chore High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Epic Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Design Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>QA Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Docs High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Bug Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Feature Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Chore Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Epic High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Design Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>QA Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Docs Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Bug High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Feature Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Chore Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Epic Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Design High  Update API documentation  Split the monolithic auth module into composable middlewares.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Design High</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>QA Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">QA Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Docs Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Bug Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Bug Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Feature High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  carol.white Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Feature High</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Chore Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  david.lee Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Chore Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Epic Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  emma.brown Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Epic Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Design Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  frank.chen Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Design Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>QA High  Fix login redirect loop  Users are being redirected to an old URL after login. Affects all browsers.  alice.smith Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">QA High</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Fix login redirect loop</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Docs Medium  Add OAuth2 support  Implement secure token flow and refresh handling for third-party auth.  bob.jones Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Docs Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Add OAuth2 support</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Bug Low  Refactor auth middleware  Split the monolithic auth module into composable middlewares.  carol.white Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Refactor auth middleware</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Feature Critical  Update node dependencies  Run npm audit and update packages to address security advisories.  david.lee Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Feature Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Update node dependencies</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Chore High  Write unit tests for API  Cover edge cases for pagination, filtering and sorting endpoints.  emma.brown Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Chore High</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Write unit tests for API</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Epic Medium  Design new onboarding flow  Design screens for the 3-step new user onboarding experience.  frank.chen Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Epic Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Design new onboarding flow</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>Design Low  Implement dark mode  Add system and per-user dark mode toggle with persistent preference.  alice.smith Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">Design Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Implement dark mode</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>QA Critical  Optimise database queries  Identified N+1 queries in the dashboard endpoint. Add eager loading.  bob.jones Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">QA Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Optimise database queries</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Docs High  Set up CI/CD pipeline  Automate build, test and deploy steps using GitHub Actions.  carol.white Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Docs High</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Set up CI/CD pipeline</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Bug Medium  Fix mobile navigation bug  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  david.lee Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Bug Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Fix mobile navigation bug</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Feature Low  Add export to CSV feature  Users are being redirected to an old URL after login. Affects all browsers.  emma.brown Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add export to CSV feature</p>
+<p class="KanbanCard_desc__p6q7r8">Users are being redirected to an old URL after login. Affects all browsers.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Chore Critical  Review pull requests  Implement secure token flow and refresh handling for third-party auth.  frank.chen Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Chore Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Review pull requests</p>
+<p class="KanbanCard_desc__p6q7r8">Implement secure token flow and refresh handling for third-party auth.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div>Epic High  Update API documentation  Split the monolithic auth module into composable middlewares.  alice.smith Jan 15 ⋯ frontend ui</div>
+<div class="KanbanCard_header__d4e5f6">Epic High</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Update API documentation</p>
+<p class="KanbanCard_desc__p6q7r8">Split the monolithic auth module into composable middlewares.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Jan 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Jan 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">frontend ui</div>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<div>Design Medium  Migrate to PostgreSQL  Run npm audit and update packages to address security advisories.  bob.jones Jan 31 ⋯ backend perf</div>
+<div class="KanbanCard_header__d4e5f6">Design Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Design</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Migrate to PostgreSQL</p>
+<p class="KanbanCard_desc__p6q7r8">Run npm audit and update packages to address security advisories.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Jan 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Jan 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">backend perf</div>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<div>QA Low  Add multi-language support  Cover edge cases for pagination, filtering and sorting endpoints.  carol.white Feb 14 ⋯ api security</div>
+<div class="KanbanCard_header__d4e5f6">QA Low</div>
+<span class="KanbanLabel_chip__g7h8i9">QA</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">Add multi-language support</p>
+<p class="KanbanCard_desc__p6q7r8">Cover edge cases for pagination, filtering and sorting endpoints.</p>
+<div class="KanbanCard_footer__s9t0u1">carol.white Feb 14 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">carol.white</span>
+<time class="KanbanCard_due__y5z6a7">Feb 14</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">api security</div>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<div>Docs Critical  Performance profiling sprint  Design screens for the 3-step new user onboarding experience.  david.lee Feb 28 ⋯ ui mobile</div>
+<div class="KanbanCard_header__d4e5f6">Docs Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Docs</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Performance profiling sprint</p>
+<p class="KanbanCard_desc__p6q7r8">Design screens for the 3-step new user onboarding experience.</p>
+<div class="KanbanCard_footer__s9t0u1">david.lee Feb 28 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">david.lee</span>
+<time class="KanbanCard_due__y5z6a7">Feb 28</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">ui mobile</div>
+<span class="KanbanCard_tag__e1f2g3">ui</span>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<div>Bug High  Security audit Q1  Add system and per-user dark mode toggle with persistent preference.  emma.brown Mar 10 ⋯ perf infra</div>
+<div class="KanbanCard_header__d4e5f6">Bug High</div>
+<span class="KanbanLabel_chip__g7h8i9">Bug</span>
+<span class="high">High</span>
+<p class="KanbanCard_title__m3n4o5">Security audit Q1</p>
+<p class="KanbanCard_desc__p6q7r8">Add system and per-user dark mode toggle with persistent preference.</p>
+<div class="KanbanCard_footer__s9t0u1">emma.brown Mar 10 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">emma.brown</span>
+<time class="KanbanCard_due__y5z6a7">Mar 10</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">perf infra</div>
+<span class="KanbanCard_tag__e1f2g3">perf</span>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<div>Feature Medium  Release v2.4.0  Identified N+1 queries in the dashboard endpoint. Add eager loading.  frank.chen Mar 31 ⋯ security frontend</div>
+<div class="KanbanCard_header__d4e5f6">Feature Medium</div>
+<span class="KanbanLabel_chip__g7h8i9">Feature</span>
+<span class="medium">Medium</span>
+<p class="KanbanCard_title__m3n4o5">Release v2.4.0</p>
+<p class="KanbanCard_desc__p6q7r8">Identified N+1 queries in the dashboard endpoint. Add eager loading.</p>
+<div class="KanbanCard_footer__s9t0u1">frank.chen Mar 31 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">frank.chen</span>
+<time class="KanbanCard_due__y5z6a7">Mar 31</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">security frontend</div>
+<span class="KanbanCard_tag__e1f2g3">security</span>
+<span class="KanbanCard_tag__e1f2g3">frontend</span>
+<div>Chore Low  User research interviews  Automate build, test and deploy steps using GitHub Actions.  alice.smith Apr 15 ⋯ mobile backend</div>
+<div class="KanbanCard_header__d4e5f6">Chore Low</div>
+<span class="KanbanLabel_chip__g7h8i9">Chore</span>
+<span class="low">Low</span>
+<p class="KanbanCard_title__m3n4o5">User research interviews</p>
+<p class="KanbanCard_desc__p6q7r8">Automate build, test and deploy steps using GitHub Actions.</p>
+<div class="KanbanCard_footer__s9t0u1">alice.smith Apr 15 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">alice.smith</span>
+<time class="KanbanCard_due__y5z6a7">Apr 15</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">mobile backend</div>
+<span class="KanbanCard_tag__e1f2g3">mobile</span>
+<span class="KanbanCard_tag__e1f2g3">backend</span>
+<div>Epic Critical  Accessibility review  Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.  bob.jones Apr 30 ⋯ infra api</div>
+<div class="KanbanCard_header__d4e5f6">Epic Critical</div>
+<span class="KanbanLabel_chip__g7h8i9">Epic</span>
+<span class="critical">Critical</span>
+<p class="KanbanCard_title__m3n4o5">Accessibility review</p>
+<p class="KanbanCard_desc__p6q7r8">Hamburger menu closes unexpectedly on iOS Safari. Repro rate 80%.</p>
+<div class="KanbanCard_footer__s9t0u1">bob.jones Apr 30 ⋯</div>
+<span class="KanbanCard_assignee__v2w3x4">bob.jones</span>
+<time class="KanbanCard_due__y5z6a7">Apr 30</time>
+<button type="button" aria-hidden="true">⋯</button>
+<div class="KanbanCard_tags__b8c9d0">infra api</div>
+<span class="KanbanCard_tag__e1f2g3">infra</span>
+<span class="KanbanCard_tag__e1f2g3">api</span>
+<div data-shadow="true" class="KanbanPanel_root__k7l8m9">BOARD CONTROLS 200 + Quick add to In Progress SORT CARDS By Priority By Due Date By Assignee By Created  QUICK EDIT</div>
+<div data-shadow="true" class="KanbanPanel_ctrl__t6u7v8">BOARD CONTROLS 200 + Quick add to In Progress SORT CARDS By Priority By Due Date By Assignee By Created</div>
+<div data-shadow="true" class="KanbanPanel_head__n0o1p2">BOARD CONTROLS 200</div>
+<span data-shadow="true" class="KanbanPanel_title__q3r4s5">BOARD CONTROLS</span>
+<span data-shadow="true">200</span>
+<button data-shadow="true" class="KanbanPanel_addBtn__w9x0y1" type="button" aria-label="Quick-add card to In Progress">+ Quick add to In Progress</button>
+<span data-shadow="true" class="KanbanPanel_sortLbl__a4b5c6">SORT CARDS</span>
+<select data-shadow="true" class="KanbanPanel_sortSel__d7e8f9" aria-label="Sort cards by" name="sort_by">By Priority By Due Date By Assignee By Created</select>
+<option data-shadow="true" value="priority">By Priority</option>
+<option data-shadow="true" value="due">By Due Date</option>
+<option data-shadow="true" value="assignee">By Assignee</option>
+<option data-shadow="true" value="created">By Created</option>
+<div data-shadow="true" class="KanbanPanel_editSection__c5d6e7">QUICK EDIT</div>
+<p data-shadow="true" class="KanbanPanel_editHead__g0h1i2">QUICK EDIT</p>
+<div data-shadow="true" class="EditPanel_root__m4n5o6">Edit Card  Title Assignee Unassigned alice.smith bob.jones carol.white david.lee emma.brown frank.chen Due date Cancel Save changes</div>
+<p data-shadow="true" class="EditPanel_title__p7q8r9">Edit Card</p>
+<div data-shadow="true" class="EditPanel_field__s0t1u2">Title</div>
+<label data-shadow="true" class="EditPanel_lbl__v3w4x5" for="card-title">Title</label>
+<input data-shadow="true" class="EditPanel_inp__y6z7a8" id="card-title" name="title" type="text" value="Fix login redirect" />
+<div data-shadow="true" class="EditPanel_field__s0t1u2">Assignee Unassigned alice.smith bob.jones carol.white david.lee emma.brown frank.chen</div>
+<span data-shadow="true" class="EditPanel_lbl__v3w4x5">Assignee</span>
+<select data-shadow="true" class="EditPanel_sel__b9c0d1" id="card-assignee" aria-label="Assign to team member" name="assignee">Unassigned alice.smith bob.jones carol.white david.lee emma.brown frank.chen</select>
+<option data-shadow="true">Unassigned</option>
+<option data-shadow="true" value="alice.smith">alice.smith</option>
+<option data-shadow="true" value="bob.jones">bob.jones</option>
+<option data-shadow="true" value="carol.white">carol.white</option>
+<option data-shadow="true" value="david.lee">david.lee</option>
+<option data-shadow="true" value="emma.brown">emma.brown</option>
+<option data-shadow="true" value="frank.chen">frank.chen</option>
+<div data-shadow="true" class="EditPanel_field__s0t1u2">Due date</div>
+<span data-shadow="true" class="EditPanel_lbl__v3w4x5">Due date</span>
+<input data-shadow="true" class="EditPanel_inp__y6z7a8" type="date" placeholder="YYYY-MM-DD" />
+<div data-shadow="true" class="EditPanel_actions__e2f3g4">Cancel Save changes</div>
+<button data-shadow="true" class="EditPanel_cancelBtn__h5i6j7" type="button">Cancel</button>
+<button data-shadow="true" class="EditPanel_saveBtn__k8l9m0" type="button" aria-label="Save card changes" data-testid="save-card-btn">Save changes</button>
+<footer class="AppFooter_root__c3d4e5">© 2026 TaskFlow Inc.</footer>

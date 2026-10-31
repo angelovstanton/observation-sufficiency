@@ -1,0 +1,156 @@
+<header>VideoNest 🔍 + Create Sign in</header>
+<div>VideoNest 🔍 + Create Sign in</div>
+<a href="/" class="Header_logo__f7g8h9">VideoNest</a>
+<div>🔍</div>
+<input type="text" placeholder="Search" aria-label="Search videos" />
+<button class="SearchBar_btn__o6p7q8" aria-label="Submit search">🔍</button>
+<div>+ Create Sign in</div>
+<button>+ Create</button>
+<button>Sign in</button>
+<div class="PageLayout_main__a8b9c0">Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…</div>
+<div>Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…</div>
+<div data-shadow="true">▶ 14:32 Chapter 3 — Deployment</div>
+<div data-shadow="true">▶ 14:32 Chapter 3 — Deployment</div>
+<span data-shadow="true">▶</span>
+<div data-shadow="true" aria-label="Video duration: 14:32">14:32</div>
+<div data-shadow="true">Chapter 3 — Deployment</div>
+<div data-shadow="true" role="toolbar" aria-label="Video controls">▶ 🔈 HD CC</div>
+<button data-shadow="true" aria-label="Play video">▶</button>
+<input data-shadow="true" type="range" aria-label="Seek video" data-testid="seek-bar" value="22" />
+<button data-shadow="true" aria-label="Mute audio">🔈</button>
+<button data-shadow="true">HD</button>
+<button data-shadow="true" aria-label="Toggle captions" data-testid="caption-toggle">CC</button>
+<div>Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe</div>
+<h1>Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes</h1>
+<div>1,421,094 views 3 months ago #DevOps #CICD</div>
+<span>1,421,094 views</span>
+<span class="VideoMeta_date__s6t7u8">3 months ago</span>
+<div>👍 12K 👎 → Share + Save ⋯</div>
+<button data-testid="like-btn" type="button">👍 12K</button>
+<button type="button">👎</button>
+<button type="button">→ Share</button>
+<button type="button">+ Save</button>
+<button type="button">⋯</button>
+<div>D DevOps Academy 248K subscribers Subscribe</div>
+<div>D</div>
+<div>DevOps Academy 248K subscribers</div>
+<a href="#channel" class="ChannelInfo_name__q0r1s2">DevOps Academy</a>
+<span class="ChannelInfo_subs__t3u4v5">248K subscribers</span>
+<button data-testid="subscribe-btn" aria-label="Subscribe to VideoNest" type="button">Subscribe</button>
+<div class="Description_box__w6x7y8">1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, an…</div>
+<div>1,421,094 views Jun 8, 2024</div>
+<p class="Description_text__z9a0b1">In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, and observability with Promethe…</p>
+<div class="Description_tags__d5e6f7">#DevOps #CICD #Kubernetes #GitHubActions #Docker</div>
+<a href="#" class="Description_tag__g8h9i0">#DevOps</a>
+<a href="#" class="Description_tag__g8h9i0">#CICD</a>
+<a href="#" class="Description_tag__g8h9i0">#Kubernetes</a>
+<a href="#" class="Description_tag__g8h9i0">#GitHubActions</a>
+<a href="#" class="Description_tag__g8h9i0">#Docker</a>
+<button type="button">Show more</button>
+<div>847 Comments ☰ Sort by A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply C cloudCarla 1 month ago …</div>
+<h3>847 Comments</h3>
+<div>☰ Sort by</div>
+<span>☰</span>
+<button type="button">Sort by</button>
+<div class="CommentCard_root__r7s8t9">A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply</div>
+<div>A</div>
+<div class="CommentCard_body__x3y4z5">alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply</div>
+<span>alicedev</span>
+<span class="CommentCard_date__b9c0d1">2 months ago</span>
+<p class="CommentCard_text__d9e0f1">This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.</p>
+<div>👍 234 Reply</div>
+<button type="button">👍 234</button>
+<button type="button">Reply</button>
+<div class="CommentCard_root__r7s8t9">B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply</div>
+<div>B</div>
+<div class="CommentCard_body__x3y4z5">backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply</div>
+<span>backend_bob</span>
+<span class="CommentCard_date__b9c0d1">2 months ago</span>
+<p class="CommentCard_text__d9e0f1">Any chance you could do a part 2 covering ArgoCD and GitOps workflows?</p>
+<div>👍 89 Reply</div>
+<button type="button">👍 89</button>
+<button type="button">Reply</button>
+<div class="CommentCard_root__r7s8t9">C cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply</div>
+<div>C</div>
+<div class="CommentCard_body__x3y4z5">cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply</div>
+<span>cloudCarla</span>
+<span class="CommentCard_date__b9c0d1">1 month ago</span>
+<p class="CommentCard_text__d9e0f1">The secrets management walkthrough was incredibly clear. Subscribed immediately!</p>
+<div>👍 45 Reply</div>
+<button type="button">👍 45</button>
+<button type="button">Reply</button>
+<div class="CommentCard_root__r7s8t9">D devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply</div>
+<div>D</div>
+<div class="CommentCard_body__x3y4z5">devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply</div>
+<span>devdan42</span>
+<span class="CommentCard_date__b9c0d1">3 weeks ago</span>
+<p class="CommentCard_text__d9e0f1">Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.</p>
+<div>👍 31 Reply</div>
+<button type="button">👍 31</button>
+<button type="button">Reply</button>
+<aside>Up next ▶ Advanced Kubernetes Networking — Services, Ingress &amp; CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets &amp; OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…</aside>
+<div>Up next ▶ Advanced Kubernetes Networking — Services, Ingress &amp; CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets &amp; OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…</div>
+<h4>Up next</h4>
+<div>▶ Advanced Kubernetes Networking — Services, Ingress &amp; CNI DevOps Academy 890K views · 1 week ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Advanced Kubernetes Networking — Services, Ingress &amp; CNI DevOps Academy 890K views · 1 week ago</div>
+<span>Advanced Kubernetes Networking — Services, Ingress &amp; CNI</span>
+<span>DevOps Academy</span>
+<span class="SidePanel_meta__k2l3m4">890K views · 1 week ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Docker Compose for Local Development Container Crew 342K views · 4 months ago</div>
+<span>Docker Compose for Local Development</span>
+<span>Container Crew</span>
+<span class="SidePanel_meta__k2l3m4">342K views · 4 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ GitHub Actions Secrets &amp; OIDC Deep Dive DevOps Academy 156K views · 5 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">GitHub Actions Secrets &amp; OIDC Deep Dive DevOps Academy 156K views · 5 months ago</div>
+<span>GitHub Actions Secrets &amp; OIDC Deep Dive</span>
+<span>DevOps Academy</span>
+<span class="SidePanel_meta__k2l3m4">156K views · 5 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago</div>
+<span>Zero-Downtime Deployments Explained</span>
+<span>Cloud Native Labs</span>
+<span class="SidePanel_meta__k2l3m4">78K views · 6 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago</div>
+<span>Terraform for Beginners — IaC Fundamentals</span>
+<span>Infra Ninja</span>
+<span class="SidePanel_meta__k2l3m4">512K views · 2 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago</div>
+<span>Monitoring with Prometheus and Grafana</span>
+<span>SRE Mastery</span>
+<span class="SidePanel_meta__k2l3m4">234K views · 3 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago</div>
+<span>Service Mesh with Istio — Complete Guide</span>
+<span>Cloud Native Labs</span>
+<span class="SidePanel_meta__k2l3m4">189K views · 2 months ago</span>
+<div class="SidePanel_card__n5o6p7">▶ Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago</div>
+<div>▶</div>
+<div class="SidePanel_info__b3c4d5">Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago</div>
+<span>Helm Charts — Package Your Kubernetes Apps</span>
+<span>DevOps Academy</span>
+<span class="SidePanel_meta__k2l3m4">445K views · 7 months ago</span>
+<footer>About Press Copyright Contact us Creators Advertise Developers Privacy Policy &amp; Safety How VideoNest works Test new features  © 2024 VideoNest LLC</footer>
+<div>About Press Copyright Contact us Creators Advertise Developers Privacy Policy &amp; Safety How VideoNest works Test new features  © 2024 VideoNest LLC</div>
+<div>About Press Copyright Contact us Creators Advertise Developers Privacy Policy &amp; Safety How VideoNest works Test new features</div>
+<a href="#">About</a>
+<a href="#">Press</a>
+<a href="#">Copyright</a>
+<a href="#">Contact us</a>
+<a href="#">Creators</a>
+<a href="#">Advertise</a>
+<a href="#">Developers</a>
+<a href="#">Privacy</a>
+<a href="#">Policy &amp; Safety</a>
+<a href="#">How VideoNest works</a>
+<a href="#">Test new features</a>
+<p class="Footer_copy__z3a4b5">© 2024 VideoNest LLC</p>

@@ -1,0 +1,154 @@
+header {✈ SkyRoute Flights Hotels Car hire Holidays Manage booking Sign in}
+a href=/ class=logo {✈ SkyRoute}
+nav aria-label="Main navigation" {Flights Hotels Car hire Holidays Manage booking Sign in}
+a href=/flights {Flights}
+a href=/hotels {Hotels}
+a href=/cars {Car hire}
+a href=/holidays {Holidays}
+a href=/manage {Manage booking}
+a href=/sign-in {Sign in}
+div class=hero {Search Flights  Compare hundreds of airlines and find the best fares for your journey}
+h1 {Search Flights}
+p {Compare hundreds of airlines and find the best fares for your journey}
+div class=search-card {Return One-way Multi-city From To Departure Return Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults Cabin class Economy Premium Economy Business First Class Search flights ⚙ Filters}
+div class=trip-tabs {Return One-way Multi-city}
+button class="trip-tab active" type=button {Return}
+button class=trip-tab type=button {One-way}
+button class=trip-tab type=button {Multi-city}
+div class=form-row {From To}
+div class=form-group {From}
+label class=lbl for=origin-airport {From}
+input id=origin-airport data-testid=origin-input aria-label="Departure city or airport" class=inp type=text name=origin placeholder="City or airport"
+div class=form-group {To}
+label class=lbl for=destination-airport {To}
+input id=destination-airport aria-label="Destination city or airport" class=inp type=text name=destination placeholder="City or airport"
+div class=form-row {Departure Return}
+div class=form-group {Departure}
+label class=lbl for=departure-date {Departure}
+input id=departure-date data-testid=departure-date aria-label="Departure date" class=inp type=date name=departure_date
+div class=form-group {Return}
+label class=lbl for=return-date {Return}
+input id=return-date aria-label="Return date" class=inp type=date name=return_date
+div class=form-row {Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults Cabin class Economy Premium Economy Business First Class}
+div class=form-group {Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults}
+label class=lbl for=adult-passengers {Adults}
+select id=adult-passengers name=adults aria-label="Number of adult passengers" class=sel {1 adult 2 adults 3 adults 4 adults 5 adults 6 adults}
+option value=1 {1 adult}
+option value=2 {2 adults}
+option value=3 {3 adults}
+option value=4 {4 adults}
+option value=5 {5 adults}
+option value=6 {6 adults}
+div class=form-group {Cabin class Economy Premium Economy Business First Class}
+label class=lbl for=cabin-class {Cabin class}
+select id=cabin-class name=cabin_class aria-label="Select cabin class" class=sel {Economy Premium Economy Business First Class}
+option value=economy {Economy}
+option value=premium {Premium Economy}
+option value=business {Business}
+option value=first {First Class}
+div class=search-row {Search flights ⚙ Filters}
+button type=button data-testid=search-flights-btn aria-label="Search available flights" class=btn-search {Search flights}
+div class=btn-filter aria-label="Filter options" {⚙ Filters}
+span {⚙}
+div class=results-bar {Showing 47 flights — London (LHR) → Paris (CDG), 15 Mar Sort by: Best Cheapest Fastest}
+span class=results-count {Showing 47 flights — London (LHR) → Paris (CDG), 15 Mar}
+div class=sort-bar {Sort by: Best Cheapest Fastest}
+span class=sort-label {Sort by:}
+button class="sort-btn active" type=button {Best}
+button class=sort-btn type=button {Cheapest}
+button class=sort-btn type=button {Fastest}
+div class=flights {Filters: Non-stop only Morning departure Hand luggage only LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest £89 per person Select LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard £112 per person Select LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 1…}
+div {Filters: Non-stop only Morning departure Hand luggage only}
+span {Filters:}
+label {Non-stop only}
+input type=checkbox data-testid=nonstop-filter aria-label="Non-stop flights only"
+label {Morning departure}
+input type=checkbox
+label {Hand luggage only}
+input type=checkbox
+div class=flight-card {LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest £89 per person Select}
+div class=flight-info {LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest}
+div {LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204}
+div class=route {LHR → CDG}
+div class=time {07:30 — 09:35}
+div class=airline {SkyRoute direct • SR 204}
+div class=duration {2h 05m Non-stop}
+div {2h 05m}
+div class=stops {Non-stop}
+div class=flight-tags {Cheapest Fastest}
+span class="tag tag-green" {Cheapest}
+span class=tag {Fastest}
+div class=price-col {£89 per person Select}
+div class=price {£89}
+div class=per-person {per person}
+button type=button aria-label="Select flight LHR→CDG 07:30–09:35, 2h 05m, £89" class=btn-select {Select}
+div class=flight-card {LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard £112 per person Select}
+div class=flight-info {LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard}
+div {LHR → CDG 10:15 — 12:20 EuroAir • EA 712}
+div class=route {LHR → CDG}
+div class=time {10:15 — 12:20}
+div class=airline {EuroAir • EA 712}
+div class=duration {2h 05m Non-stop}
+div {2h 05m}
+div class=stops {Non-stop}
+div class=flight-tags {Standard}
+span class=tag {Standard}
+div class=price-col {£112 per person Select}
+div class=price {£112}
+div class=per-person {per person}
+button type=button class=btn-select {Select}
+div class=flight-card {LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 10m Non-stop £97 per person Select}
+div class=flight-info {LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 10m Non-stop}
+div {LHR → CDG 14:45 — 16:55 AirConnect • AC 889}
+div class=route {LHR → CDG}
+div class=time {14:45 — 16:55}
+div class=airline {AirConnect • AC 889}
+div class=duration {2h 10m Non-stop}
+div {2h 10m}
+div class=stops {Non-stop}
+div class=price-col {£97 per person Select}
+div class=price {£97}
+div class=per-person {per person}
+button type=button class=btn-select {Select}
+div class=flight-card {LHR → CDG 18:00 — 20:10 SkyRoute • SR 210 2h 10m Non-stop £103 per person Select}
+div class=flight-info {LHR → CDG 18:00 — 20:10 SkyRoute • SR 210 2h 10m Non-stop}
+div {LHR → CDG 18:00 — 20:10 SkyRoute • SR 210}
+div class=route {LHR → CDG}
+div class=time {18:00 — 20:10}
+div class=airline {SkyRoute • SR 210}
+div class=duration {2h 10m Non-stop}
+div {2h 10m}
+div class=stops {Non-stop}
+div class=price-col {£103 per person Select}
+div class=price {£103}
+div class=per-person {per person}
+button type=button class=btn-select {Select}
+footer {Explore Destinations Flight deals Travel guides Help FAQ Contact us Accessibility Legal Privacy policy Cookie policy Terms of use}
+div class=footer-inner {Explore Destinations Flight deals Travel guides Help FAQ Contact us Accessibility Legal Privacy policy Cookie policy Terms of use}
+div class=footer-col {Explore Destinations Flight deals Travel guides}
+h4 {Explore}
+ul {Destinations Flight deals Travel guides}
+li {Destinations}
+a href=/destinations {Destinations}
+li {Flight deals}
+a href=/deals {Flight deals}
+li {Travel guides}
+a href=/travel-guide {Travel guides}
+div class=footer-col {Help FAQ Contact us Accessibility}
+h4 {Help}
+ul {FAQ Contact us Accessibility}
+li {FAQ}
+a href=/faq {FAQ}
+li {Contact us}
+a href=/contact {Contact us}
+li {Accessibility}
+a href=/accessibility {Accessibility}
+div class=footer-col {Legal Privacy policy Cookie policy Terms of use}
+h4 {Legal}
+ul {Privacy policy Cookie policy Terms of use}
+li {Privacy policy}
+a href=/privacy {Privacy policy}
+li {Cookie policy}
+a href=/cookies {Cookie policy}
+li {Terms of use}
+a href=/terms {Terms of use}

@@ -1,0 +1,501 @@
+body {MyAccount alex.johnson@example.com ACCOUNT ⚙ Settings 🔔 Notifications 🔒 Security 💳 Billing 📋 Activity 🤝 Integrations Account Settings Profile Information Display name Email address Phone number Save profile Change Password Notification Preferences Email notifications Receive emails for account …}
+header {MyAccount alex.johnson@example.com}
+div class=Header_logo__a1b2c3 {MyAccount}
+div class=Header_user__d4e5f6 {alex.johnson@example.com}
+div class=AppLayout_root__g7h8i9 {ACCOUNT ⚙ Settings 🔔 Notifications 🔒 Security 💳 Billing 📋 Activity 🤝 Integrations Account Settings Profile Information Display name Email address Phone number Save profile Change Password Notification Preferences Email notifications Receive emails for account activity On Push notifications Mobi…}
+aside {ACCOUNT ⚙ Settings 🔔 Notifications 🔒 Security 💳 Billing 📋 Activity 🤝 Integrations}
+div {ACCOUNT}
+div class="SideNav_item__m3n4o5 active" {⚙ Settings}
+span class=SideNav_icon__p6q7r8 {⚙}
+span {Settings}
+div class=SideNav_item__m3n4o5 {🔔 Notifications}
+span class=SideNav_icon__p6q7r8 {🔔}
+span {Notifications}
+div class=SideNav_item__m3n4o5 {🔒 Security}
+span class=SideNav_icon__p6q7r8 {🔒}
+span {Security}
+div class=SideNav_item__m3n4o5 {💳 Billing}
+span class=SideNav_icon__p6q7r8 {💳}
+span {Billing}
+div class=SideNav_item__m3n4o5 {📋 Activity}
+span class=SideNav_icon__p6q7r8 {📋}
+span {Activity}
+div class=SideNav_item__m3n4o5 {🤝 Integrations}
+span class=SideNav_icon__p6q7r8 {🤝}
+span {Integrations}
+main {Account Settings Profile Information Display name Email address Phone number Save profile Change Password Notification Preferences Email notifications Receive emails for account activity On Push notifications Mobile push alerts for real-time updates On SMS alerts Text messages for urgent notificatio…}
+h1 class=PageTitle__s9t0u1 {Account Settings}
+div class=Section_root__v2w3x4 {Profile Information Display name Email address Phone number Save profile Change Password}
+div {Profile Information}
+div {Display name}
+label for=display-name {Display name}
+input id=display-name name=display_name type=text placeholder="Your display name"
+div {Email address}
+label for=profile-email {Email address}
+input id=profile-email name=email type=email value=alex.johnson@example.com
+div {Phone number}
+label for=profile-phone {Phone number}
+input id=profile-phone name=phone type=tel placeholder="+1 (555) 000-0000"
+div {Save profile Change Password}
+button class=AccountSection_btn__h4i5j6 {Save profile}
+button aria-label="Change account password" {Change Password}
+div class=Section_root__v2w3x4 {Notification Preferences Email notifications Receive emails for account activity On Push notifications Mobile push alerts for real-time updates On SMS alerts Text messages for urgent notifications Off Browser notifications Browser-level desktop notifications On Weekly digest A curated weekly summary…}
+div {Notification Preferences}
+span {Notification Preferences}
+div id=notification-rows-container {Email notifications Receive emails for account activity On Push notifications Mobile push alerts for real-time updates On SMS alerts Text messages for urgent notifications Off Browser notifications Browser-level desktop notifications On Weekly digest A curated weekly summary of your activity On Mont…}
+div class=SettingRow_root__c1d2e3 {Email notifications Receive emails for account activity On}
+div {Email notifications Receive emails for account activity}
+span class=SettingRow_name__i7j8k9 {Email notifications}
+span class=SettingRow_desc__l0m1n2 {Receive emails for account activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Push notifications Mobile push alerts for real-time updates On}
+div {Push notifications Mobile push alerts for real-time updates}
+span class=SettingRow_name__i7j8k9 {Push notifications}
+span class=SettingRow_desc__l0m1n2 {Mobile push alerts for real-time updates}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {SMS alerts Text messages for urgent notifications Off}
+div {SMS alerts Text messages for urgent notifications}
+span class=SettingRow_name__i7j8k9 {SMS alerts}
+span class=SettingRow_desc__l0m1n2 {Text messages for urgent notifications}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Browser notifications Browser-level desktop notifications On}
+div {Browser notifications Browser-level desktop notifications}
+span class=SettingRow_name__i7j8k9 {Browser notifications}
+span class=SettingRow_desc__l0m1n2 {Browser-level desktop notifications}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Weekly digest A curated weekly summary of your activity On}
+div {Weekly digest A curated weekly summary of your activity}
+span class=SettingRow_name__i7j8k9 {Weekly digest}
+span class=SettingRow_desc__l0m1n2 {A curated weekly summary of your activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Monthly report Monthly analytics and account summary Off}
+div {Monthly report Monthly analytics and account summary}
+span class=SettingRow_name__i7j8k9 {Monthly report}
+span class=SettingRow_desc__l0m1n2 {Monthly analytics and account summary}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Security alerts Immediate alerts for suspicious activity On}
+div {Security alerts Immediate alerts for suspicious activity}
+span class=SettingRow_name__i7j8k9 {Security alerts}
+span class=SettingRow_desc__l0m1n2 {Immediate alerts for suspicious activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Login alerts Notify on new logins from unknown devices On}
+div {Login alerts Notify on new logins from unknown devices}
+span class=SettingRow_name__i7j8k9 {Login alerts}
+span class=SettingRow_desc__l0m1n2 {Notify on new logins from unknown devices}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Order updates Updates when your order status changes Off}
+div {Order updates Updates when your order status changes}
+span class=SettingRow_name__i7j8k9 {Order updates}
+span class=SettingRow_desc__l0m1n2 {Updates when your order status changes}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Shipping notifications Track your shipments in real time On}
+div {Shipping notifications Track your shipments in real time}
+span class=SettingRow_name__i7j8k9 {Shipping notifications}
+span class=SettingRow_desc__l0m1n2 {Track your shipments in real time}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Review reminders Reminders to review recent purchases On}
+div {Review reminders Reminders to review recent purchases}
+span class=SettingRow_name__i7j8k9 {Review reminders}
+span class=SettingRow_desc__l0m1n2 {Reminders to review recent purchases}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Price drop alerts Be notified when item prices drop Off}
+div {Price drop alerts Be notified when item prices drop}
+span class=SettingRow_name__i7j8k9 {Price drop alerts}
+span class=SettingRow_desc__l0m1n2 {Be notified when item prices drop}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Back-in-stock alerts Get notified when out-of-stock items return On}
+div {Back-in-stock alerts Get notified when out-of-stock items return}
+span class=SettingRow_name__i7j8k9 {Back-in-stock alerts}
+span class=SettingRow_desc__l0m1n2 {Get notified when out-of-stock items return}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Wishlist updates Updates from your saved wishlist On}
+div {Wishlist updates Updates from your saved wishlist}
+span class=SettingRow_name__i7j8k9 {Wishlist updates}
+span class=SettingRow_desc__l0m1n2 {Updates from your saved wishlist}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Friend activity Activity from contacts in your network Off}
+div {Friend activity Activity from contacts in your network}
+span class=SettingRow_name__i7j8k9 {Friend activity}
+span class=SettingRow_desc__l0m1n2 {Activity from contacts in your network}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Comment replies Replies to your comments and posts On}
+div {Comment replies Replies to your comments and posts}
+span class=SettingRow_name__i7j8k9 {Comment replies}
+span class=SettingRow_desc__l0m1n2 {Replies to your comments and posts}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Mention alerts Alerts when someone mentions you On}
+div {Mention alerts Alerts when someone mentions you}
+span class=SettingRow_name__i7j8k9 {Mention alerts}
+span class=SettingRow_desc__l0m1n2 {Alerts when someone mentions you}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Like notifications Notifications when your content is liked Off}
+div {Like notifications Notifications when your content is liked}
+span class=SettingRow_name__i7j8k9 {Like notifications}
+span class=SettingRow_desc__l0m1n2 {Notifications when your content is liked}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {New follower alerts Alert when someone starts following you On}
+div {New follower alerts Alert when someone starts following you}
+span class=SettingRow_name__i7j8k9 {New follower alerts}
+span class=SettingRow_desc__l0m1n2 {Alert when someone starts following you}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {System announcements Important platform-wide announcements On}
+div {System announcements Important platform-wide announcements}
+span class=SettingRow_name__i7j8k9 {System announcements}
+span class=SettingRow_desc__l0m1n2 {Important platform-wide announcements}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Email notifications Receive emails for account activity Off}
+div {Email notifications Receive emails for account activity}
+span class=SettingRow_name__i7j8k9 {Email notifications}
+span class=SettingRow_desc__l0m1n2 {Receive emails for account activity}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Push notifications Mobile push alerts for real-time updates On}
+div {Push notifications Mobile push alerts for real-time updates}
+span class=SettingRow_name__i7j8k9 {Push notifications}
+span class=SettingRow_desc__l0m1n2 {Mobile push alerts for real-time updates}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {SMS alerts Text messages for urgent notifications On}
+div {SMS alerts Text messages for urgent notifications}
+span class=SettingRow_name__i7j8k9 {SMS alerts}
+span class=SettingRow_desc__l0m1n2 {Text messages for urgent notifications}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Browser notifications Browser-level desktop notifications Off}
+div {Browser notifications Browser-level desktop notifications}
+span class=SettingRow_name__i7j8k9 {Browser notifications}
+span class=SettingRow_desc__l0m1n2 {Browser-level desktop notifications}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Weekly digest A curated weekly summary of your activity On}
+div {Weekly digest A curated weekly summary of your activity}
+span class=SettingRow_name__i7j8k9 {Weekly digest}
+span class=SettingRow_desc__l0m1n2 {A curated weekly summary of your activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Monthly report Monthly analytics and account summary On}
+div {Monthly report Monthly analytics and account summary}
+span class=SettingRow_name__i7j8k9 {Monthly report}
+span class=SettingRow_desc__l0m1n2 {Monthly analytics and account summary}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Security alerts Immediate alerts for suspicious activity Off}
+div {Security alerts Immediate alerts for suspicious activity}
+span class=SettingRow_name__i7j8k9 {Security alerts}
+span class=SettingRow_desc__l0m1n2 {Immediate alerts for suspicious activity}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Login alerts Notify on new logins from unknown devices On}
+div {Login alerts Notify on new logins from unknown devices}
+span class=SettingRow_name__i7j8k9 {Login alerts}
+span class=SettingRow_desc__l0m1n2 {Notify on new logins from unknown devices}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Order updates Updates when your order status changes On}
+div {Order updates Updates when your order status changes}
+span class=SettingRow_name__i7j8k9 {Order updates}
+span class=SettingRow_desc__l0m1n2 {Updates when your order status changes}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Shipping notifications Track your shipments in real time Off}
+div {Shipping notifications Track your shipments in real time}
+span class=SettingRow_name__i7j8k9 {Shipping notifications}
+span class=SettingRow_desc__l0m1n2 {Track your shipments in real time}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Review reminders Reminders to review recent purchases On}
+div {Review reminders Reminders to review recent purchases}
+span class=SettingRow_name__i7j8k9 {Review reminders}
+span class=SettingRow_desc__l0m1n2 {Reminders to review recent purchases}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Price drop alerts Be notified when item prices drop On}
+div {Price drop alerts Be notified when item prices drop}
+span class=SettingRow_name__i7j8k9 {Price drop alerts}
+span class=SettingRow_desc__l0m1n2 {Be notified when item prices drop}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Back-in-stock alerts Get notified when out-of-stock items return Off}
+div {Back-in-stock alerts Get notified when out-of-stock items return}
+span class=SettingRow_name__i7j8k9 {Back-in-stock alerts}
+span class=SettingRow_desc__l0m1n2 {Get notified when out-of-stock items return}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Wishlist updates Updates from your saved wishlist On}
+div {Wishlist updates Updates from your saved wishlist}
+span class=SettingRow_name__i7j8k9 {Wishlist updates}
+span class=SettingRow_desc__l0m1n2 {Updates from your saved wishlist}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Friend activity Activity from contacts in your network On}
+div {Friend activity Activity from contacts in your network}
+span class=SettingRow_name__i7j8k9 {Friend activity}
+span class=SettingRow_desc__l0m1n2 {Activity from contacts in your network}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Comment replies Replies to your comments and posts Off}
+div {Comment replies Replies to your comments and posts}
+span class=SettingRow_name__i7j8k9 {Comment replies}
+span class=SettingRow_desc__l0m1n2 {Replies to your comments and posts}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Mention alerts Alerts when someone mentions you On}
+div {Mention alerts Alerts when someone mentions you}
+span class=SettingRow_name__i7j8k9 {Mention alerts}
+span class=SettingRow_desc__l0m1n2 {Alerts when someone mentions you}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Like notifications Notifications when your content is liked On}
+div {Like notifications Notifications when your content is liked}
+span class=SettingRow_name__i7j8k9 {Like notifications}
+span class=SettingRow_desc__l0m1n2 {Notifications when your content is liked}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {New follower alerts Alert when someone starts following you Off}
+div {New follower alerts Alert when someone starts following you}
+span class=SettingRow_name__i7j8k9 {New follower alerts}
+span class=SettingRow_desc__l0m1n2 {Alert when someone starts following you}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {System announcements Important platform-wide announcements On}
+div {System announcements Important platform-wide announcements}
+span class=SettingRow_name__i7j8k9 {System announcements}
+span class=SettingRow_desc__l0m1n2 {Important platform-wide announcements}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Email notifications Receive emails for account activity On}
+div {Email notifications Receive emails for account activity}
+span class=SettingRow_name__i7j8k9 {Email notifications}
+span class=SettingRow_desc__l0m1n2 {Receive emails for account activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Push notifications Mobile push alerts for real-time updates Off}
+div {Push notifications Mobile push alerts for real-time updates}
+span class=SettingRow_name__i7j8k9 {Push notifications}
+span class=SettingRow_desc__l0m1n2 {Mobile push alerts for real-time updates}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {SMS alerts Text messages for urgent notifications On}
+div {SMS alerts Text messages for urgent notifications}
+span class=SettingRow_name__i7j8k9 {SMS alerts}
+span class=SettingRow_desc__l0m1n2 {Text messages for urgent notifications}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Browser notifications Browser-level desktop notifications On}
+div {Browser notifications Browser-level desktop notifications}
+span class=SettingRow_name__i7j8k9 {Browser notifications}
+span class=SettingRow_desc__l0m1n2 {Browser-level desktop notifications}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Weekly digest A curated weekly summary of your activity Off}
+div {Weekly digest A curated weekly summary of your activity}
+span class=SettingRow_name__i7j8k9 {Weekly digest}
+span class=SettingRow_desc__l0m1n2 {A curated weekly summary of your activity}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Monthly report Monthly analytics and account summary On}
+div {Monthly report Monthly analytics and account summary}
+span class=SettingRow_name__i7j8k9 {Monthly report}
+span class=SettingRow_desc__l0m1n2 {Monthly analytics and account summary}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Security alerts Immediate alerts for suspicious activity On}
+div {Security alerts Immediate alerts for suspicious activity}
+span class=SettingRow_name__i7j8k9 {Security alerts}
+span class=SettingRow_desc__l0m1n2 {Immediate alerts for suspicious activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Login alerts Notify on new logins from unknown devices Off}
+div {Login alerts Notify on new logins from unknown devices}
+span class=SettingRow_name__i7j8k9 {Login alerts}
+span class=SettingRow_desc__l0m1n2 {Notify on new logins from unknown devices}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Order updates Updates when your order status changes On}
+div {Order updates Updates when your order status changes}
+span class=SettingRow_name__i7j8k9 {Order updates}
+span class=SettingRow_desc__l0m1n2 {Updates when your order status changes}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Shipping notifications Track your shipments in real time On}
+div {Shipping notifications Track your shipments in real time}
+span class=SettingRow_name__i7j8k9 {Shipping notifications}
+span class=SettingRow_desc__l0m1n2 {Track your shipments in real time}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Review reminders Reminders to review recent purchases Off}
+div {Review reminders Reminders to review recent purchases}
+span class=SettingRow_name__i7j8k9 {Review reminders}
+span class=SettingRow_desc__l0m1n2 {Reminders to review recent purchases}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Price drop alerts Be notified when item prices drop On}
+div {Price drop alerts Be notified when item prices drop}
+span class=SettingRow_name__i7j8k9 {Price drop alerts}
+span class=SettingRow_desc__l0m1n2 {Be notified when item prices drop}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Back-in-stock alerts Get notified when out-of-stock items return On}
+div {Back-in-stock alerts Get notified when out-of-stock items return}
+span class=SettingRow_name__i7j8k9 {Back-in-stock alerts}
+span class=SettingRow_desc__l0m1n2 {Get notified when out-of-stock items return}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Wishlist updates Updates from your saved wishlist Off}
+div {Wishlist updates Updates from your saved wishlist}
+span class=SettingRow_name__i7j8k9 {Wishlist updates}
+span class=SettingRow_desc__l0m1n2 {Updates from your saved wishlist}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Friend activity Activity from contacts in your network On}
+div {Friend activity Activity from contacts in your network}
+span class=SettingRow_name__i7j8k9 {Friend activity}
+span class=SettingRow_desc__l0m1n2 {Activity from contacts in your network}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Comment replies Replies to your comments and posts On}
+div {Comment replies Replies to your comments and posts}
+span class=SettingRow_name__i7j8k9 {Comment replies}
+span class=SettingRow_desc__l0m1n2 {Replies to your comments and posts}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Mention alerts Alerts when someone mentions you Off}
+div {Mention alerts Alerts when someone mentions you}
+span class=SettingRow_name__i7j8k9 {Mention alerts}
+span class=SettingRow_desc__l0m1n2 {Alerts when someone mentions you}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Like notifications Notifications when your content is liked On}
+div {Like notifications Notifications when your content is liked}
+span class=SettingRow_name__i7j8k9 {Like notifications}
+span class=SettingRow_desc__l0m1n2 {Notifications when your content is liked}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {New follower alerts Alert when someone starts following you On}
+div {New follower alerts Alert when someone starts following you}
+span class=SettingRow_name__i7j8k9 {New follower alerts}
+span class=SettingRow_desc__l0m1n2 {Alert when someone starts following you}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {System announcements Important platform-wide announcements Off}
+div {System announcements Important platform-wide announcements}
+span class=SettingRow_name__i7j8k9 {System announcements}
+span class=SettingRow_desc__l0m1n2 {Important platform-wide announcements}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Email notifications Receive emails for account activity On}
+div {Email notifications Receive emails for account activity}
+span class=SettingRow_name__i7j8k9 {Email notifications}
+span class=SettingRow_desc__l0m1n2 {Receive emails for account activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Push notifications Mobile push alerts for real-time updates On}
+div {Push notifications Mobile push alerts for real-time updates}
+span class=SettingRow_name__i7j8k9 {Push notifications}
+span class=SettingRow_desc__l0m1n2 {Mobile push alerts for real-time updates}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {SMS alerts Text messages for urgent notifications Off}
+div {SMS alerts Text messages for urgent notifications}
+span class=SettingRow_name__i7j8k9 {SMS alerts}
+span class=SettingRow_desc__l0m1n2 {Text messages for urgent notifications}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Browser notifications Browser-level desktop notifications On}
+div {Browser notifications Browser-level desktop notifications}
+span class=SettingRow_name__i7j8k9 {Browser notifications}
+span class=SettingRow_desc__l0m1n2 {Browser-level desktop notifications}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Weekly digest A curated weekly summary of your activity On}
+div {Weekly digest A curated weekly summary of your activity}
+span class=SettingRow_name__i7j8k9 {Weekly digest}
+span class=SettingRow_desc__l0m1n2 {A curated weekly summary of your activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Monthly report Monthly analytics and account summary Off}
+div {Monthly report Monthly analytics and account summary}
+span class=SettingRow_name__i7j8k9 {Monthly report}
+span class=SettingRow_desc__l0m1n2 {Monthly analytics and account summary}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Security alerts Immediate alerts for suspicious activity On}
+div {Security alerts Immediate alerts for suspicious activity}
+span class=SettingRow_name__i7j8k9 {Security alerts}
+span class=SettingRow_desc__l0m1n2 {Immediate alerts for suspicious activity}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Login alerts Notify on new logins from unknown devices On}
+div {Login alerts Notify on new logins from unknown devices}
+span class=SettingRow_name__i7j8k9 {Login alerts}
+span class=SettingRow_desc__l0m1n2 {Notify on new logins from unknown devices}
+input type=checkbox
+span {On}
+div class=SettingRow_root__c1d2e3 {Order updates Updates when your order status changes Off}
+div {Order updates Updates when your order status changes}
+span class=SettingRow_name__i7j8k9 {Order updates}
+span class=SettingRow_desc__l0m1n2 {Updates when your order status changes}
+input type=checkbox
+span {Off}
+div class=SettingRow_root__c1d2e3 {Shipping notifications Track your shipments in real time On}
+div {Shipping notifications Track your shipments in real time}
+span class=SettingRow_name__i7j8k9 {Shipping notifications}
+span class=SettingRow_desc__l0m1n2 {Track your shipments in real time}
+input type=checkbox
+span {On}
+[S] div class=SettingsPanel_root__b1c2d3 {Privacy & Communications Data sharing Allow anonymised usage data to improve our services Marketing emails Receive promotional offers and feature announcements}
+[S] div {Privacy & Communications}
+[S] div {Data sharing Allow anonymised usage data to improve our services}
+[S] div {Data sharing}
+[S] div {Allow anonymised usage data to improve our services}
+[S] input type=checkbox aria-label="Toggle data sharing"
+[S] div {Marketing emails Receive promotional offers and feature announcements}
+[S] div {Marketing emails}
+[S] div {Receive promotional offers and feature announcements}
+[S] input type=checkbox aria-label="Toggle marketing emails"
+[S] div class=PrefPanel_root__n0o1p2 {Display Preferences Display language English Español Français Deutsch 日本語 Português Time zone UTC (Coordinated Universal Time) EST (Eastern Standard Time) CST (Central Standard Time) PST (Pacific Standard Time) CET (Central European Time) JST (Japan Standard Time) Subscribe to product newsletter Sav…}
+[S] div {Display Preferences}
+[S] div class=PrefPanel_row__s6t7u8 {Display language English Español Français Deutsch 日本語 Português}
+[S] label for=pref-language {Display language}
+[S] select id=pref-language name=display_language {English Español Français Deutsch 日本語 Português}
+[S] option value=en {English}
+[S] option value=es {Español}
+[S] option value=fr {Français}
+[S] option value=de {Deutsch}
+[S] option value=ja {日本語}
+[S] option value=pt {Português}
+[S] div class=PrefPanel_row__s6t7u8 {Time zone UTC (Coordinated Universal Time) EST (Eastern Standard Time) CST (Central Standard Time) PST (Pacific Standard Time) CET (Central European Time) JST (Japan Standard Time)}
+[S] label for=pref-timezone {Time zone}
+[S] select id=pref-timezone aria-label="Time zone preference" name=timezone {UTC (Coordinated Universal Time) EST (Eastern Standard Time) CST (Central Standard Time) PST (Pacific Standard Time) CET (Central European Time) JST (Japan Standard Time)}
+[S] option value=UTC {UTC (Coordinated Universal Time)}
+[S] option value=EST {EST (Eastern Standard Time)}
+[S] option value=CST {CST (Central Standard Time)}
+[S] option value=PST {PST (Pacific Standard Time)}
+[S] option value=CET {CET (Central European Time)}
+[S] option value=JST {JST (Japan Standard Time)}
+[S] div {Subscribe to product newsletter}
+[S] input type=checkbox name=newsletter_opt_in id=pref-newsletter
+[S] label for=pref-newsletter {Subscribe to product newsletter}
+[S] button aria-label="Save all preferences" data-testid=save-prefs-btn {Save All Preferences}
+footer {MyAccount © 2025 · All rights reserved}
+p {MyAccount © 2025 · All rights reserved}

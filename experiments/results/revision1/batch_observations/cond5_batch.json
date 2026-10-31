@@ -1,0 +1,5078 @@
+[
+  {
+    "page": "page_01",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "data-testid",
+      "aria-label",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "text"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_07",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_01",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "id",
+      "name",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_02",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "name",
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_04",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_03",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "id",
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_08",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_04",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "name",
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_09",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_05",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_07",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_09",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_06",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_07",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_07",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_07",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_08",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "name",
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_04",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_09",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_10",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_11",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_09",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_12",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_13",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_05",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_14",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_04",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_15",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_04",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_16",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_17",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label",
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "placeholder"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_18",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_03",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_09",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_19",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "aria-label",
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "type"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "href"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_08",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_20",
+    "task_id": "t_10",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "data-testid",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_05",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_06",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_09",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_21",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_22",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "name",
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "aria-label",
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_23",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_01",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_02",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_03",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_04",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_05",
+    "signal_attrs": [
+      "aria-label"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_06",
+    "signal_attrs": [],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": false,
+      "B_noVolatile": false,
+      "B_noState": false,
+      "B_noSemantic": false,
+      "B_identityCore": false,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": false,
+      "B_full_minus_volClass": false,
+      "B_full_minus_volId": false,
+      "B_full_minus_state": false,
+      "B_full_minus_aria": false
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_07",
+    "signal_attrs": [
+      "id",
+      "name"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_08",
+    "signal_attrs": [
+      "aria-label",
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_09",
+    "signal_attrs": [
+      "name",
+      "id"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  },
+  {
+    "page": "page_24",
+    "task_id": "t_10",
+    "signal_attrs": [
+      "aria-label",
+      "data-testid"
+    ],
+    "oracle_found": true,
+    "condition5": {
+      "B_full": true,
+      "B_noVolatile": true,
+      "B_noState": true,
+      "B_noSemantic": true,
+      "B_identityCore": true,
+      "B_minimalCore": false,
+      "B_noVolatileConsistent": true,
+      "B_full_minus_volClass": true,
+      "B_full_minus_volId": true,
+      "B_full_minus_state": true,
+      "B_full_minus_aria": true
+    }
+  }
+]

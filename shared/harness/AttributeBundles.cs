@@ -78,6 +78,29 @@ public static class AttributeBundles
     public static readonly IReadOnlySet<string> BundleMinimalCore =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
+    // B_full_minus_aria (single ablation): B_full minus every attribute whose name
+    // starts with "aria-" (the aria-* of the Accessibility category and aria-label from
+    // Semantic-textual); role and tabindex stay. Derived from BundleFull, not a hand list.
+    public static readonly IReadOnlySet<string> BundleFullMinusAria =
+        new HashSet<string>(
+            BundleFull.Where(a => !a.StartsWith("aria-", StringComparison.OrdinalIgnoreCase)),
+            StringComparer.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// The attribute categories behind the bundle definitions (read-only view of the private
+    /// sets above), for composition reports. "uncategorised" = present in B_full only.
+    /// </summary>
+    public static readonly IReadOnlyDictionary<string, IReadOnlySet<string>> AttributeCategories =
+        new Dictionary<string, IReadOnlySet<string>>
+        {
+            ["identity"] = _identity,
+            ["semantic_textual"] = _semanticTextual,
+            ["accessibility"] = _accessibility,
+            ["structural"] = _structural,
+            ["state"] = _state,
+            ["uncategorised"] = _uncategorised,
+        };
+
     private static readonly IReadOnlyDictionary<string, IReadOnlySet<string>> _bundles =
         new Dictionary<string, IReadOnlySet<string>>(StringComparer.OrdinalIgnoreCase)
         {
@@ -86,6 +109,19 @@ public static class AttributeBundles
             ["B_noSemantic"] = BundleNoSemantic,
             ["B_identityCore"] = BundleIdentityCore,
             ["B_minimalCore"] = BundleMinimalCore,
+            // B_noVolatileConsistent: listed here only so ResolveBundleSetForSignalCheck returns
+            // BundleFull for condition 5 (value-level filtering, like B_noVolatile); its
+            // observations are built by ApplyBundleNoVolatileConsistent (Observation.cs).
+            ["B_noVolatileConsistent"] = BundleFull,
+            // Single ablations (B_full minus ONE class). The two value-level ones
+            // (volatile class tokens / volatile ids, predicate-consistent rule) map to BundleFull
+            // only for condition 5, like B_noVolatileConsistent; their observations are built by
+            // ApplyBundleMinusVolatileClass / ApplyBundleMinusVolatileId (Observation.cs).
+            ["B_full_minus_volClass"] = BundleFull,
+            ["B_full_minus_volId"] = BundleFull,
+            // Same attribute set as B_noState (identical observations by construction).
+            ["B_full_minus_state"] = BundleNoState,
+            ["B_full_minus_aria"] = BundleFullMinusAria,
             // B_noVolatile and B_playwrightMCP are not in this dict:
             // B_noVolatile uses ApplyBundleNoVolatile (dynamic),
             // B_playwrightMCP uses BuildAriaObservationAsync (separate ARIA path).
@@ -196,6 +232,151 @@ public static class AttributeBundles
         var text = element.Text; // B_noVolatile retains semantic-textual
         return new ElementData(element.Tag, text, filteredAttrs, element.IsInShadowRoot);
     }
+
+    /// <summary>
+    /// B_noVolatileConsistent (sensitivity bundle): B_full membership, but strips
+    /// every id value and class token that the predicate's own volatile check
+    /// (Oracle.LocatorUsesVolatileSignal) would flag — the truth.json-labelled values, BEM
+    /// bases of labelled classes, and values matching the predicate's structural regexes.
+    /// The predicate function itself is called (no copy of its regexes) on the valid-CSS
+    /// exact-token locator forms `[class~="tok"]` and `[id="id"]` (see PredicateFlags*).
+    /// B_noVolatile (ApplyBundleNoVolatile) is a separate bundle with its own label-based rule.
+    /// </summary>
+    public static ElementData ApplyBundleNoVolatileConsistent(
+        ElementData element,
+        IReadOnlySet<string>? volatileIds,
+        IReadOnlySet<string>? volatileClasses)
+    {
+        var filteredAttrs = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var (k, v) in element.Attrs)
+        {
+            if (!BundleFull.Contains(k) || string.IsNullOrEmpty(v))
+            {
+                continue;
+            }
+
+            if (k.Equals("id", StringComparison.OrdinalIgnoreCase))
+            {
+                if (PredicateFlagsId(v, volatileIds, volatileClasses))
+                {
+                    continue; // strip id the predicate treats as volatile
+                }
+
+                filteredAttrs[k] = v;
+                continue;
+            }
+
+            if (k.Equals("class", StringComparison.OrdinalIgnoreCase))
+            {
+                var stable = v.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                              .Where(c => !PredicateFlagsClassToken(c, volatileIds, volatileClasses))
+                              .ToArray();
+                if (stable.Length > 0)
+                {
+                    filteredAttrs[k] = string.Join(" ", stable);
+                }
+                // else every token is one the predicate treats as volatile — drop the attribute
+                continue;
+            }
+
+            filteredAttrs[k] = v;
+        }
+
+        var text = element.Text; // retains semantic-textual, as B_noVolatile
+        return new ElementData(element.Tag, text, filteredAttrs, element.IsInShadowRoot);
+    }
+
+    /// <summary>
+    /// B_full_minus_volClass (single ablation): B_full, minus only the class tokens
+    /// the predicate flags (PredicateFlagsClassToken — the rule of B_noVolatileConsistent);
+    /// id values are kept.
+    /// </summary>
+    public static ElementData ApplyBundleMinusVolatileClass(
+        ElementData element,
+        IReadOnlySet<string>? volatileIds,
+        IReadOnlySet<string>? volatileClasses) =>
+        ApplyPredicateConsistentStrip(element, volatileIds, volatileClasses, stripIds: false, stripClasses: true);
+
+    /// <summary>
+    /// B_full_minus_volId (single ablation): B_full, minus only the id values the
+    /// predicate flags (PredicateFlagsId — the rule of B_noVolatileConsistent); class tokens
+    /// are kept.
+    /// </summary>
+    public static ElementData ApplyBundleMinusVolatileId(
+        ElementData element,
+        IReadOnlySet<string>? volatileIds,
+        IReadOnlySet<string>? volatileClasses) =>
+        ApplyPredicateConsistentStrip(element, volatileIds, volatileClasses, stripIds: true, stripClasses: false);
+
+    private static ElementData ApplyPredicateConsistentStrip(
+        ElementData element,
+        IReadOnlySet<string>? volatileIds,
+        IReadOnlySet<string>? volatileClasses,
+        bool stripIds,
+        bool stripClasses)
+    {
+        var filteredAttrs = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var (k, v) in element.Attrs)
+        {
+            if (!BundleFull.Contains(k) || string.IsNullOrEmpty(v))
+            {
+                continue;
+            }
+
+            if (stripIds && k.Equals("id", StringComparison.OrdinalIgnoreCase))
+            {
+                if (!PredicateFlagsId(v, volatileIds, volatileClasses))
+                {
+                    filteredAttrs[k] = v;
+                }
+                continue;
+            }
+
+            if (stripClasses && k.Equals("class", StringComparison.OrdinalIgnoreCase))
+            {
+                var stable = v.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                              .Where(c => !PredicateFlagsClassToken(c, volatileIds, volatileClasses))
+                              .ToArray();
+                if (stable.Length > 0)
+                {
+                    filteredAttrs[k] = string.Join(" ", stable);
+                }
+                continue;
+            }
+
+            filteredAttrs[k] = v;
+        }
+
+        return new ElementData(element.Tag, element.Text, filteredAttrs, element.IsInShadowRoot);
+    }
+
+    /// <summary>
+    /// True when the predicate (Oracle.LocatorUsesVolatileSignal) flags the locator
+    /// `[class~="tok"]` — the valid-CSS exact-token selector for this class token. The
+    /// attribute form is used instead of `.tok` because `.tok` is not valid CSS for tokens
+    /// with CSS-special characters (`:`, `/`, `.`, `[`, `]`, …) and the predicate's `.class`
+    /// regex would capture only a fragment of such a token. For plain identifier tokens the
+    /// predicate applies the same three checks to `.tok` and `[class~="tok"]` (structural
+    /// regex, truth.json list, BEM base), so the verdict is identical.
+    /// </summary>
+    public static bool PredicateFlagsClassToken(
+        string token, IReadOnlySet<string>? volatileIds, IReadOnlySet<string>? volatileClasses) =>
+        Oracle.Oracle.LocatorUsesVolatileSignal("css", QuotedAttrSelector("class~", token), volatileIds, volatileClasses);
+
+    /// <summary>
+    /// True when the predicate (Oracle.LocatorUsesVolatileSignal) flags the locator
+    /// `[id="id"]` — the valid-CSS exact selector for this id (for plain identifiers the
+    /// predicate applies the same checks to `#id`: structural regex + truth.json list).
+    /// </summary>
+    public static bool PredicateFlagsId(
+        string id, IReadOnlySet<string>? volatileIds, IReadOnlySet<string>? volatileClasses) =>
+        Oracle.Oracle.LocatorUsesVolatileSignal("css", QuotedAttrSelector("id", id), volatileIds, volatileClasses);
+
+    // `[name<op>="value"]`, or single quotes when the value contains a double quote.
+    private static string QuotedAttrSelector(string nameAndOp, string value) =>
+        value.Contains('"') ? $"[{nameAndOp}='{value}']" : $"[{nameAndOp}=\"{value}\"]";
 
     // -----------------------------------------------------------------------
     // Oracle-anchor stripping (TESTBED_SPEC §3)

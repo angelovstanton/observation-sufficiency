@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Value-level volatility classifier for the Common Crawl analysis (analysis_plan.md).
+       Calls the existing Oracle predicates by reflection; the Oracle source is not changed. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\shared\oracle\Shared.Oracle.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,2 +1,16 @@
 * text=auto eol=lf
 *.jsonl -text
+# Hash-pinned revision-1 inputs: bytes must never be normalised.
+experiments/results/revision1/batch_plan.json -text
+experiments/results/revision1/batch_observations/manifest.tsv -text
+experiments/results/revision1/observations/manifest.tsv -text
+experiments/results/revision1/observations/*.txt -text
+experiments/results/revision1/real_pilot/pilot_plan.json -text
+experiments/results/revision1/real_pilot/pilot_reuse_map.json -text
+experiments/results/revision1/real_pilot/targets.json -text
+experiments/results/revision1/real_pilot/observations_manifest.tsv -text
+experiments/results/revision1/real_pilot/pilot_sites.json -text
+experiments/results/revision1/real_pilot/survival_targets.json -text
+experiments/results/revision1/real_pilot/survival_reference.json -text
+experiments/results/revision1/real_pilot/rp_shim_random.js -text
+experiments/results/revision1/real_pilot/rp_candidates.js -text

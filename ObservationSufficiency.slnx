@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/experiments/">
     <Project Path="experiments/Experiments.csproj" />
+    <Project Path="experiments/tests/Experiments.Tests.csproj" />
   </Folder>
   <Folder Name="/shared/" />
   <Folder Name="/shared/harness/">

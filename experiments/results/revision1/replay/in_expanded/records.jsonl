@@ -1,0 +1,131 @@
+{"page": "pages/page_01.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"related-product-amoxicillin-250\"]"}
+{"page": "pages/page_01.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:a[data-testid=\"related-product-amoxicillin-250\"]"}
+{"page": "pages/page_01.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[datatype=\"add-to-cart-btn\"],button[data-testid=\"add-to-cart-btn\"]"}
+{"page": "pages/page_01.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"related-product-amoxicillin-250\"]"}
+{"page": "pages/page_01.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"related-product-amoxicillin-250\"]"}
+{"page": "pages/page_01.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"related-product-amoxicillin-250\"]"}
+{"page": "pages/page_02.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"check-eligibility-btn\"]"}
+{"page": "pages/page_02.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/forms/benefits-SA2024.pdf\"]"}
+{"page": "pages/page_02.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button[data-testid=\"submit-application-btn\"]"}
+{"page": "pages/page_02.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:div[data-testid=\"application-status-tracker\"]"}
+{"page": "pages/page_02.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/forms/benefits-SA2024.pdf\"]"}
+{"page": "pages/page_02.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"check-eligibility-btn\"]"}
+{"page": "pages/page_02.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/forms/benefits-SA2024.pdf\"]"}
+{"page": "pages/page_03.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button[aria-label=\"Submit transfer\"]"}
+{"page": "pages/page_03.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:div.CardItem--a3b4c5:has(div:contains(\"Debit Card\")) button[type=\"button\"][class*=\"btn-outline\"]:has-text(\"Freeze card\")"}
+{"page": "pages/page_03.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button[aria-label=\"Submit transfer\"]"}
+{"page": "pages/page_03.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:button[type=\"button\"][data-testid=\"freeze-debit-card\"]"}
+{"page": "pages/page_04.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:input[data-testid=\"nonstop-filter\"]"}
+{"page": "pages/page_04.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:input[data-testid=\"nonstop-filter\"]"}
+{"page": "pages/page_05.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"property-card-14\"]"}
+{"page": "pages/page_05.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:a[data-testid=\"property-card-2\"] button.save"}
+{"page": "pages/page_05.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a.property-card__address[data-testid=\"property-card-1\"]"}
+{"page": "pages/page_05.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:button.pagination__btn[aria-label=\"Next page\"]"}
+{"page": "pages/page_06.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:a[data-testid=\"breaking-news-lead\"]"}
+{"page": "pages/page_06.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:a[data-testid=\"politics\"]"}
+{"page": "pages/page_06.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div.breaking a[data-testid=\"breaking-news-lead\"]"}
+{"page": "pages/page_06.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:a[data-testid=\"breaking-news-lead\"]"}
+{"page": "pages/page_06.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:a[data-testid=\"breaking-news-lead\"]"}
+{"page": "pages/page_08.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button[data-testid=\"add-to-cart-ALPHA-500\"]"}
+{"page": "pages/page_08.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button[data-testid=\"add-to-cart-BETA-200\"]"}
+{"page": "pages/page_08.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0"}
+{"page": "pages/page_08.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:a[data-testid=\"product-link-GAMMA-900\"]"}
+{"page": "pages/page_08.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:article[data-testid=\"product-card-1\"] button[data-testid=\"wishlist-ALPHA-500\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button.BtnCart--e8f9a0.cart-btn-d[data-testid=\"add-to-cart-ALPHA-500\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button.BtnCart--e8f9a0.cart-btn-d[data-testid=\"add-to-cart-BETA-200\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0"}
+{"page": "pages/page_08.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:a[data-testid=\"product-link-GAMMA-900\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button[data-testid=\"add-to-cart-ALPHA-500\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button[data-testid=\"add-to-cart-BETA-200\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0"}
+{"page": "pages/page_08.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:a[data-testid=\"product-link-GAMMA-900\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button.cart-btn-d[data-testid=\"add-to-cart-ALPHA-500\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button.cart-btn-d[data-testid=\"add-to-cart-BETA-200\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:article[data-testid=\"product-card-1\"] .sa button:first-of-type"}
+{"page": "pages/page_08.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:a[data-testid=\"product-link-GAMMA-900\"]"}
+{"page": "pages/page_08.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button[aria-label=\"Next page\"]"}
+{"page": "pages/page_09.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:div[is_shadow=\"true\"].slot-list > div[is_shadow=\"true\"]:first-child"}
+{"page": "pages/page_11.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/contact-sales\"]"}
+{"page": "pages/page_11.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:button.btn-plan.btn-pro[data-testid=\"select-pro-btn\"]"}
+{"page": "pages/page_11.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:button.ActionBar--o0p1q2.btn-compare[data-testid=\"compare-all-plans-btn\"]"}
+{"page": "pages/page_11.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/contact-sales\"]"}
+{"page": "pages/page_11.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:a[href=\"/contact-sales\"]"}
+{"page": "pages/page_12.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:a.dl-link[aria-label=\"Download lesson materials PDF\"]"}
+{"page": "pages/page_12.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button.btn-post[data-testid=\"post-comment-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.btn-next[data-testid=\"next-lesson-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button.btn-post[data-testid=\"post-comment-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.btn-next[data-testid=\"next-lesson-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button.btn-post[data-testid=\"post-comment-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:button.ctrl-btn[data-testid=\"captions-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.btn-next[data-testid=\"next-lesson-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:a.dl-link[aria-label=\"Download lesson materials PDF\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:button.btn-post[data-testid=\"post-comment-btn\"]"}
+{"page": "pages/page_12.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.btn-next[data-testid=\"next-lesson-btn\"]"}
+{"page": "pages/page_13.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a.export-link[data-testid=\"export-csv\"]"}
+{"page": "pages/page_13.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:div.filter-panel[is_shadow=\"true\"] button.export-btn[data-export-pdf-btn][is_shadow=\"true\"]"}
+{"page": "pages/page_13.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:.filter-panel[is_shadow=\"true\"] .FilterChip--a1b2c3[is_shadow=\"true\"]"}
+{"page": "pages/page_13.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a.export-link[data-testid=\"export-csv\"]"}
+{"page": "pages/page_13.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a.export-link[data-testid=\"export-csv\"]"}
+{"page": "pages/page_14.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div.cart-header[is_shadow=\"true\"]"}
+{"page": "pages/page_14.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:select[data-testid=\"sort-dropdown\"]"}
+{"page": "pages/page_14.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:div[data-testid=\"dietary-filter-bar\"]"}
+{"page": "pages/page_14.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div[data-testid=\"cart-total-display\"]"}
+{"page": "pages/page_14.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:div[data-testid=\"cart-total-display\"]"}
+{"page": "pages/page_14.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div.cart-header[is_shadow=\"true\"]"}
+{"page": "pages/page_14.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:div.total-row.main[data-testid=\"cart-total-display\"]"}
+{"page": "pages/page_14.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div.cart-header[is_shadow=\"true\"]"}
+{"page": "pages/page_14.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:div.cart-header[is_shadow=\"true\"]"}
+{"page": "pages/page_14.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:div.total-row.main[data-testid=\"cart-total-display\"]"}
+{"page": "pages/page_15.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]"}
+{"page": "pages/page_15.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:.FilterChip__tag___Qf4mW[is_shadow=\"true\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:div[is_shadow=\"true\"] .salary-row[is_shadow=\"true\"] input[type=\"number\"][is_shadow=\"true\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:.FilterChip__tag___Qf4mW[is_shadow=\"true\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:.jobs-list .job-footer button[type=\"button\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]"}
+{"page": "pages/page_15.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:.active-filters > div[is_shadow=\"true\"]"}
+{"page": "pages/page_16.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:a.active[href=\"/help/category/account-billing\"]"}
+{"page": "pages/page_16.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"]"}
+{"page": "pages/page_16.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:a[data-testid=\"article-card-001\"]"}
+{"page": "pages/page_16.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:a[data-testid=\"article-card-001\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:.panel[is_shadow=\"true\"] .ChatBtn--h8i9j0[is_shadow=\"true\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"][type=\"button\"][style]"}
+{"page": "pages/page_16.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:a.active[href=\"/help/category/account-billing\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:.ChatBtn--h8i9j0[aria-label=\"Start a live chat session\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:a[data-testid=\"article-card-001\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_03", "locator_raw": "css:a.active[href=\"/help/category/account-billing\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:div.panel[is_shadow=\"true\"] button[aria-label=\"Start a live chat session\"]"}
+{"page": "pages/page_16.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:div.panel-header button[type=\"button\"][aria-hidden=\"true\"]"}
+{"page": "pages/page_17.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button[data-testid=\"next-page-btn\"]"}
+{"page": "pages/page_18.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:.KanbanPanel_cardCount__e5f6g7[is_shadow=\"true\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:div.EditPanel_field__s0t1u2[is_shadow=\"true\"] input[type=\"date\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:.KanbanPanel_head__n0o1p2 > span[is_shadow=\"true\"] + span[is_shadow=\"true\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]"}
+{"page": "pages/page_19.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:button.btn-next[data-testid=\"next-step-btn\"]"}
+{"page": "pages/page_19.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:button.btn-next[data-testid=\"next-step-btn\"]"}
+{"page": "pages/page_20.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"enroll-benefits-btn\"]"}
+{"page": "pages/page_20.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:div.ShadowSection--y1z2a3[is_shadow=\"true\"]"}
+{"page": "pages/page_20.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"enroll-benefits-btn\"]"}
+{"page": "pages/page_20.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button[data-testid=\"enroll-benefits-btn\"]"}
+{"page": "pages/page_20.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:#hr-portal-a1b2c3 button[data-testid=\"payslips-tab\"]"}
+{"page": "pages/page_20.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button[data-testid=\"payslips-tab\"]"}
+{"page": "pages/page_20.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"enroll-benefits-btn\"]"}
+{"page": "pages/page_20.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_07", "locator_raw": "css:button.tab-btn.active[data-testid=\"payslips-tab\"]"}
+{"page": "pages/page_20.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_08", "locator_raw": "css:div.ShadowSection--y1z2a3[is_shadow=\"true\"]"}
+{"page": "pages/page_20.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button[data-testid=\"enroll-benefits-btn\"]"}
+{"page": "pages/page_21.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button[data-testid=\"play-pause-btn\"]"}
+{"page": "pages/page_21.html", "bundle": "B_identityCore", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:button[data-testid=\"caption-toggle\"]"}
+{"page": "pages/page_21.html", "bundle": "B_noState", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.VideoMeta_subscribeBtn__f4g5h6[data-testid=\"subscribe-btn\"]"}
+{"page": "pages/page_22.html", "bundle": "B_full", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button.TrackPanel_exportBtn__f9g0h1[is_shadow=\"true\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:button.TrackPanel_toggle__m4n5o6[is_shadow=\"true\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]"}
+{"page": "pages/page_23.html", "bundle": "B_noSemantic", "encoding": "F2", "task_id": "t_06", "locator_raw": "css:span.PayShell_secIcon__x4y5z6[is_shadow=\"true\"]"}

@@ -1,0 +1,128 @@
+header class=govuk-header {GOV.UK Benefits Housing Work Health Sign in}
+a href=/ {GOV.UK}
+nav class=govuk-nav aria-label="Site navigation" {Benefits Housing Work Health Sign in}
+a href=/benefits {Benefits}
+a href=/housing {Housing}
+a href=/work {Work}
+a href=/health {Health}
+a href=/sign-in {Sign in}
+div class=phase {BETA This is a new service — your feedback will help us improve it.}
+strong {BETA}
+a href=/feedback {feedback}
+nav class=breadcrumb aria-label=Breadcrumb {Home › Benefits › Housing Benefit}
+a href=/ {Home}
+a href=/benefits {Benefits}
+span {Housing Benefit}
+main id=main-content {Apply for Housing Benefit  Housing Benefit can help you pay your rent if you are on a low income or claim certain benefits. Use this service to check your eligibility and submit your application online. You will need your National Insurance number, rent details, and your most recent bank statements.…}
+h1 {Apply for Housing Benefit}
+p class=body {Housing Benefit can help you pay your rent if you are on a low income or claim certain benefits. Use this service to check your eligibility and submit your application online. You will need your National Insurance number, rent details, and your most recent bank statements.}
+div class=inset {Processing times are currently 15 working days. Apply as soon as possible to avoid disruption to your payments.}
+p class=body {Processing times are currently 15 working days. Apply as soon as possible to avoid disruption to your payments.}
+strong {Processing times}
+section aria-labelledby=check-heading {Check an existing application Application reference number For example, HB-2024-001234 Check eligibility}
+h2 id=check-heading {Check an existing application}
+div class=form-group {Application reference number For example, HB-2024-001234}
+label class=lbl for=application-ref {Application reference number}
+div class=hint {For example, HB-2024-001234}
+input id=application-ref aria-label="Application reference number" class=inp type=text name=application_ref
+button type=button data-testid=check-eligibility-btn aria-label="Check benefit eligibility" class=btn {Check eligibility}
+section aria-labelledby=apply-heading {New application National Insurance number It’s on your payslip, P60, or benefit letter. For example, QQ 12 34 56 C Type of benefit Select benefit type Housing Benefit Jobseeker’s Allowance (JSA) Personal Independence Payment (PIP) Employment Support Allowance (ESA) Universal Credit Supporting docume…}
+h2 id=apply-heading {New application}
+div class=form-group {National Insurance number It’s on your payslip, P60, or benefit letter. For example, QQ 12 34 56 C}
+label class=lbl for=ni-number {National Insurance number}
+div class=hint {It’s on your payslip, P60, or benefit letter. For example, QQ 12 34 56 C}
+input id=ni-number aria-label="National Insurance number" class=inp type=text name=ni_number
+div class=form-group {Type of benefit Select benefit type Housing Benefit Jobseeker’s Allowance (JSA) Personal Independence Payment (PIP) Employment Support Allowance (ESA) Universal Credit}
+label class=lbl for=benefit-type {Type of benefit}
+select id=benefit-type name=benefit_type data-testid=benefit-type-select aria-label="Type of benefit to apply for" class=sel {Select benefit type Housing Benefit Jobseeker’s Allowance (JSA) Personal Independence Payment (PIP) Employment Support Allowance (ESA) Universal Credit}
+option {Select benefit type}
+option value=housing {Housing Benefit}
+option value=jsa {Jobseeker’s Allowance (JSA)}
+option value=pip {Personal Independence Payment (PIP)}
+option value=esa {Employment Support Allowance (ESA)}
+option value=uc {Universal Credit}
+div class=form-group {Supporting documents Upload proof of identity, tenancy agreement, and 3 months of bank statements. Accepted formats: PDF, JPG, PNG (max 10 MB each). Upload documents}
+label class=lbl {Supporting documents}
+div class=hint {Upload proof of identity, tenancy agreement, and 3 months of bank statements. Accepted formats: PDF, JPG, PNG (max 10 MB each).}
+button type=button aria-label="Upload supporting documents for your application" class="btn btn-secondary" {Upload documents}
+div class=inset {By submitting you confirm that all information provided is accurate and complete. Providing false information may result in prosecution and recovery of overpayments.}
+p class=body {By submitting you confirm that all information provided is accurate and complete. Providing false information may result in prosecution and recovery of overpayments.}
+button type=submit data-testid=submit-application-btn class=btn {Submit application}
+section aria-labelledby=downloads-heading {Download forms SA-2024 Application form (PDF, 1.2 MB) Evidence checklist (PDF, 340 KB) Landlord declaration form (PDF, 280 KB)}
+h2 id=downloads-heading {Download forms}
+ul class=dl-list {SA-2024 Application form (PDF, 1.2 MB) Evidence checklist (PDF, 340 KB) Landlord declaration form (PDF, 280 KB)}
+li {SA-2024 Application form (PDF, 1.2 MB)}
+a href=/forms/benefits-SA2024.pdf aria-label="Download SA-2024 application form PDF" {SA-2024 Application form (PDF, 1.2 MB)}
+li {Evidence checklist (PDF, 340 KB)}
+a href=/forms/evidence-checklist.pdf aria-label="Download evidence checklist PDF" {Evidence checklist (PDF, 340 KB)}
+li {Landlord declaration form (PDF, 280 KB)}
+a href=/forms/landlord-declaration.pdf aria-label="Download landlord declaration PDF" {Landlord declaration form (PDF, 280 KB)}
+section aria-labelledby=status-heading {Track your application 1 Application received  12 June 2024  2 Under review  Documents being assessed  3 Decision  Estimated: 27 June 2024}
+h2 id=status-heading {Track your application}
+div data-testid=application-status-tracker aria-label="Your application status" class=status-panel role=region {1 Application received  12 June 2024  2 Under review  Documents being assessed  3 Decision  Estimated: 27 June 2024}
+div class=step {1 Application received  12 June 2024}
+span class="badge b-done" {1}
+div {Application received  12 June 2024}
+strong {Application received}
+p class=hint {12 June 2024}
+div class=step {2 Under review  Documents being assessed}
+span class="badge b-now" {2}
+div {Under review  Documents being assessed}
+strong {Under review}
+p class=hint {Documents being assessed}
+div class=step {3 Decision  Estimated: 27 June 2024}
+span class="badge b-wait" {3}
+div {Decision  Estimated: 27 June 2024}
+strong {Decision}
+p class=hint {Estimated: 27 June 2024}
+section aria-labelledby=updates-heading {Stay informed Send me email updates about changes to Housing Benefit rules and policy Send me local council housing news and events}
+h2 id=updates-heading {Stay informed}
+div class=cb-row {Send me email updates about changes to Housing Benefit rules and policy}
+input type=checkbox id=benefit-updates-sub aria-label="Subscribe to benefit update notifications" class=cb
+label for=benefit-updates-sub {Send me email updates about changes to Housing Benefit rules and policy}
+div class=cb-row {Send me local council housing news and events}
+input type=checkbox id=local-council-news class=cb
+label for=local-council-news {Send me local council housing news and events}
+section aria-labelledby=faq-heading class=faq-section {Frequently asked questions How long does it take to process my application? What documents do I need? Can I apply if I work part-time? What happens if my circumstances change?}
+h2 id=faq-heading {Frequently asked questions}
+div class=faq-item {How long does it take to process my application?}
+button class=faq-toggle type=button {How long does it take to process my application?}
+div class=faq-body {Standard processing takes 15 working days once we have your completed         application and all supporting documents.}
+p {Standard processing takes 15 working days once we have your completed         application and all supporting documents.}
+div class=faq-item {What documents do I need?}
+button class=faq-toggle type=button {What documents do I need?}
+div class=faq-body {You need proof of identity, proof of address, tenancy agreement, and 3 months of bank statements.}
+p {You need proof of identity, proof of address, tenancy agreement, and 3 months of bank statements.}
+div class=faq-item {Can I apply if I work part-time?}
+button class=faq-toggle type=button {Can I apply if I work part-time?}
+div class=faq-body {Yes. Eligibility is means-tested and considers your income, savings, and household circumstances.}
+p {Yes. Eligibility is means-tested and considers your income, savings, and household circumstances.}
+div class=faq-item {What happens if my circumstances change?}
+button class=faq-toggle type=button {What happens if my circumstances change?}
+div class=faq-body {Report any change in income, household, or housing within one month. Failure to report may lead to overpayment recovery.}
+p {Report any change in income, household, or housing within one month. Failure to report may lead to overpayment recovery.}
+footer {Support links Accessibility statement Cookie policy Privacy notice Contact us Related services Universal Credit Council Tax Reduction PIP  © Crown copyright 2024. Open Government Licence v3.0}
+div class=footer-cols {Support links Accessibility statement Cookie policy Privacy notice Contact us Related services Universal Credit Council Tax Reduction PIP  © Crown copyright 2024. Open Government Licence v3.0}
+div class=footer-col {Support links Accessibility statement Cookie policy Privacy notice Contact us}
+h4 {Support links}
+ul {Accessibility statement Cookie policy Privacy notice Contact us}
+li {Accessibility statement}
+a href=/accessibility {Accessibility statement}
+li {Cookie policy}
+a href=/cookies {Cookie policy}
+li {Privacy notice}
+a href=/privacy {Privacy notice}
+li {Contact us}
+a href=/contact {Contact us}
+div class=footer-col {Related services Universal Credit Council Tax Reduction PIP}
+h4 {Related services}
+ul {Universal Credit Council Tax Reduction PIP}
+li {Universal Credit}
+a href=/universal-credit {Universal Credit}
+li {Council Tax Reduction}
+a href=/council-tax {Council Tax Reduction}
+li {PIP}
+a href=/pip {PIP}
+div class=footer-col {© Crown copyright 2024. Open Government Licence v3.0}
+p {© Crown copyright 2024. Open Government Licence v3.0}
+a href=/ogl {Open Government Licence v3.0}

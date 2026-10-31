@@ -28,10 +28,12 @@ identified from the Pareto frontier. The study does not use a fixed success thre
 Measurement layer is C# (.NET); analysis is Python.
 
 ```
-dotnet run --project experiments/                                  # page_01 only
-BAR_PAGE_IDS=page_05,page_08,page_10 dotnet run --project experiments/
+BAR_LEGACY_CONFIRM=paid dotnet run --project experiments/ -- --execute                    # page_01 only
+BAR_LEGACY_CONFIRM=paid BAR_PAGE_IDS=page_05,page_08 dotnet run --project experiments/ -- --execute
 ```
 
+A mode that calls a model runs only with `--execute` and `BAR_LEGACY_CONFIRM=paid` set in the
+process for that run; without both it exits with code 2 before any client is created.
 Requires `.env` with `BAR_AZURE_OPENAI_ENDPOINT`, `BAR_AZURE_OPENAI_KEY`, and
 `BAR_MODEL_DEPLOYMENT_1`. Auth is key-based (`AzureKeyCredential`); there is no
 `DefaultAzureCredential` / `az login` path. (The verification suite in `../TESTING.md`
@@ -42,6 +44,16 @@ shipped evidence — a fresh local run writes new files alongside it rather than
 overwriting the shipped corpus.
 
 Run modes are selected by environment variable (`SMOKE_TEST`, `PREDICATE_CONTROLS`,
-`LLM_SMOKE_TEST`, `VALIDATE_ENCODING`, `AXIS_C`) or the `--replay` argument. For the
+`LLM_SMOKE_TEST`, `VALIDATE_ENCODING`, `AXIS_C`, `DUMP_OBSERVATIONS`, `DUMP_BATCH_OBSERVATIONS`,
+`SENSITIVITY_CONSISTENT`, `REAL_PILOT`) or the `--replay` argument. For the
 subset that needs no model access, and how to verify the repo end to end, see
 [`TESTING.md`](../TESTING.md).
+
+## Revision 1
+
+The revision adds `B_noVolatileConsistent` (volatile-value removal that follows the oracle's
+volatility rules exactly), the single-attribute ablations `B_full_minus_volClass`,
+`B_full_minus_volId`, `B_full_minus_aria` and `B_full_minus_state`, and the F2L encoding (F2 with a
+one-line key dictionary in the prompt). The revision batch and the real-site pilot run through the
+separate executable in `batch/`; its outputs, plans and analyses are under `results/revision1/`. See
+the "Revision 1" section of the top-level README for the entry points.

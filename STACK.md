@@ -108,8 +108,7 @@ shape** holds (o4-mini is COP-only).
 ## 7. Provider decision — Azure (OpenAI + Foundry), not OpenRouter
 
 Azure is the cited source: pinned `api-version`, single known backend per model,
-enterprise reproducibility — essential for a defensible dissertation ("exactly
-what produced these numbers"). OpenRouter routes across providers/quantizations,
+enterprise reproducibility ("exactly what produced these numbers"). OpenRouter routes across providers/quantizations,
 which muddies determinism and provenance; acceptable only as optional throwaway
 exploration, never as a cited result. Cross-family spread is served by **Azure AI
 Foundry** serverless endpoints, keeping everything in one cloud/billing.

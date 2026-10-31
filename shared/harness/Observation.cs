@@ -124,6 +124,30 @@ public static class Observation
     {
         var rawWithAnchors = await WalkDomAsync(page);               // keeps data-oracle-*
         var stripped = AttributeBundles.StripOracleAnchors(rawWithAnchors); // remove oracle anchors
+        // B_noVolatileConsistent (sensitivity bundle): returned early so the corpus
+        // B_noVolatile / static-bundle paths below are not touched.
+        if (bundle.Equals("B_noVolatileConsistent", StringComparison.OrdinalIgnoreCase))
+        {
+            var consistent = stripped
+                .Select(el => AttributeBundles.ApplyBundleNoVolatileConsistent(el, volatileIds, volatileClasses))
+                .Where(ObservationEncoders.HasContent)
+                .ToList();
+            return (EncodeFiltered(encoding, consistent), rawWithAnchors, consistent);
+        }
+        // Single ablations B_full_minus_volClass / B_full_minus_volId (value-level,
+        // predicate-consistent rule): also returned early.
+        if (bundle.Equals("B_full_minus_volClass", StringComparison.OrdinalIgnoreCase)
+            || bundle.Equals("B_full_minus_volId", StringComparison.OrdinalIgnoreCase))
+        {
+            var stripClasses = bundle.Equals("B_full_minus_volClass", StringComparison.OrdinalIgnoreCase);
+            var ablated = stripped
+                .Select(el => stripClasses
+                    ? AttributeBundles.ApplyBundleMinusVolatileClass(el, volatileIds, volatileClasses)
+                    : AttributeBundles.ApplyBundleMinusVolatileId(el, volatileIds, volatileClasses))
+                .Where(ObservationEncoders.HasContent)
+                .ToList();
+            return (EncodeFiltered(encoding, ablated), rawWithAnchors, ablated);
+        }
 
         IReadOnlyList<ElementData> filtered;
         if (bundle.Equals("B_noVolatile", StringComparison.OrdinalIgnoreCase))
@@ -148,10 +172,27 @@ public static class Observation
             "F1" => ObservationEncoders.EncodeF1Json(filtered),
             "F2" => ObservationEncoders.EncodeF2CompactJson(filtered),
             "F3" => ObservationEncoders.EncodeF3Linearized(filtered),
+            "F2L" => ObservationEncoders.EncodeF2LLegend(filtered),     // F2 + legend line
             "FLAT_KV" => ObservationEncoders.EncodeFlatKv(filtered),    // smoke-test only
             _ => throw new ArgumentException(
                              $"Unknown encoding '{encoding}'. Implemented: F0, F1, F2, F3, F4 (via BuildAriaObservationAsync)."),
         };
         return (obsText, rawWithAnchors, filtered);
     }
+
+    /// <summary>
+    /// F0–F3 encoder dispatch for the B_noVolatileConsistent path (same encoders, same
+    /// order as the switch in BuildObservationAsync).
+    /// </summary>
+    private static string EncodeFiltered(string encoding, IReadOnlyList<ElementData> filtered) =>
+        encoding.ToUpperInvariant() switch
+        {
+            "F0" => ObservationEncoders.EncodeF0Html(filtered),
+            "F1" => ObservationEncoders.EncodeF1Json(filtered),
+            "F2" => ObservationEncoders.EncodeF2CompactJson(filtered),
+            "F3" => ObservationEncoders.EncodeF3Linearized(filtered),
+            "F2L" => ObservationEncoders.EncodeF2LLegend(filtered),
+            _ => throw new ArgumentException(
+                     $"Unknown encoding '{encoding}' for B_noVolatileConsistent. Implemented: F0, F1, F2, F3."),
+        };
 }

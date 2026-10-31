@@ -1,5 +1,5 @@
 """
-build_all.py - regenerate every Paper 1 figure and prove it meets MDPI.
+build_all.py - regenerate every figure of the paper and prove it meets MDPI.
 
 Deletes figures/*.png first. A rebuild that leaves stale output behind is not a
 rebuild: on 11.09.2026 a superseded apparatus render survived a regeneration and

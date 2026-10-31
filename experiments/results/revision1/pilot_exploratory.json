@@ -1,0 +1,6004 @@
+{
+ "label": "EXPLORATORY — not pre-registered, computed after the registered results (f6a00d3)",
+ "registered_commit": "f6a00d3",
+ "inputs": {
+  "survival_tsv_sha256": "45a59643569a1d0a048782b31c381742b38650f33896d7882f3e8d4b86ec08de",
+  "pins": {
+   "pilot_plan.json": "b79364225b5e3a025067c87c89218beb60c3790c7ced58f247d098961f209a90",
+   "pilot_reuse_map.json": "41fddd0efcbe0e92acdff9343396e8e326735b384673c30a8b8d30c14f9c0364",
+   "targets.json": "e890544fcfd19789f0587e564b17e9ebb62d7877f3ad99b4d8a3070e7b243fec",
+   "pilot_sites.json": "15ab318758d54d820bd611628dc4c6efaf5378e5286624a5d388176444b4d0ba",
+   "survival_targets.json": "6bdd67be22b43caa126305ab50784ff2136c46bce05e507bae8bd5dac70874db"
+  },
+  "may_probes_sha256": "e1fa955fb1c82c0de0fe49581410675eda035d57b9c52c7a57f57204bfdb57dc",
+  "sept_probes_sha256": "37a19aaaa29aba26f8ec4d40738afed1167c876cc0dde1de05ed0987fa615d44"
+ },
+ "survival_by_outcome": [
+  {
+   "encoding": "F1",
+   "cell": "B_full",
+   "metric": "P5",
+   "n_true": 198,
+   "survived_true": 187,
+   "share_true": 94.44444444444444,
+   "ci_true": [
+    90.32726763130819,
+    96.86988256187864
+   ],
+   "n_false": 62,
+   "survived_false": 17,
+   "share_false": 27.419354838709676,
+   "ci_false": [
+    17.881063614202038,
+    39.592539641988964
+   ],
+   "diff_pp": 67.02508960573476,
+   "diff_ci": [
+    54.17450311462797,
+    76.86692630144466
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_full",
+   "metric": "P_now",
+   "n_true": 216,
+   "survived_true": 204,
+   "share_true": 94.44444444444444,
+   "ci_true": [
+    90.54189878387191,
+    96.7937662130557
+   ],
+   "n_false": 44,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.029560375848066
+   ],
+   "diff_pp": 94.44444444444444,
+   "diff_ci": [
+    85.51675143548391,
+    96.7937662130557
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "metric": "P5",
+   "n_true": 205,
+   "survived_true": 192,
+   "share_true": 93.65853658536587,
+   "ci_true": [
+    89.45403769853417,
+    96.25691309198142
+   ],
+   "n_false": 55,
+   "survived_false": 7,
+   "share_false": 12.727272727272727,
+   "ci_false": [
+    6.304210427364635,
+    24.017027655909075
+   ],
+   "diff_pp": 80.93126385809313,
+   "diff_ci": [
+    68.88400785358996,
+    87.85999316285256
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "metric": "P_now",
+   "n_true": 213,
+   "survived_true": 199,
+   "share_true": 93.42723004694837,
+   "ci_true": [
+    89.2710745896673,
+    96.04471373150253
+   ],
+   "n_false": 47,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    7.5557604163996315
+   ],
+   "diff_pp": 93.42723004694837,
+   "diff_ci": [
+    84.80382331555046,
+    96.04471373150253
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "class_only",
+   "metric": "P5",
+   "n_true": 204,
+   "survived_true": 191,
+   "share_true": 93.62745098039215,
+   "ci_true": [
+    89.40382304548255,
+    96.23837799081862
+   ],
+   "n_false": 56,
+   "survived_false": 6,
+   "share_false": 10.714285714285714,
+   "ci_false": [
+    5.003935571117074,
+    21.468445171071483
+   ],
+   "diff_pp": 82.91316526610645,
+   "diff_ci": [
+    71.35933566053741,
+    89.19210137116124
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "class_only",
+   "metric": "P_now",
+   "n_true": 211,
+   "survived_true": 197,
+   "share_true": 93.36492890995261,
+   "ci_true": [
+    89.17225893526096,
+    96.00683126665909
+   ],
+   "n_false": 49,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    6.938893903907228e-16,
+    7.269781922049637
+   ],
+   "diff_pp": 93.36492890995261,
+   "diff_ci": [
+    84.97277717688435,
+    96.00683126665909
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_full",
+   "metric": "P5",
+   "n_true": 191,
+   "survived_true": 179,
+   "share_true": 93.717277486911,
+   "ci_true": [
+    89.34087463507254,
+    96.36983653019561
+   ],
+   "n_false": 69,
+   "survived_false": 24,
+   "share_false": 34.78260869565217,
+   "ci_false": [
+    24.618141928624354,
+    46.552122451042436
+   ],
+   "diff_pp": 58.93466879125883,
+   "diff_ci": [
+    46.377823806952435,
+    69.4395464267253
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_full",
+   "metric": "P_now",
+   "n_true": 218,
+   "survived_true": 203,
+   "share_true": 93.11926605504587,
+   "ci_true": [
+    88.95902420660312,
+    95.7861812204641
+   ],
+   "n_false": 42,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.37987908657039
+   ],
+   "diff_pp": 93.11926605504587,
+   "diff_ci": [
+    83.7635199200188,
+    95.7861812204641
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "metric": "P5",
+   "n_true": 208,
+   "survived_true": 195,
+   "share_true": 93.75,
+   "ci_true": [
+    89.60186741145255,
+    96.3114382338072
+   ],
+   "n_false": 52,
+   "survived_false": 7,
+   "share_false": 13.461538461538462,
+   "ci_false": [
+    6.67688170539614,
+    25.27332016519379
+   ],
+   "diff_pp": 80.28846153846155,
+   "diff_ci": [
+    67.76946832866322,
+    87.54053249262884
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "metric": "P_now",
+   "n_true": 216,
+   "survived_true": 202,
+   "share_true": 93.51851851851852,
+   "ci_true": [
+    89.41596354317211,
+    96.10020843298621
+   ],
+   "n_false": 44,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.029560375848066
+   ],
+   "diff_pp": 93.51851851851852,
+   "diff_ci": [
+    84.50160124291213,
+    96.10020843298621
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "class_only",
+   "metric": "P5",
+   "n_true": 207,
+   "survived_true": 195,
+   "share_true": 94.20289855072464,
+   "ci_true": [
+    90.14201397134707,
+    96.65305993090128
+   ],
+   "n_false": 53,
+   "survived_false": 7,
+   "share_false": 13.20754716981132,
+   "ci_false": [
+    6.547853284463252,
+    24.840255308904922
+   ],
+   "diff_pp": 80.99535138091332,
+   "diff_ci": [
+    68.67420361715523,
+    88.0914639388884
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "class_only",
+   "metric": "P_now",
+   "n_true": 214,
+   "survived_true": 201,
+   "share_true": 93.92523364485982,
+   "ci_true": [
+    89.88543780061813,
+    96.41585719518123
+   ],
+   "n_false": 46,
+   "survived_false": 1,
+   "share_false": 2.1739130434782608,
+   "ci_false": [
+    0.3847854258050287,
+    11.335294521511354
+   ],
+   "diff_pp": 91.75132060138156,
+   "diff_ci": [
+    81.73878540547837,
+    94.81794469013725
+   ]
+  }
+ ],
+ "survival_by_outcome_has_signal": [
+  {
+   "encoding": "F1",
+   "cell": "B_full",
+   "metric": "P5",
+   "n_true": 198,
+   "survived_true": 187,
+   "share_true": 94.44444444444444,
+   "ci_true": [
+    90.32726763130819,
+    96.86988256187864
+   ],
+   "n_false": 50,
+   "survived_false": 10,
+   "share_false": 20.0,
+   "ci_false": [
+    11.243750015776111,
+    33.037105932225415
+   ],
+   "diff_pp": 74.44444444444444,
+   "diff_ci": [
+    60.772675136900745,
+    83.53040415422325
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_full",
+   "metric": "P_now",
+   "n_true": 209,
+   "survived_true": 197,
+   "share_true": 94.25837320574163,
+   "ci_true": [
+    90.23377108412582,
+    96.68538509204528
+   ],
+   "n_false": 39,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.966685370757144
+   ],
+   "diff_pp": 94.25837320574163,
+   "diff_ci": [
+    84.42990085366856,
+    96.68538509204528
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "metric": "P5",
+   "n_true": 205,
+   "survived_true": 192,
+   "share_true": 93.65853658536587,
+   "ci_true": [
+    89.45403769853417,
+    96.25691309198142
+   ],
+   "n_false": 43,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.200980322579117
+   ],
+   "diff_pp": 93.65853658536587,
+   "diff_ci": [
+    84.44257819023957,
+    96.25691309198142
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "metric": "P_now",
+   "n_true": 205,
+   "survived_true": 192,
+   "share_true": 93.65853658536587,
+   "ci_true": [
+    89.45403769853417,
+    96.25691309198142
+   ],
+   "n_false": 43,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.200980322579117
+   ],
+   "diff_pp": 93.65853658536587,
+   "diff_ci": [
+    84.44257819023957,
+    96.25691309198142
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "class_only",
+   "metric": "P5",
+   "n_true": 204,
+   "survived_true": 191,
+   "share_true": 93.62745098039215,
+   "ci_true": [
+    89.40382304548255,
+    96.23837799081862
+   ],
+   "n_false": 44,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.029560375848066
+   ],
+   "diff_pp": 93.62745098039215,
+   "diff_ci": [
+    84.55480678137619,
+    96.23837799081862
+   ]
+  },
+  {
+   "encoding": "F1",
+   "cell": "class_only",
+   "metric": "P_now",
+   "n_true": 204,
+   "survived_true": 191,
+   "share_true": 93.62745098039215,
+   "ci_true": [
+    89.40382304548255,
+    96.23837799081862
+   ],
+   "n_false": 44,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.029560375848066
+   ],
+   "diff_pp": 93.62745098039215,
+   "diff_ci": [
+    84.55480678137619,
+    96.23837799081862
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_full",
+   "metric": "P5",
+   "n_true": 191,
+   "survived_true": 179,
+   "share_true": 93.717277486911,
+   "ci_true": [
+    89.34087463507254,
+    96.36983653019561
+   ],
+   "n_false": 57,
+   "survived_false": 15,
+   "share_false": 26.31578947368421,
+   "ci_false": [
+    16.64578659797307,
+    38.97657926348382
+   ],
+   "diff_pp": 67.40148801322678,
+   "diff_ci": [
+    54.00564910619771,
+    77.42870223724596
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_full",
+   "metric": "P_now",
+   "n_true": 209,
+   "survived_true": 194,
+   "share_true": 92.82296650717703,
+   "ci_true": [
+    88.49745693519327,
+    95.60269958121009
+   ],
+   "n_false": 39,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.966685370757144
+   ],
+   "diff_pp": 92.82296650717703,
+   "diff_ci": [
+    82.86749165182867,
+    95.60269958121009
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "metric": "P5",
+   "n_true": 208,
+   "survived_true": 195,
+   "share_true": 93.75,
+   "ci_true": [
+    89.60186741145255,
+    96.3114382338072
+   ],
+   "n_false": 40,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.762160119728664
+   ],
+   "diff_pp": 93.75,
+   "diff_ci": [
+    84.05554519656042,
+    96.3114382338072
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "metric": "P_now",
+   "n_true": 208,
+   "survived_true": 195,
+   "share_true": 93.75,
+   "ci_true": [
+    89.60186741145255,
+    96.3114382338072
+   ],
+   "n_false": 40,
+   "survived_false": 0,
+   "share_false": 0.0,
+   "ci_false": [
+    0.0,
+    8.762160119728664
+   ],
+   "diff_pp": 93.75,
+   "diff_ci": [
+    84.05554519656042,
+    96.3114382338072
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "class_only",
+   "metric": "P5",
+   "n_true": 207,
+   "survived_true": 195,
+   "share_true": 94.20289855072464,
+   "ci_true": [
+    90.14201397134707,
+    96.65305993090128
+   ],
+   "n_false": 41,
+   "survived_false": 1,
+   "share_false": 2.4390243902439024,
+   "ci_false": [
+    0.43185315689124104,
+    12.595062055774232
+   ],
+   "diff_pp": 91.76387416048073,
+   "diff_ci": [
+    80.82605515344386,
+    94.93121170941794
+   ]
+  },
+  {
+   "encoding": "F3",
+   "cell": "class_only",
+   "metric": "P_now",
+   "n_true": 207,
+   "survived_true": 195,
+   "share_true": 94.20289855072464,
+   "ci_true": [
+    90.14201397134707,
+    96.65305993090128
+   ],
+   "n_false": 41,
+   "survived_false": 1,
+   "share_false": 2.4390243902439024,
+   "ci_false": [
+    0.43185315689124104,
+    12.595062055774232
+   ],
+   "diff_pp": 91.76387416048073,
+   "diff_ci": [
+    80.82605515344386,
+    94.93121170941794
+   ]
+  }
+ ],
+ "broken_summary": {
+  "broken": 353,
+  "wrong_in_may": 271,
+  "per_cell": {
+   "F1|B_full": 56,
+   "F1|B_noVolatile": 61,
+   "F1|class_only": 63,
+   "F3|B_full": 57,
+   "F3|B_noVolatile": 58,
+   "F3|class_only": 58
+  },
+  "per_site": {
+   "0176_discord.com": 36,
+   "0029_github.com": 28,
+   "0150_godaddy.com": 23,
+   "0142_afternic.com": 21,
+   "0382_datadoghq.com": 21,
+   "0399_doubleverify.com": 21,
+   "0146_kaspersky.com": 16,
+   "0379_plesk.com": 16,
+   "0160_criteo.com": 15,
+   "0206_telegram.org": 14,
+   "0256_hubspot.com": 13,
+   "0131_intuit.com": 12,
+   "0266_spectrum.com": 12,
+   "0232_nist.gov": 11,
+   "0385_stanford.edu": 11,
+   "0049_wordpress.org": 9,
+   "0356_nasa.gov": 9,
+   "0227_cisco.com": 8,
+   "0357_mobile.de": 8,
+   "0129_dropbox.com": 7,
+   "0170_shopify.com": 7,
+   "0162_webex.com": 6,
+   "0278_dnsmadeeasy.com": 6,
+   "0309_inmobi.com": 6,
+   "0324_appsflyer.com": 6,
+   "0314_ok.ru": 4,
+   "0109_triplinkintl.com": 2,
+   "0167_hichina.com": 2,
+   "0365_checkpoint.com": 2,
+   "0418_unsplash.com": 1
+  }
+ },
+ "broken": [
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0029_github.com|t_01|0",
+   "site": "0029_github.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0029_github.com|t_01|0",
+   "site": "0029_github.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0029_github.com|t_04|0",
+   "site": "0029_github.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class",
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0029_github.com|t_05|0",
+   "site": "0029_github.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0029_github.com|t_05|0",
+   "site": "0029_github.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0029_github.com|t_05|0",
+   "site": "0029_github.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0029_github.com|t_05|0",
+   "site": "0029_github.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0029_github.com|t_06|0",
+   "site": "0029_github.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0029_github.com|t_07|0",
+   "site": "0029_github.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": true,
+   "kind": "aria+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0029_github.com|t_07|0",
+   "site": "0029_github.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": true,
+   "kind": "aria+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0029_github.com|t_09|0",
+   "site": "0029_github.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0029_github.com|t_10|0",
+   "site": "0029_github.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0029_github.com|t_10|0",
+   "site": "0029_github.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0049_wordpress.org|t_04|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0049_wordpress.org|t_04|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0049_wordpress.org|t_04|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0049_wordpress.org|t_05|0",
+   "site": "0049_wordpress.org",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0109_triplinkintl.com|t_05|0",
+   "site": "0109_triplinkintl.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0109_triplinkintl.com|t_05|0",
+   "site": "0109_triplinkintl.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0129_dropbox.com|t_08|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0129_dropbox.com|t_10|0",
+   "site": "0129_dropbox.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0131_intuit.com|t_01|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0131_intuit.com|t_01|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0131_intuit.com|t_01|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0131_intuit.com|t_01|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0131_intuit.com|t_01|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0131_intuit.com|t_02|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0131_intuit.com|t_02|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0131_intuit.com|t_02|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0131_intuit.com|t_02|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0131_intuit.com|t_02|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "data+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0131_intuit.com|t_04|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0131_intuit.com|t_09|0",
+   "site": "0131_intuit.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "title"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0142_afternic.com|t_01|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0142_afternic.com|t_01|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0142_afternic.com|t_01|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0142_afternic.com|t_01|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0142_afternic.com|t_01|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0142_afternic.com|t_02|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0142_afternic.com|t_03|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0142_afternic.com|t_03|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0142_afternic.com|t_05|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0142_afternic.com|t_05|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0142_afternic.com|t_06|0",
+   "site": "0142_afternic.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0146_kaspersky.com|t_05|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "aria",
+   "change": "attribute value changed",
+   "attrs": [
+    "aria-controls"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0146_kaspersky.com|t_05|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "aria",
+   "change": "attribute value changed",
+   "attrs": [
+    "aria-controls"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0146_kaspersky.com|t_05|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0146_kaspersky.com|t_05|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0146_kaspersky.com|t_05|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0146_kaspersky.com|t_07|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0146_kaspersky.com|t_09|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0146_kaspersky.com|t_09|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0146_kaspersky.com|t_09|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0146_kaspersky.com|t_09|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0146_kaspersky.com|t_10|0",
+   "site": "0146_kaspersky.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0150_godaddy.com|t_02|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0150_godaddy.com|t_02|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0150_godaddy.com|t_02|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0150_godaddy.com|t_02|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "id+aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0150_godaddy.com|t_02|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "id+aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0150_godaddy.com|t_05|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0150_godaddy.com|t_06|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "id+aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0150_godaddy.com|t_07|0",
+   "site": "0150_godaddy.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "id+aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0160_criteo.com|t_06|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0160_criteo.com|t_06|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0160_criteo.com|t_06|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0160_criteo.com|t_07|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0160_criteo.com|t_08|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0160_criteo.com|t_08|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0160_criteo.com|t_08|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0160_criteo.com|t_09|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0160_criteo.com|t_09|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0160_criteo.com|t_10|0",
+   "site": "0160_criteo.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0162_webex.com|t_05|0",
+   "site": "0162_webex.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0167_hichina.com|t_04|0",
+   "site": "0167_hichina.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0167_hichina.com|t_04|0",
+   "site": "0167_hichina.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0170_shopify.com|t_04|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0170_shopify.com|t_05|0",
+   "site": "0170_shopify.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_01|0",
+   "site": "0176_discord.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_02|0",
+   "site": "0176_discord.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_05|0",
+   "site": "0176_discord.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_06|0",
+   "site": "0176_discord.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_08|0",
+   "site": "0176_discord.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0176_discord.com|t_10|0",
+   "site": "0176_discord.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0206_telegram.org|t_02|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0206_telegram.org|t_04|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0206_telegram.org|t_04|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0206_telegram.org|t_04|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0206_telegram.org|t_09|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0206_telegram.org|t_09|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0206_telegram.org|t_09|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_09",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0206_telegram.org|t_09|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0206_telegram.org|t_09|0",
+   "site": "0206_telegram.org",
+   "task_id": "t_09",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0227_cisco.com|t_02|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "id",
+   "change": "unclassified (target still matches; non-candidate element)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0227_cisco.com|t_08|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "id",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0227_cisco.com|t_08|0",
+   "site": "0227_cisco.com",
+   "task_id": "t_08",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "id",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0232_nist.gov|t_03|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0232_nist.gov|t_03|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0232_nist.gov|t_03|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0232_nist.gov|t_04|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0232_nist.gov|t_08|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0232_nist.gov|t_08|0",
+   "site": "0232_nist.gov",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0256_hubspot.com|t_01|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0256_hubspot.com|t_05|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0256_hubspot.com|t_05|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0256_hubspot.com|t_05|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0256_hubspot.com|t_05|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0256_hubspot.com|t_10|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0256_hubspot.com|t_10|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0256_hubspot.com|t_10|0",
+   "site": "0256_hubspot.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "no longer unique (another element matches)",
+   "other_matches": 1
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "no longer unique (another element matches)",
+   "other_matches": 1
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "no longer unique (another element matches)",
+   "other_matches": 1
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "no longer unique (another element matches)",
+   "other_matches": 1
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "id+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "id"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0266_spectrum.com|t_03|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "id+attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "id"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0266_spectrum.com|t_06|0",
+   "site": "0266_spectrum.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0278_dnsmadeeasy.com|t_05|0",
+   "site": "0278_dnsmadeeasy.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "structural",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0309_inmobi.com|t_10|0",
+   "site": "0309_inmobi.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0314_ok.ru|t_04|0",
+   "site": "0314_ok.ru",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0314_ok.ru|t_04|0",
+   "site": "0314_ok.ru",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0314_ok.ru|t_04|0",
+   "site": "0314_ok.ru",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0314_ok.ru|t_10|0",
+   "site": "0314_ok.ru",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0324_appsflyer.com|t_06|0",
+   "site": "0324_appsflyer.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr+class",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0356_nasa.gov|t_03|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0356_nasa.gov|t_08|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0356_nasa.gov|t_08|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0356_nasa.gov|t_08|0",
+   "site": "0356_nasa.gov",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0357_mobile.de|t_05|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0357_mobile.de|t_05|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0357_mobile.de|t_05|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0357_mobile.de|t_06|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": true,
+   "kind": "class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0357_mobile.de|t_06|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": true,
+   "kind": "class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0357_mobile.de|t_06|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0357_mobile.de|t_06|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute value changed",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0357_mobile.de|t_07|0",
+   "site": "0357_mobile.de",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "data+attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0365_checkpoint.com|t_10|0",
+   "site": "0365_checkpoint.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0365_checkpoint.com|t_10|0",
+   "site": "0365_checkpoint.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0379_plesk.com|t_02|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0379_plesk.com|t_03|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0379_plesk.com|t_10|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0379_plesk.com|t_10|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0379_plesk.com|t_10|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0379_plesk.com|t_10|0",
+   "site": "0379_plesk.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0382_datadoghq.com|t_03|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_03",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0382_datadoghq.com|t_04|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0382_datadoghq.com|t_04|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0382_datadoghq.com|t_04|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0382_datadoghq.com|t_06|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_06",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr+class",
+   "change": "attribute missing in September",
+   "attrs": [
+    "class"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0382_datadoghq.com|t_10|0",
+   "site": "0382_datadoghq.com",
+   "task_id": "t_10",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0385_stanford.edu|t_01|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_01",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0385_stanford.edu|t_02|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0385_stanford.edu|t_02|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0385_stanford.edu|t_02|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_02",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0385_stanford.edu|t_02|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0385_stanford.edu|t_02|0",
+   "site": "0385_stanford.edu",
+   "task_id": "t_02",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": true,
+   "P_now": true,
+   "kind": "attr",
+   "change": "attribute value changed",
+   "attrs": [
+    "href"
+   ]
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0399_doubleverify.com|t_03|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0399_doubleverify.com|t_03|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0399_doubleverify.com|t_03|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_03",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0399_doubleverify.com|t_04|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_04",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+attr+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0399_doubleverify.com|t_05|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_05",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria+text",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F1|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F1|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F1|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F1",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_noVolatileConsistent|F3|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full_minus_volClass|F3|0399_doubleverify.com|t_07|0",
+   "site": "0399_doubleverify.com",
+   "task_id": "t_07",
+   "encoding": "F3",
+   "cell": "class_only",
+   "P5": false,
+   "P_now": false,
+   "kind": "attr",
+   "change": "wrong already in May (P_now false)"
+  },
+  {
+   "event_key": "gpt-4.1|B_full|F3|0418_unsplash.com|t_08|0",
+   "site": "0418_unsplash.com",
+   "task_id": "t_08",
+   "encoding": "F3",
+   "cell": "B_full",
+   "P5": false,
+   "P_now": false,
+   "kind": "aria",
+   "change": "wrong already in May (P_now false)"
+  }
+ ],
+ "loso": {
+  "F1": {
+   "full_delta_pp": 3.1948881789137378,
+   "n": 313,
+   "loso": [
+    {
+     "left_out": "0029_github.com",
+     "delta_pp": 2.9702970297029703,
+     "n": 303,
+     "shift_pp": -0.2245911492107675
+    },
+    {
+     "left_out": "0031_wikipedia.org",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0049_wordpress.org",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0109_triplinkintl.com",
+     "delta_pp": 3.6303630363036308,
+     "n": 303,
+     "shift_pp": 0.435474857389893
+    },
+    {
+     "left_out": "0129_dropbox.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0131_intuit.com",
+     "delta_pp": 2.6402640264026402,
+     "n": 303,
+     "shift_pp": -0.5546241525110975
+    },
+    {
+     "left_out": "0142_afternic.com",
+     "delta_pp": 2.922077922077922,
+     "n": 308,
+     "shift_pp": -0.27281025683581595
+    },
+    {
+     "left_out": "0146_kaspersky.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0150_godaddy.com",
+     "delta_pp": 2.9508196721311477,
+     "n": 305,
+     "shift_pp": -0.24406850678259007
+    },
+    {
+     "left_out": "0160_criteo.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0162_webex.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0167_hichina.com",
+     "delta_pp": 3.5830618892508146,
+     "n": 307,
+     "shift_pp": 0.3881737103370768
+    },
+    {
+     "left_out": "0170_shopify.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0176_discord.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0206_telegram.org",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0227_cisco.com",
+     "delta_pp": 3.6303630363036308,
+     "n": 303,
+     "shift_pp": 0.435474857389893
+    },
+    {
+     "left_out": "0232_nist.gov",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0256_hubspot.com",
+     "delta_pp": 3.289473684210526,
+     "n": 304,
+     "shift_pp": 0.09458550529678833
+    },
+    {
+     "left_out": "0266_spectrum.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0278_dnsmadeeasy.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0309_inmobi.com",
+     "delta_pp": 1.9801980198019802,
+     "n": 303,
+     "shift_pp": -1.2146901591117576
+    },
+    {
+     "left_out": "0314_ok.ru",
+     "delta_pp": 2.6402640264026402,
+     "n": 303,
+     "shift_pp": -0.5546241525110975
+    },
+    {
+     "left_out": "0324_appsflyer.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0337_drom.ru",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0356_nasa.gov",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0357_mobile.de",
+     "delta_pp": 3.2679738562091507,
+     "n": 306,
+     "shift_pp": 0.07308567729541293
+    },
+    {
+     "left_out": "0365_checkpoint.com",
+     "delta_pp": 3.6303630363036308,
+     "n": 303,
+     "shift_pp": 0.435474857389893
+    },
+    {
+     "left_out": "0379_plesk.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0381_issuu.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0382_datadoghq.com",
+     "delta_pp": 3.289473684210526,
+     "n": 304,
+     "shift_pp": 0.09458550529678833
+    },
+    {
+     "left_out": "0385_stanford.edu",
+     "delta_pp": 2.9702970297029703,
+     "n": 303,
+     "shift_pp": -0.2245911492107675
+    },
+    {
+     "left_out": "0399_doubleverify.com",
+     "delta_pp": 3.3003300330033,
+     "n": 303,
+     "shift_pp": 0.10544185408956208
+    },
+    {
+     "left_out": "0418_unsplash.com",
+     "delta_pp": 2.631578947368421,
+     "n": 304,
+     "shift_pp": -0.563309231545317
+    }
+   ],
+   "min": {
+    "left_out": "0309_inmobi.com",
+    "delta_pp": 1.9801980198019802,
+    "n": 303,
+    "shift_pp": -1.2146901591117576
+   },
+   "max": {
+    "left_out": "0109_triplinkintl.com",
+    "delta_pp": 3.6303630363036308,
+    "n": 303,
+    "shift_pp": 0.435474857389893
+   },
+   "sign": {
+    "> 0": 8,
+    "= 0": 21,
+    "< 0": 4
+   },
+   "per_site": [
+    {
+     "site": "0029_github.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 9,
+     "delta_count": 1
+    },
+    {
+     "site": "0031_wikipedia.org",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0049_wordpress.org",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0109_triplinkintl.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 9,
+     "delta_count": -1
+    },
+    {
+     "site": "0129_dropbox.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0131_intuit.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 10,
+     "delta_count": 2
+    },
+    {
+     "site": "0142_afternic.com",
+     "n": 5,
+     "B_full": 3,
+     "B_noVolatile": 4,
+     "delta_count": 1
+    },
+    {
+     "site": "0146_kaspersky.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0150_godaddy.com",
+     "n": 8,
+     "B_full": 5,
+     "B_noVolatile": 6,
+     "delta_count": 1
+    },
+    {
+     "site": "0160_criteo.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0162_webex.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0167_hichina.com",
+     "n": 6,
+     "B_full": 6,
+     "B_noVolatile": 5,
+     "delta_count": -1
+    },
+    {
+     "site": "0170_shopify.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0176_discord.com",
+     "n": 10,
+     "B_full": 4,
+     "B_noVolatile": 4,
+     "delta_count": 0
+    },
+    {
+     "site": "0206_telegram.org",
+     "n": 10,
+     "B_full": 7,
+     "B_noVolatile": 7,
+     "delta_count": 0
+    },
+    {
+     "site": "0227_cisco.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 9,
+     "delta_count": -1
+    },
+    {
+     "site": "0232_nist.gov",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0256_hubspot.com",
+     "n": 9,
+     "B_full": 5,
+     "B_noVolatile": 5,
+     "delta_count": 0
+    },
+    {
+     "site": "0266_spectrum.com",
+     "n": 10,
+     "B_full": 7,
+     "B_noVolatile": 7,
+     "delta_count": 0
+    },
+    {
+     "site": "0278_dnsmadeeasy.com",
+     "n": 10,
+     "B_full": 3,
+     "B_noVolatile": 3,
+     "delta_count": 0
+    },
+    {
+     "site": "0309_inmobi.com",
+     "n": 10,
+     "B_full": 5,
+     "B_noVolatile": 9,
+     "delta_count": 4
+    },
+    {
+     "site": "0314_ok.ru",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 10,
+     "delta_count": 2
+    },
+    {
+     "site": "0324_appsflyer.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0337_drom.ru",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0356_nasa.gov",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0357_mobile.de",
+     "n": 7,
+     "B_full": 6,
+     "B_noVolatile": 6,
+     "delta_count": 0
+    },
+    {
+     "site": "0365_checkpoint.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 8,
+     "delta_count": -1
+    },
+    {
+     "site": "0379_plesk.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0381_issuu.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0382_datadoghq.com",
+     "n": 9,
+     "B_full": 8,
+     "B_noVolatile": 8,
+     "delta_count": 0
+    },
+    {
+     "site": "0385_stanford.edu",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 9,
+     "delta_count": 1
+    },
+    {
+     "site": "0399_doubleverify.com",
+     "n": 10,
+     "B_full": 6,
+     "B_noVolatile": 6,
+     "delta_count": 0
+    },
+    {
+     "site": "0418_unsplash.com",
+     "n": 9,
+     "B_full": 2,
+     "B_noVolatile": 4,
+     "delta_count": 2
+    }
+   ]
+  },
+  "F3": {
+   "full_delta_pp": 5.431309904153355,
+   "n": 313,
+   "loso": [
+    {
+     "left_out": "0029_github.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0031_wikipedia.org",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0049_wordpress.org",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0109_triplinkintl.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0129_dropbox.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0131_intuit.com",
+     "delta_pp": 4.9504950495049505,
+     "n": 303,
+     "shift_pp": -0.4808148546484041
+    },
+    {
+     "left_out": "0142_afternic.com",
+     "delta_pp": 5.51948051948052,
+     "n": 308,
+     "shift_pp": 0.08817061532716508
+    },
+    {
+     "left_out": "0146_kaspersky.com",
+     "delta_pp": 4.9504950495049505,
+     "n": 303,
+     "shift_pp": -0.4808148546484041
+    },
+    {
+     "left_out": "0150_godaddy.com",
+     "delta_pp": 5.245901639344262,
+     "n": 305,
+     "shift_pp": -0.18540826480909267
+    },
+    {
+     "left_out": "0160_criteo.com",
+     "delta_pp": 5.9405940594059405,
+     "n": 303,
+     "shift_pp": 0.509284155252586
+    },
+    {
+     "left_out": "0162_webex.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0167_hichina.com",
+     "delta_pp": 5.537459283387622,
+     "n": 307,
+     "shift_pp": 0.10614937923426737
+    },
+    {
+     "left_out": "0170_shopify.com",
+     "delta_pp": 5.2805280528052805,
+     "n": 303,
+     "shift_pp": -0.1507818513480741
+    },
+    {
+     "left_out": "0176_discord.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0206_telegram.org",
+     "delta_pp": 5.9405940594059405,
+     "n": 303,
+     "shift_pp": 0.509284155252586
+    },
+    {
+     "left_out": "0227_cisco.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0232_nist.gov",
+     "delta_pp": 5.9405940594059405,
+     "n": 303,
+     "shift_pp": 0.509284155252586
+    },
+    {
+     "left_out": "0256_hubspot.com",
+     "delta_pp": 5.263157894736842,
+     "n": 304,
+     "shift_pp": -0.16815200941651298
+    },
+    {
+     "left_out": "0266_spectrum.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0278_dnsmadeeasy.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0309_inmobi.com",
+     "delta_pp": 2.9702970297029703,
+     "n": 303,
+     "shift_pp": -2.4610128744503843
+    },
+    {
+     "left_out": "0314_ok.ru",
+     "delta_pp": 4.9504950495049505,
+     "n": 303,
+     "shift_pp": -0.4808148546484041
+    },
+    {
+     "left_out": "0324_appsflyer.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0337_drom.ru",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0356_nasa.gov",
+     "delta_pp": 5.9405940594059405,
+     "n": 303,
+     "shift_pp": 0.509284155252586
+    },
+    {
+     "left_out": "0357_mobile.de",
+     "delta_pp": 6.209150326797386,
+     "n": 306,
+     "shift_pp": 0.7778404226440312
+    },
+    {
+     "left_out": "0365_checkpoint.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0379_plesk.com",
+     "delta_pp": 5.2805280528052805,
+     "n": 303,
+     "shift_pp": -0.1507818513480741
+    },
+    {
+     "left_out": "0381_issuu.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0382_datadoghq.com",
+     "delta_pp": 5.263157894736842,
+     "n": 304,
+     "shift_pp": -0.16815200941651298
+    },
+    {
+     "left_out": "0385_stanford.edu",
+     "delta_pp": 5.2805280528052805,
+     "n": 303,
+     "shift_pp": -0.1507818513480741
+    },
+    {
+     "left_out": "0399_doubleverify.com",
+     "delta_pp": 5.6105610561056105,
+     "n": 303,
+     "shift_pp": 0.17925115195225594
+    },
+    {
+     "left_out": "0418_unsplash.com",
+     "delta_pp": 4.605263157894736,
+     "n": 304,
+     "shift_pp": -0.8260467462586183
+    }
+   ],
+   "min": {
+    "left_out": "0309_inmobi.com",
+    "delta_pp": 2.9702970297029703,
+    "n": 303,
+    "shift_pp": -2.4610128744503843
+   },
+   "max": {
+    "left_out": "0357_mobile.de",
+    "delta_pp": 6.209150326797386,
+    "n": 306,
+    "shift_pp": 0.7778404226440312
+   },
+   "sign": {
+    "= 0": 17,
+    "> 0": 11,
+    "< 0": 5
+   },
+   "per_site": [
+    {
+     "site": "0029_github.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0031_wikipedia.org",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0049_wordpress.org",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0109_triplinkintl.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0129_dropbox.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0131_intuit.com",
+     "n": 10,
+     "B_full": 7,
+     "B_noVolatile": 9,
+     "delta_count": 2
+    },
+    {
+     "site": "0142_afternic.com",
+     "n": 5,
+     "B_full": 4,
+     "B_noVolatile": 4,
+     "delta_count": 0
+    },
+    {
+     "site": "0146_kaspersky.com",
+     "n": 10,
+     "B_full": 5,
+     "B_noVolatile": 7,
+     "delta_count": 2
+    },
+    {
+     "site": "0150_godaddy.com",
+     "n": 8,
+     "B_full": 5,
+     "B_noVolatile": 6,
+     "delta_count": 1
+    },
+    {
+     "site": "0160_criteo.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 7,
+     "delta_count": -1
+    },
+    {
+     "site": "0162_webex.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0167_hichina.com",
+     "n": 6,
+     "B_full": 6,
+     "B_noVolatile": 6,
+     "delta_count": 0
+    },
+    {
+     "site": "0170_shopify.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 9,
+     "delta_count": 1
+    },
+    {
+     "site": "0176_discord.com",
+     "n": 10,
+     "B_full": 4,
+     "B_noVolatile": 4,
+     "delta_count": 0
+    },
+    {
+     "site": "0206_telegram.org",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 7,
+     "delta_count": -1
+    },
+    {
+     "site": "0227_cisco.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0232_nist.gov",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 7,
+     "delta_count": -1
+    },
+    {
+     "site": "0256_hubspot.com",
+     "n": 9,
+     "B_full": 5,
+     "B_noVolatile": 6,
+     "delta_count": 1
+    },
+    {
+     "site": "0266_spectrum.com",
+     "n": 10,
+     "B_full": 7,
+     "B_noVolatile": 7,
+     "delta_count": 0
+    },
+    {
+     "site": "0278_dnsmadeeasy.com",
+     "n": 10,
+     "B_full": 3,
+     "B_noVolatile": 3,
+     "delta_count": 0
+    },
+    {
+     "site": "0309_inmobi.com",
+     "n": 10,
+     "B_full": 1,
+     "B_noVolatile": 9,
+     "delta_count": 8
+    },
+    {
+     "site": "0314_ok.ru",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 10,
+     "delta_count": 2
+    },
+    {
+     "site": "0324_appsflyer.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0337_drom.ru",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0356_nasa.gov",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 7,
+     "delta_count": -1
+    },
+    {
+     "site": "0357_mobile.de",
+     "n": 7,
+     "B_full": 7,
+     "B_noVolatile": 5,
+     "delta_count": -2
+    },
+    {
+     "site": "0365_checkpoint.com",
+     "n": 10,
+     "B_full": 9,
+     "B_noVolatile": 9,
+     "delta_count": 0
+    },
+    {
+     "site": "0379_plesk.com",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 9,
+     "delta_count": 1
+    },
+    {
+     "site": "0381_issuu.com",
+     "n": 10,
+     "B_full": 10,
+     "B_noVolatile": 10,
+     "delta_count": 0
+    },
+    {
+     "site": "0382_datadoghq.com",
+     "n": 9,
+     "B_full": 7,
+     "B_noVolatile": 8,
+     "delta_count": 1
+    },
+    {
+     "site": "0385_stanford.edu",
+     "n": 10,
+     "B_full": 8,
+     "B_noVolatile": 9,
+     "delta_count": 1
+    },
+    {
+     "site": "0399_doubleverify.com",
+     "n": 10,
+     "B_full": 7,
+     "B_noVolatile": 7,
+     "delta_count": 0
+    },
+    {
+     "site": "0418_unsplash.com",
+     "n": 9,
+     "B_full": 1,
+     "B_noVolatile": 4,
+     "delta_count": 3
+    }
+   ]
+  }
+ },
+ "survival_paired": [
+  {
+   "encoding": "F1",
+   "n": 260,
+   "n11_both": 196,
+   "b_second_only": 3,
+   "c_first_only": 8,
+   "n00_neither": 53,
+   "success_first": 204,
+   "success_second": 199,
+   "rate_first_pct": 78.46153846153847,
+   "rate_second_pct": 76.53846153846153,
+   "delta_pp": -1.9230769230769231,
+   "chi2": 2.272727272727273,
+   "p": 0.13166801602281455,
+   "p_exact": 0.2265625,
+   "odds_ratio": 0.375,
+   "or_ci_lo": 0.06407626145180512,
+   "or_ci_hi": 1.5624111071511333
+  },
+  {
+   "encoding": "F3",
+   "n": 260,
+   "n11_both": 192,
+   "b_second_only": 10,
+   "c_first_only": 11,
+   "n00_neither": 47,
+   "success_first": 203,
+   "success_second": 202,
+   "rate_first_pct": 78.07692307692308,
+   "rate_second_pct": 77.6923076923077,
+   "delta_pp": -0.38461538461538464,
+   "chi2": 0.047619047619047616,
+   "p": 0.8272593465627114,
+   "p_exact": 1.0,
+   "odds_ratio": 0.9090909090909091,
+   "or_ci_lo": 0.3461316828321394,
+   "or_ci_hi": 2.3578812497536275
+  }
+ ],
+ "tokens": {
+  "F1|B_full": {
+   "n": 326,
+   "obs_mean": 38737.865030674846,
+   "obs_median": 33339.0,
+   "n_called": 326,
+   "prompt_mean_called": 38829.579754601225
+  },
+  "F1|B_noVolatile": {
+   "n": 326,
+   "obs_mean": 35713.22699386503,
+   "obs_median": 32194.0,
+   "n_called": 326,
+   "prompt_mean_called": 35804.94171779141
+  },
+  "F1|class_only": {
+   "n": 326,
+   "obs_mean": 35716.84049079755,
+   "obs_median": 32194.0,
+   "n_called": 86,
+   "prompt_mean_called": 46147.03488372093
+  },
+  "F3|B_full": {
+   "n": 326,
+   "obs_mean": 30446.300613496933,
+   "obs_median": 26651.0,
+   "n_called": 326,
+   "prompt_mean_called": 30538.493865030676
+  },
+  "F3|B_noVolatile": {
+   "n": 326,
+   "obs_mean": 27528.766871165644,
+   "obs_median": 25661.0,
+   "n_called": 326,
+   "prompt_mean_called": 27620.990797546012
+  },
+  "F3|class_only": {
+   "n": 326,
+   "obs_mean": 27531.76073619632,
+   "obs_median": 25661.0,
+   "n_called": 86,
+   "prompt_mean_called": 37113.895348837206
+  }
+ },
+ "savings": {
+  "F3 vs F1, B_full": {
+   "mean_based": 21.40428857040051,
+   "median_per_target": 18.791802768704315
+  },
+  "F3 vs F1, B_noVolatile": {
+   "mean_based": 22.917167704014386,
+   "median_per_target": 19.83482387296952
+  },
+  "F3 vs F1, class_only": {
+   "mean_based": 22.91658400386819,
+   "median_per_target": 19.83482387296952
+  },
+  "B_noVolatile vs B_full, F1": {
+   "mean_based": 7.807962659828405,
+   "median_per_target": 1.1093842113725327
+  },
+  "class_only vs B_full, F1": {
+   "mean_based": 7.7986345852696815,
+   "median_per_target": 1.1093842113725327
+  },
+  "B_noVolatile vs B_full, F3": {
+   "mean_based": 9.582555790170243,
+   "median_per_target": 1.353037136551194
+  },
+  "class_only vs B_full, F3": {
+   "mean_based": 9.572722526455612,
+   "median_per_target": 1.353037136551194
+  }
+ },
+ "survival_correct_in_may": [
+  {
+   "encoding": "F1",
+   "cell": "B_full",
+   "scope": "all strata",
+   "n_true": 198,
+   "survived_true": 187,
+   "share_true": 94.44444444444444,
+   "n_false": 18,
+   "survived_false": 17,
+   "share_false": 94.44444444444444,
+   "diff_pp": 0.0,
+   "diff_ci": [
+    -6.149642427794793,
+    20.346824328394
+   ],
+   "fisher_p": 1.0,
+   "p5_false_failure_modes": {
+    "model_grabbed_brittle_signal": 11,
+    "observation_lacked_stable_signal": 7
+   },
+   "p5_false_no_signal": 7
+  },
+  {
+   "encoding": "F1",
+   "cell": "B_noVolatile",
+   "scope": "all strata",
+   "n_true": 205,
+   "survived_true": 192,
+   "share_true": 93.65853658536587,
+   "n_false": 8,
+   "survived_false": 7,
+   "share_false": 87.5,
+   "diff_pp": 6.158536585365859,
+   "diff_ci": [
+    -4.9279200845246995,
+    40.84481494461411
+   ],
+   "fisher_p": 0.42499576692871255,
+   "p5_false_failure_modes": {
+    "observation_lacked_stable_signal": 8
+   },
+   "p5_false_no_signal": 8
+  },
+  {
+   "encoding": "F1",
+   "cell": "class_only",
+   "scope": "all strata",
+   "n_true": 204,
+   "survived_true": 191,
+   "share_true": 93.62745098039215,
+   "n_false": 7,
+   "survived_false": 6,
+   "share_false": 85.71428571428571,
+   "diff_pp": 7.913165266106448,
+   "diff_ci": [
+    -4.542545929155983,
+    45.03217322769186
+   ],
+   "fisher_p": 0.38602915917648023,
+   "p5_false_failure_modes": {
+    "observation_lacked_stable_signal": 7
+   },
+   "p5_false_no_signal": 7
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_full",
+   "scope": "all strata",
+   "n_true": 191,
+   "survived_true": 179,
+   "share_true": 93.717277486911,
+   "n_false": 27,
+   "survived_false": 24,
+   "share_false": 88.88888888888889,
+   "diff_pp": 4.828388598022116,
+   "diff_ci": [
+    -3.6478777027206784,
+    21.981416363089394
+   ],
+   "fisher_p": 0.40712355684207924,
+   "p5_false_failure_modes": {
+    "model_grabbed_brittle_signal": 18,
+    "observation_lacked_stable_signal": 9
+   },
+   "p5_false_no_signal": 9
+  },
+  {
+   "encoding": "F3",
+   "cell": "B_noVolatile",
+   "scope": "all strata",
+   "n_true": 208,
+   "survived_true": 195,
+   "share_true": 93.75,
+   "n_false": 8,
+   "survived_false": 7,
+   "share_false": 87.5,
+   "diff_pp": 6.25,
+   "diff_ci": [
+    -4.815202870989823,
+    40.93353084348148
+   ],
+   "fisher_p": 0.4203269454398135,
+   "p5_false_failure_modes": {
+    "observation_lacked_stable_signal": 8
+   },
+   "p5_false_no_signal": 8
+  },
+  {
+   "encoding": "F3",
+   "cell": "class_only",
+   "scope": "all strata",
+   "n_true": 207,
+   "survived_true": 195,
+   "share_true": 94.20289855072464,
+   "n_false": 7,
+   "survived_false": 6,
+   "share_false": 85.71428571428571,
+   "diff_pp": 8.488612836438925,
+   "diff_ci": [
+    -3.91285852845418,
+    45.59665917395683
+   ],
+   "fisher_p": 0.35929130203315274,
+   "p5_false_failure_modes": {
+    "observation_lacked_stable_signal": 7
+   },
+   "p5_false_no_signal": 7
+  },
+  {
+   "encoding": "all",
+   "cell": "all cells",
+   "scope": "all strata",
+   "n_true": 1213,
+   "survived_true": 1139,
+   "share_true": 93.89942291838416,
+   "n_false": 75,
+   "survived_false": 67,
+   "share_false": 89.33333333333333,
+   "diff_pp": 4.566089585050836,
+   "diff_ci": [
+    -0.8065475944235727,
+    13.642249020292208
+   ],
+   "fisher_p": 0.13729310295119224,
+   "p5_false_failure_modes": {
+    "model_grabbed_brittle_signal": 29,
+    "observation_lacked_stable_signal": 46
+   },
+   "p5_false_no_signal": 46
+  },
+  {
+   "encoding": "all",
+   "cell": "all cells",
+   "scope": "has stable signal",
+   "n_true": 1213,
+   "survived_true": 1139,
+   "share_true": 93.89942291838416,
+   "n_false": 29,
+   "survived_false": 25,
+   "share_false": 86.20689655172413,
+   "diff_pp": 7.692526366660035,
+   "diff_ci": [
+    -0.7359705061055446,
+    24.502261264694415
+   ],
+   "fisher_p": 0.10341493112198054,
+   "p5_false_failure_modes": {
+    "model_grabbed_brittle_signal": 29
+   },
+   "p5_false_no_signal": 0
+  }
+ ],
+ "cop_vs_naive": {
+  "n": 313,
+  "metrics": {
+   "P5": {
+    "n": 313,
+    "n11_both": 232,
+    "b_second_only": 23,
+    "c_first_only": 11,
+    "n00_neither": 47,
+    "success_first": 243,
+    "success_second": 255,
+    "rate_first_pct": 77.63578274760383,
+    "rate_second_pct": 81.46964856230032,
+    "delta_pp": 3.8338658146964857,
+    "chi2": 4.235294117647059,
+    "p": 0.03959176323669052,
+    "p_exact": 0.05761267291381955,
+    "odds_ratio": 2.090909090909091,
+    "or_ci_lo": 0.9791582723407231,
+    "or_ci_hi": 4.750979345256798,
+    "ci_lo": 0.0,
+    "ci_hi": 7.792317851639886,
+    "replicates": 10000,
+    "empty_replicates": 0
+   },
+   "P_now": {
+    "n": 313,
+    "n11_both": 244,
+    "b_second_only": 11,
+    "c_first_only": 12,
+    "n00_neither": 46,
+    "success_first": 256,
+    "success_second": 255,
+    "rate_first_pct": 81.78913738019169,
+    "rate_second_pct": 81.46964856230032,
+    "delta_pp": -0.3194888178913738,
+    "chi2": 0.043478260869565216,
+    "p": 0.8348273291852392,
+    "p_exact": 1.0,
+    "odds_ratio": 0.9166666666666666,
+    "or_ci_lo": 0.36648645594499657,
+    "or_ci_hi": 2.2692772776214203,
+    "ci_lo": -3.194888178913746,
+    "ci_hi": 2.2435897435897467,
+    "replicates": 10000,
+    "empty_replicates": 0
+   }
+  },
+  "obs": {
+   "naive_mean": 38483.04792332269,
+   "naive_median": 33339.0,
+   "cop_mean": 27359.051118210864,
+   "cop_median": 25661.0,
+   "saving_mean_pct": 28.906226001839407,
+   "saving_median_per_target_pct": 22.413439868879326
+  },
+  "prompt": {
+   "naive_mean": 38574.827476038336,
+   "naive_median": 33430.0,
+   "cop_mean": 27451.335463258787,
+   "cop_median": 25753.0,
+   "saving_mean_pct": 28.836141962499163,
+   "saving_median_per_target_pct": 22.289814381531748
+  }
+ }
+}

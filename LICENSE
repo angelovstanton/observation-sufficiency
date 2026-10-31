@@ -23,5 +23,6 @@ SOFTWARE.
 ---
 
 This license applies to the code in this repository (C#, Python). The testbed
-pages and their ground-truth data under shared/testbed/pages/ are licensed
-separately under CC BY 4.0 — see README.md for the license split.
+pages and ground truth (shared/testbed/pages/), the records and results
+(experiments/runs/, experiments/results/) and the documentation are licensed
+separately under CC BY 4.0, excluding third-party content — see README.md.

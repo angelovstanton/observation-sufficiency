@@ -8,6 +8,12 @@
        locally — the SDK's default **/*.cs glob would otherwise compile it. -->
   <ItemGroup>
     <Compile Remove="archived\**" />
+    <!-- tests/ is its own xUnit project (Experiments.Tests.csproj). -->
+    <Compile Remove="tests\**" />
+    <!-- batch/ is the separate paid batch executable (Experiments.Batch.csproj). -->
+    <Compile Remove="batch\**" />
+    <!-- results/ holds outputs; results/revision1/cc_volatility/oracle_cli is its own exe. -->
+    <Compile Remove="results\**" />
   </ItemGroup>
 
   <PropertyGroup>

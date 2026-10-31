@@ -1,0 +1,5448 @@
+{
+  "meta": {
+    "script": "experiments/analysis/revision1_diagnostics.py",
+    "corpus": "experiments/runs/matrix_page_*.jsonl (6,000 records, gpt-4.1)",
+    "n_boot": 10000,
+    "seed": 42,
+    "versions": {
+      "numpy": "2.2.5",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3",
+      "statsmodels": "0.14.4"
+    }
+  },
+  "controls": [
+    {
+      "control": "transition success->success",
+      "recomputed": 515,
+      "published": 515,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition success->grabbed",
+      "recomputed": 11,
+      "published": 11,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition success->lacked",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition success->unreach",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition grabbed->success",
+      "recomputed": 102,
+      "published": 102,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition grabbed->grabbed",
+      "recomputed": 140,
+      "published": 140,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition grabbed->lacked",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition grabbed->unreach",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition lacked->success",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition lacked->grabbed",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition lacked->lacked",
+      "recomputed": 192,
+      "published": 192,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition lacked->unreach",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition unreach->success",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition unreach->grabbed",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition unreach->lacked",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "transition unreach->unreach",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "McNemar b (NV-only)",
+      "recomputed": 102,
+      "published": 102,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "McNemar c (BF-only)",
+      "recomputed": 11,
+      "published": 11,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "OR = b/c",
+      "recomputed": 9.27,
+      "published": 9.27,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "McNemar chi2",
+      "recomputed": 73.28,
+      "published": 73.28,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "grabbed->success recoveries",
+      "recomputed": 102,
+      "published": 102,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "volatile catches among recoveries",
+      "recomputed": 90,
+      "published": 90,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "bootstrap CI lo (pp)",
+      "recomputed": 4.9,
+      "published": 4.9,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "bootstrap CI hi (pp)",
+      "recomputed": 15.52,
+      "published": 15.52,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "fast bootstrap == published bootstrap (lo)",
+      "recomputed": 4.895833333,
+      "published": 4.895833333,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "fast bootstrap == published bootstrap (hi)",
+      "recomputed": 15.520833333,
+      "published": 15.520833333,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "sign test p",
+      "recomputed": 0.0004,
+      "published": 0.0004,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "Wilcoxon p",
+      "recomputed": 0.00035,
+      "published": 0.00035,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "grabbed total",
+      "recomputed": 912,
+      "published": 912,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "grabbed volatile (cond3 false)",
+      "recomputed": 601,
+      "published": 601,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "grabbed non-volatile",
+      "recomputed": 311,
+      "published": 311,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "COP vs B_full x F1 token reduction %",
+      "recomputed": 34.0,
+      "published": 34.0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "F3 vs F1 (B_noVolatile) token reduction %",
+      "recomputed": 29.1,
+      "published": 29.1,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "Pareto frontier membership (o200k_base)",
+      "recomputed": true,
+      "published": true,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "Pareto dominated count",
+      "recomputed": 17,
+      "published": 17,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "COP (o200k_base)",
+      "recomputed": [
+        "B_noVolatile",
+        "F3"
+      ],
+      "published": [
+        "B_noVolatile",
+        "F3"
+      ],
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "NONE + text-only events == condition-5-false events (B_full, same 960 pairs)",
+      "recomputed": true,
+      "published": true,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "NONE + text-only events == condition-5-false events (B_noVolatile, same 960 pairs)",
+      "recomputed": true,
+      "published": true,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "targets with condition 5 false on every B_full encoding == NONE + text-only targets",
+      "recomputed": true,
+      "published": true,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "COP vs B_full×F1 success delta (P5) pp",
+      "recomputed": 10.0,
+      "published": 10.0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "replay fidelity: all 1,440 original F2 locators re-scored identically",
+      "recomputed": 0,
+      "published": 0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "Claude form-invariance 150/210 -> 163/210",
+      "recomputed": [
+        150,
+        163,
+        210
+      ],
+      "published": [
+        150,
+        163,
+        210
+      ],
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "fair subset gpt-4.1 563 / claude 600 / n 870",
+      "recomputed": [
+        563,
+        600,
+        870
+      ],
+      "published": [
+        563,
+        600,
+        870
+      ],
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "ladder B_noState -> B_noSemantic cliff pp",
+      "recomputed": -19.79,
+      "published": -19.79,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "F2 - F1 (B_noVolatile) pp",
+      "recomputed": -12.08,
+      "published": -12.08,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "F3 - F1 (B_noVolatile) pp",
+      "recomputed": 0.42,
+      "published": 0.42,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "LOW delta pp",
+      "recomputed": 15.0,
+      "published": 15.0,
+      "tolerance": 0.0,
+      "ok": true
+    },
+    {
+      "control": "HIGH delta pp",
+      "recomputed": 3.96,
+      "published": 3.96,
+      "tolerance": 0.01,
+      "ok": true
+    }
+  ],
+  "D1": {
+    "predicates": {
+      "P5": {
+        "n": 960,
+        "n11_both": 515,
+        "b_second_only": 102,
+        "c_first_only": 11,
+        "n00_neither": 332,
+        "success_first": 526,
+        "success_second": 617,
+        "rate_first_pct": 54.79166666666667,
+        "rate_second_pct": 64.27083333333333,
+        "delta_pp": 9.479166666666666,
+        "chi2": 73.28318584070796,
+        "p": 1.1232069193514942e-17,
+        "p_exact": 1.2518282545755144e-19,
+        "odds_ratio": 9.272727272727273,
+        "or_ci_lo": 4.970015706738754,
+        "or_ci_hi": 19.15991729895992,
+        "boot_ci_lo_pp": 4.895833333333338,
+        "boot_ci_hi_pp": 15.520833333333329,
+        "definition": "original five-condition predicate (success field)"
+      },
+      "P_now": {
+        "n": 960,
+        "n11_both": 741,
+        "b_second_only": 25,
+        "c_first_only": 83,
+        "n00_neither": 111,
+        "success_first": 824,
+        "success_second": 766,
+        "rate_first_pct": 85.83333333333333,
+        "rate_second_pct": 79.79166666666667,
+        "delta_pp": -6.041666666666667,
+        "chi2": 31.14814814814815,
+        "p": 2.3906732170239303e-08,
+        "p_exact": 1.8829338019072798e-08,
+        "odds_ratio": 0.30120481927710846,
+        "or_ci_lo": 0.1844825165386179,
+        "or_ci_hi": 0.47594029118052134,
+        "boot_ci_lo_pp": -9.895833333333325,
+        "boot_ci_hi_pp": -2.500000000000002,
+        "definition": "conditions 1+2 (unique match AND matches oracle)"
+      },
+      "P_now_np": {
+        "n": 960,
+        "n11_both": 729,
+        "b_second_only": 22,
+        "c_first_only": 72,
+        "n00_neither": 137,
+        "success_first": 801,
+        "success_second": 751,
+        "rate_first_pct": 83.4375,
+        "rate_second_pct": 78.22916666666667,
+        "delta_pp": -5.208333333333334,
+        "chi2": 26.595744680851062,
+        "p": 2.507955312429117e-07,
+        "p_exact": 2.2605981543610277e-07,
+        "odds_ratio": 0.3055555555555556,
+        "or_ci_lo": 0.1804387737946168,
+        "or_ci_hi": 0.49841037603941984,
+        "boot_ci_lo_pp": -8.854166666666675,
+        "boot_ci_hi_pp": -1.7708333333333326,
+        "definition": "conditions 1+2+4 (unique, oracle, non-positional)"
+      }
+    },
+    "volatile_catches": {
+      "n_volatile_catches": 90,
+      "bf_unique_and_oracle (pass P_now under B_full)": 86,
+      "bf_unique_oracle_nonpositional (pass P_now_np under B_full)": 85,
+      "bf_unique_but_wrong_element": 1,
+      "bf_not_unique": 3,
+      "bf_stable_signal_present": 90
+    },
+    "ssp_false_passing_relaxed": {
+      "B_full": {
+        "records_ssp_false": 192,
+        "ssp_false_pass_P_now": 124,
+        "ssp_false_pass_P_now_np": 106
+      },
+      "B_noVolatile": {
+        "records_ssp_false": 192,
+        "ssp_false_pass_P_now": 71,
+        "ssp_false_pass_P_now_np": 57
+      }
+    },
+    "regressions_11": {
+      "n": 11,
+      "nv_volatile (cond3 false)": 4,
+      "nv_not_unique": 7,
+      "nv_unique_wrong": 0,
+      "events": [
+        "page_02 t_08 F2",
+        "page_05 t_05 F2",
+        "page_05 t_08 F2",
+        "page_08 t_09 F2",
+        "page_09 t_05 F2",
+        "page_17 t_02 F1",
+        "page_17 t_07 F1",
+        "page_18 t_07 F0",
+        "page_20 t_09 F0",
+        "page_22 t_10 F1",
+        "page_24 t_10 F3"
+      ]
+    }
+  },
+  "D1b": {
+    "main_960": {
+      "has_attribute_signal": {
+        "P5": {
+          "n": 768,
+          "n11_both": 515,
+          "b_second_only": 102,
+          "c_first_only": 11,
+          "n00_neither": 140,
+          "success_first": 526,
+          "success_second": 617,
+          "rate_first_pct": 68.48958333333334,
+          "rate_second_pct": 80.33854166666666,
+          "delta_pp": 11.848958333333332,
+          "chi2": 73.28318584070796,
+          "p": 1.1232069193514942e-17,
+          "p_exact": 1.2518282545755144e-19,
+          "odds_ratio": 9.272727272727273,
+          "or_ci_lo": 4.970015706738754,
+          "or_ci_hi": 19.15991729895992,
+          "boot_ci_lo_pp": 6.122448979591832,
+          "boot_ci_hi_pp": 19.598171779952388,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 768,
+          "n11_both": 674,
+          "b_second_only": 21,
+          "c_first_only": 26,
+          "n00_neither": 47,
+          "success_first": 700,
+          "success_second": 695,
+          "rate_first_pct": 91.14583333333334,
+          "rate_second_pct": 90.49479166666666,
+          "delta_pp": -0.6510416666666667,
+          "chi2": 0.5319148936170213,
+          "p": 0.4658029092418442,
+          "p_exact": 0.5600646295802106,
+          "odds_ratio": 0.8076923076923077,
+          "or_ci_lo": 0.43209340447382,
+          "or_ci_hi": 1.4927881795461408,
+          "boot_ci_lo_pp": -3.9893617021276584,
+          "boot_ci_hi_pp": 2.448453608247425,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 768,
+          "n11_both": 672,
+          "b_second_only": 22,
+          "c_first_only": 23,
+          "n00_neither": 51,
+          "success_first": 695,
+          "success_second": 694,
+          "rate_first_pct": 90.49479166666666,
+          "rate_second_pct": 90.36458333333334,
+          "delta_pp": -0.13020833333333331,
+          "chi2": 0.022222222222222223,
+          "p": 0.8814974521910135,
+          "p_exact": 1.0,
+          "odds_ratio": 0.9565217391304348,
+          "or_ci_lo": 0.5083724059493737,
+          "or_ci_hi": 1.7953232010052451,
+          "boot_ci_lo_pp": -3.439153439153431,
+          "boot_ci_hi_pp": 2.8350515463917536,
+          "n_pages": 24
+        }
+      },
+      "NONE": {
+        "P5": {
+          "n": 188,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 188,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 188,
+          "n11_both": 64,
+          "b_second_only": 4,
+          "c_first_only": 57,
+          "n00_neither": 63,
+          "success_first": 121,
+          "success_second": 68,
+          "rate_first_pct": 64.36170212765957,
+          "rate_second_pct": 36.17021276595745,
+          "delta_pp": -28.191489361702125,
+          "chi2": 46.049180327868854,
+          "p": 1.153213852817285e-11,
+          "p_exact": 4.85494457136415e-13,
+          "odds_ratio": 0.07017543859649122,
+          "or_ci_lo": 0.01848986460151339,
+          "or_ci_hi": 0.189724050671495,
+          "boot_ci_lo_pp": -42.61363636363637,
+          "boot_ci_hi_pp": -15.11627906976744,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 188,
+          "n11_both": 54,
+          "b_second_only": 0,
+          "c_first_only": 49,
+          "n00_neither": 85,
+          "success_first": 103,
+          "success_second": 54,
+          "rate_first_pct": 54.78723404255319,
+          "rate_second_pct": 28.723404255319153,
+          "delta_pp": -26.063829787234045,
+          "chi2": 49.0,
+          "p": 2.559625087771672e-12,
+          "p_exact": 3.552713678800501e-15,
+          "odds_ratio": 0.0,
+          "or_ci_lo": 0.0,
+          "or_ci_hi": 0.0781895093053743,
+          "boot_ci_lo_pp": -38.88888888888889,
+          "boot_ci_hi_pp": -14.795918367346935,
+          "n_pages": 24
+        }
+      },
+      "text_only_signal": {
+        "P5": {
+          "n": 4,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 4,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        },
+        "P_now": {
+          "n": 4,
+          "n11_both": 3,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 1,
+          "success_first": 3,
+          "success_second": 3,
+          "rate_first_pct": 75.0,
+          "rate_second_pct": 75.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        },
+        "P_now_np": {
+          "n": 4,
+          "n11_both": 3,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 1,
+          "success_first": 3,
+          "success_second": 3,
+          "rate_first_pct": 75.0,
+          "rate_second_pct": 75.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 192,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 192,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 192,
+          "n11_both": 67,
+          "b_second_only": 4,
+          "c_first_only": 57,
+          "n00_neither": 64,
+          "success_first": 124,
+          "success_second": 71,
+          "rate_first_pct": 64.58333333333334,
+          "rate_second_pct": 36.97916666666667,
+          "delta_pp": -27.604166666666668,
+          "chi2": 46.049180327868854,
+          "p": 1.153213852817285e-11,
+          "p_exact": 4.85494457136415e-13,
+          "odds_ratio": 0.07017543859649122,
+          "or_ci_lo": 0.01848986460151339,
+          "or_ci_hi": 0.189724050671495,
+          "boot_ci_lo_pp": -41.860828488372086,
+          "boot_ci_hi_pp": -14.771998834498842,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 192,
+          "n11_both": 57,
+          "b_second_only": 0,
+          "c_first_only": 49,
+          "n00_neither": 86,
+          "success_first": 106,
+          "success_second": 57,
+          "rate_first_pct": 55.208333333333336,
+          "rate_second_pct": 29.6875,
+          "delta_pp": -25.520833333333332,
+          "chi2": 49.0,
+          "p": 2.559625087771672e-12,
+          "p_exact": 3.552713678800501e-15,
+          "odds_ratio": 0.0,
+          "or_ci_lo": 0.0,
+          "or_ci_hi": 0.0781895093053743,
+          "boot_ci_lo_pp": -38.297872340425535,
+          "boot_ci_hi_pp": -14.423076923076925,
+          "n_pages": 24
+        }
+      }
+    },
+    "cop_vs_bff1_240": {
+      "has_attribute_signal": {
+        "P5": {
+          "n": 192,
+          "n11_both": 135,
+          "b_second_only": 28,
+          "c_first_only": 4,
+          "n00_neither": 25,
+          "success_first": 139,
+          "success_second": 163,
+          "rate_first_pct": 72.39583333333334,
+          "rate_second_pct": 84.89583333333334,
+          "delta_pp": 12.5,
+          "chi2": 18.0,
+          "p": 2.2090496998585475e-05,
+          "p_exact": 1.9301194697618484e-05,
+          "odds_ratio": 7.0,
+          "or_ci_lo": 2.4488892863844702,
+          "or_ci_hi": 27.46516963573728,
+          "boot_ci_lo_pp": 5.075501204942823,
+          "boot_ci_hi_pp": 21.92513368983957,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 192,
+          "n11_both": 180,
+          "b_second_only": 4,
+          "c_first_only": 3,
+          "n00_neither": 5,
+          "success_first": 183,
+          "success_second": 184,
+          "rate_first_pct": 95.3125,
+          "rate_second_pct": 95.83333333333334,
+          "delta_pp": 0.5208333333333333,
+          "chi2": 0.14285714285714285,
+          "p": 0.7054569861112734,
+          "p_exact": 1.0,
+          "odds_ratio": 1.3333333333333333,
+          "or_ci_lo": 0.22556764660698236,
+          "or_ci_hi": 9.102206197886318,
+          "boot_ci_lo_pp": -2.564432989690723,
+          "boot_ci_hi_pp": 3.703703703703698,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 192,
+          "n11_both": 179,
+          "b_second_only": 4,
+          "c_first_only": 3,
+          "n00_neither": 6,
+          "success_first": 182,
+          "success_second": 183,
+          "rate_first_pct": 94.79166666666666,
+          "rate_second_pct": 95.3125,
+          "delta_pp": 0.5208333333333333,
+          "chi2": 0.14285714285714285,
+          "p": 0.7054569861112734,
+          "p_exact": 1.0,
+          "odds_ratio": 1.3333333333333333,
+          "or_ci_lo": 0.22556764660698236,
+          "or_ci_hi": 9.102206197886318,
+          "boot_ci_lo_pp": -2.564432989690723,
+          "boot_ci_hi_pp": 3.703703703703698,
+          "n_pages": 24
+        }
+      },
+      "NONE": {
+        "P5": {
+          "n": 47,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 47,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 47,
+          "n11_both": 18,
+          "b_second_only": 3,
+          "c_first_only": 15,
+          "n00_neither": 11,
+          "success_first": 33,
+          "success_second": 21,
+          "rate_first_pct": 70.2127659574468,
+          "rate_second_pct": 44.680851063829785,
+          "delta_pp": -25.53191489361702,
+          "chi2": 8.0,
+          "p": 0.004677734981047276,
+          "p_exact": 0.007537841796875,
+          "odds_ratio": 0.2,
+          "or_ci_lo": 0.037113181402986625,
+          "or_ci_hi": 0.707001669124803,
+          "boot_ci_lo_pp": -43.13725490196079,
+          "boot_ci_hi_pp": -8.163265306122453,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 47,
+          "n11_both": 15,
+          "b_second_only": 0,
+          "c_first_only": 14,
+          "n00_neither": 18,
+          "success_first": 29,
+          "success_second": 15,
+          "rate_first_pct": 61.702127659574465,
+          "rate_second_pct": 31.914893617021278,
+          "delta_pp": -29.78723404255319,
+          "chi2": 14.0,
+          "p": 0.00018281063298183515,
+          "p_exact": 0.0001220703125,
+          "odds_ratio": 0.0,
+          "or_ci_lo": 0.0,
+          "or_ci_hi": 0.30146608872319547,
+          "boot_ci_lo_pp": -45.23809523809524,
+          "boot_ci_hi_pp": -15.551282051282108,
+          "n_pages": 24
+        }
+      },
+      "text_only_signal": {
+        "P5": {
+          "n": 1,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 1,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        },
+        "P_now": {
+          "n": 1,
+          "n11_both": 1,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 0,
+          "success_first": 1,
+          "success_second": 1,
+          "rate_first_pct": 100.0,
+          "rate_second_pct": 100.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        },
+        "P_now_np": {
+          "n": 1,
+          "n11_both": 1,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 0,
+          "success_first": 1,
+          "success_second": 1,
+          "rate_first_pct": 100.0,
+          "rate_second_pct": 100.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 1
+        }
+      },
+      "no_attribute_signal (NONE + text-only)": {
+        "P5": {
+          "n": 48,
+          "n11_both": 0,
+          "b_second_only": 0,
+          "c_first_only": 0,
+          "n00_neither": 48,
+          "success_first": 0,
+          "success_second": 0,
+          "rate_first_pct": 0.0,
+          "rate_second_pct": 0.0,
+          "delta_pp": 0.0,
+          "chi2": "nan",
+          "p": "nan",
+          "p_exact": "nan",
+          "odds_ratio": "nan",
+          "or_ci_lo": "nan",
+          "or_ci_hi": "nan",
+          "boot_ci_lo_pp": 0.0,
+          "boot_ci_hi_pp": 0.0,
+          "n_pages": 24
+        },
+        "P_now": {
+          "n": 48,
+          "n11_both": 19,
+          "b_second_only": 3,
+          "c_first_only": 15,
+          "n00_neither": 11,
+          "success_first": 34,
+          "success_second": 22,
+          "rate_first_pct": 70.83333333333334,
+          "rate_second_pct": 45.83333333333333,
+          "delta_pp": -25.0,
+          "chi2": 8.0,
+          "p": 0.004677734981047276,
+          "p_exact": 0.007537841796875,
+          "odds_ratio": 0.2,
+          "or_ci_lo": 0.037113181402986625,
+          "or_ci_hi": 0.707001669124803,
+          "boot_ci_lo_pp": -42.3125,
+          "boot_ci_hi_pp": -7.9999999999999964,
+          "n_pages": 24
+        },
+        "P_now_np": {
+          "n": 48,
+          "n11_both": 16,
+          "b_second_only": 0,
+          "c_first_only": 14,
+          "n00_neither": 18,
+          "success_first": 30,
+          "success_second": 16,
+          "rate_first_pct": 62.5,
+          "rate_second_pct": 33.33333333333333,
+          "delta_pp": -29.166666666666668,
+          "chi2": 14.0,
+          "p": 0.00018281063298183515,
+          "p_exact": 0.0001220703125,
+          "odds_ratio": 0.0,
+          "or_ci_lo": 0.0,
+          "or_ci_hi": 0.30146608872319547,
+          "boot_ci_lo_pp": -44.68085106382979,
+          "boot_ci_hi_pp": -14.893617021276595,
+          "n_pages": 24
+        }
+      }
+    },
+    "stratum_definition": {
+      "has_attribute_signal": "signal_attrs contains at least one HTML attribute name",
+      "NONE": "signal_attrs empty",
+      "text_only_signal": "signal_attrs non-empty but only non-attribute signals ('text')",
+      "no_attribute_signal (NONE + text-only)": "union of NONE and text_only_signal — row used in the paper"
+    },
+    "targets": {
+      "NONE": 47,
+      "text_only_signal": [
+        [
+          "page_01",
+          "t_04"
+        ]
+      ],
+      "no_attribute_signal": 48
+    },
+    "targets_listing_non_attribute_signals": [
+      {
+        "page": "page_01",
+        "task_id": "t_04",
+        "signal_attrs": [
+          "text"
+        ]
+      }
+    ],
+    "signal_attrs_vocabulary": {
+      "id": 50,
+      "data-testid": 63,
+      "aria-label": 133,
+      "name": 45,
+      "text": 1,
+      "href": 20,
+      "placeholder": 10,
+      "type": 1
+    },
+    "checks": {
+      "no_attr_events_equal_cond5_false": {
+        "B_full": true,
+        "B_noVolatile": true
+      },
+      "never_cond5_on_B_full_equals_no_attr_targets": true
+    }
+  },
+  "D2": {
+    "f2_keymap": {
+      "tag": "t",
+      "text": "tx",
+      "id": "i",
+      "data-testid": "dt",
+      "name": "nm",
+      "type": "ty",
+      "for": "fr",
+      "role": "ro",
+      "aria-label": "al",
+      "placeholder": "ph",
+      "alt": "at",
+      "title": "tl",
+      "href": "hr",
+      "value": "vl",
+      "class": "cl",
+      "src": "sc",
+      "disabled": "ds",
+      "checked": "ck",
+      "selected": "sd",
+      "aria-expanded": "aex",
+      "aria-selected": "asl",
+      "aria-checked": "ack",
+      "aria-disabled": "ads",
+      "aria-required": "arq",
+      "aria-controls": "aco",
+      "aria-haspopup": "ahp",
+      "aria-level": "alv",
+      "tabindex": "ti",
+      "aria-hidden": "ahd",
+      "aria-live": "ali",
+      "aria-labelledby": "alb",
+      "aria-describedby": "adb",
+      "is_shadow": "sh"
+    },
+    "elsewhere_keys_considered": [
+      "ack",
+      "aco",
+      "adb",
+      "ads",
+      "aex",
+      "ahd",
+      "ahp",
+      "al",
+      "alb",
+      "ali",
+      "alv",
+      "arq",
+      "asl",
+      "at",
+      "ck",
+      "cl",
+      "ds",
+      "fr",
+      "nm",
+      "ph",
+      "ro",
+      "sc",
+      "sd",
+      "sh",
+      "ti",
+      "tl",
+      "tx",
+      "ty",
+      "vl"
+    ],
+    "classification_rule": {
+      "A_attr_name": "abbreviated key as CSS attribute name: \\[\\s*KEY\\s*([~|^$*]?=|\\])",
+      "B_elsewhere": "key (len>=2, not an HTML tag) as a whole identifier outside brackets, or as a hyphen segment of a bracketed attribute name; quoted values blanked",
+      "C_none": "neither"
+    },
+    "F2_failures": {
+      "A_attr_name": 131,
+      "B_elsewhere": 0,
+      "C_none": 798,
+      "total": 929
+    },
+    "F1_failures": {
+      "A_attr_name": 0,
+      "B_elsewhere": 0,
+      "C_none": 814,
+      "total": 814
+    },
+    "F1_failures_same_page_task_bundle_as_F2_failures": {
+      "A_attr_name": 0,
+      "B_elsewhere": 0,
+      "C_none": 772,
+      "total": 772
+    },
+    "by_bundle": {
+      "B_full": {
+        "F2_failures": {
+          "A_attr_name": 27,
+          "B_elsewhere": 0,
+          "C_none": 100,
+          "total": 127
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 101,
+          "total": 101
+        }
+      },
+      "B_identityCore": {
+        "F2_failures": {
+          "A_attr_name": 19,
+          "B_elsewhere": 0,
+          "C_none": 131,
+          "total": 150
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 148,
+          "total": 148
+        }
+      },
+      "B_minimalCore": {
+        "F2_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 240,
+          "total": 240
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 240,
+          "total": 240
+        }
+      },
+      "B_noSemantic": {
+        "F2_failures": {
+          "A_attr_name": 27,
+          "B_elsewhere": 0,
+          "C_none": 152,
+          "total": 179
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 147,
+          "total": 147
+        }
+      },
+      "B_noState": {
+        "F2_failures": {
+          "A_attr_name": 28,
+          "B_elsewhere": 0,
+          "C_none": 98,
+          "total": 126
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 100,
+          "total": 100
+        }
+      },
+      "B_noVolatile": {
+        "F2_failures": {
+          "A_attr_name": 30,
+          "B_elsewhere": 0,
+          "C_none": 77,
+          "total": 107
+        },
+        "F1_failures": {
+          "A_attr_name": 0,
+          "B_elsewhere": 0,
+          "C_none": 78,
+          "total": 78
+        }
+      }
+    },
+    "abbreviated_attr_name_usage_in_F2_failures": {
+      "dt": 86,
+      "hr": 9,
+      "al": 11,
+      "ty": 4,
+      "sh": 28,
+      "ahd": 4
+    },
+    "successes_containing_abbreviations": {
+      "F2_successes_with_A": 0,
+      "F2_successes_with_B": 0,
+      "F1_successes_with_A": 0
+    },
+    "F2_failure_class_by_failure_mode": {
+      "model_grabbed_brittle_signal": {
+        "A_attr_name": 93,
+        "C_none": 202
+      },
+      "observation_lacked_stable_signal": {
+        "A_attr_name": 38,
+        "C_none": 596
+      }
+    },
+    "F1_vs_F2_success_by_bundle": {
+      "B_full": {
+        "F1_success": 139,
+        "F2_success": 113,
+        "delta_pp": -10.833333333333334
+      },
+      "B_noVolatile": {
+        "F1_success": 162,
+        "F2_success": 133,
+        "delta_pp": -12.083333333333334
+      },
+      "B_noState": {
+        "F1_success": 140,
+        "F2_success": 114,
+        "delta_pp": -10.833333333333334
+      },
+      "B_noSemantic": {
+        "F1_success": 93,
+        "F2_success": 61,
+        "delta_pp": -13.333333333333334
+      },
+      "B_identityCore": {
+        "F1_success": 92,
+        "F2_success": 90,
+        "delta_pp": -0.8333333333333334
+      },
+      "B_minimalCore": {
+        "F1_success": 0,
+        "F2_success": 0,
+        "delta_pp": 0.0
+      }
+    },
+    "replay": {
+      "method": "dotnet run --project experiments -c Release -- --replay <dir> --replay-out <file> (GroundingRunner.ReplayOneAsync -> Oracle.EvaluateLocatorAsync, zero LLM)",
+      "n_locators": 131,
+      "fidelity_check": {
+        "n_original_f2_locators": 1440,
+        "fields": [
+          "success",
+          "failure_mode",
+          "predicate_unique_match",
+          "predicate_matches_oracle",
+          "predicate_non_volatile",
+          "predicate_non_positional",
+          "stable_signal_present_in_bundle"
+        ],
+        "predicate_mismatches": 0,
+        "observation_tokens_differ_informational": 0
+      },
+      "success_after_expansion": 74,
+      "still_failing": 57,
+      "still_failing_conditions": {
+        "not_unique": 30,
+        "unique_wrong_element": 9,
+        "volatile": 29,
+        "positional": 2,
+        "cond5_false": 38
+      },
+      "by_keys_used": {
+        "ahd": {
+          "n": 3,
+          "success_after_expansion": 0
+        },
+        "ahd,ty": {
+          "n": 1,
+          "success_after_expansion": 0
+        },
+        "al": {
+          "n": 10,
+          "success_after_expansion": 6
+        },
+        "al,sh": {
+          "n": 1,
+          "success_after_expansion": 0
+        },
+        "dt": {
+          "n": 84,
+          "success_after_expansion": 58
+        },
+        "dt,ty": {
+          "n": 1,
+          "success_after_expansion": 1
+        },
+        "hr": {
+          "n": 9,
+          "success_after_expansion": 9
+        },
+        "sh": {
+          "n": 20,
+          "success_after_expansion": 0
+        },
+        "ty": {
+          "n": 2,
+          "success_after_expansion": 0
+        }
+      },
+      "by_bundle": {
+        "B_full": {
+          "n": 27,
+          "success_after_expansion": 19
+        },
+        "B_identityCore": {
+          "n": 19,
+          "success_after_expansion": 3
+        },
+        "B_noSemantic": {
+          "n": 27,
+          "success_after_expansion": 11
+        },
+        "B_noState": {
+          "n": 28,
+          "success_after_expansion": 20
+        },
+        "B_noVolatile": {
+          "n": 30,
+          "success_after_expansion": 21
+        }
+      },
+      "records": [
+        {
+          "page": "page_01",
+          "bundle": "B_full",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"related-product-amoxicillin-250\"]",
+          "locator_expanded": "css:a[data-testid=\"related-product-amoxicillin-250\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_01",
+          "bundle": "B_identityCore",
+          "task_id": "t_04",
+          "locator_original": "a[dt=\"related-product-amoxicillin-250\"]",
+          "locator_expanded": "css:a[data-testid=\"related-product-amoxicillin-250\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_01",
+          "bundle": "B_noSemantic",
+          "task_id": "t_02",
+          "locator_original": "button[datatype=\"add-to-cart-btn\"],button[dt=\"add-to-cart-btn\"]",
+          "locator_expanded": "css:button[datatype=\"add-to-cart-btn\"],button[data-testid=\"add-to-cart-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_01",
+          "bundle": "B_noSemantic",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"related-product-amoxicillin-250\"]",
+          "locator_expanded": "css:a[data-testid=\"related-product-amoxicillin-250\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_01",
+          "bundle": "B_noState",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"related-product-amoxicillin-250\"]",
+          "locator_expanded": "css:a[data-testid=\"related-product-amoxicillin-250\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_01",
+          "bundle": "B_noVolatile",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"related-product-amoxicillin-250\"]",
+          "locator_expanded": "css:a[data-testid=\"related-product-amoxicillin-250\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_full",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"check-eligibility-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"check-eligibility-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_full",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/forms/benefits-SA2024.pdf\"]",
+          "locator_expanded": "css:a[href=\"/forms/benefits-SA2024.pdf\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_identityCore",
+          "task_id": "t_05",
+          "locator_original": "button[dt=\"submit-application-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"submit-application-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_noSemantic",
+          "task_id": "t_08",
+          "locator_original": "div[dt=\"application-status-tracker\"]",
+          "locator_expanded": "css:div[data-testid=\"application-status-tracker\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_noState",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/forms/benefits-SA2024.pdf\"]",
+          "locator_expanded": "css:a[href=\"/forms/benefits-SA2024.pdf\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_noVolatile",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"check-eligibility-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"check-eligibility-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_02",
+          "bundle": "B_noVolatile",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/forms/benefits-SA2024.pdf\"]",
+          "locator_expanded": "css:a[href=\"/forms/benefits-SA2024.pdf\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_03",
+          "bundle": "B_full",
+          "task_id": "t_03",
+          "locator_original": "button[al=\"Submit transfer\"]",
+          "locator_expanded": "css:button[aria-label=\"Submit transfer\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_03",
+          "bundle": "B_full",
+          "task_id": "t_07",
+          "locator_original": "div.CardItem--a3b4c5:has(div:contains(\"Debit Card\")) button[ty=\"button\"][class*=\"btn-outline\"]:has-text(\"Freeze card\")",
+          "locator_expanded": "css:div.CardItem--a3b4c5:has(div:contains(\"Debit Card\")) button[type=\"button\"][class*=\"btn-outline\"]:has-text(\"Freeze card\")",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_03",
+          "bundle": "B_noState",
+          "task_id": "t_03",
+          "locator_original": "button[al=\"Submit transfer\"]",
+          "locator_expanded": "css:button[aria-label=\"Submit transfer\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_03",
+          "bundle": "B_noState",
+          "task_id": "t_07",
+          "locator_original": "button[ty=\"button\"][dt=\"freeze-debit-card\"]",
+          "locator_expanded": "css:button[type=\"button\"][data-testid=\"freeze-debit-card\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_04",
+          "bundle": "B_full",
+          "task_id": "t_09",
+          "locator_original": "input[dt=\"nonstop-filter\"]",
+          "locator_expanded": "css:input[data-testid=\"nonstop-filter\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_04",
+          "bundle": "B_noState",
+          "task_id": "t_09",
+          "locator_original": "input[dt=\"nonstop-filter\"]",
+          "locator_expanded": "css:input[data-testid=\"nonstop-filter\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_05",
+          "bundle": "B_identityCore",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"property-card-14\"]",
+          "locator_expanded": "css:a[data-testid=\"property-card-14\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_05",
+          "bundle": "B_identityCore",
+          "task_id": "t_06",
+          "locator_original": "a[dt=\"property-card-2\"] button.save",
+          "locator_expanded": "css:a[data-testid=\"property-card-2\"] button.save",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_05",
+          "bundle": "B_noVolatile",
+          "task_id": "t_05",
+          "locator_original": "a.property-card__address[dt=\"property-card-1\"]",
+          "locator_expanded": "css:a.property-card__address[data-testid=\"property-card-1\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_05",
+          "bundle": "B_noVolatile",
+          "task_id": "t_08",
+          "locator_original": "button.pagination__btn[al=\"Next page\"]",
+          "locator_expanded": "css:button.pagination__btn[aria-label=\"Next page\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_06",
+          "bundle": "B_full",
+          "task_id": "t_06",
+          "locator_original": "a[dt=\"breaking-news-lead\"]",
+          "locator_expanded": "css:a[data-testid=\"breaking-news-lead\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_06",
+          "bundle": "B_identityCore",
+          "task_id": "t_02",
+          "locator_original": "a[dt=\"politics\"]",
+          "locator_expanded": "css:a[data-testid=\"politics\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_06",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": "div.breaking a[dt=\"breaking-news-lead\"]",
+          "locator_expanded": "css:div.breaking a[data-testid=\"breaking-news-lead\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_06",
+          "bundle": "B_noState",
+          "task_id": "t_06",
+          "locator_original": "a[dt=\"breaking-news-lead\"]",
+          "locator_expanded": "css:a[data-testid=\"breaking-news-lead\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_06",
+          "bundle": "B_noVolatile",
+          "task_id": "t_06",
+          "locator_original": "a[dt=\"breaking-news-lead\"]",
+          "locator_expanded": "css:a[data-testid=\"breaking-news-lead\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_full",
+          "task_id": "t_05",
+          "locator_original": "button[dt=\"add-to-cart-ALPHA-500\"]",
+          "locator_expanded": "css:button[data-testid=\"add-to-cart-ALPHA-500\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_full",
+          "task_id": "t_06",
+          "locator_original": "button[dt=\"add-to-cart-BETA-200\"]",
+          "locator_expanded": "css:button[data-testid=\"add-to-cart-BETA-200\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_full",
+          "task_id": "t_07",
+          "locator_original": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "locator_expanded": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_full",
+          "task_id": "t_08",
+          "locator_original": "a[dt=\"product-link-GAMMA-900\"]",
+          "locator_expanded": "css:a[data-testid=\"product-link-GAMMA-900\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_identityCore",
+          "task_id": "t_07",
+          "locator_original": "article[dt=\"product-card-1\"] button[dt=\"wishlist-ALPHA-500\"]",
+          "locator_expanded": "css:article[data-testid=\"product-card-1\"] button[data-testid=\"wishlist-ALPHA-500\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noSemantic",
+          "task_id": "t_05",
+          "locator_original": "button.BtnCart--e8f9a0.cart-btn-d[dt=\"add-to-cart-ALPHA-500\"]",
+          "locator_expanded": "css:button.BtnCart--e8f9a0.cart-btn-d[data-testid=\"add-to-cart-ALPHA-500\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": "button.BtnCart--e8f9a0.cart-btn-d[dt=\"add-to-cart-BETA-200\"]",
+          "locator_expanded": "css:button.BtnCart--e8f9a0.cart-btn-d[data-testid=\"add-to-cart-BETA-200\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noSemantic",
+          "task_id": "t_07",
+          "locator_original": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "locator_expanded": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noSemantic",
+          "task_id": "t_08",
+          "locator_original": "a[dt=\"product-link-GAMMA-900\"]",
+          "locator_expanded": "css:a[data-testid=\"product-link-GAMMA-900\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noState",
+          "task_id": "t_05",
+          "locator_original": "button[dt=\"add-to-cart-ALPHA-500\"]",
+          "locator_expanded": "css:button[data-testid=\"add-to-cart-ALPHA-500\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noState",
+          "task_id": "t_06",
+          "locator_original": "button[dt=\"add-to-cart-BETA-200\"]",
+          "locator_expanded": "css:button[data-testid=\"add-to-cart-BETA-200\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noState",
+          "task_id": "t_07",
+          "locator_original": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "locator_expanded": "css:article[data-testid=\"product-card-1\"] .WishlistBtn--c8a1f0",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noState",
+          "task_id": "t_08",
+          "locator_original": "a[dt=\"product-link-GAMMA-900\"]",
+          "locator_expanded": "css:a[data-testid=\"product-link-GAMMA-900\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noVolatile",
+          "task_id": "t_05",
+          "locator_original": "button.cart-btn-d[dt=\"add-to-cart-ALPHA-500\"]",
+          "locator_expanded": "css:button.cart-btn-d[data-testid=\"add-to-cart-ALPHA-500\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noVolatile",
+          "task_id": "t_06",
+          "locator_original": "button.cart-btn-d[dt=\"add-to-cart-BETA-200\"]",
+          "locator_expanded": "css:button.cart-btn-d[data-testid=\"add-to-cart-BETA-200\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noVolatile",
+          "task_id": "t_07",
+          "locator_original": "article[dt=\"product-card-1\"] .sa button:first-of-type",
+          "locator_expanded": "css:article[data-testid=\"product-card-1\"] .sa button:first-of-type",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noVolatile",
+          "task_id": "t_08",
+          "locator_original": "a[dt=\"product-link-GAMMA-900\"]",
+          "locator_expanded": "css:a[data-testid=\"product-link-GAMMA-900\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_08",
+          "bundle": "B_noVolatile",
+          "task_id": "t_09",
+          "locator_original": "button[al=\"Next page\"]",
+          "locator_expanded": "css:button[aria-label=\"Next page\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_09",
+          "bundle": "B_noVolatile",
+          "task_id": "t_10",
+          "locator_original": "div[sh=\"true\"].slot-list > div[sh=\"true\"]:first-child",
+          "locator_expanded": "css:div[is_shadow=\"true\"].slot-list > div[is_shadow=\"true\"]:first-child",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_11",
+          "bundle": "B_full",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/contact-sales\"]",
+          "locator_expanded": "css:a[href=\"/contact-sales\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_11",
+          "bundle": "B_noSemantic",
+          "task_id": "t_04",
+          "locator_original": "button.btn-plan.btn-pro[dt=\"select-pro-btn\"]",
+          "locator_expanded": "css:button.btn-plan.btn-pro[data-testid=\"select-pro-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_11",
+          "bundle": "B_noSemantic",
+          "task_id": "t_08",
+          "locator_original": "button.ActionBar--o0p1q2.btn-compare[dt=\"compare-all-plans-btn\"]",
+          "locator_expanded": "css:button.ActionBar--o0p1q2.btn-compare[data-testid=\"compare-all-plans-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_11",
+          "bundle": "B_noState",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/contact-sales\"]",
+          "locator_expanded": "css:a[href=\"/contact-sales\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_11",
+          "bundle": "B_noVolatile",
+          "task_id": "t_07",
+          "locator_original": "a[hr=\"/contact-sales\"]",
+          "locator_expanded": "css:a[href=\"/contact-sales\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_full",
+          "task_id": "t_01",
+          "locator_original": "button.btn-complete[dt=\"mark-complete-btn\"]",
+          "locator_expanded": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_full",
+          "task_id": "t_02",
+          "locator_original": "a.dl-link[al=\"Download lesson materials PDF\"]",
+          "locator_expanded": "css:a.dl-link[aria-label=\"Download lesson materials PDF\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_full",
+          "task_id": "t_03",
+          "locator_original": "button.btn-post[dt=\"post-comment-btn\"]",
+          "locator_expanded": "css:button.btn-post[data-testid=\"post-comment-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_full",
+          "task_id": "t_10",
+          "locator_original": "button.btn-next[dt=\"next-lesson-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-lesson-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noSemantic",
+          "task_id": "t_01",
+          "locator_original": "button.btn-complete[dt=\"mark-complete-btn\"]",
+          "locator_expanded": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noSemantic",
+          "task_id": "t_03",
+          "locator_original": "button.btn-post[dt=\"post-comment-btn\"]",
+          "locator_expanded": "css:button.btn-post[data-testid=\"post-comment-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noSemantic",
+          "task_id": "t_10",
+          "locator_original": "button.btn-next[dt=\"next-lesson-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-lesson-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noState",
+          "task_id": "t_01",
+          "locator_original": "button.btn-complete[dt=\"mark-complete-btn\"]",
+          "locator_expanded": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noState",
+          "task_id": "t_03",
+          "locator_original": "button.btn-post[dt=\"post-comment-btn\"]",
+          "locator_expanded": "css:button.btn-post[data-testid=\"post-comment-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noState",
+          "task_id": "t_08",
+          "locator_original": "button.ctrl-btn[dt=\"captions-btn\"]",
+          "locator_expanded": "css:button.ctrl-btn[data-testid=\"captions-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noState",
+          "task_id": "t_10",
+          "locator_original": "button.btn-next[dt=\"next-lesson-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-lesson-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noVolatile",
+          "task_id": "t_01",
+          "locator_original": "button.btn-complete[dt=\"mark-complete-btn\"]",
+          "locator_expanded": "css:button.btn-complete[data-testid=\"mark-complete-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noVolatile",
+          "task_id": "t_02",
+          "locator_original": "a.dl-link[al=\"Download lesson materials PDF\"]",
+          "locator_expanded": "css:a.dl-link[aria-label=\"Download lesson materials PDF\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noVolatile",
+          "task_id": "t_03",
+          "locator_original": "button.btn-post[dt=\"post-comment-btn\"]",
+          "locator_expanded": "css:button.btn-post[data-testid=\"post-comment-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_12",
+          "bundle": "B_noVolatile",
+          "task_id": "t_10",
+          "locator_original": "button.btn-next[dt=\"next-lesson-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-lesson-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_13",
+          "bundle": "B_full",
+          "task_id": "t_05",
+          "locator_original": "a.export-link[dt=\"export-csv\"]",
+          "locator_expanded": "css:a.export-link[data-testid=\"export-csv\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_13",
+          "bundle": "B_noSemantic",
+          "task_id": "t_09",
+          "locator_original": "div.filter-panel[sh=\"true\"] button.export-btn[data-export-pdf-btn][sh=\"true\"]",
+          "locator_expanded": "css:div.filter-panel[is_shadow=\"true\"] button.export-btn[data-export-pdf-btn][is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_13",
+          "bundle": "B_noSemantic",
+          "task_id": "t_10",
+          "locator_original": ".filter-panel[sh=\"true\"] .FilterChip--a1b2c3[sh=\"true\"]",
+          "locator_expanded": "css:.filter-panel[is_shadow=\"true\"] .FilterChip--a1b2c3[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_13",
+          "bundle": "B_noState",
+          "task_id": "t_05",
+          "locator_original": "a.export-link[dt=\"export-csv\"]",
+          "locator_expanded": "css:a.export-link[data-testid=\"export-csv\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_13",
+          "bundle": "B_noVolatile",
+          "task_id": "t_05",
+          "locator_original": "a.export-link[dt=\"export-csv\"]",
+          "locator_expanded": "css:a.export-link[data-testid=\"export-csv\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_full",
+          "task_id": "t_06",
+          "locator_original": "div.cart-header[sh=\"true\"]",
+          "locator_expanded": "css:div.cart-header[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_identityCore",
+          "task_id": "t_04",
+          "locator_original": "select[dt=\"sort-dropdown\"]",
+          "locator_expanded": "css:select[data-testid=\"sort-dropdown\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_identityCore",
+          "task_id": "t_05",
+          "locator_original": "div[dt=\"dietary-filter-bar\"]",
+          "locator_expanded": "css:div[data-testid=\"dietary-filter-bar\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_identityCore",
+          "task_id": "t_06",
+          "locator_original": "div[dt=\"cart-total-display\"]",
+          "locator_expanded": "css:div[data-testid=\"cart-total-display\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_identityCore",
+          "task_id": "t_07",
+          "locator_original": "div[dt=\"cart-total-display\"]",
+          "locator_expanded": "css:div[data-testid=\"cart-total-display\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": "div.cart-header[sh=\"true\"]",
+          "locator_expanded": "css:div.cart-header[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_noSemantic",
+          "task_id": "t_07",
+          "locator_original": "div.total-row.main[dt=\"cart-total-display\"]",
+          "locator_expanded": "css:div.total-row.main[data-testid=\"cart-total-display\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_noState",
+          "task_id": "t_06",
+          "locator_original": "div.cart-header[sh=\"true\"]",
+          "locator_expanded": "css:div.cart-header[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_noVolatile",
+          "task_id": "t_06",
+          "locator_original": "div.cart-header[sh=\"true\"]",
+          "locator_expanded": "css:div.cart-header[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_14",
+          "bundle": "B_noVolatile",
+          "task_id": "t_07",
+          "locator_original": "div.total-row.main[dt=\"cart-total-display\"]",
+          "locator_expanded": "css:div.total-row.main[data-testid=\"cart-total-display\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_full",
+          "task_id": "t_09",
+          "locator_original": "button.apply-btn[dt=\"apply-filters-btn\"]",
+          "locator_expanded": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_full",
+          "task_id": "t_10",
+          "locator_original": ".FilterChip__tag___Qf4mW[sh=\"true\"]",
+          "locator_expanded": "css:.FilterChip__tag___Qf4mW[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noSemantic",
+          "task_id": "t_08",
+          "locator_original": "div[sh=\"true\"] .salary-row[sh=\"true\"] input[type=\"number\"][sh=\"true\"]",
+          "locator_expanded": "css:div[is_shadow=\"true\"] .salary-row[is_shadow=\"true\"] input[type=\"number\"][is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noSemantic",
+          "task_id": "t_09",
+          "locator_original": "button.apply-btn[dt=\"apply-filters-btn\"]",
+          "locator_expanded": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noState",
+          "task_id": "t_09",
+          "locator_original": "button.apply-btn[dt=\"apply-filters-btn\"]",
+          "locator_expanded": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noState",
+          "task_id": "t_10",
+          "locator_original": ".FilterChip__tag___Qf4mW[sh=\"true\"]",
+          "locator_expanded": "css:.FilterChip__tag___Qf4mW[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noVolatile",
+          "task_id": "t_06",
+          "locator_original": ".jobs-list .job-footer button[ty=\"button\"]",
+          "locator_expanded": "css:.jobs-list .job-footer button[type=\"button\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noVolatile",
+          "task_id": "t_09",
+          "locator_original": "button.apply-btn[dt=\"apply-filters-btn\"]",
+          "locator_expanded": "css:button.apply-btn[data-testid=\"apply-filters-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_15",
+          "bundle": "B_noVolatile",
+          "task_id": "t_10",
+          "locator_original": ".active-filters > div[sh=\"true\"]",
+          "locator_expanded": "css:.active-filters > div[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_full",
+          "task_id": "t_03",
+          "locator_original": "a.active[hr=\"/help/category/account-billing\"]",
+          "locator_expanded": "css:a.active[href=\"/help/category/account-billing\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_full",
+          "task_id": "t_10",
+          "locator_original": "button.ChatClose--m4n5o6[ahd=\"true\"]",
+          "locator_expanded": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_identityCore",
+          "task_id": "t_03",
+          "locator_original": "a[dt=\"article-card-001\"]",
+          "locator_expanded": "css:a[data-testid=\"article-card-001\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_identityCore",
+          "task_id": "t_05",
+          "locator_original": "a[dt=\"article-card-001\"]",
+          "locator_expanded": "css:a[data-testid=\"article-card-001\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noSemantic",
+          "task_id": "t_08",
+          "locator_original": ".panel[sh=\"true\"] .ChatBtn--h8i9j0[sh=\"true\"]",
+          "locator_expanded": "css:.panel[is_shadow=\"true\"] .ChatBtn--h8i9j0[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noSemantic",
+          "task_id": "t_10",
+          "locator_original": "button.ChatClose--m4n5o6[ahd=\"true\"][type=\"button\"][style]",
+          "locator_expanded": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"][type=\"button\"][style]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noState",
+          "task_id": "t_03",
+          "locator_original": "a.active[hr=\"/help/category/account-billing\"]",
+          "locator_expanded": "css:a.active[href=\"/help/category/account-billing\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noState",
+          "task_id": "t_08",
+          "locator_original": ".ChatBtn--h8i9j0[al=\"Start a live chat session\"]",
+          "locator_expanded": "css:.ChatBtn--h8i9j0[aria-label=\"Start a live chat session\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noState",
+          "task_id": "t_10",
+          "locator_original": "button.ChatClose--m4n5o6[ahd=\"true\"]",
+          "locator_expanded": "css:button.ChatClose--m4n5o6[aria-hidden=\"true\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noVolatile",
+          "task_id": "t_02",
+          "locator_original": "a[dt=\"article-card-001\"]",
+          "locator_expanded": "css:a[data-testid=\"article-card-001\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noVolatile",
+          "task_id": "t_03",
+          "locator_original": "a.active[hr=\"/help/category/account-billing\"]",
+          "locator_expanded": "css:a.active[href=\"/help/category/account-billing\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noVolatile",
+          "task_id": "t_08",
+          "locator_original": "div.panel[sh=\"true\"] button[al=\"Start a live chat session\"]",
+          "locator_expanded": "css:div.panel[is_shadow=\"true\"] button[aria-label=\"Start a live chat session\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_16",
+          "bundle": "B_noVolatile",
+          "task_id": "t_10",
+          "locator_original": "div.panel-header button[ty=\"button\"][ahd=\"true\"]",
+          "locator_expanded": "css:div.panel-header button[type=\"button\"][aria-hidden=\"true\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_17",
+          "bundle": "B_identityCore",
+          "task_id": "t_06",
+          "locator_original": "button[dt=\"next-page-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"next-page-btn\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_full",
+          "task_id": "t_10",
+          "locator_original": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]",
+          "locator_expanded": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": ".KanbanPanel_cardCount__e5f6g7[sh=\"true\"]",
+          "locator_expanded": "css:.KanbanPanel_cardCount__e5f6g7[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_noSemantic",
+          "task_id": "t_09",
+          "locator_original": "div.EditPanel_field__s0t1u2[sh=\"true\"] input[type=\"date\"]",
+          "locator_expanded": "css:div.EditPanel_field__s0t1u2[is_shadow=\"true\"] input[type=\"date\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_noState",
+          "task_id": "t_10",
+          "locator_original": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]",
+          "locator_expanded": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_noVolatile",
+          "task_id": "t_06",
+          "locator_original": ".KanbanPanel_head__n0o1p2 > span[sh=\"true\"] + span[sh=\"true\"]",
+          "locator_expanded": "css:.KanbanPanel_head__n0o1p2 > span[is_shadow=\"true\"] + span[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_18",
+          "bundle": "B_noVolatile",
+          "task_id": "t_10",
+          "locator_original": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]",
+          "locator_expanded": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_19",
+          "bundle": "B_full",
+          "task_id": "t_04",
+          "locator_original": "button.btn-next[dt=\"next-step-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-step-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_19",
+          "bundle": "B_noState",
+          "task_id": "t_04",
+          "locator_original": "button.btn-next[dt=\"next-step-btn\"]",
+          "locator_expanded": "css:button.btn-next[data-testid=\"next-step-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_full",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"enroll-benefits-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"enroll-benefits-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_full",
+          "task_id": "t_08",
+          "locator_original": "div.ShadowSection--y1z2a3[sh=\"true\"]",
+          "locator_expanded": "css:div.ShadowSection--y1z2a3[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_identityCore",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"enroll-benefits-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"enroll-benefits-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_identityCore",
+          "task_id": "t_06",
+          "locator_original": "button[dt=\"enroll-benefits-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"enroll-benefits-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_identityCore",
+          "task_id": "t_07",
+          "locator_original": "#hr-portal-a1b2c3 button[dt=\"payslips-tab\"]",
+          "locator_expanded": "css:#hr-portal-a1b2c3 button[data-testid=\"payslips-tab\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_identityCore",
+          "task_id": "t_09",
+          "locator_original": "button[dt=\"payslips-tab\"]",
+          "locator_expanded": "css:button[data-testid=\"payslips-tab\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_noState",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"enroll-benefits-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"enroll-benefits-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_noState",
+          "task_id": "t_07",
+          "locator_original": "button.tab-btn.active[dt=\"payslips-tab\"]",
+          "locator_expanded": "css:button.tab-btn.active[data-testid=\"payslips-tab\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_noState",
+          "task_id": "t_08",
+          "locator_original": "div.ShadowSection--y1z2a3[sh=\"true\"]",
+          "locator_expanded": "css:div.ShadowSection--y1z2a3[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_20",
+          "bundle": "B_noVolatile",
+          "task_id": "t_02",
+          "locator_original": "button[dt=\"enroll-benefits-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"enroll-benefits-btn\"]",
+          "success_after": true,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_21",
+          "bundle": "B_identityCore",
+          "task_id": "t_06",
+          "locator_original": "button[dt=\"play-pause-btn\"]",
+          "locator_expanded": "css:button[data-testid=\"play-pause-btn\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_21",
+          "bundle": "B_identityCore",
+          "task_id": "t_09",
+          "locator_original": "button[dt=\"caption-toggle\"]",
+          "locator_expanded": "css:button[data-testid=\"caption-toggle\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": false,
+          "non_volatile_after": true
+        },
+        {
+          "page": "page_21",
+          "bundle": "B_noState",
+          "task_id": "t_01",
+          "locator_original": "button.VideoMeta_subscribeBtn__f4g5h6[dt=\"subscribe-btn\"]",
+          "locator_expanded": "css:button.VideoMeta_subscribeBtn__f4g5h6[data-testid=\"subscribe-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_22",
+          "bundle": "B_full",
+          "task_id": "t_10",
+          "locator_original": "button.EditForm_saveBtn__q4r5s6[dt=\"save-shipment-btn\"]",
+          "locator_expanded": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_22",
+          "bundle": "B_noSemantic",
+          "task_id": "t_05",
+          "locator_original": "button.TrackPanel_exportBtn__f9g0h1[sh=\"true\"]",
+          "locator_expanded": "css:button.TrackPanel_exportBtn__f9g0h1[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_22",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": "button.TrackPanel_toggle__m4n5o6[sh=\"true\"]",
+          "locator_expanded": "css:button.TrackPanel_toggle__m4n5o6[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_22",
+          "bundle": "B_noSemantic",
+          "task_id": "t_10",
+          "locator_original": "button.EditForm_saveBtn__q4r5s6[dt=\"save-shipment-btn\"]",
+          "locator_expanded": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]",
+          "success_after": false,
+          "unique_after": true,
+          "oracle_after": true,
+          "non_volatile_after": false
+        },
+        {
+          "page": "page_23",
+          "bundle": "B_noSemantic",
+          "task_id": "t_06",
+          "locator_original": "span.PayShell_secIcon__x4y5z6[sh=\"true\"]",
+          "locator_expanded": "css:span.PayShell_secIcon__x4y5z6[is_shadow=\"true\"]",
+          "success_after": false,
+          "unique_after": false,
+          "oracle_after": false,
+          "non_volatile_after": false
+        }
+      ]
+    },
+    "prompt_check": {
+      "system_prompt": "You are a web UI element locator. Given a structured observation of a web page and a natural-language task, return a single locator that uniquely identifies the target element.\n\nReturn ONLY the locator on one line, prefixed with 'css:'.\nFormat: css:<selector>\nNo explanation. No markdown. The locator only.",
+      "user_prompt_template": "Page observation:\\n{observation}\\n\\nTask: {taskDescription}\\n\\nLocator:",
+      "full_key_names_present_as_words": [],
+      "abbreviations_present_as_words": [],
+      "full_and_abbreviation_both_present": [],
+      "mentions_abbreviation_or_legend": false,
+      "F2_encoder_returns_only_the_json_array": true,
+      "contains_abbreviation_dictionary": false
+    },
+    "audit_matches": [
+      {
+        "page": "page_01",
+        "bundle": "B_full",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"related-product-amoxicillin-250\"]"
+      },
+      {
+        "page": "page_01",
+        "bundle": "B_noVolatile",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"related-product-amoxicillin-250\"]"
+      },
+      {
+        "page": "page_01",
+        "bundle": "B_noState",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"related-product-amoxicillin-250\"]"
+      },
+      {
+        "page": "page_01",
+        "bundle": "B_noSemantic",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[datatype=\"add-to-cart-btn\"],button[dt=\"add-to-cart-btn\"]"
+      },
+      {
+        "page": "page_01",
+        "bundle": "B_noSemantic",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"related-product-amoxicillin-250\"]"
+      },
+      {
+        "page": "page_01",
+        "bundle": "B_identityCore",
+        "task_id": "t_04",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"related-product-amoxicillin-250\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_full",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"check-eligibility-btn\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_full",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/forms/benefits-SA2024.pdf\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_noVolatile",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"check-eligibility-btn\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_noVolatile",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/forms/benefits-SA2024.pdf\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_noState",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/forms/benefits-SA2024.pdf\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_noSemantic",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[dt=\"application-status-tracker\"]"
+      },
+      {
+        "page": "page_02",
+        "bundle": "B_identityCore",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"submit-application-btn\"]"
+      },
+      {
+        "page": "page_03",
+        "bundle": "B_full",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[al=\"Submit transfer\"]"
+      },
+      {
+        "page": "page_03",
+        "bundle": "B_full",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ty"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.CardItem--a3b4c5:has(div:contains(\"Debit Card\")) button[ty=\"button\"][class*=\"btn-outline\"]:has-text(\"Freeze card\")"
+      },
+      {
+        "page": "page_03",
+        "bundle": "B_noState",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[al=\"Submit transfer\"]"
+      },
+      {
+        "page": "page_03",
+        "bundle": "B_noState",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ty",
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[ty=\"button\"][dt=\"freeze-debit-card\"]"
+      },
+      {
+        "page": "page_04",
+        "bundle": "B_full",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "input[dt=\"nonstop-filter\"]"
+      },
+      {
+        "page": "page_04",
+        "bundle": "B_noState",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "input[dt=\"nonstop-filter\"]"
+      },
+      {
+        "page": "page_05",
+        "bundle": "B_noVolatile",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.property-card__address[dt=\"property-card-1\"]"
+      },
+      {
+        "page": "page_05",
+        "bundle": "B_noVolatile",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.pagination__btn[al=\"Next page\"]"
+      },
+      {
+        "page": "page_05",
+        "bundle": "B_identityCore",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"property-card-14\"]"
+      },
+      {
+        "page": "page_05",
+        "bundle": "B_identityCore",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"property-card-2\"] button.save"
+      },
+      {
+        "page": "page_06",
+        "bundle": "B_full",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"breaking-news-lead\"]"
+      },
+      {
+        "page": "page_06",
+        "bundle": "B_noVolatile",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"breaking-news-lead\"]"
+      },
+      {
+        "page": "page_06",
+        "bundle": "B_noState",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"breaking-news-lead\"]"
+      },
+      {
+        "page": "page_06",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.breaking a[dt=\"breaking-news-lead\"]"
+      },
+      {
+        "page": "page_06",
+        "bundle": "B_identityCore",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"politics\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_full",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"add-to-cart-ALPHA-500\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_full",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"add-to-cart-BETA-200\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_full",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_full",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"product-link-GAMMA-900\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noVolatile",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.cart-btn-d[dt=\"add-to-cart-ALPHA-500\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noVolatile",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.cart-btn-d[dt=\"add-to-cart-BETA-200\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noVolatile",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "article[dt=\"product-card-1\"] .sa button:first-of-type"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noVolatile",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"product-link-GAMMA-900\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noVolatile",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[al=\"Next page\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noState",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"add-to-cart-ALPHA-500\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noState",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"add-to-cart-BETA-200\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noState",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noState",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"product-link-GAMMA-900\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noSemantic",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.BtnCart--e8f9a0.cart-btn-d[dt=\"add-to-cart-ALPHA-500\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.BtnCart--e8f9a0.cart-btn-d[dt=\"add-to-cart-BETA-200\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noSemantic",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "article[dt=\"product-card-1\"] .WishlistBtn--c8a1f0"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_noSemantic",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"product-link-GAMMA-900\"]"
+      },
+      {
+        "page": "page_08",
+        "bundle": "B_identityCore",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt",
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "article[dt=\"product-card-1\"] button[dt=\"wishlist-ALPHA-500\"]"
+      },
+      {
+        "page": "page_09",
+        "bundle": "B_noVolatile",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[sh=\"true\"].slot-list > div[sh=\"true\"]:first-child"
+      },
+      {
+        "page": "page_11",
+        "bundle": "B_full",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/contact-sales\"]"
+      },
+      {
+        "page": "page_11",
+        "bundle": "B_noVolatile",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/contact-sales\"]"
+      },
+      {
+        "page": "page_11",
+        "bundle": "B_noState",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[hr=\"/contact-sales\"]"
+      },
+      {
+        "page": "page_11",
+        "bundle": "B_noSemantic",
+        "task_id": "t_04",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-plan.btn-pro[dt=\"select-pro-btn\"]"
+      },
+      {
+        "page": "page_11",
+        "bundle": "B_noSemantic",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.ActionBar--o0p1q2.btn-compare[dt=\"compare-all-plans-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_full",
+        "task_id": "t_01",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-complete[dt=\"mark-complete-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_full",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.dl-link[al=\"Download lesson materials PDF\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_full",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-post[dt=\"post-comment-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_full",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-lesson-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noVolatile",
+        "task_id": "t_01",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-complete[dt=\"mark-complete-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noVolatile",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.dl-link[al=\"Download lesson materials PDF\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noVolatile",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-post[dt=\"post-comment-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noVolatile",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-lesson-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noState",
+        "task_id": "t_01",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-complete[dt=\"mark-complete-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noState",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-post[dt=\"post-comment-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noState",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.ctrl-btn[dt=\"captions-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noState",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-lesson-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noSemantic",
+        "task_id": "t_01",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-complete[dt=\"mark-complete-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noSemantic",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-post[dt=\"post-comment-btn\"]"
+      },
+      {
+        "page": "page_12",
+        "bundle": "B_noSemantic",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-lesson-btn\"]"
+      },
+      {
+        "page": "page_13",
+        "bundle": "B_full",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.export-link[dt=\"export-csv\"]"
+      },
+      {
+        "page": "page_13",
+        "bundle": "B_noVolatile",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.export-link[dt=\"export-csv\"]"
+      },
+      {
+        "page": "page_13",
+        "bundle": "B_noState",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.export-link[dt=\"export-csv\"]"
+      },
+      {
+        "page": "page_13",
+        "bundle": "B_noSemantic",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.filter-panel[sh=\"true\"] button.export-btn[data-export-pdf-btn][sh=\"true\"]"
+      },
+      {
+        "page": "page_13",
+        "bundle": "B_noSemantic",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".filter-panel[sh=\"true\"] .FilterChip--a1b2c3[sh=\"true\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_full",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.cart-header[sh=\"true\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_noVolatile",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.cart-header[sh=\"true\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_noVolatile",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.total-row.main[dt=\"cart-total-display\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_noState",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.cart-header[sh=\"true\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.cart-header[sh=\"true\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_noSemantic",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.total-row.main[dt=\"cart-total-display\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_identityCore",
+        "task_id": "t_04",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "select[dt=\"sort-dropdown\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_identityCore",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[dt=\"dietary-filter-bar\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_identityCore",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[dt=\"cart-total-display\"]"
+      },
+      {
+        "page": "page_14",
+        "bundle": "B_identityCore",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[dt=\"cart-total-display\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_full",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.apply-btn[dt=\"apply-filters-btn\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_full",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".FilterChip__tag___Qf4mW[sh=\"true\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noVolatile",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ty"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".jobs-list .job-footer button[ty=\"button\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noVolatile",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.apply-btn[dt=\"apply-filters-btn\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noVolatile",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".active-filters > div[sh=\"true\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noState",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.apply-btn[dt=\"apply-filters-btn\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noState",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".FilterChip__tag___Qf4mW[sh=\"true\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noSemantic",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div[sh=\"true\"] .salary-row[sh=\"true\"] input[type=\"number\"][sh=\"true\"]"
+      },
+      {
+        "page": "page_15",
+        "bundle": "B_noSemantic",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.apply-btn[dt=\"apply-filters-btn\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_full",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.active[hr=\"/help/category/account-billing\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_full",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ahd"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.ChatClose--m4n5o6[ahd=\"true\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noVolatile",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"article-card-001\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noVolatile",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.active[hr=\"/help/category/account-billing\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noVolatile",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.panel[sh=\"true\"] button[al=\"Start a live chat session\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noVolatile",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ty",
+          "ahd"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.panel-header button[ty=\"button\"][ahd=\"true\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noState",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "hr"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a.active[hr=\"/help/category/account-billing\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noState",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".ChatBtn--h8i9j0[al=\"Start a live chat session\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noState",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ahd"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.ChatClose--m4n5o6[ahd=\"true\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noSemantic",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".panel[sh=\"true\"] .ChatBtn--h8i9j0[sh=\"true\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_noSemantic",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "ahd"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.ChatClose--m4n5o6[ahd=\"true\"][type=\"button\"][style]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_identityCore",
+        "task_id": "t_03",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"article-card-001\"]"
+      },
+      {
+        "page": "page_16",
+        "bundle": "B_identityCore",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "a[dt=\"article-card-001\"]"
+      },
+      {
+        "page": "page_17",
+        "bundle": "B_identityCore",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"next-page-btn\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_full",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_noVolatile",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh",
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".KanbanPanel_head__n0o1p2 > span[sh=\"true\"] + span[sh=\"true\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_noVolatile",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_noState",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "al"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": ".KanbanPanel_cardCount__e5f6g7[sh=\"true\"]"
+      },
+      {
+        "page": "page_18",
+        "bundle": "B_noSemantic",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.EditPanel_field__s0t1u2[sh=\"true\"] input[type=\"date\"]"
+      },
+      {
+        "page": "page_19",
+        "bundle": "B_full",
+        "task_id": "t_04",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-step-btn\"]"
+      },
+      {
+        "page": "page_19",
+        "bundle": "B_noState",
+        "task_id": "t_04",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.btn-next[dt=\"next-step-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_full",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"enroll-benefits-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_full",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.ShadowSection--y1z2a3[sh=\"true\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_noVolatile",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"enroll-benefits-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_noState",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"enroll-benefits-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_noState",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.tab-btn.active[dt=\"payslips-tab\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_noState",
+        "task_id": "t_08",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "div.ShadowSection--y1z2a3[sh=\"true\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_identityCore",
+        "task_id": "t_02",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"enroll-benefits-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_identityCore",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"enroll-benefits-btn\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_identityCore",
+        "task_id": "t_07",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "#hr-portal-a1b2c3 button[dt=\"payslips-tab\"]"
+      },
+      {
+        "page": "page_20",
+        "bundle": "B_identityCore",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"payslips-tab\"]"
+      },
+      {
+        "page": "page_21",
+        "bundle": "B_noState",
+        "task_id": "t_01",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.VideoMeta_subscribeBtn__f4g5h6[dt=\"subscribe-btn\"]"
+      },
+      {
+        "page": "page_21",
+        "bundle": "B_identityCore",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"play-pause-btn\"]"
+      },
+      {
+        "page": "page_21",
+        "bundle": "B_identityCore",
+        "task_id": "t_09",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button[dt=\"caption-toggle\"]"
+      },
+      {
+        "page": "page_22",
+        "bundle": "B_full",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.EditForm_saveBtn__q4r5s6[dt=\"save-shipment-btn\"]"
+      },
+      {
+        "page": "page_22",
+        "bundle": "B_noSemantic",
+        "task_id": "t_05",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.TrackPanel_exportBtn__f9g0h1[sh=\"true\"]"
+      },
+      {
+        "page": "page_22",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.TrackPanel_toggle__m4n5o6[sh=\"true\"]"
+      },
+      {
+        "page": "page_22",
+        "bundle": "B_noSemantic",
+        "task_id": "t_10",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "dt"
+        ],
+        "elsewhere_hits": [],
+        "locator": "button.EditForm_saveBtn__q4r5s6[dt=\"save-shipment-btn\"]"
+      },
+      {
+        "page": "page_23",
+        "bundle": "B_noSemantic",
+        "task_id": "t_06",
+        "encoding": "F2",
+        "class": "A_attr_name",
+        "attr_hits": [
+          "sh"
+        ],
+        "elsewhere_hits": [],
+        "locator": "span.PayShell_secIcon__x4y5z6[sh=\"true\"]"
+      }
+    ]
+  },
+  "D3": {
+    "page_level": {
+      "n_pages": 24,
+      "n_nonzero": 20,
+      "ties": 4,
+      "nv_favoring": 18,
+      "bf_favoring": 2,
+      "wilcoxon_W_published_form": 9.5,
+      "wilcoxon_p": 0.00035115193516510606,
+      "W_plus": 200.5,
+      "W_minus": 9.5,
+      "z_normal_approx_tie_corrected": 3.574310566418998,
+      "scipy_approx_z": 3.574310566418998,
+      "scipy_approx_p": 0.00035115193516510606,
+      "r = Z/sqrt(N_nonzero)": 0.7992401399208656,
+      "r = Z/sqrt(24)": 0.729603089163739,
+      "matched_pairs_rank_biserial": 0.9095238095238095,
+      "sign_test_share_nonzero": 0.9,
+      "share_pages_nv_ge_bf": 0.9166666666666666,
+      "sign_test_p": 0.0004024505615234375
+    },
+    "gee_main": {
+      "robust": {
+        "coef_log_or": 0.39488189810214247,
+        "se": 0.1140306251107846,
+        "odds_ratio": 1.4842088926825476,
+        "or_ci_lo": 1.1869487988181764,
+        "or_ci_hi": 1.8559149639068835,
+        "z": 3.4629460087454698,
+        "p": 0.0005342955952384206,
+        "exchangeable_corr": 0.14363336872488838,
+        "warnings": []
+      },
+      "bias_reduced": {
+        "coef_log_or": 0.39488189810214247,
+        "se": 0.11898847837647084,
+        "odds_ratio": 1.4842088926825476,
+        "or_ci_lo": 1.1754708208210989,
+        "or_ci_hi": 1.87403719267075,
+        "z": 3.3186565917144097,
+        "p": 0.0009045159138166792,
+        "exchangeable_corr": 0.14363336872488838,
+        "warnings": []
+      }
+    },
+    "gee_interaction_bundle_x_stratum": {
+      "robust": {
+        "coef_log_or": 0.43787750794804625,
+        "se": 0.20813100765361892,
+        "odds_ratio": 1.5494151047595774,
+        "or_ci_lo": 1.0304011875500494,
+        "or_ci_hi": 2.329856754692962,
+        "z": 2.103855225055086,
+        "p": 0.03539107774794602,
+        "exchangeable_corr": 0.13874783344440467,
+        "warnings": []
+      },
+      "bias_reduced": {
+        "coef_log_or": 0.43787750794804625,
+        "se": 0.22705200834940245,
+        "odds_ratio": 1.5494151047595774,
+        "or_ci_lo": 0.9928891515428351,
+        "or_ci_hi": 2.4178803475964474,
+        "z": 1.9285339563004955,
+        "p": 0.05378874484103196,
+        "exchangeable_corr": 0.13874783344440467,
+        "warnings": []
+      }
+    },
+    "clustered_mcnemar_obuchowski": {
+      "K": 24,
+      "N": 960,
+      "p_bf": 0.5479166666666667,
+      "p_nv": 0.6427083333333333,
+      "diff_nv_minus_bf_pp": 9.479166666666666,
+      "se_diff_pp": 2.8030908094010782,
+      "chi2": 11.435785049534672,
+      "p": 0.0007204302965160897
+    },
+    "holm_family": [
+      {
+        "group": "bundle ladder",
+        "comparison": "B_full → B_noVolatile",
+        "n_pairs": 960,
+        "basis": "960 pairs, F0–F3",
+        "delta_pp": 9.479166666666666,
+        "b": 102,
+        "c": 11,
+        "chi2": 73.28318584070796,
+        "p_raw": 1.1232069193514942e-17,
+        "p_exact": 1.2518282545755144e-19,
+        "p_holm": 1.6848103790272413e-16,
+        "p_holm_exact": 1.8777423818632716e-18
+      },
+      {
+        "group": "bundle ladder",
+        "comparison": "B_noVolatile → B_noState",
+        "n_pairs": 960,
+        "basis": "960 pairs, F0–F3",
+        "delta_pp": -9.166666666666666,
+        "b": 10,
+        "c": 98,
+        "chi2": 71.70370370370371,
+        "p_raw": 2.5006273789784808e-17,
+        "p_exact": 2.6510752046570397e-19,
+        "p_holm": 3.500878330569873e-16,
+        "p_holm_exact": 3.711505286519856e-18
+      },
+      {
+        "group": "bundle ladder",
+        "comparison": "B_noState → B_noSemantic",
+        "n_pairs": 960,
+        "basis": "960 pairs, F0–F3",
+        "delta_pp": -19.791666666666664,
+        "b": 16,
+        "c": 206,
+        "chi2": 162.61261261261262,
+        "p_raw": 3.0398482938323844e-37,
+        "p_exact": 3.074101465287277e-43,
+        "p_holm": 4.863757270131815e-36,
+        "p_holm_exact": 4.918562344459643e-42
+      },
+      {
+        "group": "bundle ladder",
+        "comparison": "B_noSemantic → B_identityCore",
+        "n_pairs": 960,
+        "basis": "960 pairs, F0–F3",
+        "delta_pp": 4.270833333333333,
+        "b": 105,
+        "c": 64,
+        "chi2": 9.946745562130177,
+        "p_raw": 0.0016113400642586372,
+        "p_exact": 0.002001342228607936,
+        "p_holm": 0.008056700321293186,
+        "p_holm_exact": 0.01000671114303968
+      },
+      {
+        "group": "bundle ladder",
+        "comparison": "B_identityCore → B_minimalCore",
+        "n_pairs": 960,
+        "basis": "960 pairs, F0–F3",
+        "delta_pp": -39.58333333333333,
+        "b": 0,
+        "c": 380,
+        "chi2": 380.0,
+        "p_raw": 1.2444035588551224e-84,
+        "p_exact": 8.121413879410078e-115,
+        "p_holm": 2.115486050053708e-83,
+        "p_holm_exact": 1.3806403594997132e-113
+      },
+      {
+        "group": "encoding vs F1",
+        "comparison": "B_noVolatile: F1 → F0",
+        "n_pairs": 240,
+        "basis": "240 pairs",
+        "delta_pp": -1.25,
+        "b": 3,
+        "c": 6,
+        "chi2": 1.0,
+        "p_raw": 0.31731050786291115,
+        "p_exact": 0.5078125,
+        "p_holm": 0.6346210157258223,
+        "p_holm_exact": 1.0
+      },
+      {
+        "group": "encoding vs F1",
+        "comparison": "B_noVolatile: F1 → F2",
+        "n_pairs": 240,
+        "basis": "240 pairs",
+        "delta_pp": -12.083333333333334,
+        "b": 4,
+        "c": 33,
+        "chi2": 22.72972972972973,
+        "p_raw": 1.864606348180602e-06,
+        "p_exact": 1.0843941709026694e-06,
+        "p_holm": 2.0510669829986625e-05,
+        "p_holm_exact": 1.1928335879929364e-05
+      },
+      {
+        "group": "encoding vs F1",
+        "comparison": "B_noVolatile: F1 → F3",
+        "n_pairs": 240,
+        "basis": "240 pairs",
+        "delta_pp": 0.4166666666666667,
+        "b": 4,
+        "c": 3,
+        "chi2": 0.14285714285714285,
+        "p_raw": 0.7054569861112734,
+        "p_exact": 1.0,
+        "p_holm": 0.7054569861112734,
+        "p_holm_exact": 1.0
+      },
+      {
+        "group": "moderator",
+        "comparison": "B_full → B_noVolatile, LOW pages",
+        "n_pairs": 480,
+        "basis": "480 pairs",
+        "delta_pp": 15.0,
+        "b": 77,
+        "c": 5,
+        "chi2": 63.21951219512195,
+        "p_raw": 1.8490760597155742e-15,
+        "p_exact": 1.2046380153120002e-17,
+        "p_holm": 2.4037988776302464e-14,
+        "p_holm_exact": 1.5660294199056002e-16
+      },
+      {
+        "group": "moderator",
+        "comparison": "B_full → B_noVolatile, HIGH pages",
+        "n_pairs": 480,
+        "basis": "480 pairs",
+        "delta_pp": 3.958333333333333,
+        "b": 25,
+        "c": 6,
+        "chi2": 11.64516129032258,
+        "p_raw": 0.0006436975254696885,
+        "p_exact": 0.0008779102936387062,
+        "p_holm": 0.003862185152818131,
+        "p_holm_exact": 0.005267461761832237
+      },
+      {
+        "group": "moderator",
+        "comparison": "LOW vs HIGH page-level Δ (exact permutation)",
+        "n_pairs": 24,
+        "basis": "24 page deltas, C(24,12) splits",
+        "delta_pp": 11.041666666666668,
+        "b": null,
+        "c": null,
+        "chi2": null,
+        "p_raw": 0.01651457978016061,
+        "p_exact": 0.01651457978016061,
+        "p_holm": 0.049543739340481834,
+        "p_holm_exact": 0.049543739340481834
+      },
+      {
+        "group": "cross-model",
+        "comparison": "gpt-4.1: B_full×F1 → B_noVolatile×F1",
+        "n_pairs": 240,
+        "basis": "240 aligned events",
+        "delta_pp": 9.583333333333334,
+        "b": 26,
+        "c": 3,
+        "chi2": 18.24137931034483,
+        "p_raw": 1.9460471096554134e-05,
+        "p_exact": 1.5236437320709229e-05,
+        "p_holm": 0.00019460471096554134,
+        "p_holm_exact": 0.00015236437320709229
+      },
+      {
+        "group": "cross-model",
+        "comparison": "gpt-4.1-nano: B_full×F1 → B_noVolatile×F1",
+        "n_pairs": 240,
+        "basis": "240 aligned events",
+        "delta_pp": 6.666666666666667,
+        "b": 22,
+        "c": 6,
+        "chi2": 9.142857142857142,
+        "p_raw": 0.002496908915141551,
+        "p_exact": 0.0037191659212112427,
+        "p_holm": 0.009987635660566204,
+        "p_holm_exact": 0.01487666368484497
+      },
+      {
+        "group": "cross-model",
+        "comparison": "claude-sonnet-4-6: B_full×F1 → B_noVolatile×F1",
+        "n_pairs": 210,
+        "basis": "210 aligned events",
+        "delta_pp": 6.190476190476191,
+        "b": 13,
+        "c": 0,
+        "chi2": 13.0,
+        "p_raw": 0.00031149097676738403,
+        "p_exact": 0.000244140625,
+        "p_holm": 0.002180436837371688,
+        "p_holm_exact": 0.002197265625
+      },
+      {
+        "group": "cross-model",
+        "comparison": "fair subset: gpt-4.1 → claude-sonnet-4-6",
+        "n_pairs": 870,
+        "basis": "870 common events",
+        "delta_pp": 4.252873563218391,
+        "b": 69,
+        "c": 32,
+        "chi2": 13.554455445544555,
+        "p_raw": 0.00023174065747149386,
+        "p_exact": 0.0002959601961545845,
+        "p_holm": 0.002085665917243445,
+        "p_holm_exact": 0.0022172927856445312
+      },
+      {
+        "group": "cross-model",
+        "comparison": "fair subset: gpt-4.1 → gpt-4.1-nano",
+        "n_pairs": 870,
+        "basis": "870 common events",
+        "delta_pp": -8.045977011494253,
+        "b": 61,
+        "c": 131,
+        "chi2": 25.520833333333332,
+        "p_raw": 4.3763180221643244e-07,
+        "p_exact": 4.812286863278593e-07,
+        "p_holm": 5.2515816265971895e-06,
+        "p_holm_exact": 5.774744235934312e-06
+      },
+      {
+        "group": "cross-model",
+        "comparison": "COP cell: gpt-4.1 → o4-mini",
+        "n_pairs": 240,
+        "basis": "240 common events",
+        "delta_pp": 7.5,
+        "b": 21,
+        "c": 3,
+        "chi2": 13.5,
+        "p_raw": 0.00023856345402870974,
+        "p_exact": 0.0002771615982055664,
+        "p_holm": 0.002085665917243445,
+        "p_holm_exact": 0.0022172927856445312
+      }
+    ],
+    "permutation_moderator": {
+      "statistic": "mean page Δ(LOW) − mean page Δ(HIGH), pp",
+      "observed_pp": 11.041666666666668,
+      "n_splits": 2704156,
+      "n_as_or_more_extreme": 44658,
+      "p_two_sided_exact": 0.01651457978016061
+    },
+    "cross_model_tests": {
+      "form_invariance_gpt-4.1": {
+        "n": 240,
+        "n11_both": 136,
+        "b_second_only": 26,
+        "c_first_only": 3,
+        "n00_neither": 75,
+        "success_first": 139,
+        "success_second": 162,
+        "rate_first_pct": 57.91666666666667,
+        "rate_second_pct": 67.5,
+        "delta_pp": 9.583333333333334,
+        "chi2": 18.24137931034483,
+        "p": 1.9460471096554134e-05,
+        "p_exact": 1.5236437320709229e-05,
+        "odds_ratio": 8.666666666666666,
+        "or_ci_lo": 2.656103966819836,
+        "or_ci_hi": 44.73783556681667
+      },
+      "form_invariance_gpt-4.1-nano": {
+        "n": 240,
+        "n11_both": 141,
+        "b_second_only": 22,
+        "c_first_only": 6,
+        "n00_neither": 71,
+        "success_first": 147,
+        "success_second": 163,
+        "rate_first_pct": 61.25000000000001,
+        "rate_second_pct": 67.91666666666667,
+        "delta_pp": 6.666666666666667,
+        "chi2": 9.142857142857142,
+        "p": 0.002496908915141551,
+        "p_exact": 0.0037191659212112427,
+        "odds_ratio": 3.6666666666666665,
+        "or_ci_lo": 1.4418174333020124,
+        "or_ci_hi": 11.053912950008602
+      },
+      "form_invariance_claude-sonnet-4-6": {
+        "n": 210,
+        "n11_both": 150,
+        "b_second_only": 13,
+        "c_first_only": 0,
+        "n00_neither": 47,
+        "success_first": 150,
+        "success_second": 163,
+        "rate_first_pct": 71.42857142857143,
+        "rate_second_pct": 77.61904761904762,
+        "delta_pp": 6.190476190476191,
+        "chi2": 13.0,
+        "p": 0.00031149097676738403,
+        "p_exact": 0.000244140625,
+        "odds_ratio": "inf",
+        "or_ci_lo": 3.0477203890374702,
+        "or_ci_hi": "inf"
+      },
+      "fair_subset_claude-sonnet-4-6_vs_gpt-4.1": {
+        "n": 870,
+        "n11_both": 531,
+        "b_second_only": 69,
+        "c_first_only": 32,
+        "n00_neither": 238,
+        "success_first": 563,
+        "success_second": 600,
+        "rate_first_pct": 64.71264367816092,
+        "rate_second_pct": 68.96551724137932,
+        "delta_pp": 4.252873563218391,
+        "chi2": 13.554455445544555,
+        "p": 0.00023174065747149386,
+        "p_exact": 0.0002959601961545845,
+        "odds_ratio": 2.15625,
+        "or_ci_lo": 1.3985438643489319,
+        "or_ci_hi": 3.3895610705018
+      },
+      "fair_subset_gpt-4.1-nano_vs_gpt-4.1": {
+        "n": 870,
+        "n11_both": 432,
+        "b_second_only": 61,
+        "c_first_only": 131,
+        "n00_neither": 246,
+        "success_first": 563,
+        "success_second": 493,
+        "rate_first_pct": 64.71264367816092,
+        "rate_second_pct": 56.666666666666664,
+        "delta_pp": -8.045977011494253,
+        "chi2": 25.520833333333332,
+        "p": 4.3763180221643244e-07,
+        "p_exact": 4.812286863278593e-07,
+        "odds_ratio": 0.46564885496183206,
+        "or_ci_lo": 0.3378525572998824,
+        "or_ci_hi": 0.6356354566439172
+      },
+      "cop_o4-mini_vs_gpt-4.1": {
+        "n": 240,
+        "n11_both": 160,
+        "b_second_only": 21,
+        "c_first_only": 3,
+        "n00_neither": 56,
+        "success_first": 163,
+        "success_second": 181,
+        "rate_first_pct": 67.91666666666667,
+        "rate_second_pct": 75.41666666666667,
+        "delta_pp": 7.5,
+        "chi2": 13.5,
+        "p": 0.00023856345402870974,
+        "p_exact": 0.0002771615982055664,
+        "odds_ratio": 7.0,
+        "or_ci_lo": 2.0901263960472067,
+        "or_ci_hi": 36.65157348816217
+      }
+    },
+    "ladder_tests": {
+      "B_full->B_noVolatile": {
+        "n": 960,
+        "n11_both": 515,
+        "b_second_only": 102,
+        "c_first_only": 11,
+        "n00_neither": 332,
+        "success_first": 526,
+        "success_second": 617,
+        "rate_first_pct": 54.79166666666667,
+        "rate_second_pct": 64.27083333333333,
+        "delta_pp": 9.479166666666666,
+        "chi2": 73.28318584070796,
+        "p": 1.1232069193514942e-17,
+        "p_exact": 1.2518282545755144e-19,
+        "odds_ratio": 9.272727272727273,
+        "or_ci_lo": 4.970015706738754,
+        "or_ci_hi": 19.15991729895992
+      },
+      "B_noVolatile->B_noState": {
+        "n": 960,
+        "n11_both": 519,
+        "b_second_only": 10,
+        "c_first_only": 98,
+        "n00_neither": 333,
+        "success_first": 617,
+        "success_second": 529,
+        "rate_first_pct": 64.27083333333333,
+        "rate_second_pct": 55.104166666666664,
+        "delta_pp": -9.166666666666666,
+        "chi2": 71.70370370370371,
+        "p": 2.5006273789784808e-17,
+        "p_exact": 2.6510752046570397e-19,
+        "odds_ratio": 0.10204081632653061,
+        "or_ci_lo": 0.04744923081752897,
+        "or_ci_hi": 0.19573453750293623
+      },
+      "B_noState->B_noSemantic": {
+        "n": 960,
+        "n11_both": 323,
+        "b_second_only": 16,
+        "c_first_only": 206,
+        "n00_neither": 415,
+        "success_first": 529,
+        "success_second": 339,
+        "rate_first_pct": 55.104166666666664,
+        "rate_second_pct": 35.3125,
+        "delta_pp": -19.791666666666664,
+        "chi2": 162.61261261261262,
+        "p": 3.0398482938323844e-37,
+        "p_exact": 3.074101465287277e-43,
+        "odds_ratio": 0.07766990291262135,
+        "or_ci_lo": 0.04357359107052696,
+        "or_ci_hi": 0.12918225166563327
+      },
+      "B_noSemantic->B_identityCore": {
+        "n": 960,
+        "n11_both": 275,
+        "b_second_only": 105,
+        "c_first_only": 64,
+        "n00_neither": 516,
+        "success_first": 339,
+        "success_second": 380,
+        "rate_first_pct": 35.3125,
+        "rate_second_pct": 39.58333333333333,
+        "delta_pp": 4.270833333333333,
+        "chi2": 9.946745562130177,
+        "p": 0.0016113400642586372,
+        "p_exact": 0.002001342228607936,
+        "odds_ratio": 1.640625,
+        "or_ci_lo": 1.1910547959321913,
+        "or_ci_hi": 2.2751439969192044
+      },
+      "B_identityCore->B_minimalCore": {
+        "n": 960,
+        "n11_both": 0,
+        "b_second_only": 0,
+        "c_first_only": 380,
+        "n00_neither": 580,
+        "success_first": 380,
+        "success_second": 0,
+        "rate_first_pct": 39.58333333333333,
+        "rate_second_pct": 0.0,
+        "delta_pp": -39.58333333333333,
+        "chi2": 380.0,
+        "p": 1.2444035588551224e-84,
+        "p_exact": 8.121413879410078e-115,
+        "odds_ratio": 0.0,
+        "or_ci_lo": 0.0,
+        "or_ci_hi": 0.009754848881065273
+      }
+    },
+    "encoding_tests": {
+      "F1->F0": {
+        "n": 240,
+        "n11_both": 156,
+        "b_second_only": 3,
+        "c_first_only": 6,
+        "n00_neither": 75,
+        "success_first": 162,
+        "success_second": 159,
+        "rate_first_pct": 67.5,
+        "rate_second_pct": 66.25,
+        "delta_pp": -1.25,
+        "chi2": 1.0,
+        "p": 0.31731050786291115,
+        "p_exact": 0.5078125,
+        "odds_ratio": 0.5,
+        "or_ci_lo": 0.08091121023992238,
+        "or_ci_hi": 2.341184490876549
+      },
+      "F1->F2": {
+        "n": 240,
+        "n11_both": 129,
+        "b_second_only": 4,
+        "c_first_only": 33,
+        "n00_neither": 74,
+        "success_first": 162,
+        "success_second": 133,
+        "rate_first_pct": 67.5,
+        "rate_second_pct": 55.41666666666667,
+        "delta_pp": -12.083333333333334,
+        "chi2": 22.72972972972973,
+        "p": 1.864606348180602e-06,
+        "p_exact": 1.0843941709026694e-06,
+        "odds_ratio": 0.12121212121212122,
+        "or_ci_lo": 0.03119569617987863,
+        "or_ci_hi": 0.3407987867013683
+      },
+      "F1->F3": {
+        "n": 240,
+        "n11_both": 159,
+        "b_second_only": 4,
+        "c_first_only": 3,
+        "n00_neither": 74,
+        "success_first": 162,
+        "success_second": 163,
+        "rate_first_pct": 67.5,
+        "rate_second_pct": 67.91666666666667,
+        "delta_pp": 0.4166666666666667,
+        "chi2": 0.14285714285714285,
+        "p": 0.7054569861112734,
+        "p_exact": 1.0,
+        "odds_ratio": 1.3333333333333333,
+        "or_ci_lo": 0.22556764660698236,
+        "or_ci_hi": 9.102206197886318
+      }
+    },
+    "stratum_tests": {
+      "LOW": {
+        "n": 480,
+        "n11_both": 222,
+        "b_second_only": 77,
+        "c_first_only": 5,
+        "n00_neither": 176,
+        "success_first": 227,
+        "success_second": 299,
+        "rate_first_pct": 47.291666666666664,
+        "rate_second_pct": 62.291666666666664,
+        "delta_pp": 15.0,
+        "chi2": 63.21951219512195,
+        "p": 1.8490760597155742e-15,
+        "p_exact": 1.2046380153120002e-17,
+        "odds_ratio": 15.4,
+        "or_ci_lo": 6.321353194260438,
+        "or_ci_hi": 48.76857485590719
+      },
+      "HIGH": {
+        "n": 480,
+        "n11_both": 293,
+        "b_second_only": 25,
+        "c_first_only": 6,
+        "n00_neither": 156,
+        "success_first": 299,
+        "success_second": 318,
+        "rate_first_pct": 62.291666666666664,
+        "rate_second_pct": 66.25,
+        "delta_pp": 3.958333333333333,
+        "chi2": 11.64516129032258,
+        "p": 0.0006436975254696885,
+        "p_exact": 0.0008779102936387062,
+        "odds_ratio": 4.166666666666667,
+        "or_ci_lo": 1.6685726245223704,
+        "or_ci_hi": 12.419234809528641
+      }
+    },
+    "token_savings_ci": {
+      "COP (B_noVolatile×F3) vs B_full×F1 [observation_tokens]": {
+        "metric": "o200k_base observation tokens",
+        "reduction_pct": 33.98660046346343,
+        "boot_ci_lo_pct": 30.64103976243923,
+        "boot_ci_hi_pct": 37.73015454614574,
+        "records_per_page_per_cell": 10
+      },
+      "F3 vs F1 within B_noVolatile [observation_tokens]": {
+        "metric": "o200k_base observation tokens",
+        "reduction_pct": 29.125248673055815,
+        "boot_ci_lo_pct": 26.399604651990348,
+        "boot_ci_hi_pct": 32.44816290828801,
+        "records_per_page_per_cell": 10
+      },
+      "COP (B_noVolatile×F3) vs B_full×F1 [prompt_tokens_total]": {
+        "metric": "API-reported prompt tokens (system + observation + task)",
+        "reduction_pct": 33.865017701955914,
+        "boot_ci_lo_pct": 30.536655268310614,
+        "boot_ci_hi_pct": 37.57885784614973,
+        "records_per_page_per_cell": 10
+      },
+      "F3 vs F1 within B_noVolatile [prompt_tokens_total]": {
+        "metric": "API-reported prompt tokens (system + observation + task)",
+        "reduction_pct": 29.01527816724492,
+        "boot_ci_lo_pct": 26.309134036649453,
+        "boot_ci_hi_pct": 32.291283800732295,
+        "records_per_page_per_cell": 10
+      }
+    },
+    "grabbed_subtypes": {
+      "priority": [
+        "volatile",
+        "positional",
+        "invalid cross-shadow syntax",
+        "non-unique",
+        "wrong element"
+      ],
+      "primary": {
+        "volatile": 601,
+        "positional": 6,
+        "invalid cross-shadow syntax": 39,
+        "non-unique": 245,
+        "wrong element": 21
+      },
+      "flags_multilabel": {
+        "volatile": 601,
+        "positional": 17,
+        "invalid cross-shadow syntax": 50,
+        "non-unique": 345,
+        "wrong element": 23
+      },
+      "combinations": {
+        "volatile": 530,
+        "non-unique": 245,
+        "volatile+non-unique": 47,
+        "invalid cross-shadow syntax+non-unique": 39,
+        "wrong element": 21,
+        "volatile+invalid cross-shadow syntax+non-unique": 10,
+        "volatile+positional": 10,
+        "positional+non-unique": 3,
+        "positional": 3,
+        "volatile+wrong element": 2,
+        "volatile+positional+non-unique": 1,
+        "volatile+invalid cross-shadow syntax": 1
+      },
+      "by_bundle": {
+        "B_full": {
+          "volatile": 190,
+          "positional": 0,
+          "invalid cross-shadow syntax": 6,
+          "non-unique": 40,
+          "wrong element": 6
+        },
+        "B_identityCore": {
+          "volatile": 28,
+          "positional": 0,
+          "invalid cross-shadow syntax": 4,
+          "non-unique": 17,
+          "wrong element": 3
+        },
+        "B_noSemantic": {
+          "volatile": 102,
+          "positional": 0,
+          "invalid cross-shadow syntax": 13,
+          "non-unique": 34,
+          "wrong element": 0
+        },
+        "B_noState": {
+          "volatile": 188,
+          "positional": 0,
+          "invalid cross-shadow syntax": 6,
+          "non-unique": 39,
+          "wrong element": 6
+        },
+        "B_noVolatile": {
+          "volatile": 84,
+          "positional": 1,
+          "invalid cross-shadow syntax": 10,
+          "non-unique": 50,
+          "wrong element": 6
+        },
+        "B_playwrightMCP": {
+          "volatile": 9,
+          "positional": 5,
+          "invalid cross-shadow syntax": 0,
+          "non-unique": 65,
+          "wrong element": 0
+        }
+      },
+      "by_encoding": {
+        "F0": {
+          "volatile": 143,
+          "positional": 0,
+          "invalid cross-shadow syntax": 31,
+          "non-unique": 9,
+          "wrong element": 5
+        },
+        "F1": {
+          "volatile": 156,
+          "positional": 0,
+          "invalid cross-shadow syntax": 3,
+          "non-unique": 14,
+          "wrong element": 7
+        },
+        "F2": {
+          "volatile": 148,
+          "positional": 0,
+          "invalid cross-shadow syntax": 5,
+          "non-unique": 138,
+          "wrong element": 4
+        },
+        "F3": {
+          "volatile": 145,
+          "positional": 1,
+          "invalid cross-shadow syntax": 0,
+          "non-unique": 19,
+          "wrong element": 5
+        },
+        "F4": {
+          "volatile": 9,
+          "positional": 5,
+          "invalid cross-shadow syntax": 0,
+          "non-unique": 65,
+          "wrong element": 0
+        }
+      },
+      "shadow_syntax_rule": "\\[\\s*(?:data-shadow|is_shadow|sh)\\s*(?:[~|^$*]?=|\\])|\\[S\\]|>>>|/deep/|::shadow",
+      "shadow_syntax_examples": [
+        "[data-shadow=\"true\"] .EditForm_inp__b9c0d1#shipment-ref",
+        "[data-shadow=\"true\"] .EditPanel_inp__y6z7a8#card-title",
+        "[data-shadow=\"true\"] .EditPanel_input__m4n5o6#edit-username",
+        "[data-shadow=\"true\"] .EditPanel_input__m4n5o6[type=\"email\"]",
+        "[data-shadow=\"true\"] .EditPanel_select__p7q8r9#edit-role",
+        "[data-shadow=\"true\"] .download-btn[aria-label=\"Download current payslip as PDF\"]",
+        "[data-shadow=\"true\"].EditForm_sel__e2f3g4#shipment-priority",
+        "a[data-shadow=\"true\"][href=\"/contact-sales\"]",
+        "a[is_shadow=\"true\"][href=\"/contact-sales\"]",
+        "admin-console-shell[id=\"admin-console-shell-x1y2z3\"] ::shadow select#edit-role",
+        "button.EditForm_saveBtn__q4r5s6[is_shadow=\"true\"]",
+        "button[data-shadow=\"true\"].btn-next[data-testid=\"next-step-btn\"]",
+        "button[data-shadow=\"true\"].tab-btn.active[data-testid=\"payslips-tab\"]",
+        "button[data-shadow=\"true\"][aria-label=\"Play video\"]",
+        "button[data-shadow=\"true\"][aria-label=\"Start a live chat session\"]"
+      ]
+    },
+    "pareto_api_tokens": {
+      "cost_field": "prompt_tokens_total (API usage: system prompt + observation + task)",
+      "note_missing_field": "No API-reported observation-only token count exists in the records.",
+      "prompt_minus_observation_tokens": {
+        "min": 89,
+        "max": 119,
+        "mean": 95.63416666666667
+      },
+      "frontier": [
+        [
+          "B_identityCore",
+          "F3"
+        ],
+        [
+          "B_identityCore",
+          "F0"
+        ],
+        [
+          "B_playwrightMCP",
+          "F4"
+        ],
+        [
+          "B_noVolatile",
+          "F3"
+        ]
+      ],
+      "frontier_o200k": [
+        [
+          "B_identityCore",
+          "F3"
+        ],
+        [
+          "B_identityCore",
+          "F0"
+        ],
+        [
+          "B_playwrightMCP",
+          "F4"
+        ],
+        [
+          "B_noVolatile",
+          "F3"
+        ]
+      ],
+      "dominated_count": 17,
+      "cop_rule": "cheapest frontier cell with success > 50% (pareto.py)",
+      "cop": [
+        "B_noVolatile",
+        "F3"
+      ],
+      "published_cop_on_frontier": true,
+      "published_cop_weakly_dominated_by": [],
+      "cop_vs_bff1_reduction_pct": 33.865017701955914,
+      "f3_vs_f1_reduction_pct": 29.01527816724491,
+      "cells": [
+        {
+          "bundle": "B_identityCore",
+          "encoding": "F3",
+          "success_pct": 40.833333333333336,
+          "mean_obs_tokens": 179.66666666666666,
+          "mean_api_prompt_tokens": 276.0625,
+          "status_o200k": "FRONTIER",
+          "status_api": "FRONTIER"
+        },
+        {
+          "bundle": "B_identityCore",
+          "encoding": "F0",
+          "success_pct": 41.66666666666667,
+          "mean_obs_tokens": 225.04166666666666,
+          "mean_api_prompt_tokens": 320.4375,
+          "status_o200k": "FRONTIER",
+          "status_api": "FRONTIER"
+        },
+        {
+          "bundle": "B_identityCore",
+          "encoding": "F2",
+          "success_pct": 37.5,
+          "mean_obs_tokens": 237.83333333333334,
+          "mean_api_prompt_tokens": 333.2291666666667,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_identityCore",
+          "encoding": "F1",
+          "success_pct": 38.333333333333336,
+          "mean_obs_tokens": 249.91666666666666,
+          "mean_api_prompt_tokens": 345.3125,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_playwrightMCP",
+          "encoding": "F4",
+          "success_pct": 47.083333333333336,
+          "mean_obs_tokens": 8914.166666666666,
+          "mean_api_prompt_tokens": 9010.270833333334,
+          "status_o200k": "FRONTIER",
+          "status_api": "FRONTIER"
+        },
+        {
+          "bundle": "B_noSemantic",
+          "encoding": "F3",
+          "success_pct": 40.833333333333336,
+          "mean_obs_tokens": 9212.0,
+          "mean_api_prompt_tokens": 9308.395833333334,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noSemantic",
+          "encoding": "F0",
+          "success_pct": 36.25,
+          "mean_obs_tokens": 11049.833333333334,
+          "mean_api_prompt_tokens": 11145.229166666666,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noSemantic",
+          "encoding": "F2",
+          "success_pct": 25.416666666666664,
+          "mean_obs_tokens": 11881.166666666666,
+          "mean_api_prompt_tokens": 11976.5625,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noSemantic",
+          "encoding": "F1",
+          "success_pct": 38.75,
+          "mean_obs_tokens": 11909.791666666666,
+          "mean_api_prompt_tokens": 12005.1875,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noVolatile",
+          "encoding": "F3",
+          "success_pct": 67.91666666666667,
+          "mean_obs_tokens": 17887.458333333332,
+          "mean_api_prompt_tokens": 17983.520833333332,
+          "status_o200k": "FRONTIER",
+          "status_api": "FRONTIER"
+        },
+        {
+          "bundle": "B_noState",
+          "encoding": "F3",
+          "success_pct": 57.91666666666667,
+          "mean_obs_tokens": 19609.333333333332,
+          "mean_api_prompt_tokens": 19704.729166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_full",
+          "encoding": "F3",
+          "success_pct": 57.49999999999999,
+          "mean_obs_tokens": 19632.958333333332,
+          "mean_api_prompt_tokens": 19728.354166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noVolatile",
+          "encoding": "F0",
+          "success_pct": 66.25,
+          "mean_obs_tokens": 20510.5,
+          "mean_api_prompt_tokens": 20606.645833333332,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noState",
+          "encoding": "F0",
+          "success_pct": 56.666666666666664,
+          "mean_obs_tokens": 22240.833333333332,
+          "mean_api_prompt_tokens": 22336.229166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_full",
+          "encoding": "F0",
+          "success_pct": 56.666666666666664,
+          "mean_obs_tokens": 22267.875,
+          "mean_api_prompt_tokens": 22363.270833333332,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noVolatile",
+          "encoding": "F2",
+          "success_pct": 55.41666666666667,
+          "mean_obs_tokens": 25188.875,
+          "mean_api_prompt_tokens": 25285.104166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noVolatile",
+          "encoding": "F1",
+          "success_pct": 67.5,
+          "mean_obs_tokens": 25238.125,
+          "mean_api_prompt_tokens": 25334.354166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noState",
+          "encoding": "F2",
+          "success_pct": 47.5,
+          "mean_obs_tokens": 27016.916666666668,
+          "mean_api_prompt_tokens": 27112.354166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_full",
+          "encoding": "F2",
+          "success_pct": 47.083333333333336,
+          "mean_obs_tokens": 27047.333333333332,
+          "mean_api_prompt_tokens": 27142.770833333332,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_noState",
+          "encoding": "F1",
+          "success_pct": 58.333333333333336,
+          "mean_obs_tokens": 27066.291666666668,
+          "mean_api_prompt_tokens": 27161.729166666668,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        },
+        {
+          "bundle": "B_full",
+          "encoding": "F1",
+          "success_pct": 57.91666666666667,
+          "mean_obs_tokens": 27096.708333333332,
+          "mean_api_prompt_tokens": 27192.145833333332,
+          "status_o200k": "dominated",
+          "status_api": "dominated"
+        }
+      ]
+    }
+  },
+  "differences_vs_published": [
+    {
+      "item": "F2 abbreviations named in experiments/FINDINGS.md line 57 (prose)",
+      "published": "r/n for role/name",
+      "recomputed": "role→ro, name→nm",
+      "reason": "FINDINGS.md prose does not match ObservationEncoders.F2KeyMap"
+    }
+  ]
+}

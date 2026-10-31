@@ -1,0 +1,104 @@
+{
+  "rule_commit": {
+    "sha": "60e2aaf0cdaba0e3619ec2e4cbb224c66c8a4e4b",
+    "committed": "2026-10-13T09:26:38+03:00",
+    "clean": true
+  },
+  "plan_commit": {
+    "sha": "9ead395da9c2f0a7ad85a427a23a283932cfaf05",
+    "committed": "2026-10-12T18:20:42+03:00",
+    "clean": true
+  },
+  "threshold": 128000,
+  "protocol": "fresh load per cell (RealPilotOffline.ObserveCellAsync), all markers set, one dump",
+  "sites": [
+    {
+      "rank": 331,
+      "domain": "publicnode.com",
+      "dump_ok": true,
+      "error": null,
+      "loads": 6,
+      "fulfilled": 6,
+      "markers_set": 10,
+      "markers": 10,
+      "old_max_prompt_tokens": 187357,
+      "new_max_prompt_tokens": 187357,
+      "old_cell_tokens": {
+        "B_full|F1": 187251,
+        "B_noVolatileConsistent|F1": 124737,
+        "B_full_minus_volClass|F1": 124737,
+        "B_full|F3": 159994,
+        "B_noVolatileConsistent|F3": 88071,
+        "B_full_minus_volClass|F3": 88071
+      },
+      "new_cell_tokens": {
+        "B_full|F1": 187251,
+        "B_noVolatileConsistent|F1": 124737,
+        "B_full_minus_volClass|F1": 124737,
+        "B_full|F3": 159994,
+        "B_noVolatileConsistent|F3": 88071,
+        "B_full_minus_volClass|F3": 88071
+      },
+      "passes_d": false
+    },
+    {
+      "rank": 371,
+      "domain": "tradingview.com",
+      "dump_ok": true,
+      "error": null,
+      "loads": 6,
+      "fulfilled": 6,
+      "markers_set": 10,
+      "markers": 10,
+      "old_max_prompt_tokens": 192804,
+      "new_max_prompt_tokens": 192804,
+      "old_cell_tokens": {
+        "B_full|F1": 192712,
+        "B_noVolatileConsistent|F1": 101728,
+        "B_full_minus_volClass|F1": 101728,
+        "B_full|F3": 163835,
+        "B_noVolatileConsistent|F3": 79624,
+        "B_full_minus_volClass|F3": 79624
+      },
+      "new_cell_tokens": {
+        "B_full|F1": 192712,
+        "B_noVolatileConsistent|F1": 101728,
+        "B_full_minus_volClass|F1": 101728,
+        "B_full|F3": 163835,
+        "B_noVolatileConsistent|F3": 79624,
+        "B_full_minus_volClass|F3": 79624
+      },
+      "passes_d": false
+    },
+    {
+      "rank": 375,
+      "domain": "zendesk.com",
+      "dump_ok": true,
+      "error": null,
+      "loads": 6,
+      "fulfilled": 6,
+      "markers_set": 10,
+      "markers": 10,
+      "old_max_prompt_tokens": 128720,
+      "new_max_prompt_tokens": 128720,
+      "old_cell_tokens": {
+        "B_full|F1": 128638,
+        "B_noVolatileConsistent|F1": 95568,
+        "B_full_minus_volClass|F1": 95714,
+        "B_full|F3": 107472,
+        "B_noVolatileConsistent|F3": 73245,
+        "B_full_minus_volClass|F3": 73375
+      },
+      "new_cell_tokens": {
+        "B_full|F1": 128638,
+        "B_noVolatileConsistent|F1": 95568,
+        "B_full_minus_volClass|F1": 95714,
+        "B_full|F3": 107472,
+        "B_noVolatileConsistent|F3": 73245,
+        "B_full_minus_volClass|F3": 73375
+      },
+      "passes_d": false
+    }
+  ],
+  "passing": []
+}

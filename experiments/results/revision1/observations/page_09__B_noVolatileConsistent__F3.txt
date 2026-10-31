@@ -1,0 +1,2927 @@
+body {Nexus CRM Contacts Deals Tasks Reports Settings Alex Jordan All Contacts Recently Viewed My Contacts Import LISTS Prospects Customers Inactive Partners Contacts › Sarah Chen Sarah Chen Save Archive Delete CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Le…}
+nav class=app-nav {Nexus CRM Contacts Deals Tasks Reports Settings Alex Jordan}
+a href=/ class=nav-brand {Nexus CRM}
+a href=/contacts class=nav-link {Contacts}
+a href=/deals class=nav-link {Deals}
+a href=/tasks class=nav-link {Tasks}
+a href=/reports class=nav-link {Reports}
+a href=/settings class=nav-link {Settings}
+span {Alex Jordan}
+div class=app-body {All Contacts Recently Viewed My Contacts Import LISTS Prospects Customers Inactive Partners Contacts › Sarah Chen Sarah Chen Save Archive Delete CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Ev…}
+aside class=sidebar-nav {All Contacts Recently Viewed My Contacts Import LISTS Prospects Customers Inactive Partners}
+a href=/contacts class=active {All Contacts}
+a href=/contacts/recent {Recently Viewed}
+a href=/contacts/mine {My Contacts}
+a href=/contacts/import {Import}
+div {LISTS}
+a href=/contacts/lists/prospects {Prospects}
+a href=/contacts/lists/customers {Customers}
+a href=/contacts/lists/inactive {Inactive}
+a href=/contacts/lists/partners {Partners}
+main class=main-content {Contacts › Sarah Chen Sarah Chen Save Archive Delete CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Event Cold outreach Enterprise Active Follow up EMAIL THREADS Compose SC Re: Renewal proposal …}
+div class=page-header {Contacts › Sarah Chen Sarah Chen Save Archive Delete}
+div {Contacts › Sarah Chen Sarah Chen}
+div {Contacts › Sarah Chen}
+a href=/contacts {Contacts}
+h1 {Sarah Chen}
+div {Save Archive Delete}
+button data-testid=save-contact aria-label="Save contact record" class=btn-primary type=button {Save}
+button type=button class=btn-secondary {Archive}
+button type=button class=btn-secondary {Delete}
+div class=layout-2col {CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Event Cold outreach Enterprise Active Follow up EMAIL THREADS Compose SC Re: Renewal proposal — Q3 2026 Thanks for sending over the revised proposa…}
+div class=main {CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Event Cold outreach Enterprise Active Follow up EMAIL THREADS Compose SC Re: Renewal proposal — Q3 2026 Thanks for sending over the revised proposa…}
+div class=card {CONTACT INFORMATION FIRST NAME LAST NAME EMAIL PHONE JOB TITLE COMPANY LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Event Cold outreach Enterprise Active Follow up}
+div class=card-title {CONTACT INFORMATION}
+div class=field-row {FIRST NAME LAST NAME}
+div class=field-group {FIRST NAME}
+label class=field-label for=contact-first-name {FIRST NAME}
+input id=contact-first-name type=text value=Sarah aria-label="Contact first name" class=field-input
+div class=field-group {LAST NAME}
+label class=field-label {LAST NAME}
+input type=text value=Chen class=field-input
+div class=field-row {EMAIL PHONE}
+div class=field-group {EMAIL}
+label class=field-label {EMAIL}
+input type=email value=sarah.chen@luminartech.com class=field-input
+div class=field-group {PHONE}
+label class=field-label {PHONE}
+input type=tel value="+44 7700 900 123" class=field-input
+div class=field-row {JOB TITLE COMPANY}
+div class=field-group {JOB TITLE}
+label class=field-label {JOB TITLE}
+input type=text value="VP of Product" class=field-input
+div class=field-group {COMPANY}
+label class=field-label {COMPANY}
+input type=text value="Luminar Technologies" class=field-input
+div class=field-row {LEAD STATUS Qualified Lead Prospect Customer Churned Cold SOURCE Website Referral Event Cold outreach}
+div class=field-group {LEAD STATUS Qualified Lead Prospect Customer Churned Cold}
+label class=field-label for=lead-status {LEAD STATUS}
+select id=lead-status name=lead_status aria-label="Lead status" class=field-input {Qualified Lead Prospect Customer Churned Cold}
+option {Qualified Lead}
+option {Prospect}
+option {Customer}
+option {Churned}
+option {Cold}
+div class=field-group {SOURCE Website Referral Event Cold outreach}
+label class=field-label {SOURCE}
+select class=field-input {Website Referral Event Cold outreach}
+option {Website}
+option {Referral}
+option {Event}
+option {Cold outreach}
+div {Enterprise Active Follow up}
+span class="tag tag-blue" {Enterprise}
+span class="tag tag-green" {Active}
+span class="tag tag-orange" {Follow up}
+div class=card {EMAIL THREADS Compose SC Re: Renewal proposal — Q3 2026 Thanks for sending over the revised proposal. I've flagged it with our procurement team and... 2 hours ago AJ Intro call follow-up — action items Great speaking with you yesterday. As discussed, here are the three action items we agreed... Yest…}
+div {EMAIL THREADS Compose}
+div class=card-title {EMAIL THREADS}
+button type=button class="btn-primary btn-sm" {Compose}
+div {SC Re: Renewal proposal — Q3 2026 Thanks for sending over the revised proposal. I've flagged it with our procurement team and... 2 hours ago}
+div class=contact-avatar {SC}
+div {Re: Renewal proposal — Q3 2026 Thanks for sending over the revised proposal. I've flagged it with our procurement team and... 2 hours ago}
+a aria-label="Open primary email thread" href=/emails/thread-sc-001 class=email-subject {Re: Renewal proposal — Q3 2026}
+div class=email-preview {Thanks for sending over the revised proposal. I've flagged it with our procurement team and...}
+div {2 hours ago}
+div {AJ Intro call follow-up — action items Great speaking with you yesterday. As discussed, here are the three action items we agreed... Yesterday at 14:32}
+div class=contact-avatar {AJ}
+div {Intro call follow-up — action items Great speaking with you yesterday. As discussed, here are the three action items we agreed... Yesterday at 14:32}
+a href=/emails/thread-sc-002 class=email-subject {Intro call follow-up — action items}
+div class=email-preview {Great speaking with you yesterday. As discussed, here are the three action items we agreed...}
+div {Yesterday at 14:32}
+div {SC Security questionnaire — responses attached Please find our completed security questionnaire attached. Let me know if you need anything... 15 Jun 2026}
+div class=contact-avatar {SC}
+div {Security questionnaire — responses attached Please find our completed security questionnaire attached. Let me know if you need anything... 15 Jun 2026}
+a href=/emails/thread-sc-003 class=email-subject {Security questionnaire — responses attached}
+div class=email-preview {Please find our completed security questionnaire attached. Let me know if you need anything...}
+div {15 Jun 2026}
+div {AJ Proposal — Enterprise plan customisation Hi Sarah, as promised here is the tailored Enterprise proposal based on your team size and... 12 Jun 2026}
+div class=contact-avatar {AJ}
+div {Proposal — Enterprise plan customisation Hi Sarah, as promised here is the tailored Enterprise proposal based on your team size and... 12 Jun 2026}
+a href=/emails/thread-sc-004 class=email-subject {Proposal — Enterprise plan customisation}
+div class=email-preview {Hi Sarah, as promised here is the tailored Enterprise proposal based on your team size and...}
+div {12 Jun 2026}
+div {SC Inbound inquiry — pricing for 150 seats Hello, we're evaluating CRM platforms for a team of approximately 150 users and I came... 8 Jun 2026}
+div class=contact-avatar {SC}
+div {Inbound inquiry — pricing for 150 seats Hello, we're evaluating CRM platforms for a team of approximately 150 users and I came... 8 Jun 2026}
+a href=/emails/thread-sc-005 class=email-subject {Inbound inquiry — pricing for 150 seats}
+div class=email-preview {Hello, we're evaluating CRM platforms for a team of approximately 150 users and I came...}
+div {8 Jun 2026}
+div class=card {TASKS + Add task Send revised contract to legal team Due: 20 Jun High Schedule technical discovery call Due: 21 Jun Medium Follow up on security questionnaire responses Due: 22 Jun Medium Send initial proposal Completed Done Confirm data residency requirements Due: 25 Jun High Prepare demo environme…}
+div {TASKS + Add task}
+div class=card-title {TASKS}
+button data-testid=add-task type=button class="btn-primary btn-sm" {+ Add task}
+div {Send revised contract to legal team Due: 20 Jun High}
+input type=checkbox
+span class=task-text {Send revised contract to legal team}
+span class=task-due {Due: 20 Jun}
+span class="tag tag-orange btn-sm" {High}
+div {Schedule technical discovery call Due: 21 Jun Medium}
+input type=checkbox
+span class=task-text {Schedule technical discovery call}
+span class=task-due {Due: 21 Jun}
+span class="tag tag-blue btn-sm" {Medium}
+div {Follow up on security questionnaire responses Due: 22 Jun Medium}
+input type=checkbox
+span class=task-text {Follow up on security questionnaire responses}
+span class=task-due {Due: 22 Jun}
+span class="tag tag-blue btn-sm" {Medium}
+div {Send initial proposal Completed Done}
+input type=checkbox
+span class=task-text {Send initial proposal}
+span class=task-due {Completed}
+span class="tag tag-green btn-sm" {Done}
+div {Confirm data residency requirements Due: 25 Jun High}
+input type=checkbox
+span class=task-text {Confirm data residency requirements}
+span class=task-due {Due: 25 Jun}
+span class="tag tag-orange btn-sm" {High}
+div {Prepare demo environment with sample data Due: 24 Jun Medium}
+input type=checkbox
+span class=task-text {Prepare demo environment with sample data}
+span class=task-due {Due: 24 Jun}
+span class="tag tag-blue btn-sm" {Medium}
+div {Get procurement contact details from Sarah Due: 19 Jun High}
+input type=checkbox
+span class=task-text {Get procurement contact details from Sarah}
+span class=task-due {Due: 19 Jun}
+span class="tag tag-orange btn-sm" {High}
+div {Share SSO integration documentation Due: 23 Jun Medium}
+input type=checkbox
+span class=task-text {Share SSO integration documentation}
+span class=task-due {Due: 23 Jun}
+span class="tag tag-blue btn-sm" {Medium}
+div class=card {ACTIVITY TIMELINE All types Emails Calls Notes Meetings DATE	ACTIVITY	USER	TYPE	REFERENCE	STATUS	ACTIONS Jan 01 09:00	Sent follow-up email — activity ref 1	Alex Jordan	Email	ACT-00001	Completed	View Jan 02 10:00	Logged phone call — activity ref 2	Maria Kovacs	Call	ACT-00002	Logged	View Jan 03 11:00	…}
+div class=card-title {ACTIVITY TIMELINE}
+div class=activity-toolbar {All types Emails Calls Notes Meetings}
+input type=search placeholder="Search activity timeline" class=search-input
+select class=field-input {All types Emails Calls Notes Meetings}
+option {All types}
+option {Emails}
+option {Calls}
+option {Notes}
+option {Meetings}
+table class=activity-table {DATE	ACTIVITY	USER	TYPE	REFERENCE	STATUS	ACTIONS Jan 01 09:00	Sent follow-up email — activity ref 1	Alex Jordan	Email	ACT-00001	Completed	View Jan 02 10:00	Logged phone call — activity ref 2	Maria Kovacs	Call	ACT-00002	Logged	View Jan 03 11:00	Added note — activity ref 3	Sam Lee	Note	ACT-00003	Auto	…}
+thead {DATE	ACTIVITY	USER	TYPE	REFERENCE	STATUS	ACTIONS}
+tr {DATE	ACTIVITY	USER	TYPE	REFERENCE	STATUS	ACTIONS}
+th {DATE}
+th {ACTIVITY}
+th {USER}
+th {TYPE}
+th {REFERENCE}
+th {STATUS}
+th {ACTIONS}
+tbody id=activity-tbody {Jan 01 09:00	Sent follow-up email — activity ref 1	Alex Jordan	Email	ACT-00001	Completed	View Jan 02 10:00	Logged phone call — activity ref 2	Maria Kovacs	Call	ACT-00002	Logged	View Jan 03 11:00	Added note — activity ref 3	Sam Lee	Note	ACT-00003	Auto	View Jan 04 12:00	Updated lead status — activity …}
+tr {Jan 01 09:00	Sent follow-up email — activity ref 1	Alex Jordan	Email	ACT-00001	Completed	View}
+td {Jan 01 09:00}
+td {Sent follow-up email — activity ref 1}
+td {Alex Jordan}
+td {Email}
+td {ACT-00001}
+td {Completed}
+td {View}
+a href=/activity/1 {View}
+tr {Jan 02 10:00	Logged phone call — activity ref 2	Maria Kovacs	Call	ACT-00002	Logged	View}
+td {Jan 02 10:00}
+td {Logged phone call — activity ref 2}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00002}
+td {Logged}
+td {View}
+a href=/activity/2 {View}
+tr {Jan 03 11:00	Added note — activity ref 3	Sam Lee	Note	ACT-00003	Auto	View}
+td {Jan 03 11:00}
+td {Added note — activity ref 3}
+td {Sam Lee}
+td {Note}
+td {ACT-00003}
+td {Auto}
+td {View}
+a href=/activity/3 {View}
+tr {Jan 04 12:00	Updated lead status — activity ref 4	Chris Park	System	ACT-00004	Pending	View}
+td {Jan 04 12:00}
+td {Updated lead status — activity ref 4}
+td {Chris Park}
+td {System}
+td {ACT-00004}
+td {Pending}
+td {View}
+a href=/activity/4 {View}
+tr {Jan 05 13:00	Created task — activity ref 5	Priya Nair	Task	ACT-00005	Completed	View}
+td {Jan 05 13:00}
+td {Created task — activity ref 5}
+td {Priya Nair}
+td {Task}
+td {ACT-00005}
+td {Completed}
+td {View}
+a href=/activity/5 {View}
+tr {Jan 06 14:00	Sent proposal — activity ref 6	Alex Jordan	Meeting	ACT-00006	Completed	View}
+td {Jan 06 14:00}
+td {Sent proposal — activity ref 6}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00006}
+td {Completed}
+td {View}
+a href=/activity/6 {View}
+tr {Jan 07 15:00	Scheduled meeting — activity ref 7	Maria Kovacs	Email	ACT-00007	Completed	View}
+td {Jan 07 15:00}
+td {Scheduled meeting — activity ref 7}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00007}
+td {Completed}
+td {View}
+a href=/activity/7 {View}
+tr {Jan 08 16:00	Completed task — activity ref 8	Sam Lee	Call	ACT-00008	Logged	View}
+td {Jan 08 16:00}
+td {Completed task — activity ref 8}
+td {Sam Lee}
+td {Call}
+td {ACT-00008}
+td {Logged}
+td {View}
+a href=/activity/8 {View}
+tr {Jan 09 17:00	Changed owner — activity ref 9	Chris Park	Note	ACT-00009	Auto	View}
+td {Jan 09 17:00}
+td {Changed owner — activity ref 9}
+td {Chris Park}
+td {Note}
+td {ACT-00009}
+td {Auto}
+td {View}
+a href=/activity/9 {View}
+tr {Jan 10 08:00	Added tag — activity ref 10	Priya Nair	System	ACT-00010	Pending	View}
+td {Jan 10 08:00}
+td {Added tag — activity ref 10}
+td {Priya Nair}
+td {System}
+td {ACT-00010}
+td {Pending}
+td {View}
+a href=/activity/10 {View}
+tr {Jan 11 09:00	Viewed contact — activity ref 11	Alex Jordan	Task	ACT-00011	Completed	View}
+td {Jan 11 09:00}
+td {Viewed contact — activity ref 11}
+td {Alex Jordan}
+td {Task}
+td {ACT-00011}
+td {Completed}
+td {View}
+a href=/activity/11 {View}
+tr {Jan 12 10:00	Sent contract — activity ref 12	Maria Kovacs	Meeting	ACT-00012	Completed	View}
+td {Jan 12 10:00}
+td {Sent contract — activity ref 12}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00012}
+td {Completed}
+td {View}
+a href=/activity/12 {View}
+tr {Jan 13 11:00	Left voicemail — activity ref 13	Sam Lee	Email	ACT-00013	Completed	View}
+td {Jan 13 11:00}
+td {Left voicemail — activity ref 13}
+td {Sam Lee}
+td {Email}
+td {ACT-00013}
+td {Completed}
+td {View}
+a href=/activity/13 {View}
+tr {Jan 14 12:00	Opened email — activity ref 14	Chris Park	Call	ACT-00014	Logged	View}
+td {Jan 14 12:00}
+td {Opened email — activity ref 14}
+td {Chris Park}
+td {Call}
+td {ACT-00014}
+td {Logged}
+td {View}
+a href=/activity/14 {View}
+tr {Jan 15 13:00	Clicked link in email — activity ref 15	Priya Nair	Note	ACT-00015	Auto	View}
+td {Jan 15 13:00}
+td {Clicked link in email — activity ref 15}
+td {Priya Nair}
+td {Note}
+td {ACT-00015}
+td {Auto}
+td {View}
+a href=/activity/15 {View}
+tr {Jan 16 14:00	Replied to email — activity ref 16	Alex Jordan	System	ACT-00016	Pending	View}
+td {Jan 16 14:00}
+td {Replied to email — activity ref 16}
+td {Alex Jordan}
+td {System}
+td {ACT-00016}
+td {Pending}
+td {View}
+a href=/activity/16 {View}
+tr {Jan 17 15:00	Sent follow-up email — activity ref 17	Maria Kovacs	Task	ACT-00017	Completed	View}
+td {Jan 17 15:00}
+td {Sent follow-up email — activity ref 17}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00017}
+td {Completed}
+td {View}
+a href=/activity/17 {View}
+tr {Jan 18 16:00	Logged phone call — activity ref 18	Sam Lee	Meeting	ACT-00018	Completed	View}
+td {Jan 18 16:00}
+td {Logged phone call — activity ref 18}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00018}
+td {Completed}
+td {View}
+a href=/activity/18 {View}
+tr {Jan 19 17:00	Added note — activity ref 19	Chris Park	Email	ACT-00019	Completed	View}
+td {Jan 19 17:00}
+td {Added note — activity ref 19}
+td {Chris Park}
+td {Email}
+td {ACT-00019}
+td {Completed}
+td {View}
+a href=/activity/19 {View}
+tr {Jan 20 08:00	Updated lead status — activity ref 20	Priya Nair	Call	ACT-00020	Logged	View}
+td {Jan 20 08:00}
+td {Updated lead status — activity ref 20}
+td {Priya Nair}
+td {Call}
+td {ACT-00020}
+td {Logged}
+td {View}
+a href=/activity/20 {View}
+tr {Jan 21 09:00	Created task — activity ref 21	Alex Jordan	Note	ACT-00021	Auto	View}
+td {Jan 21 09:00}
+td {Created task — activity ref 21}
+td {Alex Jordan}
+td {Note}
+td {ACT-00021}
+td {Auto}
+td {View}
+a href=/activity/21 {View}
+tr {Jan 22 10:00	Sent proposal — activity ref 22	Maria Kovacs	System	ACT-00022	Pending	View}
+td {Jan 22 10:00}
+td {Sent proposal — activity ref 22}
+td {Maria Kovacs}
+td {System}
+td {ACT-00022}
+td {Pending}
+td {View}
+a href=/activity/22 {View}
+tr {Jan 23 11:00	Scheduled meeting — activity ref 23	Sam Lee	Task	ACT-00023	Completed	View}
+td {Jan 23 11:00}
+td {Scheduled meeting — activity ref 23}
+td {Sam Lee}
+td {Task}
+td {ACT-00023}
+td {Completed}
+td {View}
+a href=/activity/23 {View}
+tr {Jan 24 12:00	Completed task — activity ref 24	Chris Park	Meeting	ACT-00024	Completed	View}
+td {Jan 24 12:00}
+td {Completed task — activity ref 24}
+td {Chris Park}
+td {Meeting}
+td {ACT-00024}
+td {Completed}
+td {View}
+a href=/activity/24 {View}
+tr {Jan 25 13:00	Changed owner — activity ref 25	Priya Nair	Email	ACT-00025	Completed	View}
+td {Jan 25 13:00}
+td {Changed owner — activity ref 25}
+td {Priya Nair}
+td {Email}
+td {ACT-00025}
+td {Completed}
+td {View}
+a href=/activity/25 {View}
+tr {Jan 26 14:00	Added tag — activity ref 26	Alex Jordan	Call	ACT-00026	Logged	View}
+td {Jan 26 14:00}
+td {Added tag — activity ref 26}
+td {Alex Jordan}
+td {Call}
+td {ACT-00026}
+td {Logged}
+td {View}
+a href=/activity/26 {View}
+tr {Jan 27 15:00	Viewed contact — activity ref 27	Maria Kovacs	Note	ACT-00027	Auto	View}
+td {Jan 27 15:00}
+td {Viewed contact — activity ref 27}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00027}
+td {Auto}
+td {View}
+a href=/activity/27 {View}
+tr {Jan 28 16:00	Sent contract — activity ref 28	Sam Lee	System	ACT-00028	Pending	View}
+td {Jan 28 16:00}
+td {Sent contract — activity ref 28}
+td {Sam Lee}
+td {System}
+td {ACT-00028}
+td {Pending}
+td {View}
+a href=/activity/28 {View}
+tr {Jan 01 17:00	Left voicemail — activity ref 29	Chris Park	Task	ACT-00029	Completed	View}
+td {Jan 01 17:00}
+td {Left voicemail — activity ref 29}
+td {Chris Park}
+td {Task}
+td {ACT-00029}
+td {Completed}
+td {View}
+a href=/activity/29 {View}
+tr {Jan 02 08:00	Opened email — activity ref 30	Priya Nair	Meeting	ACT-00030	Completed	View}
+td {Jan 02 08:00}
+td {Opened email — activity ref 30}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00030}
+td {Completed}
+td {View}
+a href=/activity/30 {View}
+tr {Jan 03 09:00	Clicked link in email — activity ref 31	Alex Jordan	Email	ACT-00031	Completed	View}
+td {Jan 03 09:00}
+td {Clicked link in email — activity ref 31}
+td {Alex Jordan}
+td {Email}
+td {ACT-00031}
+td {Completed}
+td {View}
+a href=/activity/31 {View}
+tr {Jan 04 10:00	Replied to email — activity ref 32	Maria Kovacs	Call	ACT-00032	Logged	View}
+td {Jan 04 10:00}
+td {Replied to email — activity ref 32}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00032}
+td {Logged}
+td {View}
+a href=/activity/32 {View}
+tr {Jan 05 11:00	Sent follow-up email — activity ref 33	Sam Lee	Note	ACT-00033	Auto	View}
+td {Jan 05 11:00}
+td {Sent follow-up email — activity ref 33}
+td {Sam Lee}
+td {Note}
+td {ACT-00033}
+td {Auto}
+td {View}
+a href=/activity/33 {View}
+tr {Jan 06 12:00	Logged phone call — activity ref 34	Chris Park	System	ACT-00034	Pending	View}
+td {Jan 06 12:00}
+td {Logged phone call — activity ref 34}
+td {Chris Park}
+td {System}
+td {ACT-00034}
+td {Pending}
+td {View}
+a href=/activity/34 {View}
+tr {Jan 07 13:00	Added note — activity ref 35	Priya Nair	Task	ACT-00035	Completed	View}
+td {Jan 07 13:00}
+td {Added note — activity ref 35}
+td {Priya Nair}
+td {Task}
+td {ACT-00035}
+td {Completed}
+td {View}
+a href=/activity/35 {View}
+tr {Jan 08 14:00	Updated lead status — activity ref 36	Alex Jordan	Meeting	ACT-00036	Completed	View}
+td {Jan 08 14:00}
+td {Updated lead status — activity ref 36}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00036}
+td {Completed}
+td {View}
+a href=/activity/36 {View}
+tr {Jan 09 15:00	Created task — activity ref 37	Maria Kovacs	Email	ACT-00037	Completed	View}
+td {Jan 09 15:00}
+td {Created task — activity ref 37}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00037}
+td {Completed}
+td {View}
+a href=/activity/37 {View}
+tr {Jan 10 16:00	Sent proposal — activity ref 38	Sam Lee	Call	ACT-00038	Logged	View}
+td {Jan 10 16:00}
+td {Sent proposal — activity ref 38}
+td {Sam Lee}
+td {Call}
+td {ACT-00038}
+td {Logged}
+td {View}
+a href=/activity/38 {View}
+tr {Jan 11 17:00	Scheduled meeting — activity ref 39	Chris Park	Note	ACT-00039	Auto	View}
+td {Jan 11 17:00}
+td {Scheduled meeting — activity ref 39}
+td {Chris Park}
+td {Note}
+td {ACT-00039}
+td {Auto}
+td {View}
+a href=/activity/39 {View}
+tr {Jan 12 08:00	Completed task — activity ref 40	Priya Nair	System	ACT-00040	Pending	View}
+td {Jan 12 08:00}
+td {Completed task — activity ref 40}
+td {Priya Nair}
+td {System}
+td {ACT-00040}
+td {Pending}
+td {View}
+a href=/activity/40 {View}
+tr {Jan 13 09:00	Changed owner — activity ref 41	Alex Jordan	Task	ACT-00041	Completed	View}
+td {Jan 13 09:00}
+td {Changed owner — activity ref 41}
+td {Alex Jordan}
+td {Task}
+td {ACT-00041}
+td {Completed}
+td {View}
+a href=/activity/41 {View}
+tr {Jan 14 10:00	Added tag — activity ref 42	Maria Kovacs	Meeting	ACT-00042	Completed	View}
+td {Jan 14 10:00}
+td {Added tag — activity ref 42}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00042}
+td {Completed}
+td {View}
+a href=/activity/42 {View}
+tr {Jan 15 11:00	Viewed contact — activity ref 43	Sam Lee	Email	ACT-00043	Completed	View}
+td {Jan 15 11:00}
+td {Viewed contact — activity ref 43}
+td {Sam Lee}
+td {Email}
+td {ACT-00043}
+td {Completed}
+td {View}
+a href=/activity/43 {View}
+tr {Jan 16 12:00	Sent contract — activity ref 44	Chris Park	Call	ACT-00044	Logged	View}
+td {Jan 16 12:00}
+td {Sent contract — activity ref 44}
+td {Chris Park}
+td {Call}
+td {ACT-00044}
+td {Logged}
+td {View}
+a href=/activity/44 {View}
+tr {Jan 17 13:00	Left voicemail — activity ref 45	Priya Nair	Note	ACT-00045	Auto	View}
+td {Jan 17 13:00}
+td {Left voicemail — activity ref 45}
+td {Priya Nair}
+td {Note}
+td {ACT-00045}
+td {Auto}
+td {View}
+a href=/activity/45 {View}
+tr {Jan 18 14:00	Opened email — activity ref 46	Alex Jordan	System	ACT-00046	Pending	View}
+td {Jan 18 14:00}
+td {Opened email — activity ref 46}
+td {Alex Jordan}
+td {System}
+td {ACT-00046}
+td {Pending}
+td {View}
+a href=/activity/46 {View}
+tr {Jan 19 15:00	Clicked link in email — activity ref 47	Maria Kovacs	Task	ACT-00047	Completed	View}
+td {Jan 19 15:00}
+td {Clicked link in email — activity ref 47}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00047}
+td {Completed}
+td {View}
+a href=/activity/47 {View}
+tr {Jan 20 16:00	Replied to email — activity ref 48	Sam Lee	Meeting	ACT-00048	Completed	View}
+td {Jan 20 16:00}
+td {Replied to email — activity ref 48}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00048}
+td {Completed}
+td {View}
+a href=/activity/48 {View}
+tr {Jan 21 17:00	Sent follow-up email — activity ref 49	Chris Park	Email	ACT-00049	Completed	View}
+td {Jan 21 17:00}
+td {Sent follow-up email — activity ref 49}
+td {Chris Park}
+td {Email}
+td {ACT-00049}
+td {Completed}
+td {View}
+a href=/activity/49 {View}
+tr {Jan 22 08:00	Logged phone call — activity ref 50	Priya Nair	Call	ACT-00050	Logged	View}
+td {Jan 22 08:00}
+td {Logged phone call — activity ref 50}
+td {Priya Nair}
+td {Call}
+td {ACT-00050}
+td {Logged}
+td {View}
+a href=/activity/50 {View}
+tr {Feb 23 09:00	Added note — activity ref 51	Alex Jordan	Note	ACT-00051	Auto	View}
+td {Feb 23 09:00}
+td {Added note — activity ref 51}
+td {Alex Jordan}
+td {Note}
+td {ACT-00051}
+td {Auto}
+td {View}
+a href=/activity/51 {View}
+tr {Feb 24 10:00	Updated lead status — activity ref 52	Maria Kovacs	System	ACT-00052	Pending	View}
+td {Feb 24 10:00}
+td {Updated lead status — activity ref 52}
+td {Maria Kovacs}
+td {System}
+td {ACT-00052}
+td {Pending}
+td {View}
+a href=/activity/52 {View}
+tr {Feb 25 11:00	Created task — activity ref 53	Sam Lee	Task	ACT-00053	Completed	View}
+td {Feb 25 11:00}
+td {Created task — activity ref 53}
+td {Sam Lee}
+td {Task}
+td {ACT-00053}
+td {Completed}
+td {View}
+a href=/activity/53 {View}
+tr {Feb 26 12:00	Sent proposal — activity ref 54	Chris Park	Meeting	ACT-00054	Completed	View}
+td {Feb 26 12:00}
+td {Sent proposal — activity ref 54}
+td {Chris Park}
+td {Meeting}
+td {ACT-00054}
+td {Completed}
+td {View}
+a href=/activity/54 {View}
+tr {Feb 27 13:00	Scheduled meeting — activity ref 55	Priya Nair	Email	ACT-00055	Completed	View}
+td {Feb 27 13:00}
+td {Scheduled meeting — activity ref 55}
+td {Priya Nair}
+td {Email}
+td {ACT-00055}
+td {Completed}
+td {View}
+a href=/activity/55 {View}
+tr {Feb 28 14:00	Completed task — activity ref 56	Alex Jordan	Call	ACT-00056	Logged	View}
+td {Feb 28 14:00}
+td {Completed task — activity ref 56}
+td {Alex Jordan}
+td {Call}
+td {ACT-00056}
+td {Logged}
+td {View}
+a href=/activity/56 {View}
+tr {Feb 01 15:00	Changed owner — activity ref 57	Maria Kovacs	Note	ACT-00057	Auto	View}
+td {Feb 01 15:00}
+td {Changed owner — activity ref 57}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00057}
+td {Auto}
+td {View}
+a href=/activity/57 {View}
+tr {Feb 02 16:00	Added tag — activity ref 58	Sam Lee	System	ACT-00058	Pending	View}
+td {Feb 02 16:00}
+td {Added tag — activity ref 58}
+td {Sam Lee}
+td {System}
+td {ACT-00058}
+td {Pending}
+td {View}
+a href=/activity/58 {View}
+tr {Feb 03 17:00	Viewed contact — activity ref 59	Chris Park	Task	ACT-00059	Completed	View}
+td {Feb 03 17:00}
+td {Viewed contact — activity ref 59}
+td {Chris Park}
+td {Task}
+td {ACT-00059}
+td {Completed}
+td {View}
+a href=/activity/59 {View}
+tr {Feb 04 08:00	Sent contract — activity ref 60	Priya Nair	Meeting	ACT-00060	Completed	View}
+td {Feb 04 08:00}
+td {Sent contract — activity ref 60}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00060}
+td {Completed}
+td {View}
+a href=/activity/60 {View}
+tr {Feb 05 09:00	Left voicemail — activity ref 61	Alex Jordan	Email	ACT-00061	Completed	View}
+td {Feb 05 09:00}
+td {Left voicemail — activity ref 61}
+td {Alex Jordan}
+td {Email}
+td {ACT-00061}
+td {Completed}
+td {View}
+a href=/activity/61 {View}
+tr {Feb 06 10:00	Opened email — activity ref 62	Maria Kovacs	Call	ACT-00062	Logged	View}
+td {Feb 06 10:00}
+td {Opened email — activity ref 62}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00062}
+td {Logged}
+td {View}
+a href=/activity/62 {View}
+tr {Feb 07 11:00	Clicked link in email — activity ref 63	Sam Lee	Note	ACT-00063	Auto	View}
+td {Feb 07 11:00}
+td {Clicked link in email — activity ref 63}
+td {Sam Lee}
+td {Note}
+td {ACT-00063}
+td {Auto}
+td {View}
+a href=/activity/63 {View}
+tr {Feb 08 12:00	Replied to email — activity ref 64	Chris Park	System	ACT-00064	Pending	View}
+td {Feb 08 12:00}
+td {Replied to email — activity ref 64}
+td {Chris Park}
+td {System}
+td {ACT-00064}
+td {Pending}
+td {View}
+a href=/activity/64 {View}
+tr {Feb 09 13:00	Sent follow-up email — activity ref 65	Priya Nair	Task	ACT-00065	Completed	View}
+td {Feb 09 13:00}
+td {Sent follow-up email — activity ref 65}
+td {Priya Nair}
+td {Task}
+td {ACT-00065}
+td {Completed}
+td {View}
+a href=/activity/65 {View}
+tr {Feb 10 14:00	Logged phone call — activity ref 66	Alex Jordan	Meeting	ACT-00066	Completed	View}
+td {Feb 10 14:00}
+td {Logged phone call — activity ref 66}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00066}
+td {Completed}
+td {View}
+a href=/activity/66 {View}
+tr {Feb 11 15:00	Added note — activity ref 67	Maria Kovacs	Email	ACT-00067	Completed	View}
+td {Feb 11 15:00}
+td {Added note — activity ref 67}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00067}
+td {Completed}
+td {View}
+a href=/activity/67 {View}
+tr {Feb 12 16:00	Updated lead status — activity ref 68	Sam Lee	Call	ACT-00068	Logged	View}
+td {Feb 12 16:00}
+td {Updated lead status — activity ref 68}
+td {Sam Lee}
+td {Call}
+td {ACT-00068}
+td {Logged}
+td {View}
+a href=/activity/68 {View}
+tr {Feb 13 17:00	Created task — activity ref 69	Chris Park	Note	ACT-00069	Auto	View}
+td {Feb 13 17:00}
+td {Created task — activity ref 69}
+td {Chris Park}
+td {Note}
+td {ACT-00069}
+td {Auto}
+td {View}
+a href=/activity/69 {View}
+tr {Feb 14 08:00	Sent proposal — activity ref 70	Priya Nair	System	ACT-00070	Pending	View}
+td {Feb 14 08:00}
+td {Sent proposal — activity ref 70}
+td {Priya Nair}
+td {System}
+td {ACT-00070}
+td {Pending}
+td {View}
+a href=/activity/70 {View}
+tr {Feb 15 09:00	Scheduled meeting — activity ref 71	Alex Jordan	Task	ACT-00071	Completed	View}
+td {Feb 15 09:00}
+td {Scheduled meeting — activity ref 71}
+td {Alex Jordan}
+td {Task}
+td {ACT-00071}
+td {Completed}
+td {View}
+a href=/activity/71 {View}
+tr {Feb 16 10:00	Completed task — activity ref 72	Maria Kovacs	Meeting	ACT-00072	Completed	View}
+td {Feb 16 10:00}
+td {Completed task — activity ref 72}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00072}
+td {Completed}
+td {View}
+a href=/activity/72 {View}
+tr {Feb 17 11:00	Changed owner — activity ref 73	Sam Lee	Email	ACT-00073	Completed	View}
+td {Feb 17 11:00}
+td {Changed owner — activity ref 73}
+td {Sam Lee}
+td {Email}
+td {ACT-00073}
+td {Completed}
+td {View}
+a href=/activity/73 {View}
+tr {Feb 18 12:00	Added tag — activity ref 74	Chris Park	Call	ACT-00074	Logged	View}
+td {Feb 18 12:00}
+td {Added tag — activity ref 74}
+td {Chris Park}
+td {Call}
+td {ACT-00074}
+td {Logged}
+td {View}
+a href=/activity/74 {View}
+tr {Feb 19 13:00	Viewed contact — activity ref 75	Priya Nair	Note	ACT-00075	Auto	View}
+td {Feb 19 13:00}
+td {Viewed contact — activity ref 75}
+td {Priya Nair}
+td {Note}
+td {ACT-00075}
+td {Auto}
+td {View}
+a href=/activity/75 {View}
+tr {Feb 20 14:00	Sent contract — activity ref 76	Alex Jordan	System	ACT-00076	Pending	View}
+td {Feb 20 14:00}
+td {Sent contract — activity ref 76}
+td {Alex Jordan}
+td {System}
+td {ACT-00076}
+td {Pending}
+td {View}
+a href=/activity/76 {View}
+tr {Feb 21 15:00	Left voicemail — activity ref 77	Maria Kovacs	Task	ACT-00077	Completed	View}
+td {Feb 21 15:00}
+td {Left voicemail — activity ref 77}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00077}
+td {Completed}
+td {View}
+a href=/activity/77 {View}
+tr {Feb 22 16:00	Opened email — activity ref 78	Sam Lee	Meeting	ACT-00078	Completed	View}
+td {Feb 22 16:00}
+td {Opened email — activity ref 78}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00078}
+td {Completed}
+td {View}
+a href=/activity/78 {View}
+tr {Feb 23 17:00	Clicked link in email — activity ref 79	Chris Park	Email	ACT-00079	Completed	View}
+td {Feb 23 17:00}
+td {Clicked link in email — activity ref 79}
+td {Chris Park}
+td {Email}
+td {ACT-00079}
+td {Completed}
+td {View}
+a href=/activity/79 {View}
+tr {Feb 24 08:00	Replied to email — activity ref 80	Priya Nair	Call	ACT-00080	Logged	View}
+td {Feb 24 08:00}
+td {Replied to email — activity ref 80}
+td {Priya Nair}
+td {Call}
+td {ACT-00080}
+td {Logged}
+td {View}
+a href=/activity/80 {View}
+tr {Feb 25 09:00	Sent follow-up email — activity ref 81	Alex Jordan	Note	ACT-00081	Auto	View}
+td {Feb 25 09:00}
+td {Sent follow-up email — activity ref 81}
+td {Alex Jordan}
+td {Note}
+td {ACT-00081}
+td {Auto}
+td {View}
+a href=/activity/81 {View}
+tr {Feb 26 10:00	Logged phone call — activity ref 82	Maria Kovacs	System	ACT-00082	Pending	View}
+td {Feb 26 10:00}
+td {Logged phone call — activity ref 82}
+td {Maria Kovacs}
+td {System}
+td {ACT-00082}
+td {Pending}
+td {View}
+a href=/activity/82 {View}
+tr {Feb 27 11:00	Added note — activity ref 83	Sam Lee	Task	ACT-00083	Completed	View}
+td {Feb 27 11:00}
+td {Added note — activity ref 83}
+td {Sam Lee}
+td {Task}
+td {ACT-00083}
+td {Completed}
+td {View}
+a href=/activity/83 {View}
+tr {Feb 28 12:00	Updated lead status — activity ref 84	Chris Park	Meeting	ACT-00084	Completed	View}
+td {Feb 28 12:00}
+td {Updated lead status — activity ref 84}
+td {Chris Park}
+td {Meeting}
+td {ACT-00084}
+td {Completed}
+td {View}
+a href=/activity/84 {View}
+tr {Feb 01 13:00	Created task — activity ref 85	Priya Nair	Email	ACT-00085	Completed	View}
+td {Feb 01 13:00}
+td {Created task — activity ref 85}
+td {Priya Nair}
+td {Email}
+td {ACT-00085}
+td {Completed}
+td {View}
+a href=/activity/85 {View}
+tr {Feb 02 14:00	Sent proposal — activity ref 86	Alex Jordan	Call	ACT-00086	Logged	View}
+td {Feb 02 14:00}
+td {Sent proposal — activity ref 86}
+td {Alex Jordan}
+td {Call}
+td {ACT-00086}
+td {Logged}
+td {View}
+a href=/activity/86 {View}
+tr {Feb 03 15:00	Scheduled meeting — activity ref 87	Maria Kovacs	Note	ACT-00087	Auto	View}
+td {Feb 03 15:00}
+td {Scheduled meeting — activity ref 87}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00087}
+td {Auto}
+td {View}
+a href=/activity/87 {View}
+tr {Feb 04 16:00	Completed task — activity ref 88	Sam Lee	System	ACT-00088	Pending	View}
+td {Feb 04 16:00}
+td {Completed task — activity ref 88}
+td {Sam Lee}
+td {System}
+td {ACT-00088}
+td {Pending}
+td {View}
+a href=/activity/88 {View}
+tr {Feb 05 17:00	Changed owner — activity ref 89	Chris Park	Task	ACT-00089	Completed	View}
+td {Feb 05 17:00}
+td {Changed owner — activity ref 89}
+td {Chris Park}
+td {Task}
+td {ACT-00089}
+td {Completed}
+td {View}
+a href=/activity/89 {View}
+tr {Feb 06 08:00	Added tag — activity ref 90	Priya Nair	Meeting	ACT-00090	Completed	View}
+td {Feb 06 08:00}
+td {Added tag — activity ref 90}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00090}
+td {Completed}
+td {View}
+a href=/activity/90 {View}
+tr {Feb 07 09:00	Viewed contact — activity ref 91	Alex Jordan	Email	ACT-00091	Completed	View}
+td {Feb 07 09:00}
+td {Viewed contact — activity ref 91}
+td {Alex Jordan}
+td {Email}
+td {ACT-00091}
+td {Completed}
+td {View}
+a href=/activity/91 {View}
+tr {Feb 08 10:00	Sent contract — activity ref 92	Maria Kovacs	Call	ACT-00092	Logged	View}
+td {Feb 08 10:00}
+td {Sent contract — activity ref 92}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00092}
+td {Logged}
+td {View}
+a href=/activity/92 {View}
+tr {Feb 09 11:00	Left voicemail — activity ref 93	Sam Lee	Note	ACT-00093	Auto	View}
+td {Feb 09 11:00}
+td {Left voicemail — activity ref 93}
+td {Sam Lee}
+td {Note}
+td {ACT-00093}
+td {Auto}
+td {View}
+a href=/activity/93 {View}
+tr {Feb 10 12:00	Opened email — activity ref 94	Chris Park	System	ACT-00094	Pending	View}
+td {Feb 10 12:00}
+td {Opened email — activity ref 94}
+td {Chris Park}
+td {System}
+td {ACT-00094}
+td {Pending}
+td {View}
+a href=/activity/94 {View}
+tr {Feb 11 13:00	Clicked link in email — activity ref 95	Priya Nair	Task	ACT-00095	Completed	View}
+td {Feb 11 13:00}
+td {Clicked link in email — activity ref 95}
+td {Priya Nair}
+td {Task}
+td {ACT-00095}
+td {Completed}
+td {View}
+a href=/activity/95 {View}
+tr {Feb 12 14:00	Replied to email — activity ref 96	Alex Jordan	Meeting	ACT-00096	Completed	View}
+td {Feb 12 14:00}
+td {Replied to email — activity ref 96}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00096}
+td {Completed}
+td {View}
+a href=/activity/96 {View}
+tr {Feb 13 15:00	Sent follow-up email — activity ref 97	Maria Kovacs	Email	ACT-00097	Completed	View}
+td {Feb 13 15:00}
+td {Sent follow-up email — activity ref 97}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00097}
+td {Completed}
+td {View}
+a href=/activity/97 {View}
+tr {Feb 14 16:00	Logged phone call — activity ref 98	Sam Lee	Call	ACT-00098	Logged	View}
+td {Feb 14 16:00}
+td {Logged phone call — activity ref 98}
+td {Sam Lee}
+td {Call}
+td {ACT-00098}
+td {Logged}
+td {View}
+a href=/activity/98 {View}
+tr {Feb 15 17:00	Added note — activity ref 99	Chris Park	Note	ACT-00099	Auto	View}
+td {Feb 15 17:00}
+td {Added note — activity ref 99}
+td {Chris Park}
+td {Note}
+td {ACT-00099}
+td {Auto}
+td {View}
+a href=/activity/99 {View}
+tr {Feb 16 08:00	Updated lead status — activity ref 100	Priya Nair	System	ACT-00100	Pending	View}
+td {Feb 16 08:00}
+td {Updated lead status — activity ref 100}
+td {Priya Nair}
+td {System}
+td {ACT-00100}
+td {Pending}
+td {View}
+a href=/activity/100 {View}
+tr {Mar 17 09:00	Created task — activity ref 101	Alex Jordan	Task	ACT-00101	Completed	View}
+td {Mar 17 09:00}
+td {Created task — activity ref 101}
+td {Alex Jordan}
+td {Task}
+td {ACT-00101}
+td {Completed}
+td {View}
+a href=/activity/101 {View}
+tr {Mar 18 10:00	Sent proposal — activity ref 102	Maria Kovacs	Meeting	ACT-00102	Completed	View}
+td {Mar 18 10:00}
+td {Sent proposal — activity ref 102}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00102}
+td {Completed}
+td {View}
+a href=/activity/102 {View}
+tr {Mar 19 11:00	Scheduled meeting — activity ref 103	Sam Lee	Email	ACT-00103	Completed	View}
+td {Mar 19 11:00}
+td {Scheduled meeting — activity ref 103}
+td {Sam Lee}
+td {Email}
+td {ACT-00103}
+td {Completed}
+td {View}
+a href=/activity/103 {View}
+tr {Mar 20 12:00	Completed task — activity ref 104	Chris Park	Call	ACT-00104	Logged	View}
+td {Mar 20 12:00}
+td {Completed task — activity ref 104}
+td {Chris Park}
+td {Call}
+td {ACT-00104}
+td {Logged}
+td {View}
+a href=/activity/104 {View}
+tr {Mar 21 13:00	Changed owner — activity ref 105	Priya Nair	Note	ACT-00105	Auto	View}
+td {Mar 21 13:00}
+td {Changed owner — activity ref 105}
+td {Priya Nair}
+td {Note}
+td {ACT-00105}
+td {Auto}
+td {View}
+a href=/activity/105 {View}
+tr {Mar 22 14:00	Added tag — activity ref 106	Alex Jordan	System	ACT-00106	Pending	View}
+td {Mar 22 14:00}
+td {Added tag — activity ref 106}
+td {Alex Jordan}
+td {System}
+td {ACT-00106}
+td {Pending}
+td {View}
+a href=/activity/106 {View}
+tr {Mar 23 15:00	Viewed contact — activity ref 107	Maria Kovacs	Task	ACT-00107	Completed	View}
+td {Mar 23 15:00}
+td {Viewed contact — activity ref 107}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00107}
+td {Completed}
+td {View}
+a href=/activity/107 {View}
+tr {Mar 24 16:00	Sent contract — activity ref 108	Sam Lee	Meeting	ACT-00108	Completed	View}
+td {Mar 24 16:00}
+td {Sent contract — activity ref 108}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00108}
+td {Completed}
+td {View}
+a href=/activity/108 {View}
+tr {Mar 25 17:00	Left voicemail — activity ref 109	Chris Park	Email	ACT-00109	Completed	View}
+td {Mar 25 17:00}
+td {Left voicemail — activity ref 109}
+td {Chris Park}
+td {Email}
+td {ACT-00109}
+td {Completed}
+td {View}
+a href=/activity/109 {View}
+tr {Mar 26 08:00	Opened email — activity ref 110	Priya Nair	Call	ACT-00110	Logged	View}
+td {Mar 26 08:00}
+td {Opened email — activity ref 110}
+td {Priya Nair}
+td {Call}
+td {ACT-00110}
+td {Logged}
+td {View}
+a href=/activity/110 {View}
+tr {Mar 27 09:00	Clicked link in email — activity ref 111	Alex Jordan	Note	ACT-00111	Auto	View}
+td {Mar 27 09:00}
+td {Clicked link in email — activity ref 111}
+td {Alex Jordan}
+td {Note}
+td {ACT-00111}
+td {Auto}
+td {View}
+a href=/activity/111 {View}
+tr {Mar 28 10:00	Replied to email — activity ref 112	Maria Kovacs	System	ACT-00112	Pending	View}
+td {Mar 28 10:00}
+td {Replied to email — activity ref 112}
+td {Maria Kovacs}
+td {System}
+td {ACT-00112}
+td {Pending}
+td {View}
+a href=/activity/112 {View}
+tr {Mar 01 11:00	Sent follow-up email — activity ref 113	Sam Lee	Task	ACT-00113	Completed	View}
+td {Mar 01 11:00}
+td {Sent follow-up email — activity ref 113}
+td {Sam Lee}
+td {Task}
+td {ACT-00113}
+td {Completed}
+td {View}
+a href=/activity/113 {View}
+tr {Mar 02 12:00	Logged phone call — activity ref 114	Chris Park	Meeting	ACT-00114	Completed	View}
+td {Mar 02 12:00}
+td {Logged phone call — activity ref 114}
+td {Chris Park}
+td {Meeting}
+td {ACT-00114}
+td {Completed}
+td {View}
+a href=/activity/114 {View}
+tr {Mar 03 13:00	Added note — activity ref 115	Priya Nair	Email	ACT-00115	Completed	View}
+td {Mar 03 13:00}
+td {Added note — activity ref 115}
+td {Priya Nair}
+td {Email}
+td {ACT-00115}
+td {Completed}
+td {View}
+a href=/activity/115 {View}
+tr {Mar 04 14:00	Updated lead status — activity ref 116	Alex Jordan	Call	ACT-00116	Logged	View}
+td {Mar 04 14:00}
+td {Updated lead status — activity ref 116}
+td {Alex Jordan}
+td {Call}
+td {ACT-00116}
+td {Logged}
+td {View}
+a href=/activity/116 {View}
+tr {Mar 05 15:00	Created task — activity ref 117	Maria Kovacs	Note	ACT-00117	Auto	View}
+td {Mar 05 15:00}
+td {Created task — activity ref 117}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00117}
+td {Auto}
+td {View}
+a href=/activity/117 {View}
+tr {Mar 06 16:00	Sent proposal — activity ref 118	Sam Lee	System	ACT-00118	Pending	View}
+td {Mar 06 16:00}
+td {Sent proposal — activity ref 118}
+td {Sam Lee}
+td {System}
+td {ACT-00118}
+td {Pending}
+td {View}
+a href=/activity/118 {View}
+tr {Mar 07 17:00	Scheduled meeting — activity ref 119	Chris Park	Task	ACT-00119	Completed	View}
+td {Mar 07 17:00}
+td {Scheduled meeting — activity ref 119}
+td {Chris Park}
+td {Task}
+td {ACT-00119}
+td {Completed}
+td {View}
+a href=/activity/119 {View}
+tr {Mar 08 08:00	Completed task — activity ref 120	Priya Nair	Meeting	ACT-00120	Completed	View}
+td {Mar 08 08:00}
+td {Completed task — activity ref 120}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00120}
+td {Completed}
+td {View}
+a href=/activity/120 {View}
+tr {Mar 09 09:00	Changed owner — activity ref 121	Alex Jordan	Email	ACT-00121	Completed	View}
+td {Mar 09 09:00}
+td {Changed owner — activity ref 121}
+td {Alex Jordan}
+td {Email}
+td {ACT-00121}
+td {Completed}
+td {View}
+a href=/activity/121 {View}
+tr {Mar 10 10:00	Added tag — activity ref 122	Maria Kovacs	Call	ACT-00122	Logged	View}
+td {Mar 10 10:00}
+td {Added tag — activity ref 122}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00122}
+td {Logged}
+td {View}
+a href=/activity/122 {View}
+tr {Mar 11 11:00	Viewed contact — activity ref 123	Sam Lee	Note	ACT-00123	Auto	View}
+td {Mar 11 11:00}
+td {Viewed contact — activity ref 123}
+td {Sam Lee}
+td {Note}
+td {ACT-00123}
+td {Auto}
+td {View}
+a href=/activity/123 {View}
+tr {Mar 12 12:00	Sent contract — activity ref 124	Chris Park	System	ACT-00124	Pending	View}
+td {Mar 12 12:00}
+td {Sent contract — activity ref 124}
+td {Chris Park}
+td {System}
+td {ACT-00124}
+td {Pending}
+td {View}
+a href=/activity/124 {View}
+tr {Mar 13 13:00	Left voicemail — activity ref 125	Priya Nair	Task	ACT-00125	Completed	View}
+td {Mar 13 13:00}
+td {Left voicemail — activity ref 125}
+td {Priya Nair}
+td {Task}
+td {ACT-00125}
+td {Completed}
+td {View}
+a href=/activity/125 {View}
+tr {Mar 14 14:00	Opened email — activity ref 126	Alex Jordan	Meeting	ACT-00126	Completed	View}
+td {Mar 14 14:00}
+td {Opened email — activity ref 126}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00126}
+td {Completed}
+td {View}
+a href=/activity/126 {View}
+tr {Mar 15 15:00	Clicked link in email — activity ref 127	Maria Kovacs	Email	ACT-00127	Completed	View}
+td {Mar 15 15:00}
+td {Clicked link in email — activity ref 127}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00127}
+td {Completed}
+td {View}
+a href=/activity/127 {View}
+tr {Mar 16 16:00	Replied to email — activity ref 128	Sam Lee	Call	ACT-00128	Logged	View}
+td {Mar 16 16:00}
+td {Replied to email — activity ref 128}
+td {Sam Lee}
+td {Call}
+td {ACT-00128}
+td {Logged}
+td {View}
+a href=/activity/128 {View}
+tr {Mar 17 17:00	Sent follow-up email — activity ref 129	Chris Park	Note	ACT-00129	Auto	View}
+td {Mar 17 17:00}
+td {Sent follow-up email — activity ref 129}
+td {Chris Park}
+td {Note}
+td {ACT-00129}
+td {Auto}
+td {View}
+a href=/activity/129 {View}
+tr {Mar 18 08:00	Logged phone call — activity ref 130	Priya Nair	System	ACT-00130	Pending	View}
+td {Mar 18 08:00}
+td {Logged phone call — activity ref 130}
+td {Priya Nair}
+td {System}
+td {ACT-00130}
+td {Pending}
+td {View}
+a href=/activity/130 {View}
+tr {Mar 19 09:00	Added note — activity ref 131	Alex Jordan	Task	ACT-00131	Completed	View}
+td {Mar 19 09:00}
+td {Added note — activity ref 131}
+td {Alex Jordan}
+td {Task}
+td {ACT-00131}
+td {Completed}
+td {View}
+a href=/activity/131 {View}
+tr {Mar 20 10:00	Updated lead status — activity ref 132	Maria Kovacs	Meeting	ACT-00132	Completed	View}
+td {Mar 20 10:00}
+td {Updated lead status — activity ref 132}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00132}
+td {Completed}
+td {View}
+a href=/activity/132 {View}
+tr {Mar 21 11:00	Created task — activity ref 133	Sam Lee	Email	ACT-00133	Completed	View}
+td {Mar 21 11:00}
+td {Created task — activity ref 133}
+td {Sam Lee}
+td {Email}
+td {ACT-00133}
+td {Completed}
+td {View}
+a href=/activity/133 {View}
+tr {Mar 22 12:00	Sent proposal — activity ref 134	Chris Park	Call	ACT-00134	Logged	View}
+td {Mar 22 12:00}
+td {Sent proposal — activity ref 134}
+td {Chris Park}
+td {Call}
+td {ACT-00134}
+td {Logged}
+td {View}
+a href=/activity/134 {View}
+tr {Mar 23 13:00	Scheduled meeting — activity ref 135	Priya Nair	Note	ACT-00135	Auto	View}
+td {Mar 23 13:00}
+td {Scheduled meeting — activity ref 135}
+td {Priya Nair}
+td {Note}
+td {ACT-00135}
+td {Auto}
+td {View}
+a href=/activity/135 {View}
+tr {Mar 24 14:00	Completed task — activity ref 136	Alex Jordan	System	ACT-00136	Pending	View}
+td {Mar 24 14:00}
+td {Completed task — activity ref 136}
+td {Alex Jordan}
+td {System}
+td {ACT-00136}
+td {Pending}
+td {View}
+a href=/activity/136 {View}
+tr {Mar 25 15:00	Changed owner — activity ref 137	Maria Kovacs	Task	ACT-00137	Completed	View}
+td {Mar 25 15:00}
+td {Changed owner — activity ref 137}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00137}
+td {Completed}
+td {View}
+a href=/activity/137 {View}
+tr {Mar 26 16:00	Added tag — activity ref 138	Sam Lee	Meeting	ACT-00138	Completed	View}
+td {Mar 26 16:00}
+td {Added tag — activity ref 138}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00138}
+td {Completed}
+td {View}
+a href=/activity/138 {View}
+tr {Mar 27 17:00	Viewed contact — activity ref 139	Chris Park	Email	ACT-00139	Completed	View}
+td {Mar 27 17:00}
+td {Viewed contact — activity ref 139}
+td {Chris Park}
+td {Email}
+td {ACT-00139}
+td {Completed}
+td {View}
+a href=/activity/139 {View}
+tr {Mar 28 08:00	Sent contract — activity ref 140	Priya Nair	Call	ACT-00140	Logged	View}
+td {Mar 28 08:00}
+td {Sent contract — activity ref 140}
+td {Priya Nair}
+td {Call}
+td {ACT-00140}
+td {Logged}
+td {View}
+a href=/activity/140 {View}
+tr {Mar 01 09:00	Left voicemail — activity ref 141	Alex Jordan	Note	ACT-00141	Auto	View}
+td {Mar 01 09:00}
+td {Left voicemail — activity ref 141}
+td {Alex Jordan}
+td {Note}
+td {ACT-00141}
+td {Auto}
+td {View}
+a href=/activity/141 {View}
+tr {Mar 02 10:00	Opened email — activity ref 142	Maria Kovacs	System	ACT-00142	Pending	View}
+td {Mar 02 10:00}
+td {Opened email — activity ref 142}
+td {Maria Kovacs}
+td {System}
+td {ACT-00142}
+td {Pending}
+td {View}
+a href=/activity/142 {View}
+tr {Mar 03 11:00	Clicked link in email — activity ref 143	Sam Lee	Task	ACT-00143	Completed	View}
+td {Mar 03 11:00}
+td {Clicked link in email — activity ref 143}
+td {Sam Lee}
+td {Task}
+td {ACT-00143}
+td {Completed}
+td {View}
+a href=/activity/143 {View}
+tr {Mar 04 12:00	Replied to email — activity ref 144	Chris Park	Meeting	ACT-00144	Completed	View}
+td {Mar 04 12:00}
+td {Replied to email — activity ref 144}
+td {Chris Park}
+td {Meeting}
+td {ACT-00144}
+td {Completed}
+td {View}
+a href=/activity/144 {View}
+tr {Mar 05 13:00	Sent follow-up email — activity ref 145	Priya Nair	Email	ACT-00145	Completed	View}
+td {Mar 05 13:00}
+td {Sent follow-up email — activity ref 145}
+td {Priya Nair}
+td {Email}
+td {ACT-00145}
+td {Completed}
+td {View}
+a href=/activity/145 {View}
+tr {Mar 06 14:00	Logged phone call — activity ref 146	Alex Jordan	Call	ACT-00146	Logged	View}
+td {Mar 06 14:00}
+td {Logged phone call — activity ref 146}
+td {Alex Jordan}
+td {Call}
+td {ACT-00146}
+td {Logged}
+td {View}
+a href=/activity/146 {View}
+tr {Mar 07 15:00	Added note — activity ref 147	Maria Kovacs	Note	ACT-00147	Auto	View}
+td {Mar 07 15:00}
+td {Added note — activity ref 147}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00147}
+td {Auto}
+td {View}
+a href=/activity/147 {View}
+tr {Mar 08 16:00	Updated lead status — activity ref 148	Sam Lee	System	ACT-00148	Pending	View}
+td {Mar 08 16:00}
+td {Updated lead status — activity ref 148}
+td {Sam Lee}
+td {System}
+td {ACT-00148}
+td {Pending}
+td {View}
+a href=/activity/148 {View}
+tr {Mar 09 17:00	Created task — activity ref 149	Chris Park	Task	ACT-00149	Completed	View}
+td {Mar 09 17:00}
+td {Created task — activity ref 149}
+td {Chris Park}
+td {Task}
+td {ACT-00149}
+td {Completed}
+td {View}
+a href=/activity/149 {View}
+tr {Mar 10 08:00	Sent proposal — activity ref 150	Priya Nair	Meeting	ACT-00150	Completed	View}
+td {Mar 10 08:00}
+td {Sent proposal — activity ref 150}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00150}
+td {Completed}
+td {View}
+a href=/activity/150 {View}
+tr {Apr 11 09:00	Scheduled meeting — activity ref 151	Alex Jordan	Email	ACT-00151	Completed	View}
+td {Apr 11 09:00}
+td {Scheduled meeting — activity ref 151}
+td {Alex Jordan}
+td {Email}
+td {ACT-00151}
+td {Completed}
+td {View}
+a href=/activity/151 {View}
+tr {Apr 12 10:00	Completed task — activity ref 152	Maria Kovacs	Call	ACT-00152	Logged	View}
+td {Apr 12 10:00}
+td {Completed task — activity ref 152}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00152}
+td {Logged}
+td {View}
+a href=/activity/152 {View}
+tr {Apr 13 11:00	Changed owner — activity ref 153	Sam Lee	Note	ACT-00153	Auto	View}
+td {Apr 13 11:00}
+td {Changed owner — activity ref 153}
+td {Sam Lee}
+td {Note}
+td {ACT-00153}
+td {Auto}
+td {View}
+a href=/activity/153 {View}
+tr {Apr 14 12:00	Added tag — activity ref 154	Chris Park	System	ACT-00154	Pending	View}
+td {Apr 14 12:00}
+td {Added tag — activity ref 154}
+td {Chris Park}
+td {System}
+td {ACT-00154}
+td {Pending}
+td {View}
+a href=/activity/154 {View}
+tr {Apr 15 13:00	Viewed contact — activity ref 155	Priya Nair	Task	ACT-00155	Completed	View}
+td {Apr 15 13:00}
+td {Viewed contact — activity ref 155}
+td {Priya Nair}
+td {Task}
+td {ACT-00155}
+td {Completed}
+td {View}
+a href=/activity/155 {View}
+tr {Apr 16 14:00	Sent contract — activity ref 156	Alex Jordan	Meeting	ACT-00156	Completed	View}
+td {Apr 16 14:00}
+td {Sent contract — activity ref 156}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00156}
+td {Completed}
+td {View}
+a href=/activity/156 {View}
+tr {Apr 17 15:00	Left voicemail — activity ref 157	Maria Kovacs	Email	ACT-00157	Completed	View}
+td {Apr 17 15:00}
+td {Left voicemail — activity ref 157}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00157}
+td {Completed}
+td {View}
+a href=/activity/157 {View}
+tr {Apr 18 16:00	Opened email — activity ref 158	Sam Lee	Call	ACT-00158	Logged	View}
+td {Apr 18 16:00}
+td {Opened email — activity ref 158}
+td {Sam Lee}
+td {Call}
+td {ACT-00158}
+td {Logged}
+td {View}
+a href=/activity/158 {View}
+tr {Apr 19 17:00	Clicked link in email — activity ref 159	Chris Park	Note	ACT-00159	Auto	View}
+td {Apr 19 17:00}
+td {Clicked link in email — activity ref 159}
+td {Chris Park}
+td {Note}
+td {ACT-00159}
+td {Auto}
+td {View}
+a href=/activity/159 {View}
+tr {Apr 20 08:00	Replied to email — activity ref 160	Priya Nair	System	ACT-00160	Pending	View}
+td {Apr 20 08:00}
+td {Replied to email — activity ref 160}
+td {Priya Nair}
+td {System}
+td {ACT-00160}
+td {Pending}
+td {View}
+a href=/activity/160 {View}
+tr {Apr 21 09:00	Sent follow-up email — activity ref 161	Alex Jordan	Task	ACT-00161	Completed	View}
+td {Apr 21 09:00}
+td {Sent follow-up email — activity ref 161}
+td {Alex Jordan}
+td {Task}
+td {ACT-00161}
+td {Completed}
+td {View}
+a href=/activity/161 {View}
+tr {Apr 22 10:00	Logged phone call — activity ref 162	Maria Kovacs	Meeting	ACT-00162	Completed	View}
+td {Apr 22 10:00}
+td {Logged phone call — activity ref 162}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00162}
+td {Completed}
+td {View}
+a href=/activity/162 {View}
+tr {Apr 23 11:00	Added note — activity ref 163	Sam Lee	Email	ACT-00163	Completed	View}
+td {Apr 23 11:00}
+td {Added note — activity ref 163}
+td {Sam Lee}
+td {Email}
+td {ACT-00163}
+td {Completed}
+td {View}
+a href=/activity/163 {View}
+tr {Apr 24 12:00	Updated lead status — activity ref 164	Chris Park	Call	ACT-00164	Logged	View}
+td {Apr 24 12:00}
+td {Updated lead status — activity ref 164}
+td {Chris Park}
+td {Call}
+td {ACT-00164}
+td {Logged}
+td {View}
+a href=/activity/164 {View}
+tr {Apr 25 13:00	Created task — activity ref 165	Priya Nair	Note	ACT-00165	Auto	View}
+td {Apr 25 13:00}
+td {Created task — activity ref 165}
+td {Priya Nair}
+td {Note}
+td {ACT-00165}
+td {Auto}
+td {View}
+a href=/activity/165 {View}
+tr {Apr 26 14:00	Sent proposal — activity ref 166	Alex Jordan	System	ACT-00166	Pending	View}
+td {Apr 26 14:00}
+td {Sent proposal — activity ref 166}
+td {Alex Jordan}
+td {System}
+td {ACT-00166}
+td {Pending}
+td {View}
+a href=/activity/166 {View}
+tr {Apr 27 15:00	Scheduled meeting — activity ref 167	Maria Kovacs	Task	ACT-00167	Completed	View}
+td {Apr 27 15:00}
+td {Scheduled meeting — activity ref 167}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00167}
+td {Completed}
+td {View}
+a href=/activity/167 {View}
+tr {Apr 28 16:00	Completed task — activity ref 168	Sam Lee	Meeting	ACT-00168	Completed	View}
+td {Apr 28 16:00}
+td {Completed task — activity ref 168}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00168}
+td {Completed}
+td {View}
+a href=/activity/168 {View}
+tr {Apr 01 17:00	Changed owner — activity ref 169	Chris Park	Email	ACT-00169	Completed	View}
+td {Apr 01 17:00}
+td {Changed owner — activity ref 169}
+td {Chris Park}
+td {Email}
+td {ACT-00169}
+td {Completed}
+td {View}
+a href=/activity/169 {View}
+tr {Apr 02 08:00	Added tag — activity ref 170	Priya Nair	Call	ACT-00170	Logged	View}
+td {Apr 02 08:00}
+td {Added tag — activity ref 170}
+td {Priya Nair}
+td {Call}
+td {ACT-00170}
+td {Logged}
+td {View}
+a href=/activity/170 {View}
+tr {Apr 03 09:00	Viewed contact — activity ref 171	Alex Jordan	Note	ACT-00171	Auto	View}
+td {Apr 03 09:00}
+td {Viewed contact — activity ref 171}
+td {Alex Jordan}
+td {Note}
+td {ACT-00171}
+td {Auto}
+td {View}
+a href=/activity/171 {View}
+tr {Apr 04 10:00	Sent contract — activity ref 172	Maria Kovacs	System	ACT-00172	Pending	View}
+td {Apr 04 10:00}
+td {Sent contract — activity ref 172}
+td {Maria Kovacs}
+td {System}
+td {ACT-00172}
+td {Pending}
+td {View}
+a href=/activity/172 {View}
+tr {Apr 05 11:00	Left voicemail — activity ref 173	Sam Lee	Task	ACT-00173	Completed	View}
+td {Apr 05 11:00}
+td {Left voicemail — activity ref 173}
+td {Sam Lee}
+td {Task}
+td {ACT-00173}
+td {Completed}
+td {View}
+a href=/activity/173 {View}
+tr {Apr 06 12:00	Opened email — activity ref 174	Chris Park	Meeting	ACT-00174	Completed	View}
+td {Apr 06 12:00}
+td {Opened email — activity ref 174}
+td {Chris Park}
+td {Meeting}
+td {ACT-00174}
+td {Completed}
+td {View}
+a href=/activity/174 {View}
+tr {Apr 07 13:00	Clicked link in email — activity ref 175	Priya Nair	Email	ACT-00175	Completed	View}
+td {Apr 07 13:00}
+td {Clicked link in email — activity ref 175}
+td {Priya Nair}
+td {Email}
+td {ACT-00175}
+td {Completed}
+td {View}
+a href=/activity/175 {View}
+tr {Apr 08 14:00	Replied to email — activity ref 176	Alex Jordan	Call	ACT-00176	Logged	View}
+td {Apr 08 14:00}
+td {Replied to email — activity ref 176}
+td {Alex Jordan}
+td {Call}
+td {ACT-00176}
+td {Logged}
+td {View}
+a href=/activity/176 {View}
+tr {Apr 09 15:00	Sent follow-up email — activity ref 177	Maria Kovacs	Note	ACT-00177	Auto	View}
+td {Apr 09 15:00}
+td {Sent follow-up email — activity ref 177}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00177}
+td {Auto}
+td {View}
+a href=/activity/177 {View}
+tr {Apr 10 16:00	Logged phone call — activity ref 178	Sam Lee	System	ACT-00178	Pending	View}
+td {Apr 10 16:00}
+td {Logged phone call — activity ref 178}
+td {Sam Lee}
+td {System}
+td {ACT-00178}
+td {Pending}
+td {View}
+a href=/activity/178 {View}
+tr {Apr 11 17:00	Added note — activity ref 179	Chris Park	Task	ACT-00179	Completed	View}
+td {Apr 11 17:00}
+td {Added note — activity ref 179}
+td {Chris Park}
+td {Task}
+td {ACT-00179}
+td {Completed}
+td {View}
+a href=/activity/179 {View}
+tr {Apr 12 08:00	Updated lead status — activity ref 180	Priya Nair	Meeting	ACT-00180	Completed	View}
+td {Apr 12 08:00}
+td {Updated lead status — activity ref 180}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00180}
+td {Completed}
+td {View}
+a href=/activity/180 {View}
+tr {Apr 13 09:00	Created task — activity ref 181	Alex Jordan	Email	ACT-00181	Completed	View}
+td {Apr 13 09:00}
+td {Created task — activity ref 181}
+td {Alex Jordan}
+td {Email}
+td {ACT-00181}
+td {Completed}
+td {View}
+a href=/activity/181 {View}
+tr {Apr 14 10:00	Sent proposal — activity ref 182	Maria Kovacs	Call	ACT-00182	Logged	View}
+td {Apr 14 10:00}
+td {Sent proposal — activity ref 182}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00182}
+td {Logged}
+td {View}
+a href=/activity/182 {View}
+tr {Apr 15 11:00	Scheduled meeting — activity ref 183	Sam Lee	Note	ACT-00183	Auto	View}
+td {Apr 15 11:00}
+td {Scheduled meeting — activity ref 183}
+td {Sam Lee}
+td {Note}
+td {ACT-00183}
+td {Auto}
+td {View}
+a href=/activity/183 {View}
+tr {Apr 16 12:00	Completed task — activity ref 184	Chris Park	System	ACT-00184	Pending	View}
+td {Apr 16 12:00}
+td {Completed task — activity ref 184}
+td {Chris Park}
+td {System}
+td {ACT-00184}
+td {Pending}
+td {View}
+a href=/activity/184 {View}
+tr {Apr 17 13:00	Changed owner — activity ref 185	Priya Nair	Task	ACT-00185	Completed	View}
+td {Apr 17 13:00}
+td {Changed owner — activity ref 185}
+td {Priya Nair}
+td {Task}
+td {ACT-00185}
+td {Completed}
+td {View}
+a href=/activity/185 {View}
+tr {Apr 18 14:00	Added tag — activity ref 186	Alex Jordan	Meeting	ACT-00186	Completed	View}
+td {Apr 18 14:00}
+td {Added tag — activity ref 186}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00186}
+td {Completed}
+td {View}
+a href=/activity/186 {View}
+tr {Apr 19 15:00	Viewed contact — activity ref 187	Maria Kovacs	Email	ACT-00187	Completed	View}
+td {Apr 19 15:00}
+td {Viewed contact — activity ref 187}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00187}
+td {Completed}
+td {View}
+a href=/activity/187 {View}
+tr {Apr 20 16:00	Sent contract — activity ref 188	Sam Lee	Call	ACT-00188	Logged	View}
+td {Apr 20 16:00}
+td {Sent contract — activity ref 188}
+td {Sam Lee}
+td {Call}
+td {ACT-00188}
+td {Logged}
+td {View}
+a href=/activity/188 {View}
+tr {Apr 21 17:00	Left voicemail — activity ref 189	Chris Park	Note	ACT-00189	Auto	View}
+td {Apr 21 17:00}
+td {Left voicemail — activity ref 189}
+td {Chris Park}
+td {Note}
+td {ACT-00189}
+td {Auto}
+td {View}
+a href=/activity/189 {View}
+tr {Apr 22 08:00	Opened email — activity ref 190	Priya Nair	System	ACT-00190	Pending	View}
+td {Apr 22 08:00}
+td {Opened email — activity ref 190}
+td {Priya Nair}
+td {System}
+td {ACT-00190}
+td {Pending}
+td {View}
+a href=/activity/190 {View}
+tr {Apr 23 09:00	Clicked link in email — activity ref 191	Alex Jordan	Task	ACT-00191	Completed	View}
+td {Apr 23 09:00}
+td {Clicked link in email — activity ref 191}
+td {Alex Jordan}
+td {Task}
+td {ACT-00191}
+td {Completed}
+td {View}
+a href=/activity/191 {View}
+tr {Apr 24 10:00	Replied to email — activity ref 192	Maria Kovacs	Meeting	ACT-00192	Completed	View}
+td {Apr 24 10:00}
+td {Replied to email — activity ref 192}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00192}
+td {Completed}
+td {View}
+a href=/activity/192 {View}
+tr {Apr 25 11:00	Sent follow-up email — activity ref 193	Sam Lee	Email	ACT-00193	Completed	View}
+td {Apr 25 11:00}
+td {Sent follow-up email — activity ref 193}
+td {Sam Lee}
+td {Email}
+td {ACT-00193}
+td {Completed}
+td {View}
+a href=/activity/193 {View}
+tr {Apr 26 12:00	Logged phone call — activity ref 194	Chris Park	Call	ACT-00194	Logged	View}
+td {Apr 26 12:00}
+td {Logged phone call — activity ref 194}
+td {Chris Park}
+td {Call}
+td {ACT-00194}
+td {Logged}
+td {View}
+a href=/activity/194 {View}
+tr {Apr 27 13:00	Added note — activity ref 195	Priya Nair	Note	ACT-00195	Auto	View}
+td {Apr 27 13:00}
+td {Added note — activity ref 195}
+td {Priya Nair}
+td {Note}
+td {ACT-00195}
+td {Auto}
+td {View}
+a href=/activity/195 {View}
+tr {Apr 28 14:00	Updated lead status — activity ref 196	Alex Jordan	System	ACT-00196	Pending	View}
+td {Apr 28 14:00}
+td {Updated lead status — activity ref 196}
+td {Alex Jordan}
+td {System}
+td {ACT-00196}
+td {Pending}
+td {View}
+a href=/activity/196 {View}
+tr {Apr 01 15:00	Created task — activity ref 197	Maria Kovacs	Task	ACT-00197	Completed	View}
+td {Apr 01 15:00}
+td {Created task — activity ref 197}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00197}
+td {Completed}
+td {View}
+a href=/activity/197 {View}
+tr {Apr 02 16:00	Sent proposal — activity ref 198	Sam Lee	Meeting	ACT-00198	Completed	View}
+td {Apr 02 16:00}
+td {Sent proposal — activity ref 198}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00198}
+td {Completed}
+td {View}
+a href=/activity/198 {View}
+tr {Apr 03 17:00	Scheduled meeting — activity ref 199	Chris Park	Email	ACT-00199	Completed	View}
+td {Apr 03 17:00}
+td {Scheduled meeting — activity ref 199}
+td {Chris Park}
+td {Email}
+td {ACT-00199}
+td {Completed}
+td {View}
+a href=/activity/199 {View}
+tr {Apr 04 08:00	Completed task — activity ref 200	Priya Nair	Call	ACT-00200	Logged	View}
+td {Apr 04 08:00}
+td {Completed task — activity ref 200}
+td {Priya Nair}
+td {Call}
+td {ACT-00200}
+td {Logged}
+td {View}
+a href=/activity/200 {View}
+tr {May 05 09:00	Changed owner — activity ref 201	Alex Jordan	Note	ACT-00201	Auto	View}
+td {May 05 09:00}
+td {Changed owner — activity ref 201}
+td {Alex Jordan}
+td {Note}
+td {ACT-00201}
+td {Auto}
+td {View}
+a href=/activity/201 {View}
+tr {May 06 10:00	Added tag — activity ref 202	Maria Kovacs	System	ACT-00202	Pending	View}
+td {May 06 10:00}
+td {Added tag — activity ref 202}
+td {Maria Kovacs}
+td {System}
+td {ACT-00202}
+td {Pending}
+td {View}
+a href=/activity/202 {View}
+tr {May 07 11:00	Viewed contact — activity ref 203	Sam Lee	Task	ACT-00203	Completed	View}
+td {May 07 11:00}
+td {Viewed contact — activity ref 203}
+td {Sam Lee}
+td {Task}
+td {ACT-00203}
+td {Completed}
+td {View}
+a href=/activity/203 {View}
+tr {May 08 12:00	Sent contract — activity ref 204	Chris Park	Meeting	ACT-00204	Completed	View}
+td {May 08 12:00}
+td {Sent contract — activity ref 204}
+td {Chris Park}
+td {Meeting}
+td {ACT-00204}
+td {Completed}
+td {View}
+a href=/activity/204 {View}
+tr {May 09 13:00	Left voicemail — activity ref 205	Priya Nair	Email	ACT-00205	Completed	View}
+td {May 09 13:00}
+td {Left voicemail — activity ref 205}
+td {Priya Nair}
+td {Email}
+td {ACT-00205}
+td {Completed}
+td {View}
+a href=/activity/205 {View}
+tr {May 10 14:00	Opened email — activity ref 206	Alex Jordan	Call	ACT-00206	Logged	View}
+td {May 10 14:00}
+td {Opened email — activity ref 206}
+td {Alex Jordan}
+td {Call}
+td {ACT-00206}
+td {Logged}
+td {View}
+a href=/activity/206 {View}
+tr {May 11 15:00	Clicked link in email — activity ref 207	Maria Kovacs	Note	ACT-00207	Auto	View}
+td {May 11 15:00}
+td {Clicked link in email — activity ref 207}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00207}
+td {Auto}
+td {View}
+a href=/activity/207 {View}
+tr {May 12 16:00	Replied to email — activity ref 208	Sam Lee	System	ACT-00208	Pending	View}
+td {May 12 16:00}
+td {Replied to email — activity ref 208}
+td {Sam Lee}
+td {System}
+td {ACT-00208}
+td {Pending}
+td {View}
+a href=/activity/208 {View}
+tr {May 13 17:00	Sent follow-up email — activity ref 209	Chris Park	Task	ACT-00209	Completed	View}
+td {May 13 17:00}
+td {Sent follow-up email — activity ref 209}
+td {Chris Park}
+td {Task}
+td {ACT-00209}
+td {Completed}
+td {View}
+a href=/activity/209 {View}
+tr {May 14 08:00	Logged phone call — activity ref 210	Priya Nair	Meeting	ACT-00210	Completed	View}
+td {May 14 08:00}
+td {Logged phone call — activity ref 210}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00210}
+td {Completed}
+td {View}
+a href=/activity/210 {View}
+tr {May 15 09:00	Added note — activity ref 211	Alex Jordan	Email	ACT-00211	Completed	View}
+td {May 15 09:00}
+td {Added note — activity ref 211}
+td {Alex Jordan}
+td {Email}
+td {ACT-00211}
+td {Completed}
+td {View}
+a href=/activity/211 {View}
+tr {May 16 10:00	Updated lead status — activity ref 212	Maria Kovacs	Call	ACT-00212	Logged	View}
+td {May 16 10:00}
+td {Updated lead status — activity ref 212}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00212}
+td {Logged}
+td {View}
+a href=/activity/212 {View}
+tr {May 17 11:00	Created task — activity ref 213	Sam Lee	Note	ACT-00213	Auto	View}
+td {May 17 11:00}
+td {Created task — activity ref 213}
+td {Sam Lee}
+td {Note}
+td {ACT-00213}
+td {Auto}
+td {View}
+a href=/activity/213 {View}
+tr {May 18 12:00	Sent proposal — activity ref 214	Chris Park	System	ACT-00214	Pending	View}
+td {May 18 12:00}
+td {Sent proposal — activity ref 214}
+td {Chris Park}
+td {System}
+td {ACT-00214}
+td {Pending}
+td {View}
+a href=/activity/214 {View}
+tr {May 19 13:00	Scheduled meeting — activity ref 215	Priya Nair	Task	ACT-00215	Completed	View}
+td {May 19 13:00}
+td {Scheduled meeting — activity ref 215}
+td {Priya Nair}
+td {Task}
+td {ACT-00215}
+td {Completed}
+td {View}
+a href=/activity/215 {View}
+tr {May 20 14:00	Completed task — activity ref 216	Alex Jordan	Meeting	ACT-00216	Completed	View}
+td {May 20 14:00}
+td {Completed task — activity ref 216}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00216}
+td {Completed}
+td {View}
+a href=/activity/216 {View}
+tr {May 21 15:00	Changed owner — activity ref 217	Maria Kovacs	Email	ACT-00217	Completed	View}
+td {May 21 15:00}
+td {Changed owner — activity ref 217}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00217}
+td {Completed}
+td {View}
+a href=/activity/217 {View}
+tr {May 22 16:00	Added tag — activity ref 218	Sam Lee	Call	ACT-00218	Logged	View}
+td {May 22 16:00}
+td {Added tag — activity ref 218}
+td {Sam Lee}
+td {Call}
+td {ACT-00218}
+td {Logged}
+td {View}
+a href=/activity/218 {View}
+tr {May 23 17:00	Viewed contact — activity ref 219	Chris Park	Note	ACT-00219	Auto	View}
+td {May 23 17:00}
+td {Viewed contact — activity ref 219}
+td {Chris Park}
+td {Note}
+td {ACT-00219}
+td {Auto}
+td {View}
+a href=/activity/219 {View}
+tr {May 24 08:00	Sent contract — activity ref 220	Priya Nair	System	ACT-00220	Pending	View}
+td {May 24 08:00}
+td {Sent contract — activity ref 220}
+td {Priya Nair}
+td {System}
+td {ACT-00220}
+td {Pending}
+td {View}
+a href=/activity/220 {View}
+tr {May 25 09:00	Left voicemail — activity ref 221	Alex Jordan	Task	ACT-00221	Completed	View}
+td {May 25 09:00}
+td {Left voicemail — activity ref 221}
+td {Alex Jordan}
+td {Task}
+td {ACT-00221}
+td {Completed}
+td {View}
+a href=/activity/221 {View}
+tr {May 26 10:00	Opened email — activity ref 222	Maria Kovacs	Meeting	ACT-00222	Completed	View}
+td {May 26 10:00}
+td {Opened email — activity ref 222}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00222}
+td {Completed}
+td {View}
+a href=/activity/222 {View}
+tr {May 27 11:00	Clicked link in email — activity ref 223	Sam Lee	Email	ACT-00223	Completed	View}
+td {May 27 11:00}
+td {Clicked link in email — activity ref 223}
+td {Sam Lee}
+td {Email}
+td {ACT-00223}
+td {Completed}
+td {View}
+a href=/activity/223 {View}
+tr {May 28 12:00	Replied to email — activity ref 224	Chris Park	Call	ACT-00224	Logged	View}
+td {May 28 12:00}
+td {Replied to email — activity ref 224}
+td {Chris Park}
+td {Call}
+td {ACT-00224}
+td {Logged}
+td {View}
+a href=/activity/224 {View}
+tr {May 01 13:00	Sent follow-up email — activity ref 225	Priya Nair	Note	ACT-00225	Auto	View}
+td {May 01 13:00}
+td {Sent follow-up email — activity ref 225}
+td {Priya Nair}
+td {Note}
+td {ACT-00225}
+td {Auto}
+td {View}
+a href=/activity/225 {View}
+tr {May 02 14:00	Logged phone call — activity ref 226	Alex Jordan	System	ACT-00226	Pending	View}
+td {May 02 14:00}
+td {Logged phone call — activity ref 226}
+td {Alex Jordan}
+td {System}
+td {ACT-00226}
+td {Pending}
+td {View}
+a href=/activity/226 {View}
+tr {May 03 15:00	Added note — activity ref 227	Maria Kovacs	Task	ACT-00227	Completed	View}
+td {May 03 15:00}
+td {Added note — activity ref 227}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00227}
+td {Completed}
+td {View}
+a href=/activity/227 {View}
+tr {May 04 16:00	Updated lead status — activity ref 228	Sam Lee	Meeting	ACT-00228	Completed	View}
+td {May 04 16:00}
+td {Updated lead status — activity ref 228}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00228}
+td {Completed}
+td {View}
+a href=/activity/228 {View}
+tr {May 05 17:00	Created task — activity ref 229	Chris Park	Email	ACT-00229	Completed	View}
+td {May 05 17:00}
+td {Created task — activity ref 229}
+td {Chris Park}
+td {Email}
+td {ACT-00229}
+td {Completed}
+td {View}
+a href=/activity/229 {View}
+tr {May 06 08:00	Sent proposal — activity ref 230	Priya Nair	Call	ACT-00230	Logged	View}
+td {May 06 08:00}
+td {Sent proposal — activity ref 230}
+td {Priya Nair}
+td {Call}
+td {ACT-00230}
+td {Logged}
+td {View}
+a href=/activity/230 {View}
+tr {May 07 09:00	Scheduled meeting — activity ref 231	Alex Jordan	Note	ACT-00231	Auto	View}
+td {May 07 09:00}
+td {Scheduled meeting — activity ref 231}
+td {Alex Jordan}
+td {Note}
+td {ACT-00231}
+td {Auto}
+td {View}
+a href=/activity/231 {View}
+tr {May 08 10:00	Completed task — activity ref 232	Maria Kovacs	System	ACT-00232	Pending	View}
+td {May 08 10:00}
+td {Completed task — activity ref 232}
+td {Maria Kovacs}
+td {System}
+td {ACT-00232}
+td {Pending}
+td {View}
+a href=/activity/232 {View}
+tr {May 09 11:00	Changed owner — activity ref 233	Sam Lee	Task	ACT-00233	Completed	View}
+td {May 09 11:00}
+td {Changed owner — activity ref 233}
+td {Sam Lee}
+td {Task}
+td {ACT-00233}
+td {Completed}
+td {View}
+a href=/activity/233 {View}
+tr {May 10 12:00	Added tag — activity ref 234	Chris Park	Meeting	ACT-00234	Completed	View}
+td {May 10 12:00}
+td {Added tag — activity ref 234}
+td {Chris Park}
+td {Meeting}
+td {ACT-00234}
+td {Completed}
+td {View}
+a href=/activity/234 {View}
+tr {May 11 13:00	Viewed contact — activity ref 235	Priya Nair	Email	ACT-00235	Completed	View}
+td {May 11 13:00}
+td {Viewed contact — activity ref 235}
+td {Priya Nair}
+td {Email}
+td {ACT-00235}
+td {Completed}
+td {View}
+a href=/activity/235 {View}
+tr {May 12 14:00	Sent contract — activity ref 236	Alex Jordan	Call	ACT-00236	Logged	View}
+td {May 12 14:00}
+td {Sent contract — activity ref 236}
+td {Alex Jordan}
+td {Call}
+td {ACT-00236}
+td {Logged}
+td {View}
+a href=/activity/236 {View}
+tr {May 13 15:00	Left voicemail — activity ref 237	Maria Kovacs	Note	ACT-00237	Auto	View}
+td {May 13 15:00}
+td {Left voicemail — activity ref 237}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00237}
+td {Auto}
+td {View}
+a href=/activity/237 {View}
+tr {May 14 16:00	Opened email — activity ref 238	Sam Lee	System	ACT-00238	Pending	View}
+td {May 14 16:00}
+td {Opened email — activity ref 238}
+td {Sam Lee}
+td {System}
+td {ACT-00238}
+td {Pending}
+td {View}
+a href=/activity/238 {View}
+tr {May 15 17:00	Clicked link in email — activity ref 239	Chris Park	Task	ACT-00239	Completed	View}
+td {May 15 17:00}
+td {Clicked link in email — activity ref 239}
+td {Chris Park}
+td {Task}
+td {ACT-00239}
+td {Completed}
+td {View}
+a href=/activity/239 {View}
+tr {May 16 08:00	Replied to email — activity ref 240	Priya Nair	Meeting	ACT-00240	Completed	View}
+td {May 16 08:00}
+td {Replied to email — activity ref 240}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00240}
+td {Completed}
+td {View}
+a href=/activity/240 {View}
+tr {May 17 09:00	Sent follow-up email — activity ref 241	Alex Jordan	Email	ACT-00241	Completed	View}
+td {May 17 09:00}
+td {Sent follow-up email — activity ref 241}
+td {Alex Jordan}
+td {Email}
+td {ACT-00241}
+td {Completed}
+td {View}
+a href=/activity/241 {View}
+tr {May 18 10:00	Logged phone call — activity ref 242	Maria Kovacs	Call	ACT-00242	Logged	View}
+td {May 18 10:00}
+td {Logged phone call — activity ref 242}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00242}
+td {Logged}
+td {View}
+a href=/activity/242 {View}
+tr {May 19 11:00	Added note — activity ref 243	Sam Lee	Note	ACT-00243	Auto	View}
+td {May 19 11:00}
+td {Added note — activity ref 243}
+td {Sam Lee}
+td {Note}
+td {ACT-00243}
+td {Auto}
+td {View}
+a href=/activity/243 {View}
+tr {May 20 12:00	Updated lead status — activity ref 244	Chris Park	System	ACT-00244	Pending	View}
+td {May 20 12:00}
+td {Updated lead status — activity ref 244}
+td {Chris Park}
+td {System}
+td {ACT-00244}
+td {Pending}
+td {View}
+a href=/activity/244 {View}
+tr {May 21 13:00	Created task — activity ref 245	Priya Nair	Task	ACT-00245	Completed	View}
+td {May 21 13:00}
+td {Created task — activity ref 245}
+td {Priya Nair}
+td {Task}
+td {ACT-00245}
+td {Completed}
+td {View}
+a href=/activity/245 {View}
+tr {May 22 14:00	Sent proposal — activity ref 246	Alex Jordan	Meeting	ACT-00246	Completed	View}
+td {May 22 14:00}
+td {Sent proposal — activity ref 246}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00246}
+td {Completed}
+td {View}
+a href=/activity/246 {View}
+tr {May 23 15:00	Scheduled meeting — activity ref 247	Maria Kovacs	Email	ACT-00247	Completed	View}
+td {May 23 15:00}
+td {Scheduled meeting — activity ref 247}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00247}
+td {Completed}
+td {View}
+a href=/activity/247 {View}
+tr {May 24 16:00	Completed task — activity ref 248	Sam Lee	Call	ACT-00248	Logged	View}
+td {May 24 16:00}
+td {Completed task — activity ref 248}
+td {Sam Lee}
+td {Call}
+td {ACT-00248}
+td {Logged}
+td {View}
+a href=/activity/248 {View}
+tr {May 25 17:00	Changed owner — activity ref 249	Chris Park	Note	ACT-00249	Auto	View}
+td {May 25 17:00}
+td {Changed owner — activity ref 249}
+td {Chris Park}
+td {Note}
+td {ACT-00249}
+td {Auto}
+td {View}
+a href=/activity/249 {View}
+tr {May 26 08:00	Added tag — activity ref 250	Priya Nair	System	ACT-00250	Pending	View}
+td {May 26 08:00}
+td {Added tag — activity ref 250}
+td {Priya Nair}
+td {System}
+td {ACT-00250}
+td {Pending}
+td {View}
+a href=/activity/250 {View}
+tr {Jun 27 09:00	Viewed contact — activity ref 251	Alex Jordan	Task	ACT-00251	Completed	View}
+td {Jun 27 09:00}
+td {Viewed contact — activity ref 251}
+td {Alex Jordan}
+td {Task}
+td {ACT-00251}
+td {Completed}
+td {View}
+a href=/activity/251 {View}
+tr {Jun 28 10:00	Sent contract — activity ref 252	Maria Kovacs	Meeting	ACT-00252	Completed	View}
+td {Jun 28 10:00}
+td {Sent contract — activity ref 252}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00252}
+td {Completed}
+td {View}
+a href=/activity/252 {View}
+tr {Jun 01 11:00	Left voicemail — activity ref 253	Sam Lee	Email	ACT-00253	Completed	View}
+td {Jun 01 11:00}
+td {Left voicemail — activity ref 253}
+td {Sam Lee}
+td {Email}
+td {ACT-00253}
+td {Completed}
+td {View}
+a href=/activity/253 {View}
+tr {Jun 02 12:00	Opened email — activity ref 254	Chris Park	Call	ACT-00254	Logged	View}
+td {Jun 02 12:00}
+td {Opened email — activity ref 254}
+td {Chris Park}
+td {Call}
+td {ACT-00254}
+td {Logged}
+td {View}
+a href=/activity/254 {View}
+tr {Jun 03 13:00	Clicked link in email — activity ref 255	Priya Nair	Note	ACT-00255	Auto	View}
+td {Jun 03 13:00}
+td {Clicked link in email — activity ref 255}
+td {Priya Nair}
+td {Note}
+td {ACT-00255}
+td {Auto}
+td {View}
+a href=/activity/255 {View}
+tr {Jun 04 14:00	Replied to email — activity ref 256	Alex Jordan	System	ACT-00256	Pending	View}
+td {Jun 04 14:00}
+td {Replied to email — activity ref 256}
+td {Alex Jordan}
+td {System}
+td {ACT-00256}
+td {Pending}
+td {View}
+a href=/activity/256 {View}
+tr {Jun 05 15:00	Sent follow-up email — activity ref 257	Maria Kovacs	Task	ACT-00257	Completed	View}
+td {Jun 05 15:00}
+td {Sent follow-up email — activity ref 257}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00257}
+td {Completed}
+td {View}
+a href=/activity/257 {View}
+tr {Jun 06 16:00	Logged phone call — activity ref 258	Sam Lee	Meeting	ACT-00258	Completed	View}
+td {Jun 06 16:00}
+td {Logged phone call — activity ref 258}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00258}
+td {Completed}
+td {View}
+a href=/activity/258 {View}
+tr {Jun 07 17:00	Added note — activity ref 259	Chris Park	Email	ACT-00259	Completed	View}
+td {Jun 07 17:00}
+td {Added note — activity ref 259}
+td {Chris Park}
+td {Email}
+td {ACT-00259}
+td {Completed}
+td {View}
+a href=/activity/259 {View}
+tr {Jun 08 08:00	Updated lead status — activity ref 260	Priya Nair	Call	ACT-00260	Logged	View}
+td {Jun 08 08:00}
+td {Updated lead status — activity ref 260}
+td {Priya Nair}
+td {Call}
+td {ACT-00260}
+td {Logged}
+td {View}
+a href=/activity/260 {View}
+tr {Jun 09 09:00	Created task — activity ref 261	Alex Jordan	Note	ACT-00261	Auto	View}
+td {Jun 09 09:00}
+td {Created task — activity ref 261}
+td {Alex Jordan}
+td {Note}
+td {ACT-00261}
+td {Auto}
+td {View}
+a href=/activity/261 {View}
+tr {Jun 10 10:00	Sent proposal — activity ref 262	Maria Kovacs	System	ACT-00262	Pending	View}
+td {Jun 10 10:00}
+td {Sent proposal — activity ref 262}
+td {Maria Kovacs}
+td {System}
+td {ACT-00262}
+td {Pending}
+td {View}
+a href=/activity/262 {View}
+tr {Jun 11 11:00	Scheduled meeting — activity ref 263	Sam Lee	Task	ACT-00263	Completed	View}
+td {Jun 11 11:00}
+td {Scheduled meeting — activity ref 263}
+td {Sam Lee}
+td {Task}
+td {ACT-00263}
+td {Completed}
+td {View}
+a href=/activity/263 {View}
+tr {Jun 12 12:00	Completed task — activity ref 264	Chris Park	Meeting	ACT-00264	Completed	View}
+td {Jun 12 12:00}
+td {Completed task — activity ref 264}
+td {Chris Park}
+td {Meeting}
+td {ACT-00264}
+td {Completed}
+td {View}
+a href=/activity/264 {View}
+tr {Jun 13 13:00	Changed owner — activity ref 265	Priya Nair	Email	ACT-00265	Completed	View}
+td {Jun 13 13:00}
+td {Changed owner — activity ref 265}
+td {Priya Nair}
+td {Email}
+td {ACT-00265}
+td {Completed}
+td {View}
+a href=/activity/265 {View}
+tr {Jun 14 14:00	Added tag — activity ref 266	Alex Jordan	Call	ACT-00266	Logged	View}
+td {Jun 14 14:00}
+td {Added tag — activity ref 266}
+td {Alex Jordan}
+td {Call}
+td {ACT-00266}
+td {Logged}
+td {View}
+a href=/activity/266 {View}
+tr {Jun 15 15:00	Viewed contact — activity ref 267	Maria Kovacs	Note	ACT-00267	Auto	View}
+td {Jun 15 15:00}
+td {Viewed contact — activity ref 267}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00267}
+td {Auto}
+td {View}
+a href=/activity/267 {View}
+tr {Jun 16 16:00	Sent contract — activity ref 268	Sam Lee	System	ACT-00268	Pending	View}
+td {Jun 16 16:00}
+td {Sent contract — activity ref 268}
+td {Sam Lee}
+td {System}
+td {ACT-00268}
+td {Pending}
+td {View}
+a href=/activity/268 {View}
+tr {Jun 17 17:00	Left voicemail — activity ref 269	Chris Park	Task	ACT-00269	Completed	View}
+td {Jun 17 17:00}
+td {Left voicemail — activity ref 269}
+td {Chris Park}
+td {Task}
+td {ACT-00269}
+td {Completed}
+td {View}
+a href=/activity/269 {View}
+tr {Jun 18 08:00	Opened email — activity ref 270	Priya Nair	Meeting	ACT-00270	Completed	View}
+td {Jun 18 08:00}
+td {Opened email — activity ref 270}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00270}
+td {Completed}
+td {View}
+a href=/activity/270 {View}
+tr {Jun 19 09:00	Clicked link in email — activity ref 271	Alex Jordan	Email	ACT-00271	Completed	View}
+td {Jun 19 09:00}
+td {Clicked link in email — activity ref 271}
+td {Alex Jordan}
+td {Email}
+td {ACT-00271}
+td {Completed}
+td {View}
+a href=/activity/271 {View}
+tr {Jun 20 10:00	Replied to email — activity ref 272	Maria Kovacs	Call	ACT-00272	Logged	View}
+td {Jun 20 10:00}
+td {Replied to email — activity ref 272}
+td {Maria Kovacs}
+td {Call}
+td {ACT-00272}
+td {Logged}
+td {View}
+a href=/activity/272 {View}
+tr {Jun 21 11:00	Sent follow-up email — activity ref 273	Sam Lee	Note	ACT-00273	Auto	View}
+td {Jun 21 11:00}
+td {Sent follow-up email — activity ref 273}
+td {Sam Lee}
+td {Note}
+td {ACT-00273}
+td {Auto}
+td {View}
+a href=/activity/273 {View}
+tr {Jun 22 12:00	Logged phone call — activity ref 274	Chris Park	System	ACT-00274	Pending	View}
+td {Jun 22 12:00}
+td {Logged phone call — activity ref 274}
+td {Chris Park}
+td {System}
+td {ACT-00274}
+td {Pending}
+td {View}
+a href=/activity/274 {View}
+tr {Jun 23 13:00	Added note — activity ref 275	Priya Nair	Task	ACT-00275	Completed	View}
+td {Jun 23 13:00}
+td {Added note — activity ref 275}
+td {Priya Nair}
+td {Task}
+td {ACT-00275}
+td {Completed}
+td {View}
+a href=/activity/275 {View}
+tr {Jun 24 14:00	Updated lead status — activity ref 276	Alex Jordan	Meeting	ACT-00276	Completed	View}
+td {Jun 24 14:00}
+td {Updated lead status — activity ref 276}
+td {Alex Jordan}
+td {Meeting}
+td {ACT-00276}
+td {Completed}
+td {View}
+a href=/activity/276 {View}
+tr {Jun 25 15:00	Created task — activity ref 277	Maria Kovacs	Email	ACT-00277	Completed	View}
+td {Jun 25 15:00}
+td {Created task — activity ref 277}
+td {Maria Kovacs}
+td {Email}
+td {ACT-00277}
+td {Completed}
+td {View}
+a href=/activity/277 {View}
+tr {Jun 26 16:00	Sent proposal — activity ref 278	Sam Lee	Call	ACT-00278	Logged	View}
+td {Jun 26 16:00}
+td {Sent proposal — activity ref 278}
+td {Sam Lee}
+td {Call}
+td {ACT-00278}
+td {Logged}
+td {View}
+a href=/activity/278 {View}
+tr {Jun 27 17:00	Scheduled meeting — activity ref 279	Chris Park	Note	ACT-00279	Auto	View}
+td {Jun 27 17:00}
+td {Scheduled meeting — activity ref 279}
+td {Chris Park}
+td {Note}
+td {ACT-00279}
+td {Auto}
+td {View}
+a href=/activity/279 {View}
+tr {Jun 28 08:00	Completed task — activity ref 280	Priya Nair	System	ACT-00280	Pending	View}
+td {Jun 28 08:00}
+td {Completed task — activity ref 280}
+td {Priya Nair}
+td {System}
+td {ACT-00280}
+td {Pending}
+td {View}
+a href=/activity/280 {View}
+tr {Jun 01 09:00	Changed owner — activity ref 281	Alex Jordan	Task	ACT-00281	Completed	View}
+td {Jun 01 09:00}
+td {Changed owner — activity ref 281}
+td {Alex Jordan}
+td {Task}
+td {ACT-00281}
+td {Completed}
+td {View}
+a href=/activity/281 {View}
+tr {Jun 02 10:00	Added tag — activity ref 282	Maria Kovacs	Meeting	ACT-00282	Completed	View}
+td {Jun 02 10:00}
+td {Added tag — activity ref 282}
+td {Maria Kovacs}
+td {Meeting}
+td {ACT-00282}
+td {Completed}
+td {View}
+a href=/activity/282 {View}
+tr {Jun 03 11:00	Viewed contact — activity ref 283	Sam Lee	Email	ACT-00283	Completed	View}
+td {Jun 03 11:00}
+td {Viewed contact — activity ref 283}
+td {Sam Lee}
+td {Email}
+td {ACT-00283}
+td {Completed}
+td {View}
+a href=/activity/283 {View}
+tr {Jun 04 12:00	Sent contract — activity ref 284	Chris Park	Call	ACT-00284	Logged	View}
+td {Jun 04 12:00}
+td {Sent contract — activity ref 284}
+td {Chris Park}
+td {Call}
+td {ACT-00284}
+td {Logged}
+td {View}
+a href=/activity/284 {View}
+tr {Jun 05 13:00	Left voicemail — activity ref 285	Priya Nair	Note	ACT-00285	Auto	View}
+td {Jun 05 13:00}
+td {Left voicemail — activity ref 285}
+td {Priya Nair}
+td {Note}
+td {ACT-00285}
+td {Auto}
+td {View}
+a href=/activity/285 {View}
+tr {Jun 06 14:00	Opened email — activity ref 286	Alex Jordan	System	ACT-00286	Pending	View}
+td {Jun 06 14:00}
+td {Opened email — activity ref 286}
+td {Alex Jordan}
+td {System}
+td {ACT-00286}
+td {Pending}
+td {View}
+a href=/activity/286 {View}
+tr {Jun 07 15:00	Clicked link in email — activity ref 287	Maria Kovacs	Task	ACT-00287	Completed	View}
+td {Jun 07 15:00}
+td {Clicked link in email — activity ref 287}
+td {Maria Kovacs}
+td {Task}
+td {ACT-00287}
+td {Completed}
+td {View}
+a href=/activity/287 {View}
+tr {Jun 08 16:00	Replied to email — activity ref 288	Sam Lee	Meeting	ACT-00288	Completed	View}
+td {Jun 08 16:00}
+td {Replied to email — activity ref 288}
+td {Sam Lee}
+td {Meeting}
+td {ACT-00288}
+td {Completed}
+td {View}
+a href=/activity/288 {View}
+tr {Jun 09 17:00	Sent follow-up email — activity ref 289	Chris Park	Email	ACT-00289	Completed	View}
+td {Jun 09 17:00}
+td {Sent follow-up email — activity ref 289}
+td {Chris Park}
+td {Email}
+td {ACT-00289}
+td {Completed}
+td {View}
+a href=/activity/289 {View}
+tr {Jun 10 08:00	Logged phone call — activity ref 290	Priya Nair	Call	ACT-00290	Logged	View}
+td {Jun 10 08:00}
+td {Logged phone call — activity ref 290}
+td {Priya Nair}
+td {Call}
+td {ACT-00290}
+td {Logged}
+td {View}
+a href=/activity/290 {View}
+tr {Jun 11 09:00	Added note — activity ref 291	Alex Jordan	Note	ACT-00291	Auto	View}
+td {Jun 11 09:00}
+td {Added note — activity ref 291}
+td {Alex Jordan}
+td {Note}
+td {ACT-00291}
+td {Auto}
+td {View}
+a href=/activity/291 {View}
+tr {Jun 12 10:00	Updated lead status — activity ref 292	Maria Kovacs	System	ACT-00292	Pending	View}
+td {Jun 12 10:00}
+td {Updated lead status — activity ref 292}
+td {Maria Kovacs}
+td {System}
+td {ACT-00292}
+td {Pending}
+td {View}
+a href=/activity/292 {View}
+tr {Jun 13 11:00	Created task — activity ref 293	Sam Lee	Task	ACT-00293	Completed	View}
+td {Jun 13 11:00}
+td {Created task — activity ref 293}
+td {Sam Lee}
+td {Task}
+td {ACT-00293}
+td {Completed}
+td {View}
+a href=/activity/293 {View}
+tr {Jun 14 12:00	Sent proposal — activity ref 294	Chris Park	Meeting	ACT-00294	Completed	View}
+td {Jun 14 12:00}
+td {Sent proposal — activity ref 294}
+td {Chris Park}
+td {Meeting}
+td {ACT-00294}
+td {Completed}
+td {View}
+a href=/activity/294 {View}
+tr {Jun 15 13:00	Scheduled meeting — activity ref 295	Priya Nair	Email	ACT-00295	Completed	View}
+td {Jun 15 13:00}
+td {Scheduled meeting — activity ref 295}
+td {Priya Nair}
+td {Email}
+td {ACT-00295}
+td {Completed}
+td {View}
+a href=/activity/295 {View}
+tr {Jun 16 14:00	Completed task — activity ref 296	Alex Jordan	Call	ACT-00296	Logged	View}
+td {Jun 16 14:00}
+td {Completed task — activity ref 296}
+td {Alex Jordan}
+td {Call}
+td {ACT-00296}
+td {Logged}
+td {View}
+a href=/activity/296 {View}
+tr {Jun 17 15:00	Changed owner — activity ref 297	Maria Kovacs	Note	ACT-00297	Auto	View}
+td {Jun 17 15:00}
+td {Changed owner — activity ref 297}
+td {Maria Kovacs}
+td {Note}
+td {ACT-00297}
+td {Auto}
+td {View}
+a href=/activity/297 {View}
+tr {Jun 18 16:00	Added tag — activity ref 298	Sam Lee	System	ACT-00298	Pending	View}
+td {Jun 18 16:00}
+td {Added tag — activity ref 298}
+td {Sam Lee}
+td {System}
+td {ACT-00298}
+td {Pending}
+td {View}
+a href=/activity/298 {View}
+tr {Jun 19 17:00	Viewed contact — activity ref 299	Chris Park	Task	ACT-00299	Completed	View}
+td {Jun 19 17:00}
+td {Viewed contact — activity ref 299}
+td {Chris Park}
+td {Task}
+td {ACT-00299}
+td {Completed}
+td {View}
+a href=/activity/299 {View}
+tr {Jun 20 08:00	Sent contract — activity ref 300	Priya Nair	Meeting	ACT-00300	Completed	View}
+td {Jun 20 08:00}
+td {Sent contract — activity ref 300}
+td {Priya Nair}
+td {Meeting}
+td {ACT-00300}
+td {Completed}
+td {View}
+a href=/activity/300 {View}
+div class=right-panel {CUSTOM FIELDS DEAL SIZE (£) CONTRACT START NPS SCORE PREFERRED CONTACT Email Phone Slack SEATS REQUESTED REGION TIER Enterprise Professional Starter RENEWAL DATE REFERRAL SOURCE USE CASE}
+div class=card {CUSTOM FIELDS DEAL SIZE (£) CONTRACT START NPS SCORE PREFERRED CONTACT Email Phone Slack SEATS REQUESTED REGION TIER Enterprise Professional Starter RENEWAL DATE REFERRAL SOURCE USE CASE}
+div {CUSTOM FIELDS}
+div class=card-title {CUSTOM FIELDS}
+input type=search aria-label="Search custom fields" placeholder="Search fields..." class=search-input
+div {DEAL SIZE (£)}
+div class=field-label {DEAL SIZE (£)}
+input type=number value=180000 class=field-input
+div {CONTRACT START}
+div class=field-label {CONTRACT START}
+input type=date value=2026-09-01 class=field-input
+div {NPS SCORE}
+div class=field-label {NPS SCORE}
+input type=number value=8 class=field-input
+div {PREFERRED CONTACT Email Phone Slack}
+div class=field-label {PREFERRED CONTACT}
+select class=field-input {Email Phone Slack}
+option {Email}
+option {Phone}
+option {Slack}
+div {SEATS REQUESTED}
+div class=field-label {SEATS REQUESTED}
+input type=number value=150 class=field-input
+div {REGION}
+div class=field-label {REGION}
+input type=text value=EMEA class=field-input
+div {TIER Enterprise Professional Starter}
+div class=field-label {TIER}
+select class=field-input {Enterprise Professional Starter}
+option {Enterprise}
+option {Professional}
+option {Starter}
+div {RENEWAL DATE}
+div class=field-label {RENEWAL DATE}
+input type=date value=2027-03-31 class=field-input
+div {REFERRAL SOURCE}
+div class=field-label {REFERRAL SOURCE}
+input type=text value="G2 Review" class=field-input
+div {USE CASE}
+div class=field-label {USE CASE}
+input type=text value="Sales ops + CX" class=field-input
+[S] p {Next available slots — Sarah Chen}
+[S] div class=slot-list {Tue 18 Jun — 09:00 Tue 18 Jun — 11:00 Wed 19 Jun — 14:00 Thu 20 Jun — 10:30}
+[S] div {Tue 18 Jun — 09:00}
+[S] div {Tue 18 Jun — 11:00}
+[S] div {Wed 19 Jun — 14:00}
+[S] div {Thu 20 Jun — 10:30}
+[S] button data-testid=book-appointment-btn aria-label="Book appointment slot" class=book-btn {Book selected slot}
+footer {© 2026 Nexus CRM Ltd. Privacy Terms Status}
+span {© 2026 Nexus CRM Ltd.}
+a href=/privacy {Privacy}
+a href=/terms {Terms}
+a href=/status {Status}

@@ -1,0 +1,622 @@
+<body>Axiom Features Pricing Customers Blog Docs Log in Run your whole business in one place  Sales, marketing, operations, and support — unified in a single AI-powered platform trusted by 40,000+ companies.  Start free trial No credit card required · 14-day trial · Cancel any time API Access Automation A…</body>
+<nav class="site-nav">Axiom Features Pricing Customers Blog Docs Log in</nav>
+<a href="/" class="nav-logo">Axiom</a>
+<a href="/features">Features</a>
+<a href="/pricing">Pricing</a>
+<a href="/customers">Customers</a>
+<a href="/blog">Blog</a>
+<a href="/docs">Docs</a>
+<div class="nav-cta">Log in</div>
+<a href="/login" class="nav-login">Log in</a>
+<section class="hero">Run your whole business in one place  Sales, marketing, operations, and support — unified in a single AI-powered platform trusted by 40,000+ companies.  Start free trial No credit card required · 14-day trial · Cancel any time</section>
+<h1>Run your whole business in one place</h1>
+<p>Sales, marketing, operations, and support — unified in a single AI-powered platform trusted by 40,000+ companies.</p>
+<div class="hero-form">Start free trial</div>
+<input type="email" placeholder="Enter your work email" />
+<button type="button" data-testid="start-free-trial-hero">Start free trial</button>
+<div class="hero-note">No credit card required · 14-day trial · Cancel any time</div>
+<div>API Access Automation Analytics Integrations SSO Custom Reports Mobile App 24/7 Support GDPR Ready SOC2 Webhooks Multi-tenant</div>
+<span>API Access</span>
+<span>Automation</span>
+<span>Analytics</span>
+<span>Integrations</span>
+<span>SSO</span>
+<span>Custom Reports</span>
+<span>Mobile App</span>
+<span>24/7 Support</span>
+<span>GDPR Ready</span>
+<span>SOC2</span>
+<span>Webhooks</span>
+<span>Multi-tenant</span>
+<div class="section">Everything you need, nothing you don't  Built for modern teams that move fast and need tools that keep up.  📊 Real-time Analytics  Track every metric that matters with customisable dashboards and live data streams.  🔗 500+ Integrations  Connect your existing tools — Slack, Salesforce, HubSpot, Zap…</div>
+<h2 class="section-title">Everything you need, nothing you don't</h2>
+<p class="section-sub">Built for modern teams that move fast and need tools that keep up.</p>
+<div class="features-grid">📊 Real-time Analytics  Track every metric that matters with customisable dashboards and live data streams.  🔗 500+ Integrations  Connect your existing tools — Slack, Salesforce, HubSpot, Zapier, and hundreds more.  🤖 AI Automation  Let intelligent agents handle repetitive tasks so your team can f…</div>
+<div class="feature-item">📊 Real-time Analytics  Track every metric that matters with customisable dashboards and live data streams.</div>
+<div>📊</div>
+<h3>Real-time Analytics</h3>
+<p>Track every metric that matters with customisable dashboards and live data streams.</p>
+<div class="feature-item">🔗 500+ Integrations  Connect your existing tools — Slack, Salesforce, HubSpot, Zapier, and hundreds more.</div>
+<div>🔗</div>
+<h3>500+ Integrations</h3>
+<p>Connect your existing tools — Slack, Salesforce, HubSpot, Zapier, and hundreds more.</p>
+<div class="feature-item">🤖 AI Automation  Let intelligent agents handle repetitive tasks so your team can focus on outcomes.</div>
+<div>🤖</div>
+<h3>AI Automation</h3>
+<p>Let intelligent agents handle repetitive tasks so your team can focus on outcomes.</p>
+<div class="feature-item">🛡️ Enterprise Security  SOC 2 Type II certified, GDPR compliant, with SSO, RBAC, and audit logs included.</div>
+<div>🛡️</div>
+<h3>Enterprise Security</h3>
+<p>SOC 2 Type II certified, GDPR compliant, with SSO, RBAC, and audit logs included.</p>
+<div class="feature-item">📱 Mobile-first Design  Native iOS and Android apps with offline support so your team is always productive.</div>
+<div>📱</div>
+<h3>Mobile-first Design</h3>
+<p>Native iOS and Android apps with offline support so your team is always productive.</p>
+<div class="feature-item">🌍 Global Infrastructure  99.99% uptime SLA with data centres in the EU, US, and APAC for low-latency access.</div>
+<div>🌍</div>
+<h3>Global Infrastructure</h3>
+<p>99.99% uptime SLA with data centres in the EU, US, and APAC for low-latency access.</p>
+<div class="feature-item">📧 Unified Inbox  Email, chat, and SMS in one place — never lose track of a customer conversation again.</div>
+<div>📧</div>
+<h3>Unified Inbox</h3>
+<p>Email, chat, and SMS in one place — never lose track of a customer conversation again.</p>
+<div class="feature-item">📝 Document Workflow  Create, sign, and store contracts with e-signature support and automated reminders.</div>
+<div>📝</div>
+<h3>Document Workflow</h3>
+<p>Create, sign, and store contracts with e-signature support and automated reminders.</p>
+<div class="pricing-bg" id="pricing">Simple, transparent pricing  Start free. Scale as you grow. No surprises.  STARTER Free/mo Perfect for solo operators and small projects. Up to 2 users 5 projects 1 GB storage Community support Get started free PROFESSIONAL £49/mo per seat For growing teams that need more power. Unlimited users Unli…</div>
+<div class="section">Simple, transparent pricing  Start free. Scale as you grow. No surprises.  STARTER Free/mo Perfect for solo operators and small projects. Up to 2 users 5 projects 1 GB storage Community support Get started free PROFESSIONAL £49/mo per seat For growing teams that need more power. Unlimited users Unli…</div>
+<h2 class="section-title">Simple, transparent pricing</h2>
+<p class="section-sub">Start free. Scale as you grow. No surprises.</p>
+<div class="pricing-grid">STARTER Free/mo Perfect for solo operators and small projects. Up to 2 users 5 projects 1 GB storage Community support Get started free PROFESSIONAL £49/mo per seat For growing teams that need more power. Unlimited users Unlimited projects 100 GB storage Priority support API access Custom reports Ch…</div>
+<div>STARTER Free/mo Perfect for solo operators and small projects. Up to 2 users 5 projects 1 GB storage Community support Get started free</div>
+<div class="plan-name">STARTER</div>
+<div class="plan-price">Free/mo</div>
+<span>/mo</span>
+<div class="plan-desc">Perfect for solo operators and small projects.</div>
+<ul class="plan-features">Up to 2 users 5 projects 1 GB storage Community support</ul>
+<li>Up to 2 users</li>
+<li>5 projects</li>
+<li>1 GB storage</li>
+<li>Community support</li>
+<button class="plan-btn" type="button">Get started free</button>
+<div class="featured">PROFESSIONAL £49/mo per seat For growing teams that need more power. Unlimited users Unlimited projects 100 GB storage Priority support API access Custom reports Choose plan</div>
+<div class="plan-name">PROFESSIONAL</div>
+<div class="plan-price">£49/mo per seat</div>
+<span>/mo per seat</span>
+<div class="plan-desc">For growing teams that need more power.</div>
+<ul class="plan-features">Unlimited users Unlimited projects 100 GB storage Priority support API access Custom reports</ul>
+<li>Unlimited users</li>
+<li>Unlimited projects</li>
+<li>100 GB storage</li>
+<li>Priority support</li>
+<li>API access</li>
+<li>Custom reports</li>
+<button class="plan-btn primary" type="button" aria-label="Choose Professional plan">Choose plan</button>
+<div>ENTERPRISE Custom Tailored for large organisations with complex needs. Everything in Professional SSO &amp; SAML Dedicated infrastructure SLA guarantee Custom onboarding Named account manager Contact sales</div>
+<div class="plan-name">ENTERPRISE</div>
+<div class="plan-price">Custom</div>
+<div class="plan-desc">Tailored for large organisations with complex needs.</div>
+<ul class="plan-features">Everything in Professional SSO &amp; SAML Dedicated infrastructure SLA guarantee Custom onboarding Named account manager</ul>
+<li>Everything in Professional</li>
+<li>SSO &amp; SAML</li>
+<li>Dedicated infrastructure</li>
+<li>SLA guarantee</li>
+<li>Custom onboarding</li>
+<li>Named account manager</li>
+<button class="plan-btn" type="button">Contact sales</button>
+<div>How it works  Up and running in under an hour, no engineers required.  1 Create your account  Sign up in 60 seconds. No credit card, no commitment required.  2 Connect your tools  Import data and link to 500+ integrations in minutes.  3 Automate and grow  Build workflows and let Axiom handle the rep…</div>
+<h2 class="section-title">How it works</h2>
+<p class="section-sub">Up and running in under an hour, no engineers required.</p>
+<div>1 Create your account  Sign up in 60 seconds. No credit card, no commitment required.  2 Connect your tools  Import data and link to 500+ integrations in minutes.  3 Automate and grow  Build workflows and let Axiom handle the repetitive work.  4 Invite your team  Add teammates and assign roles — pro…</div>
+<div>1 Create your account  Sign up in 60 seconds. No credit card, no commitment required.</div>
+<div>1</div>
+<h3>Create your account</h3>
+<p>Sign up in 60 seconds. No credit card, no commitment required.</p>
+<div>2 Connect your tools  Import data and link to 500+ integrations in minutes.</div>
+<div>2</div>
+<h3>Connect your tools</h3>
+<p>Import data and link to 500+ integrations in minutes.</p>
+<div>3 Automate and grow  Build workflows and let Axiom handle the repetitive work.</div>
+<div>3</div>
+<h3>Automate and grow</h3>
+<p>Build workflows and let Axiom handle the repetitive work.</p>
+<div>4 Invite your team  Add teammates and assign roles — progress is already saved.</div>
+<div>4</div>
+<h3>Invite your team</h3>
+<p>Add teammates and assign roles — progress is already saved.</p>
+<div>5 Track performance  Live dashboards fill up as your business data starts flowing in.</div>
+<div>5</div>
+<h3>Track performance</h3>
+<p>Live dashboards fill up as your business data starts flowing in.</p>
+<div>6 Scale with confidence  Upgrade plans as you grow — all your data and workflows carry over.</div>
+<div>6</div>
+<h3>Scale with confidence</h3>
+<p>Upgrade plans as you grow — all your data and workflows carry over.</p>
+<div class="section">Compare plans in detail  Every feature, every tier — pick with confidence.  Feature	Starter	Professional	Enterprise Users	Up to 2	Unlimited	Unlimited Projects	5	Unlimited	Unlimited Storage	1 GB	100 GB/seat	Unlimited API access	—	✓	✓ Custom reports	—	✓	✓ Automation workflows	3	Unlimited	Unlimited Int…</div>
+<h2 class="section-title">Compare plans in detail</h2>
+<p class="section-sub">Every feature, every tier — pick with confidence.</p>
+<div>Feature	Starter	Professional	Enterprise Users	Up to 2	Unlimited	Unlimited Projects	5	Unlimited	Unlimited Storage	1 GB	100 GB/seat	Unlimited API access	—	✓	✓ Custom reports	—	✓	✓ Automation workflows	3	Unlimited	Unlimited Integrations	10	500+	500+ Mobile app	✓	✓	✓ E-signature	—	✓	✓ Audit logs	—	30 da…</div>
+<table>Feature	Starter	Professional	Enterprise Users	Up to 2	Unlimited	Unlimited Projects	5	Unlimited	Unlimited Storage	1 GB	100 GB/seat	Unlimited API access	—	✓	✓ Custom reports	—	✓	✓ Automation workflows	3	Unlimited	Unlimited Integrations	10	500+	500+ Mobile app	✓	✓	✓ E-signature	—	✓	✓ Audit logs	—	30 da…</table>
+<thead>Feature	Starter	Professional	Enterprise</thead>
+<tr>Feature	Starter	Professional	Enterprise</tr>
+<th>Feature</th>
+<th>Starter</th>
+<th>Professional</th>
+<th>Enterprise</th>
+<tbody>Users	Up to 2	Unlimited	Unlimited Projects	5	Unlimited	Unlimited Storage	1 GB	100 GB/seat	Unlimited API access	—	✓	✓ Custom reports	—	✓	✓ Automation workflows	3	Unlimited	Unlimited Integrations	10	500+	500+ Mobile app	✓	✓	✓ E-signature	—	✓	✓ Audit logs	—	30 days	2 years SSO / SAML	—	—	✓ Dedicated in…</tbody>
+<tr>Users	Up to 2	Unlimited	Unlimited</tr>
+<td>Users</td>
+<td>Up to 2</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<tr>Projects	5	Unlimited	Unlimited</tr>
+<td>Projects</td>
+<td>5</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<tr>Storage	1 GB	100 GB/seat	Unlimited</tr>
+<td>Storage</td>
+<td>1 GB</td>
+<td>100 GB/seat</td>
+<td>Unlimited</td>
+<tr>API access	—	✓	✓</tr>
+<td>API access</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Custom reports	—	✓	✓</tr>
+<td>Custom reports</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Automation workflows	3	Unlimited	Unlimited</tr>
+<td>Automation workflows</td>
+<td>3</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<tr>Integrations	10	500+	500+</tr>
+<td>Integrations</td>
+<td>10</td>
+<td>500+</td>
+<td>500+</td>
+<tr>Mobile app	✓	✓	✓</tr>
+<td>Mobile app</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<tr>E-signature	—	✓	✓</tr>
+<td>E-signature</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Audit logs	—	30 days	2 years</tr>
+<td>Audit logs</td>
+<td>—</td>
+<td>30 days</td>
+<td>2 years</td>
+<tr>SSO / SAML	—	—	✓</tr>
+<td>SSO / SAML</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>Dedicated infrastructure	—	—	✓</tr>
+<td>Dedicated infrastructure</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>SLA guarantee	—	99.9%	99.99%</tr>
+<td>SLA guarantee</td>
+<td>—</td>
+<td>99.9%</td>
+<td>99.99%</td>
+<tr>Support tier	Community	Priority email	Dedicated manager</tr>
+<td>Support tier</td>
+<td>Community</td>
+<td>Priority email</td>
+<td>Dedicated manager</td>
+<tr>Custom onboarding	—	—	✓</tr>
+<td>Custom onboarding</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>Data warehouse export	—	✓	✓</tr>
+<td>Data warehouse export</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Webhooks	—	✓	✓</tr>
+<td>Webhooks</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Sandbox environment	—	✓	✓</tr>
+<td>Sandbox environment</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>GDPR tools	Basic	Full	Full + DPA</tr>
+<td>GDPR tools</td>
+<td>Basic</td>
+<td>Full</td>
+<td>Full + DPA</td>
+<tr>White-label option	—	—	✓</tr>
+<td>White-label option</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>Guest users	—	✓	✓</tr>
+<td>Guest users</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>On-premises option	—	—	✓</tr>
+<td>On-premises option</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>RBAC	Basic	Full	Full + custom</tr>
+<td>RBAC</td>
+<td>Basic</td>
+<td>Full</td>
+<td>Full + custom</td>
+<tr>Multiregion hosting	—	—	✓</tr>
+<td>Multiregion hosting</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>AI features	Basic	Full	Full + custom</tr>
+<td>AI features</td>
+<td>Basic</td>
+<td>Full</td>
+<td>Full + custom</td>
+<tr>Two-factor auth	Optional	Optional	Enforced</tr>
+<td>Two-factor auth</td>
+<td>Optional</td>
+<td>Optional</td>
+<td>Enforced</td>
+<tr>Priority processing	—	—	✓</tr>
+<td>Priority processing</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<tr>Custom domain	—	✓	✓</tr>
+<td>Custom domain</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Advanced analytics	—	✓	✓</tr>
+<td>Advanced analytics</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>Slack integration	—	✓	✓</tr>
+<td>Slack integration</td>
+<td>—</td>
+<td>✓</td>
+<td>✓</td>
+<tr>99.99% uptime SLA	—	—	✓</tr>
+<td>99.99% uptime SLA</td>
+<td>—</td>
+<td>—</td>
+<td>✓</td>
+<div class="section">Frequently asked questions Can I change my plan at any time? Is my data safe with Axiom? Do you offer a free trial? What integrations do you support? Is there a minimum contract length? Can I import data from my existing tools? What kind of support do you provide? Can I use Axiom on mobile? Do you h…</div>
+<h2 class="section-title">Frequently asked questions</h2>
+<div class="faq-list">Can I change my plan at any time? Is my data safe with Axiom? Do you offer a free trial? What integrations do you support? Is there a minimum contract length? Can I import data from my existing tools? What kind of support do you provide? Can I use Axiom on mobile? Do you have an API? What currencies…</div>
+<details>Can I change my plan at any time?</details>
+<summary>Can I change my plan at any time?</summary>
+<p>Yes — you can upgrade, downgrade, or cancel your plan at any time from your account settings. Changes take effect at the next billing cycle.</p>
+<details>Is my data safe with Axiom?</details>
+<summary>Is my data safe with Axiom?</summary>
+<p>Absolutely. We are SOC 2 Type II certified, GDPR compliant, and use AES-256 encryption at rest and in transit. Your data is never sold or shared.</p>
+<details>Do you offer a free trial?</details>
+<summary>Do you offer a free trial?</summary>
+<p>Yes — all plans come with a 14-day free trial. No credit card required. You get full access to all features during the trial period.</p>
+<details>What integrations do you support?</details>
+<summary>What integrations do you support?</summary>
+<p>We support 500+ integrations including Salesforce, HubSpot, Slack, Stripe, Zapier, GitHub, Jira, Google Workspace, Microsoft 365, and many more.</p>
+<details>Is there a minimum contract length?</details>
+<summary>Is there a minimum contract length?</summary>
+<p>No — we offer month-to-month billing. Annual plans are available with a 20% discount if you prefer to pay upfront.</p>
+<details>Can I import data from my existing tools?</details>
+<summary>Can I import data from my existing tools?</summary>
+<p>Yes — we provide free data migration support for all new customers. Our team will help you import contacts, projects, and historical data.</p>
+<details>What kind of support do you provide?</details>
+<summary>What kind of support do you provide?</summary>
+<p>Starter plans have community support. Professional and above get email support with a 4-hour response SLA. Enterprise customers get a dedicated account manager.</p>
+<details>Can I use Axiom on mobile?</details>
+<summary>Can I use Axiom on mobile?</summary>
+<p>Yes — we have native iOS and Android apps with full feature parity, offline support, and push notifications for task updates.</p>
+<details>Do you have an API?</details>
+<summary>Do you have an API?</summary>
+<p>Yes — our REST API and GraphQL endpoint are available on Professional plans and above. Full documentation is available at docs.axiom.io/api.</p>
+<details>What currencies do you accept?</details>
+<summary>What currencies do you accept?</summary>
+<p>We accept GBP, USD, EUR, AUD, CAD, and JPY. Currency is set at account creation and can be changed by contacting our billing team.</p>
+<details>Is there a limit on storage?</details>
+<summary>Is there a limit on storage?</summary>
+<p>Starter plans include 1 GB. Professional plans include 100 GB per seat. Enterprise plans have unlimited storage with custom quotas available.</p>
+<details>How does user management work?</details>
+<summary>How does user management work?</summary>
+<p>Administrators can invite users, set roles (Admin, Manager, Member, Viewer), and manage permissions from the Team Settings panel.</p>
+<details>Can I customise workflows?</details>
+<summary>Can I customise workflows?</summary>
+<p>Yes — the workflow builder supports drag-and-drop automation with triggers, conditions, and actions. Templates are available for common use cases.</p>
+<details>What happens when my trial ends?</details>
+<summary>What happens when my trial ends?</summary>
+<p>At the end of your 14-day trial you can choose a paid plan or stay on the free Starter tier. Your data is preserved either way for 90 days.</p>
+<details>Do you offer educational discounts?</details>
+<summary>Do you offer educational discounts?</summary>
+<p>Yes — verified educational institutions and non-profits receive a 50% discount. Contact our team with your organisation credentials to apply.</p>
+<details>How often do you release updates?</details>
+<summary>How often do you release updates?</summary>
+<p>We ship weekly product updates and release notes are published at axiom.io/changelog. Major releases are announced 30 days in advance.</p>
+<details>Is there a sandbox environment?</details>
+<summary>Is there a sandbox environment?</summary>
+<p>Professional and Enterprise plans include a sandbox workspace for testing integrations and automations without affecting live data.</p>
+<details>Can I white-label Axiom for my clients?</details>
+<summary>Can I white-label Axiom for my clients?</summary>
+<p>Yes — our white-label partner programme allows agencies and resellers to offer Axiom under their own brand. Contact partnerships@axiom.io to apply.</p>
+<details>What reporting features are available?</details>
+<summary>What reporting features are available?</summary>
+<p>All plans include standard reports. Professional plans unlock custom report builders, scheduled email exports, and data warehouse integrations.</p>
+<details>Is single sign-on supported?</details>
+<summary>Is single sign-on supported?</summary>
+<p>SSO via SAML 2.0 is available on Enterprise plans. We support Okta, Azure AD, Google Workspace, and any other SAML-compatible identity provider.</p>
+<details>How do I contact billing support?</details>
+<summary>How do I contact billing support?</summary>
+<p>Email billing@axiom.io or use the in-app chat. We aim to respond within 2 business hours on weekdays and 24 hours on weekends.</p>
+<details>Do you offer volume discounts?</details>
+<summary>Do you offer volume discounts?</summary>
+<p>Yes — volume pricing is available for teams of 50+ users. Contact our sales team for a custom quote tailored to your organisation size and needs.</p>
+<details>What happens to my data if I cancel?</details>
+<summary>What happens to my data if I cancel?</summary>
+<p>Your data is retained for 90 days after cancellation. You can export everything in JSON, CSV, or PDF format at any time during this window.</p>
+<details>Can I invite external collaborators?</details>
+<summary>Can I invite external collaborators?</summary>
+<p>Yes — you can invite guest users to specific projects. Guests have limited permissions and do not count toward your seat limit on paid plans.</p>
+<details>Is there a public status page?</details>
+<summary>Is there a public status page?</summary>
+<p>Yes — real-time status and incident history are available at status.axiom.io. You can subscribe to email or SMS alerts for incidents.</p>
+<details>Do you support multi-language interfaces?</details>
+<summary>Do you support multi-language interfaces?</summary>
+<p>Yes — Axiom is available in English, French, German, Spanish, Portuguese, Japanese, and Mandarin. More languages are added quarterly.</p>
+<details>What payment methods do you accept?</details>
+<summary>What payment methods do you accept?</summary>
+<p>We accept Visa, Mastercard, American Express, PayPal, and bank transfer (for annual Enterprise plans). Payment details are stored securely via Stripe.</p>
+<details>How do I get started after sign-up?</details>
+<summary>How do I get started after sign-up?</summary>
+<p>After sign-up, our onboarding wizard guides you through key setup steps. You'll also receive a welcome email with video tutorials and our getting-started guide.</p>
+<details>Can I run Axiom on-premises?</details>
+<summary>Can I run Axiom on-premises?</summary>
+<p>On-premises deployment is available for Enterprise customers with specific data residency requirements. Contact us to discuss your infrastructure constraints.</p>
+<details>What is your data retention policy?</details>
+<summary>What is your data retention policy?</summary>
+<p>Active account data is retained indefinitely. Deleted items are soft-deleted for 30 days before permanent removal. Audit logs are retained for 2 years.</p>
+<div class="testimonials-bg">Loved by teams worldwide  40,000+ companies trust Axiom to run their operations.  "Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."  Priya Sharma Head of Operations, Finova  "The automation features alone saved my team 12 hours a week. Setup …</div>
+<div class="section">Loved by teams worldwide  40,000+ companies trust Axiom to run their operations.  "Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."  Priya Sharma Head of Operations, Finova  "The automation features alone saved my team 12 hours a week. Setup …</div>
+<h2 class="section-title">Loved by teams worldwide</h2>
+<p class="section-sub">40,000+ companies trust Axiom to run their operations.</p>
+<div class="testimonials-grid">"Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."  Priya Sharma Head of Operations, Finova  "The automation features alone saved my team 12 hours a week. Setup was straightforward and support was excellent."  James Kowalski CTO, Bluepeak  "We…</div>
+<div>"Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."  Priya Sharma Head of Operations, Finova</div>
+<p class="testimonial-quote">"Axiom replaced four separate tools for us. The ROI was visible within the first month — highly recommend."</p>
+<div class="testimonial-author">Priya Sharma</div>
+<div class="testimonial-role">Head of Operations, Finova</div>
+<div>"The automation features alone saved my team 12 hours a week. Setup was straightforward and support was excellent."  James Kowalski CTO, Bluepeak</div>
+<p class="testimonial-quote">"The automation features alone saved my team 12 hours a week. Setup was straightforward and support was excellent."</p>
+<div class="testimonial-author">James Kowalski</div>
+<div class="testimonial-role">CTO, Bluepeak</div>
+<div>"We migrated from a custom-built system in under a week. Axiom's import tools are genuinely impressive."  Sara Okonkwo Product Manager, TalentLab</div>
+<p class="testimonial-quote">"We migrated from a custom-built system in under a week. Axiom's import tools are genuinely impressive."</p>
+<div class="testimonial-author">Sara Okonkwo</div>
+<div class="testimonial-role">Product Manager, TalentLab</div>
+<div>"Our customer satisfaction scores went up 22% after switching to Axiom's unified inbox. Game changer."  Luca Ferretti Director of CX, Luminary</div>
+<p class="testimonial-quote">"Our customer satisfaction scores went up 22% after switching to Axiom's unified inbox. Game changer."</p>
+<div class="testimonial-author">Luca Ferretti</div>
+<div class="testimonial-role">Director of CX, Luminary</div>
+<div>"The pricing is transparent and fair. We've scaled from 10 to 80 users without any awkward contract renegotiations."  Maria Lindqvist CFO, Nordelv</div>
+<p class="testimonial-quote">"The pricing is transparent and fair. We've scaled from 10 to 80 users without any awkward contract renegotiations."</p>
+<div class="testimonial-author">Maria Lindqvist</div>
+<div class="testimonial-role">CFO, Nordelv</div>
+<div>"Best onboarding experience I've had with enterprise software. The team was responsive and the docs are excellent."  Kwame Asante IT Lead, Meridian Group</div>
+<p class="testimonial-quote">"Best onboarding experience I've had with enterprise software. The team was responsive and the docs are excellent."</p>
+<div class="testimonial-author">Kwame Asante</div>
+<div class="testimonial-role">IT Lead, Meridian Group</div>
+<div>"Axiom's API is clean, well-documented, and reliable. We built our internal dashboard on top of it in two sprints."  Elena Petrova Senior Engineer, Synaptix</div>
+<p class="testimonial-quote">"Axiom's API is clean, well-documented, and reliable. We built our internal dashboard on top of it in two sprints."</p>
+<div class="testimonial-author">Elena Petrova</div>
+<div class="testimonial-role">Senior Engineer, Synaptix</div>
+<div>"We evaluated six platforms. Axiom won on features, UX, and pricing. The trial period sealed the deal."  Tomás García CEO, Orbis Digital</div>
+<p class="testimonial-quote">"We evaluated six platforms. Axiom won on features, UX, and pricing. The trial period sealed the deal."</p>
+<div class="testimonial-author">Tomás García</div>
+<div class="testimonial-role">CEO, Orbis Digital</div>
+<div>"Our compliance team loved the audit trail feature. It made our SOC 2 audit significantly easier to navigate."  Nadia Hakim Compliance Officer, Certex</div>
+<p class="testimonial-quote">"Our compliance team loved the audit trail feature. It made our SOC 2 audit significantly easier to navigate."</p>
+<div class="testimonial-author">Nadia Hakim</div>
+<div class="testimonial-role">Compliance Officer, Certex</div>
+<div>"The mobile app is genuinely better than most native apps I've used. My field team adopted it immediately."  Derek Wallis Operations Director, Fieldcraft</div>
+<p class="testimonial-quote">"The mobile app is genuinely better than most native apps I've used. My field team adopted it immediately."</p>
+<div class="testimonial-author">Derek Wallis</div>
+<div class="testimonial-role">Operations Director, Fieldcraft</div>
+<div>"Switched from a competitor in January and haven't looked back. The reporting features are in a different league."  Anika Bauer Data Analyst, Vantage Solutions</div>
+<p class="testimonial-quote">"Switched from a competitor in January and haven't looked back. The reporting features are in a different league."</p>
+<div class="testimonial-author">Anika Bauer</div>
+<div class="testimonial-role">Data Analyst, Vantage Solutions</div>
+<div>"Customer support resolved every issue within the hour. That level of service is rare in enterprise SaaS."  Oliver Chen Founder, Proxima Labs</div>
+<p class="testimonial-quote">"Customer support resolved every issue within the hour. That level of service is rare in enterprise SaaS."</p>
+<div class="testimonial-author">Oliver Chen</div>
+<div class="testimonial-role">Founder, Proxima Labs</div>
+<div>"The Zapier integration works flawlessly. We have 30+ zaps running and they've never dropped a record."  Isabelle Morel Growth Manager, Helixa</div>
+<p class="testimonial-quote">"The Zapier integration works flawlessly. We have 30+ zaps running and they've never dropped a record."</p>
+<div class="testimonial-author">Isabelle Morel</div>
+<div class="testimonial-role">Growth Manager, Helixa</div>
+<div>"We process 50,000 records a day through Axiom. Not once has it stumbled. The reliability is phenomenal."  Stefan Nowak Engineering Manager, DataVault</div>
+<p class="testimonial-quote">"We process 50,000 records a day through Axiom. Not once has it stumbled. The reliability is phenomenal."</p>
+<div class="testimonial-author">Stefan Nowak</div>
+<div class="testimonial-role">Engineering Manager, DataVault</div>
+<div>"The SSO setup with Okta took 20 minutes. Our IT team couldn't believe how straightforward the process was."  Camille Dupont IT Security Lead, Euroclear</div>
+<p class="testimonial-quote">"The SSO setup with Okta took 20 minutes. Our IT team couldn't believe how straightforward the process was."</p>
+<div class="testimonial-author">Camille Dupont</div>
+<div class="testimonial-role">IT Security Lead, Euroclear</div>
+<div>"The analytics dashboards are beautiful and informative. Our board now asks for Axiom exports in every meeting."  Raj Pillai VP Strategy, Kestrel Finance</div>
+<p class="testimonial-quote">"The analytics dashboards are beautiful and informative. Our board now asks for Axiom exports in every meeting."</p>
+<div class="testimonial-author">Raj Pillai</div>
+<div class="testimonial-role">VP Strategy, Kestrel Finance</div>
+<div>"Onboarding our remote team was seamless. The guided setup wizard anticipates exactly the questions you have."  Yuki Tanaka People Lead, Aeroform</div>
+<p class="testimonial-quote">"Onboarding our remote team was seamless. The guided setup wizard anticipates exactly the questions you have."</p>
+<div class="testimonial-author">Yuki Tanaka</div>
+<div class="testimonial-role">People Lead, Aeroform</div>
+<div>"We use Axiom's white-label offering for all our clients. The reseller programme is well-structured and profitable."  Brendan O'Sullivan Partner, TechBridge Agency</div>
+<p class="testimonial-quote">"We use Axiom's white-label offering for all our clients. The reseller programme is well-structured and profitable."</p>
+<div class="testimonial-author">Brendan O'Sullivan</div>
+<div class="testimonial-role">Partner, TechBridge Agency</div>
+<div>"The document signing workflow cut our contract cycle from 8 days to under 24 hours. Massive time saver."  Fiona MacAlister Legal Operations, Thornfield LLP</div>
+<p class="testimonial-quote">"The document signing workflow cut our contract cycle from 8 days to under 24 hours. Massive time saver."</p>
+<div class="testimonial-author">Fiona MacAlister</div>
+<div class="testimonial-role">Legal Operations, Thornfield LLP</div>
+<div>"The custom field builder let us model our niche workflow perfectly. We didn't have to compromise on any feature."  Hans Zimmermann Product Owner, Construtura</div>
+<p class="testimonial-quote">"The custom field builder let us model our niche workflow perfectly. We didn't have to compromise on any feature."</p>
+<div class="testimonial-author">Hans Zimmermann</div>
+<div class="testimonial-role">Product Owner, Construtura</div>
+<div>"The offline mobile support is a lifesaver for our field inspectors. Data syncs perfectly when they reconnect."  Amara Diallo Field Operations Manager, TerraTrack</div>
+<p class="testimonial-quote">"The offline mobile support is a lifesaver for our field inspectors. Data syncs perfectly when they reconnect."</p>
+<div class="testimonial-author">Amara Diallo</div>
+<div class="testimonial-role">Field Operations Manager, TerraTrack</div>
+<div>"Multi-language support meant we could roll out to our offices in Paris, Berlin, and Tokyo simultaneously."  Sophie Renard Global Ops, Luxan Brands</div>
+<p class="testimonial-quote">"Multi-language support meant we could roll out to our offices in Paris, Berlin, and Tokyo simultaneously."</p>
+<div class="testimonial-author">Sophie Renard</div>
+<div class="testimonial-role">Global Ops, Luxan Brands</div>
+<div>"We run 200+ automated workflows in Axiom. The monitoring dashboard tells us immediately if anything fails."  Carlos Mendoza Automation Lead, Velocita</div>
+<p class="testimonial-quote">"We run 200+ automated workflows in Axiom. The monitoring dashboard tells us immediately if anything fails."</p>
+<div class="testimonial-author">Carlos Mendoza</div>
+<div class="testimonial-role">Automation Lead, Velocita</div>
+<div>"The data warehouse connector to BigQuery was configured in an afternoon. No custom code required at all."  Lin Wei Data Engineer, Pulse Analytics</div>
+<p class="testimonial-quote">"The data warehouse connector to BigQuery was configured in an afternoon. No custom code required at all."</p>
+<div class="testimonial-author">Lin Wei</div>
+<div class="testimonial-role">Data Engineer, Pulse Analytics</div>
+<div>"Security was our top concern. Axiom's pen test reports and certifications gave our CISO the confidence to approve."  Ibrahim Al-Rashid CISO, Meridian Bank</div>
+<p class="testimonial-quote">"Security was our top concern. Axiom's pen test reports and certifications gave our CISO the confidence to approve."</p>
+<div class="testimonial-author">Ibrahim Al-Rashid</div>
+<div class="testimonial-role">CISO, Meridian Bank</div>
+<div>"The volume pricing unlocked significant savings as our team grew. Axiom scales with us, not against us."  Petra Horáčková CFO, Scalepath</div>
+<p class="testimonial-quote">"The volume pricing unlocked significant savings as our team grew. Axiom scales with us, not against us."</p>
+<div class="testimonial-author">Petra Horáčková</div>
+<div class="testimonial-role">CFO, Scalepath</div>
+<div>"Guest users for client review have been a game-changer. No extra seats, clean permissions, clients love it."  Samuel Oduya Agency Director, Clearpoint Creative</div>
+<p class="testimonial-quote">"Guest users for client review have been a game-changer. No extra seats, clean permissions, clients love it."</p>
+<div class="testimonial-author">Samuel Oduya</div>
+<div class="testimonial-role">Agency Director, Clearpoint Creative</div>
+<div>"Migrating from Notion took an afternoon. Axiom's import tool handled our structure perfectly without manual cleanup."  Maya Robertson COO, Waypoint Ventures</div>
+<p class="testimonial-quote">"Migrating from Notion took an afternoon. Axiom's import tool handled our structure perfectly without manual cleanup."</p>
+<div class="testimonial-author">Maya Robertson</div>
+<div class="testimonial-role">COO, Waypoint Ventures</div>
+<div>"The changelog is a delight — clear, concise, and released every week. It shows the team really ships."  Anders Lindgren Tech Lead, Nordvind</div>
+<p class="testimonial-quote">"The changelog is a delight — clear, concise, and released every week. It shows the team really ships."</p>
+<div class="testimonial-author">Anders Lindgren</div>
+<div class="testimonial-role">Tech Lead, Nordvind</div>
+<div>"The educational discount made Axiom accessible for our research group. Features rival tools costing ten times more."  Prof. Ana Sousa Research Lead, Universidade Nova</div>
+<p class="testimonial-quote">"The educational discount made Axiom accessible for our research group. Features rival tools costing ten times more."</p>
+<div class="testimonial-author">Prof. Ana Sousa</div>
+<div class="testimonial-role">Research Lead, Universidade Nova</div>
+<div>"Axiom's on-premises deployment option was the only reason we could get regulatory approval. Essential for us."  Dmitri Volkov CTO, SecureVault</div>
+<p class="testimonial-quote">"Axiom's on-premises deployment option was the only reason we could get regulatory approval. Essential for us."</p>
+<div class="testimonial-author">Dmitri Volkov</div>
+<div class="testimonial-role">CTO, SecureVault</div>
+<div>"The sandbox environment let us fully test our integration before going live. Saved us from a significant outage."  Rachel Ng Release Manager, Apexia</div>
+<p class="testimonial-quote">"The sandbox environment let us fully test our integration before going live. Saved us from a significant outage."</p>
+<div class="testimonial-author">Rachel Ng</div>
+<div class="testimonial-role">Release Manager, Apexia</div>
+<div>"The GraphQL API let us build a custom internal tool in React in a single sprint. Documentation is stellar."  Chidi Okafor Senior Developer, StackBridge</div>
+<p class="testimonial-quote">"The GraphQL API let us build a custom internal tool in React in a single sprint. Documentation is stellar."</p>
+<div class="testimonial-author">Chidi Okafor</div>
+<div class="testimonial-role">Senior Developer, StackBridge</div>
+<div>"Status page transparency during incidents is exemplary. We always know what's happening and when it'll be fixed."  Fatima El-Amin Platform Lead, Nexaris</div>
+<p class="testimonial-quote">"Status page transparency during incidents is exemplary. We always know what's happening and when it'll be fixed."</p>
+<div class="testimonial-author">Fatima El-Amin</div>
+<div class="testimonial-role">Platform Lead, Nexaris</div>
+<div>"Multi-currency billing meant rolling out to our Latin American subsidiaries was a single config change."  Roberto Almeida Finance Director, Grupo Clave</div>
+<p class="testimonial-quote">"Multi-currency billing meant rolling out to our Latin American subsidiaries was a single config change."</p>
+<div class="testimonial-author">Roberto Almeida</div>
+<div class="testimonial-role">Finance Director, Grupo Clave</div>
+<div>"The 90-day data retention after cancellation gave us breathing room during a tool evaluation. Thoughtful policy."  Emma Johansson Operations Analyst, Fluxpoint</div>
+<p class="testimonial-quote">"The 90-day data retention after cancellation gave us breathing room during a tool evaluation. Thoughtful policy."</p>
+<div class="testimonial-author">Emma Johansson</div>
+<div class="testimonial-role">Operations Analyst, Fluxpoint</div>
+<div>"We have a non-technical founding team. Axiom's no-code automation builder let us ship our ops stack ourselves."  Nia Williams Co-founder, Bloombase</div>
+<p class="testimonial-quote">"We have a non-technical founding team. Axiom's no-code automation builder let us ship our ops stack ourselves."</p>
+<div class="testimonial-author">Nia Williams</div>
+<div class="testimonial-role">Co-founder, Bloombase</div>
+<div>"Axiom's audit logs satisfied every question from our external auditors. Two-year retention is exactly what we needed."  Paul Nakamura Internal Audit, Tokai Holdings</div>
+<p class="testimonial-quote">"Axiom's audit logs satisfied every question from our external auditors. Two-year retention is exactly what we needed."</p>
+<div class="testimonial-author">Paul Nakamura</div>
+<div class="testimonial-role">Internal Audit, Tokai Holdings</div>
+<div>"The soft-delete feature saved us twice this quarter when users accidentally removed project data. Lifesaver."  Chiara Russo Product Owner, Vitale</div>
+<p class="testimonial-quote">"The soft-delete feature saved us twice this quarter when users accidentally removed project data. Lifesaver."</p>
+<div class="testimonial-author">Chiara Russo</div>
+<div class="testimonial-role">Product Owner, Vitale</div>
+<div>"After three years on Axiom I still learn new features that simplify my workflow. The product keeps getting better."  George Papadopoulos Managing Director, Helios Digital</div>
+<p class="testimonial-quote">"After three years on Axiom I still learn new features that simplify my workflow. The product keeps getting better."</p>
+<div class="testimonial-author">George Papadopoulos</div>
+<div class="testimonial-role">Managing Director, Helios Digital</div>
+<div class="partners-section">TRUSTED BY TEAMS AT</div>
+<p>TRUSTED BY TEAMS AT</p>
+<div class="partners-logos"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="signup-bg" id="signup">Start your free trial  14 days free. No credit card required.  First name Last name Work email Company name Team size 1–5 6–20 21–100 100+ I agree to the Terms of Service and Privacy Policy Create my free account</div>
+<div class="signup-form-wrap">Start your free trial  14 days free. No credit card required.  First name Last name Work email Company name Team size 1–5 6–20 21–100 100+ I agree to the Terms of Service and Privacy Policy Create my free account</div>
+<h2>Start your free trial</h2>
+<p>14 days free. No credit card required.</p>
+<div class="form-row">First name Last name</div>
+<div>First name</div>
+<label class="form-label">First name</label>
+<input type="text" name="first_name" placeholder="Jane" />
+<div>Last name</div>
+<label class="form-label">Last name</label>
+<input type="text" name="last_name" placeholder="Smith" />
+<label class="form-label">Work email</label>
+<input type="email" name="email" placeholder="jane@company.com" />
+<label class="form-label">Company name</label>
+<input type="text" name="company_name" placeholder="Acme Inc." />
+<label class="form-label">Team size</label>
+<select name="team_size">1–5 6–20 21–100 100+</select>
+<option>1–5</option>
+<option>6–20</option>
+<option>21–100</option>
+<option>100+</option>
+<div class="terms-row">I agree to the Terms of Service and Privacy Policy</div>
+<input type="checkbox" name="terms_agree" id="terms-checkbox" />
+<label for="terms-checkbox">I agree to the Terms of Service and Privacy Policy</label>
+<a href="/terms">Terms of Service</a>
+<a href="/privacy">Privacy Policy</a>
+<button type="submit" class="signup-submit">Create my free account</button>
+<div class="contact-bg">Talk to sales  Have questions about Enterprise? Our team responds within one business day.      Send message</div>
+<div class="contact-wrap">Talk to sales  Have questions about Enterprise? Our team responds within one business day.      Send message</div>
+<h2>Talk to sales</h2>
+<p>Have questions about Enterprise? Our team responds within one business day.</p>
+<input type="text" name="contact_name" placeholder="Your name" />
+<input type="email" name="contact_email" placeholder="Work email" />
+<input type="text" name="contact_company" placeholder="Company" />
+<textarea name="contact_message" placeholder="Tell us about your use case..."></textarea>
+<button type="submit" class="contact-submit-btn" aria-label="Submit contact form">Send message</button>
+<footer>Axiom  ·  About Careers Blog Press Privacy Terms Cookies Security Accessibility © 2026 Axiom Technologies Ltd. All rights reserved. Registered in England &amp; Wales No. 09876543.</footer>
+<div>Axiom  ·  About Careers Blog Press Privacy Terms Cookies Security Accessibility</div>
+<strong>Axiom</strong>
+<a href="/about">About</a>
+<a href="/careers">Careers</a>
+<a href="/blog">Blog</a>
+<a href="/press">Press</a>
+<a href="/legal/privacy">Privacy</a>
+<a href="/legal/terms">Terms</a>
+<a href="/legal/cookies">Cookies</a>
+<a href="/security">Security</a>
+<a href="/accessibility">Accessibility</a>
+<div>© 2026 Axiom Technologies Ltd. All rights reserved. Registered in England &amp; Wales No. 09876543.</div>

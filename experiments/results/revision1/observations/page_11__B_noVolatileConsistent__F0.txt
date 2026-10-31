@@ -1,0 +1,79 @@
+<header>ConnectNow Plans Devices Roaming Support My account</header>
+<a class="logo" href="/">ConnectNow</a>
+<nav aria-label="Main navigation">Plans Devices Roaming Support My account</nav>
+<a href="/plans">Plans</a>
+<a href="/devices">Devices</a>
+<a href="/roaming">Roaming</a>
+<a href="/support">Support</a>
+<a href="/account">My account</a>
+<div class="current-plan-bar">You are on the Basic plan Manage billing ›</div>
+<span class="current-plan-label">You are on the</span>
+<span class="current-plan-name" data-testid="current-plan-label" aria-label="Your current plan: Basic">Basic plan</span>
+<a class="upgrade-link" href="/billing">Manage billing ›</a>
+<div class="page-header">Choose Your Plan  Simple, transparent pricing. No hidden fees. Cancel or switch any time.</div>
+<h1>Choose Your Plan</h1>
+<p>Simple, transparent pricing. No hidden fees. Cancel or switch any time.</p>
+<div class="billing-row">Monthly Annual Save 20%</div>
+<span class="billing-label">Monthly</span>
+<button type="button" data-testid="billing-toggle" aria-label="Toggle between monthly and annual billing"></button>
+<svg aria-hidden="true"></svg>
+<span class="billing-label">Annual</span>
+<span class="billing-badge">Save 20%</span>
+<div class="plans-section"></div>
+<div data-shadow="true" class="grid">Basic £9.99 per month  5 GB data  Unlimited calls &amp; texts 5G included Wi-Fi calling EU roaming 30 days/yr Select Basic  Current plan  Most Popular Plus £19.99 per month  Unlimited data  Unlimited calls &amp; texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priorit…</div>
+<div data-shadow="true" class="card">Basic £9.99 per month  5 GB data  Unlimited calls &amp; texts 5G included Wi-Fi calling EU roaming 30 days/yr Select Basic  Current plan</div>
+<div data-shadow="true" class="plan-name">Basic</div>
+<div data-shadow="true" class="price" id="basic-price-display">£9.99</div>
+<div data-shadow="true" class="per-month">per month</div>
+<p data-shadow="true" class="data-row" id="basic-data-allowance" aria-label="Basic plan included data: 5 GB">5 GB data</p>
+<ul data-shadow="true" class="features">Unlimited calls &amp; texts 5G included Wi-Fi calling EU roaming 30 days/yr</ul>
+<button data-shadow="true" type="button" class="btn-plan btn-basic" data-testid="select-basic-btn" aria-label="Select Basic plan for £9.99 per month">Select Basic</button>
+<p data-shadow="true" class="data-row">Current plan</p>
+<div data-shadow="true" class="card featured">Most Popular Plus £19.99 per month  Unlimited data  Unlimited calls &amp; texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priority network access Select Plus</div>
+<div data-shadow="true" class="badge" aria-hidden="true">Most Popular</div>
+<div data-shadow="true" class="plan-name">Plus</div>
+<div data-shadow="true" class="price" id="plus-price-display">£19.99</div>
+<div data-shadow="true" class="per-month">per month</div>
+<p data-shadow="true" class="data-row" id="plus-data-allowance" aria-label="Data allowance for Plus plan">Unlimited data</p>
+<ul data-shadow="true" class="features">Unlimited calls &amp; texts 5G Ultra included Wi-Fi calling EU roaming unlimited International calls 60 min/mo Priority network access</ul>
+<button data-shadow="true" type="button" class="btn-plan btn-plus" data-testid="select-plus-btn" aria-label="Select Plus plan for £19.99 per month">Select Plus</button>
+<div data-shadow="true" class="card">Pro £39.99 per month  £9.99 / month baseline  Unlimited calls &amp; texts 5G Ultra Max included Wi-Fi calling Global roaming 90 countries International calls unlimited Priority &amp; dedicated network lane Hotspot 100 GB/mo Select Pro Need more? Contact Sales ›</div>
+<div data-shadow="true" class="plan-name">Pro</div>
+<div data-shadow="true" class="price" id="pro-price-display">£39.99</div>
+<div data-shadow="true" class="per-month">per month</div>
+<p data-shadow="true" class="data-row" aria-label="Basic plan price: £9.99 per month">£9.99 / month baseline</p>
+<ul data-shadow="true" class="features">Unlimited calls &amp; texts 5G Ultra Max included Wi-Fi calling Global roaming 90 countries International calls unlimited Priority &amp; dedicated network lane Hotspot 100 GB/mo</ul>
+<button data-shadow="true" type="button" class="btn-plan btn-pro" data-testid="select-pro-btn" aria-label="Select Pro plan for £39.99 per month">Select Pro</button>
+<a data-shadow="true" href="/contact-sales" aria-label="Contact sales for Enterprise pricing">Need more? Contact Sales ›</a>
+<div class="actions-bar">Compare all plan features Enterprise &amp; teams ›</div>
+<button class="btn-compare" type="button" data-testid="compare-all-plans-btn">Compare all plan features</button>
+<button class="btn-enterprise" type="button">Enterprise &amp; teams ›</button>
+<footer>PRODUCTS Mobile plans Broadband Devices HELP FAQs Contact us Coverage checker LEGAL Terms Privacy Cookies</footer>
+<div class="footer-inner">PRODUCTS Mobile plans Broadband Devices HELP FAQs Contact us Coverage checker LEGAL Terms Privacy Cookies</div>
+<div class="footer-col">PRODUCTS Mobile plans Broadband Devices</div>
+<h4>PRODUCTS</h4>
+<ul>Mobile plans Broadband Devices</ul>
+<li>Mobile plans</li>
+<a href="/plans">Mobile plans</a>
+<li>Broadband</li>
+<a href="/broadband">Broadband</a>
+<li>Devices</li>
+<a href="/devices">Devices</a>
+<div class="footer-col">HELP FAQs Contact us Coverage checker</div>
+<h4>HELP</h4>
+<ul>FAQs Contact us Coverage checker</ul>
+<li>FAQs</li>
+<a href="/faq">FAQs</a>
+<li>Contact us</li>
+<a href="/contact">Contact us</a>
+<li>Coverage checker</li>
+<a href="/coverage">Coverage checker</a>
+<div class="footer-col">LEGAL Terms Privacy Cookies</div>
+<h4>LEGAL</h4>
+<ul>Terms Privacy Cookies</ul>
+<li>Terms</li>
+<a href="/terms">Terms</a>
+<li>Privacy</li>
+<a href="/privacy">Privacy</a>
+<li>Cookies</li>
+<a href="/cookies">Cookies</a>

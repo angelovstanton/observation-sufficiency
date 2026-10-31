@@ -1,0 +1,267 @@
+header class=site-header {HomeFind Search Buy Rent Sell New homes Commercial Find an agent Set alert}
+div class=header-inner {HomeFind Search Buy Rent Sell New homes Commercial Find an agent Set alert}
+a href=/ class=logo {HomeFind}
+div class=nav-search {Search}
+input type=text class=nav-search__input placeholder="Quick search…"
+button class=nav-search__btn type=button {Search}
+nav class=header-nav {Buy Rent Sell New homes Commercial Find an agent Set alert}
+a href=/buy {Buy}
+a href=/rent {Rent}
+a href=/sell {Sell}
+a href=/new-homes {New homes}
+a href=/commercial {Commercial}
+a href=/agents {Find an agent}
+a href=/alerts class=btn-alert {Set alert}
+section class=search-hero {Any beds 1+ bed 2+ beds 3+ beds 4+ beds 5+ beds Search}
+div class=search-hero__inner {Any beds 1+ bed 2+ beds 3+ beds 4+ beds 5+ beds Search}
+form class=search-form {Any beds 1+ bed 2+ beds 3+ beds 4+ beds 5+ beds Search}
+div class=search-form__location
+input type=text name=location placeholder="Enter city, town or postcode"
+div class=search-form__divider
+div class=search-form__filters {Any beds 1+ bed 2+ beds 3+ beds 4+ beds 5+ beds}
+input type=number name=price_min placeholder="Min price" class=search-form__filter-input
+input type=number name=price_max placeholder="Max price" class=search-form__filter-input
+select name=bedrooms class=search-form__select {Any beds 1+ bed 2+ beds 3+ beds 4+ beds 5+ beds}
+option {Any beds}
+option value=1 {1+ bed}
+option value=2 {2+ beds}
+option value=3 {3+ beds}
+option value=4 {4+ beds}
+option value=5 {5+ beds}
+button type=submit class=search-form__btn {Search}
+div class=filter-chips {Property type: Houses Flats New homes Retirement homes Land Commercial}
+div class=filter-chips__inner {Property type: Houses Flats New homes Retirement homes Land Commercial}
+span class=filter-chips__label {Property type:}
+button class="filter-chip active" type=button {Houses}
+button class=filter-chip type=button {Flats}
+button class=filter-chip type=button {New homes}
+button class=filter-chip type=button {Retirement homes}
+button class=filter-chip type=button {Land}
+button class=filter-chip type=button {Commercial}
+div class=results-bar {1,247 properties found in Manchester and surrounding area Sort by:  Most recent Price (low to high) Price (high to low) Nearest first Largest first}
+div class=results-count {1,247 properties found in Manchester and surrounding area}
+span {1,247 properties found}
+span class=results-area {in Manchester and surrounding area}
+div class=sort-wrap {Sort by:  Most recent Price (low to high) Price (high to low) Nearest first Largest first}
+label {Sort by:  Most recent Price (low to high) Price (high to low) Nearest first Largest first}
+select aria-label="Sort results by" {Most recent Price (low to high) Price (high to low) Nearest first Largest first}
+option value=most-recent {Most recent}
+option value=price-asc {Price (low to high)}
+option value=price-desc {Price (high to low)}
+option value=nearest {Nearest first}
+option value=largest {Largest first}
+div class=property-grid {🏡  £385,000  14 Elmwood Close, Manchester, M14 5QR 🛏 4 beds 🛁 2 baths 📐 1,340 sq ft Semi-detached ♡ 🏘  £259,950  7 Birchwood Avenue, Salford, M6 8DT 🛏 3 beds 🛁 1 bath 📐 980 sq ft Terraced ♡ 🏠  £449,000  22 Oak Road, Didsbury, M20 2JX 🛏 4 beds 🛁 2 baths 📐 1,560 sq ft Detached ♡ 🏡  £195,0…}
+article class=property-card {🏡  £385,000  14 Elmwood Close, Manchester, M14 5QR 🛏 4 beds 🛁 2 baths 📐 1,340 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£385,000  14 Elmwood Close, Manchester, M14 5QR 🛏 4 beds 🛁 2 baths 📐 1,340 sq ft Semi-detached ♡}
+p class=property-card__price {£385,000}
+a href=/property/14-elmwood-close-manchester data-testid=property-card-1 class=property-card__address {14 Elmwood Close, Manchester, M14 5QR}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,340 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 14 Elmwood Close" {♡}
+article class=property-card {🏘  £259,950  7 Birchwood Avenue, Salford, M6 8DT 🛏 3 beds 🛁 1 bath 📐 980 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£259,950  7 Birchwood Avenue, Salford, M6 8DT 🛏 3 beds 🛁 1 bath 📐 980 sq ft Terraced ♡}
+p class=property-card__price {£259,950}
+a href=/property/7-birchwood-avenue-salford data-testid=property-card-2 class=property-card__address {7 Birchwood Avenue, Salford, M6 8DT}
+div class=property-card__meta {🛏 3 beds 🛁 1 bath 📐 980 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button {♡}
+article class=property-card {🏠  £449,000  22 Oak Road, Didsbury, M20 2JX 🛏 4 beds 🛁 2 baths 📐 1,560 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£449,000  22 Oak Road, Didsbury, M20 2JX 🛏 4 beds 🛁 2 baths 📐 1,560 sq ft Detached ♡}
+p class=property-card__price {£449,000}
+a href=/property/22-oak-road-didsbury data-testid=property-card-3 class=property-card__address {22 Oak Road, Didsbury, M20 2JX}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,560 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 22 Oak Road" {♡}
+article class=property-card {🏡  £195,000  45 Maple Street, Stretford, M32 0LF 🛏 2 beds 🛁 1 bath 📐 720 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£195,000  45 Maple Street, Stretford, M32 0LF 🛏 2 beds 🛁 1 bath 📐 720 sq ft Terraced ♡}
+p class=property-card__price {£195,000}
+a href=/property/45-maple-street-stretford data-testid=property-card-4 class=property-card__address {45 Maple Street, Stretford, M32 0LF}
+div class=property-card__meta {🛏 2 beds 🛁 1 bath 📐 720 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button aria-label="Save 45 Maple Street" {♡}
+article class=property-card {🏘  £525,000  3 Victoria Road, Chorlton, M21 0JH 🛏 5 beds 🛁 3 baths 📐 1,980 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£525,000  3 Victoria Road, Chorlton, M21 0JH 🛏 5 beds 🛁 3 baths 📐 1,980 sq ft Detached ♡}
+p class=property-card__price {£525,000}
+a href=/property/3-victoria-road-chorlton data-testid=property-card-5 class=property-card__address {3 Victoria Road, Chorlton, M21 0JH}
+div class=property-card__meta {🛏 5 beds 🛁 3 baths 📐 1,980 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 3 Victoria Road" {♡}
+article class=property-card {🏠  £310,000  18 Cedar Grove, Withington, M20 3ED 🛏 3 beds 🛁 1 bath 📐 1,120 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£310,000  18 Cedar Grove, Withington, M20 3ED 🛏 3 beds 🛁 1 bath 📐 1,120 sq ft Semi-detached ♡}
+p class=property-card__price {£310,000}
+a href=/property/18-cedar-grove-withington data-testid=property-card-6 class=property-card__address {18 Cedar Grove, Withington, M20 3ED}
+div class=property-card__meta {🛏 3 beds 🛁 1 bath 📐 1,120 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 18 Cedar Grove" {♡}
+article class=property-card {🏡  £285,000  62 Hawthorn Lane, Sale, M33 7BN 🛏 3 beds 🛁 2 baths 📐 1,050 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£285,000  62 Hawthorn Lane, Sale, M33 7BN 🛏 3 beds 🛁 2 baths 📐 1,050 sq ft Semi-detached ♡}
+p class=property-card__price {£285,000}
+a href=/property/62-hawthorn-lane-sale data-testid=property-card-7 class=property-card__address {62 Hawthorn Lane, Sale, M33 7BN}
+div class=property-card__meta {🛏 3 beds 🛁 2 baths 📐 1,050 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 62 Hawthorn Lane" {♡}
+article class=property-card {🏘  £650,000  9 Riverside Drive, Altrincham, WA14 2PQ 🛏 5 beds 🛁 3 baths 📐 2,200 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£650,000  9 Riverside Drive, Altrincham, WA14 2PQ 🛏 5 beds 🛁 3 baths 📐 2,200 sq ft Detached ♡}
+p class=property-card__price {£650,000}
+a href=/property/9-riverside-drive-altrincham data-testid=property-card-8 class=property-card__address {9 Riverside Drive, Altrincham, WA14 2PQ}
+div class=property-card__meta {🛏 5 beds 🛁 3 baths 📐 2,200 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 9 Riverside Drive" {♡}
+article class=property-card {🏠  £175,000  34 Sunfield Road, Eccles, M30 0LQ 🛏 2 beds 🛁 1 bath 📐 680 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£175,000  34 Sunfield Road, Eccles, M30 0LQ 🛏 2 beds 🛁 1 bath 📐 680 sq ft Terraced ♡}
+p class=property-card__price {£175,000}
+a href=/property/34-sunfield-road-eccles data-testid=property-card-9 class=property-card__address {34 Sunfield Road, Eccles, M30 0LQ}
+div class=property-card__meta {🛏 2 beds 🛁 1 bath 📐 680 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button aria-label="Save 34 Sunfield Road" {♡}
+article class=property-card {🏡  £395,000  11 Ash Tree Close, Urmston, M41 5GH 🛏 4 beds 🛁 2 baths 📐 1,380 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£395,000  11 Ash Tree Close, Urmston, M41 5GH 🛏 4 beds 🛁 2 baths 📐 1,380 sq ft Detached ♡}
+p class=property-card__price {£395,000}
+a href=/property/11-ash-tree-close-urmston data-testid=property-card-10 class=property-card__address {11 Ash Tree Close, Urmston, M41 5GH}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,380 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 11 Ash Tree Close" {♡}
+article class=property-card {🏘  £229,500  5 Poplar Street, Stockport, SK1 4RN 🛏 3 beds 🛁 1 bath 📐 890 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£229,500  5 Poplar Street, Stockport, SK1 4RN 🛏 3 beds 🛁 1 bath 📐 890 sq ft Terraced ♡}
+p class=property-card__price {£229,500}
+a href=/property/5-poplar-street-stockport data-testid=property-card-11 class=property-card__address {5 Poplar Street, Stockport, SK1 4RN}
+div class=property-card__meta {🛏 3 beds 🛁 1 bath 📐 890 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button aria-label="Save 5 Poplar Street" {♡}
+article class=property-card {🏠  £479,000  27 Beech Avenue, Hale, WA15 8JL 🛏 4 beds 🛁 3 baths 📐 1,720 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£479,000  27 Beech Avenue, Hale, WA15 8JL 🛏 4 beds 🛁 3 baths 📐 1,720 sq ft Detached ♡}
+p class=property-card__price {£479,000}
+a href=/property/27-beech-avenue-hale data-testid=property-card-12 class=property-card__address {27 Beech Avenue, Hale, WA15 8JL}
+div class=property-card__meta {🛏 4 beds 🛁 3 baths 📐 1,720 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 27 Beech Avenue" {♡}
+article class=property-card {🏡  £340,000  88 Willow Park, Timperley, WA15 6SH 🛏 4 beds 🛁 2 baths 📐 1,290 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£340,000  88 Willow Park, Timperley, WA15 6SH 🛏 4 beds 🛁 2 baths 📐 1,290 sq ft Semi-detached ♡}
+p class=property-card__price {£340,000}
+a href=/property/88-willow-park-timperley data-testid=property-card-13 class=property-card__address {88 Willow Park, Timperley, WA15 6SH}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,290 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 88 Willow Park" {♡}
+article class=property-card {🏘  £215,000  14 Sycamore Close, Irlam, M44 6BD 🛏 3 beds 🛁 1 bath 📐 860 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£215,000  14 Sycamore Close, Irlam, M44 6BD 🛏 3 beds 🛁 1 bath 📐 860 sq ft Terraced ♡}
+p class=property-card__price {£215,000}
+a href=/property/14-sycamore-close-irlam data-testid=property-card-14 class=property-card__address {14 Sycamore Close, Irlam, M44 6BD}
+div class=property-card__meta {🛏 3 beds 🛁 1 bath 📐 860 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button aria-label="Save 14 Sycamore Close" {♡}
+article class=property-card {🏠  £570,000  6 Manor Gardens, Bowdon, WA14 3DT 🛏 5 beds 🛁 3 baths 📐 2,050 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£570,000  6 Manor Gardens, Bowdon, WA14 3DT 🛏 5 beds 🛁 3 baths 📐 2,050 sq ft Detached ♡}
+p class=property-card__price {£570,000}
+a href=/property/6-manor-gardens-bowdon data-testid=property-card-15 class=property-card__address {6 Manor Gardens, Bowdon, WA14 3DT}
+div class=property-card__meta {🛏 5 beds 🛁 3 baths 📐 2,050 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 6 Manor Gardens" {♡}
+article class=property-card {🏡  £298,000  31 Lime Tree Walk, Partington, M31 4JN 🛏 3 beds 🛁 2 baths 📐 1,040 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£298,000  31 Lime Tree Walk, Partington, M31 4JN 🛏 3 beds 🛁 2 baths 📐 1,040 sq ft Semi-detached ♡}
+p class=property-card__price {£298,000}
+a href=/property/31-lime-tree-walk-partington data-testid=property-card-16 class=property-card__address {31 Lime Tree Walk, Partington, M31 4JN}
+div class=property-card__meta {🛏 3 beds 🛁 2 baths 📐 1,040 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 31 Lime Tree Walk" {♡}
+article class=property-card {🏘  £365,000  20 Cherry Orchard, Northenden, M22 4DW 🛏 4 beds 🛁 2 baths 📐 1,400 sq ft Semi-detached ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£365,000  20 Cherry Orchard, Northenden, M22 4DW 🛏 4 beds 🛁 2 baths 📐 1,400 sq ft Semi-detached ♡}
+p class=property-card__price {£365,000}
+a href=/property/20-cherry-orchard-northenden data-testid=property-card-17 class=property-card__address {20 Cherry Orchard, Northenden, M22 4DW}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,400 sq ft}
+div class=property-card__actions {Semi-detached ♡}
+span class=property-card__type {Semi-detached}
+button class=fav-btn type=button aria-label="Save 20 Cherry Orchard" {♡}
+article class=property-card {🏠  £155,000  9 Station Road, Reddish, SK5 7AB 🛏 2 beds 🛁 1 bath 📐 640 sq ft Terraced ♡}
+div class=property-card__img-placeholder {🏠}
+div class=property-card__body {£155,000  9 Station Road, Reddish, SK5 7AB 🛏 2 beds 🛁 1 bath 📐 640 sq ft Terraced ♡}
+p class=property-card__price {£155,000}
+a href=/property/9-station-road-reddish data-testid=property-card-18 class=property-card__address {9 Station Road, Reddish, SK5 7AB}
+div class=property-card__meta {🛏 2 beds 🛁 1 bath 📐 640 sq ft}
+div class=property-card__actions {Terraced ♡}
+span class=property-card__type {Terraced}
+button class=fav-btn type=button aria-label="Save 9 Station Road" {♡}
+article class=property-card {🏡  £425,000  14 Brookfield Close, Cheadle, SK8 1NG 🛏 4 beds 🛁 2 baths 📐 1,520 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏡}
+div class=property-card__body {£425,000  14 Brookfield Close, Cheadle, SK8 1NG 🛏 4 beds 🛁 2 baths 📐 1,520 sq ft Detached ♡}
+p class=property-card__price {£425,000}
+a href=/property/14-brookfield-close-cheadle data-testid=property-card-19 class=property-card__address {14 Brookfield Close, Cheadle, SK8 1NG}
+div class=property-card__meta {🛏 4 beds 🛁 2 baths 📐 1,520 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 14 Brookfield Close" {♡}
+article class=property-card {🏘  £489,000  3 Highfield Road, Bramhall, SK7 2EQ 🛏 5 beds 🛁 3 baths 📐 1,840 sq ft Detached ♡}
+div class=property-card__img-placeholder {🏘}
+div class=property-card__body {£489,000  3 Highfield Road, Bramhall, SK7 2EQ 🛏 5 beds 🛁 3 baths 📐 1,840 sq ft Detached ♡}
+p class=property-card__price {£489,000}
+a href=/property/3-highfield-road-bramhall data-testid=property-card-20 class=property-card__address {3 Highfield Road, Bramhall, SK7 2EQ}
+div class=property-card__meta {🛏 5 beds 🛁 3 baths 📐 1,840 sq ft}
+div class=property-card__actions {Detached ♡}
+span class=property-card__type {Detached}
+button class=fav-btn type=button aria-label="Save 3 Highfield Road" {♡}
+div class=pagination {‹ 1 2 3 … 63 ›}
+button class=pagination__btn type=button aria-label="Previous page" {‹}
+button class="pagination__btn pagination__btn--active" type=button aria-label="Page 1" {1}
+button class=pagination__btn type=button aria-label="Page 2" {2}
+button class=pagination__btn type=button aria-label="Page 3" {3}
+span class=pagination__btn aria-hidden=true {…}
+button class=pagination__btn type=button aria-label="Page 63" {63}
+button class=pagination__btn type=button aria-label="Next page" {›}
+button class=map-toggle type=button {🗺 Map view}
+footer class=site-footer {Find a property Buy a home Rent a home New homes Commercial Auction Sell your home Sell with HomeFind Get a valuation Find an agent Conveyancing Mortgage Mortgage finder Mortgage calculator First-time buyers Remortgage About About HomeFind Press Careers Contact us Privacy policy © 2024 HomeFind. All…}
+div class=footer-inner {Find a property Buy a home Rent a home New homes Commercial Auction Sell your home Sell with HomeFind Get a valuation Find an agent Conveyancing Mortgage Mortgage finder Mortgage calculator First-time buyers Remortgage About About HomeFind Press Careers Contact us Privacy policy}
+div class=footer-section {Find a property Buy a home Rent a home New homes Commercial Auction}
+a href=/buy {Buy a home}
+a href=/rent {Rent a home}
+a href=/new-homes {New homes}
+a href=/commercial {Commercial}
+a href=/auction {Auction}
+div class=footer-section {Sell your home Sell with HomeFind Get a valuation Find an agent Conveyancing}
+a href=/sell {Sell with HomeFind}
+a href=/valuations {Get a valuation}
+a href=/agents {Find an agent}
+a href=/conveyancing {Conveyancing}
+div class=footer-section {Mortgage Mortgage finder Mortgage calculator First-time buyers Remortgage}
+a href=/mortgage {Mortgage finder}
+a href=/mortgage/calculator {Mortgage calculator}
+a href=/mortgage/first-time {First-time buyers}
+a href=/mortgage/remortgage {Remortgage}
+div class=footer-section {About About HomeFind Press Careers Contact us Privacy policy}
+a href=/about {About HomeFind}
+a href=/press {Press}
+a href=/careers {Careers}
+a href=/contact {Contact us}
+a href=/privacy {Privacy policy}
+div class=footer-bottom {© 2024 HomeFind. All rights reserved.}

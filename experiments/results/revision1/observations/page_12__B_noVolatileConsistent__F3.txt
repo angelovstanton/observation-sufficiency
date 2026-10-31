@@ -1,0 +1,91 @@
+div class=top-bar {LearnPath Web Dev 101 › Module 1 Dashboard My profile}
+a href=/ class=logo {LearnPath}
+span class=course-title {Web Dev 101 › Module 1}
+div class=top-bar-right {Dashboard My profile}
+a href=/dashboard {Dashboard}
+a href=/profile {My profile}
+nav class=breadcrumb aria-label=Breadcrumb {Courses / Web Dev 101 / Module 1: Foundations / Lesson 1: Introduction to HTML}
+a href=/courses {Courses}
+span {/}
+a href=/courses/web-dev-101 {Web Dev 101}
+span {/}
+a href=/courses/web-dev-101/module-1 {Module 1: Foundations}
+span {/}
+span {Lesson 1: Introduction to HTML}
+div class=layout {Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML ✓ Mark as complete Next lesson → Lesson materials ↓ Download PDF Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor Discussion Post comment Alex T.  Great intro! The live code …}
+main class=main-content {Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML ✓ Mark as complete Next lesson → Lesson materials ↓ Download PDF Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor Discussion Post comment Alex T.  Great intro! The live code …}
+div class=lesson-header {Module 1, Lesson 1 • 12 min • Beginner Introduction to HTML}
+div class=lesson-meta {Module 1, Lesson 1 • 12 min • Beginner}
+span {Module 1, Lesson 1}
+span {•}
+span {12 min}
+span {•}
+span {Beginner}
+h1 class=lesson-title {Introduction to HTML}
+div class=player-host
+[S] div class=video-area {▶}
+[S] div {▶}
+[S] span {▶}
+[S] div class=play-overlay
+[S] div class=play-tri
+[S] div class=progress-bar-row
+[S] div class=progress-fill
+[S] div class=controls {▶ 04:12 / 12:00 🔊 CC 1080p}
+[S] button type=button class=ctrl-btn data-testid=play-pause-btn aria-label="Play lesson video" {▶}
+[S] div class=seek-wrap
+[S] input type=range class=seek value=35 data-testid=video-seek-bar aria-label="Video seek position"
+[S] span class=time-display {04:12 / 12:00}
+[S] div class=vol-wrap {🔊}
+[S] button type=button class=ctrl-btn aria-label="Mute/unmute audio" {🔊}
+[S] input type=range class=vol value=80 aria-label="Adjust video volume"
+[S] button type=button class=ctrl-btn data-testid=captions-btn aria-label="Toggle closed captions" {CC}
+[S] span class=caption-badge {CC}
+[S] button type=button class=quality-btn {1080p}
+div class=lesson-actions {✓ Mark as complete Next lesson →}
+button type=button class=btn-complete data-testid=mark-complete-btn aria-label="Mark this lesson as complete" {✓ Mark as complete}
+button type=button class=btn-next data-testid=next-lesson-btn aria-label="Continue to next lesson: CSS Flexbox Basics" {Next lesson →}
+div class=materials-row {Lesson materials ↓ Download PDF}
+h3 {Lesson materials}
+a href=/courses/web-dev-101/materials.pdf class=dl-link aria-label="Download lesson materials PDF" {↓ Download PDF}
+div class=rating-row {Rate this lesson Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor}
+label for=course-rating {Rate this lesson}
+div class=star-select {Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor}
+select id=course-rating aria-label="Rate this course from 1 to 5 stars" class=star-sel {Select a rating 5 stars – Excellent 4 stars – Good 3 stars – OK 2 stars – Poor 1 star – Very poor}
+option {Select a rating}
+option value=5 {5 stars – Excellent}
+option value=4 {4 stars – Good}
+option value=3 {3 stars – OK}
+option value=2 {2 stars – Poor}
+option value=1 {1 star – Very poor}
+div class=discussion {Discussion Post comment Alex T.  Great intro! The live code demo at 8:20 really helped it click.  Maria S.  Could you add more on semantic elements in lesson 2?}
+h3 {Discussion}
+div class=comment-form {Post comment}
+textarea placeholder="Share a question or insight about this lesson..."
+div class=form-footer {Post comment}
+button type=button class=btn-post data-testid=post-comment-btn {Post comment}
+div class=comment-item {Alex T.  Great intro! The live code demo at 8:20 really helped it click.}
+span class=comment-author {Alex T.}
+p class=comment-body {Great intro! The live code demo at 8:20 really helped it click.}
+div class=comment-item {Maria S.  Could you add more on semantic elements in lesson 2?}
+span class=comment-author {Maria S.}
+p class=comment-body {Could you add more on semantic elements in lesson 2?}
+aside class=sidebar {Assignments Exercise 1.1: Build a page structure  Create a page with header, main, and footer.  Due 20 Jun Quiz 1.1: HTML Basics  10-question quiz on HTML elements and attributes.  Due 22 Jun Exercise 1.2: Forms & inputs  Practice building accessible forms.  ✓ Submitted}
+h3 {Assignments}
+div class=assignment-card {Exercise 1.1: Build a page structure  Create a page with header, main, and footer.  Due 20 Jun}
+h4 {Exercise 1.1: Build a page structure}
+p {Create a page with header, main, and footer.}
+span class="badge badge-due" {Due 20 Jun}
+div class=assignment-card {Quiz 1.1: HTML Basics  10-question quiz on HTML elements and attributes.  Due 22 Jun}
+h4 {Quiz 1.1: HTML Basics}
+p {10-question quiz on HTML elements and attributes.}
+span class="badge badge-due" {Due 22 Jun}
+div class=assignment-card {Exercise 1.2: Forms & inputs  Practice building accessible forms.  ✓ Submitted}
+h4 {Exercise 1.2: Forms & inputs}
+p {Practice building accessible forms.}
+span class="badge badge-done" {✓ Submitted}
+footer {© 2026 LearnPath Ltd. Accessibility Terms Privacy}
+div class=footer-inner {© 2026 LearnPath Ltd. Accessibility Terms Privacy}
+span {© 2026 LearnPath Ltd.}
+a href=/accessibility {Accessibility}
+a href=/terms {Terms}
+a href=/privacy {Privacy}

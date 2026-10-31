@@ -1,0 +1,86 @@
+- banner:
+  - link "VideoNest":
+    - /url: /
+  - textbox "Search videos":
+    - /placeholder: Search
+  - button "Submit search": 🔍
+  - button "+ Create"
+  - button "Sign in"
+- text: ▶ 14:32 Chapter 3 — Deployment
+- toolbar "Video controls":
+  - button "Play video": ▶
+  - slider "Seek video": "22"
+  - button "Mute audio": 🔈
+  - button "HD"
+  - button "Toggle captions": CC
+- heading "Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes" [level=1]
+- text: "1,421,094 views • 3 months ago #DevOps #CICD"
+- button "👍 12K"
+- button "👎"
+- button "→ Share"
+- button "+ Save"
+- button "⋯"
+- text: D
+- link "DevOps Academy":
+  - /url: "#channel"
+- text: 248K subscribers
+- button "Subscribe to VideoNest": Subscribe
+- text: 1,421,094 views Jun 8, 2024
+- paragraph: In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, and observability with Prometheus and Grafana.
+- link "#DevOps":
+  - /url: "#"
+- link "#CICD":
+  - /url: "#"
+- link "#Kubernetes":
+  - /url: "#"
+- link "#GitHubActions":
+  - /url: "#"
+- link "#Docker":
+  - /url: "#"
+- button "Show more"
+- heading "847 Comments" [level=3]
+- text: ☰
+- button "Sort by"
+- text: A alicedev 2 months ago
+- paragraph: This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.
+- button "👍 234"
+- button "Reply"
+- text: B backend_bob 2 months ago
+- paragraph: Any chance you could do a part 2 covering ArgoCD and GitOps workflows?
+- button "👍 89"
+- button "Reply"
+- text: C cloudCarla 1 month ago
+- paragraph: The secrets management walkthrough was incredibly clear. Subscribed immediately!
+- button "👍 45"
+- button "Reply"
+- text: D devdan42 3 weeks ago
+- paragraph: Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.
+- button "👍 31"
+- button "Reply"
+- complementary:
+  - heading "Up next" [level=4]
+  - text: ▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago ▶ Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago ▶ Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago ▶ Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago ▶ Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago
+- contentinfo:
+  - link "About":
+    - /url: "#"
+  - link "Press":
+    - /url: "#"
+  - link "Copyright":
+    - /url: "#"
+  - link "Contact us":
+    - /url: "#"
+  - link "Creators":
+    - /url: "#"
+  - link "Advertise":
+    - /url: "#"
+  - link "Developers":
+    - /url: "#"
+  - link "Privacy":
+    - /url: "#"
+  - link "Policy & Safety":
+    - /url: "#"
+  - link "How VideoNest works":
+    - /url: "#"
+  - link "Test new features":
+    - /url: "#"
+  - paragraph: © 2024 VideoNest LLC

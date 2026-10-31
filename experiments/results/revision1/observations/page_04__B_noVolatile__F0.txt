@@ -1,0 +1,154 @@
+<header>✈ SkyRoute Flights Hotels Car hire Holidays Manage booking Sign in</header>
+<a href="/" class="logo">✈ SkyRoute</a>
+<nav aria-label="Main navigation">Flights Hotels Car hire Holidays Manage booking Sign in</nav>
+<a href="/flights">Flights</a>
+<a href="/hotels">Hotels</a>
+<a href="/cars">Car hire</a>
+<a href="/holidays">Holidays</a>
+<a href="/manage">Manage booking</a>
+<a href="/sign-in">Sign in</a>
+<div class="hero">Search Flights  Compare hundreds of airlines and find the best fares for your journey</div>
+<h1>Search Flights</h1>
+<p>Compare hundreds of airlines and find the best fares for your journey</p>
+<div class="search-card">Return One-way Multi-city From To Departure Return Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults Cabin class Economy Premium Economy Business First Class Search flights ⚙ Filters</div>
+<div class="trip-tabs">Return One-way Multi-city</div>
+<button class="trip-tab active" type="button">Return</button>
+<button class="trip-tab" type="button">One-way</button>
+<button class="trip-tab" type="button">Multi-city</button>
+<div class="form-row">From To</div>
+<div class="form-group">From</div>
+<label class="lbl" for="origin-airport">From</label>
+<input id="origin-airport" data-testid="origin-input" aria-label="Departure city or airport" class="inp" type="text" name="origin" placeholder="City or airport" />
+<div class="form-group">To</div>
+<label class="lbl" for="destination-airport">To</label>
+<input id="destination-airport" aria-label="Destination city or airport" class="inp" type="text" name="destination" placeholder="City or airport" />
+<div class="form-row">Departure Return</div>
+<div class="form-group">Departure</div>
+<label class="lbl" for="departure-date">Departure</label>
+<input id="departure-date" data-testid="departure-date" aria-label="Departure date" class="inp" type="date" name="departure_date" />
+<div class="form-group">Return</div>
+<label class="lbl" for="return-date">Return</label>
+<input id="return-date" aria-label="Return date" class="inp" type="date" name="return_date" />
+<div class="form-row">Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults Cabin class Economy Premium Economy Business First Class</div>
+<div class="form-group">Adults 1 adult 2 adults 3 adults 4 adults 5 adults 6 adults</div>
+<label class="lbl" for="adult-passengers">Adults</label>
+<select id="adult-passengers" name="adults" aria-label="Number of adult passengers" class="sel">1 adult 2 adults 3 adults 4 adults 5 adults 6 adults</select>
+<option value="1">1 adult</option>
+<option value="2">2 adults</option>
+<option value="3">3 adults</option>
+<option value="4">4 adults</option>
+<option value="5">5 adults</option>
+<option value="6">6 adults</option>
+<div class="form-group">Cabin class Economy Premium Economy Business First Class</div>
+<label class="lbl" for="cabin-class">Cabin class</label>
+<select id="cabin-class" name="cabin_class" aria-label="Select cabin class" class="sel">Economy Premium Economy Business First Class</select>
+<option value="economy">Economy</option>
+<option value="premium">Premium Economy</option>
+<option value="business">Business</option>
+<option value="first">First Class</option>
+<div class="search-row">Search flights ⚙ Filters</div>
+<button type="button" data-testid="search-flights-btn" aria-label="Search available flights" class="btn-search">Search flights</button>
+<div class="btn-filter" aria-label="Filter options">⚙ Filters</div>
+<span>⚙</span>
+<div class="results-bar">Showing 47 flights — London (LHR) → Paris (CDG), 15 Mar Sort by: Best Cheapest Fastest</div>
+<span class="results-count">Showing 47 flights — London (LHR) → Paris (CDG), 15 Mar</span>
+<div class="sort-bar">Sort by: Best Cheapest Fastest</div>
+<span class="sort-label">Sort by:</span>
+<button class="sort-btn active" type="button">Best</button>
+<button class="sort-btn" type="button">Cheapest</button>
+<button class="sort-btn" type="button">Fastest</button>
+<div class="flights">Filters: Non-stop only Morning departure Hand luggage only LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest £89 per person Select LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard £112 per person Select LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 1…</div>
+<div>Filters: Non-stop only Morning departure Hand luggage only</div>
+<span>Filters:</span>
+<label>Non-stop only</label>
+<input type="checkbox" data-testid="nonstop-filter" aria-label="Non-stop flights only" />
+<label>Morning departure</label>
+<input type="checkbox" />
+<label>Hand luggage only</label>
+<input type="checkbox" />
+<div class="flight-card">LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest £89 per person Select</div>
+<div class="flight-info">LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204 2h 05m Non-stop Cheapest Fastest</div>
+<div>LHR → CDG 07:30 — 09:35 SkyRoute direct • SR 204</div>
+<div class="route">LHR → CDG</div>
+<div class="time">07:30 — 09:35</div>
+<div class="airline">SkyRoute direct • SR 204</div>
+<div class="duration">2h 05m Non-stop</div>
+<div>2h 05m</div>
+<div class="stops">Non-stop</div>
+<div class="flight-tags">Cheapest Fastest</div>
+<span class="tag tag-green">Cheapest</span>
+<span class="tag">Fastest</span>
+<div class="price-col">£89 per person Select</div>
+<div class="price">£89</div>
+<div class="per-person">per person</div>
+<button type="button" aria-label="Select flight LHR→CDG 07:30–09:35, 2h 05m, £89" class="btn-select">Select</button>
+<div class="flight-card">LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard £112 per person Select</div>
+<div class="flight-info">LHR → CDG 10:15 — 12:20 EuroAir • EA 712 2h 05m Non-stop Standard</div>
+<div>LHR → CDG 10:15 — 12:20 EuroAir • EA 712</div>
+<div class="route">LHR → CDG</div>
+<div class="time">10:15 — 12:20</div>
+<div class="airline">EuroAir • EA 712</div>
+<div class="duration">2h 05m Non-stop</div>
+<div>2h 05m</div>
+<div class="stops">Non-stop</div>
+<div class="flight-tags">Standard</div>
+<span class="tag">Standard</span>
+<div class="price-col">£112 per person Select</div>
+<div class="price">£112</div>
+<div class="per-person">per person</div>
+<button type="button" class="btn-select">Select</button>
+<div class="flight-card">LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 10m Non-stop £97 per person Select</div>
+<div class="flight-info">LHR → CDG 14:45 — 16:55 AirConnect • AC 889 2h 10m Non-stop</div>
+<div>LHR → CDG 14:45 — 16:55 AirConnect • AC 889</div>
+<div class="route">LHR → CDG</div>
+<div class="time">14:45 — 16:55</div>
+<div class="airline">AirConnect • AC 889</div>
+<div class="duration">2h 10m Non-stop</div>
+<div>2h 10m</div>
+<div class="stops">Non-stop</div>
+<div class="price-col">£97 per person Select</div>
+<div class="price">£97</div>
+<div class="per-person">per person</div>
+<button type="button" class="btn-select">Select</button>
+<div class="flight-card">LHR → CDG 18:00 — 20:10 SkyRoute • SR 210 2h 10m Non-stop £103 per person Select</div>
+<div class="flight-info">LHR → CDG 18:00 — 20:10 SkyRoute • SR 210 2h 10m Non-stop</div>
+<div>LHR → CDG 18:00 — 20:10 SkyRoute • SR 210</div>
+<div class="route">LHR → CDG</div>
+<div class="time">18:00 — 20:10</div>
+<div class="airline">SkyRoute • SR 210</div>
+<div class="duration">2h 10m Non-stop</div>
+<div>2h 10m</div>
+<div class="stops">Non-stop</div>
+<div class="price-col">£103 per person Select</div>
+<div class="price">£103</div>
+<div class="per-person">per person</div>
+<button type="button" class="btn-select">Select</button>
+<footer>Explore Destinations Flight deals Travel guides Help FAQ Contact us Accessibility Legal Privacy policy Cookie policy Terms of use</footer>
+<div class="footer-inner">Explore Destinations Flight deals Travel guides Help FAQ Contact us Accessibility Legal Privacy policy Cookie policy Terms of use</div>
+<div class="footer-col">Explore Destinations Flight deals Travel guides</div>
+<h4>Explore</h4>
+<ul>Destinations Flight deals Travel guides</ul>
+<li>Destinations</li>
+<a href="/destinations">Destinations</a>
+<li>Flight deals</li>
+<a href="/deals">Flight deals</a>
+<li>Travel guides</li>
+<a href="/travel-guide">Travel guides</a>
+<div class="footer-col">Help FAQ Contact us Accessibility</div>
+<h4>Help</h4>
+<ul>FAQ Contact us Accessibility</ul>
+<li>FAQ</li>
+<a href="/faq">FAQ</a>
+<li>Contact us</li>
+<a href="/contact">Contact us</a>
+<li>Accessibility</li>
+<a href="/accessibility">Accessibility</a>
+<div class="footer-col">Legal Privacy policy Cookie policy Terms of use</div>
+<h4>Legal</h4>
+<ul>Privacy policy Cookie policy Terms of use</ul>
+<li>Privacy policy</li>
+<a href="/privacy">Privacy policy</a>
+<li>Cookie policy</li>
+<a href="/cookies">Cookie policy</a>
+<li>Terms of use</li>
+<a href="/terms">Terms of use</a>

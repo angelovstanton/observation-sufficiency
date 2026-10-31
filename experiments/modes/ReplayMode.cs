@@ -3,15 +3,21 @@ using System.Text.Json;
 using BoundedAgents.Models;
 using BoundedAgents.Shared.Harness;
 using BoundedAgents.Shared.Oracle;
+using BoundedAgents.Shared.Tokenizer;
 
 internal static class ReplayMode
 {
     /// <summary>
     /// Offline replay (--replay): re-classifies the archived locators in
     /// <paramref name="archiveDir"/> through the current predicate against live pages and writes
-    /// experiments/runs/replay_&lt;date&gt;.jsonl. Zero LLM — the model outputs were recorded earlier.
+    /// experiments/runs/replay_&lt;date&gt;.jsonl, or to <paramref name="outPathOverride"/> when given
+    /// (--replay-out). Zero LLM — the model outputs were recorded earlier.
+    /// With <paramref name="dumpObsDir"/> (--dump-obs), also writes each DOM-walk observation
+    /// (F0–F3) once per page×bundle×encoding, built with Observation.BuildObservationAsync, plus a
+    /// manifest.tsv of their o200k_base token counts.
     /// </summary>
-    public static async Task RunAsync(string repoRoot, string runsDir, string archiveDir)
+    public static async Task RunAsync(string repoRoot, string runsDir, string archiveDir,
+                                      string? outPathOverride = null, string? dumpObsDir = null)
     {
         Console.WriteLine($"── Replay mode ───────────────────────────────────────────────────────");
         Console.WriteLine($"  Archive: {archiveDir}");
@@ -56,7 +62,7 @@ internal static class ReplayMode
         int total = archived.Count;
         int done = 0;
         var dateTag = DateTimeOffset.UtcNow.ToString("yyyyMMdd");
-        var outPath = Path.Combine(runsDir, $"replay_{dateTag}.jsonl");
+        var outPath = outPathOverride ?? Path.Combine(runsDir, $"replay_{dateTag}.jsonl");
         Console.WriteLine($"  Records to replay: {total}");
         Console.WriteLine($"  Output: {outPath}");
         Console.WriteLine();
@@ -95,6 +101,10 @@ internal static class ReplayMode
             RedirectStandardOutput = true,
             RedirectStandardError = true,
         })!;
+        // Drain the redirected pipes: http.server logs every request to stderr, and an
+        // unread pipe fills up after ~20 page loads, blocking the server mid-replay.
+        server.BeginOutputReadLine();
+        server.BeginErrorReadLine();
         await Task.Delay(1200);
 
         try
@@ -122,6 +132,19 @@ internal static class ReplayMode
                         if (!targetLookup.TryGetValue(taskId, out var target))
                         {
                             throw new InvalidOperationException($"Task {taskId} not found in {pageId}.truth.json");
+                        }
+
+                        if (dumpObsDir is not null && !encoding.Equals("F4", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var obsFile = Path.Combine(dumpObsDir, $"{pageId}__{bundle}__{encoding}.txt");
+                            if (!File.Exists(obsFile))
+                            {
+                                var (obsText, _, _) = await Observation.BuildObservationAsync(
+                                    page, bundle, encoding, volIds, volCls);
+                                await File.WriteAllTextAsync(obsFile, obsText);
+                                await File.AppendAllTextAsync(Path.Combine(dumpObsDir, "manifest.tsv"),
+                                    $"{pageId}\t{bundle}\t{encoding}\t{TokenCounter.CountTokens(obsText)}\n");
+                            }
                         }
 
                         var newRecord = await GroundingRunner.ReplayOneAsync(

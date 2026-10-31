@@ -1,0 +1,111 @@
+<nav class="top-nav">← Restaurants Pizzeria Napoli Popular first Price: low to high Price: high to low</nav>
+<a class="back" href="/restaurants">← Restaurants</a>
+<span class="nav-title">Pizzeria Napoli</span>
+<div class="search-row">Popular first Price: low to high Price: high to low</div>
+<input id="menu-search" data-testid="menu-search" aria-label="Search menu items" class="nav-search" type="search" name="menu_q" placeholder="Search menu…" />
+<select data-testid="sort-dropdown" class="sort-sel" aria-label="Sort menu items">Popular first Price: low to high Price: high to low</select>
+<option value="popular">Popular first</option>
+<option value="price-asc">Price: low to high</option>
+<option value="price-desc">Price: high to low</option>
+<div class="restaurant-hero">🍕 Pizzeria Napoli ★ 4.8 • Pizza • Italian • 20–35 min • £1.99 delivery</div>
+<div class="restaurant-info">🍕 Pizzeria Napoli ★ 4.8 • Pizza • Italian • 20–35 min • £1.99 delivery</div>
+<div class="rest-logo">🍕</div>
+<div class="rest-name">Pizzeria Napoli</div>
+<div class="rest-meta">★ 4.8 • Pizza • Italian • 20–35 min • £1.99 delivery</div>
+<div class="cat-tabs">Pizzas Starters Sides Desserts Drinks</div>
+<button class="cat-tab active" type="button">Pizzas</button>
+<button class="cat-tab" type="button">Starters</button>
+<button class="cat-tab" type="button">Sides</button>
+<button class="cat-tab" type="button">Desserts</button>
+<button class="cat-tab" type="button">Drinks</button>
+<div class="layout">Deliver to: Change Vegetarian Vegan Gluten-free Spicy Pizzas Margherita Tomato base, mozzarella, fresh basil £10.99 + Pepperoni Tomato base, mozzarella, spicy pepperoni £12.99 + Four Cheese Mozzarella, gorgonzola, parmesan, ricotta £13.50 + Nduja &amp; Honey Spicy nduja sausage, mozzarella, drizzled hon…</div>
+<div class="delivery-row">Deliver to: Change</div>
+<span class="del-label">Deliver to:</span>
+<input id="delivery-address" name="delivery_address" aria-label="Delivery address" class="del-addr" type="text" placeholder="Enter your address" />
+<button type="button">Change</button>
+<div>Vegetarian Vegan Gluten-free Spicy</div>
+<button type="button">Vegetarian</button>
+<button type="button">Vegan</button>
+<button type="button">Gluten-free</button>
+<button type="button">Spicy</button>
+<div class="section-header">Pizzas</div>
+<div class="menu-grid">Margherita Tomato base, mozzarella, fresh basil £10.99 + Pepperoni Tomato base, mozzarella, spicy pepperoni £12.99 + Four Cheese Mozzarella, gorgonzola, parmesan, ricotta £13.50 + Nduja &amp; Honey Spicy nduja sausage, mozzarella, drizzled honey £14.00 + Truffle Mushroom Truffle cream, wild mushrooms, p…</div>
+<div>Margherita Tomato base, mozzarella, fresh basil £10.99 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Margherita Tomato base, mozzarella, fresh basil £10.99</div>
+<div class="item-name">Margherita</div>
+<div class="item-desc">Tomato base, mozzarella, fresh basil</div>
+<div class="item-price">£10.99</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add" aria-label="Add Margherita pizza to cart">+</button>
+<div>Pepperoni Tomato base, mozzarella, spicy pepperoni £12.99 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Pepperoni Tomato base, mozzarella, spicy pepperoni £12.99</div>
+<div class="item-name">Pepperoni</div>
+<div class="item-desc">Tomato base, mozzarella, spicy pepperoni</div>
+<div class="item-price">£12.99</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add">+</button>
+<div>Four Cheese Mozzarella, gorgonzola, parmesan, ricotta £13.50 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Four Cheese Mozzarella, gorgonzola, parmesan, ricotta £13.50</div>
+<div class="item-name">Four Cheese</div>
+<div class="item-desc">Mozzarella, gorgonzola, parmesan, ricotta</div>
+<div class="item-price">£13.50</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add">+</button>
+<div>Nduja &amp; Honey Spicy nduja sausage, mozzarella, drizzled honey £14.00 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Nduja &amp; Honey Spicy nduja sausage, mozzarella, drizzled honey £14.00</div>
+<div class="item-name">Nduja &amp; Honey</div>
+<div class="item-desc">Spicy nduja sausage, mozzarella, drizzled honey</div>
+<div class="item-price">£14.00</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add">+</button>
+<div>Truffle Mushroom Truffle cream, wild mushrooms, parmesan, rocket £14.50 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Truffle Mushroom Truffle cream, wild mushrooms, parmesan, rocket £14.50</div>
+<div class="item-name">Truffle Mushroom</div>
+<div class="item-desc">Truffle cream, wild mushrooms, parmesan, rocket</div>
+<div class="item-price">£14.50</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add">+</button>
+<div>Veggie Supreme Bell peppers, olives, onion, mushroom, spinach £12.50 +</div>
+<div class="item-thumb"></div>
+<div class="item-body">Veggie Supreme Bell peppers, olives, onion, mushroom, spinach £12.50</div>
+<div class="item-name">Veggie Supreme</div>
+<div class="item-desc">Bell peppers, olives, onion, mushroom, spinach</div>
+<div class="item-price">£12.50</div>
+<div class="item-add-col">+</div>
+<button type="button" class="btn-add">+</button>
+<div class="cart-host-outer"></div>
+<div data-shadow="true" class="cart-box">🛒 Your basket (2) Min order £12 Margherita x1 − 1 + £10.99 ✕ Four Cheese x1 − 1 + £13.50 ✕ Subtotal £24.49 Delivery fee £1.99 Total £26.48 Proceed to checkout →</div>
+<div data-shadow="true" class="cart-header">🛒 Your basket (2) Min order £12</div>
+<span data-shadow="true" aria-label="Cart contains 2 items">🛒 Your basket (2)</span>
+<span data-shadow="true">Min order £12</span>
+<div data-shadow="true" class="cart-items">Margherita x1 − 1 + £10.99 ✕ Four Cheese x1 − 1 + £13.50 ✕</div>
+<div data-shadow="true" class="cart-item">Margherita x1 − 1 + £10.99 ✕</div>
+<span data-shadow="true" class="item-name">Margherita x1</span>
+<div data-shadow="true" class="item-qty">− 1 +</div>
+<button data-shadow="true" type="button" class="qty-btn">−</button>
+<span data-shadow="true" class="qty-num">1</span>
+<button data-shadow="true" type="button" class="qty-btn">+</button>
+<span data-shadow="true" class="item-price-col">£10.99</span>
+<button data-shadow="true" type="button" class="remove-btn" aria-label="Remove Margherita pizza from cart">✕</button>
+<div data-shadow="true" class="cart-item">Four Cheese x1 − 1 + £13.50 ✕</div>
+<span data-shadow="true" class="item-name">Four Cheese x1</span>
+<div data-shadow="true" class="item-qty">− 1 +</div>
+<button data-shadow="true" type="button" class="qty-btn">−</button>
+<span data-shadow="true" class="qty-num">1</span>
+<button data-shadow="true" type="button" class="qty-btn">+</button>
+<span data-shadow="true" class="item-price-col">£13.50</span>
+<button data-shadow="true" type="button" class="remove-btn">✕</button>
+<div data-shadow="true" class="cart-footer">Subtotal £24.49 Delivery fee £1.99 Total £26.48 Proceed to checkout →</div>
+<div data-shadow="true" class="total-row">Subtotal £24.49</div>
+<div data-shadow="true" class="total-row">Delivery fee £1.99</div>
+<div data-shadow="true" class="total-row main" data-testid="cart-total-display" aria-label="Order total including delivery fee">Total £26.48</div>
+<button data-shadow="true" type="button" class="checkout-btn" data-testid="checkout-btn" aria-label="Proceed to checkout">Proceed to checkout →</button>
+<div class="footer-inner">© 2026 BiteRun Ltd. Terms Privacy Help centre</div>
+<a href="/terms">Terms</a>
+<a href="/privacy">Privacy</a>
+<a href="/help">Help centre</a>

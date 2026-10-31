@@ -1,0 +1,157 @@
+header class=PageLayout_header__z1a2b3 {VideoNest 🔍 + Create Sign in}
+div class=Header_inner__c4d5e6 {VideoNest 🔍 + Create Sign in}
+a href=/ class=Header_logo__f7g8h9 {VideoNest}
+div class=Header_search__i0j1k2 {🔍}
+input type=text placeholder=Search class=SearchBar_input__l3m4n5 aria-label="Search videos"
+button class=SearchBar_btn__o6p7q8 aria-label="Submit search" {🔍}
+div class=Header_actions__r9s0t1 {+ Create Sign in}
+button class=Header_uploadBtn__u2v3w4 {+ Create}
+button class=Header_signInBtn__x5y6z7 {Sign in}
+div class=PageLayout_main__a8b9c0 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…}
+div class=PageLayout_videoCol__d1e2f3 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe 1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline fr…}
+video-player-shell class=PlayerHost_shell__g4h5i6
+[S] div class=VideoPlayer_wrapper__f3g4h5 {▶ 14:32 Chapter 3 — Deployment}
+[S] div class=VideoPlayer_viewport__b1c2d3 {▶ 14:32 Chapter 3 — Deployment}
+[S] span class=VideoPlayer_paused__c8d9e0 {▶}
+[S] div aria-label="Video duration: 14:32" {14:32}
+[S] div {Chapter 3 — Deployment}
+[S] div class=ControlBar_container__h8i9j0 role=toolbar aria-label="Video controls" {▶ 🔈 HD CC}
+[S] button aria-label="Play video" {▶}
+[S] input type=range aria-label="Seek video" data-testid=seek-bar value=22
+[S] button aria-label="Mute audio" {🔈}
+[S] button {HD}
+[S] button aria-label="Toggle captions" data-testid=caption-toggle {CC}
+div class=VideoMeta_container__c1d2e3 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes 1,421,094 views 3 months ago #DevOps #CICD 👍 12K 👎 → Share + Save ⋯ D DevOps Academy 248K subscribers Subscribe}
+h1 class=VideoMeta_title__j7k8l9 {Build a Production CI/CD Pipeline from Scratch — GitHub Actions + Docker + Kubernetes}
+div class=VideoMeta_stats__m0n1o2 {1,421,094 views 3 months ago #DevOps #CICD}
+span class=VideoMeta_views__p3q4r5 {1,421,094 views}
+span class=VideoMeta_date__s6t7u8 {3 months ago}
+div class=VideoMeta_actions__v9w0x1 {👍 12K 👎 → Share + Save ⋯}
+button data-testid=like-btn type=button {👍 12K}
+button class=VideoMeta_dislikeBtn__y2z3a4 type=button {👎}
+button class=VideoMeta_shareBtn__b5c6d7 type=button {→ Share}
+button class=VideoMeta_saveBtn__e8f9g0 type=button {+ Save}
+button class=VideoMeta_moreBtn__h1i2j3 type=button {⋯}
+div class=VideoMeta_channelRow__h1i2j3 {D DevOps Academy 248K subscribers Subscribe}
+div class=ChannelInfo_avatar__k4l5m6 {D}
+div class=ChannelInfo_details__n7o8p9 {DevOps Academy 248K subscribers}
+a href=#channel class=ChannelInfo_name__q0r1s2 {DevOps Academy}
+span class=ChannelInfo_subs__t3u4v5 {248K subscribers}
+button data-testid=subscribe-btn aria-label="Subscribe to VideoNest" type=button {Subscribe}
+div class=Description_box__w6x7y8 {1,421,094 views Jun 8, 2024  In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, an…}
+div class=Description_stats__a1b2c3 {1,421,094 views Jun 8, 2024}
+p class=Description_text__z9a0b1 {In this tutorial we build a complete production-grade CI/CD pipeline from scratch using GitHub Actions, Docker, and Kubernetes. We cover automated testing, staging deployments, canary rollouts, zero-downtime updates, rollback strategies, secrets management with Vault, and observability with Promethe…}
+div class=Description_tags__d5e6f7 {#DevOps #CICD #Kubernetes #GitHubActions #Docker}
+a href=# class=Description_tag__g8h9i0 {#DevOps}
+a href=# class=Description_tag__g8h9i0 {#CICD}
+a href=# class=Description_tag__g8h9i0 {#Kubernetes}
+a href=# class=Description_tag__g8h9i0 {#GitHubActions}
+a href=# class=Description_tag__g8h9i0 {#Docker}
+button class=Description_moreBtn__c2d3e4 type=button {Show more}
+div class=Comments_section__f5g6h7 {847 Comments ☰ Sort by A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply C cloudCarla 1 month ago …}
+h3 class=Comments_heading__i8j9k0 {847 Comments}
+div class=Comments_sortRow__l1m2n3 {☰ Sort by}
+span class=Comments_sortIcon__j1k2l3 {☰}
+button class=Comments_sortBtn__o4p5q6 type=button {Sort by}
+div class=CommentCard_root__r7s8t9 {A alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply}
+div class=CommentCard_avatar__u0v1w2 {A}
+div class=CommentCard_body__x3y4z5 {alicedev 2 months ago  This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.  👍 234 Reply}
+span class=CommentCard_author__a6b7c8 {alicedev}
+span class=CommentCard_date__b9c0d1 {2 months ago}
+p class=CommentCard_text__d9e0f1 {This is exactly what I needed — the Kubernetes rollback section alone saved me 4 hours of debugging.}
+div class=CommentCard_actions__g2h3i4 {👍 234 Reply}
+button class=CommentCard_likeBtn__j5k6l7 type=button {👍 234}
+button class=CommentCard_replyBtn__m8n9o0 type=button {Reply}
+div class=CommentCard_root__r7s8t9 {B backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply}
+div class=CommentCard_avatar__u0v1w2 {B}
+div class=CommentCard_body__x3y4z5 {backend_bob 2 months ago  Any chance you could do a part 2 covering ArgoCD and GitOps workflows?  👍 89 Reply}
+span class=CommentCard_author__a6b7c8 {backend_bob}
+span class=CommentCard_date__b9c0d1 {2 months ago}
+p class=CommentCard_text__d9e0f1 {Any chance you could do a part 2 covering ArgoCD and GitOps workflows?}
+div class=CommentCard_actions__g2h3i4 {👍 89 Reply}
+button class=CommentCard_likeBtn__j5k6l7 type=button {👍 89}
+button class=CommentCard_replyBtn__m8n9o0 type=button {Reply}
+div class=CommentCard_root__r7s8t9 {C cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply}
+div class=CommentCard_avatar__u0v1w2 {C}
+div class=CommentCard_body__x3y4z5 {cloudCarla 1 month ago  The secrets management walkthrough was incredibly clear. Subscribed immediately!  👍 45 Reply}
+span class=CommentCard_author__a6b7c8 {cloudCarla}
+span class=CommentCard_date__b9c0d1 {1 month ago}
+p class=CommentCard_text__d9e0f1 {The secrets management walkthrough was incredibly clear. Subscribed immediately!}
+div class=CommentCard_actions__g2h3i4 {👍 45 Reply}
+button class=CommentCard_likeBtn__j5k6l7 type=button {👍 45}
+button class=CommentCard_replyBtn__m8n9o0 type=button {Reply}
+div class=CommentCard_root__r7s8t9 {D devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply}
+div class=CommentCard_avatar__u0v1w2 {D}
+div class=CommentCard_body__x3y4z5 {devdan42 3 weeks ago  Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.  👍 31 Reply}
+span class=CommentCard_author__a6b7c8 {devdan42}
+span class=CommentCard_date__b9c0d1 {3 weeks ago}
+p class=CommentCard_text__d9e0f1 {Timestamp 32:14 for the Vault integration — that part is fire. Best tutorial on this topic by far.}
+div class=CommentCard_actions__g2h3i4 {👍 31 Reply}
+button class=CommentCard_likeBtn__j5k6l7 type=button {👍 31}
+button class=CommentCard_replyBtn__m8n9o0 type=button {Reply}
+aside class=PageLayout_sidebar__p1q2r3 {Up next ▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…}
+div class=Sidebar_section__s4t5u6 {Up next ▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago ▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago ▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago ▶ Zero-Downtime Deployments Exp…}
+h4 class=Sidebar_heading__v7w8x9 {Up next}
+div {▶ Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Advanced Kubernetes Networking — Services, Ingress & CNI DevOps Academy 890K views · 1 week ago}
+span class=SidePanel_title__e6f7g8 {Advanced Kubernetes Networking — Services, Ingress & CNI}
+span class=SidePanel_channel__h9i0j1 {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {890K views · 1 week ago}
+div class=SidePanel_card__n5o6p7 {▶ Docker Compose for Local Development Container Crew 342K views · 4 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Docker Compose for Local Development Container Crew 342K views · 4 months ago}
+span class=SidePanel_title__e6f7g8 {Docker Compose for Local Development}
+span class=SidePanel_channel__h9i0j1 {Container Crew}
+span class=SidePanel_meta__k2l3m4 {342K views · 4 months ago}
+div class=SidePanel_card__n5o6p7 {▶ GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {GitHub Actions Secrets & OIDC Deep Dive DevOps Academy 156K views · 5 months ago}
+span class=SidePanel_title__e6f7g8 {GitHub Actions Secrets & OIDC Deep Dive}
+span class=SidePanel_channel__h9i0j1 {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {156K views · 5 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Zero-Downtime Deployments Explained Cloud Native Labs 78K views · 6 months ago}
+span class=SidePanel_title__e6f7g8 {Zero-Downtime Deployments Explained}
+span class=SidePanel_channel__h9i0j1 {Cloud Native Labs}
+span class=SidePanel_meta__k2l3m4 {78K views · 6 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Terraform for Beginners — IaC Fundamentals Infra Ninja 512K views · 2 months ago}
+span class=SidePanel_title__e6f7g8 {Terraform for Beginners — IaC Fundamentals}
+span class=SidePanel_channel__h9i0j1 {Infra Ninja}
+span class=SidePanel_meta__k2l3m4 {512K views · 2 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Monitoring with Prometheus and Grafana SRE Mastery 234K views · 3 months ago}
+span class=SidePanel_title__e6f7g8 {Monitoring with Prometheus and Grafana}
+span class=SidePanel_channel__h9i0j1 {SRE Mastery}
+span class=SidePanel_meta__k2l3m4 {234K views · 3 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Service Mesh with Istio — Complete Guide Cloud Native Labs 189K views · 2 months ago}
+span class=SidePanel_title__e6f7g8 {Service Mesh with Istio — Complete Guide}
+span class=SidePanel_channel__h9i0j1 {Cloud Native Labs}
+span class=SidePanel_meta__k2l3m4 {189K views · 2 months ago}
+div class=SidePanel_card__n5o6p7 {▶ Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago}
+div class=SidePanel_thumb__y0z1a2 {▶}
+div class=SidePanel_info__b3c4d5 {Helm Charts — Package Your Kubernetes Apps DevOps Academy 445K views · 7 months ago}
+span class=SidePanel_title__e6f7g8 {Helm Charts — Package Your Kubernetes Apps}
+span class=SidePanel_channel__h9i0j1 {DevOps Academy}
+span class=SidePanel_meta__k2l3m4 {445K views · 7 months ago}
+footer class=PageLayout_footer__q4r5s6 {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features  © 2024 VideoNest LLC}
+div class=Footer_inner__t7u8v9 {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features  © 2024 VideoNest LLC}
+div class=Footer_links__w0x1y2 {About Press Copyright Contact us Creators Advertise Developers Privacy Policy & Safety How VideoNest works Test new features}
+a href=# {About}
+a href=# {Press}
+a href=# {Copyright}
+a href=# {Contact us}
+a href=# {Creators}
+a href=# {Advertise}
+a href=# {Developers}
+a href=# {Privacy}
+a href=# {Policy & Safety}
+a href=# {How VideoNest works}
+a href=# {Test new features}
+p class=Footer_copy__z3a4b5 {© 2024 VideoNest LLC}

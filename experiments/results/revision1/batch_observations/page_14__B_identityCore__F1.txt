@@ -1,0 +1,1 @@
+[{"tag":"input","id":"menu-search","data-testid":"menu-search"},{"tag":"select","data-testid":"sort-dropdown"},{"tag":"input","id":"delivery-address"},{"tag":"div","id":"item-pepperoni-d4e5f6"},{"tag":"cart-widget","id":"cart-widget-f7g8h9"},{"tag":"div","data-testid":"cart-total-display","is_shadow":"true"},{"tag":"button","data-testid":"checkout-btn","is_shadow":"true"}]

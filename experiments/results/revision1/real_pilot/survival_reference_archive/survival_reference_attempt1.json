@@ -1,0 +1,1168 @@
+{
+ "description": "September reference per site (addenda (е) a74ace4, (е′) 7cca0aa, (е″)): sha256 of the B_full × F1 observation on the survival load, clock paused right after the load; valid only if identical in 3 cold loads (new browser start, warm-up, reference load).",
+ "crawl": "CC-MAIN-2026-39",
+ "cell": {
+  "bundle": "B_full",
+  "encoding": "F1"
+ },
+ "walk": "RealPilotOffline.SeptemberPreHashAsync → Observation.BuildObservationAsync(B_full, F1) → sha256 (UTF-8); load: RealPilotOffline.SeptemberReferenceLoadAsync (survival load of (д), clock paused right after it (а‴), mutation window around the walk)",
+ "cold_loads": 3,
+ "max_generations": 3,
+ "survival_targets_sha256": "6bdd67be22b43caa126305ab50784ff2136c46bce05e507bae8bd5dac70874db",
+ "runs": [
+  {
+   "n": 1,
+   "utc_start": "2026-10-15T12:20:14Z",
+   "code_commit": "c9da83af328da58efebbb64c8f50be535d70c09c",
+   "sites": [
+    "0029_github.com",
+    "0031_wikipedia.org",
+    "0049_wordpress.org",
+    "0109_triplinkintl.com",
+    "0129_dropbox.com",
+    "0131_intuit.com",
+    "0142_afternic.com",
+    "0146_kaspersky.com",
+    "0150_godaddy.com",
+    "0160_criteo.com",
+    "0162_webex.com",
+    "0167_hichina.com",
+    "0170_shopify.com",
+    "0176_discord.com",
+    "0206_telegram.org",
+    "0227_cisco.com",
+    "0232_nist.gov",
+    "0256_hubspot.com",
+    "0266_spectrum.com",
+    "0278_dnsmadeeasy.com",
+    "0309_inmobi.com",
+    "0314_ok.ru",
+    "0324_appsflyer.com",
+    "0337_drom.ru",
+    "0356_nasa.gov",
+    "0357_mobile.de",
+    "0365_checkpoint.com",
+    "0379_plesk.com",
+    "0381_issuu.com",
+    "0382_datadoghq.com",
+    "0385_stanford.edu",
+    "0399_doubleverify.com",
+    "0418_unsplash.com"
+   ],
+   "machine": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 24,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   },
+   "utc_end": "2026-10-15T12:23:37Z",
+   "machine_end": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 24,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   }
+  },
+  {
+   "n": 2,
+   "utc_start": "2026-10-15T12:23:53Z",
+   "code_commit": "c9da83af328da58efebbb64c8f50be535d70c09c",
+   "sites": [
+    "0337_drom.ru"
+   ],
+   "machine": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 23,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   },
+   "utc_end": "2026-10-15T12:24:04Z",
+   "machine_end": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 24,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   }
+  },
+  {
+   "n": 3,
+   "utc_start": "2026-10-15T12:24:14Z",
+   "code_commit": "c9da83af328da58efebbb64c8f50be535d70c09c",
+   "sites": [
+    "0337_drom.ru"
+   ],
+   "machine": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 25,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   },
+   "utc_end": "2026-10-15T12:24:25Z",
+   "machine_end": {
+    "quiet": false,
+    "processes": {
+     "firefox.exe": 25,
+     "chrome.exe": 0,
+     "msedge.exe": 0,
+     "onedrive.exe": 0
+    }
+   }
+  }
+ ],
+ "sites": [
+  {
+   "key": "0029_github.com",
+   "html_sha256": "2a3c40dc3020632f04d86ddbe875d4f0e9e02003edc9121bde35f3d1f27c85dd",
+   "stable": true,
+   "reference_sha256": "eb797f360194f5cde477aa8f2f2c6b9dc5d92b0296c056cfe1664bf448b42879",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "eb797f360194f5cde477aa8f2f2c6b9dc5d92b0296c056cfe1664bf448b42879",
+      "eb797f360194f5cde477aa8f2f2c6b9dc5d92b0296c056cfe1664bf448b42879",
+      "eb797f360194f5cde477aa8f2f2c6b9dc5d92b0296c056cfe1664bf448b42879"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:21Z",
+      "2026-10-15T12:20:23Z",
+      "2026-10-15T12:20:25Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0031_wikipedia.org",
+   "html_sha256": "6345affdc48c5e0c313f4e483c7a5c07d86f32aea8ee07ce6fd031094133e30c",
+   "stable": true,
+   "reference_sha256": "3cb27fb033a478b62f502b6191fe4581d1c877583e1ee66148fd6d1a79765a16",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "3cb27fb033a478b62f502b6191fe4581d1c877583e1ee66148fd6d1a79765a16",
+      "3cb27fb033a478b62f502b6191fe4581d1c877583e1ee66148fd6d1a79765a16",
+      "3cb27fb033a478b62f502b6191fe4581d1c877583e1ee66148fd6d1a79765a16"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:27Z",
+      "2026-10-15T12:20:29Z",
+      "2026-10-15T12:20:32Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0049_wordpress.org",
+   "html_sha256": "4a221fa7f1ee0558b483c51d3c0061bcaa6b0a29f5dee93ca12757f76dd63071",
+   "stable": true,
+   "reference_sha256": "e5bb8f67763aa50bafcae051825ad6e584e086a4aed70412aa0976800c465f1a",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "e5bb8f67763aa50bafcae051825ad6e584e086a4aed70412aa0976800c465f1a",
+      "e5bb8f67763aa50bafcae051825ad6e584e086a4aed70412aa0976800c465f1a",
+      "e5bb8f67763aa50bafcae051825ad6e584e086a4aed70412aa0976800c465f1a"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:33Z",
+      "2026-10-15T12:20:35Z",
+      "2026-10-15T12:20:37Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0109_triplinkintl.com",
+   "html_sha256": "bbce9e64118922940c26ada964fcb438f140d2f4553930dd5758fde33dab7995",
+   "stable": true,
+   "reference_sha256": "0844f28926112e9d5ad39db65ea387fb491a59f6f1ff9571138bb012a8c4dc93",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "0844f28926112e9d5ad39db65ea387fb491a59f6f1ff9571138bb012a8c4dc93",
+      "0844f28926112e9d5ad39db65ea387fb491a59f6f1ff9571138bb012a8c4dc93",
+      "0844f28926112e9d5ad39db65ea387fb491a59f6f1ff9571138bb012a8c4dc93"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:39Z",
+      "2026-10-15T12:20:41Z",
+      "2026-10-15T12:20:43Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0129_dropbox.com",
+   "html_sha256": "91f100031a92b706b2769976b472961b4dc2e8c37a7ddbe3c521c567cc8d0019",
+   "stable": true,
+   "reference_sha256": "8dfbfb1f538a62ea9508b4c42ab4779b4845bd701be3b65208a55369eab72ced",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "8dfbfb1f538a62ea9508b4c42ab4779b4845bd701be3b65208a55369eab72ced",
+      "8dfbfb1f538a62ea9508b4c42ab4779b4845bd701be3b65208a55369eab72ced",
+      "8dfbfb1f538a62ea9508b4c42ab4779b4845bd701be3b65208a55369eab72ced"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:45Z",
+      "2026-10-15T12:20:47Z",
+      "2026-10-15T12:20:49Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0131_intuit.com",
+   "html_sha256": "cac8127840a366e7029646b78bfe9f127542248c732fc177c0583a24ffbc1f80",
+   "stable": true,
+   "reference_sha256": "52a707ee6e581a0b0249d44b8c1222614ba80fdf7df710ae20633bb0b0b383cd",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "52a707ee6e581a0b0249d44b8c1222614ba80fdf7df710ae20633bb0b0b383cd",
+      "52a707ee6e581a0b0249d44b8c1222614ba80fdf7df710ae20633bb0b0b383cd",
+      "52a707ee6e581a0b0249d44b8c1222614ba80fdf7df710ae20633bb0b0b383cd"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:51Z",
+      "2026-10-15T12:20:53Z",
+      "2026-10-15T12:20:55Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0142_afternic.com",
+   "html_sha256": "7e31f0b749ef44b7152a2d8eb3025b21679c150930f34d919cbb3680392ada80",
+   "stable": true,
+   "reference_sha256": "8d42950298ef71f12e853b4821c7d28825eed92018f85980be2743d1df48be0e",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "8d42950298ef71f12e853b4821c7d28825eed92018f85980be2743d1df48be0e",
+      "8d42950298ef71f12e853b4821c7d28825eed92018f85980be2743d1df48be0e",
+      "8d42950298ef71f12e853b4821c7d28825eed92018f85980be2743d1df48be0e"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:20:57Z",
+      "2026-10-15T12:20:59Z",
+      "2026-10-15T12:21:00Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0146_kaspersky.com",
+   "html_sha256": "033f16b8945389c41369ab056dd977b6f0f255d47b777120c1625e5461b1e0a5",
+   "stable": true,
+   "reference_sha256": "5f88dc6a33abe88fbfc6ef1789ee32db41d067bd36ed24adb0736bc6531eed6d",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "5f88dc6a33abe88fbfc6ef1789ee32db41d067bd36ed24adb0736bc6531eed6d",
+      "5f88dc6a33abe88fbfc6ef1789ee32db41d067bd36ed24adb0736bc6531eed6d",
+      "5f88dc6a33abe88fbfc6ef1789ee32db41d067bd36ed24adb0736bc6531eed6d"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:02Z",
+      "2026-10-15T12:21:05Z",
+      "2026-10-15T12:21:07Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0150_godaddy.com",
+   "html_sha256": "65ae5d0f426ab6bb5a84f91e0e5b04280a6c3b3dd8d9f4e7cd7ea02c7f0a30aa",
+   "stable": true,
+   "reference_sha256": "adb1191a641cc8ffa9be1ce5457d49e78525a4153bca209162c2bbd46b34b5df",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "adb1191a641cc8ffa9be1ce5457d49e78525a4153bca209162c2bbd46b34b5df",
+      "adb1191a641cc8ffa9be1ce5457d49e78525a4153bca209162c2bbd46b34b5df",
+      "adb1191a641cc8ffa9be1ce5457d49e78525a4153bca209162c2bbd46b34b5df"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:09Z",
+      "2026-10-15T12:21:11Z",
+      "2026-10-15T12:21:13Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0160_criteo.com",
+   "html_sha256": "440ae363b01fd50c91826e6ab6dc5527ca021d52797dd84371c720d9608f402e",
+   "stable": true,
+   "reference_sha256": "5ad24e078a1c83bb61651b9eff6bcb0fa212bea652b5bb1d2c21e52c26f719a4",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "5ad24e078a1c83bb61651b9eff6bcb0fa212bea652b5bb1d2c21e52c26f719a4",
+      "5ad24e078a1c83bb61651b9eff6bcb0fa212bea652b5bb1d2c21e52c26f719a4",
+      "5ad24e078a1c83bb61651b9eff6bcb0fa212bea652b5bb1d2c21e52c26f719a4"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:15Z",
+      "2026-10-15T12:21:17Z",
+      "2026-10-15T12:21:19Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0162_webex.com",
+   "html_sha256": "0401cd3b6b4dd3179a14666b42a690b2ad3d384d18e0fc6772391f655a07851c",
+   "stable": true,
+   "reference_sha256": "b7109b63519f8565958523381bee6f5036b751fd90ce5c0e41cfc4486baad554",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "b7109b63519f8565958523381bee6f5036b751fd90ce5c0e41cfc4486baad554",
+      "b7109b63519f8565958523381bee6f5036b751fd90ce5c0e41cfc4486baad554",
+      "b7109b63519f8565958523381bee6f5036b751fd90ce5c0e41cfc4486baad554"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:21Z",
+      "2026-10-15T12:21:23Z",
+      "2026-10-15T12:21:24Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0167_hichina.com",
+   "html_sha256": "83635cc089dcce694f1e665068e911eee99066638f4494d193b431528c20a1a9",
+   "stable": true,
+   "reference_sha256": "a7d20ffa714f4f67c9713e815687494f11e9d8390dd788b9767082e88d2e463b",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "a7d20ffa714f4f67c9713e815687494f11e9d8390dd788b9767082e88d2e463b",
+      "a7d20ffa714f4f67c9713e815687494f11e9d8390dd788b9767082e88d2e463b",
+      "a7d20ffa714f4f67c9713e815687494f11e9d8390dd788b9767082e88d2e463b"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:26Z",
+      "2026-10-15T12:21:28Z",
+      "2026-10-15T12:21:30Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0170_shopify.com",
+   "html_sha256": "9db3310cc222e3b16464c6deb890704e733c4ca36b1b35b634f0362143ca0bee",
+   "stable": true,
+   "reference_sha256": "5943f7d0ad3f4c9cc4653bfde07e6eb322edae89a71bfa2ac7f987cf62f5fab7",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "5943f7d0ad3f4c9cc4653bfde07e6eb322edae89a71bfa2ac7f987cf62f5fab7",
+      "5943f7d0ad3f4c9cc4653bfde07e6eb322edae89a71bfa2ac7f987cf62f5fab7",
+      "5943f7d0ad3f4c9cc4653bfde07e6eb322edae89a71bfa2ac7f987cf62f5fab7"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:32Z",
+      "2026-10-15T12:21:34Z",
+      "2026-10-15T12:21:36Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0176_discord.com",
+   "html_sha256": "01c13de3709bfddb3ef27ec8f4f53d8fb87e841721e8d47cca30707f5500c277",
+   "stable": true,
+   "reference_sha256": "4d15f2e3a7be15e05f268450021cb1b67196ed7ece33f11cbf86fdd2648c4867",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "4d15f2e3a7be15e05f268450021cb1b67196ed7ece33f11cbf86fdd2648c4867",
+      "4d15f2e3a7be15e05f268450021cb1b67196ed7ece33f11cbf86fdd2648c4867",
+      "4d15f2e3a7be15e05f268450021cb1b67196ed7ece33f11cbf86fdd2648c4867"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:38Z",
+      "2026-10-15T12:21:40Z",
+      "2026-10-15T12:21:42Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0206_telegram.org",
+   "html_sha256": "113a1b8a11cc13975ca7fd203f4a70f7df8b824dd9e4d229345e67e97cc5278e",
+   "stable": true,
+   "reference_sha256": "0f6f4a63a4518ab9b7eacc8acd292a851bdaed147df945ed1ee10d086128be41",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "0f6f4a63a4518ab9b7eacc8acd292a851bdaed147df945ed1ee10d086128be41",
+      "0f6f4a63a4518ab9b7eacc8acd292a851bdaed147df945ed1ee10d086128be41",
+      "0f6f4a63a4518ab9b7eacc8acd292a851bdaed147df945ed1ee10d086128be41"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:44Z",
+      "2026-10-15T12:21:46Z",
+      "2026-10-15T12:21:48Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0227_cisco.com",
+   "html_sha256": "76e61b56b0486348bda395bb26cd547352a9cc817fa5beb9aaa7ea493022a2ac",
+   "stable": true,
+   "reference_sha256": "173e57ee9d018595dcc22805b74b5b10f34072598d7465783971ab76fa99a982",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "173e57ee9d018595dcc22805b74b5b10f34072598d7465783971ab76fa99a982",
+      "173e57ee9d018595dcc22805b74b5b10f34072598d7465783971ab76fa99a982",
+      "173e57ee9d018595dcc22805b74b5b10f34072598d7465783971ab76fa99a982"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:50Z",
+      "2026-10-15T12:21:52Z",
+      "2026-10-15T12:21:54Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0232_nist.gov",
+   "html_sha256": "25f54bb803f0066a674942b6f4476d5ac57c192d4e2b87421a30d014c5af9cbe",
+   "stable": true,
+   "reference_sha256": "b697b624eca57d509121507364d5aa723ac31f9b47af6475c68ed793b4a919f8",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "b697b624eca57d509121507364d5aa723ac31f9b47af6475c68ed793b4a919f8",
+      "b697b624eca57d509121507364d5aa723ac31f9b47af6475c68ed793b4a919f8",
+      "b697b624eca57d509121507364d5aa723ac31f9b47af6475c68ed793b4a919f8"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:21:56Z",
+      "2026-10-15T12:21:57Z",
+      "2026-10-15T12:21:59Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0256_hubspot.com",
+   "html_sha256": "681231bcea251b511ac6761a77effc5825543fc07c0b0af77ed8e439a17716bd",
+   "stable": true,
+   "reference_sha256": "dd24bdd15e0da209b23dd49868632abe3251fb869ae6e69294612d2561519c4a",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "dd24bdd15e0da209b23dd49868632abe3251fb869ae6e69294612d2561519c4a",
+      "dd24bdd15e0da209b23dd49868632abe3251fb869ae6e69294612d2561519c4a",
+      "dd24bdd15e0da209b23dd49868632abe3251fb869ae6e69294612d2561519c4a"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:01Z",
+      "2026-10-15T12:22:04Z",
+      "2026-10-15T12:22:06Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0266_spectrum.com",
+   "html_sha256": "f71e9b133e1ffe24fa0015c594d0ffc96933cb085de65da92036946c1c1eec55",
+   "stable": true,
+   "reference_sha256": "5751f657ce0680b3257b0797fe6336e790ae46166ccb62e0df3328106d98ebf3",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "5751f657ce0680b3257b0797fe6336e790ae46166ccb62e0df3328106d98ebf3",
+      "5751f657ce0680b3257b0797fe6336e790ae46166ccb62e0df3328106d98ebf3",
+      "5751f657ce0680b3257b0797fe6336e790ae46166ccb62e0df3328106d98ebf3"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:08Z",
+      "2026-10-15T12:22:10Z",
+      "2026-10-15T12:22:12Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0278_dnsmadeeasy.com",
+   "html_sha256": "6743711a55b61195eea93b8df4288fd870a8e5de59ad1711ec3a4995df4ae9a8",
+   "stable": true,
+   "reference_sha256": "d39f486615c973fb761c8405606abcaa4954e8574f05d0f8ac771d266dae376d",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "d39f486615c973fb761c8405606abcaa4954e8574f05d0f8ac771d266dae376d",
+      "d39f486615c973fb761c8405606abcaa4954e8574f05d0f8ac771d266dae376d",
+      "d39f486615c973fb761c8405606abcaa4954e8574f05d0f8ac771d266dae376d"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:14Z",
+      "2026-10-15T12:22:16Z",
+      "2026-10-15T12:22:17Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0309_inmobi.com",
+   "html_sha256": "7d5a0e594b281e94ebca4b16050999f4f3322b9c9bffda80bd420ad5b9e29346",
+   "stable": true,
+   "reference_sha256": "89ab7c43329173f19ffea9a4cf60b3ab37c4b89a174166a9f332168ec58f4af9",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "89ab7c43329173f19ffea9a4cf60b3ab37c4b89a174166a9f332168ec58f4af9",
+      "89ab7c43329173f19ffea9a4cf60b3ab37c4b89a174166a9f332168ec58f4af9",
+      "89ab7c43329173f19ffea9a4cf60b3ab37c4b89a174166a9f332168ec58f4af9"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:19Z",
+      "2026-10-15T12:22:21Z",
+      "2026-10-15T12:22:22Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0314_ok.ru",
+   "html_sha256": "85a8ca72833fbaaa766c7e2062d27e1c057f0235db53b93f1393271386159792",
+   "stable": true,
+   "reference_sha256": "35d4c71d79f3c295fdeadb9a530337ee55cc4317cbb2ab66d7841aa191352f25",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "35d4c71d79f3c295fdeadb9a530337ee55cc4317cbb2ab66d7841aa191352f25",
+      "35d4c71d79f3c295fdeadb9a530337ee55cc4317cbb2ab66d7841aa191352f25",
+      "35d4c71d79f3c295fdeadb9a530337ee55cc4317cbb2ab66d7841aa191352f25"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:24Z",
+      "2026-10-15T12:22:26Z",
+      "2026-10-15T12:22:28Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0324_appsflyer.com",
+   "html_sha256": "1cfd4ead55c47c40f6fc5e5fccde6b5d228d9841922d0e3417caa75bf26f1f37",
+   "stable": true,
+   "reference_sha256": "a52f243ac2c87f95e37466195ab4e583fdcc10d32d75f63d7f6a04ee7a85e601",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "a52f243ac2c87f95e37466195ab4e583fdcc10d32d75f63d7f6a04ee7a85e601",
+      "a52f243ac2c87f95e37466195ab4e583fdcc10d32d75f63d7f6a04ee7a85e601",
+      "a52f243ac2c87f95e37466195ab4e583fdcc10d32d75f63d7f6a04ee7a85e601"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:30Z",
+      "2026-10-15T12:22:32Z",
+      "2026-10-15T12:22:34Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0337_drom.ru",
+   "html_sha256": "c3129471a31bc43d7068c775e02006ff6be3b3d62f81a361823044723e660a75",
+   "stable": false,
+   "reference_sha256": null,
+   "reference_generation": null,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "8664eacfe1cf10a223acd81f424cc9b81b3221423220db950f60754585b0a3ea",
+      "bf04ff373a15165663bc774155508b9a5c1bc316ec9ac1190f27f79b1593d2ae",
+      "390c8f20c5eb2c42e4df14d1693d86ce74ef4a71e8f31b7e7c2c96584f1201d4"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:37Z",
+      "2026-10-15T12:22:39Z",
+      "2026-10-15T12:22:41Z"
+     ],
+     "errors": [],
+     "stable": false
+    },
+    {
+     "generation": 2,
+     "run": 2,
+     "hashes": [
+      "8a2efe5a7e6bae153e3bb6fbb557b35d9deb719db03fa3dc928a339233ef8dfc",
+      "bf04ff373a15165663bc774155508b9a5c1bc316ec9ac1190f27f79b1593d2ae",
+      "bf04ff373a15165663bc774155508b9a5c1bc316ec9ac1190f27f79b1593d2ae"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:24:00Z",
+      "2026-10-15T12:24:02Z",
+      "2026-10-15T12:24:04Z"
+     ],
+     "errors": [],
+     "stable": false
+    },
+    {
+     "generation": 3,
+     "run": 3,
+     "hashes": [
+      "bf04ff373a15165663bc774155508b9a5c1bc316ec9ac1190f27f79b1593d2ae",
+      "bf04ff373a15165663bc774155508b9a5c1bc316ec9ac1190f27f79b1593d2ae",
+      "390c8f20c5eb2c42e4df14d1693d86ce74ef4a71e8f31b7e7c2c96584f1201d4"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:24:20Z",
+      "2026-10-15T12:24:23Z",
+      "2026-10-15T12:24:25Z"
+     ],
+     "errors": [],
+     "stable": false
+    }
+   ]
+  },
+  {
+   "key": "0356_nasa.gov",
+   "html_sha256": "2d11deb198d74a3d218ef1cb5a90660378725cbf07c74a9b33feab3e307b15c1",
+   "stable": true,
+   "reference_sha256": "75eb9510583a6cf2bd1884caf220ab4b5f7aa23b10f4af36cdfe9918f5161291",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "75eb9510583a6cf2bd1884caf220ab4b5f7aa23b10f4af36cdfe9918f5161291",
+      "75eb9510583a6cf2bd1884caf220ab4b5f7aa23b10f4af36cdfe9918f5161291",
+      "75eb9510583a6cf2bd1884caf220ab4b5f7aa23b10f4af36cdfe9918f5161291"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:43Z",
+      "2026-10-15T12:22:45Z",
+      "2026-10-15T12:22:47Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0357_mobile.de",
+   "html_sha256": "bae49db63296e5ad6f156d771cc9a015a2105d50787168e69701b29596797dcd",
+   "stable": true,
+   "reference_sha256": "cad09474b7c9884341e39508397d27096094006879b1b4c6c4872ec6e1673306",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "cad09474b7c9884341e39508397d27096094006879b1b4c6c4872ec6e1673306",
+      "cad09474b7c9884341e39508397d27096094006879b1b4c6c4872ec6e1673306",
+      "cad09474b7c9884341e39508397d27096094006879b1b4c6c4872ec6e1673306"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:49Z",
+      "2026-10-15T12:22:51Z",
+      "2026-10-15T12:22:53Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0365_checkpoint.com",
+   "html_sha256": "e35d2473852a76475db7594924377311a4333c98d56459326bd42d7d75985a08",
+   "stable": true,
+   "reference_sha256": "035fa435017d76ee8de0c61dbc797c51982192f512f1280b6c4d3817a0ddaca5",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "035fa435017d76ee8de0c61dbc797c51982192f512f1280b6c4d3817a0ddaca5",
+      "035fa435017d76ee8de0c61dbc797c51982192f512f1280b6c4d3817a0ddaca5",
+      "035fa435017d76ee8de0c61dbc797c51982192f512f1280b6c4d3817a0ddaca5"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:22:55Z",
+      "2026-10-15T12:22:57Z",
+      "2026-10-15T12:22:59Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0379_plesk.com",
+   "html_sha256": "e9b9c2d9d2e0b3757e9fc63aea759cf16398f32672156f15f83058de76fb0c6e",
+   "stable": true,
+   "reference_sha256": "6bbcca50386ec05d705c1f4ced1a8fac68315ebbcb46b99ae37e45b952117512",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "6bbcca50386ec05d705c1f4ced1a8fac68315ebbcb46b99ae37e45b952117512",
+      "6bbcca50386ec05d705c1f4ced1a8fac68315ebbcb46b99ae37e45b952117512",
+      "6bbcca50386ec05d705c1f4ced1a8fac68315ebbcb46b99ae37e45b952117512"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:02Z",
+      "2026-10-15T12:23:04Z",
+      "2026-10-15T12:23:07Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0381_issuu.com",
+   "html_sha256": "700847f44fbcb0ad160482b4ed06572b5f5c8a65262dca40f22b46072f30ad01",
+   "stable": true,
+   "reference_sha256": "d37820a00838c9cc18ec962488ba4ac09a27ef937af3966dfb8a0961f59dd971",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "d37820a00838c9cc18ec962488ba4ac09a27ef937af3966dfb8a0961f59dd971",
+      "d37820a00838c9cc18ec962488ba4ac09a27ef937af3966dfb8a0961f59dd971",
+      "d37820a00838c9cc18ec962488ba4ac09a27ef937af3966dfb8a0961f59dd971"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:08Z",
+      "2026-10-15T12:23:10Z",
+      "2026-10-15T12:23:12Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0382_datadoghq.com",
+   "html_sha256": "742b6b8f7d1f7e4d7d7a6739b81a79ceeb11e77c6775698e2379bc184bc7d8fc",
+   "stable": true,
+   "reference_sha256": "63caf1c56b7ac9fa2f38b82d1b8bc115ce5b740871f19bd0d2e55693be27b9f8",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "63caf1c56b7ac9fa2f38b82d1b8bc115ce5b740871f19bd0d2e55693be27b9f8",
+      "63caf1c56b7ac9fa2f38b82d1b8bc115ce5b740871f19bd0d2e55693be27b9f8",
+      "63caf1c56b7ac9fa2f38b82d1b8bc115ce5b740871f19bd0d2e55693be27b9f8"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:14Z",
+      "2026-10-15T12:23:16Z",
+      "2026-10-15T12:23:18Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0385_stanford.edu",
+   "html_sha256": "c19376da65bb274f1a56fa27069d27f6342c46e49842d49354e781a07b22c362",
+   "stable": true,
+   "reference_sha256": "3b36aaf8173efece60bd4402d66d40cd35d90a263e6df862b38a718b2834b581",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "3b36aaf8173efece60bd4402d66d40cd35d90a263e6df862b38a718b2834b581",
+      "3b36aaf8173efece60bd4402d66d40cd35d90a263e6df862b38a718b2834b581",
+      "3b36aaf8173efece60bd4402d66d40cd35d90a263e6df862b38a718b2834b581"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:20Z",
+      "2026-10-15T12:23:22Z",
+      "2026-10-15T12:23:24Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0399_doubleverify.com",
+   "html_sha256": "9ea6f7325f8317c01653aa0bc076f163c0c328fb81edb75d414d9106c912ac0e",
+   "stable": true,
+   "reference_sha256": "7c0ac44b2477b962c69586df8cc91ac45ea4c2ce192e9982bab0a4aabe05dafb",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "7c0ac44b2477b962c69586df8cc91ac45ea4c2ce192e9982bab0a4aabe05dafb",
+      "7c0ac44b2477b962c69586df8cc91ac45ea4c2ce192e9982bab0a4aabe05dafb",
+      "7c0ac44b2477b962c69586df8cc91ac45ea4c2ce192e9982bab0a4aabe05dafb"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:26Z",
+      "2026-10-15T12:23:28Z",
+      "2026-10-15T12:23:30Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  },
+  {
+   "key": "0418_unsplash.com",
+   "html_sha256": "1fb27c2b4a776b7a4782a973669529c7004c30192c4d52fb86d007892754aef7",
+   "stable": true,
+   "reference_sha256": "623634a22067c6423c6c42af5e688afca6f92b2623b222b39789c5490e742e12",
+   "reference_generation": 1,
+   "generations": [
+    {
+     "generation": 1,
+     "run": 1,
+     "hashes": [
+      "623634a22067c6423c6c42af5e688afca6f92b2623b222b39789c5490e742e12",
+      "623634a22067c6423c6c42af5e688afca6f92b2623b222b39789c5490e742e12",
+      "623634a22067c6423c6c42af5e688afca6f92b2623b222b39789c5490e742e12"
+     ],
+     "mutations": [
+      0,
+      0,
+      0
+     ],
+     "utc": [
+      "2026-10-15T12:23:33Z",
+      "2026-10-15T12:23:35Z",
+      "2026-10-15T12:23:37Z"
+     ],
+     "errors": [],
+     "stable": true
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "sites": 33,
+  "stable": 32,
+  "not_stable": [
+   "0337_drom.ru"
+  ]
+ }
+}

@@ -1,0 +1,2532 @@
+<body>NorthVault Accounts Transfers Payments Cards Investments Support John Smith | Logout Your direct debit for Council Tax is due in 3 days. View Current Account ••4821 £12,450.00 Available balance Savings Account ••7293 £8,200.00 Available balance Credit Card ••9034 -£340.00 View statement ISA Account …</body>
+<nav>NorthVault Accounts Transfers Payments Cards Investments Support John Smith | Logout</nav>
+<span>NorthVault</span>
+<a href="/accounts">Accounts</a>
+<a href="/transfers">Transfers</a>
+<a href="/payments">Payments</a>
+<a href="/cards">Cards</a>
+<a href="/investments">Investments</a>
+<a href="/support">Support</a>
+<span>John Smith | Logout</span>
+<div class="page-wrap">Your direct debit for Council Tax is due in 3 days. View Current Account ••4821 £12,450.00 Available balance Savings Account ••7293 £8,200.00 Available balance Credit Card ••9034 -£340.00 View statement ISA Account ••2210 £22,000.00 Tax-free savings Quick Actions Schedule payment Download statement …</div>
+<div class="alert">Your direct debit for Council Tax is due in 3 days. View</div>
+<a href="/payments/dd">View</a>
+<div class="d-md-none">Current Account ••4821       £12,450.00       Available balance</div>
+<div>Current Account ••4821</div>
+<div>£12,450.00</div>
+<div>Available balance</div>
+<div class="d-none-md" aria-label="Account balance summary">Current Account ••4821 £12,450.00 Available balance Savings Account ••7293 £8,200.00 Available balance Credit Card ••9034 -£340.00 View statement ISA Account ••2210 £22,000.00 Tax-free savings</div>
+<div>Current Account ••4821 £12,450.00 Available balance</div>
+<div>Current Account ••4821</div>
+<div>£12,450.00</div>
+<div>Available balance</div>
+<div>Savings Account ••7293 £8,200.00 Available balance</div>
+<div>Savings Account ••7293</div>
+<div>£8,200.00</div>
+<div>Available balance</div>
+<div>Credit Card ••9034 -£340.00 View statement</div>
+<div>Credit Card ••9034</div>
+<div>-£340.00</div>
+<a href="/statements/credit-card" aria-label="View credit card statement">View statement</a>
+<div>ISA Account ••2210 £22,000.00 Tax-free savings</div>
+<div>ISA Account ••2210</div>
+<div>£22,000.00</div>
+<div>Tax-free savings</div>
+<section>Quick Actions Schedule payment Download statement Manage alerts Notifications Direct debits Standing orders</section>
+<h2>Quick Actions</h2>
+<div class="quick-actions">Schedule payment Download statement Manage alerts Notifications Direct debits Standing orders</div>
+<a href="/payments/schedule">Schedule payment</a>
+<a href="/statements/download">Download statement</a>
+<a href="/alerts">Manage alerts</a>
+<a href="/notifications">Notifications</a>
+<a href="/direct-debits">Direct debits</a>
+<a href="/standing-orders">Standing orders</a>
+<section>Quick Transfer From account Current Account ••4821 Savings Account ••7293 ISA ••2210 Amount (£)   Transfer To payee Select payee... Jane Smith ••8812 Council Tax Direct Debit Mortgage — Halifax Gym Membership</section>
+<h2>Quick Transfer</h2>
+<div class="grid-3">From account Current Account ••4821 Savings Account ••7293 ISA ••2210 Amount (£)   Transfer</div>
+<div>From account Current Account ••4821 Savings Account ••7293 ISA ••2210</div>
+<label for="from-account">From account</label>
+<select id="from-account" name="from_account" aria-label="Transfer from account">Current Account ••4821 Savings Account ••7293 ISA ••2210</select>
+<option value="current">Current Account ••4821</option>
+<option value="savings">Savings Account ••7293</option>
+<option value="isa">ISA ••2210</option>
+<div>Amount (£)</div>
+<label for="transfer-amount">Amount (£)</label>
+<input id="transfer-amount" type="number" name="amount" aria-label="Amount to transfer" placeholder="0.00" />
+<div>Transfer</div>
+<button data-testid="submit-transfer" aria-label="Submit transfer" type="button">Transfer</button>
+<div>To payee Select payee... Jane Smith ••8812 Council Tax Direct Debit Mortgage — Halifax Gym Membership</div>
+<label>To payee</label>
+<select>Select payee... Jane Smith ••8812 Council Tax Direct Debit Mortgage — Halifax Gym Membership</select>
+<option>Select payee...</option>
+<option>Jane Smith ••8812</option>
+<option>Council Tax Direct Debit</option>
+<option>Mortgage — Halifax</option>
+<option>Gym Membership</option>
+<section>My Cards Debit Card ••4821 Expires 09/27  |  Active Freeze card Report lost PIN reminder Credit Card ••9034 Expires 12/26  |  Active Freeze card Report lost PIN reminder Virtual Card ••0077 Expires 03/26  |  Active Freeze card Delete</section>
+<h2>My Cards</h2>
+<div>Debit Card ••4821 Expires 09/27  |  Active Freeze card Report lost PIN reminder</div>
+<div>Debit Card ••4821 Expires 09/27  |  Active Freeze card Report lost PIN reminder</div>
+<div>Debit Card ••4821 Expires 09/27  |  Active</div>
+<div>Debit Card ••4821</div>
+<div>Expires 09/27  |  Active</div>
+<span>Active</span>
+<div>Freeze card Report lost PIN reminder</div>
+<button data-testid="freeze-debit-card" type="button" class="btn-outline">Freeze card</button>
+<button type="button" class="btn-outline">Report lost</button>
+<button type="button" class="btn-outline">PIN reminder</button>
+<div>Credit Card ••9034 Expires 12/26  |  Active Freeze card Report lost PIN reminder</div>
+<div>Credit Card ••9034 Expires 12/26  |  Active Freeze card Report lost PIN reminder</div>
+<div>Credit Card ••9034 Expires 12/26  |  Active</div>
+<div>Credit Card ••9034</div>
+<div>Expires 12/26  |  Active</div>
+<span>Active</span>
+<div>Freeze card Report lost PIN reminder</div>
+<button type="button" class="btn-outline">Freeze card</button>
+<button type="button" class="btn-outline">Report lost</button>
+<button type="button" class="btn-outline">PIN reminder</button>
+<div>Virtual Card ••0077 Expires 03/26  |  Active Freeze card Delete</div>
+<div>Virtual Card ••0077 Expires 03/26  |  Active Freeze card Delete</div>
+<div>Virtual Card ••0077 Expires 03/26  |  Active</div>
+<div>Virtual Card ••0077</div>
+<div>Expires 03/26  |  Active</div>
+<span>Active</span>
+<div>Freeze card Delete</div>
+<button type="button" class="btn-outline">Freeze card</button>
+<button type="button" class="btn-outline">Delete</button>
+<section>Transaction History All types Debit Credit Transfer Direct Debit Last 30 days Last 90 days This year All time Export CSV Date	Description	Amount	Balance	Type	Reference	Status Jan 01, 2024	Tesco Supermarket	-£18.20	£12431.80	Credit	REF000001	Completed Jan 02, 2024	Amazon Prime	-£31.90	£12399.90	Trans…</section>
+<h2>Transaction History</h2>
+<div>All types Debit Credit Transfer Direct Debit Last 30 days Last 90 days This year All time Export CSV</div>
+<input type="text" placeholder="Search transactions" />
+<select aria-label="Filter transactions by type">All types Debit Credit Transfer Direct Debit</select>
+<option>All types</option>
+<option value="debit">Debit</option>
+<option value="credit">Credit</option>
+<option value="transfer">Transfer</option>
+<option value="dd">Direct Debit</option>
+<select>Last 30 days Last 90 days This year All time</select>
+<option>Last 30 days</option>
+<option>Last 90 days</option>
+<option>This year</option>
+<option>All time</option>
+<button type="button">Export CSV</button>
+<table>Date	Description	Amount	Balance	Type	Reference	Status Jan 01, 2024	Tesco Supermarket	-£18.20	£12431.80	Credit	REF000001	Completed Jan 02, 2024	Amazon Prime	-£31.90	£12399.90	Transfer	REF000002	Completed Jan 03, 2024	Netflix Subscription	-£45.60	£12354.30	Direct Debit	REF000003	Pending Jan 04, 2024	C…</table>
+<thead>Date	Description	Amount	Balance	Type	Reference	Status</thead>
+<tr>Date	Description	Amount	Balance	Type	Reference	Status</tr>
+<th>Date</th>
+<th>Description</th>
+<th>Amount</th>
+<th>Balance</th>
+<th>Type</th>
+<th>Reference</th>
+<th>Status</th>
+<tbody id="tx-tbody">Jan 01, 2024	Tesco Supermarket	-£18.20	£12431.80	Credit	REF000001	Completed Jan 02, 2024	Amazon Prime	-£31.90	£12399.90	Transfer	REF000002	Completed Jan 03, 2024	Netflix Subscription	-£45.60	£12354.30	Direct Debit	REF000003	Pending Jan 04, 2024	Council Tax DD	-£59.30	£12295.00	Debit	REF000004	Comple…</tbody>
+<tr>Jan 01, 2024	Tesco Supermarket	-£18.20	£12431.80	Credit	REF000001	Completed</tr>
+<td>Jan 01, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£18.20</td>
+<td>£12431.80</td>
+<td>Credit</td>
+<td>REF000001</td>
+<td>Completed</td>
+<tr>Jan 02, 2024	Amazon Prime	-£31.90	£12399.90	Transfer	REF000002	Completed</tr>
+<td>Jan 02, 2024</td>
+<td>Amazon Prime</td>
+<td>-£31.90</td>
+<td>£12399.90</td>
+<td>Transfer</td>
+<td>REF000002</td>
+<td>Completed</td>
+<tr>Jan 03, 2024	Netflix Subscription	-£45.60	£12354.30	Direct Debit	REF000003	Pending</tr>
+<td>Jan 03, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£45.60</td>
+<td>£12354.30</td>
+<td>Direct Debit</td>
+<td>REF000003</td>
+<td>Pending</td>
+<tr>Jan 04, 2024	Council Tax DD	-£59.30	£12295.00	Debit	REF000004	Completed</tr>
+<td>Jan 04, 2024</td>
+<td>Council Tax DD</td>
+<td>-£59.30</td>
+<td>£12295.00</td>
+<td>Debit</td>
+<td>REF000004</td>
+<td>Completed</td>
+<tr>Jan 05, 2024	Salary — TechCorp Ltd	-£73.00	£12222.00	Credit	REF000005	Completed</tr>
+<td>Jan 05, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£73.00</td>
+<td>£12222.00</td>
+<td>Credit</td>
+<td>REF000005</td>
+<td>Completed</td>
+<tr>Jan 06, 2024	Costa Coffee	-£86.70	£12135.30	Transfer	REF000006	Completed</tr>
+<td>Jan 06, 2024</td>
+<td>Costa Coffee</td>
+<td>-£86.70</td>
+<td>£12135.30</td>
+<td>Transfer</td>
+<td>REF000006</td>
+<td>Completed</td>
+<tr>Jan 07, 2024	TfL Oyster Top-up	+£100.40	£12235.70	Credit	REF000007	Pending</tr>
+<td>Jan 07, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>+£100.40</td>
+<td>£12235.70</td>
+<td>Credit</td>
+<td>REF000007</td>
+<td>Pending</td>
+<tr>Jan 08, 2024	Gym Membership	-£114.10	£12121.60	Debit	REF000008	Completed</tr>
+<td>Jan 08, 2024</td>
+<td>Gym Membership</td>
+<td>-£114.10</td>
+<td>£12121.60</td>
+<td>Debit</td>
+<td>REF000008</td>
+<td>Completed</td>
+<tr>Jan 09, 2024	Mortgage DD — Halifax	-£127.80	£11993.80	Credit	REF000009	Completed</tr>
+<td>Jan 09, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£127.80</td>
+<td>£11993.80</td>
+<td>Credit</td>
+<td>REF000009</td>
+<td>Completed</td>
+<tr>Jan 10, 2024	Utility Bill — British Gas	-£141.50	£11852.30	Transfer	REF000010	Completed</tr>
+<td>Jan 10, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£141.50</td>
+<td>£11852.30</td>
+<td>Transfer</td>
+<td>REF000010</td>
+<td>Completed</td>
+<tr>Jan 11, 2024	Spotify Premium	-£155.20	£11697.10	Direct Debit	REF000011	Pending</tr>
+<td>Jan 11, 2024</td>
+<td>Spotify Premium</td>
+<td>-£155.20</td>
+<td>£11697.10</td>
+<td>Direct Debit</td>
+<td>REF000011</td>
+<td>Pending</td>
+<tr>Jan 12, 2024	PayPal Transfer	-£168.90	£11528.20	Debit	REF000012	Completed</tr>
+<td>Jan 12, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£168.90</td>
+<td>£11528.20</td>
+<td>Debit</td>
+<td>REF000012</td>
+<td>Completed</td>
+<tr>Jan 13, 2024	John Lewis Purchase	+£182.60	£11710.80	Credit	REF000013	Completed</tr>
+<td>Jan 13, 2024</td>
+<td>John Lewis Purchase</td>
+<td>+£182.60</td>
+<td>£11710.80</td>
+<td>Credit</td>
+<td>REF000013</td>
+<td>Completed</td>
+<tr>Jan 14, 2024	Ocado Grocery Delivery	+£196.30	£11907.10	Credit	REF000014	Completed</tr>
+<td>Jan 14, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>+£196.30</td>
+<td>£11907.10</td>
+<td>Credit</td>
+<td>REF000014</td>
+<td>Completed</td>
+<tr>Jan 15, 2024	Apple iCloud+	-£15.00	£11892.10	Direct Debit	REF000015	Pending</tr>
+<td>Jan 15, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£15.00</td>
+<td>£11892.10</td>
+<td>Direct Debit</td>
+<td>REF000015</td>
+<td>Pending</td>
+<tr>Jan 16, 2024	BT Broadband DD	-£28.70	£11863.40	Debit	REF000016	Completed</tr>
+<td>Jan 16, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£28.70</td>
+<td>£11863.40</td>
+<td>Debit</td>
+<td>REF000016</td>
+<td>Completed</td>
+<tr>Jan 17, 2024	Dentist — Crown Dental	-£42.40	£11821.00	Credit	REF000017	Completed</tr>
+<td>Jan 17, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£42.40</td>
+<td>£11821.00</td>
+<td>Credit</td>
+<td>REF000017</td>
+<td>Completed</td>
+<tr>Jan 18, 2024	Waitrose Supermarket	-£56.10	£11764.90	Transfer	REF000018	Completed</tr>
+<td>Jan 18, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£56.10</td>
+<td>£11764.90</td>
+<td>Transfer</td>
+<td>REF000018</td>
+<td>Completed</td>
+<tr>Jan 19, 2024	NCP Parking	-£69.80	£11695.10	Direct Debit	REF000019	Pending</tr>
+<td>Jan 19, 2024</td>
+<td>NCP Parking</td>
+<td>-£69.80</td>
+<td>£11695.10</td>
+<td>Direct Debit</td>
+<td>REF000019</td>
+<td>Pending</td>
+<tr>Jan 20, 2024	Vodafone DD	-£83.50	£11611.60	Debit	REF000020	Completed</tr>
+<td>Jan 20, 2024</td>
+<td>Vodafone DD</td>
+<td>-£83.50</td>
+<td>£11611.60</td>
+<td>Debit</td>
+<td>REF000020</td>
+<td>Completed</td>
+<tr>Jan 21, 2024	HMRC Self Assessment	+£97.20	£11708.80	Credit	REF000021	Completed</tr>
+<td>Jan 21, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>+£97.20</td>
+<td>£11708.80</td>
+<td>Credit</td>
+<td>REF000021</td>
+<td>Completed</td>
+<tr>Jan 22, 2024	Amazon Purchase	-£110.90	£11597.90	Transfer	REF000022	Completed</tr>
+<td>Jan 22, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£110.90</td>
+<td>£11597.90</td>
+<td>Transfer</td>
+<td>REF000022</td>
+<td>Completed</td>
+<tr>Jan 23, 2024	Uber	-£124.60	£11473.30	Direct Debit	REF000023	Pending</tr>
+<td>Jan 23, 2024</td>
+<td>Uber</td>
+<td>-£124.60</td>
+<td>£11473.30</td>
+<td>Direct Debit</td>
+<td>REF000023</td>
+<td>Pending</td>
+<tr>Jan 24, 2024	Just Eat	-£138.30	£11335.00	Debit	REF000024	Completed</tr>
+<td>Jan 24, 2024</td>
+<td>Just Eat</td>
+<td>-£138.30</td>
+<td>£11335.00</td>
+<td>Debit</td>
+<td>REF000024</td>
+<td>Completed</td>
+<tr>Jan 25, 2024	Deliveroo	-£152.00	£11183.00	Credit	REF000025	Completed</tr>
+<td>Jan 25, 2024</td>
+<td>Deliveroo</td>
+<td>-£152.00</td>
+<td>£11183.00</td>
+<td>Credit</td>
+<td>REF000025</td>
+<td>Completed</td>
+<tr>Feb 26, 2024	Marks &amp; Spencer	+£165.70	£11348.70	Credit	REF000026	Completed</tr>
+<td>Feb 26, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>+£165.70</td>
+<td>£11348.70</td>
+<td>Credit</td>
+<td>REF000026</td>
+<td>Completed</td>
+<tr>Feb 27, 2024	Sainsbury's	-£179.40	£11169.30	Direct Debit	REF000027	Pending</tr>
+<td>Feb 27, 2024</td>
+<td>Sainsbury's</td>
+<td>-£179.40</td>
+<td>£11169.30</td>
+<td>Direct Debit</td>
+<td>REF000027</td>
+<td>Pending</td>
+<tr>Feb 28, 2024	IKEA Purchase	+£193.10	£11362.40	Credit	REF000028	Completed</tr>
+<td>Feb 28, 2024</td>
+<td>IKEA Purchase</td>
+<td>+£193.10</td>
+<td>£11362.40</td>
+<td>Credit</td>
+<td>REF000028</td>
+<td>Completed</td>
+<tr>Feb 01, 2024	Boots Pharmacy	-£11.80	£11350.60	Credit	REF000029	Completed</tr>
+<td>Feb 01, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£11.80</td>
+<td>£11350.60</td>
+<td>Credit</td>
+<td>REF000029</td>
+<td>Completed</td>
+<tr>Feb 02, 2024	Sky Sports DD	-£25.50	£11325.10	Transfer	REF000030	Completed</tr>
+<td>Feb 02, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£25.50</td>
+<td>£11325.10</td>
+<td>Transfer</td>
+<td>REF000030</td>
+<td>Completed</td>
+<tr>Feb 03, 2024	Tesco Supermarket	-£39.20	£11285.90	Direct Debit	REF000031	Pending</tr>
+<td>Feb 03, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£39.20</td>
+<td>£11285.90</td>
+<td>Direct Debit</td>
+<td>REF000031</td>
+<td>Pending</td>
+<tr>Feb 04, 2024	Amazon Prime	-£52.90	£11233.00	Debit	REF000032	Completed</tr>
+<td>Feb 04, 2024</td>
+<td>Amazon Prime</td>
+<td>-£52.90</td>
+<td>£11233.00</td>
+<td>Debit</td>
+<td>REF000032</td>
+<td>Completed</td>
+<tr>Feb 05, 2024	Netflix Subscription	-£66.60	£11166.40	Credit	REF000033	Completed</tr>
+<td>Feb 05, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£66.60</td>
+<td>£11166.40</td>
+<td>Credit</td>
+<td>REF000033</td>
+<td>Completed</td>
+<tr>Feb 06, 2024	Council Tax DD	-£80.30	£11086.10	Transfer	REF000034	Completed</tr>
+<td>Feb 06, 2024</td>
+<td>Council Tax DD</td>
+<td>-£80.30</td>
+<td>£11086.10</td>
+<td>Transfer</td>
+<td>REF000034</td>
+<td>Completed</td>
+<tr>Feb 07, 2024	Salary — TechCorp Ltd	+£94.00	£11180.10	Credit	REF000035	Pending</tr>
+<td>Feb 07, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>+£94.00</td>
+<td>£11180.10</td>
+<td>Credit</td>
+<td>REF000035</td>
+<td>Pending</td>
+<tr>Feb 08, 2024	Costa Coffee	-£107.70	£11072.40	Debit	REF000036	Completed</tr>
+<td>Feb 08, 2024</td>
+<td>Costa Coffee</td>
+<td>-£107.70</td>
+<td>£11072.40</td>
+<td>Debit</td>
+<td>REF000036</td>
+<td>Completed</td>
+<tr>Feb 09, 2024	TfL Oyster Top-up	-£121.40	£10951.00	Credit	REF000037	Completed</tr>
+<td>Feb 09, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£121.40</td>
+<td>£10951.00</td>
+<td>Credit</td>
+<td>REF000037</td>
+<td>Completed</td>
+<tr>Feb 10, 2024	Gym Membership	-£135.10	£10815.90	Transfer	REF000038	Completed</tr>
+<td>Feb 10, 2024</td>
+<td>Gym Membership</td>
+<td>-£135.10</td>
+<td>£10815.90</td>
+<td>Transfer</td>
+<td>REF000038</td>
+<td>Completed</td>
+<tr>Feb 11, 2024	Mortgage DD — Halifax	+£148.80	£10964.70	Credit	REF000039	Pending</tr>
+<td>Feb 11, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>+£148.80</td>
+<td>£10964.70</td>
+<td>Credit</td>
+<td>REF000039</td>
+<td>Pending</td>
+<tr>Feb 12, 2024	Utility Bill — British Gas	-£162.50	£10802.20	Debit	REF000040	Completed</tr>
+<td>Feb 12, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£162.50</td>
+<td>£10802.20</td>
+<td>Debit</td>
+<td>REF000040</td>
+<td>Completed</td>
+<tr>Feb 13, 2024	Spotify Premium	-£176.20	£10626.00	Credit	REF000041	Completed</tr>
+<td>Feb 13, 2024</td>
+<td>Spotify Premium</td>
+<td>-£176.20</td>
+<td>£10626.00</td>
+<td>Credit</td>
+<td>REF000041</td>
+<td>Completed</td>
+<tr>Feb 14, 2024	PayPal Transfer	+£189.90	£10815.90	Credit	REF000042	Completed</tr>
+<td>Feb 14, 2024</td>
+<td>PayPal Transfer</td>
+<td>+£189.90</td>
+<td>£10815.90</td>
+<td>Credit</td>
+<td>REF000042</td>
+<td>Completed</td>
+<tr>Feb 15, 2024	John Lewis Purchase	-£8.60	£10807.30	Direct Debit	REF000043	Pending</tr>
+<td>Feb 15, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£8.60</td>
+<td>£10807.30</td>
+<td>Direct Debit</td>
+<td>REF000043</td>
+<td>Pending</td>
+<tr>Feb 16, 2024	Ocado Grocery Delivery	-£22.30	£10785.00	Debit	REF000044	Completed</tr>
+<td>Feb 16, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£22.30</td>
+<td>£10785.00</td>
+<td>Debit</td>
+<td>REF000044</td>
+<td>Completed</td>
+<tr>Feb 17, 2024	Apple iCloud+	-£36.00	£10749.00	Credit	REF000045	Completed</tr>
+<td>Feb 17, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£36.00</td>
+<td>£10749.00</td>
+<td>Credit</td>
+<td>REF000045</td>
+<td>Completed</td>
+<tr>Feb 18, 2024	BT Broadband DD	-£49.70	£10699.30	Transfer	REF000046	Completed</tr>
+<td>Feb 18, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£49.70</td>
+<td>£10699.30</td>
+<td>Transfer</td>
+<td>REF000046</td>
+<td>Completed</td>
+<tr>Feb 19, 2024	Dentist — Crown Dental	-£63.40	£10635.90	Direct Debit	REF000047	Pending</tr>
+<td>Feb 19, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£63.40</td>
+<td>£10635.90</td>
+<td>Direct Debit</td>
+<td>REF000047</td>
+<td>Pending</td>
+<tr>Feb 20, 2024	Waitrose Supermarket	-£77.10	£10558.80	Debit	REF000048	Completed</tr>
+<td>Feb 20, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£77.10</td>
+<td>£10558.80</td>
+<td>Debit</td>
+<td>REF000048</td>
+<td>Completed</td>
+<tr>Feb 21, 2024	NCP Parking	+£90.80	£10649.60	Credit	REF000049	Completed</tr>
+<td>Feb 21, 2024</td>
+<td>NCP Parking</td>
+<td>+£90.80</td>
+<td>£10649.60</td>
+<td>Credit</td>
+<td>REF000049</td>
+<td>Completed</td>
+<tr>Feb 22, 2024	Vodafone DD	-£104.50	£10545.10	Transfer	REF000050	Completed</tr>
+<td>Feb 22, 2024</td>
+<td>Vodafone DD</td>
+<td>-£104.50</td>
+<td>£10545.10</td>
+<td>Transfer</td>
+<td>REF000050</td>
+<td>Completed</td>
+<tr>Mar 23, 2024	HMRC Self Assessment	-£118.20	£10426.90	Direct Debit	REF000051	Pending</tr>
+<td>Mar 23, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£118.20</td>
+<td>£10426.90</td>
+<td>Direct Debit</td>
+<td>REF000051</td>
+<td>Pending</td>
+<tr>Mar 24, 2024	Amazon Purchase	+£131.90	£10558.80	Credit	REF000052	Completed</tr>
+<td>Mar 24, 2024</td>
+<td>Amazon Purchase</td>
+<td>+£131.90</td>
+<td>£10558.80</td>
+<td>Credit</td>
+<td>REF000052</td>
+<td>Completed</td>
+<tr>Mar 25, 2024	Uber	-£145.60	£10413.20	Credit	REF000053	Completed</tr>
+<td>Mar 25, 2024</td>
+<td>Uber</td>
+<td>-£145.60</td>
+<td>£10413.20</td>
+<td>Credit</td>
+<td>REF000053</td>
+<td>Completed</td>
+<tr>Mar 26, 2024	Just Eat	-£159.30	£10253.90	Transfer	REF000054	Completed</tr>
+<td>Mar 26, 2024</td>
+<td>Just Eat</td>
+<td>-£159.30</td>
+<td>£10253.90</td>
+<td>Transfer</td>
+<td>REF000054</td>
+<td>Completed</td>
+<tr>Mar 27, 2024	Deliveroo	-£173.00	£10080.90	Direct Debit	REF000055	Pending</tr>
+<td>Mar 27, 2024</td>
+<td>Deliveroo</td>
+<td>-£173.00</td>
+<td>£10080.90</td>
+<td>Direct Debit</td>
+<td>REF000055</td>
+<td>Pending</td>
+<tr>Mar 28, 2024	Marks &amp; Spencer	+£186.70	£10267.60	Credit	REF000056	Completed</tr>
+<td>Mar 28, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>+£186.70</td>
+<td>£10267.60</td>
+<td>Credit</td>
+<td>REF000056</td>
+<td>Completed</td>
+<tr>Mar 01, 2024	Sainsbury's	-£5.40	£10262.20	Credit	REF000057	Completed</tr>
+<td>Mar 01, 2024</td>
+<td>Sainsbury's</td>
+<td>-£5.40</td>
+<td>£10262.20</td>
+<td>Credit</td>
+<td>REF000057</td>
+<td>Completed</td>
+<tr>Mar 02, 2024	IKEA Purchase	-£19.10	£10243.10	Transfer	REF000058	Completed</tr>
+<td>Mar 02, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£19.10</td>
+<td>£10243.10</td>
+<td>Transfer</td>
+<td>REF000058</td>
+<td>Completed</td>
+<tr>Mar 03, 2024	Boots Pharmacy	-£32.80	£10210.30	Direct Debit	REF000059	Pending</tr>
+<td>Mar 03, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£32.80</td>
+<td>£10210.30</td>
+<td>Direct Debit</td>
+<td>REF000059</td>
+<td>Pending</td>
+<tr>Mar 04, 2024	Sky Sports DD	-£46.50	£10163.80	Debit	REF000060	Completed</tr>
+<td>Mar 04, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£46.50</td>
+<td>£10163.80</td>
+<td>Debit</td>
+<td>REF000060</td>
+<td>Completed</td>
+<tr>Mar 05, 2024	Tesco Supermarket	-£60.20	£10103.60	Credit	REF000061	Completed</tr>
+<td>Mar 05, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£60.20</td>
+<td>£10103.60</td>
+<td>Credit</td>
+<td>REF000061</td>
+<td>Completed</td>
+<tr>Mar 06, 2024	Amazon Prime	-£73.90	£10029.70	Transfer	REF000062	Completed</tr>
+<td>Mar 06, 2024</td>
+<td>Amazon Prime</td>
+<td>-£73.90</td>
+<td>£10029.70</td>
+<td>Transfer</td>
+<td>REF000062</td>
+<td>Completed</td>
+<tr>Mar 07, 2024	Netflix Subscription	+£87.60	£10117.30	Credit	REF000063	Pending</tr>
+<td>Mar 07, 2024</td>
+<td>Netflix Subscription</td>
+<td>+£87.60</td>
+<td>£10117.30</td>
+<td>Credit</td>
+<td>REF000063</td>
+<td>Pending</td>
+<tr>Mar 08, 2024	Council Tax DD	-£101.30	£10016.00	Debit	REF000064	Completed</tr>
+<td>Mar 08, 2024</td>
+<td>Council Tax DD</td>
+<td>-£101.30</td>
+<td>£10016.00</td>
+<td>Debit</td>
+<td>REF000064</td>
+<td>Completed</td>
+<tr>Mar 09, 2024	Salary — TechCorp Ltd	+£115.00	£10131.00	Credit	REF000065	Completed</tr>
+<td>Mar 09, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>+£115.00</td>
+<td>£10131.00</td>
+<td>Credit</td>
+<td>REF000065</td>
+<td>Completed</td>
+<tr>Mar 10, 2024	Costa Coffee	-£128.70	£10002.30	Transfer	REF000066	Completed</tr>
+<td>Mar 10, 2024</td>
+<td>Costa Coffee</td>
+<td>-£128.70</td>
+<td>£10002.30</td>
+<td>Transfer</td>
+<td>REF000066</td>
+<td>Completed</td>
+<tr>Mar 11, 2024	TfL Oyster Top-up	-£142.40	£9859.90	Direct Debit	REF000067	Pending</tr>
+<td>Mar 11, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£142.40</td>
+<td>£9859.90</td>
+<td>Direct Debit</td>
+<td>REF000067</td>
+<td>Pending</td>
+<tr>Mar 12, 2024	Gym Membership	-£156.10	£9703.80	Debit	REF000068	Completed</tr>
+<td>Mar 12, 2024</td>
+<td>Gym Membership</td>
+<td>-£156.10</td>
+<td>£9703.80</td>
+<td>Debit</td>
+<td>REF000068</td>
+<td>Completed</td>
+<tr>Mar 13, 2024	Mortgage DD — Halifax	-£169.80	£9534.00	Credit	REF000069	Completed</tr>
+<td>Mar 13, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£169.80</td>
+<td>£9534.00</td>
+<td>Credit</td>
+<td>REF000069</td>
+<td>Completed</td>
+<tr>Mar 14, 2024	Utility Bill — British Gas	+£183.50	£9717.50	Credit	REF000070	Completed</tr>
+<td>Mar 14, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>+£183.50</td>
+<td>£9717.50</td>
+<td>Credit</td>
+<td>REF000070</td>
+<td>Completed</td>
+<tr>Mar 15, 2024	Spotify Premium	-£197.20	£9520.30	Direct Debit	REF000071	Pending</tr>
+<td>Mar 15, 2024</td>
+<td>Spotify Premium</td>
+<td>-£197.20</td>
+<td>£9520.30</td>
+<td>Direct Debit</td>
+<td>REF000071</td>
+<td>Pending</td>
+<tr>Mar 16, 2024	PayPal Transfer	-£15.90	£9504.40	Debit	REF000072	Completed</tr>
+<td>Mar 16, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£15.90</td>
+<td>£9504.40</td>
+<td>Debit</td>
+<td>REF000072</td>
+<td>Completed</td>
+<tr>Mar 17, 2024	John Lewis Purchase	-£29.60	£9474.80	Credit	REF000073	Completed</tr>
+<td>Mar 17, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£29.60</td>
+<td>£9474.80</td>
+<td>Credit</td>
+<td>REF000073</td>
+<td>Completed</td>
+<tr>Mar 18, 2024	Ocado Grocery Delivery	-£43.30	£9431.50	Transfer	REF000074	Completed</tr>
+<td>Mar 18, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£43.30</td>
+<td>£9431.50</td>
+<td>Transfer</td>
+<td>REF000074</td>
+<td>Completed</td>
+<tr>Mar 19, 2024	Apple iCloud+	-£57.00	£9374.50	Direct Debit	REF000075	Pending</tr>
+<td>Mar 19, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£57.00</td>
+<td>£9374.50</td>
+<td>Direct Debit</td>
+<td>REF000075</td>
+<td>Pending</td>
+<tr>Apr 20, 2024	BT Broadband DD	-£70.70	£9303.80	Debit	REF000076	Completed</tr>
+<td>Apr 20, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£70.70</td>
+<td>£9303.80</td>
+<td>Debit</td>
+<td>REF000076</td>
+<td>Completed</td>
+<tr>Apr 21, 2024	Dentist — Crown Dental	+£84.40	£9388.20	Credit	REF000077	Completed</tr>
+<td>Apr 21, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>+£84.40</td>
+<td>£9388.20</td>
+<td>Credit</td>
+<td>REF000077</td>
+<td>Completed</td>
+<tr>Apr 22, 2024	Waitrose Supermarket	+£98.10	£9486.30	Credit	REF000078	Completed</tr>
+<td>Apr 22, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>+£98.10</td>
+<td>£9486.30</td>
+<td>Credit</td>
+<td>REF000078</td>
+<td>Completed</td>
+<tr>Apr 23, 2024	NCP Parking	-£111.80	£9374.50	Direct Debit	REF000079	Pending</tr>
+<td>Apr 23, 2024</td>
+<td>NCP Parking</td>
+<td>-£111.80</td>
+<td>£9374.50</td>
+<td>Direct Debit</td>
+<td>REF000079</td>
+<td>Pending</td>
+<tr>Apr 24, 2024	Vodafone DD	-£125.50	£9249.00	Debit	REF000080	Completed</tr>
+<td>Apr 24, 2024</td>
+<td>Vodafone DD</td>
+<td>-£125.50</td>
+<td>£9249.00</td>
+<td>Debit</td>
+<td>REF000080</td>
+<td>Completed</td>
+<tr>Apr 25, 2024	HMRC Self Assessment	-£139.20	£9109.80	Credit	REF000081	Completed</tr>
+<td>Apr 25, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£139.20</td>
+<td>£9109.80</td>
+<td>Credit</td>
+<td>REF000081</td>
+<td>Completed</td>
+<tr>Apr 26, 2024	Amazon Purchase	-£152.90	£8956.90	Transfer	REF000082	Completed</tr>
+<td>Apr 26, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£152.90</td>
+<td>£8956.90</td>
+<td>Transfer</td>
+<td>REF000082</td>
+<td>Completed</td>
+<tr>Apr 27, 2024	Uber	-£166.60	£8790.30	Direct Debit	REF000083	Pending</tr>
+<td>Apr 27, 2024</td>
+<td>Uber</td>
+<td>-£166.60</td>
+<td>£8790.30</td>
+<td>Direct Debit</td>
+<td>REF000083</td>
+<td>Pending</td>
+<tr>Apr 28, 2024	Just Eat	+£180.30	£8970.60	Credit	REF000084	Completed</tr>
+<td>Apr 28, 2024</td>
+<td>Just Eat</td>
+<td>+£180.30</td>
+<td>£8970.60</td>
+<td>Credit</td>
+<td>REF000084</td>
+<td>Completed</td>
+<tr>Apr 01, 2024	Deliveroo	-£194.00	£8776.60	Credit	REF000085	Completed</tr>
+<td>Apr 01, 2024</td>
+<td>Deliveroo</td>
+<td>-£194.00</td>
+<td>£8776.60</td>
+<td>Credit</td>
+<td>REF000085</td>
+<td>Completed</td>
+<tr>Apr 02, 2024	Marks &amp; Spencer	-£12.70	£8763.90	Transfer	REF000086	Completed</tr>
+<td>Apr 02, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£12.70</td>
+<td>£8763.90</td>
+<td>Transfer</td>
+<td>REF000086</td>
+<td>Completed</td>
+<tr>Apr 03, 2024	Sainsbury's	-£26.40	£8737.50	Direct Debit	REF000087	Pending</tr>
+<td>Apr 03, 2024</td>
+<td>Sainsbury's</td>
+<td>-£26.40</td>
+<td>£8737.50</td>
+<td>Direct Debit</td>
+<td>REF000087</td>
+<td>Pending</td>
+<tr>Apr 04, 2024	IKEA Purchase	-£40.10	£8697.40	Debit	REF000088	Completed</tr>
+<td>Apr 04, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£40.10</td>
+<td>£8697.40</td>
+<td>Debit</td>
+<td>REF000088</td>
+<td>Completed</td>
+<tr>Apr 05, 2024	Boots Pharmacy	-£53.80	£8643.60	Credit	REF000089	Completed</tr>
+<td>Apr 05, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£53.80</td>
+<td>£8643.60</td>
+<td>Credit</td>
+<td>REF000089</td>
+<td>Completed</td>
+<tr>Apr 06, 2024	Sky Sports DD	-£67.50	£8576.10	Transfer	REF000090	Completed</tr>
+<td>Apr 06, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£67.50</td>
+<td>£8576.10</td>
+<td>Transfer</td>
+<td>REF000090</td>
+<td>Completed</td>
+<tr>Apr 07, 2024	Tesco Supermarket	+£81.20	£8657.30	Credit	REF000091	Pending</tr>
+<td>Apr 07, 2024</td>
+<td>Tesco Supermarket</td>
+<td>+£81.20</td>
+<td>£8657.30</td>
+<td>Credit</td>
+<td>REF000091</td>
+<td>Pending</td>
+<tr>Apr 08, 2024	Amazon Prime	-£94.90	£8562.40	Debit	REF000092	Completed</tr>
+<td>Apr 08, 2024</td>
+<td>Amazon Prime</td>
+<td>-£94.90</td>
+<td>£8562.40</td>
+<td>Debit</td>
+<td>REF000092</td>
+<td>Completed</td>
+<tr>Apr 09, 2024	Netflix Subscription	-£108.60	£8453.80	Credit	REF000093	Completed</tr>
+<td>Apr 09, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£108.60</td>
+<td>£8453.80</td>
+<td>Credit</td>
+<td>REF000093</td>
+<td>Completed</td>
+<tr>Apr 10, 2024	Council Tax DD	-£122.30	£8331.50	Transfer	REF000094	Completed</tr>
+<td>Apr 10, 2024</td>
+<td>Council Tax DD</td>
+<td>-£122.30</td>
+<td>£8331.50</td>
+<td>Transfer</td>
+<td>REF000094</td>
+<td>Completed</td>
+<tr>Apr 11, 2024	Salary — TechCorp Ltd	-£136.00	£8195.50	Direct Debit	REF000095	Pending</tr>
+<td>Apr 11, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£136.00</td>
+<td>£8195.50</td>
+<td>Direct Debit</td>
+<td>REF000095</td>
+<td>Pending</td>
+<tr>Apr 12, 2024	Costa Coffee	-£149.70	£8045.80	Debit	REF000096	Completed</tr>
+<td>Apr 12, 2024</td>
+<td>Costa Coffee</td>
+<td>-£149.70</td>
+<td>£8045.80</td>
+<td>Debit</td>
+<td>REF000096</td>
+<td>Completed</td>
+<tr>Apr 13, 2024	TfL Oyster Top-up	-£163.40	£7882.40	Credit	REF000097	Completed</tr>
+<td>Apr 13, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£163.40</td>
+<td>£7882.40</td>
+<td>Credit</td>
+<td>REF000097</td>
+<td>Completed</td>
+<tr>Apr 14, 2024	Gym Membership	+£177.10	£8059.50	Credit	REF000098	Completed</tr>
+<td>Apr 14, 2024</td>
+<td>Gym Membership</td>
+<td>+£177.10</td>
+<td>£8059.50</td>
+<td>Credit</td>
+<td>REF000098</td>
+<td>Completed</td>
+<tr>Apr 15, 2024	Mortgage DD — Halifax	-£190.80	£7868.70	Direct Debit	REF000099	Pending</tr>
+<td>Apr 15, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£190.80</td>
+<td>£7868.70</td>
+<td>Direct Debit</td>
+<td>REF000099</td>
+<td>Pending</td>
+<tr>Apr 16, 2024	Utility Bill — British Gas	-£9.50	£7859.20	Debit	REF000100	Completed</tr>
+<td>Apr 16, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£9.50</td>
+<td>£7859.20</td>
+<td>Debit</td>
+<td>REF000100</td>
+<td>Completed</td>
+<tr>May 17, 2024	Spotify Premium	-£23.20	£7836.00	Credit	REF000101	Completed</tr>
+<td>May 17, 2024</td>
+<td>Spotify Premium</td>
+<td>-£23.20</td>
+<td>£7836.00</td>
+<td>Credit</td>
+<td>REF000101</td>
+<td>Completed</td>
+<tr>May 18, 2024	PayPal Transfer	-£36.90	£7799.10	Transfer	REF000102	Completed</tr>
+<td>May 18, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£36.90</td>
+<td>£7799.10</td>
+<td>Transfer</td>
+<td>REF000102</td>
+<td>Completed</td>
+<tr>May 19, 2024	John Lewis Purchase	-£50.60	£7748.50	Direct Debit	REF000103	Pending</tr>
+<td>May 19, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£50.60</td>
+<td>£7748.50</td>
+<td>Direct Debit</td>
+<td>REF000103</td>
+<td>Pending</td>
+<tr>May 20, 2024	Ocado Grocery Delivery	+£64.30	£7812.80	Credit	REF000104	Completed</tr>
+<td>May 20, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>+£64.30</td>
+<td>£7812.80</td>
+<td>Credit</td>
+<td>REF000104</td>
+<td>Completed</td>
+<tr>May 21, 2024	Apple iCloud+	+£78.00	£7890.80	Credit	REF000105	Completed</tr>
+<td>May 21, 2024</td>
+<td>Apple iCloud+</td>
+<td>+£78.00</td>
+<td>£7890.80</td>
+<td>Credit</td>
+<td>REF000105</td>
+<td>Completed</td>
+<tr>May 22, 2024	BT Broadband DD	-£91.70	£7799.10	Transfer	REF000106	Completed</tr>
+<td>May 22, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£91.70</td>
+<td>£7799.10</td>
+<td>Transfer</td>
+<td>REF000106</td>
+<td>Completed</td>
+<tr>May 23, 2024	Dentist — Crown Dental	-£105.40	£7693.70	Direct Debit	REF000107	Pending</tr>
+<td>May 23, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£105.40</td>
+<td>£7693.70</td>
+<td>Direct Debit</td>
+<td>REF000107</td>
+<td>Pending</td>
+<tr>May 24, 2024	Waitrose Supermarket	-£119.10	£7574.60	Debit	REF000108	Completed</tr>
+<td>May 24, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£119.10</td>
+<td>£7574.60</td>
+<td>Debit</td>
+<td>REF000108</td>
+<td>Completed</td>
+<tr>May 25, 2024	NCP Parking	-£132.80	£7441.80	Credit	REF000109	Completed</tr>
+<td>May 25, 2024</td>
+<td>NCP Parking</td>
+<td>-£132.80</td>
+<td>£7441.80</td>
+<td>Credit</td>
+<td>REF000109</td>
+<td>Completed</td>
+<tr>May 26, 2024	Vodafone DD	-£146.50	£7295.30	Transfer	REF000110	Completed</tr>
+<td>May 26, 2024</td>
+<td>Vodafone DD</td>
+<td>-£146.50</td>
+<td>£7295.30</td>
+<td>Transfer</td>
+<td>REF000110</td>
+<td>Completed</td>
+<tr>May 27, 2024	HMRC Self Assessment	-£160.20	£7135.10	Direct Debit	REF000111	Pending</tr>
+<td>May 27, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£160.20</td>
+<td>£7135.10</td>
+<td>Direct Debit</td>
+<td>REF000111</td>
+<td>Pending</td>
+<tr>May 28, 2024	Amazon Purchase	+£173.90	£7309.00	Credit	REF000112	Completed</tr>
+<td>May 28, 2024</td>
+<td>Amazon Purchase</td>
+<td>+£173.90</td>
+<td>£7309.00</td>
+<td>Credit</td>
+<td>REF000112</td>
+<td>Completed</td>
+<tr>May 01, 2024	Uber	-£187.60	£7121.40	Credit	REF000113	Completed</tr>
+<td>May 01, 2024</td>
+<td>Uber</td>
+<td>-£187.60</td>
+<td>£7121.40</td>
+<td>Credit</td>
+<td>REF000113</td>
+<td>Completed</td>
+<tr>May 02, 2024	Just Eat	-£6.30	£7115.10	Transfer	REF000114	Completed</tr>
+<td>May 02, 2024</td>
+<td>Just Eat</td>
+<td>-£6.30</td>
+<td>£7115.10</td>
+<td>Transfer</td>
+<td>REF000114</td>
+<td>Completed</td>
+<tr>May 03, 2024	Deliveroo	-£20.00	£7095.10	Direct Debit	REF000115	Pending</tr>
+<td>May 03, 2024</td>
+<td>Deliveroo</td>
+<td>-£20.00</td>
+<td>£7095.10</td>
+<td>Direct Debit</td>
+<td>REF000115</td>
+<td>Pending</td>
+<tr>May 04, 2024	Marks &amp; Spencer	-£33.70	£7061.40	Debit	REF000116	Completed</tr>
+<td>May 04, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£33.70</td>
+<td>£7061.40</td>
+<td>Debit</td>
+<td>REF000116</td>
+<td>Completed</td>
+<tr>May 05, 2024	Sainsbury's	+£47.40	£7108.80	Credit	REF000117	Completed</tr>
+<td>May 05, 2024</td>
+<td>Sainsbury's</td>
+<td>+£47.40</td>
+<td>£7108.80</td>
+<td>Credit</td>
+<td>REF000117</td>
+<td>Completed</td>
+<tr>May 06, 2024	IKEA Purchase	-£61.10	£7047.70	Transfer	REF000118	Completed</tr>
+<td>May 06, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£61.10</td>
+<td>£7047.70</td>
+<td>Transfer</td>
+<td>REF000118</td>
+<td>Completed</td>
+<tr>May 07, 2024	Boots Pharmacy	+£74.80	£7122.50	Credit	REF000119	Pending</tr>
+<td>May 07, 2024</td>
+<td>Boots Pharmacy</td>
+<td>+£74.80</td>
+<td>£7122.50</td>
+<td>Credit</td>
+<td>REF000119</td>
+<td>Pending</td>
+<tr>May 08, 2024	Sky Sports DD	-£88.50	£7034.00	Debit	REF000120	Completed</tr>
+<td>May 08, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£88.50</td>
+<td>£7034.00</td>
+<td>Debit</td>
+<td>REF000120</td>
+<td>Completed</td>
+<tr>May 09, 2024	Tesco Supermarket	-£102.20	£6931.80	Credit	REF000121	Completed</tr>
+<td>May 09, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£102.20</td>
+<td>£6931.80</td>
+<td>Credit</td>
+<td>REF000121</td>
+<td>Completed</td>
+<tr>May 10, 2024	Amazon Prime	-£115.90	£6815.90	Transfer	REF000122	Completed</tr>
+<td>May 10, 2024</td>
+<td>Amazon Prime</td>
+<td>-£115.90</td>
+<td>£6815.90</td>
+<td>Transfer</td>
+<td>REF000122</td>
+<td>Completed</td>
+<tr>May 11, 2024	Netflix Subscription	-£129.60	£6686.30	Direct Debit	REF000123	Pending</tr>
+<td>May 11, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£129.60</td>
+<td>£6686.30</td>
+<td>Direct Debit</td>
+<td>REF000123</td>
+<td>Pending</td>
+<tr>May 12, 2024	Council Tax DD	-£143.30	£6543.00	Debit	REF000124	Completed</tr>
+<td>May 12, 2024</td>
+<td>Council Tax DD</td>
+<td>-£143.30</td>
+<td>£6543.00</td>
+<td>Debit</td>
+<td>REF000124</td>
+<td>Completed</td>
+<tr>May 13, 2024	Salary — TechCorp Ltd	-£157.00	£6386.00	Credit	REF000125	Completed</tr>
+<td>May 13, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£157.00</td>
+<td>£6386.00</td>
+<td>Credit</td>
+<td>REF000125</td>
+<td>Completed</td>
+<tr>Jun 14, 2024	Costa Coffee	+£170.70	£6556.70	Credit	REF000126	Completed</tr>
+<td>Jun 14, 2024</td>
+<td>Costa Coffee</td>
+<td>+£170.70</td>
+<td>£6556.70</td>
+<td>Credit</td>
+<td>REF000126</td>
+<td>Completed</td>
+<tr>Jun 15, 2024	TfL Oyster Top-up	-£184.40	£6372.30	Direct Debit	REF000127	Pending</tr>
+<td>Jun 15, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£184.40</td>
+<td>£6372.30</td>
+<td>Direct Debit</td>
+<td>REF000127</td>
+<td>Pending</td>
+<tr>Jun 16, 2024	Gym Membership	-£198.10	£6174.20	Debit	REF000128	Completed</tr>
+<td>Jun 16, 2024</td>
+<td>Gym Membership</td>
+<td>-£198.10</td>
+<td>£6174.20</td>
+<td>Debit</td>
+<td>REF000128</td>
+<td>Completed</td>
+<tr>Jun 17, 2024	Mortgage DD — Halifax	-£16.80	£6157.40	Credit	REF000129	Completed</tr>
+<td>Jun 17, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£16.80</td>
+<td>£6157.40</td>
+<td>Credit</td>
+<td>REF000129</td>
+<td>Completed</td>
+<tr>Jun 18, 2024	Utility Bill — British Gas	+£30.50	£6187.90	Credit	REF000130	Completed</tr>
+<td>Jun 18, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>+£30.50</td>
+<td>£6187.90</td>
+<td>Credit</td>
+<td>REF000130</td>
+<td>Completed</td>
+<tr>Jun 19, 2024	Spotify Premium	-£44.20	£6143.70	Direct Debit	REF000131	Pending</tr>
+<td>Jun 19, 2024</td>
+<td>Spotify Premium</td>
+<td>-£44.20</td>
+<td>£6143.70</td>
+<td>Direct Debit</td>
+<td>REF000131</td>
+<td>Pending</td>
+<tr>Jun 20, 2024	PayPal Transfer	-£57.90	£6085.80	Debit	REF000132	Completed</tr>
+<td>Jun 20, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£57.90</td>
+<td>£6085.80</td>
+<td>Debit</td>
+<td>REF000132</td>
+<td>Completed</td>
+<tr>Jun 21, 2024	John Lewis Purchase	+£71.60	£6157.40	Credit	REF000133	Completed</tr>
+<td>Jun 21, 2024</td>
+<td>John Lewis Purchase</td>
+<td>+£71.60</td>
+<td>£6157.40</td>
+<td>Credit</td>
+<td>REF000133</td>
+<td>Completed</td>
+<tr>Jun 22, 2024	Ocado Grocery Delivery	-£85.30	£6072.10	Transfer	REF000134	Completed</tr>
+<td>Jun 22, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£85.30</td>
+<td>£6072.10</td>
+<td>Transfer</td>
+<td>REF000134</td>
+<td>Completed</td>
+<tr>Jun 23, 2024	Apple iCloud+	-£99.00	£5973.10	Direct Debit	REF000135	Pending</tr>
+<td>Jun 23, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£99.00</td>
+<td>£5973.10</td>
+<td>Direct Debit</td>
+<td>REF000135</td>
+<td>Pending</td>
+<tr>Jun 24, 2024	BT Broadband DD	-£112.70	£5860.40	Debit	REF000136	Completed</tr>
+<td>Jun 24, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£112.70</td>
+<td>£5860.40</td>
+<td>Debit</td>
+<td>REF000136</td>
+<td>Completed</td>
+<tr>Jun 25, 2024	Dentist — Crown Dental	-£126.40	£5734.00	Credit	REF000137	Completed</tr>
+<td>Jun 25, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£126.40</td>
+<td>£5734.00</td>
+<td>Credit</td>
+<td>REF000137</td>
+<td>Completed</td>
+<tr>Jun 26, 2024	Waitrose Supermarket	-£140.10	£5593.90	Transfer	REF000138	Completed</tr>
+<td>Jun 26, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£140.10</td>
+<td>£5593.90</td>
+<td>Transfer</td>
+<td>REF000138</td>
+<td>Completed</td>
+<tr>Jun 27, 2024	NCP Parking	-£153.80	£5440.10	Direct Debit	REF000139	Pending</tr>
+<td>Jun 27, 2024</td>
+<td>NCP Parking</td>
+<td>-£153.80</td>
+<td>£5440.10</td>
+<td>Direct Debit</td>
+<td>REF000139</td>
+<td>Pending</td>
+<tr>Jun 28, 2024	Vodafone DD	+£167.50	£5607.60	Credit	REF000140	Completed</tr>
+<td>Jun 28, 2024</td>
+<td>Vodafone DD</td>
+<td>+£167.50</td>
+<td>£5607.60</td>
+<td>Credit</td>
+<td>REF000140</td>
+<td>Completed</td>
+<tr>Jun 01, 2024	HMRC Self Assessment	-£181.20	£5426.40	Credit	REF000141	Completed</tr>
+<td>Jun 01, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£181.20</td>
+<td>£5426.40</td>
+<td>Credit</td>
+<td>REF000141</td>
+<td>Completed</td>
+<tr>Jun 02, 2024	Amazon Purchase	-£194.90	£5231.50	Transfer	REF000142	Completed</tr>
+<td>Jun 02, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£194.90</td>
+<td>£5231.50</td>
+<td>Transfer</td>
+<td>REF000142</td>
+<td>Completed</td>
+<tr>Jun 03, 2024	Uber	+£13.60	£5245.10	Credit	REF000143	Pending</tr>
+<td>Jun 03, 2024</td>
+<td>Uber</td>
+<td>+£13.60</td>
+<td>£5245.10</td>
+<td>Credit</td>
+<td>REF000143</td>
+<td>Pending</td>
+<tr>Jun 04, 2024	Just Eat	-£27.30	£5217.80	Debit	REF000144	Completed</tr>
+<td>Jun 04, 2024</td>
+<td>Just Eat</td>
+<td>-£27.30</td>
+<td>£5217.80</td>
+<td>Debit</td>
+<td>REF000144</td>
+<td>Completed</td>
+<tr>Jun 05, 2024	Deliveroo	-£41.00	£5176.80	Credit	REF000145	Completed</tr>
+<td>Jun 05, 2024</td>
+<td>Deliveroo</td>
+<td>-£41.00</td>
+<td>£5176.80</td>
+<td>Credit</td>
+<td>REF000145</td>
+<td>Completed</td>
+<tr>Jun 06, 2024	Marks &amp; Spencer	-£54.70	£5122.10	Transfer	REF000146	Completed</tr>
+<td>Jun 06, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£54.70</td>
+<td>£5122.10</td>
+<td>Transfer</td>
+<td>REF000146</td>
+<td>Completed</td>
+<tr>Jun 07, 2024	Sainsbury's	+£68.40	£5190.50	Credit	REF000147	Pending</tr>
+<td>Jun 07, 2024</td>
+<td>Sainsbury's</td>
+<td>+£68.40</td>
+<td>£5190.50</td>
+<td>Credit</td>
+<td>REF000147</td>
+<td>Pending</td>
+<tr>Jun 08, 2024	IKEA Purchase	-£82.10	£5108.40	Debit	REF000148	Completed</tr>
+<td>Jun 08, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£82.10</td>
+<td>£5108.40</td>
+<td>Debit</td>
+<td>REF000148</td>
+<td>Completed</td>
+<tr>Jun 09, 2024	Boots Pharmacy	-£95.80	£5012.60	Credit	REF000149	Completed</tr>
+<td>Jun 09, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£95.80</td>
+<td>£5012.60</td>
+<td>Credit</td>
+<td>REF000149</td>
+<td>Completed</td>
+<tr>Jun 10, 2024	Sky Sports DD	-£109.50	£4903.10	Transfer	REF000150	Completed</tr>
+<td>Jun 10, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£109.50</td>
+<td>£4903.10</td>
+<td>Transfer</td>
+<td>REF000150</td>
+<td>Completed</td>
+<tr>Jul 11, 2024	Tesco Supermarket	-£123.20	£4779.90	Direct Debit	REF000151	Pending</tr>
+<td>Jul 11, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£123.20</td>
+<td>£4779.90</td>
+<td>Direct Debit</td>
+<td>REF000151</td>
+<td>Pending</td>
+<tr>Jul 12, 2024	Amazon Prime	-£136.90	£4643.00	Debit	REF000152	Completed</tr>
+<td>Jul 12, 2024</td>
+<td>Amazon Prime</td>
+<td>-£136.90</td>
+<td>£4643.00</td>
+<td>Debit</td>
+<td>REF000152</td>
+<td>Completed</td>
+<tr>Jul 13, 2024	Netflix Subscription	-£150.60	£4492.40	Credit	REF000153	Completed</tr>
+<td>Jul 13, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£150.60</td>
+<td>£4492.40</td>
+<td>Credit</td>
+<td>REF000153</td>
+<td>Completed</td>
+<tr>Jul 14, 2024	Council Tax DD	+£164.30	£4656.70	Credit	REF000154	Completed</tr>
+<td>Jul 14, 2024</td>
+<td>Council Tax DD</td>
+<td>+£164.30</td>
+<td>£4656.70</td>
+<td>Credit</td>
+<td>REF000154</td>
+<td>Completed</td>
+<tr>Jul 15, 2024	Salary — TechCorp Ltd	-£178.00	£4478.70	Direct Debit	REF000155	Pending</tr>
+<td>Jul 15, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£178.00</td>
+<td>£4478.70</td>
+<td>Direct Debit</td>
+<td>REF000155</td>
+<td>Pending</td>
+<tr>Jul 16, 2024	Costa Coffee	+£191.70	£4670.40	Credit	REF000156	Completed</tr>
+<td>Jul 16, 2024</td>
+<td>Costa Coffee</td>
+<td>+£191.70</td>
+<td>£4670.40</td>
+<td>Credit</td>
+<td>REF000156</td>
+<td>Completed</td>
+<tr>Jul 17, 2024	TfL Oyster Top-up	-£10.40	£4660.00	Credit	REF000157	Completed</tr>
+<td>Jul 17, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£10.40</td>
+<td>£4660.00</td>
+<td>Credit</td>
+<td>REF000157</td>
+<td>Completed</td>
+<tr>Jul 18, 2024	Gym Membership	-£24.10	£4635.90	Transfer	REF000158	Completed</tr>
+<td>Jul 18, 2024</td>
+<td>Gym Membership</td>
+<td>-£24.10</td>
+<td>£4635.90</td>
+<td>Transfer</td>
+<td>REF000158</td>
+<td>Completed</td>
+<tr>Jul 19, 2024	Mortgage DD — Halifax	-£37.80	£4598.10	Direct Debit	REF000159	Pending</tr>
+<td>Jul 19, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£37.80</td>
+<td>£4598.10</td>
+<td>Direct Debit</td>
+<td>REF000159</td>
+<td>Pending</td>
+<tr>Jul 20, 2024	Utility Bill — British Gas	-£51.50	£4546.60	Debit	REF000160	Completed</tr>
+<td>Jul 20, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£51.50</td>
+<td>£4546.60</td>
+<td>Debit</td>
+<td>REF000160</td>
+<td>Completed</td>
+<tr>Jul 21, 2024	Spotify Premium	+£65.20	£4611.80	Credit	REF000161	Completed</tr>
+<td>Jul 21, 2024</td>
+<td>Spotify Premium</td>
+<td>+£65.20</td>
+<td>£4611.80</td>
+<td>Credit</td>
+<td>REF000161</td>
+<td>Completed</td>
+<tr>Jul 22, 2024	PayPal Transfer	-£78.90	£4532.90	Transfer	REF000162	Completed</tr>
+<td>Jul 22, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£78.90</td>
+<td>£4532.90</td>
+<td>Transfer</td>
+<td>REF000162</td>
+<td>Completed</td>
+<tr>Jul 23, 2024	John Lewis Purchase	-£92.60	£4440.30	Direct Debit	REF000163	Pending</tr>
+<td>Jul 23, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£92.60</td>
+<td>£4440.30</td>
+<td>Direct Debit</td>
+<td>REF000163</td>
+<td>Pending</td>
+<tr>Jul 24, 2024	Ocado Grocery Delivery	-£106.30	£4334.00	Debit	REF000164	Completed</tr>
+<td>Jul 24, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£106.30</td>
+<td>£4334.00</td>
+<td>Debit</td>
+<td>REF000164</td>
+<td>Completed</td>
+<tr>Jul 25, 2024	Apple iCloud+	-£120.00	£4214.00	Credit	REF000165	Completed</tr>
+<td>Jul 25, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£120.00</td>
+<td>£4214.00</td>
+<td>Credit</td>
+<td>REF000165</td>
+<td>Completed</td>
+<tr>Jul 26, 2024	BT Broadband DD	-£133.70	£4080.30	Transfer	REF000166	Completed</tr>
+<td>Jul 26, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£133.70</td>
+<td>£4080.30</td>
+<td>Transfer</td>
+<td>REF000166</td>
+<td>Completed</td>
+<tr>Jul 27, 2024	Dentist — Crown Dental	-£147.40	£3932.90	Direct Debit	REF000167	Pending</tr>
+<td>Jul 27, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£147.40</td>
+<td>£3932.90</td>
+<td>Direct Debit</td>
+<td>REF000167</td>
+<td>Pending</td>
+<tr>Jul 28, 2024	Waitrose Supermarket	+£161.10	£4094.00	Credit	REF000168	Completed</tr>
+<td>Jul 28, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>+£161.10</td>
+<td>£4094.00</td>
+<td>Credit</td>
+<td>REF000168</td>
+<td>Completed</td>
+<tr>Jul 01, 2024	NCP Parking	+£174.80	£4268.80	Credit	REF000169	Completed</tr>
+<td>Jul 01, 2024</td>
+<td>NCP Parking</td>
+<td>+£174.80</td>
+<td>£4268.80</td>
+<td>Credit</td>
+<td>REF000169</td>
+<td>Completed</td>
+<tr>Jul 02, 2024	Vodafone DD	-£188.50	£4080.30	Transfer	REF000170	Completed</tr>
+<td>Jul 02, 2024</td>
+<td>Vodafone DD</td>
+<td>-£188.50</td>
+<td>£4080.30</td>
+<td>Transfer</td>
+<td>REF000170</td>
+<td>Completed</td>
+<tr>Jul 03, 2024	HMRC Self Assessment	-£7.20	£4073.10	Direct Debit	REF000171	Pending</tr>
+<td>Jul 03, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£7.20</td>
+<td>£4073.10</td>
+<td>Direct Debit</td>
+<td>REF000171</td>
+<td>Pending</td>
+<tr>Jul 04, 2024	Amazon Purchase	-£20.90	£4052.20	Debit	REF000172	Completed</tr>
+<td>Jul 04, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£20.90</td>
+<td>£4052.20</td>
+<td>Debit</td>
+<td>REF000172</td>
+<td>Completed</td>
+<tr>Jul 05, 2024	Uber	-£34.60	£4017.60	Credit	REF000173	Completed</tr>
+<td>Jul 05, 2024</td>
+<td>Uber</td>
+<td>-£34.60</td>
+<td>£4017.60</td>
+<td>Credit</td>
+<td>REF000173</td>
+<td>Completed</td>
+<tr>Jul 06, 2024	Just Eat	-£48.30	£3969.30	Transfer	REF000174	Completed</tr>
+<td>Jul 06, 2024</td>
+<td>Just Eat</td>
+<td>-£48.30</td>
+<td>£3969.30</td>
+<td>Transfer</td>
+<td>REF000174</td>
+<td>Completed</td>
+<tr>Jul 07, 2024	Deliveroo	+£62.00	£4031.30	Credit	REF000175	Pending</tr>
+<td>Jul 07, 2024</td>
+<td>Deliveroo</td>
+<td>+£62.00</td>
+<td>£4031.30</td>
+<td>Credit</td>
+<td>REF000175</td>
+<td>Pending</td>
+<tr>Aug 08, 2024	Marks &amp; Spencer	-£75.70	£3955.60	Debit	REF000176	Completed</tr>
+<td>Aug 08, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£75.70</td>
+<td>£3955.60</td>
+<td>Debit</td>
+<td>REF000176</td>
+<td>Completed</td>
+<tr>Aug 09, 2024	Sainsbury's	-£89.40	£3866.20	Credit	REF000177	Completed</tr>
+<td>Aug 09, 2024</td>
+<td>Sainsbury's</td>
+<td>-£89.40</td>
+<td>£3866.20</td>
+<td>Credit</td>
+<td>REF000177</td>
+<td>Completed</td>
+<tr>Aug 10, 2024	IKEA Purchase	-£103.10	£3763.10	Transfer	REF000178	Completed</tr>
+<td>Aug 10, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£103.10</td>
+<td>£3763.10</td>
+<td>Transfer</td>
+<td>REF000178</td>
+<td>Completed</td>
+<tr>Aug 11, 2024	Boots Pharmacy	-£116.80	£3646.30	Direct Debit	REF000179	Pending</tr>
+<td>Aug 11, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£116.80</td>
+<td>£3646.30</td>
+<td>Direct Debit</td>
+<td>REF000179</td>
+<td>Pending</td>
+<tr>Aug 12, 2024	Sky Sports DD	-£130.50	£3515.80	Debit	REF000180	Completed</tr>
+<td>Aug 12, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£130.50</td>
+<td>£3515.80</td>
+<td>Debit</td>
+<td>REF000180</td>
+<td>Completed</td>
+<tr>Aug 13, 2024	Tesco Supermarket	-£144.20	£3371.60	Credit	REF000181	Completed</tr>
+<td>Aug 13, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£144.20</td>
+<td>£3371.60</td>
+<td>Credit</td>
+<td>REF000181</td>
+<td>Completed</td>
+<tr>Aug 14, 2024	Amazon Prime	+£157.90	£3529.50	Credit	REF000182	Completed</tr>
+<td>Aug 14, 2024</td>
+<td>Amazon Prime</td>
+<td>+£157.90</td>
+<td>£3529.50</td>
+<td>Credit</td>
+<td>REF000182</td>
+<td>Completed</td>
+<tr>Aug 15, 2024	Netflix Subscription	-£171.60	£3357.90	Direct Debit	REF000183	Pending</tr>
+<td>Aug 15, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£171.60</td>
+<td>£3357.90</td>
+<td>Direct Debit</td>
+<td>REF000183</td>
+<td>Pending</td>
+<tr>Aug 16, 2024	Council Tax DD	-£185.30	£3172.60	Debit	REF000184	Completed</tr>
+<td>Aug 16, 2024</td>
+<td>Council Tax DD</td>
+<td>-£185.30</td>
+<td>£3172.60</td>
+<td>Debit</td>
+<td>REF000184</td>
+<td>Completed</td>
+<tr>Aug 17, 2024	Salary — TechCorp Ltd	-£199.00	£2973.60	Credit	REF000185	Completed</tr>
+<td>Aug 17, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£199.00</td>
+<td>£2973.60</td>
+<td>Credit</td>
+<td>REF000185</td>
+<td>Completed</td>
+<tr>Aug 18, 2024	Costa Coffee	-£17.70	£2955.90	Transfer	REF000186	Completed</tr>
+<td>Aug 18, 2024</td>
+<td>Costa Coffee</td>
+<td>-£17.70</td>
+<td>£2955.90</td>
+<td>Transfer</td>
+<td>REF000186</td>
+<td>Completed</td>
+<tr>Aug 19, 2024	TfL Oyster Top-up	-£31.40	£2924.50	Direct Debit	REF000187	Pending</tr>
+<td>Aug 19, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£31.40</td>
+<td>£2924.50</td>
+<td>Direct Debit</td>
+<td>REF000187</td>
+<td>Pending</td>
+<tr>Aug 20, 2024	Gym Membership	-£45.10	£2879.40	Debit	REF000188	Completed</tr>
+<td>Aug 20, 2024</td>
+<td>Gym Membership</td>
+<td>-£45.10</td>
+<td>£2879.40</td>
+<td>Debit</td>
+<td>REF000188</td>
+<td>Completed</td>
+<tr>Aug 21, 2024	Mortgage DD — Halifax	+£58.80	£2938.20	Credit	REF000189	Completed</tr>
+<td>Aug 21, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>+£58.80</td>
+<td>£2938.20</td>
+<td>Credit</td>
+<td>REF000189</td>
+<td>Completed</td>
+<tr>Aug 22, 2024	Utility Bill — British Gas	-£72.50	£2865.70	Transfer	REF000190	Completed</tr>
+<td>Aug 22, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£72.50</td>
+<td>£2865.70</td>
+<td>Transfer</td>
+<td>REF000190</td>
+<td>Completed</td>
+<tr>Aug 23, 2024	Spotify Premium	-£86.20	£2779.50	Direct Debit	REF000191	Pending</tr>
+<td>Aug 23, 2024</td>
+<td>Spotify Premium</td>
+<td>-£86.20</td>
+<td>£2779.50</td>
+<td>Direct Debit</td>
+<td>REF000191</td>
+<td>Pending</td>
+<tr>Aug 24, 2024	PayPal Transfer	-£99.90	£2679.60	Debit	REF000192	Completed</tr>
+<td>Aug 24, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£99.90</td>
+<td>£2679.60</td>
+<td>Debit</td>
+<td>REF000192</td>
+<td>Completed</td>
+<tr>Aug 25, 2024	John Lewis Purchase	-£113.60	£2566.00	Credit	REF000193	Completed</tr>
+<td>Aug 25, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£113.60</td>
+<td>£2566.00</td>
+<td>Credit</td>
+<td>REF000193</td>
+<td>Completed</td>
+<tr>Aug 26, 2024	Ocado Grocery Delivery	-£127.30	£2438.70	Transfer	REF000194	Completed</tr>
+<td>Aug 26, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£127.30</td>
+<td>£2438.70</td>
+<td>Transfer</td>
+<td>REF000194</td>
+<td>Completed</td>
+<tr>Aug 27, 2024	Apple iCloud+	+£141.00	£2579.70	Credit	REF000195	Pending</tr>
+<td>Aug 27, 2024</td>
+<td>Apple iCloud+</td>
+<td>+£141.00</td>
+<td>£2579.70</td>
+<td>Credit</td>
+<td>REF000195</td>
+<td>Pending</td>
+<tr>Aug 28, 2024	BT Broadband DD	+£154.70	£2734.40	Credit	REF000196	Completed</tr>
+<td>Aug 28, 2024</td>
+<td>BT Broadband DD</td>
+<td>+£154.70</td>
+<td>£2734.40</td>
+<td>Credit</td>
+<td>REF000196</td>
+<td>Completed</td>
+<tr>Aug 01, 2024	Dentist — Crown Dental	-£168.40	£2566.00	Credit	REF000197	Completed</tr>
+<td>Aug 01, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£168.40</td>
+<td>£2566.00</td>
+<td>Credit</td>
+<td>REF000197</td>
+<td>Completed</td>
+<tr>Aug 02, 2024	Waitrose Supermarket	-£182.10	£2383.90	Transfer	REF000198	Completed</tr>
+<td>Aug 02, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£182.10</td>
+<td>£2383.90</td>
+<td>Transfer</td>
+<td>REF000198</td>
+<td>Completed</td>
+<tr>Aug 03, 2024	NCP Parking	-£195.80	£2188.10	Direct Debit	REF000199	Pending</tr>
+<td>Aug 03, 2024</td>
+<td>NCP Parking</td>
+<td>-£195.80</td>
+<td>£2188.10</td>
+<td>Direct Debit</td>
+<td>REF000199</td>
+<td>Pending</td>
+<tr>Aug 04, 2024	Vodafone DD	-£14.50	£2173.60	Debit	REF000200	Completed</tr>
+<td>Aug 04, 2024</td>
+<td>Vodafone DD</td>
+<td>-£14.50</td>
+<td>£2173.60</td>
+<td>Debit</td>
+<td>REF000200</td>
+<td>Completed</td>
+<tr>Sep 05, 2024	HMRC Self Assessment	-£28.20	£2145.40	Credit	REF000201	Completed</tr>
+<td>Sep 05, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£28.20</td>
+<td>£2145.40</td>
+<td>Credit</td>
+<td>REF000201</td>
+<td>Completed</td>
+<tr>Sep 06, 2024	Amazon Purchase	-£41.90	£2103.50	Transfer	REF000202	Completed</tr>
+<td>Sep 06, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£41.90</td>
+<td>£2103.50</td>
+<td>Transfer</td>
+<td>REF000202</td>
+<td>Completed</td>
+<tr>Sep 07, 2024	Uber	+£55.60	£2159.10	Credit	REF000203	Pending</tr>
+<td>Sep 07, 2024</td>
+<td>Uber</td>
+<td>+£55.60</td>
+<td>£2159.10</td>
+<td>Credit</td>
+<td>REF000203</td>
+<td>Pending</td>
+<tr>Sep 08, 2024	Just Eat	-£69.30	£2089.80	Debit	REF000204	Completed</tr>
+<td>Sep 08, 2024</td>
+<td>Just Eat</td>
+<td>-£69.30</td>
+<td>£2089.80</td>
+<td>Debit</td>
+<td>REF000204</td>
+<td>Completed</td>
+<tr>Sep 09, 2024	Deliveroo	-£83.00	£2006.80	Credit	REF000205	Completed</tr>
+<td>Sep 09, 2024</td>
+<td>Deliveroo</td>
+<td>-£83.00</td>
+<td>£2006.80</td>
+<td>Credit</td>
+<td>REF000205</td>
+<td>Completed</td>
+<tr>Sep 10, 2024	Marks &amp; Spencer	-£96.70	£1910.10	Transfer	REF000206	Completed</tr>
+<td>Sep 10, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£96.70</td>
+<td>£1910.10</td>
+<td>Transfer</td>
+<td>REF000206</td>
+<td>Completed</td>
+<tr>Sep 11, 2024	Sainsbury's	-£110.40	£1799.70	Direct Debit	REF000207	Pending</tr>
+<td>Sep 11, 2024</td>
+<td>Sainsbury's</td>
+<td>-£110.40</td>
+<td>£1799.70</td>
+<td>Direct Debit</td>
+<td>REF000207</td>
+<td>Pending</td>
+<tr>Sep 12, 2024	IKEA Purchase	+£124.10	£1923.80	Credit	REF000208	Completed</tr>
+<td>Sep 12, 2024</td>
+<td>IKEA Purchase</td>
+<td>+£124.10</td>
+<td>£1923.80</td>
+<td>Credit</td>
+<td>REF000208</td>
+<td>Completed</td>
+<tr>Sep 13, 2024	Boots Pharmacy	-£137.80	£1786.00	Credit	REF000209	Completed</tr>
+<td>Sep 13, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£137.80</td>
+<td>£1786.00</td>
+<td>Credit</td>
+<td>REF000209</td>
+<td>Completed</td>
+<tr>Sep 14, 2024	Sky Sports DD	+£151.50	£1937.50	Credit	REF000210	Completed</tr>
+<td>Sep 14, 2024</td>
+<td>Sky Sports DD</td>
+<td>+£151.50</td>
+<td>£1937.50</td>
+<td>Credit</td>
+<td>REF000210</td>
+<td>Completed</td>
+<tr>Sep 15, 2024	Tesco Supermarket	-£165.20	£1772.30	Direct Debit	REF000211	Pending</tr>
+<td>Sep 15, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£165.20</td>
+<td>£1772.30</td>
+<td>Direct Debit</td>
+<td>REF000211</td>
+<td>Pending</td>
+<tr>Sep 16, 2024	Amazon Prime	-£178.90	£1593.40	Debit	REF000212	Completed</tr>
+<td>Sep 16, 2024</td>
+<td>Amazon Prime</td>
+<td>-£178.90</td>
+<td>£1593.40</td>
+<td>Debit</td>
+<td>REF000212</td>
+<td>Completed</td>
+<tr>Sep 17, 2024	Netflix Subscription	-£192.60	£1400.80	Credit	REF000213	Completed</tr>
+<td>Sep 17, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£192.60</td>
+<td>£1400.80</td>
+<td>Credit</td>
+<td>REF000213</td>
+<td>Completed</td>
+<tr>Sep 18, 2024	Council Tax DD	-£11.30	£1389.50	Transfer	REF000214	Completed</tr>
+<td>Sep 18, 2024</td>
+<td>Council Tax DD</td>
+<td>-£11.30</td>
+<td>£1389.50</td>
+<td>Transfer</td>
+<td>REF000214</td>
+<td>Completed</td>
+<tr>Sep 19, 2024	Salary — TechCorp Ltd	-£25.00	£1364.50	Direct Debit	REF000215	Pending</tr>
+<td>Sep 19, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£25.00</td>
+<td>£1364.50</td>
+<td>Direct Debit</td>
+<td>REF000215</td>
+<td>Pending</td>
+<tr>Sep 20, 2024	Costa Coffee	-£38.70	£1325.80	Debit	REF000216	Completed</tr>
+<td>Sep 20, 2024</td>
+<td>Costa Coffee</td>
+<td>-£38.70</td>
+<td>£1325.80</td>
+<td>Debit</td>
+<td>REF000216</td>
+<td>Completed</td>
+<tr>Sep 21, 2024	TfL Oyster Top-up	+£52.40	£1378.20	Credit	REF000217	Completed</tr>
+<td>Sep 21, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>+£52.40</td>
+<td>£1378.20</td>
+<td>Credit</td>
+<td>REF000217</td>
+<td>Completed</td>
+<tr>Sep 22, 2024	Gym Membership	-£66.10	£1312.10	Transfer	REF000218	Completed</tr>
+<td>Sep 22, 2024</td>
+<td>Gym Membership</td>
+<td>-£66.10</td>
+<td>£1312.10</td>
+<td>Transfer</td>
+<td>REF000218</td>
+<td>Completed</td>
+<tr>Sep 23, 2024	Mortgage DD — Halifax	-£79.80	£1232.30	Direct Debit	REF000219	Pending</tr>
+<td>Sep 23, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£79.80</td>
+<td>£1232.30</td>
+<td>Direct Debit</td>
+<td>REF000219</td>
+<td>Pending</td>
+<tr>Sep 24, 2024	Utility Bill — British Gas	-£93.50	£1138.80	Debit	REF000220	Completed</tr>
+<td>Sep 24, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£93.50</td>
+<td>£1138.80</td>
+<td>Debit</td>
+<td>REF000220</td>
+<td>Completed</td>
+<tr>Sep 25, 2024	Spotify Premium	+£107.20	£1246.00	Credit	REF000221	Completed</tr>
+<td>Sep 25, 2024</td>
+<td>Spotify Premium</td>
+<td>+£107.20</td>
+<td>£1246.00</td>
+<td>Credit</td>
+<td>REF000221</td>
+<td>Completed</td>
+<tr>Sep 26, 2024	PayPal Transfer	-£120.90	£1125.10	Transfer	REF000222	Completed</tr>
+<td>Sep 26, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£120.90</td>
+<td>£1125.10</td>
+<td>Transfer</td>
+<td>REF000222</td>
+<td>Completed</td>
+<tr>Sep 27, 2024	John Lewis Purchase	-£134.60	£990.50	Direct Debit	REF000223	Pending</tr>
+<td>Sep 27, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£134.60</td>
+<td>£990.50</td>
+<td>Direct Debit</td>
+<td>REF000223</td>
+<td>Pending</td>
+<tr>Sep 28, 2024	Ocado Grocery Delivery	+£148.30	£1138.80	Credit	REF000224	Completed</tr>
+<td>Sep 28, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>+£148.30</td>
+<td>£1138.80</td>
+<td>Credit</td>
+<td>REF000224</td>
+<td>Completed</td>
+<tr>Sep 01, 2024	Apple iCloud+	-£162.00	£976.80	Credit	REF000225	Completed</tr>
+<td>Sep 01, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£162.00</td>
+<td>£976.80</td>
+<td>Credit</td>
+<td>REF000225</td>
+<td>Completed</td>
+<tr>Oct 02, 2024	BT Broadband DD	-£175.70	£801.10	Transfer	REF000226	Completed</tr>
+<td>Oct 02, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£175.70</td>
+<td>£801.10</td>
+<td>Transfer</td>
+<td>REF000226</td>
+<td>Completed</td>
+<tr>Oct 03, 2024	Dentist — Crown Dental	-£189.40	£611.70	Direct Debit	REF000227	Pending</tr>
+<td>Oct 03, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£189.40</td>
+<td>£611.70</td>
+<td>Direct Debit</td>
+<td>REF000227</td>
+<td>Pending</td>
+<tr>Oct 04, 2024	Waitrose Supermarket	-£8.10	£603.60	Debit	REF000228	Completed</tr>
+<td>Oct 04, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£8.10</td>
+<td>£603.60</td>
+<td>Debit</td>
+<td>REF000228</td>
+<td>Completed</td>
+<tr>Oct 05, 2024	NCP Parking	-£21.80	£581.80	Credit	REF000229	Completed</tr>
+<td>Oct 05, 2024</td>
+<td>NCP Parking</td>
+<td>-£21.80</td>
+<td>£581.80</td>
+<td>Credit</td>
+<td>REF000229</td>
+<td>Completed</td>
+<tr>Oct 06, 2024	Vodafone DD	-£35.50	£546.30	Transfer	REF000230	Completed</tr>
+<td>Oct 06, 2024</td>
+<td>Vodafone DD</td>
+<td>-£35.50</td>
+<td>£546.30</td>
+<td>Transfer</td>
+<td>REF000230</td>
+<td>Completed</td>
+<tr>Oct 07, 2024	HMRC Self Assessment	+£49.20	£595.50	Credit	REF000231	Pending</tr>
+<td>Oct 07, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>+£49.20</td>
+<td>£595.50</td>
+<td>Credit</td>
+<td>REF000231</td>
+<td>Pending</td>
+<tr>Oct 08, 2024	Amazon Purchase	-£62.90	£532.60	Debit	REF000232	Completed</tr>
+<td>Oct 08, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£62.90</td>
+<td>£532.60</td>
+<td>Debit</td>
+<td>REF000232</td>
+<td>Completed</td>
+<tr>Oct 09, 2024	Uber	-£76.60	£456.00	Credit	REF000233	Completed</tr>
+<td>Oct 09, 2024</td>
+<td>Uber</td>
+<td>-£76.60</td>
+<td>£456.00</td>
+<td>Credit</td>
+<td>REF000233</td>
+<td>Completed</td>
+<tr>Oct 10, 2024	Just Eat	+£90.30	£546.30	Credit	REF000234	Completed</tr>
+<td>Oct 10, 2024</td>
+<td>Just Eat</td>
+<td>+£90.30</td>
+<td>£546.30</td>
+<td>Credit</td>
+<td>REF000234</td>
+<td>Completed</td>
+<tr>Oct 11, 2024	Deliveroo	-£104.00	£442.30	Direct Debit	REF000235	Pending</tr>
+<td>Oct 11, 2024</td>
+<td>Deliveroo</td>
+<td>-£104.00</td>
+<td>£442.30</td>
+<td>Direct Debit</td>
+<td>REF000235</td>
+<td>Pending</td>
+<tr>Oct 12, 2024	Marks &amp; Spencer	-£117.70	£324.60	Debit	REF000236	Completed</tr>
+<td>Oct 12, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£117.70</td>
+<td>£324.60</td>
+<td>Debit</td>
+<td>REF000236</td>
+<td>Completed</td>
+<tr>Oct 13, 2024	Sainsbury's	-£131.40	£193.20	Credit	REF000237	Completed</tr>
+<td>Oct 13, 2024</td>
+<td>Sainsbury's</td>
+<td>-£131.40</td>
+<td>£193.20</td>
+<td>Credit</td>
+<td>REF000237</td>
+<td>Completed</td>
+<tr>Oct 14, 2024	IKEA Purchase	+£145.10	£338.30	Credit	REF000238	Completed</tr>
+<td>Oct 14, 2024</td>
+<td>IKEA Purchase</td>
+<td>+£145.10</td>
+<td>£338.30</td>
+<td>Credit</td>
+<td>REF000238</td>
+<td>Completed</td>
+<tr>Oct 15, 2024	Boots Pharmacy	-£158.80	£179.50	Direct Debit	REF000239	Pending</tr>
+<td>Oct 15, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£158.80</td>
+<td>£179.50</td>
+<td>Direct Debit</td>
+<td>REF000239</td>
+<td>Pending</td>
+<tr>Oct 16, 2024	Sky Sports DD	-£172.50	£7.00	Debit	REF000240	Completed</tr>
+<td>Oct 16, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£172.50</td>
+<td>£7.00</td>
+<td>Debit</td>
+<td>REF000240</td>
+<td>Completed</td>
+<tr>Oct 17, 2024	Tesco Supermarket	-£186.20	£179.20	Credit	REF000241	Completed</tr>
+<td>Oct 17, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£186.20</td>
+<td>£179.20</td>
+<td>Credit</td>
+<td>REF000241</td>
+<td>Completed</td>
+<tr>Oct 18, 2024	Amazon Prime	-£4.90	£184.10	Transfer	REF000242	Completed</tr>
+<td>Oct 18, 2024</td>
+<td>Amazon Prime</td>
+<td>-£4.90</td>
+<td>£184.10</td>
+<td>Transfer</td>
+<td>REF000242</td>
+<td>Completed</td>
+<tr>Oct 19, 2024	Netflix Subscription	-£18.60	£202.70	Direct Debit	REF000243	Pending</tr>
+<td>Oct 19, 2024</td>
+<td>Netflix Subscription</td>
+<td>-£18.60</td>
+<td>£202.70</td>
+<td>Direct Debit</td>
+<td>REF000243</td>
+<td>Pending</td>
+<tr>Oct 20, 2024	Council Tax DD	-£32.30	£235.00	Debit	REF000244	Completed</tr>
+<td>Oct 20, 2024</td>
+<td>Council Tax DD</td>
+<td>-£32.30</td>
+<td>£235.00</td>
+<td>Debit</td>
+<td>REF000244</td>
+<td>Completed</td>
+<tr>Oct 21, 2024	Salary — TechCorp Ltd	+£46.00	£189.00	Credit	REF000245	Completed</tr>
+<td>Oct 21, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>+£46.00</td>
+<td>£189.00</td>
+<td>Credit</td>
+<td>REF000245</td>
+<td>Completed</td>
+<tr>Oct 22, 2024	Costa Coffee	-£59.70	£248.70	Transfer	REF000246	Completed</tr>
+<td>Oct 22, 2024</td>
+<td>Costa Coffee</td>
+<td>-£59.70</td>
+<td>£248.70</td>
+<td>Transfer</td>
+<td>REF000246</td>
+<td>Completed</td>
+<tr>Oct 23, 2024	TfL Oyster Top-up	+£73.40	£175.30	Credit	REF000247	Pending</tr>
+<td>Oct 23, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>+£73.40</td>
+<td>£175.30</td>
+<td>Credit</td>
+<td>REF000247</td>
+<td>Pending</td>
+<tr>Oct 24, 2024	Gym Membership	-£87.10	£262.40	Debit	REF000248	Completed</tr>
+<td>Oct 24, 2024</td>
+<td>Gym Membership</td>
+<td>-£87.10</td>
+<td>£262.40</td>
+<td>Debit</td>
+<td>REF000248</td>
+<td>Completed</td>
+<tr>Oct 25, 2024	Mortgage DD — Halifax	-£100.80	£363.20	Credit	REF000249	Completed</tr>
+<td>Oct 25, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£100.80</td>
+<td>£363.20</td>
+<td>Credit</td>
+<td>REF000249</td>
+<td>Completed</td>
+<tr>Oct 26, 2024	Utility Bill — British Gas	-£114.50	£477.70	Transfer	REF000250	Completed</tr>
+<td>Oct 26, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>-£114.50</td>
+<td>£477.70</td>
+<td>Transfer</td>
+<td>REF000250</td>
+<td>Completed</td>
+<tr>Nov 27, 2024	Spotify Premium	-£128.20	£605.90	Direct Debit	REF000251	Pending</tr>
+<td>Nov 27, 2024</td>
+<td>Spotify Premium</td>
+<td>-£128.20</td>
+<td>£605.90</td>
+<td>Direct Debit</td>
+<td>REF000251</td>
+<td>Pending</td>
+<tr>Nov 28, 2024	PayPal Transfer	+£141.90	£464.00	Credit	REF000252	Completed</tr>
+<td>Nov 28, 2024</td>
+<td>PayPal Transfer</td>
+<td>+£141.90</td>
+<td>£464.00</td>
+<td>Credit</td>
+<td>REF000252</td>
+<td>Completed</td>
+<tr>Nov 01, 2024	John Lewis Purchase	-£155.60	£619.60	Credit	REF000253	Completed</tr>
+<td>Nov 01, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£155.60</td>
+<td>£619.60</td>
+<td>Credit</td>
+<td>REF000253</td>
+<td>Completed</td>
+<tr>Nov 02, 2024	Ocado Grocery Delivery	-£169.30	£788.90	Transfer	REF000254	Completed</tr>
+<td>Nov 02, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£169.30</td>
+<td>£788.90</td>
+<td>Transfer</td>
+<td>REF000254</td>
+<td>Completed</td>
+<tr>Nov 03, 2024	Apple iCloud+	-£183.00	£971.90	Direct Debit	REF000255	Pending</tr>
+<td>Nov 03, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£183.00</td>
+<td>£971.90</td>
+<td>Direct Debit</td>
+<td>REF000255</td>
+<td>Pending</td>
+<tr>Nov 04, 2024	BT Broadband DD	-£196.70	£1168.60	Debit	REF000256	Completed</tr>
+<td>Nov 04, 2024</td>
+<td>BT Broadband DD</td>
+<td>-£196.70</td>
+<td>£1168.60</td>
+<td>Debit</td>
+<td>REF000256</td>
+<td>Completed</td>
+<tr>Nov 05, 2024	Dentist — Crown Dental	-£15.40	£1184.00	Credit	REF000257	Completed</tr>
+<td>Nov 05, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>-£15.40</td>
+<td>£1184.00</td>
+<td>Credit</td>
+<td>REF000257</td>
+<td>Completed</td>
+<tr>Nov 06, 2024	Waitrose Supermarket	-£29.10	£1213.10	Transfer	REF000258	Completed</tr>
+<td>Nov 06, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£29.10</td>
+<td>£1213.10</td>
+<td>Transfer</td>
+<td>REF000258</td>
+<td>Completed</td>
+<tr>Nov 07, 2024	NCP Parking	+£42.80	£1170.30	Credit	REF000259	Pending</tr>
+<td>Nov 07, 2024</td>
+<td>NCP Parking</td>
+<td>+£42.80</td>
+<td>£1170.30</td>
+<td>Credit</td>
+<td>REF000259</td>
+<td>Pending</td>
+<tr>Nov 08, 2024	Vodafone DD	+£56.50	£1113.80	Credit	REF000260	Completed</tr>
+<td>Nov 08, 2024</td>
+<td>Vodafone DD</td>
+<td>+£56.50</td>
+<td>£1113.80</td>
+<td>Credit</td>
+<td>REF000260</td>
+<td>Completed</td>
+<tr>Nov 09, 2024	HMRC Self Assessment	-£70.20	£1184.00	Credit	REF000261	Completed</tr>
+<td>Nov 09, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£70.20</td>
+<td>£1184.00</td>
+<td>Credit</td>
+<td>REF000261</td>
+<td>Completed</td>
+<tr>Nov 10, 2024	Amazon Purchase	-£83.90	£1267.90	Transfer	REF000262	Completed</tr>
+<td>Nov 10, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£83.90</td>
+<td>£1267.90</td>
+<td>Transfer</td>
+<td>REF000262</td>
+<td>Completed</td>
+<tr>Nov 11, 2024	Uber	-£97.60	£1365.50	Direct Debit	REF000263	Pending</tr>
+<td>Nov 11, 2024</td>
+<td>Uber</td>
+<td>-£97.60</td>
+<td>£1365.50</td>
+<td>Direct Debit</td>
+<td>REF000263</td>
+<td>Pending</td>
+<tr>Nov 12, 2024	Just Eat	-£111.30	£1476.80	Debit	REF000264	Completed</tr>
+<td>Nov 12, 2024</td>
+<td>Just Eat</td>
+<td>-£111.30</td>
+<td>£1476.80</td>
+<td>Debit</td>
+<td>REF000264</td>
+<td>Completed</td>
+<tr>Nov 13, 2024	Deliveroo	-£125.00	£1601.80	Credit	REF000265	Completed</tr>
+<td>Nov 13, 2024</td>
+<td>Deliveroo</td>
+<td>-£125.00</td>
+<td>£1601.80</td>
+<td>Credit</td>
+<td>REF000265</td>
+<td>Completed</td>
+<tr>Nov 14, 2024	Marks &amp; Spencer	+£138.70	£1463.10	Credit	REF000266	Completed</tr>
+<td>Nov 14, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>+£138.70</td>
+<td>£1463.10</td>
+<td>Credit</td>
+<td>REF000266</td>
+<td>Completed</td>
+<tr>Nov 15, 2024	Sainsbury's	-£152.40	£1615.50	Direct Debit	REF000267	Pending</tr>
+<td>Nov 15, 2024</td>
+<td>Sainsbury's</td>
+<td>-£152.40</td>
+<td>£1615.50</td>
+<td>Direct Debit</td>
+<td>REF000267</td>
+<td>Pending</td>
+<tr>Nov 16, 2024	IKEA Purchase	-£166.10	£1781.60	Debit	REF000268	Completed</tr>
+<td>Nov 16, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£166.10</td>
+<td>£1781.60</td>
+<td>Debit</td>
+<td>REF000268</td>
+<td>Completed</td>
+<tr>Nov 17, 2024	Boots Pharmacy	-£179.80	£1961.40	Credit	REF000269	Completed</tr>
+<td>Nov 17, 2024</td>
+<td>Boots Pharmacy</td>
+<td>-£179.80</td>
+<td>£1961.40</td>
+<td>Credit</td>
+<td>REF000269</td>
+<td>Completed</td>
+<tr>Nov 18, 2024	Sky Sports DD	-£193.50	£2154.90	Transfer	REF000270	Completed</tr>
+<td>Nov 18, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£193.50</td>
+<td>£2154.90</td>
+<td>Transfer</td>
+<td>REF000270</td>
+<td>Completed</td>
+<tr>Nov 19, 2024	Tesco Supermarket	-£12.20	£2167.10	Direct Debit	REF000271	Pending</tr>
+<td>Nov 19, 2024</td>
+<td>Tesco Supermarket</td>
+<td>-£12.20</td>
+<td>£2167.10</td>
+<td>Direct Debit</td>
+<td>REF000271</td>
+<td>Pending</td>
+<tr>Nov 20, 2024	Amazon Prime	-£25.90	£2193.00	Debit	REF000272	Completed</tr>
+<td>Nov 20, 2024</td>
+<td>Amazon Prime</td>
+<td>-£25.90</td>
+<td>£2193.00</td>
+<td>Debit</td>
+<td>REF000272</td>
+<td>Completed</td>
+<tr>Nov 21, 2024	Netflix Subscription	+£39.60	£2153.40	Credit	REF000273	Completed</tr>
+<td>Nov 21, 2024</td>
+<td>Netflix Subscription</td>
+<td>+£39.60</td>
+<td>£2153.40</td>
+<td>Credit</td>
+<td>REF000273</td>
+<td>Completed</td>
+<tr>Nov 22, 2024	Council Tax DD	-£53.30	£2206.70	Transfer	REF000274	Completed</tr>
+<td>Nov 22, 2024</td>
+<td>Council Tax DD</td>
+<td>-£53.30</td>
+<td>£2206.70</td>
+<td>Transfer</td>
+<td>REF000274</td>
+<td>Completed</td>
+<tr>Nov 23, 2024	Salary — TechCorp Ltd	-£67.00	£2273.70	Direct Debit	REF000275	Pending</tr>
+<td>Nov 23, 2024</td>
+<td>Salary — TechCorp Ltd</td>
+<td>-£67.00</td>
+<td>£2273.70</td>
+<td>Direct Debit</td>
+<td>REF000275</td>
+<td>Pending</td>
+<tr>Dec 24, 2024	Costa Coffee	-£80.70	£2354.40	Debit	REF000276	Completed</tr>
+<td>Dec 24, 2024</td>
+<td>Costa Coffee</td>
+<td>-£80.70</td>
+<td>£2354.40</td>
+<td>Debit</td>
+<td>REF000276</td>
+<td>Completed</td>
+<tr>Dec 25, 2024	TfL Oyster Top-up	-£94.40	£2448.80	Credit	REF000277	Completed</tr>
+<td>Dec 25, 2024</td>
+<td>TfL Oyster Top-up</td>
+<td>-£94.40</td>
+<td>£2448.80</td>
+<td>Credit</td>
+<td>REF000277</td>
+<td>Completed</td>
+<tr>Dec 26, 2024	Gym Membership	-£108.10	£2556.90	Transfer	REF000278	Completed</tr>
+<td>Dec 26, 2024</td>
+<td>Gym Membership</td>
+<td>-£108.10</td>
+<td>£2556.90</td>
+<td>Transfer</td>
+<td>REF000278</td>
+<td>Completed</td>
+<tr>Dec 27, 2024	Mortgage DD — Halifax	-£121.80	£2678.70	Direct Debit	REF000279	Pending</tr>
+<td>Dec 27, 2024</td>
+<td>Mortgage DD — Halifax</td>
+<td>-£121.80</td>
+<td>£2678.70</td>
+<td>Direct Debit</td>
+<td>REF000279</td>
+<td>Pending</td>
+<tr>Dec 28, 2024	Utility Bill — British Gas	+£135.50	£2543.20	Credit	REF000280	Completed</tr>
+<td>Dec 28, 2024</td>
+<td>Utility Bill — British Gas</td>
+<td>+£135.50</td>
+<td>£2543.20</td>
+<td>Credit</td>
+<td>REF000280</td>
+<td>Completed</td>
+<tr>Dec 01, 2024	Spotify Premium	-£149.20	£2692.40	Credit	REF000281	Completed</tr>
+<td>Dec 01, 2024</td>
+<td>Spotify Premium</td>
+<td>-£149.20</td>
+<td>£2692.40</td>
+<td>Credit</td>
+<td>REF000281</td>
+<td>Completed</td>
+<tr>Dec 02, 2024	PayPal Transfer	-£162.90	£2855.30	Transfer	REF000282	Completed</tr>
+<td>Dec 02, 2024</td>
+<td>PayPal Transfer</td>
+<td>-£162.90</td>
+<td>£2855.30</td>
+<td>Transfer</td>
+<td>REF000282</td>
+<td>Completed</td>
+<tr>Dec 03, 2024	John Lewis Purchase	-£176.60	£3031.90	Direct Debit	REF000283	Pending</tr>
+<td>Dec 03, 2024</td>
+<td>John Lewis Purchase</td>
+<td>-£176.60</td>
+<td>£3031.90</td>
+<td>Direct Debit</td>
+<td>REF000283</td>
+<td>Pending</td>
+<tr>Dec 04, 2024	Ocado Grocery Delivery	-£190.30	£3222.20	Debit	REF000284	Completed</tr>
+<td>Dec 04, 2024</td>
+<td>Ocado Grocery Delivery</td>
+<td>-£190.30</td>
+<td>£3222.20</td>
+<td>Debit</td>
+<td>REF000284</td>
+<td>Completed</td>
+<tr>Dec 05, 2024	Apple iCloud+	-£9.00	£3231.20	Credit	REF000285	Completed</tr>
+<td>Dec 05, 2024</td>
+<td>Apple iCloud+</td>
+<td>-£9.00</td>
+<td>£3231.20</td>
+<td>Credit</td>
+<td>REF000285</td>
+<td>Completed</td>
+<tr>Dec 06, 2024	BT Broadband DD	+£22.70	£3208.50	Credit	REF000286	Completed</tr>
+<td>Dec 06, 2024</td>
+<td>BT Broadband DD</td>
+<td>+£22.70</td>
+<td>£3208.50</td>
+<td>Credit</td>
+<td>REF000286</td>
+<td>Completed</td>
+<tr>Dec 07, 2024	Dentist — Crown Dental	+£36.40	£3172.10	Credit	REF000287	Pending</tr>
+<td>Dec 07, 2024</td>
+<td>Dentist — Crown Dental</td>
+<td>+£36.40</td>
+<td>£3172.10</td>
+<td>Credit</td>
+<td>REF000287</td>
+<td>Pending</td>
+<tr>Dec 08, 2024	Waitrose Supermarket	-£50.10	£3222.20	Debit	REF000288	Completed</tr>
+<td>Dec 08, 2024</td>
+<td>Waitrose Supermarket</td>
+<td>-£50.10</td>
+<td>£3222.20</td>
+<td>Debit</td>
+<td>REF000288</td>
+<td>Completed</td>
+<tr>Dec 09, 2024	NCP Parking	-£63.80	£3286.00	Credit	REF000289	Completed</tr>
+<td>Dec 09, 2024</td>
+<td>NCP Parking</td>
+<td>-£63.80</td>
+<td>£3286.00</td>
+<td>Credit</td>
+<td>REF000289</td>
+<td>Completed</td>
+<tr>Dec 10, 2024	Vodafone DD	-£77.50	£3363.50	Transfer	REF000290	Completed</tr>
+<td>Dec 10, 2024</td>
+<td>Vodafone DD</td>
+<td>-£77.50</td>
+<td>£3363.50</td>
+<td>Transfer</td>
+<td>REF000290</td>
+<td>Completed</td>
+<tr>Dec 11, 2024	HMRC Self Assessment	-£91.20	£3454.70	Direct Debit	REF000291	Pending</tr>
+<td>Dec 11, 2024</td>
+<td>HMRC Self Assessment</td>
+<td>-£91.20</td>
+<td>£3454.70</td>
+<td>Direct Debit</td>
+<td>REF000291</td>
+<td>Pending</td>
+<tr>Dec 12, 2024	Amazon Purchase	-£104.90	£3559.60	Debit	REF000292	Completed</tr>
+<td>Dec 12, 2024</td>
+<td>Amazon Purchase</td>
+<td>-£104.90</td>
+<td>£3559.60</td>
+<td>Debit</td>
+<td>REF000292</td>
+<td>Completed</td>
+<tr>Dec 13, 2024	Uber	-£118.60	£3678.20	Credit	REF000293	Completed</tr>
+<td>Dec 13, 2024</td>
+<td>Uber</td>
+<td>-£118.60</td>
+<td>£3678.20</td>
+<td>Credit</td>
+<td>REF000293</td>
+<td>Completed</td>
+<tr>Dec 14, 2024	Just Eat	+£132.30	£3545.90	Credit	REF000294	Completed</tr>
+<td>Dec 14, 2024</td>
+<td>Just Eat</td>
+<td>+£132.30</td>
+<td>£3545.90</td>
+<td>Credit</td>
+<td>REF000294</td>
+<td>Completed</td>
+<tr>Dec 15, 2024	Deliveroo	-£146.00	£3691.90	Direct Debit	REF000295	Pending</tr>
+<td>Dec 15, 2024</td>
+<td>Deliveroo</td>
+<td>-£146.00</td>
+<td>£3691.90</td>
+<td>Direct Debit</td>
+<td>REF000295</td>
+<td>Pending</td>
+<tr>Dec 16, 2024	Marks &amp; Spencer	-£159.70	£3851.60	Debit	REF000296	Completed</tr>
+<td>Dec 16, 2024</td>
+<td>Marks &amp; Spencer</td>
+<td>-£159.70</td>
+<td>£3851.60</td>
+<td>Debit</td>
+<td>REF000296</td>
+<td>Completed</td>
+<tr>Dec 17, 2024	Sainsbury's	-£173.40	£4025.00	Credit	REF000297	Completed</tr>
+<td>Dec 17, 2024</td>
+<td>Sainsbury's</td>
+<td>-£173.40</td>
+<td>£4025.00</td>
+<td>Credit</td>
+<td>REF000297</td>
+<td>Completed</td>
+<tr>Dec 18, 2024	IKEA Purchase	-£187.10	£4212.10	Transfer	REF000298	Completed</tr>
+<td>Dec 18, 2024</td>
+<td>IKEA Purchase</td>
+<td>-£187.10</td>
+<td>£4212.10</td>
+<td>Transfer</td>
+<td>REF000298</td>
+<td>Completed</td>
+<tr>Dec 19, 2024	Boots Pharmacy	+£5.80	£4206.30	Credit	REF000299	Pending</tr>
+<td>Dec 19, 2024</td>
+<td>Boots Pharmacy</td>
+<td>+£5.80</td>
+<td>£4206.30</td>
+<td>Credit</td>
+<td>REF000299</td>
+<td>Pending</td>
+<tr>Dec 20, 2024	Sky Sports DD	-£19.50	£4225.80	Debit	REF000300	Completed</tr>
+<td>Dec 20, 2024</td>
+<td>Sky Sports DD</td>
+<td>-£19.50</td>
+<td>£4225.80</td>
+<td>Debit</td>
+<td>REF000300</td>
+<td>Completed</td>
+<div>Load more</div>
+<button type="button">Load more</button>
+<footer>NorthVault Bank plc — Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority (FRN 123456) Privacy Policy Cookie Policy Terms of Use Accessibility Security</footer>
+<span>NorthVault Bank plc — Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and Prudential Regulation Authority (FRN 123456)</span>
+<a href="/privacy">Privacy Policy</a>
+<a href="/cookies">Cookie Policy</a>
+<a href="/terms">Terms of Use</a>
+<a href="/accessibility">Accessibility</a>
+<a href="/security">Security</a>

@@ -1,0 +1,87 @@
+{
+  "price_in": 2.0,
+  "price_out": 8.0,
+  "max_out": 256,
+  "chat_overhead": 16,
+  "scope": "all eligible sites; 4 primary cells; class_only only where its observation != B_noVolatile",
+  "eligible_sites": 33,
+  "targets": 326,
+  "class_only_called_sites": {
+    "F1": [
+      "afternic.com",
+      "criteo.com",
+      "dropbox.com",
+      "hichina.com",
+      "mobile.de",
+      "nasa.gov",
+      "ok.ru",
+      "shopify.com",
+      "stanford.edu"
+    ],
+    "F3": [
+      "afternic.com",
+      "criteo.com",
+      "dropbox.com",
+      "hichina.com",
+      "mobile.de",
+      "nasa.gov",
+      "ok.ru",
+      "shopify.com",
+      "stanford.edu"
+    ]
+  },
+  "per_cell": {
+    "B_full|F1": {
+      "calls": 326,
+      "min": 3781,
+      "median": 33423.0,
+      "max": 89774,
+      "sum": 12654857
+    },
+    "B_noVolatile|F1": {
+      "calls": 326,
+      "min": 2642,
+      "median": 32274.0,
+      "max": 89669,
+      "sum": 11668825
+    },
+    "class_only|F1": {
+      "calls": 86,
+      "min": 9236,
+      "median": 45844.5,
+      "max": 89673,
+      "sum": 3967699
+    },
+    "B_full|F3": {
+      "calls": 326,
+      "min": 3249,
+      "median": 26736.0,
+      "max": 81701,
+      "sum": 9951963
+    },
+    "B_noVolatile|F3": {
+      "calls": 326,
+      "min": 2190,
+      "median": 25742.0,
+      "max": 80549,
+      "sum": 9000857
+    },
+    "class_only|F3": {
+      "calls": 86,
+      "min": 7253,
+      "median": 36737.5,
+      "max": 80551,
+      "sum": 3190849
+    }
+  },
+  "not_called": {
+    "reuse_B_noVolatile": 480
+  },
+  "total": {
+    "calls": 1476,
+    "input_tokens": 50435050,
+    "upper_bound_usd": 103.94
+  },
+  "hard_cap_usd": 114.34,
+  "cap_margin": 1.1
+}

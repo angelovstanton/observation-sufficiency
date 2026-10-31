@@ -1,0 +1,84 @@
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_01", "locator_raw": "css:button.Toolbar_newUserBtn__e4f5g6"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_02", "locator_raw": "css:select.Toolbar_roleFilter__b1c2d3"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_04", "locator_raw": "css:input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_05", "locator_raw": "css:tr.UsersTable_row__j1k2l3:has(.UserCell_username__e5f6g7:where(:not([class*=\" \"])):contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_07", "locator_raw": "css:input#edit-username.EditPanel_input__m4n5o6"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_08", "locator_raw": "css:[data-shadow=\"true\"] .EditPanel_select__p7q8r9#edit-role"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_09", "locator_raw": "css:.EditPanel_input__m4n5o6[type=\"email\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_01", "locator_raw": "css:button.Toolbar_newUserBtn__e4f5g6"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_02", "locator_raw": "css:select.Toolbar_roleFilter__b1c2d3"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_04", "locator_raw": "css:input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_05", "locator_raw": "css:.UsersTable_row__j1k2l3:has(.UserCell_username__e5f6g7:contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_07", "locator_raw": "css:input#edit-username.EditPanel_input__m4n5o6"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_08", "locator_raw": "css:select#edit-role.EditPanel_select__p7q8r9[aria-label=\"Assign role to user\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_09", "locator_raw": "css:.EditPanel_input__m4n5o6[type=\"email\"][placeholder=\"user@domain.com\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.Toolbar_newUserBtn__e4f5g6"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:select.Toolbar_roleFilter__b1c2d3"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:tr:has(td:has(span.UserCell_username__e5f6g7:contains(\"alice.johnson\"))) button.ActionMenu_editBtn__l8m9n0"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_09", "locator_raw": "css:.EditPanel_input__m4n5o6[type=\"email\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__x6y7z8"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_01", "locator_raw": "css:button.Toolbar_newUserBtn__e4f5g6[data-testid=\"new-user-btn\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_02", "locator_raw": "css:select.Toolbar_roleFilter__b1c2d3"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_04", "locator_raw": "css:input.ConsolePanel_toggleInput__w6x7y8[aria-label=\"Toggle active status for alice.johnson\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_05", "locator_raw": "css:tr:has(.UserCell_username__e5f6g7:contains(\"alice.johnson\")) .ActionMenu_editBtn__l8m9n0"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_08", "locator_raw": "css:select.EditPanel_select__p7q8r9#edit-role[aria-label=\"Assign role to user\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_09", "locator_raw": "css:.EditPanel_input__m4n5o6[type=\"email\"]"}
+{"page": "pages/page_17.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__x6y7z8[data-testid=\"save-changes-btn\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_01", "locator_raw": "css:button.BoardToolbar_newBtn__o4p5q6[aria-label=\"Create new task card\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_02", "locator_raw": "css:input.BoardToolbar_filterInput__l1m2n3"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_04", "locator_raw": "css:button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_05", "locator_raw": "css:select.KanbanPanel_sortSel__d7e8f9"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[data-testid=\"save-card-btn\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_01", "locator_raw": "css:button.BoardToolbar_newBtn__o4p5q6"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_02", "locator_raw": "css:input.BoardToolbar_filterInput__l1m2n3"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_04", "locator_raw": "css:button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_05", "locator_raw": "css:select.KanbanPanel_sortSel__d7e8f9[aria-label=\"Sort cards by\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[aria-label=\"Save card changes\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_01", "locator_raw": "css:button.BoardToolbar_newBtn__o4p5q6"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:input.BoardToolbar_filterInput__l1m2n3"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:button.KanbanPanel_addBtn__w9x0y1"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:select.KanbanPanel_sortSel__d7e8f9"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[al=\"Save card changes\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_01", "locator_raw": "css:button.BoardToolbar_newBtn__o4p5q6[data-testid=\"new-card-btn\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_02", "locator_raw": "css:input.BoardToolbar_filterInput__l1m2n3#board-filter"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_04", "locator_raw": "css:button.KanbanPanel_addBtn__w9x0y1[aria-label=\"Quick-add card to In Progress\"]"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_05", "locator_raw": "css:select.KanbanPanel_sortSel__d7e8f9"}
+{"page": "pages/page_18.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_10", "locator_raw": "css:button.EditPanel_saveBtn__k8l9m0[data-testid=\"save-card-btn\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_02", "locator_raw": "css:button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_04", "locator_raw": "css:select.TfTable_root__j0k1l2 ~ select[aria-label=\"Filter by carrier\"], select.TrackPanel_carrierSel__c6d7e8[aria-label=\"Filter by carrier\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_05", "locator_raw": "css:button.TrackPanel_exportBtn__f9g0h1[aria-label=\"Export shipment report as CSV\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_02", "locator_raw": "css:button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_04", "locator_raw": "css:select.TfPanel_carrierSel__c6d7e8,select.TrackPanel_carrierSel__c6d7e8"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_05", "locator_raw": "css:.TrackPanel_exportBtn__f9g0h1"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:select.TrackPanel_carrierSel__c6d7e8"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:button.TrackPanel_exportBtn__f9g0h1"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6[aria-label=\"Save shipment update\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_02", "locator_raw": "css:button.TfAction_refreshBtn__a1b2c3[aria-label=\"Refresh tracking data\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_04", "locator_raw": "css:select.TfSearch_inp__i8j9k0[aria-label=\"Filter by carrier\"], select.TrackPanel_carrierSel__c6d7e8[aria-label=\"Filter by carrier\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_05", "locator_raw": "css:button.TrackPanel_exportBtn__f9g0h1[aria-label=\"Export shipment report as CSV\"]"}
+{"page": "pages/page_22.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_10", "locator_raw": "css:button.EditForm_saveBtn__q4r5s6[data-testid=\"save-shipment-btn\"]"}
+{"page": "pages/page_23.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_10", "locator_raw": "css:button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]"}
+{"page": "pages/page_23.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_10", "locator_raw": "css:button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]"}
+{"page": "pages/page_23.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.PayWidget_submitBtn__k2l3m4[type=\"submit\"]"}
+{"page": "pages/page_23.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_10", "locator_raw": "css:button.PayWidget_submitBtn__k2l3m4[aria-label=\"Pay and place order\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_02", "locator_raw": "css:button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_04", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_05", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F0", "task_id": "t_10", "locator_raw": "css:button.PrefPanel_saveBtn__y2z3a4[aria-label=\"Save all preferences\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_04", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_05", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F1", "task_id": "t_10", "locator_raw": "css:button.PrefPanel_saveBtn__y2z3a4[aria-label=\"Save all preferences\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_02", "locator_raw": "css:button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_04", "locator_raw": "css:input[type=\"checkbox\"].SettingsPanel_check__f8g9h0[alt=\"Toggle data sharing\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_05", "locator_raw": "css:input[type=\"checkbox\"].SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F2", "task_id": "t_10", "locator_raw": "css:button.PrefPanel_saveBtn__y2z3a4"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_02", "locator_raw": "css:button.AccountSection_btnOutline__k7l8m9[aria-label=\"Change account password\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_04", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle data sharing\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_05", "locator_raw": "css:input.SettingsPanel_check__f8g9h0[aria-label=\"Toggle marketing emails\"]"}
+{"page": "pages/page_24.html", "bundle": "B_noVolatile", "encoding": "F3", "task_id": "t_10", "locator_raw": "css:button.PrefPanel_saveBtn__y2z3a4[data-testid=\"save-prefs-btn\"]"}
